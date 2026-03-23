@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achievement Dashboard</title>
-    
+    <title>Yozuryu · RetroAchievements</title>
+
     <!-- 1. Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- 2. Import Map: Tells the browser where to find 'react' and other imports -->
+
+    <!-- 2. Base styles — loaded before React mounts so skeleton animations work immediately -->
+    <style>
+        html, body { background-color: #171a21; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+
+        @keyframes shimmer {
+            0%   { background-position: -800px 0; }
+            100% { background-position:  800px 0; }
+        }
+        .shimmer {
+            background: linear-gradient(90deg, #1b2838 25%, #2a3f52 50%, #1b2838 75%);
+            background-size: 800px 100%;
+            animation: shimmer 1.6s infinite linear;
+            border-radius: 2px;
+        }
+    </style>
+
+    <!-- 3. Import Map: Tells the browser where to find 'react' and other imports -->
     <script type="importmap">
     {
         "imports": {
@@ -18,14 +34,14 @@
         }
     }
     </script>
-    
-    <!-- 3. Babel: Translates JSX (React code) into JavaScript the browser understands -->
+
+    <!-- 4. Babel: Translates JSX (React code) into JavaScript the browser understands -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body class="bg-[#171a21]">
     <div id="root"></div>
 
-    <!-- 4. Load your dashboard. Data-type="module" tells Babel to process imports inside it -->
+    <!-- 5. Load the profile dashboard -->
     <script type="text/babel" data-type="module" src="./profile.js"></script>
 </body>
 </html>

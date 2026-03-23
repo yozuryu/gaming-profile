@@ -714,11 +714,11 @@ const ActivityTab = ({ achievements, refTime }) => {
 
   const maxPoints = useMemo(() => Math.max(1, ...Object.values(dayMap).map(d => d.points)), [dayMap]);
 
-  // Build 180-day grid ending on ref date
+  // Build 365-day grid ending on ref date
   const refDate = refTime ? new Date(refTime) : new Date();
   const days = useMemo(() => {
     const arr = [];
-    for (let i = 179; i >= 0; i--) {
+    for (let i = 364; i >= 0; i--) {
       const d = new Date(refDate);
       d.setDate(d.getDate() - i);
       const key = d.toISOString().substring(0, 10);
@@ -801,16 +801,17 @@ const ActivityTab = ({ achievements, refTime }) => {
         <div className="flex items-center gap-2 border-b border-[#2a475e] pb-1.5 mb-3">
           <span className="w-[3px] h-[14px] bg-[#66c0f4] rounded-[1px] shrink-0"></span>
           <span className="text-[13px] text-white tracking-wide uppercase font-medium flex items-center gap-2"><Activity size={15} className="text-[#66c0f4]" /> Activity</span>
-          <span className="text-[10px] text-[#546270] ml-auto">180 days · {achievements.length} achievements · click a day to filter</span>
+          <span className="text-[10px] text-[#546270] ml-auto hidden sm:block">1 year · {achievements.length} achievements · click a day to filter</span>
+          <span className="text-[10px] text-[#546270] ml-auto sm:hidden">{achievements.length} achievements</span>
         </div>
 
-        <div className="w-full">
-          <div className="w-full">
+        <div className="overflow-x-auto">
+          <div style={{ minWidth: `${53 * 14}px` }}>
             {/* Month labels */}
             <div className="flex mb-1" style={{ paddingLeft: '28px' }}>
               {weeks.map((week, wi) => {
                 const ml = monthLabels.find(m => m.wi === wi);
-                return <div key={wi} style={{ flex: 1, fontSize: '8px', color: '#546270' }}>{ml ? ml.label : ''}</div>;
+                return <div key={wi} style={{ flex: 1, fontSize: '8px', color: '#546270', whiteSpace: 'nowrap', overflow: 'hidden' }}>{ml ? ml.label : ''}</div>;
               })}
             </div>
 
@@ -818,14 +819,14 @@ const ActivityTab = ({ achievements, refTime }) => {
               {/* Day labels */}
               <div className="flex flex-col gap-[2px] mr-1" style={{ paddingTop: '1px' }}>
                 {['M','','W','','F','','S'].map((l, i) => (
-                  <div key={i} style={{ height: '12px', width: '20px', fontSize: '7px', lineHeight: '12px', textAlign: 'right', color: '#546270' }}>{l}</div>
+                  <div key={i} style={{ height: '12px', width: '20px', fontSize: '7px', lineHeight: '12px', textAlign: 'right', color: '#546270', flexShrink: 0 }}>{l}</div>
                 ))}
               </div>
 
               {/* Grid — flex so columns stretch to fill width */}
               <div className="flex flex-1 gap-[2px]">
                 {weeks.map((week, wi) => (
-                  <div key={wi} className="flex flex-col gap-[2px] flex-1">
+                  <div key={wi} className="flex flex-col gap-[2px] flex-1" style={{ minWidth: '10px' }}>
                     {week.map(({ key }) => (
                       <div
                         key={key}
@@ -965,21 +966,212 @@ const ActivityTab = ({ achievements, refTime }) => {
   );
 };
 
+// ── Skeleton Components ───────────────────────────────────────────────────
+
+const Sk = ({ w = 'w-full', h = 'h-4', cls = '' }) => (
+  <div className={`shimmer ${w} ${h} ${cls}`} />
+);
+
+const ProfileLoadingSkeleton = () => (
+  <div className="min-h-screen bg-[#171a21] flex flex-col">
+    {/* Topbar */}
+    <div className="bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2">
+      <Sk w="w-16" h="h-2.5" /><span className="text-[#2a475e]">›</span><Sk w="w-28" h="h-2.5" /><span className="text-[#2a475e]">›</span><Sk w="w-20" h="h-2.5" />
+    </div>
+    {/* Header */}
+    <div className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 py-5">
+      <div className="max-w-5xl mx-auto flex items-center gap-5">
+        <div className="shimmer w-20 h-20 md:w-24 md:h-24 rounded-[2px] flex-shrink-0" />
+        <div className="flex flex-col gap-2.5 flex-1">
+          <Sk w="w-44" h="h-6" />
+          <Sk w="w-64" h="h-3" />
+          <div className="flex gap-2 mt-1">
+            <Sk w="w-20" h="h-5" /><Sk w="w-28" h="h-5" /><Sk w="w-24" h="h-5" />
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* Main */}
+    <main className="max-w-5xl mx-auto px-4 md:px-8 py-6 w-full flex-1">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6 mb-8">
+        <div className="flex flex-col gap-6">
+          {/* Recently played */}
+          <div><Sk w="w-40" h="h-3" cls="mb-3" />
+            <div className="bg-[#1b2838] border border-[#2a475e] rounded-[3px] p-3 flex gap-4">
+              <div className="shimmer w-14 h-14 rounded-[2px] flex-shrink-0" />
+              <div className="flex-1 flex flex-col gap-2 justify-center">
+                <Sk w="w-48" h="h-3.5" /><Sk w="w-32" h="h-2.5" />
+              </div>
+            </div>
+          </div>
+          {/* Most recent achievement */}
+          <div><Sk w="w-48" h="h-3" cls="mb-3" />
+            <div className="bg-[#1b2838] border border-[#2a475e] rounded-[3px] p-3 flex gap-3">
+              <div className="shimmer w-12 h-12 rounded-[2px] flex-shrink-0" />
+              <div className="flex-1 flex flex-col gap-2 justify-center">
+                <Sk w="w-56" h="h-3.5" /><Sk w="w-36" h="h-2.5" /><Sk w="w-44" h="h-2.5" />
+              </div>
+            </div>
+          </div>
+          {/* Stats */}
+          <div><Sk w="w-24" h="h-3" cls="mb-3" />
+            <div className="grid grid-cols-2 gap-x-8 gap-y-1 px-1">
+              {[...Array(8)].map((_, i) => (
+                <div key={i} className="flex items-end py-[3px] gap-2">
+                  <Sk w="w-28" h="h-2.5" /><div className="flex-1 border-b border-dotted border-[#2a475e] mb-1" /><Sk w="w-16" h="h-2.5" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        {/* Sidebar */}
+        <div className="flex flex-col gap-5">
+          <div className="bg-[#1b2838] border border-[#2a475e] rounded-[3px] p-3 flex flex-col gap-3">
+            <Sk w="w-32" h="h-3" />
+            <div className="grid grid-cols-4 gap-2">
+              {[...Array(4)].map((_, i) => <div key={i} className="shimmer aspect-square rounded-[2px]" />)}
+            </div>
+          </div>
+          <div className="bg-[#1b2838] border border-[#2a475e] rounded-[3px] p-3 flex flex-col gap-3">
+            <Sk w="w-28" h="h-3" />
+            <div className="grid grid-cols-3 gap-2">
+              {[...Array(3)].map((_, i) => <div key={i} className="shimmer aspect-square rounded-[2px]" />)}
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Tab bar skeleton */}
+      <div className="flex gap-6 border-b border-[#2a475e] mb-4 pb-2">
+        {[...Array(4)].map((_, i) => <Sk key={i} w="w-24" h="h-3.5" />)}
+      </div>
+      {/* Game card skeletons */}
+      {[...Array(3)].map((_, i) => (
+        <div key={i} className="shimmer h-[90px] rounded-[3px] mb-3" />
+      ))}
+    </main>
+  </div>
+);
+
+const GameCardSkeleton = () => (
+  <div className="bg-[#202d39] border border-[#323f4c] border-l-[3px] border-l-[#323f4c] rounded-[3px] p-3 flex gap-4">
+    <div className="shimmer w-16 h-16 md:w-20 md:h-20 rounded-[2px] flex-shrink-0" />
+    <div className="flex-1 flex flex-col gap-2 justify-center">
+      <Sk w="w-3/4" h="h-3.5" /><Sk w="w-1/2" h="h-2.5" />
+      <div className="flex gap-2 mt-1"><Sk w="w-20" h="h-2" /><Sk w="w-16" h="h-2" /></div>
+    </div>
+  </div>
+);
+
+const ActivitySkeleton = () => (
+  <div className="flex flex-col gap-6">
+    {/* Heatmap */}
+    <div>
+      <div className="flex items-center gap-2 border-b border-[#2a475e] pb-1.5 mb-3">
+        <div className="shimmer w-[3px] h-[14px] rounded-[1px]" />
+        <Sk w="w-24" h="h-3.5" /><Sk w="w-48" h="h-2.5" cls="ml-auto" />
+      </div>
+      <div className="shimmer w-full h-[96px] rounded-[2px]" />
+    </div>
+    {/* Timeline */}
+    <div>
+      <div className="flex items-center gap-2 border-b border-[#2a475e] pb-1.5 mb-3">
+        <div className="shimmer w-[3px] h-[14px] rounded-[1px]" />
+        <Sk w="w-32" h="h-3.5" />
+      </div>
+      {[...Array(3)].map((_, i) => (
+        <div key={i} className="mb-4">
+          <div className="flex items-center gap-2 mb-2"><div className="shimmer w-2 h-2 rounded-full" /><Sk w="w-32" h="h-2.5" /></div>
+          <div className="ml-4 border-l border-[#2a475e] pl-3 flex flex-col gap-1.5">
+            {[...Array(2)].map((_, j) => (
+              <div key={j} className="flex items-center gap-2 p-2 bg-[#1b2838] border border-[#2a475e] rounded-[2px]">
+                <div className="shimmer w-8 h-8 rounded-[2px] flex-shrink-0" />
+                <div className="flex-1 flex flex-col gap-1.5"><Sk w="w-3/4" h="h-2.5" /><Sk w="w-1/2" h="h-2" /></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
 export default function App() {
-  const [rawData, setRawData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  // ── Split data state ─────────────────────────────────────
+  const [profileData,      setProfileData]      = useState(null); // profile.json
+  const [achievementsData, setAchievementsData] = useState(null); // achievements.json
+  const [gamesData,        setGamesData]        = useState(null); // games.json
+
+  const [loadingProfile,      setLoadingProfile]      = useState(true);
+  const [loadingAchievements, setLoadingAchievements] = useState(false);
+  const [loadingGames,        setLoadingGames]        = useState(false);
   const [error, setError] = useState(null);
-  const [activeTab, setActiveTab] = useState('recent');
-  const [progressSort, setProgressSort] = useState('overall'); // 'overall' | 'progression'
+
+  const VALID_TABS = ['recent', 'progress', 'activity', 'backlog'];
+  const initialTab = (() => {
+    const p = new URLSearchParams(window.location.search).get('tab');
+    return VALID_TABS.includes(p) ? p : 'recent';
+  })();
+
+  const [activeTab, setActiveTab] = useState(initialTab);
+  const [progressSort, setProgressSort] = useState('overall');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [watchlistSearch, setWatchlistSearch] = useState('');
   const [watchlistStatusFilter, setWatchlistStatusFilter] = useState('all');
-  const [watchlistGrouping, setWatchlistGrouping] = useState('none'); // 'none' | 'console' | 'status'
+  const [watchlistGrouping, setWatchlistGrouping] = useState('none');
   const [collapsedGroups, setCollapsedGroups] = useState(new Set());
+
+  const setTab = (tab) => {
+    setActiveTab(tab);
+    const url = new URL(window.location);
+    url.searchParams.set('tab', tab);
+    window.history.replaceState({}, '', url);
+  };
 
   const toggleGroup = (key) => setCollapsedGroups(prev => {
     const next = new Set(prev); next.has(key) ? next.delete(key) : next.add(key); return next;
   });
+
+  // ── Fetch profile.json on mount (always needed) ───────────
+  useEffect(() => {
+    fetch('../data/retroachievements/profile.json')
+      .then(r => { if (!r.ok) throw new Error('Failed to load profile.json'); return r.json(); })
+      .then(data => { setProfileData(data); setLoadingProfile(false); })
+      .catch(err => { setError(err.message); setLoadingProfile(false); });
+  }, []);
+
+  // ── Fetch achievements.json when Activity tab is opened ───
+  useEffect(() => {
+    if (activeTab === 'activity' && !achievementsData && !loadingAchievements) {
+      setLoadingAchievements(true);
+      fetch('../data/retroachievements/achievements.json')
+        .then(r => { if (!r.ok) throw new Error('Failed to load achievements.json'); return r.json(); })
+        .then(data => { setAchievementsData(data); setLoadingAchievements(false); })
+        .catch(err => { console.error(err); setLoadingAchievements(false); });
+    }
+  }, [activeTab]);
+
+  // ── Fetch games.json when Recent or Progress tab is opened ─
+  useEffect(() => {
+    if (['recent', 'progress'].includes(activeTab) && !gamesData && !loadingGames) {
+      setLoadingGames(true);
+      fetch('../data/retroachievements/games.json')
+        .then(r => { if (!r.ok) throw new Error('Failed to load games.json'); return r.json(); })
+        .then(data => { setGamesData(data); setLoadingGames(false); })
+        .catch(err => { console.error(err); setLoadingGames(false); });
+    }
+  }, [activeTab]);
+
+  // ── Merge all three into the shape transformData expects ──
+  const rawData = useMemo(() => {
+    if (!profileData) return null;
+    return {
+      ...profileData,
+      recentAchievements:   achievementsData?.recentAchievements   ?? [],
+      detailedGameProgress: gamesData?.detailedGameProgress        ?? {},
+    };
+  }, [profileData, achievementsData, gamesData]);
+
+  const { profile: PROFILE_DATA, games: ALL_GAMES, backlog: BACKLOG, recentAchievements: RECENT_ACHIEVEMENTS } = useMemo(() => transformData(rawData), [rawData]);
 
   useEffect(() => {
     const onScroll = () => setShowScrollTop(window.scrollY > 400);
@@ -987,26 +1179,7 @@ export default function App() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  useEffect(() => {
-    fetch('./data.json')
-      .then(response => {
-        if (!response.ok) throw new Error("Failed to load data.json");
-        return response.json();
-      })
-      .then(data => {
-        setRawData(data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error(err);
-        setError(err.message);
-        setLoading(false);
-      });
-  }, []);
-
-  const { profile: PROFILE_DATA, games: ALL_GAMES, backlog: BACKLOG, recentAchievements: RECENT_ACHIEVEMENTS } = useMemo(() => transformData(rawData), [rawData]);
-
-  if (loading) return <div className="min-h-screen bg-[#171a21] flex items-center justify-center text-[#c6d4df]">Loading Profile...</div>;
+  if (loadingProfile) return <ProfileLoadingSkeleton />;
   if (error || !PROFILE_DATA) return (
     <div className="min-h-screen bg-[#171a21] flex flex-col items-center justify-center text-[#c6d4df] p-4">
         <AlertCircle className="text-[#ff6b6b] mb-2" size={48} />
@@ -1018,7 +1191,7 @@ export default function App() {
   let displayedGames = [...ALL_GAMES];
   if (activeTab === 'recent') {
     displayedGames.sort((a, b) => new Date(b.lastPlayedStr || 0) - new Date(a.lastPlayedStr || 0));
-    displayedGames = displayedGames.slice(0, 5);
+    displayedGames = displayedGames.slice(0, 15);
   } else if (activeTab === 'progress') {
     displayedGames = displayedGames
       .filter(g => g.achievementsUnlocked > 0 && g.achievementsTotal > 0)
@@ -1039,11 +1212,11 @@ export default function App() {
       
       {/* Topbar */}
       <div className="bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
-        <span className="text-[#546270] font-bold tracking-[0.15em] uppercase">RetroAchievements</span>
+        <a href="../" className="text-[#546270] font-bold tracking-[0.15em] uppercase hover:text-[#8f98a0] transition-colors">Yozuryu</a>
         <span className="text-[#2a475e]">›</span>
-        <span className="text-[#8f98a0]">Profile</span>
+        <a href="../" className="text-[#546270] hover:text-[#8f98a0] transition-colors">Gaming Profile</a>
         <span className="text-[#2a475e]">›</span>
-        <span className="text-[#8f98a0]">{PROFILE_DATA.username}</span>
+        <span className="text-[#c6d4df]">RetroAchievements</span>
       </div>
 
       {/* Header */}
@@ -1336,7 +1509,7 @@ export default function App() {
 
         <div className="flex items-center gap-6 mb-4 border-b border-[#2a475e]">
           <button 
-            onClick={() => setActiveTab('recent')}
+            onClick={() => setTab('recent')}
             className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'recent' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
           >
             Recent Games
@@ -1344,7 +1517,7 @@ export default function App() {
           </button>
           
           <button 
-            onClick={() => setActiveTab('progress')}
+            onClick={() => setTab('progress')}
             className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'progress' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
           >
             Completion Progress
@@ -1352,7 +1525,7 @@ export default function App() {
           </button>
 
           <button 
-            onClick={() => setActiveTab('activity')}
+            onClick={() => setTab('activity')}
             className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'activity' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
           >
             Activity
@@ -1360,41 +1533,20 @@ export default function App() {
           </button>
 
           <button 
-            onClick={() => setActiveTab('backlog')}
+            onClick={() => setTab('backlog')}
             className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'backlog' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
           >
             Watchlist
             {activeTab === 'backlog' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}
           </button>
 
-          {activeTab === 'progress' && (
-            <div className="ml-auto flex items-center gap-1 pb-2">
-              <span className="text-[9px] text-[#546270] uppercase tracking-wider mr-1">Sort</span>
-              {[
-                { value: 'overall',     label: 'Overall',     color: 'active:blue' },
-                { value: 'progression', label: 'Progression', color: 'active:gold' },
-              ].map(opt => (
-                <button
-                  key={opt.value}
-                  onClick={() => setProgressSort(opt.value)}
-                  className={`text-[9px] font-semibold uppercase tracking-wider px-2 py-[3px] rounded-[2px] border transition-colors flex items-center gap-1 ${
-                    progressSort === opt.value
-                      ? opt.value === 'progression'
-                        ? 'bg-[#e5b143] text-[#101214] border-[#e5b143]'
-                        : 'bg-[#66c0f4] text-[#101214] border-[#66c0f4]'
-                      : 'bg-[#101214] text-[#8f98a0] border-[#323f4c] hover:text-[#c6d4df] hover:border-[#546270]'
-                  }`}
-                >
-                  {opt.label}
-                </button>
-              ))}
-            </div>
-          )}
         </div>
 
         <div className="flex flex-col gap-3">
           {activeTab === 'activity' ? (
-            <ActivityTab achievements={RECENT_ACHIEVEMENTS} refTime={rawData?.metadata?.extractionTimestamp} />
+            loadingAchievements
+              ? <ActivitySkeleton />
+              : <ActivityTab achievements={RECENT_ACHIEVEMENTS} refTime={rawData?.metadata?.extractionTimestamp} />
           ) : activeTab === 'backlog' ? (
             <>{(() => {
               // ── helpers ──────────────────────────────────────────────
@@ -1433,14 +1585,14 @@ export default function App() {
                 });
               }
 
-              // Table columns depend on grouping
+              // Table columns — responsive via CSS classes, not inline styles
               const showConsole  = watchlistGrouping !== 'console';
-              const cols = `28px 1fr ${showConsole ? '100px ' : ''}60px 90px`;
+              const colClass = showConsole ? 'wl-row-full' : 'wl-row-noconsole';
               const headers = [
                 { label: '', cls: '' },
                 { label: 'Title', cls: '' },
-                ...(showConsole ? [{ label: 'Console', cls: '' }] : []),
-                { label: 'Pts', cls: 'text-right' },
+                ...(showConsole ? [{ label: 'Console', cls: 'wl-hide-mobile' }] : []),
+                { label: 'Pts', cls: 'wl-hide-mobile text-right' },
                 { label: 'Progress', cls: 'text-right' },
               ];
 
@@ -1451,7 +1603,7 @@ export default function App() {
                 const hasNoAch     = status === 'noach';
                 const stripe = isMastered ? 'border-l-[#e5b143]' : isInProgress ? 'border-l-[#66c0f4]' : hasNoAch ? 'border-l-[#1e2a35]' : 'border-l-[#546270]';
                 return (
-                  <div key={game.id} className={`grid gap-2 px-3 py-[5px] border-b border-[#1b2838] last:border-b-0 items-center hover:bg-[#1b2838] transition-colors border-l-[2px] ${stripe} ${hasNoAch ? 'opacity-50' : ''}`} style={{gridTemplateColumns: cols}}>
+                  <div key={game.id} className={`grid gap-2 px-3 py-[5px] border-b border-[#1b2838] last:border-b-0 items-center hover:bg-[#1b2838] transition-colors border-l-[2px] ${stripe} ${hasNoAch ? 'opacity-50' : ''} ${colClass}`}>
                     <a href={`${SITE_URL}/game/${game.id}`} target="_blank" rel="noreferrer" className="shrink-0 w-6 h-6 rounded-[2px] overflow-hidden border border-[#101214] bg-black block hover:scale-110 transition-transform">
                       <img src={game.icon} alt={game.title} className="w-full h-full object-cover" />
                     </a>
@@ -1469,8 +1621,8 @@ export default function App() {
                         {hasNoAch && <span className="text-[8px] text-[#323f4c] flex items-center gap-1"><ShieldOff size={8}/> No Achievements</span>}
                       </>}
                     </div>
-                    {showConsole && <span className="text-[10px] text-[#66c0f4] truncate">{game.console}</span>}
-                    <span className="text-[10px] text-[#8f98a0] text-right">{game.pointsTotal > 0 ? game.pointsTotal.toLocaleString() : <span className="text-[#323f4c]">—</span>}</span>
+                    {showConsole && <span className="wl-hide-mobile text-[10px] text-[#66c0f4] truncate">{game.console}</span>}
+                    <span className="wl-hide-mobile text-[10px] text-[#8f98a0] text-right">{game.pointsTotal > 0 ? game.pointsTotal.toLocaleString() : <span className="text-[#323f4c]">—</span>}</span>
                     <div className="flex items-center justify-end">
                       {hasNoAch ? <span className="text-[10px] text-[#323f4c]">—</span>
                         : isMastered   ? <span className="text-[7px] font-bold uppercase tracking-wider px-1.5 py-[1px] rounded-[2px] bg-[#e5b143] text-[#101214]">Mastered</span>
@@ -1537,8 +1689,8 @@ export default function App() {
 
                   {/* Table */}
                   <div className="border border-[#2a475e] rounded-[2px] overflow-hidden">
-                    {/* Header — fixed readable colour */}
-                    <div className="grid gap-2 px-3 py-2 bg-[#172333] border-b border-[#2a475e]" style={{gridTemplateColumns: cols}}>
+                    {/* Header */}
+                    <div className={`grid gap-2 px-3 py-2 bg-[#172333] border-b border-[#2a475e] items-center ${colClass}`}>
                       {headers.map((h, i) => (
                         <span key={i} className={`text-[9px] font-bold uppercase tracking-[0.1em] text-[#8f98a0] whitespace-nowrap ${h.cls}`}>{h.label}</span>
                       ))}
@@ -1571,9 +1723,37 @@ export default function App() {
               );
             })()}</>
           ) : (
-            displayedGames.map(game => (
-              <GameCard key={game.id} game={game} />
-            ))
+            loadingGames
+              ? <>{[...Array(5)].map((_, i) => <GameCardSkeleton key={i} />)}</>
+              : <>
+              {/* Sort bar — only for Completion Progress */}
+              {activeTab === 'progress' && (
+                <div className="flex items-center gap-2">
+                  <span className="text-[9px] text-[#546270] uppercase tracking-wider">Sort</span>
+                  {[
+                    { value: 'overall',     label: 'Overall'     },
+                    { value: 'progression', label: 'Progression' },
+                  ].map(opt => (
+                    <button
+                      key={opt.value}
+                      onClick={() => setProgressSort(opt.value)}
+                      className={`text-[9px] font-semibold uppercase tracking-wider px-2 py-[3px] rounded-[2px] border transition-colors ${
+                        progressSort === opt.value
+                          ? opt.value === 'progression'
+                            ? 'bg-[#e5b143] text-[#101214] border-[#e5b143]'
+                            : 'bg-[#66c0f4] text-[#101214] border-[#66c0f4]'
+                          : 'bg-[#101214] text-[#8f98a0] border-[#323f4c] hover:text-[#c6d4df] hover:border-[#546270]'
+                      }`}
+                    >
+                      {opt.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+              {displayedGames.map(game => (
+                <GameCard key={game.id} game={game} />
+              ))}
+            </>
           )}
         </div>
 
@@ -1631,6 +1811,27 @@ export default function App() {
         .mask-fade {
            mask-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
            -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+
+        /* Shimmer skeleton */
+        @keyframes shimmer {
+          0%   { background-position: -800px 0; }
+          100% { background-position:  800px 0; }
+        }
+        .shimmer {
+          background: linear-gradient(90deg, #1b2838 25%, #2a3f52 50%, #1b2838 75%);
+          background-size: 800px 100%;
+          animation: shimmer 1.6s infinite linear;
+          border-radius: 2px;
+        }
+
+        /* Watchlist responsive grid */
+        .wl-row-full    { grid-template-columns: 28px 1fr 90px 50px 80px; }
+        .wl-row-noconsole { grid-template-columns: 28px 1fr 50px 80px; }
+        @media (max-width: 639px) {
+          .wl-row-full      { grid-template-columns: 28px 1fr 80px; }
+          .wl-row-noconsole { grid-template-columns: 28px 1fr 80px; }
+          .wl-hide-mobile   { display: none !important; }
         }
 
 
