@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-03-25T12:40:21.060Z"
+        "extractionTimestamp": "2026-03-25T15:58:35.989Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 59536,
+        "rank": 59546,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 135363,
+        "totalRanked": 135381,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -4726,7 +4726,7 @@
         "gameIcon": "/Images/123011.png",
         "gameId": 16452,
         "consoleName": "PlayStation Portable",
-        "cumulScore": 289,
+        "cumulScore": 288,
         "badgeUrl": "/Badge/649946.png",
         "gameUrl": "/game/16452"
     },
@@ -4749,7 +4749,7 @@
         "scoreAchievedHardcore": 0
     },
     "points7Days": 50,
-    "points30Days": 157,
+    "points30Days": 155,
     "activityHeatmap": {
         "2025-12-24": {
             "points": 7,
