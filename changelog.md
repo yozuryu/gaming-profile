@@ -29,26 +29,38 @@
 ### Hub
 
 - Sticky topbar added
+- `data/hub/profile.json` renamed to `data/hub/config.json`
+- Per-platform config with `visible` and `active` flags; active/coming soon counts derived dynamically
+- Active/coming soon text hidden when count is 0
+- Cards with `visible: false` are hidden; grid recenters for fewer than 3 visible platforms
+- Header subtitle size bumped from 9px to 11px
+- Back-to-top button added (same as RA page)
+- Recently played row spacing improved; rows use `flex:1` to fill card height evenly on both RA and Steam cards
+- Row text gap added (2px) between title and sub lines
+
+### Steam pipeline
+
+- Env var renamed from `STEAM_ID` to `STEAM_USER_ID` to match GitHub Actions workflow secret name
 
 ---
 
 ## 2026-03-24
 
-- Hub profile data (`username`, `motto`, `tags`, `platforms`) moved to `data/hub/profile.json`; `index.html` renders it dynamically ([`783acdd`](https://github.com/yozuryu/gaming-profile/commit/783acdda26d2cfd0842d22be9042d5848a1aeb86))
-- Want-to-play list now paginates to fetch all items beyond the 500-item API limit ([`783acdd`](https://github.com/yozuryu/gaming-profile/commit/783acdda26d2cfd0842d22be9042d5848a1aeb86))
-- `profile.js` refactored: non-JSX code extracted into `utils/constants.js`, `utils/helpers.js`, and `utils/transform.js` ([`783acdd`](https://github.com/yozuryu/gaming-profile/commit/783acdda26d2cfd0842d22be9042d5848a1aeb86))
-- Stats pills: points shown in gold to improve visual hierarchy ([`783acdd`](https://github.com/yozuryu/gaming-profile/commit/783acdda26d2cfd0842d22be9042d5848a1aeb86))
-- Activity tab now lazy-loads achievements in 3-month chunks; heatmap stays complete using precomputed data from `profile.json` ([`425a2a2`](https://github.com/yozuryu/gaming-profile/commit/425a2a29d314684ffa1d49c42158a0fa436efbea))
-- Game title tilde tags (`~Homebrew~`, `~Hack~`, etc.) displayed as badges across dashboard and hub ([`425a2a2`](https://github.com/yozuryu/gaming-profile/commit/425a2a29d314684ffa1d49c42158a0fa436efbea))
-- Pipeline supports incremental mode (skips cached games) and splits achievement data into quarterly files ([`425a2a2`](https://github.com/yozuryu/gaming-profile/commit/425a2a29d314684ffa1d49c42158a0fa436efbea))
-- Automated GitHub Actions workflow — fetches data every 3 hours and does a full refresh at midnight, commits results to main ([`e68d4c5`](https://github.com/yozuryu/gaming-profile/commit/e68d4c5a1e495c87ccb8ea40654fbe63e39dac25))
-- Scripts reorganized into `scripts/` folder; `package.json` at root with `npm run` commands for all tasks ([`e68d4c5`](https://github.com/yozuryu/gaming-profile/commit/e68d4c5a1e495c87ccb8ea40654fbe63e39dac25))
+- Hub profile data (`username`, `motto`, `tags`, `platforms`) moved to `data/hub/profile.json`; `index.html` renders it dynamically
+- Want-to-play list now paginates to fetch all items beyond the 500-item API limit
+- `profile.js` refactored: non-JSX code extracted into `utils/constants.js`, `utils/helpers.js`, and `utils/transform.js`
+- Stats pills: points shown in gold to improve visual hierarchy
+- Activity tab now lazy-loads achievements in 3-month chunks; heatmap stays complete using precomputed data from `profile.json`
+- Game title tilde tags (`~Homebrew~`, `~Hack~`, etc.) displayed as badges across dashboard and hub
+- Pipeline supports incremental mode (skips cached games) and splits achievement data into quarterly files
+- Automated GitHub Actions workflow — fetches data every 3 hours and does a full refresh at midnight, commits results to main
+- Scripts reorganized into `scripts/` folder; `package.json` at root with `npm run` commands for all tasks
 
 ---
 
 ## 2025-03-23 — Initial release
 
-- Hub page with RetroAchievements card; Steam and Xbox coming-soon placeholders ([`914acb1`](https://github.com/yozuryu/gaming-profile/commit/914acb12c813616eaf7c6bd6f4dc5911b879201f))
-- RA dashboard: Overview, Recent Games, Completion Progress, Activity (heatmap + timeline), Watchlist ([`914acb1`](https://github.com/yozuryu/gaming-profile/commit/914acb12c813616eaf7c6bd6f4dc5911b879201f))
-- Shimmer skeleton loading, mobile-responsive layout ([`4b72bbe`](https://github.com/yozuryu/gaming-profile/commit/4b72bbe0556ce6a50f0a160f6f47e6caa137dd8c))
-- ETL pipeline with 1-year achievement fetch, Firebase Firestore sync (disabled) ([`914acb1`](https://github.com/yozuryu/gaming-profile/commit/914acb12c813616eaf7c6bd6f4dc5911b879201f))
+- Hub page with RetroAchievements card; Steam and Xbox coming-soon placeholders
+- RA dashboard: Overview, Recent Games, Completion Progress, Activity (heatmap + timeline), Watchlist
+- Shimmer skeleton loading, mobile-responsive layout
+- ETL pipeline with 1-year achievement fetch, Firebase Firestore sync (disabled)

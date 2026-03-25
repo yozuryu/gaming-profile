@@ -6,8 +6,9 @@
     "style": ["Cel-Shaded", "Pixel Art", "Story Driven"]
   },
   "platforms": {
-    "active": 2,
-    "comingSoon": 1
+    "retroachievements": { "visible": true, "active": true },
+    "steam":             { "visible": true, "active": true },
+    "xbox":              { "visible": true, "active": false }
   },
   "siteUrl": "yozuryu.github.io/gaming-profile"
 }

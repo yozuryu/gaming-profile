@@ -1019,6 +1019,26 @@
             "cumulScore": 174,
             "badgeUrl": "/Badge/633759.png",
             "gameUrl": "/game/2666"
+        },
+        {
+            "date": "2025-12-24 16:11:00",
+            "hardcoreMode": true,
+            "achievementId": 507171,
+            "title": "Saving Private Rayman",
+            "description": "Reach the end of the opening tunnel escape sequence.",
+            "badgeName": "585422",
+            "points": 1,
+            "trueRatio": 1,
+            "type": "progression",
+            "author": "MajinWamu",
+            "authorUlid": "01ATP7APRR1RYEP7ZCHQBHPD8Z",
+            "gameTitle": "Rayman 2: Revolution",
+            "gameIcon": "/Images/111819.png",
+            "gameId": 2995,
+            "consoleName": "PlayStation 2",
+            "cumulScore": 175,
+            "badgeUrl": "/Badge/585422.png",
+            "gameUrl": "/game/2995"
         }
     ]
 }
