@@ -2,7 +2,7 @@ name: Fetch Steam Data
 
 run-name: >-
   ${{ github.event_name == 'workflow_dispatch' && format('Steam Data — manual ({0})', inputs.mode) ||
-      github.event.schedule == '0 0 * * *'      && 'Steam Data — midnight unlock refresh' ||
+      github.event.schedule == '10 0 * * *'      && 'Steam Data — midnight unlock refresh' ||
       'Steam Data — 3h incremental' }}
 
 on:
