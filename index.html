@@ -103,11 +103,7 @@
         <p id="header-motto" class="text-[10px] text-[#8f98a0] italic border-l-2 border-[#2a475e] pl-2 leading-snug"></p>
         <!-- Genre tags -->
         <div id="header-tags" class="flex flex-wrap gap-1.5"></div>
-        <p class="text-[11px] text-[#546270]">
-          Last updated <span id="hub-updated" class="text-[#8f98a0]">loading…</span>
-          <span id="hub-active-wrap"><span class="mx-1.5 text-[#2a475e]">·</span><span id="hub-active" class="text-[#66c0f4] font-semibold"></span> active</span>
-          <span id="hub-coming-soon-wrap"><span class="mx-1 text-[#2a475e]">·</span><span id="hub-coming-soon" class="text-[#546270] font-semibold"></span> coming soon</span>
-        </p>
+        <p class="text-[11px] text-[#546270]">Last updated <span id="hub-updated" class="text-[#8f98a0]">loading…</span></p>
       </div>
     </div>
   </header>
@@ -328,14 +324,6 @@
         const genreTags = (p.tags?.genre ?? []).map(t => `<span class="tag tag-blue">${t}</span>`);
         const styleTags = (p.tags?.style ?? []).map(t => `<span class="tag tag-grey">${t}</span>`);
         tagsEl.innerHTML = [...genreTags, ...styleTags].join('');
-
-        const plats     = Object.values(p.platforms ?? {});
-        const active    = plats.filter(pl => pl.visible && pl.active).length;
-        const comingSoon = plats.filter(pl => pl.visible && !pl.active).length;
-        document.getElementById('hub-active').textContent      = active;
-        document.getElementById('hub-coming-soon').textContent = comingSoon;
-        document.getElementById('hub-active-wrap').style.display      = active     ? '' : 'none';
-        document.getElementById('hub-coming-soon-wrap').style.display = comingSoon ? '' : 'none';
 
         // Show/hide platform cards based on visible flag
         const platformMap = p.platforms ?? {};

@@ -119,6 +119,12 @@ const Heatmap = ({ achievements, filter, selectedDay, onSelectDay }) => {
         return '#1a4a70';
     };
 
+    const legendColors = filter === 'ra'
+        ? ['#101214', '#3d2507', '#7a4a10', '#c8901a', '#e5b143']
+        : filter === 'steam'
+        ? ['#101214', '#0d2a3d', '#1a5275', '#2a7bba', '#66c0f4']
+        : ['#101214', '#1a4a70', '#2a6b9e', '#66c0f4', '#e5b143'];
+
     return (
         <div className="overflow-x-auto">
             <div style={{ minWidth: `${53 * 14}px` }}>
@@ -159,6 +165,13 @@ const Heatmap = ({ achievements, filter, selectedDay, onSelectDay }) => {
                             </div>
                         ))}
                     </div>
+                </div>
+                <div className="flex items-center justify-end gap-1 mt-1.5" style={{ paddingLeft: '28px' }}>
+                    <span style={{ fontSize: '8px', color: '#546270' }}>Less</span>
+                    {legendColors.map((c, i) => (
+                        <div key={i} style={{ width: '10px', height: '10px', borderRadius: '2px', background: c }} />
+                    ))}
+                    <span style={{ fontSize: '8px', color: '#546270' }}>More</span>
                 </div>
             </div>
         </div>
