@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-03-26
+
+### Activity feed
+
+- New combined activity page at `/activity/` — heatmap, platform filter (All / RA / Steam), timeline grouped by day → game session → achievement
+- Day headers are collapsible; click any heatmap cell to filter to that day
+- Game sessions show platform icon, game icon, console name (RA only), and unlock time range
+- Achievement rows show icon, name, description, and unlock time; left border colored by platform (gold = RA, blue = Steam)
+- RA game names parsed for subset and tilde tags; subset badge + name rendered inline in session header
+- Heatmap colors switch to gold/blue palette based on active platform filter
+
+### Hub
+
+- Recent Activity section added: 8 most recent combined achievements with "View all →" link to `/activity/`
+- Activity section toggled by `activity.visible` in `config.json`; hidden by default until config loads (no skeleton flash when disabled)
+- Steam horizontal overflow on mobile fixed (`overflow-x: hidden` on `html, body`)
+
+---
+
 ## 2026-03-25
 
 ### Steam
