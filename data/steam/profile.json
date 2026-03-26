@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-03-26T13:56:12.423Z"
+        "extractionTimestamp": "2026-03-26T16:20:13.906Z"
     },
     "profile": {
         "steamId": "76561198188939413",
@@ -13,17 +13,28 @@
     },
     "stats": {
         "totalGames": 1245,
-        "totalPlaytimeMin": 345054,
-        "totalPlaytimeHrs": 5751,
+        "totalPlaytimeMin": 345098,
+        "totalPlaytimeHrs": 5752,
         "gamesWithPlaytime": 815,
         "totalAchievements": 9975,
-        "unlockedAchievements": 2785,
+        "unlockedAchievements": 2786,
         "gamesWithAchievements": 168,
         "perfectCount": 15,
         "completionPct": 27,
         "avgPlaytimeMin": 423
     },
     "recentlyPlayed": [
+        {
+            "appId": 2183900,
+            "name": "Warhammer 40,000: Space Marine 2",
+            "playtime2Weeks": 159,
+            "playtimeForever": 159,
+            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/2183900/0fccfb5eb2acb934db1fe95a4e578f25ccbd71ec.jpg",
+            "storeUrl": "https://store.steampowered.com/app/2183900",
+            "lastPlayedTs": "2026-03-26T14:43:54.000Z",
+            "achUnlocked": 3,
+            "achTotal": 50
+        },
         {
             "appId": 1272840,
             "name": "Dordogne",
@@ -80,17 +91,6 @@
             "achTotal": 103
         },
         {
-            "appId": 2183900,
-            "name": "Warhammer 40,000: Space Marine 2",
-            "playtime2Weeks": 115,
-            "playtimeForever": 115,
-            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/2183900/0fccfb5eb2acb934db1fe95a4e578f25ccbd71ec.jpg",
-            "storeUrl": "https://store.steampowered.com/app/2183900",
-            "lastPlayedTs": "2026-03-17T15:01:00.000Z",
-            "achUnlocked": 2,
-            "achTotal": 50
-        },
-        {
             "appId": 1369630,
             "name": "ENDER LILIES: Quietus of the Knights",
             "playtime2Weeks": 9,
@@ -103,13 +103,13 @@
         }
     ],
     "mostRecentGame": {
-        "appId": 1272840,
-        "name": "Dordogne",
-        "playtime2Weeks": 1,
-        "playtimeForever": 286,
-        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/1272840/d117b3ead9a721e49f9ed4718fa68b0b14a5831c.jpg",
-        "storeUrl": "https://store.steampowered.com/app/1272840",
-        "lastPlayedTs": "2026-03-26T05:20:31.000Z"
+        "appId": 2183900,
+        "name": "Warhammer 40,000: Space Marine 2",
+        "playtime2Weeks": 159,
+        "playtimeForever": 159,
+        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/2183900/0fccfb5eb2acb934db1fe95a4e578f25ccbd71ec.jpg",
+        "storeUrl": "https://store.steampowered.com/app/2183900",
+        "lastPlayedTs": "2026-03-26T14:43:54.000Z"
     },
     "perfectGames": [
         {
