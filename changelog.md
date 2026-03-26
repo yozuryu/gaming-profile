@@ -20,6 +20,15 @@
 ### Structure
 
 - Platform profiles moved under `/profile/` — RA at `/profile/ra/`, Steam at `/profile/steam/`
+- `/profile/index.html` added as an instant redirect to hub (prevents directory listing)
+- `profile.js` renamed to `app.js` across all pages for consistency
+- Steam `app.js` split into `utils/constants.js` (`STEAM_STATUS`, `PROGRESS_SORTS`) and `utils/helpers.js` (formatting, URL, and rarity helpers)
+- Activity `app.js` split into `utils/constants.js`, `utils/helpers.js`, and `utils/normalizers.js` (`normalizeRA`, `normalizeSteam`)
+- Repo and app renamed from `gaming-profile` to `gaming-hub`; all "Gaming Profile" references updated to "Gaming Hub"
+
+### Hub
+
+- Hub activity `timeAgo` now shows minute/hour granularity (`5m ago`, `2h ago`) instead of day-only (`today`)
 
 ### Pipelines
 
