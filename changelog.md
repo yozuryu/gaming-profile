@@ -2,7 +2,16 @@
 
 ## 2026-03-26
 
-### Activity feed
+Combined activity feed launched at `/activity/`, hub gets a recent activity snippet, project restructured under `/profile/` and renamed to `gaming-hub`. Changelog page added.
+
+### Hub
+
+- Recent Activity section added: 8 most recent combined achievements with "View all →" link to `/activity/`
+- Activity section toggled by `activity.visible` in `config.json`; hidden by default until config loads (no skeleton flash when disabled)
+- Hub activity `timeAgo` now shows minute/hour granularity (`5m ago`, `2h ago`) instead of day-only (`today`)
+- Steam horizontal overflow on mobile fixed (`overflow-x: hidden` on `html, body`)
+
+### Hub Activity
 
 - New combined activity page at `/activity/` — heatmap, platform filter (All / RA / Steam), timeline grouped by day → game session → achievement
 - Day headers are collapsible; click any heatmap cell to filter to that day
@@ -10,12 +19,6 @@
 - Achievement rows show icon, name, description, and unlock time; left border colored by platform (gold = RA, blue = Steam)
 - RA game names parsed for subset and tilde tags; subset badge + name rendered inline in session header
 - Heatmap colors switch to gold/blue palette based on active platform filter
-
-### Hub
-
-- Recent Activity section added: 8 most recent combined achievements with "View all →" link to `/activity/`
-- Activity section toggled by `activity.visible` in `config.json`; hidden by default until config loads (no skeleton flash when disabled)
-- Steam horizontal overflow on mobile fixed (`overflow-x: hidden` on `html, body`)
 
 ### Structure
 
@@ -25,10 +28,8 @@
 - Steam `app.js` split into `utils/constants.js` (`STEAM_STATUS`, `PROGRESS_SORTS`) and `utils/helpers.js` (formatting, URL, and rarity helpers)
 - Activity `app.js` split into `utils/constants.js`, `utils/helpers.js`, and `utils/normalizers.js` (`normalizeRA`, `normalizeSteam`)
 - Repo and app renamed from `gaming-profile` to `gaming-hub`; all "Gaming Profile" references updated to "Gaming Hub"
-
-### Hub
-
-- Hub activity `timeAgo` now shows minute/hour granularity (`5m ago`, `2h ago`) instead of day-only (`today`)
+- Changelog page added at `/changelog/` — fetches and parses `changelog.md`, renders releases with collapsible sections, platform color coding, and per-release summaries
+- Changelog linked from hub footer
 
 ### Pipelines
 
@@ -37,6 +38,26 @@
 ---
 
 ## 2026-03-25
+
+Steam profile fully built out with achievement rarity system and pipeline automation; hub overhauled with dynamic config and per-platform visibility controls.
+
+### Hub
+
+- Sticky topbar added
+- `data/hub/profile.json` renamed to `data/hub/config.json`
+- Per-platform config with `visible` and `active` flags; active/coming soon counts derived dynamically
+- Active/coming soon text hidden when count is 0
+- Cards with `visible: false` are hidden; grid recenters for fewer than 3 visible platforms
+- Header subtitle size bumped from 9px to 11px
+- Back-to-top button added (same as RA page)
+- Recently played row spacing improved; rows use `flex:1` to fill card height evenly on both RA and Steam cards
+- Row text gap added (2px) between title and sub lines
+
+### RetroAchievements
+
+- Recently played games with 0 earned achievements now always fetched so they appear in the dashboard
+- Most Recently Unlocked game name hover color changed to soft white (`#c6d4df`) for clearer feedback
+- Sticky topbar and tab bar added
 
 ### Steam
 
@@ -55,39 +76,28 @@
 - Sticky topbar and tab bar added
 - Fixed inverted `mask-fade` CSS in `steam/index.html` (was fading wrong direction)
 - GitHub Actions workflow added (`fetch-steam-data.yml`): incremental every 3h at :10, unlock refresh at midnight :10
-
-### RetroAchievements
-
-- Recently played games with 0 earned achievements now always fetched so they appear in the dashboard
-- Most Recently Unlocked game name hover color changed to soft white (`#c6d4df`) for clearer feedback
-- Sticky topbar and tab bar added
-
-### Hub
-
-- Sticky topbar added
-- `data/hub/profile.json` renamed to `data/hub/config.json`
-- Per-platform config with `visible` and `active` flags; active/coming soon counts derived dynamically
-- Active/coming soon text hidden when count is 0
-- Cards with `visible: false` are hidden; grid recenters for fewer than 3 visible platforms
-- Header subtitle size bumped from 9px to 11px
-- Back-to-top button added (same as RA page)
-- Recently played row spacing improved; rows use `flex:1` to fill card height evenly on both RA and Steam cards
-- Row text gap added (2px) between title and sub lines
-
-### Steam pipeline
-
 - Env var renamed from `STEAM_ID` to `STEAM_USER_ID` to match GitHub Actions workflow secret name
 
 ---
 
 ## 2026-03-24
 
-- Hub profile data (`username`, `motto`, `tags`, `platforms`) moved to `data/hub/profile.json`; `index.html` renders it dynamically
+Hub rendered dynamically from config file; RA dashboard improvements including lazy-loaded activity, tilde tag badges, and refactored utils; automated data pipeline introduced.
+
+### Hub
+
+- Hub profile data (`username`, `motto`, `tags`, `platforms`) moved to `data/hub/config.json`; `index.html` renders it dynamically
+
+### RetroAchievements
+
 - Want-to-play list now paginates to fetch all items beyond the 500-item API limit
-- `profile.js` refactored: non-JSX code extracted into `utils/constants.js`, `utils/helpers.js`, and `utils/transform.js`
+- `app.js` refactored: non-JSX code extracted into `utils/constants.js`, `utils/helpers.js`, and `utils/transform.js`
 - Stats pills: points shown in gold to improve visual hierarchy
 - Activity tab now lazy-loads achievements in 3-month chunks; heatmap stays complete using precomputed data from `profile.json`
 - Game title tilde tags (`~Homebrew~`, `~Hack~`, etc.) displayed as badges across dashboard and hub
+
+### Structure
+
 - Pipeline supports incremental mode (skips cached games) and splits achievement data into quarterly files
 - Automated GitHub Actions workflow — fetches data every 3 hours and does a full refresh at midnight, commits results to main
 - Scripts reorganized into `scripts/` folder; `package.json` at root with `npm run` commands for all tasks
@@ -96,7 +106,17 @@
 
 ## 2025-03-23 — Initial release
 
+First release — hub page with RA card, full RA dashboard with heatmap and timeline, and ETL pipeline for data fetching.
+
+### Hub
+
 - Hub page with RetroAchievements card; Steam and Xbox coming-soon placeholders
+
+### RetroAchievements
+
 - RA dashboard: Overview, Recent Games, Completion Progress, Activity (heatmap + timeline), Watchlist
 - Shimmer skeleton loading, mobile-responsive layout
+
+### Structure
+
 - ETL pipeline with 1-year achievement fetch, Firebase Firestore sync (disabled)
