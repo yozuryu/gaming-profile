@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-03-26T16:01:48.762Z"
+        "extractionTimestamp": "2026-03-26T17:14:17.360Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Playing Hatsune Miku: Project DIVA",
-        "lastGameId": 3921,
+        "richPresenceMsg": "Lv32 Samurai, Lv32 Psychic, and Lv32 Hacker | City Hall | Ch3: 10/33 quests | 16h38",
+        "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1315,
+        "totalPoints": 1320,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 4434,
+        "totalTruePoints": 4457,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Playing Hatsune Miku: Project DIVA",
-        "richPresenceMsgDate": "2026-03-25 16:20:01",
-        "lastGameId": 3921,
+        "richPresenceMsg": "Lv32 Samurai, Lv32 Psychic, and Lv32 Hacker | City Hall | Ch3: 10/33 quests | 16h38",
+        "richPresenceMsgDate": "2026-03-26 17:10:50",
+        "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1315,
+        "totalPoints": 1320,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 4434,
+        "totalTruePoints": 4457,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 59631,
+        "rank": 59500,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 135571,
+        "totalRanked": 135578,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1315,
+        "points": 1320,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -99,6 +99,24 @@
         ]
     },
     "recentlyPlayedGames": [
+        {
+            "gameId": 16452,
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "title": "7th Dragon 2020",
+            "imageIcon": "/Images/123011.png",
+            "imageTitle": "/Images/110687.png",
+            "imageIngame": "/Images/110689.png",
+            "imageBoxArt": "/Images/110688.png",
+            "lastPlayed": "2026-03-26 17:10:50",
+            "achievementsTotal": 80,
+            "numPossibleAchievements": 80,
+            "possibleScore": 475,
+            "numAchieved": 20,
+            "scoreAchieved": 82,
+            "numAchievedHardcore": 20,
+            "scoreAchievedHardcore": 82
+        },
         {
             "gameId": 3921,
             "consoleId": 41,
@@ -244,24 +262,6 @@
             "scoreAchievedHardcore": 0
         },
         {
-            "gameId": 16452,
-            "consoleId": 41,
-            "consoleName": "PlayStation Portable",
-            "title": "7th Dragon 2020",
-            "imageIcon": "/Images/123011.png",
-            "imageTitle": "/Images/110687.png",
-            "imageIngame": "/Images/110689.png",
-            "imageBoxArt": "/Images/110688.png",
-            "lastPlayed": "2026-03-23 16:51:59",
-            "achievementsTotal": 80,
-            "numPossibleAchievements": 80,
-            "possibleScore": 475,
-            "numAchieved": 19,
-            "scoreAchieved": 77,
-            "numAchievedHardcore": 19,
-            "scoreAchievedHardcore": 77
-        },
-        {
             "gameId": 3572,
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
@@ -381,9 +381,9 @@
                 "consoleId": 41,
                 "consoleName": "PlayStation Portable",
                 "maxPossible": 80,
-                "numAwarded": 19,
-                "numAwardedHardcore": 19,
-                "mostRecentAwardedDate": "2026-03-23T16:51:59+00:00",
+                "numAwarded": 20,
+                "numAwardedHardcore": 20,
+                "mostRecentAwardedDate": "2026-03-26T17:06:34+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -4711,14 +4711,14 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-03-23 16:51:59",
+        "date": "2026-03-26 17:06:34",
         "hardcoreMode": true,
-        "achievementId": 572172,
-        "title": "Quest: Yikes! Monster Mess",
-        "description": "Complete the Yikes! Monster Mess quest",
-        "badgeName": "649946",
-        "points": 3,
-        "trueRatio": 12,
+        "achievementId": 572195,
+        "title": "Cultivation Set 2",
+        "description": "Receive the reward for rescuing 30 people",
+        "badgeName": "649969",
+        "points": 5,
+        "trueRatio": 23,
         "type": null,
         "author": "Jamiras",
         "authorUlid": "01BJY8JSBTA7NVT0NYSVDCK5TY",
@@ -4726,30 +4726,30 @@
         "gameIcon": "/Images/123011.png",
         "gameId": 16452,
         "consoleName": "PlayStation Portable",
-        "cumulScore": 287,
-        "badgeUrl": "/Badge/649946.png",
+        "cumulScore": 292,
+        "badgeUrl": "/Badge/649969.png",
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
-        "gameId": 3921,
+        "gameId": 16452,
         "consoleId": 41,
         "consoleName": "PlayStation Portable",
-        "title": "Hatsune Miku: Project DIVA",
-        "imageIcon": "/Images/061882.png",
-        "imageTitle": "/Images/046940.png",
-        "imageIngame": "/Images/046941.png",
-        "imageBoxArt": "/Images/046939.png",
-        "lastPlayed": "2026-03-25 16:20:01",
-        "achievementsTotal": 95,
-        "numPossibleAchievements": 95,
-        "possibleScore": 833,
-        "numAchieved": 0,
-        "scoreAchieved": 0,
-        "numAchievedHardcore": 0,
-        "scoreAchievedHardcore": 0
+        "title": "7th Dragon 2020",
+        "imageIcon": "/Images/123011.png",
+        "imageTitle": "/Images/110687.png",
+        "imageIngame": "/Images/110689.png",
+        "imageBoxArt": "/Images/110688.png",
+        "lastPlayed": "2026-03-26 17:10:50",
+        "achievementsTotal": 80,
+        "numPossibleAchievements": 80,
+        "possibleScore": 475,
+        "numAchieved": 20,
+        "scoreAchieved": 82,
+        "numAchievedHardcore": 20,
+        "scoreAchievedHardcore": 82
     },
-    "points7Days": 17,
-    "points30Days": 152,
+    "points7Days": 22,
+    "points30Days": 157,
     "activityHeatmap": {
         "2025-12-27": {
             "points": 5,
@@ -4854,6 +4854,10 @@
         "2026-03-23": {
             "points": 17,
             "count": 4
+        },
+        "2026-03-26": {
+            "points": 5,
+            "count": 1
         },
         "2025-09-26": {
             "points": 37,
