@@ -779,9 +779,9 @@ const App = () => {
     // Load profile + achievements on mount (both needed for overview)
     useEffect(() => {
         Promise.all([
-            fetch('../data/steam/profile.json')
+            fetch('../../data/steam/profile.json')
                 .then(r => { if (!r.ok) throw new Error('Steam data not found'); return r.json(); }),
-            fetch('../data/steam/achievements.json')
+            fetch('../../data/steam/achievements.json')
                 .then(r => r.json())
                 .catch(() => ({ recentAchievements: [] })),
         ]).then(([p, a]) => {
@@ -794,7 +794,7 @@ const App = () => {
     // Load games.json when Recent or Progress tab opens
     useEffect(() => {
         if (['recent', 'progress'].includes(activeTab) && profileData && !gamesData) {
-            fetch('../data/steam/games.json')
+            fetch('../../data/steam/games.json')
                 .then(r => r.json())
                 .then(setGamesData)
                 .catch(() => setGamesData({ achievementProgress: {} }));
@@ -858,9 +858,9 @@ const App = () => {
 
             {/* Topbar */}
             <div className="sticky top-0 z-50 bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
-                <a href="../" className="text-[#546270] font-bold tracking-[0.15em] uppercase hover:text-[#8f98a0] transition-colors">Yozuryu</a>
+                <a href="../../" className="text-[#546270] font-bold tracking-[0.15em] uppercase hover:text-[#8f98a0] transition-colors">Yozuryu</a>
                 <span className="text-[#2a475e]">›</span>
-                <a href="../" className="text-[#546270] hover:text-[#8f98a0] transition-colors">Gaming Profile</a>
+                <a href="../../" className="text-[#546270] hover:text-[#8f98a0] transition-colors">Gaming Profile</a>
                 <span className="text-[#2a475e]">›</span>
                 <span className="text-[#c6d4df]">Steam</span>
             </div>

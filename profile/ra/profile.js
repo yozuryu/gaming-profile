@@ -893,7 +893,7 @@ export default function App() {
     const nextIdx = achievementChunks.findIndex(c => c === null);
     if (nextIdx === -1 || loadingChunkIdx !== null) return;
     setLoadingChunkIdx(nextIdx);
-    fetch(`../data/retroachievements/achievements_${nextIdx + 1}.json`)
+    fetch(`../../data/retroachievements/achievements_${nextIdx + 1}.json`)
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(data => {
         setAchievementChunks(prev => { const n = [...prev]; n[nextIdx] = data.recentAchievements || []; return n; });
@@ -918,7 +918,7 @@ export default function App() {
 
   // ── Fetch profile.json on mount (always needed) ───────────
   useEffect(() => {
-    fetch('../data/retroachievements/profile.json')
+    fetch('../../data/retroachievements/profile.json')
       .then(r => { if (!r.ok) throw new Error('Failed to load profile.json'); return r.json(); })
       .then(data => { setProfileData(data); setLoadingProfile(false); })
       .catch(err => { setError(err.message); setLoadingProfile(false); });
@@ -935,7 +935,7 @@ export default function App() {
   useEffect(() => {
     if (['recent', 'progress'].includes(activeTab) && !gamesData && !loadingGames) {
       setLoadingGames(true);
-      fetch('../data/retroachievements/games.json')
+      fetch('../../data/retroachievements/games.json')
         .then(r => { if (!r.ok) throw new Error('Failed to load games.json'); return r.json(); })
         .then(data => { setGamesData(data); setLoadingGames(false); })
         .catch(err => { console.error(err); setLoadingGames(false); });
@@ -1003,9 +1003,9 @@ export default function App() {
       
       {/* Topbar */}
       <div className="sticky top-0 z-50 bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
-        <a href="../" className="text-[#546270] font-bold tracking-[0.15em] uppercase hover:text-[#8f98a0] transition-colors">Yozuryu</a>
+        <a href="../../" className="text-[#546270] font-bold tracking-[0.15em] uppercase hover:text-[#8f98a0] transition-colors">Yozuryu</a>
         <span className="text-[#2a475e]">›</span>
-        <a href="../" className="text-[#546270] hover:text-[#8f98a0] transition-colors">Gaming Profile</a>
+        <a href="../../" className="text-[#546270] hover:text-[#8f98a0] transition-colors">Gaming Profile</a>
         <span className="text-[#2a475e]">›</span>
         <span className="text-[#c6d4df]">RetroAchievements</span>
       </div>

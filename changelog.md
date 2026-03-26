@@ -17,6 +17,10 @@
 - Activity section toggled by `activity.visible` in `config.json`; hidden by default until config loads (no skeleton flash when disabled)
 - Steam horizontal overflow on mobile fixed (`overflow-x: hidden` on `html, body`)
 
+### Structure
+
+- Platform profiles moved under `/profile/` — RA at `/profile/ra/`, Steam at `/profile/steam/`
+
 ### Pipelines
 
 - RA and Steam workflows now use differentiated commit messages: `update` for incremental, `full refresh` for full game refresh, `unlock refresh` for Steam unlock-only runs
