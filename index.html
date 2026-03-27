@@ -255,6 +255,19 @@
 
     </div>
 
+    <!-- Completions strip -->
+    <a id="completions-strip" href="./completions/" style="display:none;"
+      class="flex items-center gap-3 mt-6 px-4 py-3 bg-[#1b2838] border border-[#2a475e] rounded-[2px] hover:border-[#4c9be8] transition-colors group">
+      <span class="text-[#e5b143] text-[14px] shrink-0">★</span>
+      <span class="text-[11px] font-bold uppercase tracking-[0.08em] text-[#8f98a0] shrink-0">Completions</span>
+      <span class="w-px h-3.5 bg-[#3a5068] shrink-0"></span>
+      <span id="completions-strip-total-mobile" class="sm:hidden text-[11px]"></span>
+      <div id="completions-strip-stats" class="hidden sm:flex items-center gap-3 text-[11px]"></div>
+      <span class="w-px h-3.5 bg-[#3a5068] shrink-0 hidden sm:block"></span>
+      <div id="completions-strip-latest" class="hidden sm:flex items-center gap-3 flex-1 min-w-0"></div>
+      <span class="ml-auto text-[10px] text-[#546270] group-hover:text-[#66c0f4] transition-colors shrink-0">View all →</span>
+    </a>
+
     <!-- Recent Activity -->
     <div id="activity-section" style="display:none;">
     <div class="flex items-center gap-2 border-b border-[#2a475e] pb-[7px] mb-4 mt-8">
@@ -344,6 +357,11 @@
         if (p.activity?.visible !== false) {
           document.getElementById('activity-section').style.display = '';
           loadActivityFeed();
+        }
+
+        // Completions strip
+        if (p.completions?.visible !== false) {
+          loadCompletionsStrip();
         }
       } catch (e) {
         console.warn('Could not load hub profile:', e);
@@ -671,6 +689,64 @@
       } catch (e) {
         document.getElementById('activity-feed').innerHTML =
           '<div style="padding:16px;text-align:center;font-size:10px;color:#546270;">Could not load activity</div>';
+      }
+    }
+
+    async function loadCompletionsStrip() {
+      try {
+        const [raRes, steamRes] = await Promise.all([
+          fetch('./data/retroachievements/profile.json'),
+          fetch('./data/steam/profile.json'),
+        ]);
+        const ra    = raRes.ok    ? await raRes.json()    : {};
+        const steam = steamRes.ok ? await steamRes.json() : {};
+
+        const awards = ra.pageAwards?.visibleUserAwards ?? [];
+        const mastered = awards.filter(a => a.awardType === 'Mastery/Completion').length;
+        const beaten   = awards.filter(a => a.awardType === 'Game Beaten' && a.awardDataExtra === 1).length;
+        const perfect  = (steam.perfectGames ?? []).length;
+
+        const total = mastered + beaten + perfect;
+        if (total === 0) return;
+
+        const pill = (val, label, color) =>
+          `<span style="color:${color};font-weight:700;font-size:12px;">${val}</span><span style="color:#546270;"> ${label}</span>`;
+        const dot = `<span style="color:#3a5068;">·</span>`;
+
+        const parts = [];
+        parts.push(pill(total, 'total', '#ffffff'));
+        if (perfect  > 0) parts.push(pill(perfect,  'Perfect',  '#e5b143'));
+        if (mastered > 0) parts.push(pill(mastered, 'Mastered', '#e5b143'));
+        if (beaten   > 0) parts.push(pill(beaten,   'Beaten',   '#66c0f4'));
+
+        // Most recent completion across both platforms
+        const RA_MEDIA_BASE = 'https://media.retroachievements.org';
+        const raLatest    = awards.filter(a => a.awardType === 'Mastery/Completion' || (a.awardType === 'Game Beaten' && a.awardDataExtra === 1))
+                                  .sort((a, b) => new Date(b.awardedAt) - new Date(a.awardedAt))[0];
+        const steamLatest = (steam.perfectGames ?? []).sort((a, b) => new Date(b.completedAt) - new Date(a.completedAt))[0];
+        const candidates  = [
+          raLatest    && { name: raLatest.title,       date: raLatest.awardedAt,    icon: RA_MEDIA_BASE + raLatest.imageIcon, type: raLatest.awardType === 'Mastery/Completion' ? 'Mastered' : 'Beaten' },
+          steamLatest && { name: steamLatest.gameName, date: steamLatest.completedAt, icon: steamLatest.lastAchIconUrl || steamLatest.iconUrl, type: 'Perfect' },
+        ].filter(Boolean).sort((a, b) => new Date(b.date) - new Date(a.date));
+        const latest = candidates[0];
+
+        if (latest) {
+          const diff = Math.floor((Date.now() - new Date(latest.date)) / 86400000);
+          const ago  = diff === 0 ? 'Today' : diff === 1 ? 'Yesterday' : diff < 7 ? `${diff}d ago` : diff < 30 ? `${Math.floor(diff/7)}w ago` : `${Math.floor(diff/30)}mo ago`;
+          const typeColor = latest.type === 'Beaten' ? '#66c0f4' : '#e5b143';
+          document.getElementById('completions-strip-latest').innerHTML = `
+            <img src="${latest.icon}" style="width:22px;height:22px;border-radius:2px;border:1px solid #101214;object-fit:cover;flex-shrink:0;" onerror="this.style.display='none'" />
+            <span style="font-size:12px;font-weight:600;color:#c6d4df;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${latest.name}</span>
+            <span style="font-size:10px;font-weight:700;color:${typeColor};flex-shrink:0;text-transform:uppercase;letter-spacing:0.06em;">★ ${latest.type}</span>
+            <span style="font-size:10px;color:#546270;flex-shrink:0;">${ago}</span>
+          `;
+        }
+
+        document.getElementById('completions-strip-total-mobile').innerHTML = `<span style="color:#ffffff;font-weight:700;">${total}</span><span style="color:#546270;font-weight:400;margin-left:8px;">total</span>`;
+        document.getElementById('completions-strip-stats').innerHTML = parts.join(` ${dot} `);
+        document.getElementById('completions-strip').style.display = '';
+      } catch (e) {
+        // silently skip — strip is non-critical
       }
     }
 

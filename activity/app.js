@@ -342,7 +342,64 @@ const App = () => {
             <main className="max-w-5xl mx-auto px-4 md:px-8 py-6 flex-1 w-full flex flex-col gap-6">
 
                 {loading ? (
-                    <div className="flex items-center justify-center py-16 text-[#546270] text-[11px]">Loading…</div>
+                    <div className="flex flex-col gap-6">
+                        {/* Heatmap skeleton */}
+                        <div>
+                            <div className="flex items-center gap-2 border-b border-[#2a475e] pb-1.5 mb-3">
+                                <div className="shimmer w-[3px] h-[14px] rounded-[1px]" />
+                                <div className="shimmer h-3 w-24 rounded" />
+                            </div>
+                            <div className="flex gap-[3px] flex-wrap">
+                                {[...Array(53)].map((_, i) => (
+                                    <div key={i} className="flex flex-col gap-[3px]">
+                                        {[...Array(7)].map((_, j) => (
+                                            <div key={j} className="shimmer w-[11px] h-[11px] rounded-[2px]" />
+                                        ))}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        {/* Filter bar skeleton */}
+                        <div className="flex items-center gap-2">
+                            {[...Array(3)].map((_, i) => <div key={i} className="shimmer h-5 w-12 rounded-sm" />)}
+                        </div>
+                        {/* Timeline skeleton */}
+                        <div className="flex flex-col gap-4">
+                            {[...Array(3)].map((_, i) => (
+                                <div key={i}>
+                                    {/* Day header */}
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <div className="shimmer h-3 w-24 rounded" />
+                                        <div className="flex-1 h-px bg-[#1e2d3a]" />
+                                        <div className="shimmer h-2.5 w-16 rounded" />
+                                    </div>
+                                    {/* Sessions */}
+                                    <div className="ml-4 border-l border-[#2a475e] pl-3 flex flex-col gap-3">
+                                        {[...Array(2)].map((_, j) => (
+                                            <div key={j}>
+                                                <div className="flex items-center gap-2 mb-1.5">
+                                                    <div className="shimmer w-3 h-3 rounded-[1px]" />
+                                                    <div className="shimmer w-4 h-4 rounded-[1px]" />
+                                                    <div className="shimmer h-2.5 w-32 rounded" />
+                                                </div>
+                                                <div className="flex flex-col gap-1.5">
+                                                    {[...Array(2)].map((_, k) => (
+                                                        <div key={k} className="flex items-center gap-2 py-1">
+                                                            <div className="shimmer w-6 h-6 rounded-[2px]" />
+                                                            <div className="flex flex-col gap-1 flex-1">
+                                                                <div className="shimmer h-2.5 rounded" style={{ width: `${55 + k * 15}%` }} />
+                                                                <div className="shimmer h-2 rounded" style={{ width: `${35 + k * 10}%` }} />
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 ) : (
                     <>
                         {/* Heatmap */}

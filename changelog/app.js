@@ -48,6 +48,8 @@ const SECTION_COLORS = {
     'RetroAchievements': '#e5b143',
     'Hub':               '#c6d4df',
     'Hub Activity':      '#c6d4df',
+    'Completions':       '#c6d4df',
+    'Activity':          '#c6d4df',
 };
 
 const sectionColor = (title) =>

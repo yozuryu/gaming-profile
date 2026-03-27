@@ -11,5 +11,6 @@
     "xbox":              { "visible": true, "active": false }
   },
   "siteUrl": "yozuryu.github.io/gaming-hub",
-  "activity": { "visible": true }
+  "activity":     { "visible": true },
+  "completions":  { "visible": true }
 }

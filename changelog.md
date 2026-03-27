@@ -2,7 +2,30 @@
 
 ## 2026-03-27
 
-Achievement detail modals added to both platforms; game cards get an achievement preview strip.
+Achievement detail modals added to both platforms; game cards get an achievement preview strip. Completions page and hub strip added.
+
+### Completions
+
+- New `/completions/` page listing all perfect (Steam) and mastered/beaten (RA) games grouped by month under collapsible year headers
+- Current year expanded by default; past years collapsed
+- Two-level hierarchy: year (bold, lighter) → months (indented with left border, muted) → cards
+- Platform filter (All / RA / Steam) and "Also show beaten games" checkbox (default unchecked)
+- Mastered and completed unified under single "Mastered" type; HC marker removed from beaten badge
+- Each card shows game icon, name, type badge (Mastered / Beaten / Perfect), platform icon, console or last achievement name + rarity subline, and playtime / date
+- Shimmer skeleton loading state mirrors year header → month header → card layout
+- Linked from hub via completions strip
+
+### Hub
+
+- Completions strip added between platform grid and activity section: `★ Completions | N total · X Perfect · Y Mastered · Z Beaten | [icon] latest game ★ TYPE · time ago | View all →`
+- Latest completion shows game icon, name, uppercase type badge, and time ago
+- Mobile view simplified to `★ Completions | N total | View all →` — breakdown and latest hidden
+- Strip visibility controlled by `completions.visible` in `config.json` (defaults to visible)
+- Completions link removed from footer (replaced by strip)
+
+### Activity
+
+- Shimmer skeleton loading state added — heatmap grid, filter bar, day headers, session rows, and achievement rows all shimmer while data loads (previously just showed `Loading…`)
 
 ### RetroAchievements
 
