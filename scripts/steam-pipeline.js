@@ -361,13 +361,18 @@ function serializeLocally(payload, achievementProgress, sentinelCache, owned) {
     log.section('Phase 3 — Local Serialization');
 
     const OUTPUT_DIR = path.join(__dirname, '..', 'data', 'steam');
+    const ACH_DIR    = path.join(OUTPUT_DIR, 'achievements');
     if (!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR, { recursive: true });
         log.ok(`Created output directory: ${OUTPUT_DIR}`);
     }
+    if (!fs.existsSync(ACH_DIR)) {
+        fs.mkdirSync(ACH_DIR, { recursive: true });
+        log.ok(`Created achievements directory: ${ACH_DIR}`);
+    }
 
-    const write = (filename, data) => {
-        const filePath = path.join(OUTPUT_DIR, filename);
+    const write = (filename, data, dir = OUTPUT_DIR) => {
+        const filePath = path.join(dir, filename);
         const json     = JSON.stringify(data, null, 4);
         const sizeKb   = (Buffer.byteLength(json, 'utf8') / 1024).toFixed(1);
         fs.writeFileSync(filePath, json, 'utf8');
@@ -483,15 +488,34 @@ function serializeLocally(payload, achievementProgress, sentinelCache, owned) {
             };
         }),
         // Pre-computed shortcuts
-        mostRecentGame:  payload.recentlyPlayed[0] ?? null,
+        mostRecentGame:    payload.recentlyPlayed[0] ?? null,
+        mostRecentUnlock:  recentAchievements[0] ?? null,
         perfectGames,
     });
 
-    // achievements.json — 1 year of unlocks compiled from all cached games
-    write('achievements.json', {
-        mostRecentUnlock: recentAchievements[0] ?? null,
-        recentAchievements,
+    // achievements/heatmap.json — compact day→count map for the Activity heatmap
+    const heatmap = {};
+    recentAchievements.forEach(a => {
+        if (!a.unlockedAt) return;
+        const day = a.unlockedAt.substring(0, 10);
+        if (!heatmap[day]) heatmap[day] = { count: 0 };
+        heatmap[day].count++;
     });
+    write('heatmap.json', { activityHeatmap: heatmap }, ACH_DIR);
+
+    // achievements/N.json — 1 year of unlocks split into 4 quarterly chunks
+    // Chunk 1 = most recent (0–91 days), Chunk 4 = oldest (273–364 days)
+    const CHUNK_MS = 91 * 24 * 60 * 60 * 1000;
+    const extractionTime = new Date(payload.metadata.extractionTimestamp).getTime();
+    for (let i = 0; i < 4; i++) {
+        const toMs   = extractionTime - (i * CHUNK_MS);
+        const fromMs = extractionTime - ((i + 1) * CHUNK_MS);
+        const chunk  = recentAchievements.filter(a => {
+            const t = new Date(a.unlockedAt).getTime();
+            return t > fromMs && t <= toMs;
+        });
+        write(`${i + 1}.json`, { recentAchievements: chunk }, ACH_DIR);
+    }
 
     // games.json — per-game achievement progress enriched with playtime
     write('games.json', {

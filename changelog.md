@@ -38,6 +38,9 @@ Achievement detail modals added to both platforms; game cards get an achievement
 - RA data directory renamed `data/retroachievements/` → `data/ra/`
 - RA achievement chunk files moved from `data/ra/achievements_N.json` → `data/ra/achievements/N.json`
 - `activityHeatmap` extracted from `profile.json` into `data/ra/achievements/heatmap.json`; frontend fetches it separately when the Activity tab opens
+- Steam achievements split into quarterly chunks at `data/steam/achievements/N.json` mirroring RA structure; `data/steam/achievements/heatmap.json` added with precomputed day→count map
+- `mostRecentUnlock` moved from `achievements.json` into `profile.json` so it's available on mount without loading any chunk
+- Steam `ActivityTab` now receives `heatmapData` as a prop (precomputed) instead of deriving it client-side from loaded achievements; chunks lazy-loaded when Activity tab opens
 
 ### RetroAchievements
 

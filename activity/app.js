@@ -237,10 +237,12 @@ const App = () => {
                     .catch(() => ({ recentAchievements: [] }))
                     .then(d => (d.recentAchievements ?? []).map(normalizeRA))
             )).then(chunks => chunks.flat()),
-            fetch('../data/steam/achievements.json')
-                .then(r => r.ok ? r.json() : { recentAchievements: [] })
-                .catch(() => ({ recentAchievements: [] }))
-                .then(d => (d.recentAchievements ?? []).map(normalizeSteam)),
+            Promise.all([1, 2, 3, 4].map(i =>
+                fetch(`../data/steam/achievements/${i}.json`)
+                    .then(r => r.ok ? r.json() : { recentAchievements: [] })
+                    .catch(() => ({ recentAchievements: [] }))
+                    .then(d => (d.recentAchievements ?? []).map(normalizeSteam))
+            )).then(chunks => chunks.flat()),
         ]).then(([ra, steam]) => {
             setRaAchs(ra);
             setSteamAchs(steam);

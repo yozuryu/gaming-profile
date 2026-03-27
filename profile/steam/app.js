@@ -378,7 +378,7 @@ const AchievementModal = ({ game, achievementData, onClose }) => {
 
 // ── ActivityTab ───────────────────────────────────────────────────────────────
 
-const ActivityTab = ({ achievements }) => {
+const ActivityTab = ({ achievements, heatmapData, loading }) => {
     const [selectedDay,   setSelectedDay]   = useState(null);
     const [collapsedDays, setCollapsedDays] = useState(new Set());
 
@@ -387,16 +387,6 @@ const ActivityTab = ({ achievements }) => {
         next.has(day) ? next.delete(day) : next.add(day);
         return next;
     });
-
-    const heatmapData = useMemo(() => {
-        const map = {};
-        achievements.forEach(ach => {
-            const day = ach.unlockedAt.substring(0, 10);
-            if (!map[day]) map[day] = { count: 0 };
-            map[day].count++;
-        });
-        return map;
-    }, [achievements]);
 
     const days = useMemo(() => {
         const arr   = [];
@@ -470,6 +460,14 @@ const ActivityTab = ({ achievements }) => {
                 return { day, achCount: achs.length, sessions };
             });
     }, [achievements, selectedDay]);
+
+    if (loading) {
+        return (
+            <div className="text-center py-12 text-[#546270] text-[12px]">
+                Loading activity…
+            </div>
+        );
+    }
 
     if (achievements.length === 0) {
         return (
@@ -811,11 +809,13 @@ const ProfileLoadingSkeleton = () => (
 // ── App ───────────────────────────────────────────────────────────────────────
 
 const App = () => {
-    const [profileData,      setProfileData]      = useState(null);
-    const [gamesData,        setGamesData]        = useState(null);
-    const [achievementsData, setAchievementsData] = useState(null);
-    const [loading,          setLoading]          = useState(true);
-    const [error,            setError]            = useState(null);
+    const [profileData,       setProfileData]       = useState(null);
+    const [gamesData,         setGamesData]         = useState(null);
+    const [achievementChunks, setAchievementChunks] = useState([null, null, null, null]);
+    const [heatmapData,       setHeatmapData]       = useState({});
+    const [loadingActivity,   setLoadingActivity]   = useState(false);
+    const [loading,           setLoading]           = useState(true);
+    const [error,             setError]             = useState(null);
     const [selectedGame,     setSelectedGame]     = useState(null);
     const VALID_TABS = ['recent', 'progress', 'activity'];
     const initialTab = (() => {
@@ -837,20 +837,29 @@ const App = () => {
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 
-    // Load profile + achievements on mount (both needed for overview)
+    // Load profile on mount
     useEffect(() => {
-        Promise.all([
-            fetch('../../data/steam/profile.json')
-                .then(r => { if (!r.ok) throw new Error('Steam data not found'); return r.json(); }),
-            fetch('../../data/steam/achievements.json')
-                .then(r => r.json())
-                .catch(() => ({ recentAchievements: [] })),
-        ]).then(([p, a]) => {
-            setProfileData(p);
-            setAchievementsData(a);
-            setLoading(false);
-        }).catch(e => { setError(e.message); setLoading(false); });
+        fetch('../../data/steam/profile.json')
+            .then(r => { if (!r.ok) throw new Error('Steam data not found'); return r.json(); })
+            .then(p => { setProfileData(p); setLoading(false); })
+            .catch(e => { setError(e.message); setLoading(false); });
     }, []);
+
+    // Load heatmap + all 4 achievement chunks when Activity tab opens
+    useEffect(() => {
+        if (activeTab !== 'activity' || loadingActivity || achievementChunks[0] !== null) return;
+        setLoadingActivity(true);
+        Promise.all([
+            fetch('../../data/steam/achievements/heatmap.json')
+                .then(r => r.json()).then(d => setHeatmapData(d.activityHeatmap || {}))
+                .catch(() => {}),
+            Promise.all([1, 2, 3, 4].map(i =>
+                fetch(`../../data/steam/achievements/${i}.json`)
+                    .then(r => r.ok ? r.json() : { recentAchievements: [] })
+                    .catch(() => ({ recentAchievements: [] }))
+            )).then(chunks => setAchievementChunks(chunks.map(c => c.recentAchievements ?? []))),
+        ]).then(() => setLoadingActivity(false));
+    }, [activeTab]);
 
     // Load games.json when Recent or Progress tab opens
     useEffect(() => {
@@ -863,9 +872,12 @@ const App = () => {
     }, [activeTab, profileData, gamesData]);
 
     // Derived state — read pre-computed fields from JSON, no client-side iteration needed
-    const achProgress    = gamesData?.achievementProgress ?? {};
-    const recentAchs     = achievementsData?.recentAchievements ?? [];
-    const perfectGames   = [...(profileData?.perfectGames ?? [])].sort((a, b) => {
+    const achProgress  = gamesData?.achievementProgress ?? {};
+    const recentAchs   = useMemo(() =>
+        achievementChunks.filter(c => c !== null).flat()
+            .sort((a, b) => new Date(b.unlockedAt) - new Date(a.unlockedAt)),
+    [achievementChunks]);
+    const perfectGames = [...(profileData?.perfectGames ?? [])].sort((a, b) => {
         if (a.lastAchGlobalPct == null && b.lastAchGlobalPct == null) return 0;
         if (a.lastAchGlobalPct == null) return 1;
         if (b.lastAchGlobalPct == null) return -1;
@@ -887,7 +899,7 @@ const App = () => {
     const status = STEAM_STATUS[profile.status] ?? STEAM_STATUS[0];
 
     const completionPct    = stats.completionPct ?? 0;
-    const mostRecentUnlock = achievementsData?.mostRecentUnlock ?? recentAchs[0] ?? null;
+    const mostRecentUnlock  = profileData?.mostRecentUnlock ?? null;
     const mostRecentGameAch = mostRecentGame
         ? (recentAchs.find(a => a.appId === mostRecentGame.appId) ?? null)
         : null;
@@ -1232,7 +1244,7 @@ const App = () => {
                     )}
 
                     {activeTab === 'activity' && (
-                        <ActivityTab achievements={recentAchs} />
+                        <ActivityTab achievements={recentAchs} heatmapData={heatmapData} loading={loadingActivity} />
                     )}
 
                 </div>

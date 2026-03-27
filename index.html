@@ -603,15 +603,17 @@
       };
 
       try {
-        const [raChunks, steamData] = await Promise.all([
+        const [raChunks, steamChunks] = await Promise.all([
           Promise.all([1, 2, 3, 4].map(i =>
             fetch(`./data/ra/achievements/${i}.json`)
               .then(r => r.ok ? r.json() : { recentAchievements: [] })
               .catch(() => ({ recentAchievements: [] }))
           )),
-          fetch('./data/steam/achievements.json')
-            .then(r => r.ok ? r.json() : { recentAchievements: [] })
-            .catch(() => ({ recentAchievements: [] })),
+          Promise.all([1, 2, 3, 4].map(i =>
+            fetch(`./data/steam/achievements/${i}.json`)
+              .then(r => r.ok ? r.json() : { recentAchievements: [] })
+              .catch(() => ({ recentAchievements: [] }))
+          )),
         ]);
 
         const raAchs = raChunks.flatMap(d => (d.recentAchievements ?? []).map(a => ({
@@ -625,7 +627,7 @@
           points: a.points,
         })));
 
-        const steamAchs = (steamData.recentAchievements ?? []).map(a => ({
+        const steamAchs = steamChunks.flatMap(d => (d.recentAchievements ?? []).map(a => ({
           platform: 'steam',
           achievementName: a.displayName,
           description: a.description || a.displayName,
@@ -634,7 +636,7 @@
           gameUrl: `https://store.steampowered.com/app/${a.appId}`,
           unlockedAt: a.unlockedAt,
           globalPct: a.globalPct,
-        }));
+        })));
 
         const all = [...raAchs, ...steamAchs]
           .sort((a, b) => new Date(b.unlockedAt) - new Date(a.unlockedAt))
