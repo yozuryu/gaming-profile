@@ -30,8 +30,14 @@ Achievement detail modals added to both platforms; game cards get an achievement
 ### Pipelines
 
 - RA `games.json` strips unused fields before writing — removes `richPresencePatch`, `imageTitle`, `imageIngame`, `imageBoxArt`, `forumTopicId`, `flags`, `isFinal`, `releasedAtGranularity`, `numDistinctPlayers*`, `userCompletion*` from game objects and `memAddr`, `authorUlid`, `dateCreated`, `dateModified`, `author` from achievement objects (~1MB saved)
-- Steam achievement icon URLs stored as filename hash only in `games.json` and `achievements.json` instead of full CDN URLs (~1.4MB saved); `achIconUrl(appId, hash)` helper in `helpers.js` reconstructs full URLs at render time
+- Steam achievement icon URLs stored as filename hash only in `games.json` instead of full CDN URLs (~1.4MB saved); `achIconUrl(appId, hash)` helper in `helpers.js` reconstructs full URLs at render time; `achievements.json` and `profile.json` continue to store full URLs
 - `appId` now embedded in each Steam achievement progress object so the Activity tab can reconstruct icon URLs without a separate lookup
+
+### Structure
+
+- RA data directory renamed `data/retroachievements/` → `data/ra/`
+- RA achievement chunk files moved from `data/ra/achievements_N.json` → `data/ra/achievements/N.json`
+- `activityHeatmap` extracted from `profile.json` into `data/ra/achievements/heatmap.json`; frontend fetches it separately when the Activity tab opens
 
 ### RetroAchievements
 

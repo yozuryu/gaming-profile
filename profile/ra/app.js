@@ -970,8 +970,9 @@ const ActivitySkeleton = () => (
 
 export default function App() {
   // ── Split data state ─────────────────────────────────────
-  const [profileData, setProfileData] = useState(null); // profile.json
-  const [gamesData,   setGamesData]   = useState(null); // games.json
+  const [profileData,  setProfileData]  = useState(null); // profile.json
+  const [gamesData,    setGamesData]    = useState(null); // games.json
+  const [heatmapData,  setHeatmapData]  = useState({});   // achievements/heatmap.json
 
   const TOTAL_ACH_CHUNKS = 4;
   const [achievementChunks, setAchievementChunks] = useState(() => Array(TOTAL_ACH_CHUNKS).fill(null));
@@ -1000,7 +1001,7 @@ export default function App() {
     const nextIdx = achievementChunks.findIndex(c => c === null);
     if (nextIdx === -1 || loadingChunkIdx !== null) return;
     setLoadingChunkIdx(nextIdx);
-    fetch(`../../data/retroachievements/achievements_${nextIdx + 1}.json`)
+    fetch(`../../data/ra/achievements/${nextIdx + 1}.json`)
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(data => {
         setAchievementChunks(prev => { const n = [...prev]; n[nextIdx] = data.recentAchievements || []; return n; });
@@ -1025,15 +1026,22 @@ export default function App() {
 
   // ── Fetch profile.json on mount (always needed) ───────────
   useEffect(() => {
-    fetch('../../data/retroachievements/profile.json')
+    fetch('../../data/ra/profile.json')
       .then(r => { if (!r.ok) throw new Error('Failed to load profile.json'); return r.json(); })
       .then(data => { setProfileData(data); setLoadingProfile(false); })
       .catch(err => { setError(err.message); setLoadingProfile(false); });
   }, []);
 
-  // ── Load first achievement chunk when Activity tab is opened ──
+  // ── Load heatmap + first achievement chunk when Activity tab is opened ──
   useEffect(() => {
-    if (activeTab === 'activity' && achievementChunks[0] === null && loadingChunkIdx === null) {
+    if (activeTab !== 'activity') return;
+    if (Object.keys(heatmapData).length === 0) {
+      fetch('../../data/ra/achievements/heatmap.json')
+        .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+        .then(data => setHeatmapData(data.activityHeatmap || {}))
+        .catch(() => {});
+    }
+    if (achievementChunks[0] === null && loadingChunkIdx === null) {
       loadNextChunk();
     }
   }, [activeTab]);
@@ -1042,7 +1050,7 @@ export default function App() {
   useEffect(() => {
     if (['recent', 'progress'].includes(activeTab) && !gamesData && !loadingGames) {
       setLoadingGames(true);
-      fetch('../../data/retroachievements/games.json')
+      fetch('../../data/ra/games.json')
         .then(r => { if (!r.ok) throw new Error('Failed to load games.json'); return r.json(); })
         .then(data => { setGamesData(data); setLoadingGames(false); })
         .catch(err => { console.error(err); setLoadingGames(false); });
@@ -1454,7 +1462,7 @@ export default function App() {
               : <ActivityTab
                   achievements={allLoadedAchievements}
                   refTime={rawData?.metadata?.extractionTimestamp}
-                  heatmapData={rawData?.activityHeatmap ?? {}}
+                  heatmapData={heatmapData}
                   loadedChunks={loadedChunkCount}
                   totalChunks={TOTAL_ACH_CHUNKS}
                   hasMore={loadedChunkCount < TOTAL_ACH_CHUNKS}

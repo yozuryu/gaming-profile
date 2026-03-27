@@ -232,7 +232,7 @@ const App = () => {
     useEffect(() => {
         Promise.all([
             Promise.all([1, 2, 3, 4].map(i =>
-                fetch(`../data/retroachievements/achievements_${i}.json`)
+                fetch(`../data/ra/achievements/${i}.json`)
                     .then(r => r.ok ? r.json() : { recentAchievements: [] })
                     .catch(() => ({ recentAchievements: [] }))
                     .then(d => (d.recentAchievements ?? []).map(normalizeRA))

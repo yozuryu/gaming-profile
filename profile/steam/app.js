@@ -627,7 +627,7 @@ const ActivityTab = ({ achievements }) => {
                                                     <div key={ai} className="flex items-center gap-2 p-2 rounded-[2px] border border-[#2a475e] border-l-[2px] bg-[#1b2838] hover:bg-[#2a475e] transition-colors" style={{ borderLeftColor: rarityBorderColor(ach.globalPct) }}>
                                                         <div className="shrink-0 w-8 h-8 rounded-[2px] overflow-hidden border border-[#101214] bg-black">
                                                             {ach.iconUrl
-                                                                ? <img src={achIconUrl(ach.appId, ach.iconUrl)} alt={ach.displayName} className="w-full h-full object-cover" />
+                                                                ? <img src={ach.iconUrl} alt={ach.displayName} className="w-full h-full object-cover" />
                                                                 : <div className="w-full h-full bg-[#2a475e]" />
                                                             }
                                                         </div>

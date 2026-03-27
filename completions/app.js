@@ -176,7 +176,7 @@ const App = () => {
         });
 
     useEffect(() => {
-        fetch('../data/retroachievements/profile.json')
+        fetch('../data/ra/profile.json')
             .then(r => r.json()).then(setRaProfile).catch(() => setRaProfile({}));
         fetch('../data/steam/profile.json')
             .then(r => r.json()).then(setSteamProfile).catch(() => setSteamProfile({}));

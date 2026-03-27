@@ -239,7 +239,7 @@ async function executeProfileExtraction(targetUser) {
         // Incremental mode: seed cache from existing games.json so only new
         // games are fetched. Full refresh skips this and fetches everything.
         if (!REFRESH_GAMES) {
-            const gamesJsonPath = path.join(__dirname, '..', 'data', 'retroachievements', 'games.json');
+            const gamesJsonPath = path.join(__dirname, '..', 'data', 'ra', 'games.json');
             if (fs.existsSync(gamesJsonPath)) {
                 try {
                     const existing = JSON.parse(fs.readFileSync(gamesJsonPath, 'utf8'));
@@ -305,14 +305,19 @@ async function executeProfileExtraction(targetUser) {
 function serializeLocally(payload) {
     log.section('Phase 3 — Local Serialization');
 
-    const OUTPUT_DIR = path.join(__dirname, '..', 'data', 'retroachievements');
+    const OUTPUT_DIR = path.join(__dirname, '..', 'data', 'ra');
+    const ACH_DIR    = path.join(OUTPUT_DIR, 'achievements');
     if (!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR, { recursive: true });
         log.ok(`Created output directory: ${OUTPUT_DIR}`);
     }
+    if (!fs.existsSync(ACH_DIR)) {
+        fs.mkdirSync(ACH_DIR, { recursive: true });
+        log.ok(`Created achievements directory: ${ACH_DIR}`);
+    }
 
-    const write = (filename, data) => {
-        const filePath = path.join(OUTPUT_DIR, filename);
+    const write = (filename, data, dir = OUTPUT_DIR) => {
+        const filePath = path.join(dir, filename);
         const json = JSON.stringify(data, null, 4);
         const sizeKb = (Buffer.byteLength(json, 'utf8') / 1024).toFixed(1);
         fs.writeFileSync(filePath, json, 'utf8');
@@ -334,21 +339,20 @@ function serializeLocally(payload) {
         mostRecentGame: payload.mostRecentGame,
         points7Days: payload.points7Days,
         points30Days: payload.points30Days,
-        // Compact day→points map for the Activity heatmap (full 365 days, always available)
-        activityHeatmap: (() => {
-            const map = {};
-            (payload.recentAchievements || []).forEach(a => {
-                if (!a.date) return;
-                const day = a.date.substring(0, 10);
-                if (!map[day]) map[day] = { points: 0, count: 0 };
-                map[day].points += a.points || 0;
-                map[day].count++;
-            });
-            return map;
-        })(),
     });
 
-    // achievements_N.json — 1 year of unlocks split into 4 quarterly chunks
+    // achievements/heatmap.json — compact day→points map for the Activity heatmap
+    const heatmap = {};
+    (payload.recentAchievements || []).forEach(a => {
+        if (!a.date) return;
+        const day = a.date.substring(0, 10);
+        if (!heatmap[day]) heatmap[day] = { points: 0, count: 0 };
+        heatmap[day].points += a.points || 0;
+        heatmap[day].count++;
+    });
+    write('heatmap.json', { activityHeatmap: heatmap }, ACH_DIR);
+
+    // achievements/N.json — 1 year of unlocks split into 4 quarterly chunks
     // Chunk 1 = most recent (0–91 days), Chunk 4 = oldest (273–364 days)
     const CHUNK_MS = 91 * 24 * 60 * 60 * 1000;
     const extractionTime = new Date(payload.metadata.extractionTimestamp).getTime();
@@ -359,7 +363,7 @@ function serializeLocally(payload) {
             const t = new Date(a.date).getTime();
             return t > fromMs && t <= toMs;
         });
-        write(`achievements_${i + 1}.json`, { recentAchievements: chunk });
+        write(`${i + 1}.json`, { recentAchievements: chunk }, ACH_DIR);
     }
 
     // games.json — detailed per-game data, loaded for Recent/Progress tabs

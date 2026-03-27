@@ -370,7 +370,7 @@
 
     async function loadRAStats() {
       try {
-        const res = await fetch('./data/retroachievements/profile.json');
+        const res = await fetch('./data/ra/profile.json');
         if (!res.ok) throw new Error('not found');
         const d = await res.json();
 
@@ -605,7 +605,7 @@
       try {
         const [raChunks, steamData] = await Promise.all([
           Promise.all([1, 2, 3, 4].map(i =>
-            fetch(`./data/retroachievements/achievements_${i}.json`)
+            fetch(`./data/ra/achievements/${i}.json`)
               .then(r => r.ok ? r.json() : { recentAchievements: [] })
               .catch(() => ({ recentAchievements: [] }))
           )),
@@ -695,7 +695,7 @@
     async function loadCompletionsStrip() {
       try {
         const [raRes, steamRes] = await Promise.all([
-          fetch('./data/retroachievements/profile.json'),
+          fetch('./data/ra/profile.json'),
           fetch('./data/steam/profile.json'),
         ]);
         const ra    = raRes.ok    ? await raRes.json()    : {};
