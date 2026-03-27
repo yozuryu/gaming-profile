@@ -378,7 +378,7 @@ const AchievementModal = ({ game, achievementData, onClose }) => {
 
 // ── ActivityTab ───────────────────────────────────────────────────────────────
 
-const ActivityTab = ({ achievements, heatmapData, loading }) => {
+const ActivityTab = ({ achievements, heatmapData, loading, hasMore, loadingMore, onLoadMore }) => {
     const [selectedDay,   setSelectedDay]   = useState(null);
     const [collapsedDays, setCollapsedDays] = useState(new Set());
 
@@ -651,6 +651,32 @@ const ActivityTab = ({ achievements, heatmapData, loading }) => {
                         })}
                     </div>
                 )}
+
+                {/* Load more */}
+                {!selectedDay && hasMore && (
+                    <div className="flex justify-center pt-2">
+                        {loadingMore ? (
+                            <div className="flex flex-col gap-2 w-full">
+                                {[...Array(2)].map((_, i) => (
+                                    <div key={i} className="flex items-center gap-2 p-2 rounded-[2px] border border-[#2a475e] bg-[#1b2838]">
+                                        <div className="shimmer w-8 h-8 rounded-[2px] shrink-0" />
+                                        <div className="flex-1 flex flex-col gap-1.5">
+                                            <div className="shimmer h-2.5 w-3/4 rounded" />
+                                            <div className="shimmer h-2 w-1/2 rounded" />
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <button
+                                onClick={onLoadMore}
+                                className="text-[11px] text-[#66c0f4] hover:text-white border border-[#2a475e] hover:border-[#66c0f4] px-4 py-1.5 rounded-[2px] transition-colors"
+                            >
+                                Load more
+                            </button>
+                        )}
+                    </div>
+                )}
             </div>
         </div>
     );
@@ -813,7 +839,7 @@ const App = () => {
     const [gamesData,         setGamesData]         = useState(null);
     const [achievementChunks, setAchievementChunks] = useState([null, null, null, null]);
     const [heatmapData,       setHeatmapData]       = useState({});
-    const [loadingActivity,   setLoadingActivity]   = useState(false);
+    const [loadingChunkIdx,   setLoadingChunkIdx]   = useState(null);
     const [loading,           setLoading]           = useState(true);
     const [error,             setError]             = useState(null);
     const [selectedGame,     setSelectedGame]     = useState(null);
@@ -845,20 +871,33 @@ const App = () => {
             .catch(e => { setError(e.message); setLoading(false); });
     }, []);
 
-    // Load heatmap + all 4 achievement chunks when Activity tab opens
+    const loadNextChunk = () => {
+        const nextIdx = achievementChunks.findIndex(c => c === null);
+        if (nextIdx === -1 || loadingChunkIdx !== null) return;
+        setLoadingChunkIdx(nextIdx);
+        fetch(`../../data/steam/achievements/${nextIdx + 1}.json`)
+            .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+            .then(data => {
+                setAchievementChunks(prev => { const n = [...prev]; n[nextIdx] = data.recentAchievements ?? []; return n; });
+                setLoadingChunkIdx(null);
+            })
+            .catch(() => {
+                setAchievementChunks(prev => { const n = [...prev]; n[nextIdx] = []; return n; });
+                setLoadingChunkIdx(null);
+            });
+    };
+
+    // Load heatmap + first chunk when Activity tab opens
     useEffect(() => {
-        if (activeTab !== 'activity' || loadingActivity || achievementChunks[0] !== null) return;
-        setLoadingActivity(true);
-        Promise.all([
+        if (activeTab !== 'activity') return;
+        if (Object.keys(heatmapData).length === 0) {
             fetch('../../data/steam/achievements/heatmap.json')
                 .then(r => r.json()).then(d => setHeatmapData(d.activityHeatmap || {}))
-                .catch(() => {}),
-            Promise.all([1, 2, 3, 4].map(i =>
-                fetch(`../../data/steam/achievements/${i}.json`)
-                    .then(r => r.ok ? r.json() : { recentAchievements: [] })
-                    .catch(() => ({ recentAchievements: [] }))
-            )).then(chunks => setAchievementChunks(chunks.map(c => c.recentAchievements ?? []))),
-        ]).then(() => setLoadingActivity(false));
+                .catch(() => {});
+        }
+        if (achievementChunks[0] === null && loadingChunkIdx === null) {
+            loadNextChunk();
+        }
     }, [activeTab]);
 
     // Load games.json when Recent or Progress tab opens
@@ -1244,7 +1283,14 @@ const App = () => {
                     )}
 
                     {activeTab === 'activity' && (
-                        <ActivityTab achievements={recentAchs} heatmapData={heatmapData} loading={loadingActivity} />
+                        <ActivityTab
+                            achievements={recentAchs}
+                            heatmapData={heatmapData}
+                            loading={loadingChunkIdx !== null || achievementChunks[0] === null}
+                            hasMore={achievementChunks.some(c => c === null)}
+                            loadingMore={loadingChunkIdx !== null}
+                            onLoadMore={loadNextChunk}
+                        />
                     )}
 
                 </div>

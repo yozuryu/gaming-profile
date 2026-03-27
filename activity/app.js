@@ -230,23 +230,28 @@ const App = () => {
     });
 
     useEffect(() => {
-        Promise.all([
-            Promise.all([1, 2, 3, 4].map(i =>
-                fetch(`../data/ra/achievements/${i}.json`)
-                    .then(r => r.ok ? r.json() : { recentAchievements: [] })
-                    .catch(() => ({ recentAchievements: [] }))
-                    .then(d => (d.recentAchievements ?? []).map(normalizeRA))
-            )).then(chunks => chunks.flat()),
-            Promise.all([1, 2, 3, 4].map(i =>
-                fetch(`../data/steam/achievements/${i}.json`)
-                    .then(r => r.ok ? r.json() : { recentAchievements: [] })
-                    .catch(() => ({ recentAchievements: [] }))
-                    .then(d => (d.recentAchievements ?? []).map(normalizeSteam))
-            )).then(chunks => chunks.flat()),
-        ]).then(([ra, steam]) => {
+        const fetchChunk = (platform, i) => {
+            const path = platform === 'ra'
+                ? `../data/ra/achievements/${i}.json`
+                : `../data/steam/achievements/${i}.json`;
+            return fetch(path)
+                .then(r => r.ok ? r.json() : { recentAchievements: [] })
+                .catch(() => ({ recentAchievements: [] }))
+                .then(d => (d.recentAchievements ?? []).map(
+                    platform === 'ra' ? normalizeRA : normalizeSteam
+                ));
+        };
+
+        // Load chunk 1 of both first — show initial data fast
+        Promise.all([fetchChunk('ra', 1), fetchChunk('steam', 1)]).then(([ra, steam]) => {
             setRaAchs(ra);
             setSteamAchs(steam);
             setLoading(false);
+            // Stream remaining chunks in background
+            [2, 3, 4].forEach(i => {
+                fetchChunk('ra', i).then(chunk => setRaAchs(prev => [...prev, ...chunk]));
+                fetchChunk('steam', i).then(chunk => setSteamAchs(prev => [...prev, ...chunk]));
+            });
         });
     }, []);
 

@@ -41,6 +41,8 @@ Achievement detail modals added to both platforms; game cards get an achievement
 - Steam achievements split into quarterly chunks at `data/steam/achievements/N.json` mirroring RA structure; `data/steam/achievements/heatmap.json` added with precomputed day→count map
 - `mostRecentUnlock` moved from `achievements.json` into `profile.json` so it's available on mount without loading any chunk
 - Steam `ActivityTab` now receives `heatmapData` as a prop (precomputed) instead of deriving it client-side from loaded achievements; chunks lazy-loaded when Activity tab opens
+- Steam profile Activity tab now loads one chunk at a time via `loadNextChunk` (matching RA pattern) with a "Load more" button and shimmer skeleton; previously loaded all 4 chunks at once
+- Combined activity page (`/activity/`) loads chunk 1 of both RA and Steam first for fast initial render, then streams chunks 2–4 in the background; previously loaded all 8 chunks concurrently on mount
 
 ### RetroAchievements
 
