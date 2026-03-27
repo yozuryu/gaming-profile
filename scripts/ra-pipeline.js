@@ -368,7 +368,7 @@ function serializeLocally(payload) {
 
     // games.json — detailed per-game data, loaded for Recent/Progress tabs
     // Strip fields unused by the frontend to reduce file size (~1MB saved).
-    const UNUSED_GAME_FIELDS = ['richPresencePatch', 'imageTitle', 'imageIngame', 'imageBoxArt',
+    const UNUSED_GAME_FIELDS = ['richPresencePatch', 'imageBoxArt',
         'forumTopicId', 'flags', 'isFinal', 'releasedAtGranularity',
         'numDistinctPlayers', 'numDistinctPlayersCasual', 'numDistinctPlayersHardcore',
         'userCompletion', 'userCompletionHardcore'];

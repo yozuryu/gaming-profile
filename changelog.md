@@ -29,7 +29,7 @@ Achievement detail modals added to both platforms; game cards get an achievement
 
 ### Pipelines
 
-- RA `games.json` strips unused fields before writing — removes `richPresencePatch`, `imageTitle`, `imageIngame`, `imageBoxArt`, `forumTopicId`, `flags`, `isFinal`, `releasedAtGranularity`, `numDistinctPlayers*`, `userCompletion*` from game objects and `memAddr`, `authorUlid`, `dateCreated`, `dateModified`, `author` from achievement objects (~1MB saved)
+- RA `games.json` strips unused fields before writing — removes `richPresencePatch`, `imageBoxArt`, `forumTopicId`, `flags`, `isFinal`, `releasedAtGranularity`, `numDistinctPlayers*`, `userCompletion*` from game objects and `memAddr`, `authorUlid`, `dateCreated`, `dateModified`, `author` from achievement objects (~1MB saved); `imageIngame` and `imageTitle` were mistakenly stripped in a prior run (causing game card backgrounds to show icons instead of screenshots) — restored to pipeline output
 - Steam achievement icon URLs stored as filename hash only in `games.json` instead of full CDN URLs (~1.4MB saved); `achIconUrl(appId, hash)` helper in `helpers.js` reconstructs full URLs at render time; `achievements.json` and `profile.json` continue to store full URLs
 - `appId` now embedded in each Steam achievement progress object so the Activity tab can reconstruct icon URLs without a separate lookup
 
