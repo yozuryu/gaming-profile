@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-03-28T15:20:54.584Z"
+        "extractionTimestamp": "2026-03-28T15:54:21.031Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Lv33 Samurai, Lv32 Psychic, and Lv33 Hacker | City Hall | Ch3: 11/33 quests | 17h01",
+        "richPresenceMsg": "Lv34 Samurai, Lv34 Psychic, and Lv34 Hacker | City Hall | Ch4: 12/33 quests | 18h33",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1332,
+        "totalPoints": 1354,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 4490,
+        "totalTruePoints": 4585,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Lv33 Samurai, Lv32 Psychic, and Lv33 Hacker | City Hall | Ch3: 11/33 quests | 17h01",
-        "richPresenceMsgDate": "2026-03-28 15:20:52",
+        "richPresenceMsg": "Lv34 Samurai, Lv34 Psychic, and Lv34 Hacker | City Hall | Ch4: 12/33 quests | 18h33",
+        "richPresenceMsgDate": "2026-03-28 15:53:23",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1332,
+        "totalPoints": 1354,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 4490,
+        "totalTruePoints": 4585,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 59413,
+        "rank": 58848,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 136069,
+        "totalRanked": 136073,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1332,
+        "points": 1354,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -121,14 +121,14 @@
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
             "imageBoxArt": "/Images/110688.png",
-            "lastPlayed": "2026-03-28 15:20:52",
+            "lastPlayed": "2026-03-28 15:53:23",
             "achievementsTotal": 80,
             "numPossibleAchievements": 80,
             "possibleScore": 475,
-            "numAchieved": 22,
-            "scoreAchieved": 89,
-            "numAchievedHardcore": 22,
-            "scoreAchievedHardcore": 89
+            "numAchieved": 25,
+            "scoreAchieved": 111,
+            "numAchievedHardcore": 25,
+            "scoreAchievedHardcore": 111
         },
         {
             "gameId": 33170,
@@ -394,9 +394,9 @@
                 "consoleId": 41,
                 "consoleName": "PlayStation Portable",
                 "maxPossible": 80,
-                "numAwarded": 22,
-                "numAwardedHardcore": 22,
-                "mostRecentAwardedDate": "2026-03-28T15:20:06+00:00",
+                "numAwarded": 25,
+                "numAwardedHardcore": 25,
+                "mostRecentAwardedDate": "2026-03-28T15:46:38+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -4953,23 +4953,23 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-03-28 15:20:06",
+        "date": "2026-03-28 15:46:38",
         "hardcoreMode": true,
-        "achievementId": 572200,
-        "title": "Diva Mode",
-        "description": "Unlock Diva Mode",
-        "badgeName": "649974",
-        "points": 2,
-        "trueRatio": 8,
-        "type": null,
+        "achievementId": 572146,
+        "title": "Moonlit Massacre",
+        "description": "Defeat Lore-a-Lua",
+        "badgeName": "649925",
+        "points": 10,
+        "trueRatio": 45,
+        "type": "progression",
         "author": "Jamiras",
         "authorUlid": "01BJY8JSBTA7NVT0NYSVDCK5TY",
         "gameTitle": "7th Dragon 2020",
         "gameIcon": "/Images/123011.png",
         "gameId": 16452,
         "consoleName": "PlayStation Portable",
-        "cumulScore": 304,
-        "badgeUrl": "/Badge/649974.png",
+        "cumulScore": 326,
+        "badgeUrl": "/Badge/649925.png",
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
@@ -4981,15 +4981,15 @@
         "imageTitle": "/Images/110687.png",
         "imageIngame": "/Images/110689.png",
         "imageBoxArt": "/Images/110688.png",
-        "lastPlayed": "2026-03-28 15:20:52",
+        "lastPlayed": "2026-03-28 15:53:23",
         "achievementsTotal": 80,
         "numPossibleAchievements": 80,
         "possibleScore": 475,
-        "numAchieved": 22,
-        "scoreAchieved": 89,
-        "numAchievedHardcore": 22,
-        "scoreAchievedHardcore": 89
+        "numAchieved": 25,
+        "scoreAchieved": 111,
+        "numAchievedHardcore": 25,
+        "scoreAchievedHardcore": 111
     },
-    "points7Days": 34,
-    "points30Days": 166
+    "points7Days": 56,
+    "points30Days": 188
 }
