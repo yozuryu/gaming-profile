@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Gamepad2, Activity, BarChart2, Award, Star, ChevronDown, AlertCircle, Trophy, Crown, Lock, Unlock, AlertTriangle, Flame, Feather, Medal, ShieldOff, CircleDashed, X } from 'lucide-react';
+import { Gamepad2, Activity, BarChart2, Award, Star, ChevronDown, AlertCircle, Trophy, Crown, Lock, Unlock, AlertTriangle, Flame, Feather, Medal, ShieldOff, CircleDashed, X, Clock } from 'lucide-react';
 import { MEDIA_URL, SITE_URL, TILDE_TAG_COLORS } from './utils/constants.js';
 import { getMediaUrl, parseTitle } from './utils/helpers.js';
 import { transformData } from './utils/transform.js';
@@ -118,9 +118,9 @@ const GameCard = ({ game, onViewDetails }) => {
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] md:text-[11px] mb-2">
-            <div><span className="text-[#8f98a0]">Last Played:</span> <span className="text-[#c6d4df]">{game.lastPlayed}</span></div>
-            {game.playtime !== "Unknown" && <div><span className="text-[#8f98a0]">Playtime:</span> <span className="text-[#c6d4df]">{game.playtime}</span></div>}
+          <div className="flex items-center gap-2 text-[10px] md:text-[11px] mb-2">
+            {game.playtime !== "Unknown" && <><div className="flex items-center gap-1 text-[#c6d4df]"><Clock size={9} className="text-[#8f98a0] shrink-0" />{game.playtime}</div><span className="text-[#546270]">·</span></>}
+            <span className="text-[#546270]">Last Played <span className="text-[#8f98a0]">{game.lastPlayed}</span></span>
           </div>
 
           {hasAchievements && (() => {
@@ -1394,7 +1394,14 @@ export default function App() {
                       {/* Header */}
                       <div className="flex items-center gap-2 px-2.5 py-2 border-b border-[#2a475e] bg-[#172333]">
                         <img src={award.icon} alt="" className="w-8 h-8 rounded-[2px] border border-[#e5b143]/30 bg-black shrink-0" />
-                        <span className="text-[11px] text-white font-semibold leading-tight line-clamp-2">{award.title}</span>
+                        <div className="flex flex-col gap-0.5 min-w-0">
+                          <div className="flex items-center gap-1 flex-wrap">
+                            <span className="text-[11px] text-white font-semibold leading-tight">{award.baseTitle || award.title}</span>
+                            {award.isSubset && <span className="text-[8px] font-bold uppercase tracking-[0.07em] px-1.5 py-[1px] rounded-[2px] border border-[rgba(229,177,67,0.3)] bg-[rgba(229,177,67,0.1)] text-[#c8a84b] shrink-0">Subset</span>}
+                            {!award.isSubset && renderTildeTags(award.tags)}
+                          </div>
+                          {award.isSubset && award.subsetName && <span className="text-[9px] text-[#c8a84b] truncate">{award.subsetName}</span>}
+                        </div>
                       </div>
                       {/* Body */}
                       <div className="px-2.5 py-2 flex flex-col gap-1.5">

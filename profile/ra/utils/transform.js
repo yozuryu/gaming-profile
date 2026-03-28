@@ -253,6 +253,7 @@ export const transformData = (data) => {
         .map((a, i) => ({
           id: i,
           title: a.title || "Unknown Game",
+          ...parseTitle(a.title || "Unknown Game"),
           type: a.awardType,
           console: a.consoleName || "Unknown Console",
           date: formatDate(a.awardedAt),

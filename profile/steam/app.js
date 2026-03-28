@@ -102,7 +102,7 @@ const SteamGameCard = ({ game, achievementData, onViewDetails }) => {
                             {game.lastPlayedTs && (
                                 <>
                                     <span className="text-[#546270]">·</span>
-                                    <span className="text-[#546270]">last played <span className="text-[#8f98a0]">{formatTimeAgo(game.lastPlayedTs)}</span></span>
+                                    <span className="text-[#546270]">Last Played <span className="text-[#8f98a0]">{formatTimeAgo(game.lastPlayedTs)}</span></span>
                                 </>
                             )}
                         </div>

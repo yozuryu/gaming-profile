@@ -2,7 +2,7 @@
 
 ## 2026-03-28
 
-RA profile bug fixes; scroll-based lazy loading across all activity pages; Steam progress tab hides perfect games by default; hub activity feed shows achievement description and unified game name styling.
+RA profile bug fixes; scroll-based lazy loading across all activity pages; Steam progress tab hides perfect games by default; hub activity feed shows achievement description and unified game name styling; game awards popup parses tilde tags and subset names; game card playtime shown with clock icon and dot separator matching Steam style.
 
 ### RetroAchievements
 
@@ -10,6 +10,8 @@ RA profile bug fixes; scroll-based lazy loading across all activity pages; Steam
 - HC/SC labels replaced with `Flame`/`Feather` icons colored to match their respective bar fills (`#ff6b6b` HC, `#546270` SC); label row constrained to `max-w-[180px]` matching the bar so SC aligns to the right edge
 - `mostRecentAchievement` now runs through `parseTitle()` — game name in the Overview card renders `baseTitle` and tilde tag badges instead of raw title
 - All RA date strings (`"YYYY-MM-DD HH:MM:SS"` UTC) are now normalized to ISO UTC before `new Date()` parsing, fixing a 7-hour timezone offset for UTC+7 users; applied to both `formatTimeAgo` and `formatDate`
+- Game awards popup (Completion Progress hover) now parses tilde tags and subset names via `parseTitle()` — renders `baseTitle` with inline tilde tag badges, or a `Subset` badge with the subset name as a subline
+- Game card playtime row replaced with clock icon + playtime · Last Played value, matching Steam's layout; "Last Played" label capitalized on both RA and Steam game cards
 
 ### Steam
 
