@@ -2,7 +2,7 @@
 
 ## 2026-03-28
 
-RA profile bug fixes; scroll-based lazy loading across all activity pages; Steam progress tab hides perfect games by default.
+RA profile bug fixes; scroll-based lazy loading across all activity pages; Steam progress tab hides perfect games by default; hub activity feed shows achievement description and unified game name styling.
 
 ### RetroAchievements
 
@@ -20,6 +20,12 @@ RA profile bug fixes; scroll-based lazy loading across all activity pages; Steam
 - Combined activity (`/activity/`) heatmap now uses precomputed `heatmap.json` from both platforms merged by day — complete data from mount regardless of loaded chunks
 - All three activity pages (RA, Steam, combined) now use `IntersectionObserver` scroll sentinel for lazy loading — next chunk auto-loads when scrolled within 300px of the bottom, replacing the manual "Load more" button on Steam and the silent background streaming on the combined page
 - Clicking a heatmap day that isn't in the loaded data auto-loads chunks until the day's achievements are available — implemented on Steam Activity tab and combined activity page (RA already had this)
+
+### Hub
+
+- Activity feed rows now show achievement description between the achievement name and the game line (falls back to achievement name if empty); platform-specific badges (points, rarity) removed in favour of a universal unlock time shown right-aligned on the game row
+- Game name color changed to `#66c0f4` (blue) with hover-to-white; subset/tilde tag badges moved inline on the game name row
+- Row separator border moved from Tailwind arbitrary-value class to inline style — Tailwind CDN does not reliably process arbitrary classes on dynamically injected HTML
 
 ### Completions
 
