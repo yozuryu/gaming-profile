@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Activity, ChevronDown } from 'lucide-react';
 import { PLATFORM_COLOR } from './utils/constants.js';
@@ -7,15 +7,7 @@ import { normalizeRA, normalizeSteam } from './utils/normalizers.js';
 
 // ── Heatmap ───────────────────────────────────────────────────────────────────
 
-const Heatmap = ({ achievements, filter, selectedDay, onSelectDay }) => {
-    const heatmapData = useMemo(() => {
-        const map = {};
-        achievements.forEach(a => {
-            const day = a.unlockedAt.substring(0, 10);
-            map[day] = (map[day] ?? 0) + 1;
-        });
-        return map;
-    }, [achievements]);
+const Heatmap = ({ heatmapData, filter, selectedDay, onSelectDay }) => {
 
     const days = useMemo(() => {
         const arr = [];
@@ -47,12 +39,12 @@ const Heatmap = ({ achievements, filter, selectedDay, onSelectDay }) => {
         return labels;
     }, [weeks]);
 
-    const maxCount = useMemo(() => Math.max(1, ...Object.values(heatmapData)), [heatmapData]);
+    const maxCount = useMemo(() => Math.max(1, ...Object.values(heatmapData).map(d => d.count ?? d)), [heatmapData]);
 
     const getColor = (key) => {
-        const count = heatmapData[key];
-        if (!count) return '#101214';
-        const ratio = count / maxCount;
+        const d = heatmapData[key];
+        if (!d) return '#101214';
+        const ratio = (d.count ?? d) / maxCount;
         if (filter === 'ra') {
             if (ratio >= 0.8)  return '#e5b143';
             if (ratio >= 0.5)  return '#c8901a';
@@ -103,7 +95,7 @@ const Heatmap = ({ achievements, filter, selectedDay, onSelectDay }) => {
                                     <div
                                         key={key}
                                         onClick={() => onSelectDay(selectedDay === key ? null : key)}
-                                        title={`${key}: ${heatmapData[key] ?? 0} achievement${heatmapData[key] !== 1 ? 's' : ''}`}
+                                        title={`${key}${heatmapData[key] ? ` · ${heatmapData[key].count ?? heatmapData[key]} achievement${(heatmapData[key].count ?? heatmapData[key]) !== 1 ? 's' : ''}` : ''}`}
                                         style={{
                                             height: '12px',
                                             borderRadius: '2px',
@@ -217,11 +209,15 @@ const GameSession = ({ session }) => {
 const App = () => {
     const [raAchs,      setRaAchs]      = useState([]);
     const [steamAchs,   setSteamAchs]   = useState([]);
+    const [heatmapData, setHeatmapData] = useState({});
     const [loading,     setLoading]     = useState(true);
+    const [loadingMore, setLoadingMore] = useState(false);
+    const [nextChunk,   setNextChunk]   = useState(2);
     const [filter,      setFilter]      = useState('all');
     const [selectedDay, setSelectedDay] = useState(null);
     const [collapsedDays, setCollapsedDays] = useState(new Set());
     const [showScrollTop, setShowScrollTop] = useState(false);
+    const sentinelRef = useRef(null);
 
     const toggleDay = (day) => setCollapsedDays(prev => {
         const next = new Set(prev);
@@ -229,31 +225,62 @@ const App = () => {
         return next;
     });
 
-    useEffect(() => {
-        const fetchChunk = (platform, i) => {
-            const path = platform === 'ra'
-                ? `../data/ra/achievements/${i}.json`
-                : `../data/steam/achievements/${i}.json`;
-            return fetch(path)
-                .then(r => r.ok ? r.json() : { recentAchievements: [] })
-                .catch(() => ({ recentAchievements: [] }))
-                .then(d => (d.recentAchievements ?? []).map(
-                    platform === 'ra' ? normalizeRA : normalizeSteam
-                ));
-        };
+    const fetchChunk = useCallback((platform, i) => {
+        const path = platform === 'ra'
+            ? `../data/ra/achievements/${i}.json`
+            : `../data/steam/achievements/${i}.json`;
+        return fetch(path)
+            .then(r => r.ok ? r.json() : { recentAchievements: [] })
+            .catch(() => ({ recentAchievements: [] }))
+            .then(d => (d.recentAchievements ?? []).map(
+                platform === 'ra' ? normalizeRA : normalizeSteam
+            ));
+    }, []);
 
-        // Load chunk 1 of both first — show initial data fast
+    useEffect(() => {
+        // Fetch both heatmaps and merge them
+        Promise.all([
+            fetch('../data/ra/achievements/heatmap.json').then(r => r.json()).catch(() => ({})),
+            fetch('../data/steam/achievements/heatmap.json').then(r => r.json()).catch(() => ({})),
+        ]).then(([raH, stH]) => {
+            const merged = {};
+            const add = (src) => Object.entries(src.activityHeatmap || {}).forEach(([day, d]) => {
+                merged[day] = { count: (merged[day]?.count ?? 0) + (d.count ?? 0) };
+            });
+            add(raH); add(stH);
+            setHeatmapData(merged);
+        });
+
         Promise.all([fetchChunk('ra', 1), fetchChunk('steam', 1)]).then(([ra, steam]) => {
             setRaAchs(ra);
             setSteamAchs(steam);
             setLoading(false);
-            // Stream remaining chunks in background
-            [2, 3, 4].forEach(i => {
-                fetchChunk('ra', i).then(chunk => setRaAchs(prev => [...prev, ...chunk]));
-                fetchChunk('steam', i).then(chunk => setSteamAchs(prev => [...prev, ...chunk]));
-            });
         });
     }, []);
+
+    const loadMore = useCallback(() => {
+        if (nextChunk > 4 || loadingMore) return;
+        setLoadingMore(true);
+        Promise.all([fetchChunk('ra', nextChunk), fetchChunk('steam', nextChunk)]).then(([ra, steam]) => {
+            setRaAchs(prev => [...prev, ...ra]);
+            setSteamAchs(prev => [...prev, ...steam]);
+            setNextChunk(prev => prev + 1);
+            setLoadingMore(false);
+        });
+    }, [nextChunk, loadingMore, fetchChunk]);
+
+    // Scroll sentinel — auto-load next chunk when bottom is near
+    const loadMoreRef = useRef(loadMore);
+    useEffect(() => { loadMoreRef.current = loadMore; }, [loadMore]);
+    useEffect(() => {
+        if (!sentinelRef.current || nextChunk > 4 || loadingMore) return;
+        const observer = new IntersectionObserver(
+            (entries) => { if (entries[0].isIntersecting) loadMoreRef.current(); },
+            { rootMargin: '300px' }
+        );
+        observer.observe(sentinelRef.current);
+        return () => observer.disconnect();
+    }, [nextChunk, loadingMore, loading]);
 
     useEffect(() => {
         const onScroll = () => setShowScrollTop(window.scrollY > 300);
@@ -267,6 +294,14 @@ const App = () => {
             : [...raAchs, ...steamAchs];
         return [...base].sort((a, b) => new Date(b.unlockedAt) - new Date(a.unlockedAt));
     }, [raAchs, steamAchs, filter]);
+
+    const loadedDays = useMemo(() => new Set(sourceAchs.map(a => a.unlockedAt.substring(0, 10))), [sourceAchs]);
+
+    // Auto-load next chunk when selected day has heatmap data but isn't loaded yet
+    useEffect(() => {
+        if (!selectedDay || !heatmapData[selectedDay] || loadedDays.has(selectedDay) || nextChunk > 4 || loadingMore) return;
+        loadMoreRef.current();
+    }, [selectedDay, loadedDays, nextChunk, loadingMore]);
 
     const displayAchs = useMemo(() => {
         if (!selectedDay) return sourceAchs;
@@ -427,7 +462,7 @@ const App = () => {
                                 )}
                             </div>
                             <Heatmap
-                                achievements={sourceAchs}
+                                heatmapData={heatmapData}
                                 filter={filter}
                                 selectedDay={selectedDay}
                                 onSelectDay={setSelectedDay}
@@ -484,6 +519,13 @@ const App = () => {
                                         </div>
                                     );
                                 })}
+                            </div>
+                        )}
+
+                        {/* Scroll sentinel */}
+                        {nextChunk <= 4 && (
+                            <div ref={sentinelRef} className="py-4 flex justify-center">
+                                {loadingMore && <span className="text-[9px] text-[#546270] uppercase tracking-wider">Loading…</span>}
                             </div>
                         )}
                     </>

@@ -1,9 +1,11 @@
 import { MEDIA_URL } from './constants.js';
 
+const toUtc = (s) => typeof s === 'string' && !s.includes('T') && !s.endsWith('Z') ? s.replace(' ', 'T') + 'Z' : s;
+
 export const formatTimeAgo = (dateStr, refDateStr) => {
   if (!dateStr) return "Never";
-  const date = new Date(dateStr);
-  const now = new Date(refDateStr);
+  const date = new Date(toUtc(dateStr));
+  const now = new Date(toUtc(refDateStr));
   const diffMs = now - date;
   const diffHrs = diffMs / (1000 * 60 * 60);
   const diffDays = diffHrs / 24;
@@ -24,7 +26,7 @@ export const formatTimeAgo = (dateStr, refDateStr) => {
 
 export const formatDate = (dateStr) => {
   if (!dateStr) return "";
-  return new Date(dateStr).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+  return new Date(toUtc(dateStr)).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
 };
 
 export const getMediaUrl = (path) => {

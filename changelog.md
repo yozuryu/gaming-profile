@@ -1,8 +1,33 @@
 # Changelog
 
+## 2026-03-28
+
+RA profile bug fixes; scroll-based lazy loading across all activity pages; Steam progress tab hides perfect games by default.
+
+### RetroAchievements
+
+- `RAchievementModal` HC/SC progress bars now show correct percentages — `numDistinctPlayersCasual` and `numDistinctPlayersHardcore` were mistakenly stripped by the pipeline; restored and re-fetched via `--refresh-games` full refresh; `totalPlayersHC` added as a separate denominator for the HC bar; bars hidden when player data is unavailable
+- HC/SC labels replaced with `Flame`/`Feather` icons colored to match their respective bar fills (`#ff6b6b` HC, `#546270` SC); label row constrained to `max-w-[180px]` matching the bar so SC aligns to the right edge
+- `mostRecentAchievement` now runs through `parseTitle()` — game name in the Overview card renders `baseTitle` and tilde tag badges instead of raw title
+- All RA date strings (`"YYYY-MM-DD HH:MM:SS"` UTC) are now normalized to ISO UTC before `new Date()` parsing, fixing a 7-hour timezone offset for UTC+7 users; applied to both `formatTimeAgo` and `formatDate`
+
+### Steam
+
+- Completion Progress tab hides perfect games (100%) by default; "Show Perfect" checkbox in the toolbar toggles them back in
+
+### Activity
+
+- Combined activity (`/activity/`) heatmap now uses precomputed `heatmap.json` from both platforms merged by day — complete data from mount regardless of loaded chunks
+- All three activity pages (RA, Steam, combined) now use `IntersectionObserver` scroll sentinel for lazy loading — next chunk auto-loads when scrolled within 300px of the bottom, replacing the manual "Load more" button on Steam and the silent background streaming on the combined page
+- Clicking a heatmap day that isn't in the loaded data auto-loads chunks until the day's achievements are available — implemented on Steam Activity tab and combined activity page (RA already had this)
+
+### Completions
+
+- Hub breadcrumb links (`../../`) corrected to `../` — one level deep from root; was breaking on non-root domain deployments
+
 ## 2026-03-27
 
-Achievement detail modals added to both platforms; game cards get an achievement preview strip. Completions page and hub strip added.
+Achievement detail modals for RA and Steam; achievement preview strips on game cards; completions page with hub strip; activity shimmer loading; data restructured with sharded achievement chunks and ~2.4MB pipeline savings.
 
 ### Completions
 

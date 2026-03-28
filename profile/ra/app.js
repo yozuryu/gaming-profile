@@ -383,8 +383,8 @@ const RAchievementModal = ({ game, onClose }) => {
         {/* Achievement list */}
         <div className="overflow-y-auto overscroll-contain flex-1 px-4 py-3 space-y-1.5">
           {filteredAchs.length > 0 ? filteredAchs.map(ach => {
-            const casualPct   = Math.min(100, (ach.numAwardedCasual   / game.totalPlayers) * 100).toFixed(2);
-            const hardcorePct = Math.min(100, (ach.numAwardedHardcore / game.totalPlayers) * 100).toFixed(2);
+            const casualPct   = game.totalPlayers   > 1 ? Math.min(100, (ach.numAwardedCasual   / game.totalPlayers)   * 100).toFixed(2) : null;
+            const hardcorePct = game.totalPlayersHC > 1 ? Math.min(100, (ach.numAwardedHardcore / game.totalPlayersHC) * 100).toFixed(2) : null;
             return (
               <div key={ach.id}
                 className={`flex items-center gap-3 p-2 rounded-[2px] border border-transparent border-l-[3px] transition-colors ${ach.isUnlocked ? 'bg-[#202d39] hover:bg-[#253444]' : 'bg-[#171a21] opacity-75 border-l-[#323f4c]'} ${ach.isHardcore ? 'border-l-[#e5b143]' : ach.isUnlocked ? 'border-l-[#8f98a0]' : ''}`}
@@ -432,12 +432,12 @@ const RAchievementModal = ({ game, onClose }) => {
                   <div className="flex items-center justify-between gap-2">
                     <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                       <div className="relative h-1.5 bg-[#101214] rounded-full overflow-hidden w-full max-w-[180px]">
-                        <div className="absolute top-0 left-0 h-full bg-[#546270]" style={{ width: `${casualPct}%` }} />
-                        <div className="absolute top-0 left-0 h-full bg-[#ff6b6b]" style={{ width: `${hardcorePct}%` }} />
+                        {casualPct !== null && <div className="absolute top-0 left-0 h-full bg-[#546270]" style={{ width: `${casualPct}%` }} />}
+                        {hardcorePct !== null && <div className="absolute top-0 left-0 h-full bg-[#ff6b6b]" style={{ width: `${hardcorePct}%` }} />}
                       </div>
-                      <div className="flex gap-2 text-[8px] text-[#546270] font-medium uppercase tracking-wider">
-                        <span>HC {hardcorePct}%</span>
-                        <span>SC {casualPct}%</span>
+                      <div className="flex justify-between text-[8px] font-medium w-full max-w-[180px]">
+                        {hardcorePct !== null && <span className="flex items-center gap-0.5 text-[#ff6b6b]"><Flame size={8} />{hardcorePct}%</span>}
+                        {casualPct !== null && <span className="flex items-center gap-0.5 text-[#546270]"><Feather size={8} />{casualPct}%</span>}
                       </div>
                     </div>
                     {ach.isUnlocked && (
@@ -1300,7 +1300,8 @@ export default function App() {
                     <div className="flex items-center gap-1.5 text-[10px]">
                       <a href={`${SITE_URL}/game/${PROFILE_DATA.mostRecentAchievement.gameId}`} target="_blank" rel="noreferrer" className="flex items-center gap-1 group">
                         <img src={PROFILE_DATA.mostRecentAchievement.gameIcon} alt="" className="w-3.5 h-3.5 rounded-[1px] border border-[#101214]" />
-                        <span className="text-[#66c0f4] group-hover:text-[#c6d4df] transition-colors">{PROFILE_DATA.mostRecentAchievement.gameTitle}</span>
+                        <span className="text-[#66c0f4] group-hover:text-[#c6d4df] transition-colors">{PROFILE_DATA.mostRecentAchievement.baseTitle || PROFILE_DATA.mostRecentAchievement.gameTitle}</span>
+                        {renderTildeTags(PROFILE_DATA.mostRecentAchievement.tags)}
                       </a>
                       <span className="text-[#546270]">•</span>
                       <span className="text-[#8f98a0]">{PROFILE_DATA.mostRecentAchievement.consoleName}</span>

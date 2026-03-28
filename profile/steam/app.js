@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Trophy, BarChart2, Activity, ChevronDown, Lock, Unlock, Star, Gem, Clock, X } from 'lucide-react';
 import { STEAM_STATUS, PROGRESS_SORTS } from './utils/constants.js';
@@ -381,6 +381,26 @@ const AchievementModal = ({ game, achievementData, onClose }) => {
 const ActivityTab = ({ achievements, heatmapData, loading, hasMore, loadingMore, onLoadMore }) => {
     const [selectedDay,   setSelectedDay]   = useState(null);
     const [collapsedDays, setCollapsedDays] = useState(new Set());
+    const sentinelRef  = useRef(null);
+    const onLoadMoreRef = useRef(onLoadMore);
+    useEffect(() => { onLoadMoreRef.current = onLoadMore; }, [onLoadMore]);
+    useEffect(() => {
+        if (!sentinelRef.current || !hasMore || loadingMore) return;
+        const observer = new IntersectionObserver(
+            (entries) => { if (entries[0].isIntersecting) onLoadMoreRef.current(); },
+            { rootMargin: '300px' }
+        );
+        observer.observe(sentinelRef.current);
+        return () => observer.disconnect();
+    }, [hasMore, loadingMore]);
+
+    const loadedDays = useMemo(() => new Set(achievements.map(a => a.unlockedAt.substring(0, 10))), [achievements]);
+
+    // Auto-load next chunk when selected day has heatmap data but isn't loaded yet
+    useEffect(() => {
+        if (!selectedDay || !heatmapData[selectedDay] || loadedDays.has(selectedDay) || !hasMore || loadingMore) return;
+        onLoadMoreRef.current();
+    }, [selectedDay, loadedDays, hasMore, loadingMore]);
 
     const toggleDay = (day) => setCollapsedDays(prev => {
         const next = new Set(prev);
@@ -652,10 +672,10 @@ const ActivityTab = ({ achievements, heatmapData, loading, hasMore, loadingMore,
                     </div>
                 )}
 
-                {/* Load more */}
+                {/* Scroll sentinel */}
                 {!selectedDay && hasMore && (
-                    <div className="flex justify-center pt-2">
-                        {loadingMore ? (
+                    <div ref={sentinelRef} className="pt-2">
+                        {loadingMore && (
                             <div className="flex flex-col gap-2 w-full">
                                 {[...Array(2)].map((_, i) => (
                                     <div key={i} className="flex items-center gap-2 p-2 rounded-[2px] border border-[#2a475e] bg-[#1b2838]">
@@ -667,13 +687,6 @@ const ActivityTab = ({ achievements, heatmapData, loading, hasMore, loadingMore,
                                     </div>
                                 ))}
                             </div>
-                        ) : (
-                            <button
-                                onClick={onLoadMore}
-                                className="text-[11px] text-[#66c0f4] hover:text-white border border-[#2a475e] hover:border-[#66c0f4] px-4 py-1.5 rounded-[2px] transition-colors"
-                            >
-                                Load more
-                            </button>
                         )}
                     </div>
                 )}
@@ -685,7 +698,8 @@ const ActivityTab = ({ achievements, heatmapData, loading, hasMore, loadingMore,
 // ── ProgressTab ───────────────────────────────────────────────────────────────
 
 const ProgressTab = ({ achievementProgress, recentlyPlayed, onViewDetails }) => {
-    const [sort, setSort] = useState('pct');
+    const [sort,        setSort]        = useState('pct');
+    const [showPerfect, setShowPerfect] = useState(false);
 
     const playtimeMap = useMemo(() => {
         const m = {};
@@ -694,7 +708,7 @@ const ProgressTab = ({ achievementProgress, recentlyPlayed, onViewDetails }) => 
     }, [recentlyPlayed]);
 
     const games = useMemo(() => Object.entries(achievementProgress)
-        .filter(([, d]) => d.hasAchievements && d.unlocked > 0)
+        .filter(([, d]) => d.hasAchievements && d.unlocked > 0 && (showPerfect || d.total === 0 || d.unlocked < d.total))
         .map(([appId, d]) => {
             const pt = playtimeMap[Number(appId)];
             const lastUnlockedAt = (d.achievements ?? [])
@@ -728,7 +742,7 @@ const ProgressTab = ({ achievementProgress, recentlyPlayed, onViewDetails }) => 
             if (!b.lastUnlockedAt) return -1;
             return b.lastUnlockedAt.localeCompare(a.lastUnlockedAt);
         }),
-    [achievementProgress, sort]);
+    [achievementProgress, sort, showPerfect]);
 
     if (games.length === 0) {
         return (
@@ -755,7 +769,11 @@ const ProgressTab = ({ achievementProgress, recentlyPlayed, onViewDetails }) => 
                         {s.label}
                     </button>
                 ))}
-                <span className="ml-auto text-[9px] text-[#546270]">{games.length} games</span>
+                <label className="ml-auto flex items-center gap-1.5 cursor-pointer select-none">
+                    <input type="checkbox" checked={showPerfect} onChange={e => setShowPerfect(e.target.checked)} className="accent-[#66c0f4] w-3 h-3" />
+                    <span className="text-[9px] text-[#546270]">Show Perfect</span>
+                </label>
+                <span className="text-[9px] text-[#546270]">{games.length} games</span>
             </div>
 
             <div className="flex flex-col gap-3">

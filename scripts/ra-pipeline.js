@@ -370,7 +370,7 @@ function serializeLocally(payload) {
     // Strip fields unused by the frontend to reduce file size (~1MB saved).
     const UNUSED_GAME_FIELDS = ['richPresencePatch', 'imageBoxArt',
         'forumTopicId', 'flags', 'isFinal', 'releasedAtGranularity',
-        'numDistinctPlayers', 'numDistinctPlayersCasual', 'numDistinctPlayersHardcore',
+        'numDistinctPlayers',
         'userCompletion', 'userCompletionHardcore'];
     const UNUSED_ACH_FIELDS  = ['memAddr', 'authorUlid', 'dateCreated', 'dateModified', 'author'];
 

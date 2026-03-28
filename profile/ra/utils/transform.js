@@ -88,7 +88,8 @@ export const transformData = (data) => {
       }
 
       game.background = getMediaUrl(details.imageIngame || details.imageTitle) || game.background;
-      game.totalPlayers = details.numDistinctPlayersCasual || details.numDistinctPlayersHardcore || game.totalPlayers;
+      game.totalPlayers   = details.numDistinctPlayersCasual  || game.totalPlayers;
+      game.totalPlayersHC = details.numDistinctPlayersHardcore || game.totalPlayers;
 
       const parsed = parseTitle(game.title);
       game.isSubset = !!details.parentGameId || parsed.isSubset;
@@ -210,6 +211,7 @@ export const transformData = (data) => {
           trueRatio: ach.trueRatio,
           badgeName: ach.badgeName,
           hardcoreMode: ach.hardcoreMode,
+          ...parseTitle(ach.gameTitle),
           gameTitle: ach.gameTitle,
           gameId: ach.gameId,
           gameIcon: getMediaUrl(ach.gameIcon),
