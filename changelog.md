@@ -2,7 +2,7 @@
 
 ## 2026-03-29
 
-Sticky headers fixed across all pages; combined activity heatmap respects platform filter; platform filter label unified to "RA"; RA pipeline debug mode added; concurrent queue added to both data pipelines; RA achievement modal, activity tab, and Most Recently Unlocked card simplified — HC icon removed in favour of left strip, rarity pills replaced with plain colored ratio text.
+Sticky headers fixed across all pages; combined activity heatmap respects platform filter; platform filter label unified to "RA"; RA pipeline debug mode added; concurrent queue added to both data pipelines; RA achievement modal simplified; Steam game images upgraded; data pipelines changed to hourly.
 
 ### RetroAchievements
 
@@ -10,10 +10,21 @@ Sticky headers fixed across all pages; combined activity heatmap respects platfo
 - `RAchievementModal` HC flame icon removed from achievement title row — the gold left border strip already conveys hardcore unlock; applied to activity tab rows and Most Recently Unlocked card as well
 - Rarity pills (`UR`/`VR`/`R`/`UC`) replaced with plain colored `×N.N` ratio text — same color tiers, no border or background; shown for all achievements with valid data; locked achievements rendered at 40% opacity
 
+### Steam
+
+- Activity tab session header game image switched from wide capsule (`capsule_sm_120`) to square game icon from `games.json` — matches Most Recently Played and avoids cropping
+- Most Recently Played card image switched from square icon to `capsule_616x353.jpg` (high-res wide capsule) at natural aspect ratio — no crop, significantly sharper than the 32×32 icon
+- Most Recently Unlocked game name row image switched to square game icon matching activity tab
+- Combined activity Steam session headers now use square game icon from `games.json` — `games.json` fetched on mount, icons patched into loaded achievements
+
 ### Activity
 
 - Combined activity heatmap now stores RA and Steam heatmaps separately and derives the active heatmap from the platform filter — previously always showed merged data regardless of filter
 - Platform filter label unified to `RA` across combined activity and completions pages (was `RetroAchievements` in combined activity)
+
+### Pipelines
+
+- RA and Steam GitHub Actions schedules changed from every 3 hours to every 1 hour — public repo has no Actions minute limits
 
 ### Pipelines
 

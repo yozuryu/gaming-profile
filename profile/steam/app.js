@@ -378,7 +378,7 @@ const AchievementModal = ({ game, achievementData, onClose }) => {
 
 // ── ActivityTab ───────────────────────────────────────────────────────────────
 
-const ActivityTab = ({ achievements, heatmapData, loading, hasMore, loadingMore, onLoadMore }) => {
+const ActivityTab = ({ achievements, heatmapData, gameIcons, loading, hasMore, loadingMore, onLoadMore }) => {
     const [selectedDay,   setSelectedDay]   = useState(null);
     const [collapsedDays, setCollapsedDays] = useState(new Set());
     const sentinelRef  = useRef(null);
@@ -625,7 +625,7 @@ const ActivityTab = ({ achievements, heatmapData, loading, hasMore, loadingMore,
                                             <div className="flex items-center gap-2 mb-1.5">
                                                 <div className="w-4 h-4 rounded-[1px] overflow-hidden border border-[#101214] bg-[#1b2838] shrink-0">
                                                     <img
-                                                        src={capsuleUrl(session.appId)}
+                                                        src={gameIcons?.[session.appId]}
                                                         alt=""
                                                         className="w-full h-full object-cover"
                                                         onError={e => { e.target.style.display = 'none'; }}
@@ -920,7 +920,7 @@ const App = () => {
 
     // Load games.json when Recent or Progress tab opens
     useEffect(() => {
-        if (['recent', 'progress'].includes(activeTab) && profileData && !gamesData) {
+        if (['recent', 'progress', 'activity'].includes(activeTab) && profileData && !gamesData) {
             fetch('../../data/steam/games.json')
                 .then(r => r.json())
                 .then(setGamesData)
@@ -1068,11 +1068,9 @@ const App = () => {
                             {mostRecentGame ? (
                                 <div className="bg-[#1b2838]/80 border border-[#323f4c] border-l-[3px] border-l-[#66c0f4] rounded-[3px] p-3 flex items-center gap-4 hover:bg-[#202d39] transition-colors shadow-sm">
                                     <a href={mostRecentGame.storeUrl} target="_blank" rel="noreferrer"
-                                        className="w-14 h-14 shrink-0 rounded-[2px] overflow-hidden border border-[#101214] bg-black block hover:scale-105 transition-transform">
-                                        {mostRecentGame.iconUrl
-                                            ? <img src={mostRecentGame.iconUrl} alt={mostRecentGame.name} className="w-full h-full object-cover" />
-                                            : <div className="w-full h-full bg-[#2a475e]" />
-                                        }
+                                        className="w-24 shrink-0 rounded-[2px] overflow-hidden border border-[#101214] bg-black block hover:scale-105 transition-transform">
+                                        <img src={`https://cdn.akamai.steamstatic.com/steam/apps/${mostRecentGame.appId}/capsule_616x353.jpg`} alt={mostRecentGame.name} className="w-full h-auto block"
+                                            onError={e => { e.target.src = headerUrl(mostRecentGame.appId); }} />
                                     </a>
                                     <div className="flex-1 min-w-0 flex flex-col">
                                         <a href={mostRecentGame.storeUrl} target="_blank" rel="noreferrer"
@@ -1139,9 +1137,9 @@ const App = () => {
                                         )}
                                         <div className="flex items-center gap-1.5 text-[10px]">
                                             <img
-                                                src={capsuleUrl(mostRecentUnlock.appId)}
+                                                src={achProgress[mostRecentUnlock.appId]?.iconUrl}
                                                 alt=""
-                                                className="w-5 h-2.5 rounded-[1px] border border-[#101214] object-cover"
+                                                className="w-4 h-4 rounded-[1px] border border-[#101214] object-cover"
                                                 onError={e => { e.target.style.display = 'none'; }}
                                             />
                                             <a href={`https://store.steampowered.com/app/${mostRecentUnlock.appId}`} target="_blank" rel="noreferrer" className="text-[#66c0f4] hover:text-[#c6d4df] transition-colors">{mostRecentUnlock.gameName}</a>
@@ -1304,6 +1302,7 @@ const App = () => {
                         <ActivityTab
                             achievements={recentAchs}
                             heatmapData={heatmapData}
+                            gameIcons={Object.fromEntries(Object.entries(gamesData?.achievementProgress ?? {}).map(([id, g]) => [id, g.iconUrl]))}
                             loading={loadingChunkIdx !== null || achievementChunks[0] === null}
                             hasMore={achievementChunks.some(c => c === null)}
                             loadingMore={loadingChunkIdx !== null}

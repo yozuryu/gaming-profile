@@ -220,11 +220,12 @@ const GameSession = ({ session }) => {
 // ── App ───────────────────────────────────────────────────────────────────────
 
 const App = () => {
-    const [raAchs,      setRaAchs]      = useState([]);
-    const [steamAchs,   setSteamAchs]   = useState([]);
-    const [raHeatmap,    setRaHeatmap]    = useState({});
-    const [steamHeatmap, setSteamHeatmap] = useState({});
-    const [loading,     setLoading]     = useState(true);
+    const [raAchs,        setRaAchs]        = useState([]);
+    const [steamAchs,     setSteamAchs]     = useState([]);
+    const [raHeatmap,     setRaHeatmap]     = useState({});
+    const [steamHeatmap,  setSteamHeatmap]  = useState({});
+    const [steamGameIcons, setSteamGameIcons] = useState({});
+    const [loading,       setLoading]       = useState(true);
     const [loadingMore, setLoadingMore] = useState(false);
     const [nextChunk,   setNextChunk]   = useState(2);
     const [filter,      setFilter]      = useState('all');
@@ -246,10 +247,17 @@ const App = () => {
         const d = await fetch(path)
             .then(r => r.ok ? r.json() : { recentAchievements: [] })
             .catch(() => ({ recentAchievements: [] }));
-        return (d.recentAchievements ?? []).map(
-                platform === 'ra' ? normalizeRA : normalizeSteam
-            );
-    }, []);
+        const normalized = (d.recentAchievements ?? []).map(
+            platform === 'ra' ? normalizeRA : normalizeSteam
+        );
+        if (platform === 'steam') {
+            normalized.forEach(a => {
+                const icon = steamGameIcons[a.gameId];
+                if (icon) a.gameIcon = icon;
+            });
+        }
+        return normalized;
+    }, [steamGameIcons]);
 
     useEffect(() => {
         // Fetch both heatmaps separately
@@ -260,6 +268,17 @@ const App = () => {
             setRaHeatmap(raH.activityHeatmap || {});
             setSteamHeatmap(stH.activityHeatmap || {});
         });
+
+        fetch('../data/steam/games.json')
+            .then(r => r.json())
+            .then(d => {
+                const icons = Object.fromEntries(
+                    Object.entries(d.achievementProgress ?? {}).map(([id, g]) => [id, g.iconUrl])
+                );
+                setSteamGameIcons(icons);
+                setSteamAchs(prev => prev.map(a => icons[a.gameId] ? { ...a, gameIcon: icons[a.gameId] } : a));
+            })
+            .catch(() => {});
 
         Promise.all([fetchChunk('ra', 1), fetchChunk('steam', 1)]).then(([ra, steam]) => {
             setRaAchs(ra);
