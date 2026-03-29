@@ -2,11 +2,13 @@
 
 ## 2026-03-29
 
-Sticky headers fixed across all pages; combined activity heatmap respects platform filter; platform filter label unified to "RA"; RA pipeline debug mode added; concurrent queue added to both data pipelines.
+Sticky headers fixed across all pages; combined activity heatmap respects platform filter; platform filter label unified to "RA"; RA pipeline debug mode added; concurrent queue added to both data pipelines; RA achievement modal, activity tab, and Most Recently Unlocked card simplified — HC icon removed in favour of left strip, rarity pills replaced with plain colored ratio text.
 
 ### RetroAchievements
 
 - RA pipeline `--debug` flag added — prints raw API responses after each fetch, matching Steam pipeline behavior; `npm run ra-fetch:debug` script added
+- `RAchievementModal` HC flame icon removed from achievement title row — the gold left border strip already conveys hardcore unlock; applied to activity tab rows and Most Recently Unlocked card as well
+- Rarity pills (`UR`/`VR`/`R`/`UC`) replaced with plain colored `×N.N` ratio text — same color tiers, no border or background; shown for all achievements with valid data; locked achievements rendered at 40% opacity
 
 ### Activity
 

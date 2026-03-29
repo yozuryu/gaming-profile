@@ -403,25 +403,9 @@ const RAchievementModal = ({ game, onClose }) => {
                       {ach.title}
                     </a>
                     <span className="text-[9px] font-bold text-[#66c0f4] bg-[#101214] border border-[#323f4c] px-1.5 py-[1px] rounded-sm shrink-0">{ach.points} pts</span>
-                    {ach.trueRatio > ach.points && (() => {
-                      const ratio = ach.trueRatio / ach.points;
-                      if (ratio < 5) return null;
-                      const [label, style, name, pct, valColor] = ratio >= 30
-                        ? ['UR', 'text-[#ff6b6b] border-[#ff6b6b]/35 bg-[rgba(255,107,107,0.08)]', 'Ultra Rare', '~1%',  '#ff6b6b']
-                        : ratio >= 20
-                        ? ['VR', 'text-[#e5b143] border-[#e5b143]/35 bg-[rgba(229,177,67,0.08)]',  'Very Rare',  '~2.5%', '#e5b143']
-                        : ratio >= 10
-                        ? ['R',  'text-[#66c0f4] border-[#66c0f4]/35 bg-[rgba(102,192,244,0.08)]', 'Rare',       '~15%',  '#66c0f4']
-                        : ['UC', 'text-[#8f98a0] border-[#8f98a0]/35 bg-[rgba(143,152,160,0.08)]', 'Uncommon',   '~24%',  '#8f98a0'];
-                      return (
-                        <span className="shrink-0 cursor-help inline-flex items-center"
-                          onMouseEnter={e => showTip(e, <><div className="pop-name">{name}</div><div className="pop-sub">Top {pct} of players</div><div className="pop-val" style={{color: valColor}}>×{ratio.toFixed(1)} ratio</div></>)}
-                          onMouseLeave={hideTip}
-                        >
-                          <span className={`text-[9px] font-bold px-1.5 py-[1px] rounded-sm border ${style}`}>{label}</span>
-                        </span>
-                      );
-                    })()}
+                    {ach.trueRatio > 0 && ach.points > 0 && (
+                      <span className={`text-[9px] shrink-0 ${!ach.isUnlocked ? 'opacity-40' : ''}`} style={{ color: (() => { const r = ach.trueRatio / ach.points; return r >= 30 ? '#ff6b6b' : r >= 20 ? '#e5b143' : r >= 10 ? '#66c0f4' : '#8f98a0'; })() }}>×{(ach.trueRatio / ach.points).toFixed(1)}</span>
+                    )}
                     {ach.type === 'progression' && <span className="shrink-0 cursor-help inline-flex items-center" onMouseEnter={e => showTip(e, <><div className="pop-name" style={{color:'#e5b143'}}>Progression</div><div className="pop-sub">Required to complete the game</div></>)} onMouseLeave={hideTip}><Trophy size={11} className="text-[#e5b143]" /></span>}
                     {ach.type === 'win_condition' && <span className="shrink-0 cursor-help inline-flex items-center" onMouseEnter={e => showTip(e, <><div className="pop-name" style={{color:'#ff6b6b'}}>Win Condition</div><div className="pop-sub">Triggers game completion</div></>)} onMouseLeave={hideTip}><Crown size={11} className="text-[#ff6b6b]" /></span>}
                     {ach.type === 'missable' && <span className="shrink-0 cursor-help inline-flex items-center" onMouseEnter={e => showTip(e, <><div className="pop-name" style={{color:'#ff9800'}}>Missable</div><div className="pop-sub">Can be permanently missed</div></>)} onMouseLeave={hideTip}><AlertTriangle size={11} className="text-[#ff9800]" /></span>}
@@ -441,14 +425,7 @@ const RAchievementModal = ({ game, onClose }) => {
                       </div>
                     </div>
                     {ach.isUnlocked && (
-                      <div className="flex items-center gap-1.5 shrink-0">
-                        {ach.isHardcore && (
-                          <span className="text-[9px] text-[#ff6b6b] border border-[#ff6b6b]/30 px-1.5 py-[1px] rounded-sm font-semibold uppercase tracking-wider flex items-center gap-1">
-                            <Flame size={9} /> HC
-                          </span>
-                        )}
-                        <p className="text-[9px] text-[#66c0f4]">Unlocked: {new Date(ach.unlockDate).toLocaleDateString()}</p>
-                      </div>
+                      <p className="text-[9px] text-[#66c0f4] shrink-0">Unlocked: {new Date(ach.unlockDate).toLocaleDateString()}</p>
                     )}
                   </div>
                 </div>
@@ -615,7 +592,7 @@ const ActivityTab = ({ achievements, refTime, heatmapData, loadedChunks, totalCh
           <div style={{ minWidth: `${53 * 14}px` }}>
             {/* Month labels */}
             <div className="flex mb-1" style={{ paddingLeft: '28px' }}>
-              {weeks.map((week, wi) => {
+              {weeks.map((_week, wi) => {
                 const ml = monthLabels.find(m => m.wi === wi);
                 return <div key={wi} style={{ flex: 1, fontSize: '8px', color: '#546270', whiteSpace: 'nowrap', overflow: 'hidden' }}>{ml ? ml.label : ''}</div>;
               })}
@@ -736,28 +713,7 @@ const ActivityTab = ({ achievements, refTime, heatmapData, loadedChunks, totalCh
                     {/* Achievements in session */}
                     <div className="flex flex-col gap-1">
                       {[...session.achievements].sort((a,b) => b.date.localeCompare(a.date)).map((ach, ai) => {
-                        const ratio = ach.trueRatio && ach.points ? ach.trueRatio / ach.points : 1;
-                        const rarityBadge = (() => {
-                          if (ratio < 5) return null;
-                          const [label, style, name, pct] = ratio >= 30
-                            ? ['UR', 'text-[#ff6b6b] border-[#ff6b6b]/35 bg-[rgba(255,107,107,0.08)]', 'Ultra Rare', '~1%']
-                            : ratio >= 20
-                            ? ['VR', 'text-[#e5b143] border-[#e5b143]/35 bg-[rgba(229,177,67,0.08)]',  'Very Rare',  '~2.5%']
-                            : ratio >= 10
-                            ? ['R',  'text-[#66c0f4] border-[#66c0f4]/35 bg-[rgba(102,192,244,0.08)]', 'Rare',       '~15%']
-                            : ['UC', 'text-[#8f98a0] border-[#8f98a0]/35 bg-[rgba(143,152,160,0.08)]', 'Uncommon',   '~24%'];
-                          const valColor = style.includes('ff6b6b') ? '#ff6b6b' : style.includes('e5b143') ? '#e5b143' : style.includes('66c0f4') ? '#66c0f4' : '#8f98a0';
-                          return (
-                            <span className="pop-wrap">
-                              <span className={`text-[9px] font-bold px-1.5 py-[1px] rounded-sm border shrink-0 ${style}`}>{label}</span>
-                              <span className="pop-box">
-                                <div className="pop-name">{name}</div>
-                                <div className="pop-sub">Top {pct} of players</div>
-                                <div className="pop-val" style={{color: valColor}}>×{ratio.toFixed(1)} ratio</div>
-                              </span>
-                            </span>
-                          );
-                        })();
+                        const ratio = ach.trueRatio && ach.points ? ach.trueRatio / ach.points : null;
                         return (
                           <div key={ai} className={`flex items-center gap-2 p-2 rounded-[2px] border border-[#2a475e] border-l-[2px] ${ach.hardcoreMode ? 'border-l-[#e5b143] bg-[#202d39]' : 'border-l-[#8f98a0] bg-[#1b2838]'} hover:bg-[#2a475e] transition-colors`}>
                             <a href={`${SITE_URL}/achievement/${ach.achievementId}`} target="_blank" rel="noreferrer" className="shrink-0 w-8 h-8 rounded-[2px] overflow-hidden border border-[#101214] bg-black block hover:scale-105 transition-transform">
@@ -769,8 +725,7 @@ const ActivityTab = ({ achievements, refTime, heatmapData, loadedChunks, totalCh
                                   {ach.title}
                                 </a>
                                 <span className="text-[9px] font-bold text-[#66c0f4] bg-[#101214] border border-[#323f4c] px-1.5 py-[1px] rounded-sm shrink-0">{ach.points} pts</span>
-                                {ratio > 1 && rarityBadge}
-                                {ach.hardcoreMode && <span className="text-[9px] text-[#ff6b6b] border border-[#ff6b6b]/30 bg-[#101214]/60 px-1.5 py-[1px] rounded-sm font-semibold uppercase tracking-wider flex items-center gap-1 shrink-0"><Flame size={8} /> HC</span>}
+                                {ratio > 0 && <span className="text-[9px] shrink-0" style={{ color: ratio >= 30 ? '#ff6b6b' : ratio >= 20 ? '#e5b143' : ratio >= 10 ? '#66c0f4' : '#8f98a0' }}>×{ratio.toFixed(1)}</span>}
                                 {ach.type === 'progression' && (
                                   <span className="pop-wrap">
                                     <Trophy size={11} className="text-[#e5b143]" />
@@ -1271,33 +1226,10 @@ export default function App() {
                         {PROFILE_DATA.mostRecentAchievement.title}
                       </a>
                       <span className="text-[9px] font-bold text-[#66c0f4] bg-[#101214] border border-[#323f4c] px-1.5 py-[1px] rounded-sm shrink-0">{PROFILE_DATA.mostRecentAchievement.points} pts</span>
-                      {PROFILE_DATA.mostRecentAchievement.trueRatio > PROFILE_DATA.mostRecentAchievement.points && (() => {
+                      {PROFILE_DATA.mostRecentAchievement.trueRatio > 0 && PROFILE_DATA.mostRecentAchievement.points > 0 && (() => {
                         const ratio = PROFILE_DATA.mostRecentAchievement.trueRatio / PROFILE_DATA.mostRecentAchievement.points;
-                        if (ratio < 5) return null;
-                        const [label, style, name, pct] = ratio >= 30
-                          ? ['UR', 'text-[#ff6b6b] border-[#ff6b6b]/35 bg-[rgba(255,107,107,0.08)]', 'Ultra Rare', '~1%']
-                          : ratio >= 20
-                          ? ['VR', 'text-[#e5b143] border-[#e5b143]/35 bg-[rgba(229,177,67,0.08)]',  'Very Rare',  '~2.5%']
-                          : ratio >= 10
-                          ? ['R',  'text-[#66c0f4] border-[#66c0f4]/35 bg-[rgba(102,192,244,0.08)]', 'Rare',       '~15%']
-                          : ['UC', 'text-[#8f98a0] border-[#8f98a0]/35 bg-[rgba(143,152,160,0.08)]', 'Uncommon',   '~24%'];
-                        const valColor = style.includes('ff6b6b') ? '#ff6b6b' : style.includes('e5b143') ? '#e5b143' : style.includes('66c0f4') ? '#66c0f4' : '#8f98a0';
-                        return (
-                          <span className="pop-wrap">
-                            <span className={`text-[9px] font-bold px-1.5 py-[1px] rounded-sm border shrink-0 ${style}`}>{label}</span>
-                            <span className="pop-box">
-                              <div className="pop-name">{name}</div>
-                              <div className="pop-sub">Top {pct} of players</div>
-                              <div className="pop-val" style={{color: valColor}}>×{ratio.toFixed(1)} ratio</div>
-                            </span>
-                          </span>
-                        );
+                        return <span className="text-[9px] shrink-0" style={{ color: ratio >= 30 ? '#ff6b6b' : ratio >= 20 ? '#e5b143' : ratio >= 10 ? '#66c0f4' : '#8f98a0' }}>×{ratio.toFixed(1)}</span>;
                       })()}
-                      {PROFILE_DATA.mostRecentAchievement.hardcoreMode && (
-                        <span className="text-[9px] text-[#ff6b6b] border border-[#ff6b6b]/30 bg-[#101214]/60 px-1.5 py-[1px] rounded-sm font-semibold uppercase tracking-wider flex items-center gap-1 shrink-0">
-                          <Flame size={9} /> HC
-                        </span>
-                      )}
                     </div>
                     <p className="text-[10px] text-[#8f98a0] leading-snug mb-1 truncate">{PROFILE_DATA.mostRecentAchievement.description}</p>
                     <div className="flex items-center gap-1.5 text-[10px]">
