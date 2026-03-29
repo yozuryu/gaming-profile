@@ -20,6 +20,10 @@ on:
           - unlock-refresh
           - full-refresh
 
+concurrency:
+  group: data-pipeline
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
