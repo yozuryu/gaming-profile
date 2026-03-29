@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-03-29T22:37:43.987Z"
+        "extractionTimestamp": "2026-03-29T23:39:04.509Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -34,7 +34,7 @@
             "data2": null
         },
         "richPresenceMsg": "Playing Hexyz Force",
-        "richPresenceMsgDate": "2026-03-29 15:55:50",
+        "richPresenceMsgDate": "2026-03-29 23:35:43",
         "lastGameId": 2883,
         "contribCount": 0,
         "contribYield": 0,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 57818,
+        "rank": 57823,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 136376,
+        "totalRanked": 136381,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -121,13 +121,13 @@
             "imageTitle": "/Images/055465.png",
             "imageIngame": "/Images/055466.png",
             "imageBoxArt": "/Images/055467.png",
-            "lastPlayed": "2026-03-29 15:55:50",
+            "lastPlayed": "2026-03-29 23:35:43",
             "achievementsTotal": 151,
             "numPossibleAchievements": 151,
             "possibleScore": 1300,
-            "numAchieved": 0,
+            "numAchieved": 1,
             "scoreAchieved": 0,
-            "numAchievedHardcore": 0,
+            "numAchievedHardcore": 1,
             "scoreAchievedHardcore": 0
         },
         {
@@ -384,9 +384,22 @@
         }
     ],
     "gameAwardsAndProgress": {
-        "count": 46,
-        "total": 46,
+        "count": 47,
+        "total": 47,
         "results": [
+            {
+                "gameId": 2883,
+                "title": "Hexyz Force",
+                "imageIcon": "/Images/086971.png",
+                "consoleId": 41,
+                "consoleName": "PlayStation Portable",
+                "maxPossible": 151,
+                "numAwarded": 1,
+                "numAwardedHardcore": 1,
+                "mostRecentAwardedDate": "2026-03-29T23:35:43+00:00",
+                "highestAwardKind": null,
+                "highestAwardDate": null
+            },
             {
                 "gameId": 16452,
                 "title": "7th Dragon 2020",
@@ -4962,24 +4975,24 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-03-29 15:22:27",
+        "date": "2026-03-29 23:35:43",
         "hardcoreMode": true,
-        "achievementId": 572179,
-        "title": "Quest: A New Hero Emerges",
-        "description": "Complete the A New Hero Emerges quest",
-        "badgeName": "649953",
-        "points": 3,
-        "trueRatio": 14,
+        "achievementId": 381670,
+        "title": "Hexyz Force",
+        "description": "View the opening movie by waiting for a while on the title screen",
+        "badgeName": "436076",
+        "points": 0,
+        "trueRatio": 0,
         "type": null,
-        "author": "Jamiras",
-        "authorUlid": "01BJY8JSBTA7NVT0NYSVDCK5TY",
-        "gameTitle": "7th Dragon 2020",
-        "gameIcon": "/Images/123011.png",
-        "gameId": 16452,
+        "author": "Whithbrin",
+        "authorUlid": "01D9V4947B06WVSYT90HQ7PFBR",
+        "gameTitle": "Hexyz Force",
+        "gameIcon": "/Images/086971.png",
+        "gameId": 2883,
         "consoleName": "PlayStation Portable",
         "cumulScore": 366,
-        "badgeUrl": "/Badge/649953.png",
-        "gameUrl": "/game/16452"
+        "badgeUrl": "/Badge/436076.png",
+        "gameUrl": "/game/2883"
     },
     "mostRecentGame": {
         "gameId": 2883,
@@ -4990,13 +5003,13 @@
         "imageTitle": "/Images/055465.png",
         "imageIngame": "/Images/055466.png",
         "imageBoxArt": "/Images/055467.png",
-        "lastPlayed": "2026-03-29 15:55:50",
+        "lastPlayed": "2026-03-29 23:35:43",
         "achievementsTotal": 151,
         "numPossibleAchievements": 151,
         "possibleScore": 1300,
-        "numAchieved": 0,
+        "numAchieved": 1,
         "scoreAchieved": 0,
-        "numAchievedHardcore": 0,
+        "numAchievedHardcore": 1,
         "scoreAchievedHardcore": 0
     },
     "points7Days": 101,
