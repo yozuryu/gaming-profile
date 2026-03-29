@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-03-29T15:38:10.458Z"
+        "extractionTimestamp": "2026-03-29T15:57:56.874Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Lv46 Samurai, Lv44 Psychic, and Lv44 Hacker | Shibuya Flowersea | Ch5: 19/33 quests | 26h24",
-        "lastGameId": 16452,
+        "richPresenceMsg": "Playing Hexyz Force",
+        "lastGameId": 2883,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1399,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Lv46 Samurai, Lv44 Psychic, and Lv44 Hacker | Shibuya Flowersea | Ch5: 19/33 quests | 26h24",
-        "richPresenceMsgDate": "2026-03-29 15:38:03",
-        "lastGameId": 16452,
+        "richPresenceMsg": "Playing Hexyz Force",
+        "richPresenceMsgDate": "2026-03-29 15:55:50",
+        "lastGameId": 2883,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1399,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 57783,
+        "rank": 57785,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 136287,
+        "totalRanked": 136290,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -113,6 +113,24 @@
     },
     "recentlyPlayedGames": [
         {
+            "gameId": 2883,
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "title": "Hexyz Force",
+            "imageIcon": "/Images/086971.png",
+            "imageTitle": "/Images/055465.png",
+            "imageIngame": "/Images/055466.png",
+            "imageBoxArt": "/Images/055467.png",
+            "lastPlayed": "2026-03-29 15:55:50",
+            "achievementsTotal": 151,
+            "numPossibleAchievements": 151,
+            "possibleScore": 1300,
+            "numAchieved": 0,
+            "scoreAchieved": 0,
+            "numAchievedHardcore": 0,
+            "scoreAchievedHardcore": 0
+        },
+        {
             "gameId": 16452,
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
@@ -121,7 +139,7 @@
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
             "imageBoxArt": "/Images/110688.png",
-            "lastPlayed": "2026-03-29 15:38:03",
+            "lastPlayed": "2026-03-29 15:54:03",
             "achievementsTotal": 80,
             "numPossibleAchievements": 80,
             "possibleScore": 475,
@@ -363,24 +381,6 @@
             "scoreAchieved": 0,
             "numAchievedHardcore": 0,
             "scoreAchievedHardcore": 0
-        },
-        {
-            "gameId": 24186,
-            "consoleId": 5,
-            "consoleName": "Game Boy Advance",
-            "title": "Pokémon Emerald Version [Subset - Professor Oak Challenge]",
-            "imageIcon": "/Images/107627.png",
-            "imageTitle": "/Images/072238.png",
-            "imageIngame": "/Images/072240.png",
-            "imageBoxArt": "/Images/072317.png",
-            "lastPlayed": "2026-03-24 00:58:50",
-            "achievementsTotal": 221,
-            "numPossibleAchievements": 221,
-            "possibleScore": 468,
-            "numAchieved": 47,
-            "scoreAchieved": 87,
-            "numAchievedHardcore": 47,
-            "scoreAchievedHardcore": 87
         }
     ],
     "gameAwardsAndProgress": {
@@ -4982,23 +4982,23 @@
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
-        "gameId": 16452,
+        "gameId": 2883,
         "consoleId": 41,
         "consoleName": "PlayStation Portable",
-        "title": "7th Dragon 2020",
-        "imageIcon": "/Images/123011.png",
-        "imageTitle": "/Images/110687.png",
-        "imageIngame": "/Images/110689.png",
-        "imageBoxArt": "/Images/110688.png",
-        "lastPlayed": "2026-03-29 15:38:03",
-        "achievementsTotal": 80,
-        "numPossibleAchievements": 80,
-        "possibleScore": 475,
-        "numAchieved": 35,
-        "scoreAchieved": 156,
-        "numAchievedHardcore": 35,
-        "scoreAchievedHardcore": 156
+        "title": "Hexyz Force",
+        "imageIcon": "/Images/086971.png",
+        "imageTitle": "/Images/055465.png",
+        "imageIngame": "/Images/055466.png",
+        "imageBoxArt": "/Images/055467.png",
+        "lastPlayed": "2026-03-29 15:55:50",
+        "achievementsTotal": 151,
+        "numPossibleAchievements": 151,
+        "possibleScore": 1300,
+        "numAchieved": 0,
+        "scoreAchieved": 0,
+        "numAchievedHardcore": 0,
+        "scoreAchievedHardcore": 0
     },
     "points7Days": 101,
-    "points30Days": 231
+    "points30Days": 228
 }
