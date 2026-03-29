@@ -3,11 +3,11 @@ name: Fetch RA Data
 run-name: >-
   ${{ github.event_name == 'workflow_dispatch' && format('RA Data — manual ({0})', inputs.refresh_games == true && 'full refresh' || 'incremental') ||
       github.event.schedule == '0 0 * * *'     && 'RA Data — midnight full refresh' ||
-      'RA Data — 3h incremental' }}
+      'RA Data — 1h incremental' }}
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # every 3 hours — incremental
+    - cron: '0 * * * *'    # every 1 hour — incremental
     - cron: '0 0 * * *'    # midnight UTC — full game refresh
   workflow_dispatch:
     inputs:
