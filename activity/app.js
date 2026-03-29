@@ -222,7 +222,8 @@ const GameSession = ({ session }) => {
 const App = () => {
     const [raAchs,      setRaAchs]      = useState([]);
     const [steamAchs,   setSteamAchs]   = useState([]);
-    const [heatmapData, setHeatmapData] = useState({});
+    const [raHeatmap,    setRaHeatmap]    = useState({});
+    const [steamHeatmap, setSteamHeatmap] = useState({});
     const [loading,     setLoading]     = useState(true);
     const [loadingMore, setLoadingMore] = useState(false);
     const [nextChunk,   setNextChunk]   = useState(2);
@@ -238,30 +239,26 @@ const App = () => {
         return next;
     });
 
-    const fetchChunk = useCallback((platform, i) => {
+    const fetchChunk = useCallback(async (platform, i) => {
         const path = platform === 'ra'
             ? `../data/ra/achievements/${i}.json`
             : `../data/steam/achievements/${i}.json`;
-        return fetch(path)
+        const d = await fetch(path)
             .then(r => r.ok ? r.json() : { recentAchievements: [] })
-            .catch(() => ({ recentAchievements: [] }))
-            .then(d => (d.recentAchievements ?? []).map(
+            .catch(() => ({ recentAchievements: [] }));
+        return (d.recentAchievements ?? []).map(
                 platform === 'ra' ? normalizeRA : normalizeSteam
-            ));
+            );
     }, []);
 
     useEffect(() => {
-        // Fetch both heatmaps and merge them
+        // Fetch both heatmaps separately
         Promise.all([
             fetch('../data/ra/achievements/heatmap.json').then(r => r.json()).catch(() => ({})),
             fetch('../data/steam/achievements/heatmap.json').then(r => r.json()).catch(() => ({})),
         ]).then(([raH, stH]) => {
-            const merged = {};
-            const add = (src) => Object.entries(src.activityHeatmap || {}).forEach(([day, d]) => {
-                merged[day] = { count: (merged[day]?.count ?? 0) + (d.count ?? 0) };
-            });
-            add(raH); add(stH);
-            setHeatmapData(merged);
+            setRaHeatmap(raH.activityHeatmap || {});
+            setSteamHeatmap(stH.activityHeatmap || {});
         });
 
         Promise.all([fetchChunk('ra', 1), fetchChunk('steam', 1)]).then(([ra, steam]) => {
@@ -300,6 +297,16 @@ const App = () => {
         window.addEventListener('scroll', onScroll, { passive: true });
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
+
+    const heatmapData = useMemo(() => {
+        if (filter === 'ra') return raHeatmap;
+        if (filter === 'steam') return steamHeatmap;
+        const merged = { ...raHeatmap };
+        Object.entries(steamHeatmap).forEach(([day, d]) => {
+            merged[day] = { count: (merged[day]?.count ?? 0) + (d.count ?? 0) };
+        });
+        return merged;
+    }, [filter, raHeatmap, steamHeatmap]);
 
     const sourceAchs = useMemo(() => {
         const base = filter === 'ra' ? raAchs
@@ -353,7 +360,7 @@ const App = () => {
 
     const filters = useMemo(() => [
         { id: 'all',   label: 'All',              count: raAchs.length + steamAchs.length },
-        { id: 'ra',    label: 'RetroAchievements', count: raAchs.length },
+        { id: 'ra',    label: 'RA',                count: raAchs.length },
         { id: 'steam', label: 'Steam',             count: steamAchs.length },
     ], [raAchs.length, steamAchs.length]);
 

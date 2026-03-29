@@ -41,15 +41,34 @@ const renderText = (text) => {
     );
 };
 
-// ── Category accent colors ─────────────────────────────────────────────────────
+// ── Section order + colors ─────────────────────────────────────────────────────
+
+const SECTION_ORDER = [
+    'RetroAchievements',
+    'Steam',
+    'Hub',
+    'Completions',
+    'Activity',
+    'Pipelines',
+    'Structure',
+];
+
+const sortSections = (sections) => {
+    const idx = (title) => {
+        const i = SECTION_ORDER.indexOf(title);
+        return i === -1 ? SECTION_ORDER.length : i;
+    };
+    return [...sections].sort((a, b) => idx(a.title) - idx(b.title));
+};
 
 const SECTION_COLORS = {
-    'Steam':             '#66c0f4',
     'RetroAchievements': '#e5b143',
+    'Steam':             '#66c0f4',
     'Hub':               '#c6d4df',
-    'Hub Activity':      '#c6d4df',
     'Completions':       '#c6d4df',
     'Activity':          '#c6d4df',
+    'Pipelines':         '#8f98a0',
+    'Structure':         '#8f98a0',
 };
 
 const sectionColor = (title) =>
@@ -119,7 +138,7 @@ const Release = ({ date, summary, sections, defaultOpen }) => {
                     {summary && (
                         <p className="text-[11px] text-[#546270] italic mb-4">{renderText(summary)}</p>
                     )}
-                    {sections.map((sec, i) => <Section key={i} title={sec.title} entries={sec.entries} />)}
+                    {sortSections(sections).map((sec, i) => <Section key={i} title={sec.title} entries={sec.entries} />)}
                 </div>
             )}
         </div>

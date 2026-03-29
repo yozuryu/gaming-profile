@@ -1,5 +1,28 @@
 # Changelog
 
+## 2026-03-29
+
+Sticky headers fixed across all pages; combined activity heatmap respects platform filter; platform filter label unified to "RA"; RA pipeline debug mode added; concurrent queue added to both data pipelines.
+
+### RetroAchievements
+
+- RA pipeline `--debug` flag added — prints raw API responses after each fetch, matching Steam pipeline behavior; `npm run ra-fetch:debug` script added
+
+### Activity
+
+- Combined activity heatmap now stores RA and Steam heatmaps separately and derives the active heatmap from the platform filter — previously always showed merged data regardless of filter
+- Platform filter label unified to `RA` across combined activity and completions pages (was `RetroAchievements` in combined activity)
+
+### Pipelines
+
+- Concurrent queue (`concurrency: group: data-pipeline, cancel-in-progress: false`) added to both RA and Steam GitHub Actions workflows — prevents push conflicts when both pipelines trigger simultaneously
+
+### Structure
+
+- `overflow-x: hidden` on `html, body` replaced with `overflow-x: clip` on `body` across Steam, combined activity, completions, and changelog pages — `hidden` creates a scroll container that breaks `position: sticky`; `clip` prevents horizontal overflow without this side effect
+
+---
+
 ## 2026-03-28
 
 RA bug fixes; lazy loading across all activity pages; Steam progress hides perfect games by default; tilde tag and subset parsing extended site-wide; game card playtime row redesigned with clock icon and dot separator.
@@ -22,6 +45,8 @@ RA bug fixes; lazy loading across all activity pages; Steam progress hides perfe
 - Combined activity (`/activity/`) heatmap now uses precomputed `heatmap.json` from both platforms merged by day — complete data from mount regardless of loaded chunks
 - All three activity pages (RA, Steam, combined) now use `IntersectionObserver` scroll sentinel for lazy loading — next chunk auto-loads when scrolled within 300px of the bottom, replacing the manual "Load more" button on Steam and the silent background streaming on the combined page
 - Clicking a heatmap day that isn't in the loaded data auto-loads chunks until the day's achievements are available — implemented on Steam Activity tab and combined activity page (RA already had this)
+- RA activity tab session headers now render tilde tag badges inline alongside the game name
+- Combined activity session headers now render tilde tag badges — `parseTitle` in `activity/utils/helpers.js` was discarding tags instead of collecting them; fixed to capture tags; `TILDE_TAG_COLORS` added to `activity/utils/constants.js`
 
 ### Hub
 
@@ -34,11 +59,6 @@ RA bug fixes; lazy loading across all activity pages; Steam progress hides perfe
 - Hub breadcrumb links (`../../`) corrected to `../` — one level deep from root; was breaking on non-root domain deployments
 - Completions page (`/completions/`) now parses tilde tags and subset names — `CompletionCard` renders `baseTitle` with inline tilde tag badges or a `Subset` badge + subset name subline
 - Hub completions strip parses the latest RA completion title and renders `baseTitle` + badges + subset subline; shared `_parseTitle`/`_tildeBadgesHtml`/`_BADGE_BASE` helpers moved to script scope so they're accessible outside `loadHubProfile`
-
-### Activity
-
-- RA activity tab session headers now render tilde tag badges inline alongside the game name
-- Combined activity (`/activity/`) session headers now render tilde tag badges — `parseTitle` in `activity/utils/helpers.js` was discarding tags instead of collecting them; fixed to capture tags and return them alongside `baseTitle`/`isSubset`/`subsetName`; `TILDE_TAG_COLORS` added to `activity/utils/constants.js`
 
 ## 2026-03-27
 
@@ -110,7 +130,7 @@ Combined activity feed launched at `/activity/`, hub gets a recent activity snip
 - Hub activity `timeAgo` now shows minute/hour granularity (`5m ago`, `2h ago`) instead of day-only (`today`)
 - Steam horizontal overflow on mobile fixed (`overflow-x: hidden` on `html, body`)
 
-### Hub Activity
+### Activity
 
 - New combined activity page at `/activity/` — heatmap, platform filter (All / RA / Steam), timeline grouped by day → game session → achievement
 - Day headers are collapsible; click any heatmap cell to filter to that day
