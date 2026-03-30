@@ -33450,8 +33450,8 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1165,
-            "numDistinctPlayersHardcore": 1165,
+            "numDistinctPlayersCasual": 1166,
+            "numDistinctPlayersHardcore": 1166,
             "numAchievements": 95,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -33484,8 +33484,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "191514",
-                    "numAwarded": 692,
-                    "numAwardedHardcore": 592,
+                    "numAwarded": 693,
+                    "numAwardedHardcore": 593,
                     "displayOrder": 53
                 },
                 "170507": {
@@ -34180,8 +34180,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "191572",
-                    "numAwarded": 829,
-                    "numAwardedHardcore": 704,
+                    "numAwarded": 830,
+                    "numAwardedHardcore": 705,
                     "displayOrder": 8
                 },
                 "170565": {
@@ -53336,7 +53336,7 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "442185",
-                    "numAwarded": 192,
+                    "numAwarded": 193,
                     "numAwardedHardcore": 171,
                     "displayOrder": 98
                 },
@@ -60658,8 +60658,8 @@
                     "trueRatio": 14,
                     "type": "progression",
                     "badgeName": "649921",
-                    "numAwarded": 74,
-                    "numAwardedHardcore": 59,
+                    "numAwarded": 75,
+                    "numAwardedHardcore": 60,
                     "displayOrder": 5,
                     "dateEarned": "2026-02-28 06:19:41",
                     "dateEarnedHardcore": "2026-02-28 06:19:41"
