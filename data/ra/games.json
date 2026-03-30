@@ -30303,11 +30303,11 @@
                     "title": "The Witchcraft Master",
                     "description": "Obtain Swordmaster 5 from the sailor in Balloa",
                     "points": 3,
-                    "trueRatio": 12,
+                    "trueRatio": 11,
                     "type": null,
                     "badgeName": "220060",
-                    "numAwarded": 58,
-                    "numAwardedHardcore": 49,
+                    "numAwarded": 59,
+                    "numAwardedHardcore": 50,
                     "displayOrder": 25
                 },
                 "197997": {
@@ -30402,8 +30402,8 @@
                     "trueRatio": 21,
                     "type": null,
                     "badgeName": "220058",
-                    "numAwarded": 54,
-                    "numAwardedHardcore": 46,
+                    "numAwarded": 55,
+                    "numAwardedHardcore": 47,
                     "displayOrder": 26
                 },
                 "198670": {
@@ -30435,11 +30435,11 @@
                     "title": "Syamseal Gang Brought to Justice at Last!",
                     "description": "Defeat Fatima",
                     "points": 10,
-                    "trueRatio": 36,
+                    "trueRatio": 35,
                     "type": null,
                     "badgeName": "220939",
-                    "numAwarded": 69,
-                    "numAwardedHardcore": 56,
+                    "numAwarded": 70,
+                    "numAwardedHardcore": 57,
                     "displayOrder": 28
                 },
                 "199008": {
@@ -33450,8 +33450,8 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1166,
-            "numDistinctPlayersHardcore": 1166,
+            "numDistinctPlayersCasual": 1167,
+            "numDistinctPlayersHardcore": 1167,
             "numAchievements": 95,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -34036,7 +34036,7 @@
                     "trueRatio": 23,
                     "type": null,
                     "badgeName": "191560",
-                    "numAwarded": 234,
+                    "numAwarded": 235,
                     "numAwardedHardcore": 218,
                     "displayOrder": 48
                 },
@@ -34276,7 +34276,7 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "191580",
-                    "numAwarded": 334,
+                    "numAwarded": 335,
                     "numAwardedHardcore": 303,
                     "displayOrder": 43
                 },
@@ -34444,8 +34444,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "191594",
-                    "numAwarded": 543,
-                    "numAwardedHardcore": 469,
+                    "numAwarded": 544,
+                    "numAwardedHardcore": 470,
                     "displayOrder": 4
                 },
                 "170587": {
@@ -34516,8 +34516,8 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "191600",
-                    "numAwarded": 583,
-                    "numAwardedHardcore": 497,
+                    "numAwarded": 584,
+                    "numAwardedHardcore": 498,
                     "displayOrder": 40
                 },
                 "170593": {
@@ -34537,7 +34537,7 @@
                     "title": "My Debut Album",
                     "description": "Unlock all songs",
                     "points": 10,
-                    "trueRatio": 14,
+                    "trueRatio": 15,
                     "type": "win_condition",
                     "badgeName": "191602",
                     "numAwarded": 472,
@@ -34646,8 +34646,8 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "589870",
-                    "numAwarded": 27,
-                    "numAwardedHardcore": 22,
+                    "numAwarded": 28,
+                    "numAwardedHardcore": 23,
                     "displayOrder": 46
                 },
                 "515727": {
@@ -52292,7 +52292,7 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "442171",
-                    "numAwarded": 174,
+                    "numAwarded": 175,
                     "numAwardedHardcore": 159,
                     "displayOrder": 12
                 },
@@ -52832,7 +52832,7 @@
                     "trueRatio": 20,
                     "type": null,
                     "badgeName": "442060",
-                    "numAwarded": 146,
+                    "numAwarded": 147,
                     "numAwardedHardcore": 136,
                     "displayOrder": 54
                 },
@@ -52844,7 +52844,7 @@
                     "trueRatio": 19,
                     "type": null,
                     "badgeName": "442061",
-                    "numAwarded": 152,
+                    "numAwarded": 153,
                     "numAwardedHardcore": 141,
                     "displayOrder": 55
                 },
