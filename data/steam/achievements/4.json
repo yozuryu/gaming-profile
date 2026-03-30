@@ -729,46 +729,6 @@
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/2235440/d1dfb2b41d32a6181d7540434458a0d611ed67fb.jpg",
             "unlockedAt": "2025-04-02T05:42:52.000Z",
             "globalPct": 40.3
-        },
-        {
-            "appId": 2679460,
-            "gameName": "Metaphor: ReFantazio",
-            "apiName": "ACHIEVEMENT_28",
-            "displayName": "Shake on It",
-            "description": "Obtain a Follower.",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/2679460/f4fcffe56110c8d4ab1e840d181692388f779ec5.jpg",
-            "unlockedAt": "2025-03-31T15:07:27.000Z",
-            "globalPct": 86.9
-        },
-        {
-            "appId": 2679460,
-            "gameName": "Metaphor: ReFantazio",
-            "apiName": "ACHIEVEMENT_5",
-            "displayName": "Calamity Averted",
-            "description": "",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/2679460/7aae5c253593970b7eb6ad90d8e2b7a9090669eb.jpg",
-            "unlockedAt": "2025-03-31T14:53:44.000Z",
-            "globalPct": 71.3
-        },
-        {
-            "appId": 2679460,
-            "gameName": "Metaphor: ReFantazio",
-            "apiName": "ACHIEVEMENT_3",
-            "displayName": "Allies United",
-            "description": "",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/2679460/e976563b0059d45f8c1b4baf8822f4aaa8dd6e6f.jpg",
-            "unlockedAt": "2025-03-31T14:52:18.000Z",
-            "globalPct": 89.1
-        },
-        {
-            "appId": 2679460,
-            "gameName": "Metaphor: ReFantazio",
-            "apiName": "ACHIEVEMENT_4",
-            "displayName": "Out of the Fire",
-            "description": "",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/2679460/556bd61ef59cacadc761df2c838b71ff6c8f2e2f.jpg",
-            "unlockedAt": "2025-03-31T14:52:18.000Z",
-            "globalPct": 81.8
         }
     ]
 }
