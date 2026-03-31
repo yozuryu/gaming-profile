@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-03-31T15:10:08.527Z"
+        "extractionTimestamp": "2026-03-31T17:05:10.630Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 57877,
+        "rank": 57880,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 136670,
+        "totalRanked": 136684,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -1014,7 +1014,7 @@
         ]
     },
     "wantToPlayList": {
-        "total": 443,
+        "total": 444,
         "results": [
             {
                 "id": 27,
@@ -2860,6 +2860,15 @@
                 "imageIcon": "/Images/102520.png",
                 "pointsTotal": 680,
                 "achievementsPublished": 74
+            },
+            {
+                "id": 9483,
+                "title": "Shin Megami Tensei: Devil Survivor 2",
+                "consoleId": 18,
+                "consoleName": "Nintendo DS",
+                "imageIcon": "/Images/043375.png",
+                "pointsTotal": 1335,
+                "achievementsPublished": 156
             },
             {
                 "id": 9594,
