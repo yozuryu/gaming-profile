@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-03-30T23:41:14.486Z"
+        "extractionTimestamp": "2026-03-31T01:59:47.255Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 57838,
+        "rank": 57841,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 136564,
+        "totalRanked": 136582,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -1014,7 +1014,7 @@
         ]
     },
     "wantToPlayList": {
-        "total": 441,
+        "total": 443,
         "results": [
             {
                 "id": 27,
@@ -1852,6 +1852,15 @@
                 "imageIcon": "/Images/086971.png",
                 "pointsTotal": 1300,
                 "achievementsPublished": 151
+            },
+            {
+                "id": 2895,
+                "title": "Front Mission",
+                "consoleId": 3,
+                "consoleName": "SNES/Super Famicom",
+                "imageIcon": "/Images/063164.png",
+                "pointsTotal": 518,
+                "achievementsPublished": 50
             },
             {
                 "id": 2923,
@@ -3112,6 +3121,15 @@
                 "imageIcon": "/Images/051644.png",
                 "pointsTotal": 716,
                 "achievementsPublished": 97
+            },
+            {
+                "id": 11263,
+                "title": "Front Mission 3",
+                "consoleId": 12,
+                "consoleName": "PlayStation",
+                "imageIcon": "/Images/026757.png",
+                "pointsTotal": 856,
+                "achievementsPublished": 135
             },
             {
                 "id": 11264,
