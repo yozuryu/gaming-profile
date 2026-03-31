@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-04-01
+
+RA game awards sorted by type then date; combined activity page gains achievement unlock streak tracking with a 14-day visual.
+
+### RetroAchievements
+
+- Game awards (Mastered / Beaten) now sorted by type first — Mastered before Beaten — then by award date descending within each group
+
+### Activity
+
+- Achievement unlock streak added below the heatmap — tracks consecutive days with at least one unlock; today is excluded from the streak breaking (pending until day ends)
+- Streak panel shows current streak count, a 14-day circle timeline with animated flame icons on active days, and gold connector lines between consecutive streak days
+- Longest streak recorded with its date range shown at the bottom of the streak panel
+
+---
+
 ## 2026-03-29
 
 RA achievement display simplified; Steam game images upgraded; sticky headers fixed; heatmap platform filter corrected; pipelines now hourly with concurrent queue and debug mode; search added to completion progress on both platforms.

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Activity, ChevronDown } from 'lucide-react';
+import { Activity, ChevronDown, Flame } from 'lucide-react';
 import { PLATFORM_COLOR, TILDE_TAG_COLORS } from './utils/constants.js';
 import { fmtDay, fmtTime, parseTitle } from './utils/helpers.js';
 import { normalizeRA, normalizeSteam } from './utils/normalizers.js';
@@ -327,6 +327,61 @@ const App = () => {
         return merged;
     }, [filter, raHeatmap, steamHeatmap]);
 
+    const streakInfo = useMemo(() => {
+        const activeDays = new Set(
+            Object.entries(heatmapData)
+                .filter(([, d]) => (d.count ?? d) >= 1)
+                .map(([day]) => day)
+        );
+        const toKey = (d) => d.toISOString().substring(0, 10);
+        const today = new Date();
+        const todayKey = toKey(today);
+        // Count streak from yesterday backwards; add today only if it has achievements
+        const yesterday = new Date(today);
+        yesterday.setDate(yesterday.getDate() - 1);
+        let current = 0;
+        const cursor = new Date(yesterday);
+        while (activeDays.has(toKey(cursor))) {
+            current++;
+            cursor.setDate(cursor.getDate() - 1);
+        }
+        if (activeDays.has(todayKey)) current++;
+        const sortedDays = [...activeDays].sort();
+        let longest = 0, longestStart = null, longestEnd = null;
+        let runStart = null, runLen = 0, prev = null;
+        for (const day of sortedDays) {
+            if (prev === null) {
+                runStart = day; runLen = 1;
+            } else {
+                const expected = new Date(prev);
+                expected.setDate(expected.getDate() + 1);
+                if (day === toKey(expected)) {
+                    runLen++;
+                } else {
+                    if (runLen > longest) { longest = runLen; longestStart = runStart; longestEnd = prev; }
+                    runStart = day; runLen = 1;
+                }
+            }
+            prev = day;
+        }
+        if (runLen > longest) { longest = runLen; longestStart = runStart; longestEnd = prev; }
+        const last14 = [];
+        for (let i = 13; i >= 0; i--) {
+            const d = new Date(today);
+            d.setDate(d.getDate() - i);
+            const key = toKey(d);
+            const isToday = i === 0;
+            last14.push({
+                key,
+                label: d.toLocaleDateString('en-GB', { weekday: 'short' }),
+                active: activeDays.has(key),
+                isToday,
+                isPending: isToday && !activeDays.has(key),
+            });
+        }
+        return { current, longest, longestStart, longestEnd, last14 };
+    }, [heatmapData]);
+
     const sourceAchs = useMemo(() => {
         const base = filter === 'ra' ? raAchs
             : filter === 'steam' ? steamAchs
@@ -385,6 +440,23 @@ const App = () => {
 
     return (
         <div className="bg-[#171a21] text-[#c6d4df] min-h-screen flex flex-col font-sans selection:bg-[#66c0f4] selection:text-[#171a21]">
+        <style>{`
+            @keyframes flameFlicker {
+                0%   { transform: scale(1)    rotate(0deg);  opacity: 1;    }
+                25%  { transform: scale(1.12) rotate(4deg);  opacity: 0.85; }
+                50%  { transform: scale(1.06) rotate(-3deg); opacity: 0.95; }
+                75%  { transform: scale(1.10) rotate(2deg);  opacity: 0.88; }
+                100% { transform: scale(1)    rotate(0deg);  opacity: 1;    }
+            }
+            @keyframes pendingPulse {
+                0%,100% { border-color: #253545; box-shadow: none; }
+                50%     { border-color: #4a7fa0; box-shadow: 0 0 8px rgba(102,192,244,0.18); }
+            }
+            @keyframes streakGlow {
+                0%,100% { text-shadow: none; }
+                50%     { text-shadow: 0 0 12px rgba(229,177,67,0.5); }
+            }
+        `}</style>
 
             {/* Topbar */}
             <div className="sticky top-0 z-50 bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
@@ -506,6 +578,78 @@ const App = () => {
                                 selectedDay={selectedDay}
                                 onSelectDay={setSelectedDay}
                             />
+                            {/* Streak panel */}
+                            <div style={{ marginTop: 14, background: 'linear-gradient(160deg, #1c2130 0%, #1b2838 100%)', border: '1px solid #263545', borderRadius: 5, padding: '12px 16px 11px' }}>
+                                {/* Header */}
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
+                                        <span style={{ width: 3, height: 14, background: '#e5b143', borderRadius: 1, flexShrink: 0, display: 'block' }} />
+                                        <Flame size={13} color="#e5b143" style={{ animation: 'flameFlicker 1.8s ease-in-out infinite' }} />
+                                        <span style={{ fontSize: 11, color: '#8f98a0', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 600 }}>Streak</span>
+                                    </div>
+                                    <div style={{ display: 'flex', alignItems: 'baseline', gap: 4 }}>
+                                        <span style={{ fontSize: 22, fontWeight: 700, lineHeight: 1, color: streakInfo.current > 0 ? '#e5b143' : '#3d5060', animation: streakInfo.current > 0 ? 'streakGlow 3s ease-in-out infinite' : 'none' }}>
+                                            {streakInfo.current}
+                                        </span>
+                                        <span style={{ fontSize: 9, color: '#546270', textTransform: 'uppercase', letterSpacing: '0.07em' }}>
+                                            day{streakInfo.current !== 1 ? 's' : ''}
+                                        </span>
+                                    </div>
+                                </div>
+                                {/* 14-day circles */}
+                                <div style={{ overflowX: 'auto' }}>
+                                    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+                                        {streakInfo.last14.map((d, i) => (
+                                            <React.Fragment key={d.key}>
+                                                {i > 0 && (
+                                                    <div style={{ flex: 1, minWidth: 6, paddingTop: 18, display: 'flex', alignItems: 'flex-start' }}>
+                                                        <div style={{ width: '100%', height: 1.5, background: streakInfo.last14[i - 1].active && d.active ? 'rgba(229,177,67,0.35)' : 'transparent' }} />
+                                                    </div>
+                                                )}
+                                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 5 }}>
+                                                    <div
+                                                        title={`${d.key}${heatmapData[d.key] ? ` · ${heatmapData[d.key].count ?? heatmapData[d.key]} achievement${(heatmapData[d.key].count ?? heatmapData[d.key]) !== 1 ? 's' : ''}` : ''}`}
+                                                        style={{
+                                                            width: 36, height: 36, borderRadius: '50%', flexShrink: 0,
+                                                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                                            background: d.active
+                                                                ? 'linear-gradient(145deg, #2e1f02, #1c1200)'
+                                                                : d.isPending
+                                                                ? 'linear-gradient(145deg, #0d1825, #0a1018)'
+                                                                : '#0e0c10',
+                                                            border: `1.5px solid ${d.active ? '#9a7020' : d.isPending ? '#253545' : '#1c1520'}`,
+                                                            boxShadow: d.active ? '0 0 10px rgba(229,177,67,0.2), inset 0 1px 0 rgba(229,177,67,0.08)' : 'none',
+                                                            animation: d.isPending ? 'pendingPulse 2.5s ease-in-out infinite' : 'none',
+                                                        }}
+                                                    >
+                                                        {d.active ? (
+                                                            <Flame size={16} color="#e5b143" style={{ animation: 'flameFlicker 1.8s ease-in-out infinite', animationDelay: `${i * 0.18}s` }} />
+                                                        ) : d.isPending ? (
+                                                            <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#2a475e', display: 'block', opacity: 0.7 }} />
+                                                        ) : (
+                                                            <span style={{ fontSize: 12, color: '#3a1e28', lineHeight: 1, fontWeight: 700 }}>✕</span>
+                                                        )}
+                                                    </div>
+                                                    <span style={{ fontSize: 8, textTransform: 'uppercase', letterSpacing: '0.06em', fontWeight: d.isToday ? 700 : 500, color: d.active ? '#8a6520' : d.isPending ? '#4a6070' : '#2a1e24' }}>
+                                                        {d.isToday ? 'Today' : d.label}
+                                                    </span>
+                                                </div>
+                                            </React.Fragment>
+                                        ))}
+                                    </div>
+                                </div>
+                                {/* Longest streak */}
+                                {streakInfo.longestStart && (
+                                    <div style={{ marginTop: 10, paddingTop: 9, borderTop: '1px solid #1e2a38', display: 'flex', alignItems: 'center', gap: 5 }}>
+                                        <Flame size={10} color="#5a7a40" />
+                                        <span style={{ fontSize: 10, color: '#3d5060', letterSpacing: '0.04em' }}>
+                                            Best streak: <span style={{ color: '#546270' }}>{streakInfo.longest} day{streakInfo.longest !== 1 ? 's' : ''}</span>
+                                            <span style={{ color: '#2a3a48', margin: '0 4px' }}>·</span>
+                                            {fmtDay(streakInfo.longestStart)} – {fmtDay(streakInfo.longestEnd)}
+                                        </span>
+                                    </div>
+                                )}
+                            </div>
                         </div>
 
                         {/* Filter + count */}

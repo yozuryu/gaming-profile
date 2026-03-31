@@ -250,6 +250,11 @@ export const transformData = (data) => {
         }),
       gameAwards: data.pageAwards.visibleUserAwards
         .filter(a => a.awardType === "Game Beaten" || a.awardType === "Game Mastered")
+        .sort((a, b) => {
+          const typeOrder = { "Game Mastered": 0, "Game Beaten": 1 };
+          if (typeOrder[a.awardType] !== typeOrder[b.awardType]) return typeOrder[a.awardType] - typeOrder[b.awardType];
+          return new Date(b.awardedAt) - new Date(a.awardedAt);
+        })
         .map((a, i) => ({
           id: i,
           title: a.title || "Unknown Game",
