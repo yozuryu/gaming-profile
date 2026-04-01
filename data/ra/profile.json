@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-01T09:14:04.474Z"
+        "extractionTimestamp": "2026-04-01T11:03:42.381Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -14,7 +14,7 @@
         "contribYield": 0,
         "totalPoints": 1401,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 4794,
+        "totalTruePoints": 4766,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -40,18 +40,18 @@
         "contribYield": 0,
         "totalPoints": 1401,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 4794,
+        "totalTruePoints": 4766,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 57929,
+        "rank": 57935,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 136811,
+        "totalRanked": 136823,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -4936,7 +4936,7 @@
                 "title": "Rayman Origins",
                 "consoleId": 19,
                 "consoleName": "Wii",
-                "imageIcon": "/Images/123081.png",
+                "imageIcon": "/Images/126460.png",
                 "pointsTotal": 1142,
                 "achievementsPublished": 111
             },
