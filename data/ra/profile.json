@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-01T19:11:45.139Z"
+        "extractionTimestamp": "2026-04-01T20:52:49.087Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 56450,
+        "rank": 56452,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 136876,
+        "totalRanked": 136896,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -455,7 +455,7 @@
             {
                 "gameId": 668,
                 "title": "Pokémon Emerald Version",
-                "imageIcon": "/Images/104473.png",
+                "imageIcon": "/Images/126495.png",
                 "consoleId": 5,
                 "consoleName": "Game Boy Advance",
                 "maxPossible": 197,
@@ -1219,7 +1219,7 @@
                 "title": "Pokémon Emerald Version",
                 "consoleId": 5,
                 "consoleName": "Game Boy Advance",
-                "imageIcon": "/Images/104473.png",
+                "imageIcon": "/Images/126495.png",
                 "pointsTotal": 2086,
                 "achievementsPublished": 197
             },
