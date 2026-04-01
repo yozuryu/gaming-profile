@@ -41648,8 +41648,8 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "162775",
-                    "numAwarded": 624,
-                    "numAwardedHardcore": 254,
+                    "numAwarded": 625,
+                    "numAwardedHardcore": 255,
                     "displayOrder": 21
                 },
                 "146090": {
@@ -41765,11 +41765,11 @@
                     "title": "Doesn't Vlad Use That Technique?",
                     "description": "Learn the Shish Kebab technique.",
                     "points": 4,
-                    "trueRatio": 15,
+                    "trueRatio": 14,
                     "type": null,
                     "badgeName": "162784",
-                    "numAwarded": 526,
-                    "numAwardedHardcore": 219,
+                    "numAwarded": 527,
+                    "numAwardedHardcore": 220,
                     "displayOrder": 300
                 },
                 "146100": {
@@ -41792,8 +41792,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "162786",
-                    "numAwarded": 594,
-                    "numAwardedHardcore": 241,
+                    "numAwarded": 595,
+                    "numAwardedHardcore": 242,
                     "displayOrder": 302
                 },
                 "146102": {
@@ -54800,7 +54800,7 @@
                     "trueRatio": 29,
                     "type": null,
                     "badgeName": "442077",
-                    "numAwarded": 89,
+                    "numAwarded": 90,
                     "numAwardedHardcore": 81,
                     "displayOrder": 70
                 },
@@ -55972,8 +55972,8 @@
             "consoleId": 24,
             "consoleName": "Pokemon Mini",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 731,
-            "numDistinctPlayersHardcore": 731,
+            "numDistinctPlayersCasual": 732,
+            "numDistinctPlayersHardcore": 732,
             "numAchievements": 114,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -56135,11 +56135,11 @@
                     "title": "Nidoran, Nidorino, Nidoking",
                     "description": "Catch 'Em All!",
                     "points": 5,
-                    "trueRatio": 19,
+                    "trueRatio": 18,
                     "type": null,
                     "badgeName": "129029",
-                    "numAwarded": 93,
-                    "numAwardedHardcore": 87,
+                    "numAwarded": 94,
+                    "numAwardedHardcore": 88,
                     "displayOrder": 0
                 },
                 "292830": {
@@ -56630,8 +56630,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "129071",
-                    "numAwarded": 382,
-                    "numAwardedHardcore": 325,
+                    "numAwarded": 383,
+                    "numAwardedHardcore": 326,
                     "displayOrder": 0
                 },
                 "292871": {
@@ -56759,7 +56759,7 @@
                     "title": "Kabuto, Kabutops",
                     "description": "Catch 'Em All!",
                     "points": 3,
-                    "trueRatio": 4,
+                    "trueRatio": 5,
                     "type": null,
                     "badgeName": "129083",
                     "numAwarded": 307,
@@ -57227,7 +57227,7 @@
                     "title": "Pentomino control",
                     "description": "In Pyramid Master mode reach 50 lines without ever making single lines",
                     "points": 10,
-                    "trueRatio": 170,
+                    "trueRatio": 171,
                     "type": null,
                     "badgeName": "129207",
                     "numAwarded": 20,
@@ -57275,11 +57275,11 @@
                     "title": "Tetredex",
                     "description": "Capture 249 Pokemon",
                     "points": 50,
-                    "trueRatio": 549,
+                    "trueRatio": 531,
                     "type": null,
                     "badgeName": "129199",
-                    "numAwarded": 29,
-                    "numAwardedHardcore": 27,
+                    "numAwarded": 30,
+                    "numAwardedHardcore": 28,
                     "displayOrder": 0
                 },
                 "292925": {
@@ -57287,7 +57287,7 @@
                     "title": "Endless Master",
                     "description": "Reach Level 25 in Standard Master",
                     "points": 100,
-                    "trueRatio": 1929,
+                    "trueRatio": 1931,
                     "type": null,
                     "badgeName": "129208",
                     "numAwarded": 17,
@@ -62373,9 +62373,9 @@
             "numDistinctPlayersCasual": 138,
             "numDistinctPlayersHardcore": 138,
             "numAchievements": 80,
-            "numAwardedToUser": 45,
-            "numAwardedToUserHardcore": 45,
-            "userTotalPlaytime": 50463,
+            "numAwardedToUser": 46,
+            "numAwardedToUserHardcore": 46,
+            "userTotalPlaytime": 51798,
             "imageIcon": "/Images/123011.png",
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
@@ -62448,7 +62448,7 @@
                     "trueRatio": 15,
                     "type": "progression",
                     "badgeName": "649922",
-                    "numAwarded": 71,
+                    "numAwarded": 72,
                     "numAwardedHardcore": 57,
                     "displayOrder": 6,
                     "dateEarned": "2026-03-19 07:57:44",
@@ -62459,10 +62459,10 @@
                     "title": "Subway Salvation",
                     "description": "Rescue the missing SDF people in the Tokyo Underground Offshoot",
                     "points": 10,
-                    "trueRatio": 31,
+                    "trueRatio": 32,
                     "type": "progression",
                     "badgeName": "649923",
-                    "numAwarded": 69,
+                    "numAwarded": 70,
                     "numAwardedHardcore": 54,
                     "displayOrder": 7,
                     "dateEarned": "2026-03-19 08:36:21",
@@ -63173,12 +63173,14 @@
                     "title": "Colorful Set",
                     "description": "Receive the reward for rescuing 60 people",
                     "points": 10,
-                    "trueRatio": 52,
+                    "trueRatio": 51,
                     "type": null,
                     "badgeName": "649971",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 63
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 63,
+                    "dateEarned": "2026-04-01 15:29:32",
+                    "dateEarnedHardcore": "2026-04-01 15:29:32"
                 },
                 "572198": {
                     "id": 572198,
@@ -63242,8 +63244,8 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "649976",
-                    "numAwarded": 31,
-                    "numAwardedHardcore": 28,
+                    "numAwarded": 32,
+                    "numAwardedHardcore": 29,
                     "displayOrder": 71
                 },
                 "572203": {
@@ -63442,8 +63444,8 @@
             "consoleId": 24,
             "consoleName": "Pokemon Mini",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1772,
-            "numDistinctPlayersHardcore": 1772,
+            "numDistinctPlayersCasual": 1773,
+            "numDistinctPlayersHardcore": 1773,
             "numAchievements": 6,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -63464,8 +63466,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178581",
-                    "numAwarded": 1757,
-                    "numAwardedHardcore": 1664,
+                    "numAwarded": 1758,
+                    "numAwardedHardcore": 1665,
                     "displayOrder": 1
                 },
                 "158869": {
@@ -63476,8 +63478,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178582",
-                    "numAwarded": 1761,
-                    "numAwardedHardcore": 1663,
+                    "numAwarded": 1762,
+                    "numAwardedHardcore": 1664,
                     "displayOrder": 2
                 },
                 "158870": {
@@ -63488,8 +63490,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178583",
-                    "numAwarded": 1763,
-                    "numAwardedHardcore": 1666,
+                    "numAwarded": 1764,
+                    "numAwardedHardcore": 1667,
                     "displayOrder": 3
                 },
                 "158871": {
@@ -63500,8 +63502,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178584",
-                    "numAwarded": 1753,
-                    "numAwardedHardcore": 1660,
+                    "numAwarded": 1754,
+                    "numAwardedHardcore": 1661,
                     "displayOrder": 4
                 },
                 "158872": {
@@ -63512,8 +63514,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178585",
-                    "numAwarded": 1759,
-                    "numAwardedHardcore": 1661,
+                    "numAwarded": 1760,
+                    "numAwardedHardcore": 1662,
                     "displayOrder": 5
                 },
                 "158873": {
@@ -63524,8 +63526,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178586",
-                    "numAwarded": 1720,
-                    "numAwardedHardcore": 1637,
+                    "numAwarded": 1721,
+                    "numAwardedHardcore": 1638,
                     "displayOrder": 6
                 }
             }

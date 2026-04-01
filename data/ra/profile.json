@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-01T15:11:26.052Z"
+        "extractionTimestamp": "2026-04-01T17:02:32.732Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Lv49 Samurai, Lv48 Psychic, and Lv47 Hacker | Daiba Subway | Ch6: 24/33 quests | 30h28",
+        "richPresenceMsg": "Lv52 Samurai, Lv50 Psychic, and Lv50 Hacker | City Hall | Ch6: 24/33 quests | 32h00",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1454,
+        "totalPoints": 1464,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 5023,
+        "totalTruePoints": 5074,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Lv49 Samurai, Lv48 Psychic, and Lv47 Hacker | Daiba Subway | Ch6: 24/33 quests | 30h28",
-        "richPresenceMsgDate": "2026-04-01 15:10:10",
+        "richPresenceMsg": "Lv52 Samurai, Lv50 Psychic, and Lv50 Hacker | City Hall | Ch6: 24/33 quests | 32h00",
+        "richPresenceMsgDate": "2026-04-01 15:32:10",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1454,
+        "totalPoints": 1464,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 5023,
+        "totalTruePoints": 5074,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 56669,
+        "rank": 56438,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 136842,
+        "totalRanked": 136858,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1454,
+        "points": 1464,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -121,14 +121,14 @@
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
             "imageBoxArt": "/Images/110688.png",
-            "lastPlayed": "2026-04-01 15:10:10",
+            "lastPlayed": "2026-04-01 15:32:10",
             "achievementsTotal": 80,
             "numPossibleAchievements": 80,
             "possibleScore": 475,
-            "numAchieved": 45,
-            "scoreAchieved": 209,
-            "numAchievedHardcore": 45,
-            "scoreAchievedHardcore": 209
+            "numAchieved": 46,
+            "scoreAchieved": 219,
+            "numAchievedHardcore": 46,
+            "scoreAchievedHardcore": 219
         },
         {
             "gameId": 11290,
@@ -394,9 +394,9 @@
                 "consoleId": 41,
                 "consoleName": "PlayStation Portable",
                 "maxPossible": 80,
-                "numAwarded": 45,
-                "numAwardedHardcore": 45,
-                "mostRecentAwardedDate": "2026-04-01T15:03:17+00:00",
+                "numAwarded": 46,
+                "numAwardedHardcore": 46,
+                "mostRecentAwardedDate": "2026-04-01T15:29:32+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -754,7 +754,7 @@
             {
                 "gameId": 723,
                 "title": "Pokémon Yellow Version: Special Pikachu Edition",
-                "imageIcon": "/Images/105480.png",
+                "imageIcon": "/Images/126482.png",
                 "consoleId": 4,
                 "consoleName": "Game Boy",
                 "maxPossible": 76,
@@ -1264,7 +1264,7 @@
                 "title": "Pokémon Yellow Version: Special Pikachu Edition",
                 "consoleId": 4,
                 "consoleName": "Game Boy",
-                "imageIcon": "/Images/105480.png",
+                "imageIcon": "/Images/126482.png",
                 "pointsTotal": 458,
                 "achievementsPublished": 76
             },
@@ -5015,12 +5015,12 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-01 15:03:17",
+        "date": "2026-04-01 15:29:32",
         "hardcoreMode": true,
-        "achievementId": 572212,
-        "title": "Yotsura Evernight Cleansed",
-        "description": "Clear all the dragons in Yotsura Evernight",
-        "badgeName": "649986",
+        "achievementId": 572197,
+        "title": "Colorful Set",
+        "description": "Receive the reward for rescuing 60 people",
+        "badgeName": "649971",
         "points": 10,
         "trueRatio": 51,
         "type": null,
@@ -5030,8 +5030,8 @@
         "gameIcon": "/Images/123011.png",
         "gameId": 16452,
         "consoleName": "PlayStation Portable",
-        "cumulScore": 421,
-        "badgeUrl": "/Badge/649986.png",
+        "cumulScore": 431,
+        "badgeUrl": "/Badge/649971.png",
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
@@ -5043,15 +5043,15 @@
         "imageTitle": "/Images/110687.png",
         "imageIngame": "/Images/110689.png",
         "imageBoxArt": "/Images/110688.png",
-        "lastPlayed": "2026-04-01 15:10:10",
+        "lastPlayed": "2026-04-01 15:32:10",
         "achievementsTotal": 80,
         "numPossibleAchievements": 80,
         "possibleScore": 475,
-        "numAchieved": 45,
-        "scoreAchieved": 209,
-        "numAchievedHardcore": 45,
-        "scoreAchievedHardcore": 209
+        "numAchieved": 46,
+        "scoreAchieved": 219,
+        "numAchievedHardcore": 46,
+        "scoreAchievedHardcore": 219
     },
-    "points7Days": 139,
-    "points30Days": 194
+    "points7Days": 149,
+    "points30Days": 204
 }
