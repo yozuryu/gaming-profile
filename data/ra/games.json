@@ -41350,8 +41350,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5002,
-            "numDistinctPlayersHardcore": 5002,
+            "numDistinctPlayersCasual": 5004,
+            "numDistinctPlayersHardcore": 5004,
             "numAchievements": 146,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -41372,7 +41372,7 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "162751",
-                    "numAwarded": 3488,
+                    "numAwarded": 3489,
                     "numAwardedHardcore": 1348,
                     "displayOrder": 0
                 },
@@ -41552,7 +41552,7 @@
                     "trueRatio": 20,
                     "type": null,
                     "badgeName": "162767",
-                    "numAwarded": 437,
+                    "numAwarded": 438,
                     "numAwardedHardcore": 192,
                     "displayOrder": 13
                 },
@@ -41564,7 +41564,7 @@
                     "trueRatio": 14,
                     "type": "progression",
                     "badgeName": "162768",
-                    "numAwarded": 743,
+                    "numAwarded": 744,
                     "numAwardedHardcore": 301,
                     "displayOrder": 14
                 },
@@ -42560,7 +42560,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "162847",
-                    "numAwarded": 4795,
+                    "numAwarded": 4797,
                     "numAwardedHardcore": 1689,
                     "displayOrder": 611,
                     "dateEarned": "2026-03-30 16:15:09",
@@ -42718,7 +42718,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "162860",
-                    "numAwarded": 3139,
+                    "numAwarded": 3140,
                     "numAwardedHardcore": 1236,
                     "displayOrder": 624
                 },
@@ -63422,8 +63422,8 @@
             "consoleId": 24,
             "consoleName": "Pokemon Mini",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1769,
-            "numDistinctPlayersHardcore": 1769,
+            "numDistinctPlayersCasual": 1770,
+            "numDistinctPlayersHardcore": 1770,
             "numAchievements": 6,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -63444,8 +63444,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178581",
-                    "numAwarded": 1754,
-                    "numAwardedHardcore": 1661,
+                    "numAwarded": 1755,
+                    "numAwardedHardcore": 1662,
                     "displayOrder": 1
                 },
                 "158869": {
@@ -63456,8 +63456,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178582",
-                    "numAwarded": 1758,
-                    "numAwardedHardcore": 1660,
+                    "numAwarded": 1759,
+                    "numAwardedHardcore": 1661,
                     "displayOrder": 2
                 },
                 "158870": {
@@ -63468,8 +63468,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178583",
-                    "numAwarded": 1760,
-                    "numAwardedHardcore": 1663,
+                    "numAwarded": 1761,
+                    "numAwardedHardcore": 1664,
                     "displayOrder": 3
                 },
                 "158871": {
@@ -63480,8 +63480,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178584",
-                    "numAwarded": 1750,
-                    "numAwardedHardcore": 1657,
+                    "numAwarded": 1751,
+                    "numAwardedHardcore": 1658,
                     "displayOrder": 4
                 },
                 "158872": {
@@ -63492,8 +63492,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178585",
-                    "numAwarded": 1756,
-                    "numAwardedHardcore": 1658,
+                    "numAwarded": 1757,
+                    "numAwardedHardcore": 1659,
                     "displayOrder": 5
                 },
                 "158873": {
@@ -63504,8 +63504,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178586",
-                    "numAwarded": 1717,
-                    "numAwardedHardcore": 1634,
+                    "numAwarded": 1718,
+                    "numAwardedHardcore": 1635,
                     "displayOrder": 6
                 }
             }
