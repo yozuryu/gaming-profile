@@ -41350,8 +41350,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5011,
-            "numDistinctPlayersHardcore": 5011,
+            "numDistinctPlayersCasual": 5012,
+            "numDistinctPlayersHardcore": 5012,
             "numAchievements": 146,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -42560,7 +42560,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "162847",
-                    "numAwarded": 4804,
+                    "numAwarded": 4805,
                     "numAwardedHardcore": 1691,
                     "displayOrder": 611,
                     "dateEarned": "2026-03-30 16:15:09",
@@ -56102,8 +56102,8 @@
                     "trueRatio": 27,
                     "type": null,
                     "badgeName": "129026",
-                    "numAwarded": 65,
-                    "numAwardedHardcore": 57,
+                    "numAwarded": 66,
+                    "numAwardedHardcore": 58,
                     "displayOrder": 0
                 },
                 "292827": {
@@ -56126,8 +56126,8 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "129028",
-                    "numAwarded": 133,
-                    "numAwardedHardcore": 114,
+                    "numAwarded": 134,
+                    "numAwardedHardcore": 115,
                     "displayOrder": 0
                 },
                 "292829": {
@@ -56582,8 +56582,8 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "129067",
-                    "numAwarded": 183,
-                    "numAwardedHardcore": 167,
+                    "numAwarded": 184,
+                    "numAwardedHardcore": 168,
                     "displayOrder": 0
                 },
                 "292867": {
@@ -56654,8 +56654,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "129074",
-                    "numAwarded": 77,
-                    "numAwardedHardcore": 72,
+                    "numAwarded": 78,
+                    "numAwardedHardcore": 73,
                     "displayOrder": 0
                 },
                 "292873": {
@@ -56678,8 +56678,8 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "129076",
-                    "numAwarded": 99,
-                    "numAwardedHardcore": 87,
+                    "numAwarded": 100,
+                    "numAwardedHardcore": 88,
                     "displayOrder": 0
                 },
                 "292875": {
@@ -57227,11 +57227,11 @@
                     "title": "Pentomino control",
                     "description": "In Pyramid Master mode reach 50 lines without ever making single lines",
                     "points": 10,
-                    "trueRatio": 171,
+                    "trueRatio": 162,
                     "type": null,
                     "badgeName": "129207",
-                    "numAwarded": 20,
-                    "numAwardedHardcore": 17,
+                    "numAwarded": 21,
+                    "numAwardedHardcore": 18,
                     "displayOrder": 0
                 },
                 "292921": {
