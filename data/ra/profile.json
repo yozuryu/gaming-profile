@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-02T05:08:19.489Z"
+        "extractionTimestamp": "2026-04-02T06:14:43.253Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Lv52 Samurai, Lv50 Psychic, and Lv50 Hacker | City Hall | Ch6: 24/33 quests | 32h00",
+        "richPresenceMsg": "Lv53 Samurai, Lv51 Psychic, and Lv50 Hacker | City Hall | Ch6: 25/33 quests | 32h36",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1464,
+        "totalPoints": 1479,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 5074,
+        "totalTruePoints": 5147,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Lv52 Samurai, Lv50 Psychic, and Lv50 Hacker | City Hall | Ch6: 24/33 quests | 32h00",
-        "richPresenceMsgDate": "2026-04-01 15:32:10",
+        "richPresenceMsg": "Lv53 Samurai, Lv51 Psychic, and Lv50 Hacker | City Hall | Ch6: 25/33 quests | 32h36",
+        "richPresenceMsgDate": "2026-04-02 05:56:55",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1464,
+        "totalPoints": 1479,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 5074,
+        "totalTruePoints": 5147,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 56478,
+        "rank": 56118,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 136962,
+        "totalRanked": 136969,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1464,
+        "points": 1479,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -121,14 +121,14 @@
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
             "imageBoxArt": "/Images/110688.png",
-            "lastPlayed": "2026-04-01 15:32:10",
+            "lastPlayed": "2026-04-02 05:56:55",
             "achievementsTotal": 80,
             "numPossibleAchievements": 80,
             "possibleScore": 475,
-            "numAchieved": 46,
-            "scoreAchieved": 219,
-            "numAchievedHardcore": 46,
-            "scoreAchievedHardcore": 219
+            "numAchieved": 49,
+            "scoreAchieved": 234,
+            "numAchievedHardcore": 49,
+            "scoreAchievedHardcore": 234
         },
         {
             "gameId": 11290,
@@ -394,9 +394,9 @@
                 "consoleId": 41,
                 "consoleName": "PlayStation Portable",
                 "maxPossible": 80,
-                "numAwarded": 46,
-                "numAwardedHardcore": 46,
-                "mostRecentAwardedDate": "2026-04-01T15:29:32+00:00",
+                "numAwarded": 49,
+                "numAwardedHardcore": 49,
+                "mostRecentAwardedDate": "2026-04-02T05:51:16+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -5015,23 +5015,23 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-01 15:29:32",
+        "date": "2026-04-02 05:51:16",
         "hardcoreMode": true,
-        "achievementId": 572197,
-        "title": "Colorful Set",
-        "description": "Receive the reward for rescuing 60 people",
-        "badgeName": "649971",
+        "achievementId": 572153,
+        "title": "A Segmented Siege",
+        "description": "Defeat Scaber",
+        "badgeName": "649929",
         "points": 10,
         "trueRatio": 50,
-        "type": null,
+        "type": "progression",
         "author": "Jamiras",
         "authorUlid": "01BJY8JSBTA7NVT0NYSVDCK5TY",
         "gameTitle": "7th Dragon 2020",
         "gameIcon": "/Images/123011.png",
         "gameId": 16452,
         "consoleName": "PlayStation Portable",
-        "cumulScore": 431,
-        "badgeUrl": "/Badge/649971.png",
+        "cumulScore": 446,
+        "badgeUrl": "/Badge/649929.png",
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
@@ -5043,15 +5043,15 @@
         "imageTitle": "/Images/110687.png",
         "imageIngame": "/Images/110689.png",
         "imageBoxArt": "/Images/110688.png",
-        "lastPlayed": "2026-04-01 15:32:10",
+        "lastPlayed": "2026-04-02 05:56:55",
         "achievementsTotal": 80,
         "numPossibleAchievements": 80,
         "possibleScore": 475,
-        "numAchieved": 46,
-        "scoreAchieved": 219,
-        "numAchievedHardcore": 46,
-        "scoreAchievedHardcore": 219
+        "numAchieved": 49,
+        "scoreAchieved": 234,
+        "numAchievedHardcore": 49,
+        "scoreAchievedHardcore": 234
     },
-    "points7Days": 149,
-    "points30Days": 204
+    "points7Days": 164,
+    "points30Days": 219
 }
