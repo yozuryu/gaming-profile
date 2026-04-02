@@ -34144,8 +34144,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "191569",
-                    "numAwarded": 388,
-                    "numAwardedHardcore": 348,
+                    "numAwarded": 389,
+                    "numAwardedHardcore": 349,
                     "displayOrder": 16
                 },
                 "170562": {
@@ -34156,8 +34156,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "191570",
-                    "numAwarded": 480,
-                    "numAwardedHardcore": 418,
+                    "numAwarded": 481,
+                    "numAwardedHardcore": 419,
                     "displayOrder": 18
                 },
                 "170563": {
@@ -34384,8 +34384,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "191589",
-                    "numAwarded": 449,
-                    "numAwardedHardcore": 397,
+                    "numAwarded": 450,
+                    "numAwardedHardcore": 398,
                     "displayOrder": 15
                 },
                 "170582": {
@@ -35027,11 +35027,11 @@
                     "title": "Reuniting Eternal Rivals",
                     "description": "Complete the Holy Sword sub-event and receive Hoshime as your reward",
                     "points": 5,
-                    "trueRatio": 85,
+                    "trueRatio": 75,
                     "type": null,
                     "badgeName": "589883",
-                    "numAwarded": 7,
-                    "numAwardedHardcore": 7,
+                    "numAwarded": 8,
+                    "numAwardedHardcore": 8,
                     "displayOrder": 59
                 },
                 "515759": {
@@ -41350,8 +41350,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5012,
-            "numDistinctPlayersHardcore": 5012,
+            "numDistinctPlayersCasual": 5014,
+            "numDistinctPlayersHardcore": 5014,
             "numAchievements": 146,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -41372,8 +41372,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "162751",
-                    "numAwarded": 3495,
-                    "numAwardedHardcore": 1349,
+                    "numAwarded": 3496,
+                    "numAwardedHardcore": 1350,
                     "displayOrder": 0
                 },
                 "146067": {
@@ -42161,7 +42161,7 @@
                     "title": "Time Does Not Stop ...",
                     "description": "Reach to Soda Fountain in 33 days or less and in up to 5 hours and 30 minutes.",
                     "points": 50,
-                    "trueRatio": 658,
+                    "trueRatio": 659,
                     "type": null,
                     "badgeName": "162817",
                     "numAwarded": 72,
@@ -42341,7 +42341,7 @@
                     "title": "You're Gonna Regret It, Pal!",
                     "description": "Defeat Dark Lumina 2nd Form and Final Form without using, discarding or moving items in your inventory.",
                     "points": 25,
-                    "trueRatio": 182,
+                    "trueRatio": 183,
                     "type": null,
                     "badgeName": "162831",
                     "numAwarded": 211,
@@ -42560,8 +42560,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "162847",
-                    "numAwarded": 4805,
-                    "numAwardedHardcore": 1691,
+                    "numAwarded": 4807,
+                    "numAwardedHardcore": 1693,
                     "displayOrder": 611,
                     "dateEarned": "2026-03-30 16:15:09",
                     "dateEarnedHardcore": "2026-03-30 16:15:09"
@@ -42646,8 +42646,8 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "162854",
-                    "numAwarded": 1433,
-                    "numAwardedHardcore": 620,
+                    "numAwarded": 1434,
+                    "numAwardedHardcore": 621,
                     "displayOrder": 618
                 },
                 "146173": {
@@ -42718,8 +42718,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "162860",
-                    "numAwarded": 3145,
-                    "numAwardedHardcore": 1237,
+                    "numAwarded": 3146,
+                    "numAwardedHardcore": 1238,
                     "displayOrder": 624
                 },
                 "146179": {
@@ -43099,7 +43099,7 @@
                     "title": "Almost Alone",
                     "description": "Finish the game with 365 or less of maximum BP.",
                     "points": 50,
-                    "trueRatio": 721,
+                    "trueRatio": 722,
                     "type": null,
                     "badgeName": "163765",
                     "numAwarded": 62,
@@ -62373,9 +62373,9 @@
             "numDistinctPlayersCasual": 139,
             "numDistinctPlayersHardcore": 139,
             "numAchievements": 80,
-            "numAwardedToUser": 58,
-            "numAwardedToUserHardcore": 58,
-            "userTotalPlaytime": 56255,
+            "numAwardedToUser": 69,
+            "numAwardedToUserHardcore": 69,
+            "userTotalPlaytime": 60701,
             "imageIcon": "/Images/123011.png",
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
@@ -63086,9 +63086,11 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "649963",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 49
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 49,
+                    "dateEarned": "2026-04-02 15:03:50",
+                    "dateEarnedHardcore": "2026-04-02 15:03:50"
                 },
                 "572190": {
                     "id": 572190,
@@ -63098,21 +63100,25 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "649964",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 51
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 51,
+                    "dateEarned": "2026-04-02 15:03:17",
+                    "dateEarnedHardcore": "2026-04-02 15:03:17"
                 },
                 "572191": {
                     "id": 572191,
                     "title": "Quest: Medicine for a Pal",
                     "description": "Complete the Medicine for a Pal quest",
                     "points": 4,
-                    "trueRatio": 21,
+                    "trueRatio": 20,
                     "type": null,
                     "badgeName": "649965",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 52
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 52,
+                    "dateEarned": "2026-04-02 15:11:18",
+                    "dateEarnedHardcore": "2026-04-02 15:11:18"
                 },
                 "572192": {
                     "id": 572192,
@@ -63122,21 +63128,25 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "649966",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 50
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 50,
+                    "dateEarned": "2026-04-02 15:28:42",
+                    "dateEarnedHardcore": "2026-04-02 15:28:42"
                 },
                 "572193": {
                     "id": 572193,
                     "title": "Quest: Rescuer Rescue",
                     "description": "Complete the Rescuer Rescue quest",
                     "points": 4,
-                    "trueRatio": 21,
+                    "trueRatio": 20,
                     "type": null,
                     "badgeName": "649967",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 53
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 53,
+                    "dateEarned": "2026-04-02 15:18:54",
+                    "dateEarnedHardcore": "2026-04-02 15:18:54"
                 },
                 "572194": {
                     "id": 572194,
@@ -63199,12 +63209,14 @@
                     "title": "Final Showdown Set",
                     "description": "Receive the reward for rescuing 75 people",
                     "points": 10,
-                    "trueRatio": 58,
+                    "trueRatio": 56,
                     "type": "missable",
                     "badgeName": "649972",
-                    "numAwarded": 28,
-                    "numAwardedHardcore": 27,
-                    "displayOrder": 64
+                    "numAwarded": 29,
+                    "numAwardedHardcore": 28,
+                    "displayOrder": 64,
+                    "dateEarned": "2026-04-02 16:08:59",
+                    "dateEarnedHardcore": "2026-04-02 16:08:59"
                 },
                 "572199": {
                     "id": 572199,
@@ -63309,36 +63321,42 @@
                     "title": "Pen and Paper",
                     "description": "Get an accessory and an email address from Emille",
                     "points": 3,
-                    "trueRatio": 16,
+                    "trueRatio": 15,
                     "type": null,
                     "badgeName": "649980",
-                    "numAwarded": 32,
-                    "numAwardedHardcore": 29,
-                    "displayOrder": 75
+                    "numAwarded": 33,
+                    "numAwardedHardcore": 30,
+                    "displayOrder": 75,
+                    "dateEarned": "2026-04-02 15:10:19",
+                    "dateEarnedHardcore": "2026-04-02 15:10:19"
                 },
                 "572207": {
                     "id": 572207,
                     "title": "You Wanna Be Friends with Me?",
                     "description": "Get some gear and an email address from Neko",
                     "points": 3,
-                    "trueRatio": 16,
+                    "trueRatio": 15,
                     "type": null,
                     "badgeName": "649981",
-                    "numAwarded": 32,
-                    "numAwardedHardcore": 29,
-                    "displayOrder": 76
+                    "numAwarded": 33,
+                    "numAwardedHardcore": 30,
+                    "displayOrder": 76,
+                    "dateEarned": "2026-04-02 15:29:45",
+                    "dateEarnedHardcore": "2026-04-02 15:29:45"
                 },
                 "572208": {
                     "id": 572208,
                     "title": "Human Lives Can Be Fleeting Things",
                     "description": "Get a weapon and an email address from Aitelle",
                     "points": 3,
-                    "trueRatio": 16,
+                    "trueRatio": 15,
                     "type": null,
                     "badgeName": "649982",
-                    "numAwarded": 32,
-                    "numAwardedHardcore": 29,
-                    "displayOrder": 77
+                    "numAwarded": 33,
+                    "numAwardedHardcore": 30,
+                    "displayOrder": 77,
+                    "dateEarned": "2026-04-02 15:11:53",
+                    "dateEarnedHardcore": "2026-04-02 15:11:53"
                 },
                 "572209": {
                     "id": 572209,
@@ -63401,12 +63419,14 @@
                     "title": "Kokubunji Searsand Cleansed",
                     "description": "Clear all the dragons in Kokubunji Searsand",
                     "points": 10,
-                    "trueRatio": 53,
+                    "trueRatio": 51,
                     "type": null,
                     "badgeName": "649987",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 84
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 84,
+                    "dateEarned": "2026-04-02 15:06:26",
+                    "dateEarnedHardcore": "2026-04-02 15:06:26"
                 },
                 "572214": {
                     "id": 572214,
@@ -63453,12 +63473,14 @@
                     "title": "Party On!",
                     "description": "Unlock all 14 party skills",
                     "points": 10,
-                    "trueRatio": 54,
+                    "trueRatio": 53,
                     "type": null,
                     "badgeName": "649991",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 29,
-                    "displayOrder": 69
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 30,
+                    "displayOrder": 69,
+                    "dateEarned": "2026-04-02 15:38:52",
+                    "dateEarnedHardcore": "2026-04-02 15:38:52"
                 }
             }
         },
