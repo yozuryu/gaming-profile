@@ -33450,8 +33450,8 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1171,
-            "numDistinctPlayersHardcore": 1171,
+            "numDistinctPlayersCasual": 1172,
+            "numDistinctPlayersHardcore": 1172,
             "numAchievements": 95,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -33484,8 +33484,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "191514",
-                    "numAwarded": 695,
-                    "numAwardedHardcore": 595,
+                    "numAwarded": 696,
+                    "numAwardedHardcore": 596,
                     "displayOrder": 53
                 },
                 "170507": {
@@ -41372,7 +41372,7 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "162751",
-                    "numAwarded": 3494,
+                    "numAwarded": 3495,
                     "numAwardedHardcore": 1349,
                     "displayOrder": 0
                 },
@@ -41396,7 +41396,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "162753",
-                    "numAwarded": 2780,
+                    "numAwarded": 2781,
                     "numAwardedHardcore": 1116,
                     "displayOrder": 2
                 },
@@ -42718,7 +42718,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "162860",
-                    "numAwarded": 3144,
+                    "numAwarded": 3145,
                     "numAwardedHardcore": 1237,
                     "displayOrder": 624
                 },
@@ -62373,9 +62373,9 @@
             "numDistinctPlayersCasual": 139,
             "numDistinctPlayersHardcore": 139,
             "numAchievements": 80,
-            "numAwardedToUser": 49,
-            "numAwardedToUserHardcore": 49,
-            "userTotalPlaytime": 52788,
+            "numAwardedToUser": 58,
+            "numAwardedToUserHardcore": 58,
+            "userTotalPlaytime": 56255,
             "imageIcon": "/Images/123011.png",
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
@@ -62617,12 +62617,14 @@
                     "title": "Frozen Fiend",
                     "description": "Defeat Zero-Blue",
                     "points": 10,
-                    "trueRatio": 53,
+                    "trueRatio": 51,
                     "type": "progression",
                     "badgeName": "649930",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 14
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 14,
+                    "dateEarned": "2026-04-02 14:55:48",
+                    "dateEarnedHardcore": "2026-04-02 14:55:48"
                 },
                 "572156": {
                     "id": 572156,
@@ -63042,9 +63044,11 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "649960",
-                    "numAwarded": 34,
-                    "numAwardedHardcore": 31,
-                    "displayOrder": 46
+                    "numAwarded": 35,
+                    "numAwardedHardcore": 32,
+                    "displayOrder": 46,
+                    "dateEarned": "2026-04-02 14:11:08",
+                    "dateEarnedHardcore": "2026-04-02 14:11:08"
                 },
                 "572187": {
                     "id": 572187,
@@ -63054,9 +63058,11 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "649961",
-                    "numAwarded": 34,
-                    "numAwardedHardcore": 31,
-                    "displayOrder": 48
+                    "numAwarded": 35,
+                    "numAwardedHardcore": 32,
+                    "displayOrder": 48,
+                    "dateEarned": "2026-04-02 14:09:03",
+                    "dateEarnedHardcore": "2026-04-02 14:09:03"
                 },
                 "572188": {
                     "id": 572188,
@@ -63066,9 +63072,11 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "649962",
-                    "numAwarded": 34,
-                    "numAwardedHardcore": 31,
-                    "displayOrder": 47
+                    "numAwarded": 35,
+                    "numAwardedHardcore": 32,
+                    "displayOrder": 47,
+                    "dateEarned": "2026-04-02 14:11:51",
+                    "dateEarnedHardcore": "2026-04-02 14:11:51"
                 },
                 "572189": {
                     "id": 572189,
@@ -63262,9 +63270,11 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "649977",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 72
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 72,
+                    "dateEarned": "2026-04-02 14:05:15",
+                    "dateEarnedHardcore": "2026-04-02 14:05:15"
                 },
                 "572204": {
                     "id": 572204,
@@ -63274,9 +63284,11 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "649978",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 73
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 73,
+                    "dateEarned": "2026-04-02 14:12:28",
+                    "dateEarnedHardcore": "2026-04-02 14:12:28"
                 },
                 "572205": {
                     "id": 572205,
@@ -63286,9 +63298,11 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "649979",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 74
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 74,
+                    "dateEarned": "2026-04-02 14:13:34",
+                    "dateEarnedHardcore": "2026-04-02 14:13:34"
                 },
                 "572206": {
                     "id": 572206,
@@ -63345,12 +63359,14 @@
                     "title": "Tokyo Underground Cleansed",
                     "description": "Clear all the dragons in Tokyo Underground",
                     "points": 10,
-                    "trueRatio": 56,
+                    "trueRatio": 54,
                     "type": null,
                     "badgeName": "649984",
-                    "numAwarded": 31,
-                    "numAwardedHardcore": 28,
-                    "displayOrder": 81
+                    "numAwarded": 32,
+                    "numAwardedHardcore": 29,
+                    "displayOrder": 81,
+                    "dateEarned": "2026-04-02 14:18:22",
+                    "dateEarnedHardcore": "2026-04-02 14:18:22"
                 },
                 "572211": {
                     "id": 572211,
@@ -63397,12 +63413,14 @@
                     "title": "Daiba Icepack #13 Cleansed",
                     "description": "Clear all the dragons in Daiba Icepack #13",
                     "points": 10,
-                    "trueRatio": 53,
+                    "trueRatio": 51,
                     "type": null,
                     "badgeName": "649988",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 30,
-                    "displayOrder": 85
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 31,
+                    "displayOrder": 85,
+                    "dateEarned": "2026-04-02 14:55:53",
+                    "dateEarnedHardcore": "2026-04-02 14:55:53"
                 },
                 "572215": {
                     "id": 572215,
