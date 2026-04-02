@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-04-02
+
+Fixed horizontal scroll overflow on mobile in the Steam profile.
+
+### Steam
+
+- `html` element added to `overflow-x: clip` rule in `index.html` — `clip` on `body` alone does not propagate to the viewport scroller, leaving the page horizontally scrollable
+- Tab bar font size reduced to `11px` on mobile (from `14px`) and gap tightened to `12px` (from `24px`) — "Completion Progress" tab label was wide enough to overflow the viewport at small screen widths
+
+---
+
 ## 2026-04-01
 
 RA game awards sorted by type then date; combined activity page gains achievement unlock streak tracking with a 14-day visual.

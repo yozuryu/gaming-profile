@@ -1274,12 +1274,12 @@ const App = () => {
                 </div>
 
                 {/* ── Tab bar — RA style ── */}
-                <div className="sticky top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 px-4 md:px-8 flex items-center gap-6 mb-4 border-b border-[#2a475e]">
+                <div className="sticky top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 px-4 md:px-8 flex items-center gap-3 md:gap-6 mb-4 border-b border-[#2a475e]">
                     {TABS.map(({ id, label }) => (
                         <button
                             key={id}
                             onClick={() => setTab(id)}
-                            className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === id ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
+                            className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === id ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
                         >
                             {label}
                             {activeTab === id && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]" />}
