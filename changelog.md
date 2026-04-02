@@ -2,7 +2,21 @@
 
 ## 2026-04-02
 
-Fixed horizontal scroll overflow on mobile in the Steam profile.
+Streak panel redesigned with circles, 14-day window, connectors, and per-day achievement counts; Steam mobile overflow fixed.
+
+### Activity
+
+- Streak day cells changed from squares to circles — better visual separation from the heatmap above
+- Expanded from 7-day to 14-day window for more meaningful streak context
+- Gold connector lines drawn between consecutive active days, sitting at circle center height; transparent on broken days
+- Streak panel fills full width — connectors use `flex: 1` to distribute remaining space evenly
+- Circle size 36px; flame icon 16px — sized down from previous oversized squares
+- Current streak count reduced from 30px to 22px; panel padding tightened
+- Best streak line moved to left-aligned and bumped to 10px (from centered 8px)
+- Achievement count for each day shown below the day label — gold on active days, hidden on missed/pending
+- Today excluded from streak breaking — streak holds until midnight if no achievements yet (shown as pending dot, not ✕)
+- `flameFlicker` animation staggered per day index so flames don't all pulse in sync
+- Header flame icon animates; streak count glows gold when active streak > 0
 
 ### Steam
 

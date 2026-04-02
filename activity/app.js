@@ -333,7 +333,12 @@ const App = () => {
                 .filter(([, d]) => (d.count ?? d) >= 1)
                 .map(([day]) => day)
         );
-        const toKey = (d) => d.toISOString().substring(0, 10);
+        const toKey = (d) => {
+            const y = d.getFullYear();
+            const m = String(d.getMonth() + 1).padStart(2, '0');
+            const day = String(d.getDate()).padStart(2, '0');
+            return `${y}-${m}-${day}`;
+        };
         const today = new Date();
         const todayKey = toKey(today);
         // Count streak from yesterday backwards; add today only if it has achievements
@@ -602,7 +607,7 @@ const App = () => {
                                         {streakInfo.last14.map((d, i) => (
                                             <React.Fragment key={d.key}>
                                                 {i > 0 && (
-                                                    <div style={{ flex: 1, minWidth: 6, paddingTop: 18, display: 'flex', alignItems: 'flex-start' }}>
+                                                    <div style={{ flex: 1, minWidth: 6, paddingTop: 24, display: 'flex', alignItems: 'flex-start' }}>
                                                         <div style={{ width: '100%', height: 1.5, background: streakInfo.last14[i - 1].active && d.active ? 'rgba(229,177,67,0.35)' : 'transparent' }} />
                                                     </div>
                                                 )}
@@ -610,8 +615,8 @@ const App = () => {
                                                     <div
                                                         title={`${d.key}${heatmapData[d.key] ? ` · ${heatmapData[d.key].count ?? heatmapData[d.key]} achievement${(heatmapData[d.key].count ?? heatmapData[d.key]) !== 1 ? 's' : ''}` : ''}`}
                                                         style={{
-                                                            width: 36, height: 36, borderRadius: '50%', flexShrink: 0,
-                                                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                                            width: 48, height: 48, borderRadius: '50%', flexShrink: 0,
+                                                            display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6,
                                                             background: d.active
                                                                 ? 'linear-gradient(145deg, #2e1f02, #1c1200)'
                                                                 : d.isPending
@@ -623,7 +628,12 @@ const App = () => {
                                                         }}
                                                     >
                                                         {d.active ? (
-                                                            <Flame size={16} color="#e5b143" style={{ animation: 'flameFlicker 1.8s ease-in-out infinite', animationDelay: `${i * 0.18}s` }} />
+                                                            <>
+                                                                <Flame size={16} color="#e5b143" style={{ animation: 'flameFlicker 1.8s ease-in-out infinite', animationDelay: `${i * 0.18}s`, flexShrink: 0 }} />
+                                                                <span style={{ fontSize: 9, lineHeight: 1, color: '#c8880a', fontWeight: 700 }}>
+                                                                    {heatmapData[d.key]?.count ?? heatmapData[d.key] ?? ''}
+                                                                </span>
+                                                            </>
                                                         ) : d.isPending ? (
                                                             <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#2a475e', display: 'block', opacity: 0.7 }} />
                                                         ) : (
