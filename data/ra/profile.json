@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-02T02:47:40.239Z"
+        "extractionTimestamp": "2026-04-02T05:08:19.489Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 56474,
+        "rank": 56478,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 136945,
+        "totalRanked": 136962,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -455,7 +455,7 @@
             {
                 "gameId": 668,
                 "title": "Pokémon Emerald Version",
-                "imageIcon": "/Images/126495.png",
+                "imageIcon": "/Images/126553.png",
                 "consoleId": 5,
                 "consoleName": "Game Boy Advance",
                 "maxPossible": 197,
@@ -754,7 +754,7 @@
             {
                 "gameId": 723,
                 "title": "Pokémon Yellow Version: Special Pikachu Edition",
-                "imageIcon": "/Images/126482.png",
+                "imageIcon": "/Images/126549.png",
                 "consoleId": 4,
                 "consoleName": "Game Boy",
                 "maxPossible": 76,
@@ -1219,7 +1219,7 @@
                 "title": "Pokémon Emerald Version",
                 "consoleId": 5,
                 "consoleName": "Game Boy Advance",
-                "imageIcon": "/Images/126495.png",
+                "imageIcon": "/Images/126553.png",
                 "pointsTotal": 2086,
                 "achievementsPublished": 197
             },
@@ -1264,7 +1264,7 @@
                 "title": "Pokémon Yellow Version: Special Pikachu Edition",
                 "consoleId": 4,
                 "consoleName": "Game Boy",
-                "imageIcon": "/Images/126482.png",
+                "imageIcon": "/Images/126549.png",
                 "pointsTotal": 458,
                 "achievementsPublished": 76
             },
@@ -4936,7 +4936,7 @@
                 "title": "Rayman Origins",
                 "consoleId": 19,
                 "consoleName": "Wii",
-                "imageIcon": "/Images/126467.png",
+                "imageIcon": "/Images/126536.png",
                 "pointsTotal": 1142,
                 "achievementsPublished": 111
             },
