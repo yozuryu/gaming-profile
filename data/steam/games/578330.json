@@ -47,7 +47,7 @@
             "iconUrl": "faae8d197a5c285bdf76820ed425043807a5353a.jpg",
             "iconGrayUrl": "78dcd1fc0bbd31cc5c894ac2db0bd331a158becb.jpg",
             "hidden": false,
-            "globalPct": 43
+            "globalPct": 42.9
         },
         {
             "apiName": "COMPLETE_STORYEVENT5",
@@ -91,7 +91,7 @@
             "iconUrl": "ebeb44b36cccac79674b0bb07c2383f1940ef2d4.jpg",
             "iconGrayUrl": "1092b2c48ac34be5d6f7b7b91f85fa6d80e0b9b7.jpg",
             "hidden": false,
-            "globalPct": 32.3
+            "globalPct": 32.2
         },
         {
             "apiName": "COMPLETE_STORYEVENT9",
@@ -157,7 +157,7 @@
             "iconUrl": "e55e95aba21b895ae9fc892dfd7be976c612e259.jpg",
             "iconGrayUrl": "2809287077a669490a01809363250e9f4aa3fa32.jpg",
             "hidden": false,
-            "globalPct": 25.5
+            "globalPct": 25.4
         },
         {
             "apiName": "COMPLETE_STORYEVENT15",
@@ -168,7 +168,7 @@
             "iconUrl": "e6bbc39e56dc964b24a63eaa0f656c7ab7187b19.jpg",
             "iconGrayUrl": "bf8bd72b8ffcb1f7186118d7c65d6f4e83e3b355.jpg",
             "hidden": false,
-            "globalPct": 25.2
+            "globalPct": 25.1
         },
         {
             "apiName": "ALL_FREE_RUN",
@@ -190,7 +190,7 @@
             "iconUrl": "39a07e55f71a925b55a92272dfb6309e8a6143ca.jpg",
             "iconGrayUrl": "be4cf0e4883fd0161ff13cdb8e92fb300cb5d323.jpg",
             "hidden": false,
-            "globalPct": 6.2
+            "globalPct": 6.1
         },
         {
             "apiName": "ALL_POLICE_CHALLENGES",
@@ -322,7 +322,7 @@
             "iconUrl": "5d0839b71917cc3edcb7a73704679b277fb0d7f6.jpg",
             "iconGrayUrl": "cfa4b5aab4daac238cff142861b5c2fe4e9be288.jpg",
             "hidden": false,
-            "globalPct": 5.1
+            "globalPct": 5
         },
         {
             "apiName": "ALL_RED_BRICKS",
@@ -592,7 +592,7 @@
             "unlockedAt": null,
             "iconUrl": "faae8d197a5c285bdf76820ed425043807a5353a.jpg",
             "iconGrayUrl": "78dcd1fc0bbd31cc5c894ac2db0bd331a158becb.jpg",
-            "globalPct": 43
+            "globalPct": 42.9
         }
     ]
 }
