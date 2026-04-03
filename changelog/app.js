@@ -51,6 +51,7 @@ const SECTION_ORDER = [
     'Activity',
     'Pipelines',
     'Structure',
+    'Admin',
 ];
 
 const sortSections = (sections) => {
@@ -69,6 +70,7 @@ const SECTION_COLORS = {
     'Activity':          '#c6d4df',
     'Pipelines':         '#8f98a0',
     'Structure':         '#8f98a0',
+    'Admin':             '#ff6b6b',
 };
 
 const sectionColor = (title) =>

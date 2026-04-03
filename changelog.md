@@ -4,6 +4,19 @@
 
 Steam games data split into per-game files for faster initial load.
 
+### Admin
+
+- Added local admin panel (`admin/`) — run `npm run admin`, opens at `http://localhost:3131`; excluded from GitHub Pages via `_config.yml`
+- Site Config module: form editor for `data/hub/config.json` (username, motto, tags, platform/page visibility toggles)
+- RA Guides module: per-game guide editor for `data/ra/guides.json` with fixed Guides/Videos categories and dropdown link lists
+- Pipelines module: run any RA/Steam pipeline mode with live SSE log streaming and stop button; pipelines unchanged and still usable from CLI
+
+### RetroAchievements
+
+- Added guide links strip to `GameCard` — shows below progress bars, above the achievement preview strip
+- Each card shows fallback links: GameFAQs search and YouTube longplay search, auto-generated from the game title
+- Custom per-game guides supported via `data/ra/guides.json` — entries keyed by game ID, each an array of `{ category, icon, links: [{ label, url }] }`; categories with 1 link open directly, 2+ links show a dropdown; custom categories appear first, fallbacks fill in missing ones
+
 ### Steam
 
 - Added loading overlay when fetching per-game achievement data from `games/{appId}.json` — shows spinner and game name so the UI doesn't appear frozen on slow connections; dismissible by clicking the backdrop

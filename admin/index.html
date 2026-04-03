@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+    { "imports": {
+        "react":            "https://esm.sh/react@18.2.0",
+        "react-dom":        "https://esm.sh/react-dom@18.2.0",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client"
+    } }
+  </script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body { background:#171a21; color:#c6d4df; font-family:'Segoe UI',Arial,sans-serif; }
+    ::-webkit-scrollbar{width:6px} ::-webkit-scrollbar-track{background:#171a21} ::-webkit-scrollbar-thumb{background:#2a475e;border-radius:3px}
+    input,textarea,select{color-scheme:dark}
+    .input { background:#202d39; border:1px solid #2a475e; border-radius:2px; padding:4px 8px; font-size:11px; color:#c6d4df; outline:none; width:100%; }
+    .input:focus { border-color:#66c0f4; }
+    .input::placeholder { color:#546270; }
+    .btn-primary { background:#66c0f4; color:#101214; border-radius:2px; padding:4px 12px; font-size:11px; font-weight:600; cursor:pointer; transition:background .15s; }
+    .btn-primary:hover { background:#57cbde; }
+    .btn-primary:disabled { background:#2a475e; color:#546270; cursor:not-allowed; }
+    .btn-ghost { color:#546270; background:transparent; border:none; cursor:pointer; font-size:11px; transition:color .15s; }
+    .btn-ghost:hover { color:#c6d4df; }
+    .btn-danger:hover { color:#ff6b6b !important; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-type="module">
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { createRoot } from 'react-dom/client';
+
+const API       = 'http://localhost:3131/api';
+const RA_MEDIA  = 'https://media.retroachievements.org';
+
+// ── Generic fetch helpers ─────────────────────────────────────────────────────
+
+const apiGet  = (url)        => fetch(url).then(r => r.json());
+const apiData = (file)       => apiGet(`${API}/data?file=${encodeURIComponent(file)}`);
+const apiSave = (file, data) => fetch(`${API}/data?file=${encodeURIComponent(file)}`, {
+    method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data),
+});
+
+// ── Shared small components ───────────────────────────────────────────────────
+
+const SectionHeader = ({ color = '#66c0f4', children }) => (
+    <div className="flex items-center gap-2 mb-3">
+        <span className="w-[3px] h-[14px] rounded-[1px] shrink-0" style={{ background: color }} />
+        <span className="text-[13px] text-white tracking-wide uppercase font-medium">{children}</span>
+    </div>
+);
+
+const SaveBar = ({ dirty, saving, saved, onSave }) => (
+    <div className="flex items-center gap-3 px-4 py-2.5 border-b border-[#2a475e] bg-[#171a21]">
+        <div className="flex-1" />
+        {saved  && <span className="text-[10px] text-[#57cbde]">Saved</span>}
+        {saving && <span className="text-[10px] text-[#546270]">Saving…</span>}
+        <button className="btn-primary" onClick={onSave} disabled={!dirty || saving}>Save</button>
+    </div>
+);
+
+function useSaver(file) {
+    const [data,   setData]   = useState(null);
+    const [dirty,  setDirty]  = useState(false);
+    const [saving, setSaving] = useState(false);
+    const [saved,  setSaved]  = useState(false);
+
+    const load   = useCallback((d) => { setData(d); setDirty(false); setSaved(false); }, []);
+    const update = useCallback((next) => { setData(next); setDirty(true); setSaved(false); }, []);
+
+    const save = useCallback(async () => {
+        setSaving(true);
+        await apiSave(file, data);
+        setSaving(false); setDirty(false); setSaved(true);
+    }, [file, data]);
+
+    return { data, load, update, dirty, saving, saved, save };
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// MODULE: Site Config
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const TagList = ({ tags, onChange }) => {
+    const [input, setInput] = useState('');
+    const add = () => {
+        const v = input.trim();
+        if (v && !tags.includes(v)) { onChange([...tags, v]); }
+        setInput('');
+    };
+    return (
+        <div>
+            <div className="flex flex-wrap gap-1 mb-1.5">
+                {tags.map((t, i) => (
+                    <span key={i} className="flex items-center gap-1 text-[10px] bg-[#202d39] border border-[#2a475e] rounded-[2px] px-1.5 py-0.5 text-[#c6d4df]">
+                        {t}
+                        <button className="btn-ghost btn-danger text-[12px] leading-none" onClick={() => onChange(tags.filter((_, j) => j !== i))}>×</button>
+                    </span>
+                ))}
+            </div>
+            <div className="flex gap-1">
+                <input className="input flex-1" value={input} onChange={e => setInput(e.target.value)}
+                    onKeyDown={e => e.key === 'Enter' && add()} placeholder="Add tag…" />
+                <button className="btn-primary shrink-0" onClick={add}>Add</button>
+            </div>
+        </div>
+    );
+};
+
+const Toggle = ({ checked, onChange, label }) => (
+    <label className="flex items-center gap-2 cursor-pointer select-none">
+        <div
+            className={`w-8 h-4 rounded-full transition-colors relative ${checked ? 'bg-[#66c0f4]' : 'bg-[#2a475e]'}`}
+            onClick={() => onChange(!checked)}
+        >
+            <div className={`absolute top-0.5 w-3 h-3 rounded-full bg-white shadow transition-transform ${checked ? 'translate-x-4' : 'translate-x-0.5'}`} />
+        </div>
+        {label && <span className="text-[11px] text-[#8f98a0]">{label}</span>}
+    </label>
+);
+
+const Field = ({ label, children }) => (
+    <div className="flex flex-col gap-1">
+        <label className="text-[9px] text-[#546270] uppercase tracking-[0.07em] font-semibold">{label}</label>
+        {children}
+    </div>
+);
+
+function SiteConfigModule() {
+    const { data, load, update, dirty, saving, saved, save } = useSaver('data/hub/config.json');
+
+    useEffect(() => {
+        apiData('data/hub/config.json').then(d => load(d));
+    }, []);
+
+    if (!data || !data.tags) return <div className="p-6 text-[#546270] text-[11px]">Loading…</div>;
+
+    const set = (path, val) => {
+        const next = JSON.parse(JSON.stringify(data));
+        const keys = path.split('.');
+        let obj = next;
+        keys.slice(0, -1).forEach(k => { obj = obj[k]; });
+        obj[keys[keys.length - 1]] = val;
+        update(next);
+    };
+
+    return (
+        <div className="flex flex-col h-full">
+            <SaveBar dirty={dirty} saving={saving} saved={saved} onSave={save} />
+            <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-6">
+
+                {/* Identity */}
+                <div>
+                    <SectionHeader color="#e5b143">Identity</SectionHeader>
+                    <div className="flex flex-col gap-3">
+                        <Field label="Username">
+                            <input className="input" value={data.username} onChange={e => set('username', e.target.value)} />
+                        </Field>
+                        <Field label="Motto">
+                            <input className="input" value={data.motto} onChange={e => set('motto', e.target.value)} />
+                        </Field>
+                        <Field label="Site URL">
+                            <input className="input" value={data.siteUrl} onChange={e => set('siteUrl', e.target.value)} />
+                        </Field>
+                    </div>
+                </div>
+
+                {/* Tags */}
+                <div>
+                    <SectionHeader color="#e5b143">Tags</SectionHeader>
+                    <div className="flex flex-col gap-4">
+                        {Object.entries(data.tags).map(([group, tags]) => (
+                            <div key={group}>
+                                <div className="flex items-center gap-2 mb-1.5">
+                                    <span className="text-[11px] text-[#8f98a0] capitalize font-medium">{group}</span>
+                                    <button className="btn-ghost btn-danger text-[11px]" onClick={() => {
+                                        const next = { ...data.tags };
+                                        delete next[group];
+                                        set('tags', next);
+                                    }}>Remove group</button>
+                                </div>
+                                <TagList tags={tags} onChange={v => set(`tags.${group}`, v)} />
+                            </div>
+                        ))}
+                        <button className="btn-ghost text-left text-[11px] text-[#546270] hover:text-[#66c0f4]" onClick={() => {
+                            const name = prompt('Group name (e.g. "genre"):');
+                            if (name?.trim()) set('tags', { ...data.tags, [name.trim()]: [] });
+                        }}>+ add tag group</button>
+                    </div>
+                </div>
+
+                {/* Platforms */}
+                <div>
+                    <SectionHeader color="#e5b143">Platforms</SectionHeader>
+                    <div className="flex flex-col gap-3">
+                        {Object.entries(data.platforms).map(([key, cfg]) => (
+                            <div key={key} className="flex items-center gap-4 bg-[#1b2838] border border-[#2a475e] rounded-[3px] px-3 py-2">
+                                <span className="text-[11px] text-white capitalize font-medium w-[140px] shrink-0">{key}</span>
+                                <Toggle checked={cfg.visible} onChange={v => set(`platforms.${key}.visible`, v)} label="Visible" />
+                                <Toggle checked={cfg.active}  onChange={v => set(`platforms.${key}.active`,  v)} label="Active" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Pages */}
+                <div>
+                    <SectionHeader color="#e5b143">Pages</SectionHeader>
+                    <div className="flex flex-col gap-3">
+                        {['activity', 'completions'].map(page => (
+                            <div key={page} className="flex items-center gap-4 bg-[#1b2838] border border-[#2a475e] rounded-[3px] px-3 py-2">
+                                <span className="text-[11px] text-white capitalize font-medium w-[140px] shrink-0">{page}</span>
+                                <Toggle checked={data[page]?.visible ?? true} onChange={v => set(`${page}.visible`, v)} label="Visible" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    );
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// MODULE: RA Guides
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const ALLOWED_CATEGORIES = ['Guides', 'Videos'];
+const CATEGORY_ICON = { Guides: '📖', Videos: '▶️' };
+
+const CategoryEditor = ({ cat, onChange, onDelete }) => {
+    const addLink = () => onChange({ ...cat, links: [...cat.links, { label: '', url: '' }] });
+    const updateLink = (i, field, val) => onChange({ ...cat, links: cat.links.map((l, idx) => idx === i ? { ...l, [field]: val } : l) });
+    const removeLink = (i) => onChange({ ...cat, links: cat.links.filter((_, idx) => idx !== i) });
+
+    return (
+        <div className="border border-[#2a475e] rounded-[3px] bg-[#1b2838]">
+            <div className="flex items-center gap-2 px-3 py-2 border-b border-[#2a475e]">
+                <span className="text-[11px]">{CATEGORY_ICON[cat.category] ?? '🔗'}</span>
+                <span className="text-[12px] font-medium text-white flex-1">{cat.category}</span>
+                <button className="btn-ghost btn-danger text-[16px] leading-none" onClick={onDelete}>×</button>
+            </div>
+            <div className="flex flex-col gap-1 p-2">
+                {cat.links.map((link, i) => (
+                    <div key={i} className="flex items-center gap-1.5">
+                        <input value={link.label} onChange={e => updateLink(i, 'label', e.target.value)}
+                            placeholder="Label" className="input w-[120px] shrink-0" />
+                        <input value={link.url} onChange={e => updateLink(i, 'url', e.target.value)}
+                            placeholder="URL" className="input flex-1" />
+                        {link.url && <a href={link.url} target="_blank" rel="noreferrer" className="btn-ghost text-[12px] shrink-0">↗</a>}
+                        <button className="btn-ghost btn-danger text-[16px] leading-none shrink-0" onClick={() => removeLink(i)}>×</button>
+                    </div>
+                ))}
+                <button className="btn-ghost text-left mt-1" onClick={addLink}>+ add link</button>
+            </div>
+        </div>
+    );
+};
+
+function RAGuidesModule() {
+    const [games,    setGames]    = useState([]);
+    const [search,   setSearch]   = useState('');
+    const [selected, setSelected] = useState(null);
+    const [guides,   setGuides]   = useState(null);
+    const [cats,     setCats]     = useState([]);
+    const [dirty,    setDirty]    = useState(false);
+    const [saving,   setSaving]   = useState(false);
+    const [saved,    setSaved]    = useState(false);
+
+    useEffect(() => {
+        Promise.all([
+            apiGet(`${API}/games/ra`),
+            apiData('data/ra/guides.json'),
+        ]).then(([g, gd]) => { setGames(g); setGuides(gd); });
+    }, []);
+
+    useEffect(() => {
+        if (!selected || !guides) return;
+        setCats(guides[selected.id] ? JSON.parse(JSON.stringify(guides[selected.id])) : []);
+        setDirty(false); setSaved(false);
+    }, [selected?.id, guides]);
+
+    const save = async () => {
+        setSaving(true);
+        const next = { ...guides };
+        if (cats.length === 0) delete next[selected.id]; else next[selected.id] = cats;
+        await apiSave('data/ra/guides.json', next);
+        setGuides(next); setSaving(false); setDirty(false); setSaved(true);
+    };
+
+    const update = (next) => { setCats(next); setDirty(true); setSaved(false); };
+
+    const filtered = search
+        ? games.filter(g => g.title.toLowerCase().includes(search.toLowerCase()) || String(g.id).includes(search))
+        : games;
+
+    const customCount = guides ? Object.keys(guides).filter(k => k !== '_example').length : 0;
+
+    return (
+        <div className="flex h-full overflow-hidden">
+            {/* Sidebar */}
+            <div className="w-[240px] shrink-0 flex flex-col border-r border-[#2a475e]">
+                <div className="px-3 pt-3 pb-2 border-b border-[#2a475e]">
+                    <input value={search} onChange={e => setSearch(e.target.value)}
+                        placeholder="Search games…" className="input" />
+                </div>
+                <div className="flex-1 overflow-y-auto py-1">
+                    {filtered.map(g => {
+                        const hasCustom = guides && !!guides[g.id];
+                        const isSel = selected?.id === g.id;
+                        return (
+                            <button key={g.id} onClick={() => setSelected(g)}
+                                className={`w-full flex items-center gap-2 px-3 py-1.5 text-left transition-colors ${isSel ? 'bg-[#2a475e]' : 'hover:bg-[#1b2838]'}`}>
+                                <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
+                                <span className={`text-[11px] flex-1 truncate ${isSel ? 'text-white' : 'text-[#8f98a0]'}`}>{g.title}</span>
+                                {hasCustom && <span className="w-1.5 h-1.5 rounded-full bg-[#e5b143] shrink-0" />}
+                            </button>
+                        );
+                    })}
+                    {filtered.length === 0 && <div className="text-[11px] text-[#546270] text-center py-6">No games found</div>}
+                </div>
+                <div className="px-3 py-2 border-t border-[#2a475e] text-[10px] text-[#546270]">
+                    {customCount} games with custom guides · <span className="text-[#e5b143]">●</span> = has guides
+                </div>
+            </div>
+
+            {/* Detail */}
+            <div className="flex-1 flex flex-col overflow-hidden">
+                {!selected ? (
+                    <div className="flex items-center justify-center h-full text-[#546270] text-[12px]">Select a game</div>
+                ) : (
+                    <>
+                        {/* Game header */}
+                        <div className="flex items-center gap-3 px-4 py-3 border-b border-[#2a475e]">
+                            <img src={`${RA_MEDIA}${selected.imageIcon}`} alt={selected.title}
+                                className="w-10 h-10 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
+                            <div className="flex-1 min-w-0">
+                                <div className="text-[13px] text-white font-medium truncate">{selected.title}</div>
+                                <div className="flex items-center gap-2 mt-0.5">
+                                    <span className="text-[10px] text-[#546270]">ID: {selected.id}</span>
+                                    <a href={`https://gamefaqs.gamespot.com/search?game=${encodeURIComponent(selected.title)}`} target="_blank" rel="noreferrer"
+                                        className="text-[10px] text-[#546270] hover:text-[#66c0f4] transition-colors">Search GameFAQs ↗</a>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-2 shrink-0">
+                                {saved  && <span className="text-[10px] text-[#57cbde]">Saved</span>}
+                                <button className="btn-primary" onClick={save} disabled={!dirty || saving}>
+                                    {saving ? 'Saving…' : 'Save'}
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Categories */}
+                        <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-3">
+                            {cats.length === 0 && (
+                                <div className="text-[11px] text-[#546270] text-center py-4">No custom guides — fallback links will be shown.</div>
+                            )}
+                            {cats.map((cat, i) => (
+                                <CategoryEditor key={i} cat={cat}
+                                    onChange={next => update(cats.map((c, idx) => idx === i ? next : c))}
+                                    onDelete={() => update(cats.filter((_, idx) => idx !== i))} />
+                            ))}
+                            {ALLOWED_CATEGORIES.filter(c => !cats.some(cat => cat.category === c)).map(c => (
+                                <button key={c} onClick={() => update([...cats, { category: c, links: [{ label: '', url: '' }] }])}
+                                    className="w-full py-2 border border-dashed border-[#2a475e] hover:border-[#66c0f4] rounded-[3px] text-[11px] text-[#546270] hover:text-[#66c0f4] transition-colors">
+                                    + add {c}
+                                </button>
+                            ))}
+                        </div>
+                    </>
+                )}
+            </div>
+        </div>
+    );
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// Module registry
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// MODULE: Pipelines
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const PIPELINE_MODES = [
+    { platform: 'RetroAchievements', color: '#e5b143', modes: [
+        { id: 'ra',       label: 'Incremental',   desc: 'Profile + recent achievements' },
+        { id: 'ra-full',  label: 'Full Refresh',   desc: 'Re-fetch all game details' },
+        { id: 'ra-debug', label: 'Debug',          desc: 'Print API responses, no writes' },
+    ]},
+    { platform: 'Steam', color: '#66c0f4', modes: [
+        { id: 'steam',            label: 'Incremental',         desc: 'Recently played only' },
+        { id: 'steam-unlocked',   label: 'Refresh Unlocked',    desc: 'Re-fetch games with unlocks' },
+        { id: 'steam-full',       label: 'Full Refresh',        desc: 'All owned games' },
+        { id: 'steam-debug',      label: 'Debug',               desc: 'Print API responses, no writes' },
+    ]},
+];
+
+function PipelinesModule() {
+    const [status,   setStatus]   = useState(null); // null = not yet loaded
+    const [log,      setLog]      = useState([]);
+    const [running,  setRunning]  = useState(false);
+    const [jobId,    setJobId]    = useState(null);
+    const logRef  = useRef(null);
+    const esRef   = useRef(null);
+
+    // Load current status on mount
+    useEffect(() => {
+        fetch(`${API}/pipeline/status`).then(r => r.json()).then(s => {
+            setStatus(s);
+            setRunning(s.running);
+            if (s.id) { setJobId(s.id); setLog(s.lines ?? []); }
+            if (s.running) connectStream(s.id);
+        });
+        return () => esRef.current?.close();
+    }, []);
+
+    // Auto-scroll log
+    useEffect(() => {
+        if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight;
+    }, [log]);
+
+    const connectStream = (id) => {
+        esRef.current?.close();
+        const es = new EventSource(`${API}/pipeline/stream?id=${id}`);
+        esRef.current = es;
+        es.onmessage = (e) => {
+            const line = JSON.parse(e.data);
+            if (line.type === 'exit') { setRunning(false); es.close(); }
+            setLog(prev => [...prev, line]);
+        };
+        es.onerror = () => { setRunning(false); es.close(); };
+    };
+
+    const run = async (mode) => {
+        setLog([]);
+        setRunning(true);
+        const res = await fetch(`${API}/pipeline/start`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ mode }),
+        });
+        const data = await res.json();
+        if (data.error) { setLog([{ type: 'err', text: data.error }]); setRunning(false); return; }
+        setJobId(data.id);
+        connectStream(data.id);
+    };
+
+    const stop = () => fetch(`${API}/pipeline/stop`, { method: 'POST' });
+
+    const lineColor = (type) => {
+        if (type === 'err')  return '#ff6b6b';
+        if (type === 'exit') return '#8f98a0';
+        return '#c6d4df';
+    };
+
+    return (
+        <div className="flex h-full overflow-hidden">
+            {/* Left: run buttons */}
+            <div className="w-[240px] shrink-0 flex flex-col border-r border-[#2a475e] overflow-y-auto">
+                {PIPELINE_MODES.map(({ platform, color, modes }) => (
+                    <div key={platform} className="p-3 border-b border-[#2a475e]">
+                        <div className="flex items-center gap-2 mb-2">
+                            <span className="w-[3px] h-[13px] rounded-[1px] shrink-0" style={{ background: color }} />
+                            <span className="text-[11px] text-white font-medium uppercase tracking-wide">{platform}</span>
+                        </div>
+                        <div className="flex flex-col gap-1.5">
+                            {modes.map(m => (
+                                <button key={m.id} onClick={() => run(m.id)} disabled={running}
+                                    className={`flex flex-col items-start px-2.5 py-2 rounded-[3px] border text-left transition-colors ${running ? 'opacity-40 cursor-not-allowed border-[#2a475e]' : 'border-[#2a475e] hover:border-[#66c0f4] hover:bg-[#1b2838]'}`}>
+                                    <span className="text-[11px] text-white font-medium">{m.label}</span>
+                                    <span className="text-[9px] text-[#546270]">{m.desc}</span>
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Right: log */}
+            <div className="flex-1 flex flex-col overflow-hidden">
+                <div className="flex items-center gap-3 px-4 py-2 border-b border-[#2a475e] shrink-0">
+                    <span className="text-[11px] text-[#546270] flex-1">
+                        {running ? <span className="text-[#57cbde]">● Running…</span>
+                         : log.length ? <span>Done</span>
+                         : <span>Select a pipeline to run</span>}
+                    </span>
+                    {running && (
+                        <button onClick={stop} className="text-[10px] text-[#ff6b6b] border border-[#ff6b6b]/40 hover:bg-[#ff6b6b]/10 px-2 py-1 rounded-[2px] transition-colors">
+                            Stop
+                        </button>
+                    )}
+                    {log.length > 0 && !running && (
+                        <button onClick={() => setLog([])} className="btn-ghost text-[10px]">Clear</button>
+                    )}
+                </div>
+                <div ref={logRef} className="flex-1 overflow-y-auto p-3 font-mono text-[11px] leading-relaxed">
+                    {log.map((line, i) => (
+                        <div key={i} style={{ color: lineColor(line.type) }}>{line.text}</div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// MODULE: Data Diff
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// Parses unified diff lines into side-by-side row pairs
+// Returns [{ type: 'hunk'|'same'|'change'|'add'|'del', left, right, leftNo, rightNo }]
+function parseSideBySide(lines) {
+    const rows = [];
+    let leftNo = 0, rightNo = 0;
+
+    // Strip file header lines (diff --git, index, ---, +++)
+    const diffLines = lines.filter(l =>
+        !l.startsWith('diff ') && !l.startsWith('index ') &&
+        !l.startsWith('--- ') && !l.startsWith('+++ ')
+    );
+
+    let i = 0;
+    while (i < diffLines.length) {
+        const line = diffLines[i];
+        if (line.startsWith('@@')) {
+            const m = line.match(/@@ -(\d+)(?:,\d+)? \+(\d+)(?:,\d+)? @@/);
+            if (m) { leftNo = parseInt(m[1]); rightNo = parseInt(m[2]); }
+            rows.push({ type: 'hunk', left: line, right: '' });
+            i++; continue;
+        }
+
+        // Collect a block of removals then additions to pair them
+        const dels = [], adds = [];
+        while (i < diffLines.length && diffLines[i].startsWith('-')) { dels.push(diffLines[i].slice(1)); i++; }
+        while (i < diffLines.length && diffLines[i].startsWith('+')) { adds.push(diffLines[i].slice(1)); i++; }
+
+        if (dels.length || adds.length) {
+            const len = Math.max(dels.length, adds.length);
+            for (let j = 0; j < len; j++) {
+                const hasDel = j < dels.length, hasAdd = j < adds.length;
+                rows.push({
+                    type:    hasDel && hasAdd ? 'change' : hasDel ? 'del' : 'add',
+                    left:    hasDel ? dels[j] : null,
+                    right:   hasAdd ? adds[j] : null,
+                    leftNo:  hasDel ? leftNo++  : null,
+                    rightNo: hasAdd ? rightNo++ : null,
+                });
+            }
+            continue;
+        }
+
+        // Context line
+        if (line.startsWith(' ') || line === '') {
+            rows.push({ type: 'same', left: line.slice(1), right: line.slice(1), leftNo: leftNo++, rightNo: rightNo++ });
+        }
+        i++;
+    }
+    return rows;
+}
+
+const BG = {
+    hunk:   { cell: '#1a2535', line: '#1a2535' },
+    same:   { cell: 'transparent', line: 'transparent' },
+    del:    { left: 'rgba(255,107,107,0.15)', right: 'rgba(255,107,107,0.04)', leftLine: 'rgba(255,107,107,0.3)', rightLine: 'transparent' },
+    add:    { left: 'rgba(87,203,222,0.04)',  right: 'rgba(87,203,222,0.15)', leftLine: 'transparent', rightLine: 'rgba(87,203,222,0.3)' },
+    change: { left: 'rgba(255,107,107,0.15)', right: 'rgba(87,203,222,0.15)', leftLine: 'rgba(255,107,107,0.3)', rightLine: 'rgba(87,203,222,0.3)' },
+};
+
+const SideBySideRow = ({ row }) => {
+    if (row.type === 'hunk') return (
+        <tr style={{ background: BG.hunk.cell }}>
+            <td colSpan={4} className="px-3 py-0.5 font-mono text-[10px]" style={{ color: '#e5b143' }}>{row.left}</td>
+        </tr>
+    );
+    const bg     = BG[row.type];
+    const leftBg = row.type === 'same' ? 'transparent' : (bg.left  ?? bg.cell);
+    const rightBg= row.type === 'same' ? 'transparent' : (bg.right ?? bg.cell);
+    const leftLn = row.type === 'same' ? 'transparent' : (bg.leftLine  ?? 'transparent');
+    const rightLn= row.type === 'same' ? 'transparent' : (bg.rightLine ?? 'transparent');
+    return (
+        <tr>
+            <td className="select-none text-right pr-2 pl-1 font-mono text-[10px] w-[32px] shrink-0" style={{ color: '#546270', background: leftLn, borderRight: '1px solid #2a475e' }}>
+                {row.leftNo ?? ''}
+            </td>
+            <td className="font-mono text-[10px] px-2 whitespace-pre" style={{ color: row.left === null ? '#546270' : '#c6d4df', background: leftBg, borderRight: '1px solid #2a475e', minWidth: 0, maxWidth: '50%', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                {row.left ?? ''}
+            </td>
+            <td className="select-none text-right pr-2 pl-1 font-mono text-[10px] w-[32px] shrink-0" style={{ color: '#546270', background: rightLn, borderRight: '1px solid #2a475e' }}>
+                {row.rightNo ?? ''}
+            </td>
+            <td className="font-mono text-[10px] px-2 whitespace-pre" style={{ color: row.right === null ? '#546270' : '#c6d4df', background: rightBg, minWidth: 0 }}>
+                {row.right ?? ''}
+            </td>
+        </tr>
+    );
+};
+
+function DataDiffModule() {
+    const [files,    setFiles]    = useState([]);
+    const [loading,  setLoading]  = useState(true);
+    const [selected, setSelected] = useState(null);
+
+    const load = () => {
+        setLoading(true);
+        fetch(`${API}/diff`).then(r => r.json()).then(d => {
+            setFiles(d.files ?? []);
+            setSelected(d.files?.[0] ?? null);
+            setLoading(false);
+        });
+    };
+
+    useEffect(() => { load(); }, []);
+
+    const rows = selected ? parseSideBySide(selected.lines) : [];
+    const adds = rows.filter(r => r.type === 'add' || r.type === 'change').length;
+    const dels = rows.filter(r => r.type === 'del' || r.type === 'change').length;
+
+    return (
+        <div className="flex h-full overflow-hidden">
+            {/* File list */}
+            <div className="w-[220px] shrink-0 flex flex-col border-r border-[#2a475e]">
+                <div className="flex items-center gap-2 px-3 py-2 border-b border-[#2a475e]">
+                    <span className="text-[11px] text-[#546270] flex-1">{loading ? 'Loading…' : `${files.length} file${files.length !== 1 ? 's' : ''} changed`}</span>
+                    <button onClick={load} className="btn-ghost text-[10px]">↺</button>
+                </div>
+                <div className="flex-1 overflow-y-auto py-1">
+                    {!loading && files.length === 0 && (
+                        <div className="text-[11px] text-[#546270] text-center py-8">No changes in data/</div>
+                    )}
+                    {files.map(f => (
+                        <button key={f.file} onClick={() => setSelected(f)}
+                            className={`w-full text-left px-3 py-1.5 text-[10px] font-mono transition-colors ${selected?.file === f.file ? 'bg-[#2a475e] text-white' : 'text-[#8f98a0] hover:bg-[#1b2838]'}`}>
+                            {f.file.replace('data/', '')}
+                        </button>
+                    ))}
+                </div>
+            </div>
+
+            {/* Diff view */}
+            <div className="flex-1 flex flex-col overflow-hidden">
+                {selected ? (
+                    <>
+                        <div className="flex items-center gap-3 px-4 py-2 border-b border-[#2a475e] shrink-0">
+                            <span className="text-[11px] font-mono text-white flex-1">{selected.file}</span>
+                            <span className="text-[10px] text-[#57cbde]">+{adds}</span>
+                            <span className="text-[10px] text-[#ff6b6b]">-{dels}</span>
+                        </div>
+                        <div className="flex-1 overflow-auto">
+                            <table className="w-full border-collapse" style={{ tableLayout: 'fixed' }}>
+                                <colgroup>
+                                    <col style={{ width: 32 }} />
+                                    <col style={{ width: '50%' }} />
+                                    <col style={{ width: 32 }} />
+                                    <col style={{ width: '50%' }} />
+                                </colgroup>
+                                <tbody>
+                                    {rows.map((row, i) => <SideBySideRow key={i} row={row} />)}
+                                </tbody>
+                            </table>
+                        </div>
+                    </>
+                ) : (
+                    !loading && <div className="flex items-center justify-center h-full text-[#546270] text-[11px]">Select a file</div>
+                )}
+            </div>
+        </div>
+    );
+}
+
+const MODULES = [
+    { id: 'config',    label: 'Site Config',  icon: '⚙️',  group: 'General',          component: SiteConfigModule },
+    { id: 'pipelines', label: 'Pipelines',    icon: '▶',   group: 'General',          component: PipelinesModule },
+    { id: 'data-diff', label: 'Data Diff',    icon: '±',   group: 'General',          component: DataDiffModule },
+    { id: 'ra-guides', label: 'Guides',       icon: '📖',  group: 'RetroAchievements', component: RAGuidesModule },
+];
+
+const GROUPS = [...new Set(MODULES.map(m => m.group))];
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// App shell
+// ═══════════════════════════════════════════════════════════════════════════════
+
+export default function App() {
+    const getIdFromHash = () => {
+        const hash = location.hash.slice(1);
+        return MODULES.find(m => m.id === hash) ? hash : MODULES[0].id;
+    };
+    const [activeId,      setActiveId]      = useState(getIdFromHash);
+    const [error,         setError]         = useState(null);
+    const [serverStatus,  setServerStatus]  = useState('online'); // 'online' | 'stopping' | 'restarting' | 'offline'
+
+    useEffect(() => {
+        const onHash = () => setActiveId(getIdFromHash());
+        window.addEventListener('hashchange', onHash);
+        return () => window.removeEventListener('hashchange', onHash);
+    }, []);
+
+    const stopServer = async () => {
+        if (!confirm('Stop the admin server?')) return;
+        setServerStatus('stopping');
+        await fetch(`${API}/server/stop`, { method: 'POST' }).catch(() => {});
+        setServerStatus('offline');
+    };
+
+    const restartServer = async () => {
+        setServerStatus('restarting');
+        await fetch(`${API}/server/restart`, { method: 'POST' }).catch(() => {});
+        // Poll until back up
+        const poll = setInterval(async () => {
+            try {
+                const r = await fetch(`${API}/health`);
+                if (r.ok) { clearInterval(poll); setServerStatus('online'); }
+            } catch {}
+        }, 500);
+    };
+
+    useEffect(() => {
+        fetch(`${API}/data?file=data/hub/config.json`)
+            .catch(() => setError('Could not connect to admin server. Is it running?'));
+    }, []);
+
+    const active = MODULES.find(m => m.id === activeId);
+    const ActiveComponent = active?.component;
+
+    if (error) return (
+        <div className="flex items-center justify-center h-screen text-center px-6">
+            <div>
+                <div className="text-[#ff6b6b] text-[14px] font-medium mb-2">Connection error</div>
+                <div className="text-[#8f98a0] text-[12px] mb-3">{error}</div>
+                <code className="text-[#66c0f4] text-[11px]">npm run admin</code>
+            </div>
+        </div>
+    );
+
+    return (
+        <div className="flex h-screen overflow-hidden">
+            {/* Sidebar nav */}
+            <div className="w-[200px] shrink-0 flex flex-col border-r border-[#2a475e] bg-[#1b2838]">
+                <div className="px-4 py-3 border-b border-[#2a475e]">
+                    <div className="text-[13px] text-white font-medium tracking-wide">Admin</div>
+                    <div className="text-[10px] text-[#546270]">gaming-profile</div>
+                </div>
+                <nav className="flex-1 overflow-y-auto py-2 min-h-0">
+                    {GROUPS.map(group => (
+                        <div key={group} className="mb-2">
+                            <div className="px-3 py-1 text-[9px] text-[#546270] uppercase tracking-[0.1em] font-semibold">{group}</div>
+                            {MODULES.filter(m => m.group === group).map(m => (
+                                <button key={m.id} onClick={() => { location.hash = m.id; }}
+                                    className={`w-full flex items-center gap-2 px-3 py-1.5 text-left text-[11px] transition-colors rounded-[2px] mx-1 ${activeId === m.id ? 'bg-[#2a475e] text-white' : 'text-[#8f98a0] hover:text-white hover:bg-[#202d39]'}`}
+                                    style={{ width: 'calc(100% - 8px)' }}>
+                                    <span>{m.icon}</span>{m.label}
+                                </button>
+                            ))}
+                        </div>
+                    ))}
+                </nav>
+                {/* Server controls */}
+                <div className="px-3 py-2 border-t border-[#2a475e] flex flex-col gap-1.5">
+                    {serverStatus === 'offline' && (
+                        <div className="text-[10px] text-[#ff6b6b] text-center py-1">Server stopped</div>
+                    )}
+                    {serverStatus === 'restarting' && (
+                        <div className="text-[10px] text-[#e5b143] text-center py-1">Restarting…</div>
+                    )}
+                    {(serverStatus === 'online' || serverStatus === 'stopping') && (
+                        <div className="flex gap-1.5">
+                            <button onClick={restartServer} disabled={serverStatus !== 'online'}
+                                className="flex-1 py-1 text-[10px] rounded-[2px] border border-[#2a475e] text-[#8f98a0] hover:text-white hover:border-[#66c0f4] transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+                                Restart
+                            </button>
+                            <button onClick={stopServer} disabled={serverStatus !== 'online'}
+                                className="flex-1 py-1 text-[10px] rounded-[2px] border border-[#2a475e] text-[#8f98a0] hover:text-[#ff6b6b] hover:border-[#ff6b6b]/50 transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+                                Stop
+                            </button>
+                        </div>
+                    )}
+                </div>
+            </div>
+
+            {/* Main content */}
+            <div className="flex-1 flex flex-col overflow-hidden">
+                {/* Page title */}
+                <div className="px-5 py-3 border-b border-[#2a475e] shrink-0">
+                    <div className="text-[13px] text-white font-medium">{active?.icon} {active?.label}</div>
+                    <div className="text-[10px] text-[#546270]">{active?.group}</div>
+                </div>
+                <div className="flex-1 overflow-hidden">
+                    {ActiveComponent && <ActiveComponent />}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

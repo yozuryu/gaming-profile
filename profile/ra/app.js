@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Gamepad2, Activity, BarChart2, Award, Star, ChevronDown, AlertCircle, Trophy, Crown, Lock, Unlock, AlertTriangle, Flame, Feather, Medal, ShieldOff, CircleDashed, X, Clock } from 'lucide-react';
+import { Gamepad2, Activity, BarChart2, Award, Star, ChevronDown, AlertCircle, Trophy, Crown, Lock, Unlock, AlertTriangle, Flame, Feather, Medal, ShieldOff, CircleDashed, X, Clock, BookOpen, Youtube, ExternalLink } from 'lucide-react';
 import { MEDIA_URL, SITE_URL, TILDE_TAG_COLORS } from './utils/constants.js';
 import { getMediaUrl, parseTitle } from './utils/helpers.js';
 import { transformData } from './utils/transform.js';
@@ -23,7 +23,74 @@ const renderTildeTags = (tags) => {
 
 // --- Components ---
 
-const GameCard = ({ game, onViewDetails }) => {
+const GuideStrip = ({ game, guides, isLast }) => {
+  const [openCategory, setOpenCategory] = useState(null);
+  const ref = useRef(null);
+
+  const searchTitle = encodeURIComponent(game.baseTitle || game.title);
+  const categoryIcon = (cat) => {
+    const c = cat.toLowerCase();
+    if (c === 'videos') return <Youtube size={9} />;
+    if (c === 'guides') return <BookOpen size={9} />;
+    return <ExternalLink size={9} />;
+  };
+  const fallbackCategories = [
+    { category: 'Guides', links: [{ label: 'Search GameFAQs', url: `https://gamefaqs.gamespot.com/search?game=${searchTitle}` }] },
+    { category: 'Videos', links: [{ label: 'Search YouTube',  url: `https://www.youtube.com/results?search_query=${searchTitle}+longplay` }] },
+  ];
+  const categories = guides
+    ? [...guides, ...fallbackCategories.filter(f => !guides.some(g => g.category === f.category))]
+    : fallbackCategories;
+
+  useEffect(() => {
+    if (!openCategory) return;
+    const handler = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpenCategory(null); };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, [openCategory]);
+
+  return (
+    <div ref={ref} className={`relative flex items-center gap-1 px-3 py-1.5 bg-[#171a21] border-t border-[#323f4c] flex-wrap ${isLast ? 'rounded-b-[3px]' : ''}`}>
+      <span className="text-[9px] text-[#546270] uppercase tracking-[0.07em] font-semibold mr-1 shrink-0">Guides</span>
+      {categories.map((cat) => {
+        const isSingle = cat.links.length === 1;
+        const isOpen   = openCategory === cat.category;
+        const chipCls  = `flex items-center gap-1 text-[10px] px-1.5 py-[2px] rounded-[2px] border transition-colors bg-[#1b2838] outline-none ${isOpen ? 'text-[#66c0f4] border-[#66c0f4]/50' : 'text-[#8f98a0] border-[#2a475e] hover:text-[#66c0f4] hover:border-[#66c0f4]/50'}`;
+        return (
+          <div key={cat.category} className="relative shrink-0">
+            {isSingle ? (
+              <a href={cat.links[0].url} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()} className={chipCls}>
+                {categoryIcon(cat.category)}{cat.category}
+              </a>
+            ) : (
+              <button onClick={e => { e.stopPropagation(); setOpenCategory(isOpen ? null : cat.category); }} className={chipCls}>
+                {categoryIcon(cat.category)}{cat.category}<ChevronDown size={8} className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+              </button>
+            )}
+            {isOpen && (
+              <div className="absolute top-full left-0 mt-1 z-50 min-w-[140px] bg-[#101214] border border-[#2a475e] rounded-[3px] shadow-lg py-0.5">
+                {cat.links.map((link, i) => (
+                  <a
+                    key={i}
+                    href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={e => { e.stopPropagation(); setOpenCategory(null); }}
+                    className="flex items-center gap-1.5 px-2.5 py-1.5 text-[10px] text-[#8f98a0] hover:text-[#66c0f4] hover:bg-[#1b2838] transition-colors whitespace-nowrap"
+                  >
+                    <ExternalLink size={8} className="shrink-0 opacity-60" />{link.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const GameCard = ({ game, onViewDetails, guides }) => {
   const stripeColor = game.isMastered
     ? 'border-l-[#e5b143]'
     : game.isBeaten
@@ -162,6 +229,9 @@ const GameCard = ({ game, onViewDetails }) => {
           })()}
         </div>
       </div>
+
+      {/* Guide links strip */}
+      <GuideStrip game={game} guides={guides} isLast={!hasAchievements || !onViewDetails} />
 
       {/* Achievement preview strip */}
       {hasAchievements && onViewDetails && (
@@ -960,6 +1030,7 @@ export default function App() {
   const [watchlistGrouping, setWatchlistGrouping] = useState('none');
   const [collapsedGroups, setCollapsedGroups] = useState(new Set());
   const [selectedGame, setSelectedGame] = useState(null);
+  const [guidesData, setGuidesData] = useState({});
 
   const loadNextChunk = () => {
     const nextIdx = achievementChunks.findIndex(c => c === null);
@@ -988,12 +1059,16 @@ export default function App() {
     const next = new Set(prev); next.has(key) ? next.delete(key) : next.add(key); return next;
   });
 
-  // ── Fetch profile.json on mount (always needed) ───────────
+  // ── Fetch profile.json + guides.json on mount ────────────
   useEffect(() => {
     fetch('../../data/ra/profile.json')
       .then(r => { if (!r.ok) throw new Error('Failed to load profile.json'); return r.json(); })
       .then(data => { setProfileData(data); setLoadingProfile(false); })
       .catch(err => { setError(err.message); setLoadingProfile(false); });
+    fetch('../../data/ra/guides.json')
+      .then(r => r.ok ? r.json() : {})
+      .then(data => setGuidesData(data))
+      .catch(() => {});
   }, []);
 
   // ── Load heatmap + first achievement chunk when Activity tab is opened ──
@@ -1645,7 +1720,7 @@ export default function App() {
                 </>
               )}
               {displayedGames.map(game => (
-                <GameCard key={game.id} game={game} onViewDetails={setSelectedGame} />
+                <GameCard key={game.id} game={game} onViewDetails={setSelectedGame} guides={guidesData[game.id] ?? null} />
               ))}
             </>
           )}

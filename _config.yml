@@ -1,2 +1,8 @@
 exclude:
   - CLAUDE.md
+  - admin/
+  - scripts/
+  - package.json
+  - package-lock.json
+  - .env
+  - .claude/
