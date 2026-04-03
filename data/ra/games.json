@@ -41816,7 +41816,7 @@
                     "trueRatio": 18,
                     "type": null,
                     "badgeName": "162788",
-                    "numAwarded": 397,
+                    "numAwarded": 398,
                     "numAwardedHardcore": 170,
                     "displayOrder": 304
                 },
@@ -42080,7 +42080,7 @@
                     "trueRatio": 53,
                     "type": null,
                     "badgeName": "162810",
-                    "numAwarded": 322,
+                    "numAwarded": 323,
                     "numAwardedHardcore": 146,
                     "displayOrder": 504
                 },
@@ -42116,7 +42116,7 @@
                     "trueRatio": 22,
                     "type": "progression",
                     "badgeName": "162813",
-                    "numAwarded": 446,
+                    "numAwarded": 447,
                     "numAwardedHardcore": 178,
                     "displayOrder": 52
                 },
@@ -42128,7 +42128,7 @@
                     "trueRatio": 121,
                     "type": null,
                     "badgeName": "162814",
-                    "numAwarded": 409,
+                    "numAwarded": 410,
                     "numAwardedHardcore": 163,
                     "displayOrder": 701
                 },
@@ -42188,7 +42188,7 @@
                     "trueRatio": 22,
                     "type": "progression",
                     "badgeName": "162819",
-                    "numAwarded": 425,
+                    "numAwarded": 426,
                     "numAwardedHardcore": 177,
                     "displayOrder": 53
                 },
@@ -42440,7 +42440,7 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "162837",
-                    "numAwarded": 323,
+                    "numAwarded": 324,
                     "numAwardedHardcore": 151,
                     "displayOrder": 601
                 },
@@ -42500,7 +42500,7 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "162842",
-                    "numAwarded": 303,
+                    "numAwarded": 304,
                     "numAwardedHardcore": 140,
                     "displayOrder": 606
                 },
@@ -42982,7 +42982,7 @@
                     "trueRatio": 21,
                     "type": null,
                     "badgeName": "162881",
-                    "numAwarded": 292,
+                    "numAwarded": 293,
                     "numAwardedHardcore": 142,
                     "displayOrder": 308
                 },
@@ -42994,7 +42994,7 @@
                     "trueRatio": 21,
                     "type": null,
                     "badgeName": "162882",
-                    "numAwarded": 318,
+                    "numAwarded": 319,
                     "numAwardedHardcore": 146,
                     "displayOrder": 309
                 },
@@ -43006,7 +43006,7 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "162883",
-                    "numAwarded": 594,
+                    "numAwarded": 595,
                     "numAwardedHardcore": 249,
                     "displayOrder": 310
                 },
@@ -43030,7 +43030,7 @@
                     "trueRatio": 24,
                     "type": null,
                     "badgeName": "162885",
-                    "numAwarded": 362,
+                    "numAwarded": 363,
                     "numAwardedHardcore": 159,
                     "displayOrder": 312
                 },
@@ -43042,7 +43042,7 @@
                     "trueRatio": 26,
                     "type": null,
                     "badgeName": "162893",
-                    "numAwarded": 122,
+                    "numAwarded": 123,
                     "numAwardedHardcore": 85,
                     "displayOrder": 313
                 },
@@ -55972,8 +55972,8 @@
             "consoleId": 24,
             "consoleName": "Pokemon Mini",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 735,
-            "numDistinctPlayersHardcore": 735,
+            "numDistinctPlayersCasual": 736,
+            "numDistinctPlayersHardcore": 736,
             "numAchievements": 114,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -56183,7 +56183,7 @@
                     "title": "Zubat, Golbat, Crobat",
                     "description": "Catch 'Em All!",
                     "points": 5,
-                    "trueRatio": 12,
+                    "trueRatio": 13,
                     "type": null,
                     "badgeName": "129035",
                     "numAwarded": 153,
@@ -56510,8 +56510,8 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "129061",
-                    "numAwarded": 447,
-                    "numAwardedHardcore": 385,
+                    "numAwarded": 448,
+                    "numAwardedHardcore": 386,
                     "displayOrder": 0
                 },
                 "292861": {
@@ -56630,8 +56630,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "129071",
-                    "numAwarded": 385,
-                    "numAwardedHardcore": 328,
+                    "numAwarded": 386,
+                    "numAwardedHardcore": 329,
                     "displayOrder": 0
                 },
                 "292871": {
@@ -57179,7 +57179,7 @@
                     "title": "Raikou, Entei, Suicune",
                     "description": "Catch 'Em All!",
                     "points": 10,
-                    "trueRatio": 96,
+                    "trueRatio": 97,
                     "type": null,
                     "badgeName": "129121",
                     "numAwarded": 34,
@@ -57287,7 +57287,7 @@
                     "title": "Endless Master",
                     "description": "Reach Level 25 in Standard Master",
                     "points": 100,
-                    "trueRatio": 1938,
+                    "trueRatio": 1940,
                     "type": null,
                     "badgeName": "129208",
                     "numAwarded": 17,
@@ -62375,7 +62375,7 @@
             "numAchievements": 80,
             "numAwardedToUser": 72,
             "numAwardedToUserHardcore": 72,
-            "userTotalPlaytime": 65982,
+            "userTotalPlaytime": 66342,
             "imageIcon": "/Images/123011.png",
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
