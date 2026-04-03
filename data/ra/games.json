@@ -20943,11 +20943,11 @@
                     "title": "Cube Destruction",
                     "description": "Destroy 20 Cubes.",
                     "points": 1,
-                    "trueRatio": 2,
+                    "trueRatio": 1,
                     "type": null,
                     "badgeName": "196785",
-                    "numAwarded": 220,
-                    "numAwardedHardcore": 169,
+                    "numAwarded": 221,
+                    "numAwardedHardcore": 170,
                     "displayOrder": 20
                 },
                 "176501": {
@@ -20958,8 +20958,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "196785",
-                    "numAwarded": 241,
-                    "numAwardedHardcore": 183,
+                    "numAwarded": 242,
+                    "numAwardedHardcore": 184,
                     "displayOrder": 21
                 },
                 "176502": {
@@ -20970,8 +20970,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "196785",
-                    "numAwarded": 194,
-                    "numAwardedHardcore": 149,
+                    "numAwarded": 195,
+                    "numAwardedHardcore": 150,
                     "displayOrder": 22
                 },
                 "176503": {
@@ -20982,8 +20982,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "196785",
-                    "numAwarded": 219,
-                    "numAwardedHardcore": 168,
+                    "numAwarded": 220,
+                    "numAwardedHardcore": 169,
                     "displayOrder": 23
                 },
                 "176504": {
@@ -21570,8 +21570,8 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "196792",
-                    "numAwarded": 219,
-                    "numAwardedHardcore": 168,
+                    "numAwarded": 220,
+                    "numAwardedHardcore": 169,
                     "displayOrder": 17
                 },
                 "176553": {
@@ -22002,8 +22002,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "196824",
-                    "numAwarded": 137,
-                    "numAwardedHardcore": 107,
+                    "numAwarded": 138,
+                    "numAwardedHardcore": 108,
                     "displayOrder": 99
                 },
                 "176589": {
@@ -63786,7 +63786,7 @@
                     "trueRatio": 44,
                     "type": "progression",
                     "badgeName": "649925",
-                    "numAwarded": 43,
+                    "numAwarded": 44,
                     "numAwardedHardcore": 37,
                     "displayOrder": 9,
                     "dateEarned": "2026-03-28 15:46:38",
