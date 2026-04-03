@@ -855,6 +855,7 @@ const App = () => {
     const [error,             setError]             = useState(null);
     const [selectedGame,     setSelectedGame]     = useState(null);
     const [gameDetails,       setGameDetails]       = useState({});
+    const [modalLoading,      setModalLoading]      = useState(null); // game object being fetched
     const VALID_TABS = ['recent', 'progress', 'activity'];
     const initialTab = (() => {
         const p = new URLSearchParams(window.location.search).get('tab');
@@ -928,11 +929,14 @@ const App = () => {
             setSelectedGame({ game, achievementData: gameDetails[appId] });
             return;
         }
+        setModalLoading(game);
         try {
             const data = await fetch(`../../data/steam/games/${appId}.json`).then(r => r.json());
             setGameDetails(prev => ({ ...prev, [appId]: data }));
+            setModalLoading(null);
             setSelectedGame({ game, achievementData: data });
         } catch {
+            setModalLoading(null);
             // fallback: open with index data (no achievements)
             setSelectedGame({ game, achievementData });
         }
@@ -1346,6 +1350,22 @@ const App = () => {
                 >
                     <ChevronDown size={16} className="rotate-180" />
                 </button>
+            )}
+
+            {/* Achievement modal loading overlay */}
+            {modalLoading && (
+                <div
+                    className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+                    onClick={() => setModalLoading(null)}
+                >
+                    <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]" />
+                    <div className="relative z-10 flex flex-col items-center gap-3 bg-[#1b2838] border border-[#2a475e] rounded-[4px] px-8 py-6 shadow-2xl">
+                        <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
+                        <div style={{ width: 28, height: 28, border: '3px solid #2a475e', borderTopColor: '#66c0f4', borderRadius: '50%', animation: 'spin 0.7s linear infinite' }} />
+                        <span className="text-[12px] text-[#8f98a0]">{modalLoading.name}</span>
+                        <span className="text-[10px] text-[#546270] tracking-wide uppercase">Loading achievements…</span>
+                    </div>
+                </div>
             )}
 
             {/* Achievement modal */}

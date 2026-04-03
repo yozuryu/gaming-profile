@@ -2,6 +2,12 @@
 
 ## 2026-04-03
 
+### Steam
+
+- Added loading overlay when fetching per-game achievement data from `games/{appId}.json` — shows spinner and game name so the UI doesn't appear frozen on slow connections; dismissible by clicking the backdrop
+
+## 2026-04-03
+
 Steam games data split into per-game files for faster initial load.
 
 ### Steam
