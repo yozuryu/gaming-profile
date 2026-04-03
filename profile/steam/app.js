@@ -747,11 +747,10 @@ const ProgressTab = ({ achievementProgress, recentlyPlayed, onViewDetails }) => 
                         {s.label}
                     </button>
                 ))}
-                <label className="ml-auto flex items-center gap-1.5 cursor-pointer select-none">
-                    <input type="checkbox" checked={showPerfect} onChange={e => setShowPerfect(e.target.checked)} className="accent-[#66c0f4] w-3 h-3" />
-                    <span className="text-[9px] text-[#546270]">Show Perfect</span>
-                </label>
-                <span className="text-[9px] text-[#546270]">{games.length} games</span>
+                <div className="w-px h-3.5 bg-[#2a475e] mx-1" />
+                <span className="text-[9px] uppercase tracking-[0.07em] text-[#546270]">Filter</span>
+                <button onClick={() => setShowPerfect(v => !v)} className={`text-[9px] font-semibold uppercase tracking-wider px-2 py-[3px] rounded-sm border transition-colors ${showPerfect ? 'bg-[#e5b143] text-[#101214] border-[#e5b143]' : 'bg-transparent text-[#546270] border-[#323f4c] hover:text-[#8f98a0] hover:border-[#546270]'}`}>Perfect</button>
+                <span className="text-[9px] text-[#546270] ml-auto">{games.length} games</span>
             </div>
             <div className="relative mb-4">
                 <input

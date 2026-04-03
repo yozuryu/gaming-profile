@@ -203,6 +203,7 @@ const App = () => {
     const [steamProfile,  setSteamProfile]  = useState(null);
     const [platform,      setPlatform]      = useState('all');
     const [showBeaten,    setShowBeaten]    = useState(false);
+    const [hiddenTags,    setHiddenTags]    = useState(new Set(['Hack', 'Homebrew', 'Prototype']));
     const [expandedYears, setExpandedYears] = useState(new Set([currentYear]));
 
     const toggleYear = year =>
@@ -225,8 +226,9 @@ const App = () => {
         let all = [...ra, ...steam];
         if (platform === 'ra')    all = all.filter(c => c.platform === 'ra');
         if (platform === 'steam') all = all.filter(c => c.platform === 'steam');
+        if (hiddenTags.size > 0)  all = all.filter(c => !c.tags?.some(t => hiddenTags.has(t)));
         return all.sort((a, b) => new Date(b.completedAt) - new Date(a.completedAt));
-    }, [raProfile, steamProfile, platform, showBeaten]);
+    }, [raProfile, steamProfile, platform, showBeaten, hiddenTags]);
 
     const groups  = useMemo(() => groupByMonth(completions), [completions]);
     const loading = raProfile === null || steamProfile === null;
@@ -292,17 +294,36 @@ const App = () => {
 
                     <div className="w-px h-4 bg-[#2a475e]" />
 
-                    <label className="flex items-center gap-1.5 cursor-pointer select-none group">
-                        <input
-                            type="checkbox"
-                            checked={showBeaten}
-                            onChange={e => setShowBeaten(e.target.checked)}
-                            className="w-3 h-3 cursor-pointer accent-[#66c0f4]"
-                        />
-                        <span className="text-[9px] text-[#8f98a0] group-hover:text-[#c6d4df] transition-colors uppercase tracking-wider">
-                            Also show beaten games
-                        </span>
-                    </label>
+                    <button onClick={() => setShowBeaten(v => !v)}
+                        className={`text-[9px] font-semibold uppercase tracking-wider px-2.5 py-[3px] rounded-sm border transition-colors ${
+                            showBeaten
+                                ? 'bg-[#66c0f4] text-[#101214] border-[#66c0f4]'
+                                : 'bg-transparent text-[#546270] border-[#323f4c] hover:text-[#8f98a0] hover:border-[#546270]'
+                        }`}>Beaten</button>
+
+                    <div className="w-px h-4 bg-[#2a475e]" />
+
+                    <div className="flex items-center gap-1">
+                        {['Hack', 'Homebrew', 'Prototype'].map(tag => {
+                            const s = TILDE_TAG_COLORS[tag];
+                            const isHidden = hiddenTags.has(tag);
+                            return (
+                                <button key={tag}
+                                    onClick={() => setHiddenTags(prev => {
+                                        const next = new Set(prev);
+                                        next.has(tag) ? next.delete(tag) : next.add(tag);
+                                        return next;
+                                    })}
+                                    className="text-[9px] font-semibold uppercase tracking-wider px-2 py-[3px] rounded-sm border transition-colors"
+                                    style={isHidden
+                                        ? { color: '#546270', borderColor: '#323f4c', background: 'transparent' }
+                                        : { color: s.color, borderColor: s.border, background: s.bg }
+                                    }
+                                >{tag}</button>
+                            );
+                        })}
+                    </div>
+
                 </div>
 
                 {/* Content */}

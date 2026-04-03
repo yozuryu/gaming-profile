@@ -2,6 +2,16 @@
 
 ## 2026-04-03
 
+### Steam
+
+- Replaced "Show Perfect" checkbox in Progress tab with a button matching the filter bar style — gold when active, divider separating it from sort buttons, labelled under "Filter"
+
+### Completions
+
+- Added tag filter buttons (Hack, Homebrew, Prototype) to filter bar — hidden by default, click to show; styled with each tag's color
+- Replaced "Also show beaten games" checkbox with a button matching the platform filter style
+- Rearranged filter bar order: All · RA · Steam · Beaten | Hack · Homebrew · Prototype
+
 ### RetroAchievements
 
 - Guide strip now always shows dropdown for custom categories (even with 1 link); fallback categories remain direct links
