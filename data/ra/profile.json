@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-03T05:10:35.330Z"
+        "extractionTimestamp": "2026-04-03T07:18:05.301Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Lv65 Samurai, Lv61 Psychic, and Lv62 Hacker | Tokyo Tower | ChX: 33/33 quests | 40h44",
+        "richPresenceMsg": "Lv70 Samurai, Lv66 Psychic, and Lv66 Hacker | Tokyo Tower | ChX: 33/33 quests | 43h04",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1580,
+        "totalPoints": 1600,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 5667,
+        "totalTruePoints": 5772,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Lv65 Samurai, Lv61 Psychic, and Lv62 Hacker | Tokyo Tower | ChX: 33/33 quests | 40h44",
-        "richPresenceMsgDate": "2026-04-02 16:15:07",
+        "richPresenceMsg": "Lv70 Samurai, Lv66 Psychic, and Lv66 Hacker | Tokyo Tower | ChX: 33/33 quests | 43h04",
+        "richPresenceMsgDate": "2026-04-03 07:16:37",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1580,
+        "totalPoints": 1600,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 5667,
+        "totalTruePoints": 5772,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 53890,
+        "rank": 53506,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 137149,
+        "totalRanked": 137163,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1580,
+        "points": 1600,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -121,14 +121,14 @@
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
             "imageBoxArt": "/Images/110688.png",
-            "lastPlayed": "2026-04-02 16:15:07",
+            "lastPlayed": "2026-04-03 07:16:37",
             "achievementsTotal": 80,
             "numPossibleAchievements": 80,
             "possibleScore": 475,
-            "numAchieved": 69,
-            "scoreAchieved": 335,
-            "numAchievedHardcore": 69,
-            "scoreAchievedHardcore": 335
+            "numAchieved": 71,
+            "scoreAchieved": 355,
+            "numAchievedHardcore": 71,
+            "scoreAchievedHardcore": 355
         },
         {
             "gameId": 11290,
@@ -394,9 +394,9 @@
                 "consoleId": 41,
                 "consoleName": "PlayStation Portable",
                 "maxPossible": 80,
-                "numAwarded": 69,
-                "numAwardedHardcore": 69,
-                "mostRecentAwardedDate": "2026-04-02T16:08:59+00:00",
+                "numAwarded": 71,
+                "numAwardedHardcore": 71,
+                "mostRecentAwardedDate": "2026-04-03T07:15:11+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -5015,23 +5015,23 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-02 16:08:59",
+        "date": "2026-04-03 07:15:11",
         "hardcoreMode": true,
-        "achievementId": 572198,
-        "title": "Final Showdown Set",
-        "description": "Receive the reward for rescuing 75 people",
-        "badgeName": "649972",
+        "achievementId": 572215,
+        "title": "Tokyo Tower Cleansed",
+        "description": "Clear all the dragons in Tokyo Tower",
+        "badgeName": "649989",
         "points": 10,
-        "trueRatio": 56,
-        "type": "missable",
+        "trueRatio": 54,
+        "type": null,
         "author": "Jamiras",
         "authorUlid": "01BJY8JSBTA7NVT0NYSVDCK5TY",
         "gameTitle": "7th Dragon 2020",
         "gameIcon": "/Images/123011.png",
         "gameId": 16452,
         "consoleName": "PlayStation Portable",
-        "cumulScore": 547,
-        "badgeUrl": "/Badge/649972.png",
+        "cumulScore": 567,
+        "badgeUrl": "/Badge/649989.png",
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
@@ -5043,15 +5043,15 @@
         "imageTitle": "/Images/110687.png",
         "imageIngame": "/Images/110689.png",
         "imageBoxArt": "/Images/110688.png",
-        "lastPlayed": "2026-04-02 16:15:07",
+        "lastPlayed": "2026-04-03 07:16:37",
         "achievementsTotal": 80,
         "numPossibleAchievements": 80,
         "possibleScore": 475,
-        "numAchieved": 69,
-        "scoreAchieved": 335,
-        "numAchievedHardcore": 69,
-        "scoreAchievedHardcore": 335
+        "numAchieved": 71,
+        "scoreAchieved": 355,
+        "numAchievedHardcore": 71,
+        "scoreAchievedHardcore": 355
     },
-    "points7Days": 260,
-    "points30Days": 320
+    "points7Days": 280,
+    "points30Days": 340
 }

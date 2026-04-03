@@ -19121,11 +19121,11 @@
                     "title": "The Quest for the Monoliths",
                     "description": "Complete Phase 2 of Cecilia's Tale",
                     "points": 10,
-                    "trueRatio": 44,
+                    "trueRatio": 43,
                     "type": null,
                     "badgeName": "436119",
-                    "numAwarded": 59,
-                    "numAwardedHardcore": 47,
+                    "numAwarded": 60,
+                    "numAwardedHardcore": 48,
                     "displayOrder": 90
                 },
                 "381711": {
@@ -56246,8 +56246,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "129039",
-                    "numAwarded": 402,
-                    "numAwardedHardcore": 348,
+                    "numAwarded": 403,
+                    "numAwardedHardcore": 349,
                     "displayOrder": 0
                 },
                 "292839": {
@@ -56630,8 +56630,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "129071",
-                    "numAwarded": 384,
-                    "numAwardedHardcore": 327,
+                    "numAwarded": 385,
+                    "numAwardedHardcore": 328,
                     "displayOrder": 0
                 },
                 "292871": {
@@ -56726,8 +56726,8 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "129080",
-                    "numAwarded": 485,
-                    "numAwardedHardcore": 419,
+                    "numAwarded": 486,
+                    "numAwardedHardcore": 420,
                     "displayOrder": 0
                 },
                 "292879": {
@@ -62373,9 +62373,9 @@
             "numDistinctPlayersCasual": 139,
             "numDistinctPlayersHardcore": 139,
             "numAchievements": 80,
-            "numAwardedToUser": 69,
-            "numAwardedToUserHardcore": 69,
-            "userTotalPlaytime": 60701,
+            "numAwardedToUser": 71,
+            "numAwardedToUserHardcore": 71,
+            "userTotalPlaytime": 63396,
             "imageIcon": "/Images/123011.png",
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
@@ -62643,12 +62643,14 @@
                     "title": "It Was All for Nothing",
                     "description": "Defeat the Dragoness",
                     "points": 10,
-                    "trueRatio": 54,
+                    "trueRatio": 53,
                     "type": "progression",
                     "badgeName": "649931",
-                    "numAwarded": 32,
-                    "numAwardedHardcore": 29,
-                    "displayOrder": 15
+                    "numAwarded": 33,
+                    "numAwardedHardcore": 30,
+                    "displayOrder": 15,
+                    "dateEarned": "2026-04-03 06:50:57",
+                    "dateEarnedHardcore": "2026-04-03 06:50:57"
                 },
                 "572158": {
                     "id": 572158,
@@ -63447,12 +63449,14 @@
                     "title": "Tokyo Tower Cleansed",
                     "description": "Clear all the dragons in Tokyo Tower",
                     "points": 10,
-                    "trueRatio": 56,
+                    "trueRatio": 54,
                     "type": null,
                     "badgeName": "649989",
-                    "numAwarded": 31,
-                    "numAwardedHardcore": 28,
-                    "displayOrder": 86
+                    "numAwarded": 32,
+                    "numAwardedHardcore": 29,
+                    "displayOrder": 86,
+                    "dateEarned": "2026-04-03 07:15:11",
+                    "dateEarnedHardcore": "2026-04-03 07:15:11"
                 },
                 "572216": {
                     "id": 572216,
@@ -63490,8 +63494,8 @@
             "consoleId": 24,
             "consoleName": "Pokemon Mini",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1781,
-            "numDistinctPlayersHardcore": 1781,
+            "numDistinctPlayersCasual": 1782,
+            "numDistinctPlayersHardcore": 1782,
             "numAchievements": 6,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -63512,8 +63516,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178581",
-                    "numAwarded": 1766,
-                    "numAwardedHardcore": 1672,
+                    "numAwarded": 1767,
+                    "numAwardedHardcore": 1673,
                     "displayOrder": 1
                 },
                 "158869": {
@@ -63524,8 +63528,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178582",
-                    "numAwarded": 1770,
-                    "numAwardedHardcore": 1671,
+                    "numAwarded": 1771,
+                    "numAwardedHardcore": 1672,
                     "displayOrder": 2
                 },
                 "158870": {
@@ -63536,8 +63540,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178583",
-                    "numAwarded": 1772,
-                    "numAwardedHardcore": 1674,
+                    "numAwarded": 1773,
+                    "numAwardedHardcore": 1675,
                     "displayOrder": 3
                 },
                 "158871": {
@@ -63548,8 +63552,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178584",
-                    "numAwarded": 1762,
-                    "numAwardedHardcore": 1668,
+                    "numAwarded": 1763,
+                    "numAwardedHardcore": 1669,
                     "displayOrder": 4
                 },
                 "158872": {
@@ -63560,8 +63564,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178585",
-                    "numAwarded": 1768,
-                    "numAwardedHardcore": 1669,
+                    "numAwarded": 1769,
+                    "numAwardedHardcore": 1670,
                     "displayOrder": 5
                 },
                 "158873": {
@@ -63572,8 +63576,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178586",
-                    "numAwarded": 1729,
-                    "numAwardedHardcore": 1645,
+                    "numAwarded": 1730,
+                    "numAwardedHardcore": 1646,
                     "displayOrder": 6
                 }
             }
