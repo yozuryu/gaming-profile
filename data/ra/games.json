@@ -21186,8 +21186,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "196786",
-                    "numAwarded": 156,
-                    "numAwardedHardcore": 123,
+                    "numAwarded": 157,
+                    "numAwardedHardcore": 124,
                     "displayOrder": 24
                 },
                 "176521": {
@@ -21198,8 +21198,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "196786",
-                    "numAwarded": 149,
-                    "numAwardedHardcore": 117,
+                    "numAwarded": 150,
+                    "numAwardedHardcore": 118,
                     "displayOrder": 25
                 },
                 "176522": {
@@ -21210,8 +21210,8 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "196786",
-                    "numAwarded": 133,
-                    "numAwardedHardcore": 106,
+                    "numAwarded": 134,
+                    "numAwardedHardcore": 107,
                     "displayOrder": 26
                 },
                 "176523": {
@@ -21594,8 +21594,8 @@
                     "trueRatio": 11,
                     "type": "progression",
                     "badgeName": "196794",
-                    "numAwarded": 188,
-                    "numAwardedHardcore": 147,
+                    "numAwarded": 189,
+                    "numAwardedHardcore": 148,
                     "displayOrder": 19
                 },
                 "176555": {
@@ -57254,8 +57254,8 @@
             "consoleId": 24,
             "consoleName": "Pokemon Mini",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 736,
-            "numDistinctPlayersHardcore": 736,
+            "numDistinctPlayersCasual": 735,
+            "numDistinctPlayersHardcore": 735,
             "numAchievements": 114,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -57336,8 +57336,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "129023",
-                    "numAwarded": 226,
-                    "numAwardedHardcore": 202,
+                    "numAwarded": 227,
+                    "numAwardedHardcore": 203,
                     "displayOrder": 0
                 },
                 "292823": {
@@ -57465,7 +57465,7 @@
                     "title": "Zubat, Golbat, Crobat",
                     "description": "Catch 'Em All!",
                     "points": 5,
-                    "trueRatio": 13,
+                    "trueRatio": 12,
                     "type": null,
                     "badgeName": "129035",
                     "numAwarded": 153,
@@ -57492,8 +57492,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "129037",
-                    "numAwarded": 333,
-                    "numAwardedHardcore": 289,
+                    "numAwarded": 332,
+                    "numAwardedHardcore": 288,
                     "displayOrder": 0
                 },
                 "292836": {
@@ -57624,8 +57624,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "129047",
-                    "numAwarded": 485,
-                    "numAwardedHardcore": 409,
+                    "numAwarded": 484,
+                    "numAwardedHardcore": 408,
                     "displayOrder": 0
                 },
                 "292847": {
@@ -57696,8 +57696,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "129053",
-                    "numAwarded": 266,
-                    "numAwardedHardcore": 239,
+                    "numAwarded": 267,
+                    "numAwardedHardcore": 240,
                     "displayOrder": 0
                 },
                 "292853": {
@@ -57720,8 +57720,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "129055",
-                    "numAwarded": 360,
-                    "numAwardedHardcore": 319,
+                    "numAwarded": 361,
+                    "numAwardedHardcore": 320,
                     "displayOrder": 0
                 },
                 "292855": {
@@ -57828,8 +57828,8 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "129065",
-                    "numAwarded": 508,
-                    "numAwardedHardcore": 420,
+                    "numAwarded": 507,
+                    "numAwardedHardcore": 419,
                     "displayOrder": 0
                 },
                 "292864": {
@@ -57912,8 +57912,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "129071",
-                    "numAwarded": 386,
-                    "numAwardedHardcore": 329,
+                    "numAwarded": 385,
+                    "numAwardedHardcore": 328,
                     "displayOrder": 0
                 },
                 "292871": {
@@ -57996,8 +57996,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "129079",
-                    "numAwarded": 287,
-                    "numAwardedHardcore": 257,
+                    "numAwarded": 288,
+                    "numAwardedHardcore": 258,
                     "displayOrder": 0
                 },
                 "292878": {
@@ -58044,8 +58044,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "129083",
-                    "numAwarded": 307,
-                    "numAwardedHardcore": 263,
+                    "numAwarded": 308,
+                    "numAwardedHardcore": 264,
                     "displayOrder": 0
                 },
                 "292882": {
@@ -58461,7 +58461,7 @@
                     "title": "Raikou, Entei, Suicune",
                     "description": "Catch 'Em All!",
                     "points": 10,
-                    "trueRatio": 97,
+                    "trueRatio": 96,
                     "type": null,
                     "badgeName": "129121",
                     "numAwarded": 34,
@@ -58569,7 +58569,7 @@
                     "title": "Endless Master",
                     "description": "Reach Level 25 in Standard Master",
                     "points": 100,
-                    "trueRatio": 1940,
+                    "trueRatio": 1939,
                     "type": null,
                     "badgeName": "129208",
                     "numAwarded": 17,
