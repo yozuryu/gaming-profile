@@ -672,11 +672,87 @@ function DataDiffModule() {
     );
 }
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// MODULE: Credentials
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const CREDENTIAL_FIELDS = [
+    { group: 'RetroAchievements', fields: [
+        { key: 'RA_USERNAME', label: 'Username',  type: 'text',     hint: 'Your RA username' },
+        { key: 'RA_API_KEY',  label: 'API Key',   type: 'password', hint: 'Settings → API Key on retroachievements.org' },
+    ]},
+    { group: 'Steam', fields: [
+        { key: 'STEAM_USER_ID', label: 'User ID',  type: 'text',     hint: '17-digit Steam ID (steamid.io)' },
+        { key: 'STEAM_API_KEY', label: 'API Key',  type: 'password', hint: 'steamcommunity.com/dev/apikey' },
+    ]},
+];
+
+function CredentialsModule() {
+    const [values,  setValues]  = useState({});
+    const [show,    setShow]    = useState({});
+    const [dirty,   setDirty]   = useState(false);
+    const [saving,  setSaving]  = useState(false);
+    const [saved,   setSaved]   = useState(false);
+
+    useEffect(() => {
+        fetch(`${API}/credentials`).then(r => r.json()).then(d => setValues(d));
+    }, []);
+
+    const update = (key, val) => { setValues(v => ({ ...v, [key]: val })); setDirty(true); setSaved(false); };
+    const toggleShow = (key) => setShow(s => ({ ...s, [key]: !s[key] }));
+
+    const save = async () => {
+        setSaving(true);
+        await fetch(`${API}/credentials`, {
+            method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(values),
+        });
+        setSaving(false); setDirty(false); setSaved(true);
+    };
+
+    return (
+        <div className="flex flex-col h-full">
+            <SaveBar dirty={dirty} saving={saving} saved={saved} onSave={save} />
+            <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-6">
+                {CREDENTIAL_FIELDS.map(({ group, fields }) => (
+                    <div key={group}>
+                        <SectionHeader color={group === 'Steam' ? '#66c0f4' : '#e5b143'}>{group}</SectionHeader>
+                        <div className="flex flex-col gap-3">
+                            {fields.map(({ key, label, type, hint }) => (
+                                <Field key={key} label={label}>
+                                    <div className="relative">
+                                        <input
+                                            className="input pr-8"
+                                            type={type === 'password' && !show[key] ? 'password' : 'text'}
+                                            value={values[key] ?? ''}
+                                            onChange={e => update(key, e.target.value)}
+                                            placeholder={hint}
+                                        />
+                                        {type === 'password' && (
+                                            <button onClick={() => toggleShow(key)}
+                                                className="absolute right-2 top-1/2 -translate-y-1/2 text-[#546270] hover:text-[#c6d4df] text-[10px]">
+                                                {show[key] ? 'hide' : 'show'}
+                                            </button>
+                                        )}
+                                    </div>
+                                </Field>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+                <div className="text-[10px] text-[#546270] border border-[#2a475e] rounded-[3px] px-3 py-2">
+                    Writes to <code className="text-[#66c0f4]">.env</code> in the repo root. This file is gitignored and never deployed.
+                </div>
+            </div>
+        </div>
+    );
+}
+
 const MODULES = [
-    { id: 'config',    label: 'Site Config',  icon: '⚙️',  group: 'General',          component: SiteConfigModule },
-    { id: 'pipelines', label: 'Pipelines',    icon: '▶',   group: 'General',          component: PipelinesModule },
-    { id: 'data-diff', label: 'Data Diff',    icon: '±',   group: 'General',          component: DataDiffModule },
-    { id: 'ra-guides', label: 'Guides',       icon: '📖',  group: 'RetroAchievements', component: RAGuidesModule },
+    { id: 'config',      label: 'Site Config',  icon: '⚙️',  group: 'General',          component: SiteConfigModule },
+    { id: 'credentials', label: 'Credentials',  icon: '🔑',  group: 'General',          component: CredentialsModule },
+    { id: 'pipelines',   label: 'Pipelines',    icon: '▶',   group: 'General',          component: PipelinesModule },
+    { id: 'data-diff',   label: 'Data Diff',    icon: '±',   group: 'General',          component: DataDiffModule },
+    { id: 'ra-guides',   label: 'Guides',       icon: '📖',  group: 'RetroAchievements', component: RAGuidesModule },
 ];
 
 const GROUPS = [...new Set(MODULES.map(m => m.group))];

@@ -38,8 +38,9 @@ const GuideStrip = ({ game, guides, isLast }) => {
     { category: 'Guides', links: [{ label: 'Search GameFAQs', url: `https://gamefaqs.gamespot.com/search?game=${searchTitle}` }] },
     { category: 'Videos', links: [{ label: 'Search YouTube',  url: `https://www.youtube.com/results?search_query=${searchTitle}+longplay` }] },
   ];
+  const customCategoryNames = new Set((guides ?? []).map(g => g.category));
   const categories = guides
-    ? [...guides, ...fallbackCategories.filter(f => !guides.some(g => g.category === f.category))]
+    ? [...guides.map(g => ({ ...g, isCustom: true })), ...fallbackCategories.filter(f => !customCategoryNames.has(f.category))]
     : fallbackCategories;
 
   useEffect(() => {
@@ -53,7 +54,7 @@ const GuideStrip = ({ game, guides, isLast }) => {
     <div ref={ref} className={`relative flex items-center gap-1 px-3 py-1.5 bg-[#171a21] border-t border-[#323f4c] flex-wrap ${isLast ? 'rounded-b-[3px]' : ''}`}>
       <span className="text-[9px] text-[#546270] uppercase tracking-[0.07em] font-semibold mr-1 shrink-0">Guides</span>
       {categories.map((cat) => {
-        const isSingle = cat.links.length === 1;
+        const isSingle = !cat.isCustom && cat.links.length === 1;
         const isOpen   = openCategory === cat.category;
         const chipCls  = `flex items-center gap-1 text-[10px] px-1.5 py-[2px] rounded-[2px] border transition-colors bg-[#1b2838] outline-none ${isOpen ? 'text-[#66c0f4] border-[#66c0f4]/50' : 'text-[#8f98a0] border-[#2a475e] hover:text-[#66c0f4] hover:border-[#66c0f4]/50'}`;
         return (

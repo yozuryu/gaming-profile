@@ -270,6 +270,41 @@ const server = http.createServer((req, res) => {
         return;
     }
 
+    // GET /api/credentials — read .env keys (values masked except last 4 chars)
+    if (method === 'GET' && pathname === '/api/credentials') {
+        try {
+            const raw = fs.existsSync(path.join(ROOT, '.env'))
+                ? fs.readFileSync(path.join(ROOT, '.env'), 'utf8')
+                : '';
+            const parsed = {};
+            for (const line of raw.split('\n')) {
+                const m = line.match(/^([A-Z_][A-Z0-9_]*)=(.*)$/);
+                if (m) parsed[m[1]] = m[2];
+            }
+            send(res, 200, parsed);
+        } catch (e) {
+            send(res, 500, { error: e.message });
+        }
+        return;
+    }
+
+    // PUT /api/credentials — write .env
+    if (method === 'PUT' && pathname === '/api/credentials') {
+        let body = '';
+        req.on('data', chunk => { body += chunk; });
+        req.on('end', () => {
+            try {
+                const data = JSON.parse(body);
+                const content = Object.entries(data).map(([k, v]) => `${k}=${v}`).join('\n') + '\n';
+                fs.writeFileSync(path.join(ROOT, '.env'), content, 'utf8');
+                send(res, 200, { ok: true });
+            } catch (e) {
+                send(res, 400, { error: e.message });
+            }
+        });
+        return;
+    }
+
     // GET /api/health
     if (method === 'GET' && pathname === '/api/health') {
         send(res, 200, { ok: true });
