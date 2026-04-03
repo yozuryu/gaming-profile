@@ -2,13 +2,13 @@
     "appId": 539330,
     "hasAchievements": true,
     "total": 29,
-    "unlocked": 13,
+    "unlocked": 15,
     "gameName": "Light Fairytale Episode 1",
     "achievements": [
         {
             "apiName": "achievement_ep1_dreamy_boy",
-            "unlocked": false,
-            "unlockedAt": null,
+            "unlocked": true,
+            "unlockedAt": "2026-04-03T14:25:32.000Z",
             "displayName": "Dreamer boy",
             "description": "",
             "iconUrl": "2a5c913af5b4fe0b73fb8d12933cc0d3a561c3aa.jpg",
@@ -18,8 +18,8 @@
         },
         {
             "apiName": "achievement_ep1_hidden_miyu",
-            "unlocked": false,
-            "unlockedAt": null,
+            "unlocked": true,
+            "unlockedAt": "2026-04-03T14:32:32.000Z",
             "displayName": "B-Bomb?!",
             "description": "",
             "iconUrl": "b4da5ec9cd2b943f8891a001c71deef1a46c803b.jpg",
@@ -325,12 +325,30 @@
             "globalPct": 4.5
         }
     ],
-    "playtimeForever": 177,
-    "lastPlayedTs": "2018-11-15T13:33:38.000Z",
+    "playtimeForever": 193,
+    "lastPlayedTs": "2026-04-03T14:36:40.000Z",
     "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/539330/fede24802944d93c6453e75e6a1263d738abf347.jpg",
-    "lastUnlockedAt": "2018-11-15T13:29:31.000Z",
-    "lastUnlockName": "The journey begins",
+    "lastUnlockedAt": "2026-04-03T14:32:32.000Z",
+    "lastUnlockName": "B-Bomb?!",
     "preview": [
+        {
+            "apiName": "achievement_ep1_hidden_miyu",
+            "displayName": "B-Bomb?!",
+            "unlocked": true,
+            "unlockedAt": "2026-04-03T14:32:32.000Z",
+            "iconUrl": "b4da5ec9cd2b943f8891a001c71deef1a46c803b.jpg",
+            "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
+            "globalPct": 27
+        },
+        {
+            "apiName": "achievement_ep1_dreamy_boy",
+            "displayName": "Dreamer boy",
+            "unlocked": true,
+            "unlockedAt": "2026-04-03T14:25:32.000Z",
+            "iconUrl": "2a5c913af5b4fe0b73fb8d12933cc0d3a561c3aa.jpg",
+            "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
+            "globalPct": 30.6
+        },
         {
             "apiName": "achievement_ep1_clear",
             "displayName": "The journey begins",
@@ -366,24 +384,6 @@
             "iconUrl": "ba27067e37fc5fe077fcb9066bb1dfc110bbf10b.jpg",
             "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
             "globalPct": 40.2
-        },
-        {
-            "apiName": "achievement_ep1_damage_250",
-            "displayName": "250+ HP damage",
-            "unlocked": true,
-            "unlockedAt": "2018-11-14T16:19:21.000Z",
-            "iconUrl": "ba27067e37fc5fe077fcb9066bb1dfc110bbf10b.jpg",
-            "iconGrayUrl": "3b95419d13352ee35deadb5c98e722145af7485f.jpg",
-            "globalPct": 28.1
-        },
-        {
-            "apiName": "achievement_ep1_fury",
-            "displayName": "Don't anger me",
-            "unlocked": true,
-            "unlockedAt": "2018-11-14T16:18:12.000Z",
-            "iconUrl": "2a5c913af5b4fe0b73fb8d12933cc0d3a561c3aa.jpg",
-            "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
-            "globalPct": 49.9
         }
     ]
 }

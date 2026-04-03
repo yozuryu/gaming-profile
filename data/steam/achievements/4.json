@@ -3,6 +3,16 @@
         {
             "appId": 1282150,
             "gameName": "SpongeBob SquarePants: The Cosmic Shake",
+            "apiName": "RoyalGuard",
+            "displayName": "King of the Castle",
+            "description": "",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1282150/2b701f9d3db53d7ff58d8e32835f5a307c52a786.jpg",
+            "unlockedAt": "2025-07-04T14:20:59.000Z",
+            "globalPct": 27.5
+        },
+        {
+            "appId": 1282150,
+            "gameName": "SpongeBob SquarePants: The Cosmic Shake",
             "apiName": "JellyfishHunter",
             "displayName": "Jellyfish Hunter",
             "description": "",

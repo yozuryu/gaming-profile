@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-03T13:25:08.508Z"
+        "extractionTimestamp": "2026-04-03T14:56:48.583Z"
     },
     "profile": {
         "steamId": "76561198188939413",
@@ -8,22 +8,33 @@
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
         "status": 0,
-        "lastOnline": "2026-04-03T12:00:05.000Z",
+        "lastOnline": "2026-04-03T14:38:29.000Z",
         "countryCode": "ID"
     },
     "stats": {
         "totalGames": 1246,
-        "totalPlaytimeMin": 345387,
-        "totalPlaytimeHrs": 5756,
+        "totalPlaytimeMin": 345403,
+        "totalPlaytimeHrs": 5757,
         "gamesWithPlaytime": 815,
         "totalAchievements": 9975,
-        "unlockedAchievements": 2787,
+        "unlockedAchievements": 2789,
         "gamesWithAchievements": 168,
         "perfectCount": 16,
         "completionPct": 27,
         "avgPlaytimeMin": 423
     },
     "recentlyPlayed": [
+        {
+            "appId": 539330,
+            "name": "Light Fairytale Episode 1",
+            "playtime2Weeks": 15,
+            "playtimeForever": 193,
+            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/539330/fede24802944d93c6453e75e6a1263d738abf347.jpg",
+            "storeUrl": "https://store.steampowered.com/app/539330",
+            "lastPlayedTs": "2026-04-03T14:36:40.000Z",
+            "achUnlocked": 15,
+            "achTotal": 29
+        },
         {
             "appId": 551110,
             "name": "WayOut",
@@ -92,23 +103,23 @@
         }
     ],
     "mostRecentGame": {
-        "appId": 551110,
-        "name": "WayOut",
-        "playtime2Weeks": 24,
-        "playtimeForever": 78,
-        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/551110/bb0ad694b15682ccc19cc6c071de283398f4ad3c.jpg",
-        "storeUrl": "https://store.steampowered.com/app/551110",
-        "lastPlayedTs": "2026-04-03T05:40:13.000Z"
+        "appId": 539330,
+        "name": "Light Fairytale Episode 1",
+        "playtime2Weeks": 15,
+        "playtimeForever": 193,
+        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/539330/fede24802944d93c6453e75e6a1263d738abf347.jpg",
+        "storeUrl": "https://store.steampowered.com/app/539330",
+        "lastPlayedTs": "2026-04-03T14:36:40.000Z"
     },
     "mostRecentUnlock": {
-        "appId": 551110,
-        "gameName": "WayOut",
-        "apiName": "level_map",
-        "displayName": "WayOut",
+        "appId": 539330,
+        "gameName": "Light Fairytale Episode 1",
+        "apiName": "achievement_ep1_hidden_miyu",
+        "displayName": "B-Bomb?!",
         "description": "",
-        "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/551110/108a5f657bb471aeb80b1a49d987cd758e3a31e2.jpg",
-        "unlockedAt": "2026-04-03T05:39:52.000Z",
-        "globalPct": 5.6
+        "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/539330/b4da5ec9cd2b943f8891a001c71deef1a46c803b.jpg",
+        "unlockedAt": "2026-04-03T14:32:32.000Z",
+        "globalPct": 27
     },
     "perfectGames": [
         {
@@ -119,7 +130,7 @@
             "completedAt": "2026-04-03T05:39:52.000Z",
             "lastAchName": "WayOut",
             "lastAchIconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/551110/108a5f657bb471aeb80b1a49d987cd758e3a31e2.jpg",
-            "lastAchGlobalPct": 5.6,
+            "lastAchGlobalPct": 5.7,
             "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/551110/bb0ad694b15682ccc19cc6c071de283398f4ad3c.jpg"
         },
         {
