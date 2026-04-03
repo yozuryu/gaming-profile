@@ -26850,14 +26850,23 @@
             "appId": 551110,
             "hasAchievements": true,
             "total": 66,
-            "unlocked": 65,
+            "unlocked": 66,
             "gameName": "WayOut",
-            "playtimeForever": 54,
-            "lastPlayedTs": "2017-07-27T17:22:49.000Z",
+            "playtimeForever": 78,
+            "lastPlayedTs": "2026-04-03T05:40:13.000Z",
             "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/551110/bb0ad694b15682ccc19cc6c071de283398f4ad3c.jpg",
-            "lastUnlockedAt": "2017-07-27T17:06:17.000Z",
-            "lastUnlockName": "Space",
+            "lastUnlockedAt": "2026-04-03T05:39:52.000Z",
+            "lastUnlockName": "WayOut",
             "preview": [
+                {
+                    "apiName": "level_map",
+                    "displayName": "WayOut",
+                    "unlocked": true,
+                    "unlockedAt": "2026-04-03T05:39:52.000Z",
+                    "iconUrl": "108a5f657bb471aeb80b1a49d987cd758e3a31e2.jpg",
+                    "iconGrayUrl": "f2f191c4cae612aeca35b95126e06c5e5914c807.jpg",
+                    "globalPct": 5.6
+                },
                 {
                     "apiName": "Level6_07",
                     "displayName": "Space",
@@ -26865,7 +26874,7 @@
                     "unlockedAt": "2017-07-27T17:06:17.000Z",
                     "iconUrl": "f3731b273b25b83a66d9dc0fc8b3163897f6f50d.jpg",
                     "iconGrayUrl": "a2c1d4c40b9b445262f58d7506e05b135d6c0ba8.jpg",
-                    "globalPct": 6.1
+                    "globalPct": 6
                 },
                 {
                     "apiName": "Level2_08",
@@ -26892,7 +26901,7 @@
                     "unlockedAt": "2017-07-27T17:02:55.000Z",
                     "iconUrl": "9448491004a117676830b7970de3d8fb9d52f8e6.jpg",
                     "iconGrayUrl": "cca03c5f2ae42280e9f71e10be5fbe797822f487.jpg",
-                    "globalPct": 6.1
+                    "globalPct": 6
                 },
                 {
                     "apiName": "Level5_14",
@@ -26902,15 +26911,6 @@
                     "iconUrl": "8bd2ad9ee988b2d0e12a2efe48501ad222c2f9e8.jpg",
                     "iconGrayUrl": "fd84f2360c0882ad96f0c150182a4260d47f246b.jpg",
                     "globalPct": 6.1
-                },
-                {
-                    "apiName": "Level7_16",
-                    "displayName": "Л",
-                    "unlocked": true,
-                    "unlockedAt": "2017-07-27T17:01:15.000Z",
-                    "iconUrl": "1a3206a0bbca9f9ec2421d47142011c38f5038b1.jpg",
-                    "iconGrayUrl": "b8586f8fc35541f377b1f1ee5df16d324de2f7c4.jpg",
-                    "globalPct": 6
                 }
             ]
         },
@@ -39161,7 +39161,7 @@
                     "unlockedAt": "2026-03-26T14:25:48.000Z",
                     "iconUrl": "5053da446373885d42ff666e483014992ae642e4.jpg",
                     "iconGrayUrl": "6614d83d403bb06ac5ec1eae12ebd15ec6b92f44.jpg",
-                    "globalPct": 44.1
+                    "globalPct": 44.2
                 },
                 {
                     "apiName": "STORY_CANNON",

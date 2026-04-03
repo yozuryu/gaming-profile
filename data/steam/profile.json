@@ -1,29 +1,40 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-03T03:25:44.029Z"
+        "extractionTimestamp": "2026-04-03T05:41:19.391Z"
     },
     "profile": {
         "steamId": "76561198188939413",
         "displayName": "Yozuryu",
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
-        "status": 0,
+        "status": 1,
         "lastOnline": "2026-04-03T02:24:04.000Z",
         "countryCode": "ID"
     },
     "stats": {
         "totalGames": 1246,
-        "totalPlaytimeMin": 345363,
+        "totalPlaytimeMin": 345387,
         "totalPlaytimeHrs": 5756,
         "gamesWithPlaytime": 815,
         "totalAchievements": 9975,
-        "unlockedAchievements": 2786,
+        "unlockedAchievements": 2787,
         "gamesWithAchievements": 168,
-        "perfectCount": 15,
+        "perfectCount": 16,
         "completionPct": 27,
         "avgPlaytimeMin": 423
     },
     "recentlyPlayed": [
+        {
+            "appId": 551110,
+            "name": "WayOut",
+            "playtime2Weeks": 24,
+            "playtimeForever": 78,
+            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/551110/bb0ad694b15682ccc19cc6c071de283398f4ad3c.jpg",
+            "storeUrl": "https://store.steampowered.com/app/551110",
+            "lastPlayedTs": "2026-04-03T05:40:13.000Z",
+            "achUnlocked": 66,
+            "achTotal": 66
+        },
         {
             "appId": 578330,
             "name": "LEGO® City Undercover",
@@ -81,25 +92,36 @@
         }
     ],
     "mostRecentGame": {
-        "appId": 578330,
-        "name": "LEGO® City Undercover",
-        "playtime2Weeks": 374,
-        "playtimeForever": 2137,
-        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/578330/48536e84b21951f851ec4ecf8349370a867e2c37.jpg",
-        "storeUrl": "https://store.steampowered.com/app/578330",
-        "lastPlayedTs": "2026-04-01T13:28:24.000Z"
+        "appId": 551110,
+        "name": "WayOut",
+        "playtime2Weeks": 24,
+        "playtimeForever": 78,
+        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/551110/bb0ad694b15682ccc19cc6c071de283398f4ad3c.jpg",
+        "storeUrl": "https://store.steampowered.com/app/551110",
+        "lastPlayedTs": "2026-04-03T05:40:13.000Z"
     },
     "mostRecentUnlock": {
-        "appId": 2183900,
-        "gameName": "Warhammer 40,000: Space Marine 2",
-        "apiName": "RAVENER_CANCEL_GRAB",
-        "displayName": "Unhand My Brother!",
-        "description": "Force a Ravener to release a grabbed Squad Member",
-        "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/2183900/5053da446373885d42ff666e483014992ae642e4.jpg",
-        "unlockedAt": "2026-03-26T14:25:48.000Z",
-        "globalPct": 44.1
+        "appId": 551110,
+        "gameName": "WayOut",
+        "apiName": "level_map",
+        "displayName": "WayOut",
+        "description": "",
+        "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/551110/108a5f657bb471aeb80b1a49d987cd758e3a31e2.jpg",
+        "unlockedAt": "2026-04-03T05:39:52.000Z",
+        "globalPct": 5.6
     },
     "perfectGames": [
+        {
+            "appId": 551110,
+            "gameName": "WayOut",
+            "total": 66,
+            "playtimeForever": 78,
+            "completedAt": "2026-04-03T05:39:52.000Z",
+            "lastAchName": "WayOut",
+            "lastAchIconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/551110/108a5f657bb471aeb80b1a49d987cd758e3a31e2.jpg",
+            "lastAchGlobalPct": 5.6,
+            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/551110/bb0ad694b15682ccc19cc6c071de283398f4ad3c.jpg"
+        },
         {
             "appId": 373770,
             "gameName": "LiEat",
