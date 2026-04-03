@@ -2,6 +2,20 @@
 
 ## 2026-04-03
 
+### RetroAchievements
+
+- Guide strip now always shows dropdown for custom categories (even with 1 link); fallback categories remain direct links
+
+### Admin
+
+- Added Credentials module — form editor for `.env` (RA username/API key, Steam user ID/API key); password fields masked with show/hide toggle; writes directly to `.env`
+- Added Data Diff module — per-file side-by-side diff view of `data/` changes; new untracked files shown as pure additions
+- Added server Restart and Stop buttons in sidebar footer; Restart polls `/api/health` until back up
+- Added hash-based routing (`#module-id`) so page refresh preserves active section
+- Guide search link in RA Guides game header opens GameFAQs search in new tab
+
+## 2026-04-03
+
 Steam games data split into per-game files for faster initial load.
 
 ### Admin
