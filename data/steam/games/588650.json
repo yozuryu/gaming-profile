@@ -91,7 +91,7 @@
             "iconUrl": "b2b9ca1a8fc7447608c81f1b36ce02b6f4d7adbd.jpg",
             "iconGrayUrl": "b9883abad45d5b5ebb24d11ae3bb7728fad4c822.jpg",
             "hidden": false,
-            "globalPct": 32.1
+            "globalPct": 32.2
         },
         {
             "apiName": "BIOME_REACHED_PRISONDEPTH",
@@ -102,7 +102,7 @@
             "iconUrl": "04bc30c324be50a31afe33ad0a5bfe7b389588ff.jpg",
             "iconGrayUrl": "932a020f78891f0cc084db3c25c72808c861f4db.jpg",
             "hidden": false,
-            "globalPct": 35
+            "globalPct": 35.1
         },
         {
             "apiName": "EXPLO_GETRUNE_VINE",
@@ -113,7 +113,7 @@
             "iconUrl": "3a0fb1f10b97b332d5c437b79d55c9bed29e5837.jpg",
             "iconGrayUrl": "daa6488020035ea2892bfda94ca675226fd365c6.jpg",
             "hidden": false,
-            "globalPct": 87.7
+            "globalPct": 87.6
         },
         {
             "apiName": "EXPLO_GETRUNE_TELEPORT",
@@ -256,7 +256,7 @@
             "iconUrl": "d383a200d8b3c53988332fd97d8459cea08507b0.jpg",
             "iconGrayUrl": "fbd8d6cfe8a642be8555b429970c4c22ac9f2455.jpg",
             "hidden": false,
-            "globalPct": 50.3
+            "globalPct": 50.4
         },
         {
             "apiName": "FEAT_DIVE_SPIKES",
@@ -454,7 +454,7 @@
             "iconUrl": "217d776600011a0c2d29fea974f43df0b362ec78.jpg",
             "iconGrayUrl": "1450cbc42b637461197eee1f5d8c35b811f21aa3.jpg",
             "hidden": true,
-            "globalPct": 41.2
+            "globalPct": 41.3
         },
         {
             "apiName": "EXPLO_GETBOSSRUNE_SECOND",
@@ -542,7 +542,7 @@
             "iconUrl": "8c0f5f930579d79d552ce39fe00f86b6d2dec08d.jpg",
             "iconGrayUrl": "5ffcca8763d85a639d67fd9480c9b4656d1167e8.jpg",
             "hidden": true,
-            "globalPct": 11.6
+            "globalPct": 11.7
         },
         {
             "apiName": "FEAT_ENDGAME_BOSSRUNE_4",
@@ -872,7 +872,7 @@
             "iconUrl": "f14dcf580bafde13b4bb8d1d290189717af71898.jpg",
             "iconGrayUrl": "bd78648d438fbde09a2d95d4a992f6c5d50a1c09.jpg",
             "hidden": false,
-            "globalPct": 11.1
+            "globalPct": 11.2
         },
         {
             "apiName": "FIGHT_BEAT_GARDENER",

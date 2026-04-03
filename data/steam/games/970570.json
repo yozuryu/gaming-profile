@@ -14,7 +14,7 @@
             "iconUrl": "a10200e848a433997f684d338172b107b1bb0ec2.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": false,
-            "globalPct": 10.2
+            "globalPct": 10.3
         },
         {
             "apiName": "Achievement_START_CHAPTER_1",
@@ -58,7 +58,7 @@
             "iconUrl": "853a516983405c34ea996750a80eb638cf16962c.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 38.8
+            "globalPct": 38.7
         },
         {
             "apiName": "Achievement_START_CHAPTER_5",
@@ -179,7 +179,7 @@
             "iconUrl": "e7898ac47eb2f60c2a1af1d6a14d28ac561d9b12.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 26.3
+            "globalPct": 26.2
         },
         {
             "apiName": "Achievement_FOUND_THE_TRUE",
@@ -333,7 +333,7 @@
             "iconUrl": "83b4d90f4e011c2b6ebf039d73aaf6b00205295f.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": false,
-            "globalPct": 24.5
+            "globalPct": 24.4
         },
         {
             "apiName": "Achievement_WIND_BLEW",
@@ -411,7 +411,7 @@
             "unlockedAt": null,
             "iconUrl": "a10200e848a433997f684d338172b107b1bb0ec2.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
-            "globalPct": 10.2
+            "globalPct": 10.3
         },
         {
             "apiName": "Achievement_START_CHAPTER_2",
@@ -438,7 +438,7 @@
             "unlockedAt": null,
             "iconUrl": "853a516983405c34ea996750a80eb638cf16962c.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
-            "globalPct": 38.8
+            "globalPct": 38.7
         }
     ]
 }

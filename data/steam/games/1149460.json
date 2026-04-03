@@ -80,7 +80,7 @@
             "iconUrl": "7282d1ccb65c7bfe3530d895eae14e966d320e41.jpg",
             "iconGrayUrl": "f78f6bd02c211c10a88bec2abca1c665db9c07b2.jpg",
             "hidden": false,
-            "globalPct": 4.7
+            "globalPct": 4.6
         },
         {
             "apiName": "ACH_EXOTICS",
@@ -124,7 +124,7 @@
             "iconUrl": "061789cf6fd61c007fd277f029f42fb98d8f8a61.jpg",
             "iconGrayUrl": "caa6ec77321620c9b5d3b8848e5b6cf22310bf28.jpg",
             "hidden": false,
-            "globalPct": 7.3
+            "globalPct": 7.2
         },
         {
             "apiName": "ACH_T4_BLUEPRINTS",
@@ -135,7 +135,7 @@
             "iconUrl": "f0980ae66a14b6d24fd55d54fd90a5d762dc7116.jpg",
             "iconGrayUrl": "7cf366a467c900883466e94442a5810020315e11.jpg",
             "hidden": false,
-            "globalPct": 9
+            "globalPct": 8.9
         },
         {
             "apiName": "ACH_CATCH_ALL_FISH",
@@ -179,7 +179,7 @@
             "iconUrl": "76cfbb48f0877116d8223301fb94f11b0aa367bd.jpg",
             "iconGrayUrl": "460a6fcf25227d5947a8d967d4ce819f6c9e40ca.jpg",
             "hidden": false,
-            "globalPct": 6.1
+            "globalPct": 6
         },
         {
             "apiName": "ACH_GRENADE_DEER",
@@ -201,7 +201,7 @@
             "iconUrl": "10c72ebea5fb62d6c14574f524686d8ec7f3c08e.jpg",
             "iconGrayUrl": "e03e1df784057357e2e484c494a51c135a6268d8.jpg",
             "hidden": false,
-            "globalPct": 28.3
+            "globalPct": 28.2
         },
         {
             "apiName": "ACH_MEDIC",
@@ -289,7 +289,7 @@
             "iconUrl": "ea55ddeb0c413a74f3ffe007ca5c8970ca7671ba.jpg",
             "iconGrayUrl": "d16eced5c4e2a98121127c707d7cd55341ee9b92.jpg",
             "hidden": false,
-            "globalPct": 14.7
+            "globalPct": 14.6
         },
         {
             "apiName": "ACH_MELEE_KILLS",
@@ -377,7 +377,7 @@
             "iconUrl": "1a718c4693115828f005d570c9c6ded690c8fbc7.jpg",
             "iconGrayUrl": "b9271d8f7f32d69b6749291fa90346b59b484bdc.jpg",
             "hidden": false,
-            "globalPct": 17.3
+            "globalPct": 17.2
         },
         {
             "apiName": "ACH_SURVIVE",
@@ -399,7 +399,7 @@
             "iconUrl": "a89398f643ba08303a5395423963d8d24ef60085.jpg",
             "iconGrayUrl": "05010bd29d9e3a24fd1186915cb52f6a1a8ef166.jpg",
             "hidden": false,
-            "globalPct": 63.2
+            "globalPct": 63.1
         },
         {
             "apiName": "ACH_EXPLORE_BIOMES",
@@ -443,7 +443,7 @@
             "iconUrl": "462ad2410267f735dcb9cf36ba797ebd8bbd4817.jpg",
             "iconGrayUrl": "d060bf48176367c18f0c3c0e54028e05fbe9c7bb.jpg",
             "hidden": false,
-            "globalPct": 34
+            "globalPct": 33.9
         },
         {
             "apiName": "ACH_KILL_ROCKGOLEM_BOSS",
@@ -883,7 +883,7 @@
             "iconUrl": "52fa2719af0a6e9236eada3f3a1a552df493215f.jpg",
             "iconGrayUrl": "b0d7713efb4b56b90b0d4440ebedf536e8ee9567.jpg",
             "hidden": false,
-            "globalPct": 0.6
+            "globalPct": 0.5
         },
         {
             "apiName": "ACH_PROMETHEUS",
@@ -1081,7 +1081,7 @@
             "iconUrl": "5c884f74cfa231309452b4606591cc66f26b6ae3.jpg",
             "iconGrayUrl": "8bd1a21526d0222119599e63b4e45e6b3ae7f59e.jpg",
             "hidden": false,
-            "globalPct": 3.3
+            "globalPct": 3.2
         },
         {
             "apiName": "ACH_TAME_LEVEL50",
@@ -1631,7 +1631,7 @@
             "iconUrl": "83de24f42cfc909d6d40d87588ccdea3658b9a62.jpg",
             "iconGrayUrl": "7c81c5fef56a95e2ed7178ab5b7836bce733e3a5.jpg",
             "hidden": false,
-            "globalPct": 1
+            "globalPct": 0.9
         },
         {
             "apiName": "ACH_OFF_THE_CHARTS",
@@ -1697,7 +1697,7 @@
             "iconUrl": "a3ccefdf6c500e2d01590575b7a6a3ea8dd62e43.jpg",
             "iconGrayUrl": "67fc15741dbde567927a68c6048eddff8a85048a.jpg",
             "hidden": false,
-            "globalPct": 0.2
+            "globalPct": 0.1
         },
         {
             "apiName": "ACH_PLOT_ARMOR",

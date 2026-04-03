@@ -58,7 +58,7 @@
             "iconUrl": "a2b1b5be5c5f256a4b9e775d4c7f4af483b4c136.jpg",
             "iconGrayUrl": "b3706b3abd7cab6d8df2062b7807228217695087.jpg",
             "hidden": false,
-            "globalPct": 18
+            "globalPct": 17.9
         },
         {
             "apiName": "Achevement5",
@@ -542,7 +542,7 @@
             "iconUrl": "31be0571a16ee8ee2821f534cdb35c5be76c0dc8.jpg",
             "iconGrayUrl": "b3706b3abd7cab6d8df2062b7807228217695087.jpg",
             "hidden": true,
-            "globalPct": 1.4
+            "globalPct": 1.3
         },
         {
             "apiName": "Achevement49",
@@ -614,7 +614,7 @@
             "unlockedAt": null,
             "iconUrl": "a2b1b5be5c5f256a4b9e775d4c7f4af483b4c136.jpg",
             "iconGrayUrl": "b3706b3abd7cab6d8df2062b7807228217695087.jpg",
-            "globalPct": 18
+            "globalPct": 17.9
         }
     ]
 }

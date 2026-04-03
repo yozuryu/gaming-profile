@@ -47,7 +47,7 @@
             "iconUrl": "4548f4272aaf21ecb876f593fe06fbe510bcd269.jpg",
             "iconGrayUrl": "16243a4bc7fae868263a18ecace79f6b87ee19bc.jpg",
             "hidden": true,
-            "globalPct": 70.9
+            "globalPct": 71
         },
         {
             "apiName": "GESTRAL_VILLAGE",
@@ -91,7 +91,7 @@
             "iconUrl": "f481fc1616e2404af6b1ad739b480250eeb9bb61.jpg",
             "iconGrayUrl": "79b61676145e4c151eb2926185afd87fe989ea0e.jpg",
             "hidden": true,
-            "globalPct": 58.8
+            "globalPct": 58.9
         },
         {
             "apiName": "GRANDIS_STATION",
@@ -146,7 +146,7 @@
             "iconUrl": "22b401dc062b4eb00257e72c53fdcbfe6b6e87ba.jpg",
             "iconGrayUrl": "10cefd7d61852b3904f6d1fd326411fe82e3f622.jpg",
             "hidden": true,
-            "globalPct": 50.4
+            "globalPct": 50.5
         },
         {
             "apiName": "PAINTRESS",
@@ -179,7 +179,7 @@
             "iconUrl": "b3ea2c44ab6c5642b220f7dc4ae9075c8a70b3f1.jpg",
             "iconGrayUrl": "d451fa9a94d7fe423e713ccdd7d37cbce6176f90.jpg",
             "hidden": true,
-            "globalPct": 39.1
+            "globalPct": 39.2
         },
         {
             "apiName": "ESQUIE_UPGRADES",
@@ -201,7 +201,7 @@
             "iconUrl": "762a3a319964d846e9fefc3219575029f75a21ff.jpg",
             "iconGrayUrl": "8e4b22996ded83313c0e688b633e001d7ed73fc9.jpg",
             "hidden": false,
-            "globalPct": 10.1
+            "globalPct": 10.2
         },
         {
             "apiName": "NEVRON_QUESTS",
@@ -223,7 +223,7 @@
             "iconUrl": "a3e595c517c9ea83634dd0c98570f436a26a14ff.jpg",
             "iconGrayUrl": "4d01ce52bd3d66c59b277bc01d970bf3dc322769.jpg",
             "hidden": true,
-            "globalPct": 16
+            "globalPct": 16.1
         },
         {
             "apiName": "GESTRAL_BEACH",
@@ -278,7 +278,7 @@
             "iconUrl": "2b46e33316b67a484d7fcb7a44c675d3ba9cccc2.jpg",
             "iconGrayUrl": "e62c3a1f5a249fc32fe2652beb97364ddbdd7bce.jpg",
             "hidden": true,
-            "globalPct": 25.5
+            "globalPct": 25.6
         },
         {
             "apiName": "SPRONG",
@@ -432,7 +432,7 @@
             "iconUrl": "c4fe576da5fcfe08c7ca9921f3a725c492d98248.jpg",
             "iconGrayUrl": "e38e5976d3d913f30401e92a99afa680af8e560a.jpg",
             "hidden": false,
-            "globalPct": 81.5
+            "globalPct": 81.6
         },
         {
             "apiName": "LUNE_STAINS",
@@ -542,7 +542,7 @@
             "iconUrl": "305998cd6052d4aa8b0b4e98299d20dbd915ebac.jpg",
             "iconGrayUrl": "f8c261b7bbc52967152f205ee5739c5471c57d26.jpg",
             "hidden": false,
-            "globalPct": 10
+            "globalPct": 10.1
         },
         {
             "apiName": "PAINT_CAGE",
@@ -575,7 +575,7 @@
             "iconUrl": "62d4676ebd03f2a3cefb99ea6fe4039cf4f5b838.jpg",
             "iconGrayUrl": "148809abf1e8bd9a5db902a1d4623dc7143eb6fb.jpg",
             "hidden": false,
-            "globalPct": 51.4
+            "globalPct": 51.5
         },
         {
             "apiName": "OPTIONAL_CAMP",
@@ -624,7 +624,7 @@
             "unlockedAt": "2025-07-18T15:31:53.000Z",
             "iconUrl": "a3e595c517c9ea83634dd0c98570f436a26a14ff.jpg",
             "iconGrayUrl": "4d01ce52bd3d66c59b277bc01d970bf3dc322769.jpg",
-            "globalPct": 16
+            "globalPct": 16.1
         },
         {
             "apiName": "LEVEL_99",
