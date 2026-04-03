@@ -124,7 +124,7 @@
             "iconUrl": "07a5a4ca944de0b8cbb24a6f43cd1946e7944c30.jpg",
             "iconGrayUrl": "d9c32785a96e5df3d4e41f222e6797eb2ed731cc.jpg",
             "hidden": true,
-            "globalPct": 35.7
+            "globalPct": 35.8
         },
         {
             "apiName": "STORY_ORBITAL_DROP",
@@ -157,7 +157,7 @@
             "iconUrl": "7ab0c55d199d1b8fc30ed77548f47035449beea7.jpg",
             "iconGrayUrl": "d686d122d80c489aae3e288c4fa3727e65d20278.jpg",
             "hidden": true,
-            "globalPct": 53
+            "globalPct": 53.1
         },
         {
             "apiName": "STORY_FINALE",
@@ -234,7 +234,7 @@
             "iconUrl": "ebfce77fe82282b0912e67ee1cde440abb412846.jpg",
             "iconGrayUrl": "5ecf35ab270acdc257e15f714d237ce4d2e87c06.jpg",
             "hidden": false,
-            "globalPct": 21.3
+            "globalPct": 21.4
         },
         {
             "apiName": "PVE_MAX_LEVEL",
@@ -278,7 +278,7 @@
             "iconUrl": "484fc66324ebca6de3ece60b8dc6086cfb097772.jpg",
             "iconGrayUrl": "bdff013d85e8ec321475417a24b10b09e21f1529.jpg",
             "hidden": false,
-            "globalPct": 25.3
+            "globalPct": 25.4
         },
         {
             "apiName": "PVE_PICKUPS",
@@ -553,7 +553,7 @@
             "iconUrl": "85e1a2d069023b4ac44fb937f704430bfa75cfbd.jpg",
             "iconGrayUrl": "89d7552a623da95513aa3358fd6b974e825d55ce.jpg",
             "hidden": false,
-            "globalPct": 0.8
+            "globalPct": 0.9
         }
     ],
     "playtimeForever": 159,
