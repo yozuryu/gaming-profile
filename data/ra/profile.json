@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-03T11:41:17.129Z"
+        "extractionTimestamp": "2026-04-03T13:15:52.972Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Lv71 Samurai, Lv67 Psychic, and Lv67 Hacker | Tokyo Tower | ChX: 33/33 quests | 43h15",
+        "richPresenceMsg": "Lv75 Samurai, Lv71 Psychic, and Lv71 Hacker | Illusory Capital | Ch+: 33/33 quests | 45h32",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1600,
+        "totalPoints": 1625,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 5772,
+        "totalTruePoints": 5910,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,39 +33,39 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Lv71 Samurai, Lv67 Psychic, and Lv67 Hacker | Tokyo Tower | ChX: 33/33 quests | 43h15",
-        "richPresenceMsgDate": "2026-04-03 08:51:24",
+        "richPresenceMsg": "Lv75 Samurai, Lv71 Psychic, and Lv71 Hacker | Illusory Capital | Ch+: 33/33 quests | 45h32",
+        "richPresenceMsgDate": "2026-04-03 13:13:52",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1600,
+        "totalPoints": 1625,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 5772,
+        "totalTruePoints": 5910,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 53514,
+        "rank": 53007,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 137181,
+        "totalRanked": 137197,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1600,
+        "points": 1625,
         "softcorePoints": 1
     },
     "pageAwards": {
-        "totalAwardsCount": 3,
+        "totalAwardsCount": 4,
         "hiddenAwardsCount": 0,
         "masteryAwardsCount": 0,
         "completionAwardsCount": 0,
-        "beatenHardcoreAwardsCount": 2,
+        "beatenHardcoreAwardsCount": 3,
         "beatenSoftcoreAwardsCount": 0,
         "eventAwardsCount": 0,
         "siteAwardsCount": 1,
@@ -108,6 +108,19 @@
                 "awardData": 33170,
                 "awardDataExtra": 1,
                 "displayOrder": 0
+            },
+            {
+                "awardedAt": "2026-04-03T13:02:58+00:00",
+                "title": "7th Dragon 2020",
+                "consoleId": 41,
+                "consoleName": "PlayStation Portable",
+                "flags": null,
+                "imageIcon": "/Images/123011.png",
+                "display_award_tier": null,
+                "awardType": "Game Beaten",
+                "awardData": 16452,
+                "awardDataExtra": 1,
+                "displayOrder": 0
             }
         ]
     },
@@ -121,14 +134,14 @@
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
             "imageBoxArt": "/Images/110688.png",
-            "lastPlayed": "2026-04-03 08:51:24",
+            "lastPlayed": "2026-04-03 13:15:52",
             "achievementsTotal": 80,
             "numPossibleAchievements": 80,
             "possibleScore": 475,
-            "numAchieved": 71,
-            "scoreAchieved": 355,
-            "numAchievedHardcore": 71,
-            "scoreAchievedHardcore": 355
+            "numAchieved": 72,
+            "scoreAchieved": 380,
+            "numAchievedHardcore": 72,
+            "scoreAchievedHardcore": 380
         },
         {
             "gameId": 11290,
@@ -394,11 +407,11 @@
                 "consoleId": 41,
                 "consoleName": "PlayStation Portable",
                 "maxPossible": 80,
-                "numAwarded": 71,
-                "numAwardedHardcore": 71,
-                "mostRecentAwardedDate": "2026-04-03T07:15:11+00:00",
-                "highestAwardKind": null,
-                "highestAwardDate": null
+                "numAwarded": 72,
+                "numAwardedHardcore": 72,
+                "mostRecentAwardedDate": "2026-04-03T13:02:58+00:00",
+                "highestAwardKind": "beaten-hardcore",
+                "highestAwardDate": "2026-04-03T13:02:58+00:00"
             },
             {
                 "gameId": 11290,
@@ -5015,23 +5028,23 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-03 07:15:11",
+        "date": "2026-04-03 13:02:58",
         "hardcoreMode": true,
-        "achievementId": 572215,
-        "title": "Tokyo Tower Cleansed",
-        "description": "Clear all the dragons in Tokyo Tower",
-        "badgeName": "649989",
-        "points": 10,
-        "trueRatio": 54,
-        "type": null,
+        "achievementId": 572158,
+        "title": "How Truly Vexing",
+        "description": "Defeat the True Dragon",
+        "badgeName": "649932",
+        "points": 25,
+        "trueRatio": 136,
+        "type": "win_condition",
         "author": "Jamiras",
         "authorUlid": "01BJY8JSBTA7NVT0NYSVDCK5TY",
         "gameTitle": "7th Dragon 2020",
         "gameIcon": "/Images/123011.png",
         "gameId": 16452,
         "consoleName": "PlayStation Portable",
-        "cumulScore": 567,
-        "badgeUrl": "/Badge/649989.png",
+        "cumulScore": 592,
+        "badgeUrl": "/Badge/649932.png",
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
@@ -5043,15 +5056,15 @@
         "imageTitle": "/Images/110687.png",
         "imageIngame": "/Images/110689.png",
         "imageBoxArt": "/Images/110688.png",
-        "lastPlayed": "2026-04-03 08:51:24",
+        "lastPlayed": "2026-04-03 13:15:52",
         "achievementsTotal": 80,
         "numPossibleAchievements": 80,
         "possibleScore": 475,
-        "numAchieved": 71,
-        "scoreAchieved": 355,
-        "numAchievedHardcore": 71,
-        "scoreAchievedHardcore": 355
+        "numAchieved": 72,
+        "scoreAchieved": 380,
+        "numAchievedHardcore": 72,
+        "scoreAchievedHardcore": 380
     },
-    "points7Days": 280,
-    "points30Days": 340
+    "points7Days": 305,
+    "points30Days": 365
 }
