@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Trophy, BarChart2, Activity, ChevronDown, Lock, Unlock, Star, Gem, Clock, X } from 'lucide-react';
 import { STEAM_STATUS, PROGRESS_SORTS } from './utils/constants.js';
@@ -7,8 +7,7 @@ import { formatPlaytime, formatDate, formatTimeAgo, fmtDay, fmtTime, achIconUrl,
 // ── SteamGameCard ─────────────────────────────────────────────────────────────
 
 const SteamGameCard = ({ game, achievementData, onViewDetails }) => {
-    const hasAch = achievementData?.hasAchievements && achievementData?.achievements?.length > 0;
-    const achs   = hasAch ? achievementData.achievements : [];
+    const hasAch = achievementData?.hasAchievements && achievementData?.total > 0;
     const pct    = hasAch && achievementData.total > 0
         ? (achievementData.unlocked / achievementData.total) * 100
         : null;
@@ -22,23 +21,11 @@ const SteamGameCard = ({ game, achievementData, onViewDetails }) => {
         ? 'border-l-[#323f4c]'
         : 'border-l-[#1e2a35]';
 
-    const lastUnlock = useMemo(() => {
-        if (!hasAch) return null;
-        const unlocked = achs.filter(a => a.unlocked && a.unlockedAt);
-        if (!unlocked.length) return null;
-        return unlocked.reduce((latest, a) =>
-            new Date(a.unlockedAt) > new Date(latest.unlockedAt) ? a : latest
-        );
-    }, [achs, hasAch]);
-
-    const previewAchs = useMemo(() => {
-        if (!hasAch) return [];
-        const unlocked = achs
-            .filter(a => a.unlocked)
-            .sort((a, b) => new Date(b.unlockedAt || 0) - new Date(a.unlockedAt || 0));
-        const locked = achs.filter(a => !a.unlocked);
-        return [...unlocked, ...locked].slice(0, 6);
-    }, [achs, hasAch]);
+    // Use pre-computed fields from games/index.json (no achievements[] iteration needed)
+    const lastUnlock  = hasAch && achievementData.lastUnlockName
+        ? { displayName: achievementData.lastUnlockName, unlockedAt: achievementData.lastUnlockedAt }
+        : null;
+    const previewAchs = hasAch ? (achievementData.preview ?? []) : [];
 
     return (
         <div className={`flex flex-col bg-[#202d39] rounded-[3px] transition-transform duration-200 hover:-translate-y-0.5 border-l-[3px] border border-[#323f4c] shadow-md ${stripeColor}`}>
@@ -712,9 +699,7 @@ const ProgressTab = ({ achievementProgress, recentlyPlayed, onViewDetails }) => 
         .filter(([, d]) => d.hasAchievements && d.unlocked > 0 && (showPerfect || d.total === 0 || d.unlocked < d.total) && (!search || (d.gameName ?? '').toLowerCase().includes(search.toLowerCase())))
         .map(([appId, d]) => {
             const pt = playtimeMap[Number(appId)];
-            const lastUnlockedAt = (d.achievements ?? [])
-                .filter(a => a.unlocked && a.unlockedAt)
-                .reduce((latest, a) => (!latest || a.unlockedAt > latest ? a.unlockedAt : latest), null);
+            const lastUnlockedAt = d.lastUnlockedAt ?? null;
             return {
                 appId:           Number(appId),
                 gameName:        d.gameName ?? `App ${appId}`,
@@ -869,6 +854,7 @@ const App = () => {
     const [loading,           setLoading]           = useState(true);
     const [error,             setError]             = useState(null);
     const [selectedGame,     setSelectedGame]     = useState(null);
+    const [gameDetails,       setGameDetails]       = useState({});
     const VALID_TABS = ['recent', 'progress', 'activity'];
     const initialTab = (() => {
         const p = new URLSearchParams(window.location.search).get('tab');
@@ -929,12 +915,28 @@ const App = () => {
     // Load games.json when Recent or Progress tab opens
     useEffect(() => {
         if (['recent', 'progress', 'activity'].includes(activeTab) && profileData && !gamesData) {
-            fetch('../../data/steam/games.json')
+            fetch('../../data/steam/games/index.json')
                 .then(r => r.json())
                 .then(setGamesData)
                 .catch(() => setGamesData({ achievementProgress: {} }));
         }
     }, [activeTab, profileData, gamesData]);
+
+    const handleViewDetails = useCallback(async ({ game, achievementData }) => {
+        const appId = game.appId;
+        if (gameDetails[appId]) {
+            setSelectedGame({ game, achievementData: gameDetails[appId] });
+            return;
+        }
+        try {
+            const data = await fetch(`../../data/steam/games/${appId}.json`).then(r => r.json());
+            setGameDetails(prev => ({ ...prev, [appId]: data }));
+            setSelectedGame({ game, achievementData: data });
+        } catch {
+            // fallback: open with index data (no achievements)
+            setSelectedGame({ game, achievementData });
+        }
+    }, [gameDetails]);
 
     // Derived state — read pre-computed fields from JSON, no client-side iteration needed
     const achProgress  = gamesData?.achievementProgress ?? {};
@@ -1294,7 +1296,7 @@ const App = () => {
                         gamesData
                             ? <div className="flex flex-col gap-3">
                                 {recentlyPlayed.map(game => (
-                                    <SteamGameCard key={game.appId} game={game} achievementData={achProgress[game.appId]} onViewDetails={setSelectedGame} />
+                                    <SteamGameCard key={game.appId} game={game} achievementData={achProgress[game.appId]} onViewDetails={handleViewDetails} />
                                 ))}
                               </div>
                             : <div className="flex items-center justify-center py-12 text-[#546270] text-[11px]">Loading games…</div>
@@ -1302,7 +1304,7 @@ const App = () => {
 
                     {activeTab === 'progress' && (
                         gamesData
-                            ? <ProgressTab achievementProgress={achProgress} recentlyPlayed={recentlyPlayed} onViewDetails={setSelectedGame} />
+                            ? <ProgressTab achievementProgress={achProgress} recentlyPlayed={recentlyPlayed} onViewDetails={handleViewDetails} />
                             : <div className="flex items-center justify-center py-12 text-[#546270] text-[11px]">Loading games…</div>
                     )}
 

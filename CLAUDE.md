@@ -32,7 +32,10 @@ gaming-profile/
 │   │       └── heatmap.json        # { "YYYY-MM-DD": { count, points } }
 │   └── steam/
 │       ├── profile.json            # Steam profile, stats, recently played
-│       ├── games.json              # All Steam games with achievement progress
+│       ├── games/
+│       │   ├── index.json          # All games, no achievements[] — fast initial load (~200KB)
+│       │   ├── {appId}.json        # Full game data + achievements[], lazy-fetched per game
+│       │   └── sentinel.json       # Pipeline-only: no-achievement game cache (never loaded by frontend)
 │       └── achievements/
 │           ├── 1.json – 4.json     # Recent achievements chunked by quarter
 │           └── heatmap.json        # { "YYYY-MM-DD": { count } }
@@ -88,7 +91,7 @@ Vanilla JS (no React). Reads `data/hub/config.json`, `data/ra/profile.json`, `da
 Reads `data/ra/profile.json` (via `transform.js`) and `data/ra/games.json`. Key sections: game awards (Mastered/Beaten sorted by type then date desc), tabs for games/backlog/recent achievements, site awards. `transform.js` is the critical data layer — it merges multiple API response shapes into what the UI expects.
 
 ### Steam Profile (`profile/steam/`)
-Reads `data/steam/profile.json` and `data/steam/games.json`. Three tabs: Recent Games, Completion Progress, Activity. The `SteamGameCard` component is reused across both Recent Games and Completion Progress tabs. The Activity tab has its own heatmap (Steam-only, blue tones).
+Reads `data/steam/profile.json` on mount, then `data/steam/games/index.json` when any game tab opens (~200KB, no achievement arrays). Full achievement data for a specific game is lazy-fetched from `data/steam/games/{appId}.json` only when the user opens the achievement modal (`handleViewDetails`). Three tabs: Recent Games, Completion Progress, Activity. The `SteamGameCard` component is reused across both Recent Games and Completion Progress tabs and uses pre-computed `preview`, `lastUnlockedAt`, and `lastUnlockName` fields from the index — it does not need `achievements[]`. The Activity tab has its own heatmap (Steam-only, blue tones).
 
 ### Activity (`activity/`)
 Combined RA + Steam activity. Reads both heatmaps and both achievement chunk sets. Key features:
@@ -125,7 +128,10 @@ Env vars: `STEAM_API_KEY`, `STEAM_USER_ID`.
 - `--refresh-unlocked-games`: re-fetches games with any unlocked achievements
 - `--refresh-games`: all owned games
 - Stores achievement icon hash only (not full URL) to keep file sizes down
-- Outputs: `profile.json`, `games.json`, `achievements/1-4.json`, `achievements/heatmap.json`
+- Cache loading reads individual `games/{appId}.json` files; falls back to legacy `games.json` on first migration run
+- Outputs: `profile.json`, `games/index.json`, `games/{appId}.json`, `games/sentinel.json`, `achievements/1-4.json`, `achievements/heatmap.json`
+- `games/index.json` pre-computes `lastUnlockedAt`, `lastUnlockName`, and `preview` (top 6 achievement icons) per game
+- `games/sentinel.json` tracks no-achievement games (pipeline-only, never fetched by frontend)
 
 ---
 

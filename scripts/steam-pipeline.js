@@ -187,17 +187,41 @@ async function executeProfileExtraction() {
 
 async function executeGameExtraction(recentlyPlayed, owned) {
     const OUTPUT_DIR        = path.join(__dirname, '..', 'data', 'steam');
-    const gamesJsonPath     = path.join(OUTPUT_DIR, 'games.json');
-    const sentinelCachePath = path.join(OUTPUT_DIR, 'sentinel-cache.json');
+    const gamesDir          = path.join(OUTPUT_DIR, 'games');
+    const sentinelCachePath = path.join(gamesDir, 'sentinel.json');
 
     // Load achievement cache (frontend data — only games with achievements)
     let cachedProgress = {};
-    if (fs.existsSync(gamesJsonPath)) {
+    if (fs.existsSync(gamesDir)) {
+        // New format: read individual game files
         try {
-            const existing = JSON.parse(fs.readFileSync(gamesJsonPath, 'utf8'));
-            cachedProgress = existing.achievementProgress || {};
+            const files = fs.readdirSync(gamesDir).filter(f => f !== 'index.json' && f !== 'sentinel.json' && f.endsWith('.json'));
+            for (const file of files) {
+                try {
+                    const appId = path.basename(file, '.json');
+                    const data = JSON.parse(fs.readFileSync(path.join(gamesDir, file), 'utf8'));
+                    cachedProgress[appId] = data;
+                } catch (e) {
+                    log.fail(`Could not read games/${file}: ${e.message}`);
+                }
+            }
+            if (Object.keys(cachedProgress).length > 0) {
+                log.ok(`Loaded ${Object.keys(cachedProgress).length} cached game(s) from games/ dir`);
+            }
         } catch (e) {
-            log.fail(`Could not read games.json: ${e.message}`);
+            log.fail(`Could not read games directory: ${e.message}`);
+        }
+    } else {
+        // Migration fallback: read old games.json if it exists
+        const oldGamesJsonPath = path.join(OUTPUT_DIR, 'games.json');
+        if (fs.existsSync(oldGamesJsonPath)) {
+            try {
+                const existing = JSON.parse(fs.readFileSync(oldGamesJsonPath, 'utf8'));
+                cachedProgress = existing.achievementProgress || {};
+                log.ok(`Migrated ${Object.keys(cachedProgress).length} cached game(s) from legacy games.json`);
+            } catch (e) {
+                log.fail(`Could not read legacy games.json: ${e.message}`);
+            }
         }
     }
 
@@ -207,7 +231,7 @@ async function executeGameExtraction(recentlyPlayed, owned) {
         try {
             sentinelCache = JSON.parse(fs.readFileSync(sentinelCachePath, 'utf8'));
         } catch (e) {
-            log.fail(`Could not read sentinel-cache.json: ${e.message}`);
+            log.fail(`Could not read games/sentinel.json: ${e.message}`);
         }
     }
 
@@ -258,10 +282,10 @@ async function executeGameExtraction(recentlyPlayed, owned) {
         gamesToFetch = recentlyPlayed;
         if (Object.keys(cachedProgress).length > 0) {
             log.section(`Phase 2a — Achievement Details  [ ${recentlyPlayed.length} recently played ]`);
-            log.ok(`Loaded ${Object.keys(cachedProgress).length} cached game(s) from games.json`);
+            log.ok(`Loaded ${Object.keys(cachedProgress).length} cached game(s) from games/ dir`);
         } else {
             log.section(`Phase 2a — Achievement Details  [ ${recentlyPlayed.length} recently played ]`);
-            log.skip('No existing games.json found — starting fresh');
+            log.skip('No existing games/ dir found — starting fresh');
         }
     }
 
@@ -369,6 +393,11 @@ function serializeLocally(payload, achievementProgress, sentinelCache, owned) {
     if (!fs.existsSync(ACH_DIR)) {
         fs.mkdirSync(ACH_DIR, { recursive: true });
         log.ok(`Created achievements directory: ${ACH_DIR}`);
+    }
+    const GAMES_DIR = path.join(OUTPUT_DIR, 'games');
+    if (!fs.existsSync(GAMES_DIR)) {
+        fs.mkdirSync(GAMES_DIR, { recursive: true });
+        log.ok(`Created games directory: ${GAMES_DIR}`);
     }
 
     const write = (filename, data, dir = OUTPUT_DIR) => {
@@ -517,13 +546,57 @@ function serializeLocally(payload, achievementProgress, sentinelCache, owned) {
         write(`${i + 1}.json`, { recentAchievements: chunk }, ACH_DIR);
     }
 
-    // games.json — per-game achievement progress enriched with playtime
-    write('games.json', {
-        achievementProgress: enrichedProgress,
-    });
+    // games/index.json — index without achievements[], for fast initial load
+    const gamesIndex = {};
+    for (const [appId, data] of Object.entries(enrichedProgress)) {
+        const { achievements, ...rest } = data;
+        const unlockedAchs = (achievements || []).filter(a => a.unlocked && a.unlockedAt)
+            .sort((a, b) => new Date(b.unlockedAt) - new Date(a.unlockedAt));
+        const lockedAchs = (achievements || []).filter(a => !a.unlocked);
+        const preview = [...unlockedAchs, ...lockedAchs].slice(0, 6).map(a => ({
+            apiName:     a.apiName,
+            displayName: a.displayName,
+            unlocked:    a.unlocked,
+            unlockedAt:  a.unlockedAt,
+            iconUrl:     a.iconUrl,
+            iconGrayUrl: a.iconGrayUrl,
+            globalPct:   a.globalPct,
+        }));
+        const lastUnlock = unlockedAchs[0] ?? null;
+        gamesIndex[appId] = {
+            ...rest,
+            lastUnlockedAt: lastUnlock?.unlockedAt ?? null,
+            lastUnlockName: lastUnlock?.displayName ?? null,
+            preview,
+        };
+    }
+    write('index.json', { achievementProgress: gamesIndex }, GAMES_DIR);
 
-    // sentinel-cache.json — pipeline-only, never loaded by frontend
-    write('sentinel-cache.json', sentinelCache);
+    // games/{appId}.json — full data per game including achievements[]
+    for (const [appId, data] of Object.entries(enrichedProgress)) {
+        const unlockedAchs = (data.achievements || []).filter(a => a.unlocked && a.unlockedAt)
+            .sort((a, b) => new Date(b.unlockedAt) - new Date(a.unlockedAt));
+        const lockedAchs = (data.achievements || []).filter(a => !a.unlocked);
+        const preview = [...unlockedAchs, ...lockedAchs].slice(0, 6).map(a => ({
+            apiName:     a.apiName,
+            displayName: a.displayName,
+            unlocked:    a.unlocked,
+            unlockedAt:  a.unlockedAt,
+            iconUrl:     a.iconUrl,
+            iconGrayUrl: a.iconGrayUrl,
+            globalPct:   a.globalPct,
+        }));
+        const lastUnlock = unlockedAchs[0] ?? null;
+        write(`${appId}.json`, {
+            ...data,
+            lastUnlockedAt: lastUnlock?.unlockedAt ?? null,
+            lastUnlockName: lastUnlock?.displayName ?? null,
+            preview,
+        }, GAMES_DIR);
+    }
+
+    // games/sentinel.json — pipeline-only, never loaded by frontend
+    write('sentinel.json', sentinelCache, GAMES_DIR);
 }
 
 // =========================================================

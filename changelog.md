@@ -1,8 +1,23 @@
 # Changelog
 
+## 2026-04-03
+
+Steam games data split into per-game files for faster initial load.
+
+### Steam
+
+- `data/steam/games.json` (5.3MB) replaced with `data/steam/games/index.json` — index only (no `achievements[]`), plus `data/steam/games/{appId}.json` per game containing full achievement data
+- `data/steam/sentinel-cache.json` moved to `data/steam/games/sentinel.json`
+- Pipeline cache loading now reads individual `games/{appId}.json` files; falls back to legacy `games.json` on first migration run
+- `games/index.json` pre-computes `lastUnlockedAt`, `lastUnlockName`, and `preview` (top 6 achievement icons) per game — previously computed at runtime in the frontend
+- Frontend fetches `games/index.json` on mount (~200KB instead of 5.3MB); full `games/{appId}.json` lazy-fetched only when a game modal is opened
+- `SteamGameCard` and `ProgressTab` updated to use pre-computed fields from the index instead of iterating `achievements[]`
+
+---
+
 ## 2026-04-02
 
-Streak panel redesigned with circles, 14-day window, connectors, and per-day achievement counts; Steam mobile overflow fixed.
+Streak panel redesigned with circles, 14-day window, connectors, and per-day achievement counts; streak UTC date bug fixed; Steam mobile overflow fixed.
 
 ### Activity
 
@@ -20,6 +35,7 @@ Streak panel redesigned with circles, 14-day window, connectors, and per-day ach
 
 ### Steam
 
+- Streak date key calculation switched from `toISOString()` (UTC) to local `getFullYear/getMonth/getDate` — in UTC+ timezones, `toISOString()` returned yesterday's date late at night, causing today's achievements to not match the heatmap and the flame to never show for today
 - `html` element added to `overflow-x: clip` rule in `index.html` — `clip` on `body` alone does not propagate to the viewport scroller, leaving the page horizontally scrollable
 - Tab bar font size reduced to `11px` on mobile (from `14px`) and gap tightened to `12px` (from `24px`) — "Completion Progress" tab label was wide enough to overflow the viewport at small screen widths
 
