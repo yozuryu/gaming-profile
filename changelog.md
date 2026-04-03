@@ -2,16 +2,11 @@
 
 ## 2026-04-03
 
-### Steam
-
-- Added loading overlay when fetching per-game achievement data from `games/{appId}.json` — shows spinner and game name so the UI doesn't appear frozen on slow connections; dismissible by clicking the backdrop
-
-## 2026-04-03
-
 Steam games data split into per-game files for faster initial load.
 
 ### Steam
 
+- Added loading overlay when fetching per-game achievement data from `games/{appId}.json` — shows spinner and game name so the UI doesn't appear frozen on slow connections; dismissible by clicking the backdrop
 - `data/steam/games.json` (5.3MB) replaced with `data/steam/games/index.json` — index only (no `achievements[]`), plus `data/steam/games/{appId}.json` per game containing full achievement data
 - `data/steam/sentinel-cache.json` moved to `data/steam/games/sentinel.json`
 - Pipeline cache loading now reads individual `games/{appId}.json` files; falls back to legacy `games.json` on first migration run
