@@ -43246,8 +43246,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 3553,
-            "numDistinctPlayersHardcore": 3553,
+            "numDistinctPlayersCasual": 3554,
+            "numDistinctPlayersHardcore": 3554,
             "numAchievements": 129,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -43268,7 +43268,7 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "116644",
-                    "numAwarded": 3102,
+                    "numAwarded": 3103,
                     "numAwardedHardcore": 1177,
                     "displayOrder": 0
                 },
@@ -43280,7 +43280,7 @@
                     "trueRatio": 2,
                     "type": "missable",
                     "badgeName": "117136",
-                    "numAwarded": 1630,
+                    "numAwarded": 1631,
                     "numAwardedHardcore": 736,
                     "displayOrder": 0
                 },
@@ -43304,7 +43304,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "117189",
-                    "numAwarded": 2268,
+                    "numAwarded": 2269,
                     "numAwardedHardcore": 894,
                     "displayOrder": 0
                 },
@@ -43340,7 +43340,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "117191",
-                    "numAwarded": 1902,
+                    "numAwarded": 1903,
                     "numAwardedHardcore": 775,
                     "displayOrder": 0
                 },
@@ -43352,7 +43352,7 @@
                     "trueRatio": 2,
                     "type": "missable",
                     "badgeName": "117205",
-                    "numAwarded": 1405,
+                    "numAwarded": 1406,
                     "numAwardedHardcore": 618,
                     "displayOrder": 0
                 },
@@ -43496,7 +43496,7 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "116649",
-                    "numAwarded": 1070,
+                    "numAwarded": 1071,
                     "numAwardedHardcore": 482,
                     "displayOrder": 0
                 },
@@ -44540,7 +44540,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "119877",
-                    "numAwarded": 2000,
+                    "numAwarded": 2001,
                     "numAwardedHardcore": 840,
                     "displayOrder": 2
                 },
@@ -58382,8 +58382,8 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "129091",
-                    "numAwarded": 134,
-                    "numAwardedHardcore": 125,
+                    "numAwarded": 135,
+                    "numAwardedHardcore": 126,
                     "displayOrder": 0
                 },
                 "292889": {
@@ -64292,8 +64292,8 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "649939",
-                    "numAwarded": 64,
-                    "numAwardedHardcore": 51,
+                    "numAwarded": 65,
+                    "numAwardedHardcore": 52,
                     "displayOrder": 26,
                     "dateEarned": "2026-03-19 13:56:46",
                     "dateEarnedHardcore": "2026-03-19 13:56:46"
@@ -64334,8 +64334,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "649942",
-                    "numAwarded": 48,
-                    "numAwardedHardcore": 40,
+                    "numAwarded": 49,
+                    "numAwardedHardcore": 41,
                     "displayOrder": 28,
                     "dateEarned": "2026-03-28 15:24:32",
                     "dateEarnedHardcore": "2026-03-28 15:24:32"
@@ -64362,8 +64362,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "649944",
-                    "numAwarded": 47,
-                    "numAwardedHardcore": 40,
+                    "numAwarded": 48,
+                    "numAwardedHardcore": 41,
                     "displayOrder": 30,
                     "dateEarned": "2026-03-23 16:40:17",
                     "dateEarnedHardcore": "2026-03-23 16:40:17"
@@ -64933,11 +64933,11 @@
                     "title": "Ikebukuro Railcage Cleansed",
                     "description": "Clear all the dragons in Ikebukuro Railcage",
                     "points": 10,
-                    "trueRatio": 42,
+                    "trueRatio": 41,
                     "type": null,
                     "badgeName": "649985",
-                    "numAwarded": 46,
-                    "numAwardedHardcore": 39,
+                    "numAwarded": 47,
+                    "numAwardedHardcore": 40,
                     "displayOrder": 82,
                     "dateEarned": "2026-03-28 15:22:41",
                     "dateEarnedHardcore": "2026-03-28 15:22:41"
@@ -79936,8 +79936,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "623294",
-                    "numAwarded": 205,
-                    "numAwardedHardcore": 195,
+                    "numAwarded": 206,
+                    "numAwardedHardcore": 196,
                     "displayOrder": 6
                 },
                 "548200": {
@@ -79976,8 +79976,8 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "624974",
-                    "numAwarded": 194,
-                    "numAwardedHardcore": 185,
+                    "numAwarded": 195,
+                    "numAwardedHardcore": 186,
                     "displayOrder": 5
                 },
                 "564120": {
@@ -79988,8 +79988,8 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "640873",
-                    "numAwarded": 199,
-                    "numAwardedHardcore": 189,
+                    "numAwarded": 200,
+                    "numAwardedHardcore": 190,
                     "displayOrder": 4
                 },
                 "564121": {
