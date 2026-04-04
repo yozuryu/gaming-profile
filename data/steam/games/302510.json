@@ -113,7 +113,7 @@
             "iconUrl": "9f9afb59f1c72d00390c2b5698de5b7ab0ce0237.jpg",
             "iconGrayUrl": "2f5210be7ad3fd997e085b50fcdb45fabbe4a6e0.jpg",
             "hidden": true,
-            "globalPct": 27.7
+            "globalPct": 27.6
         },
         {
             "apiName": "ACH_MEET_NERO",
@@ -146,7 +146,7 @@
             "iconUrl": "5a8abde3231d1afbc0c886d35734f77e2e32e4bd.jpg",
             "iconGrayUrl": "3b2d12da61b243372e979a3a2ac87f71824c2353.jpg",
             "hidden": true,
-            "globalPct": 50.2
+            "globalPct": 50.1
         },
         {
             "apiName": "ACH_DEFEAT_GLOTT",
@@ -168,7 +168,7 @@
             "iconUrl": "97b520a76c5f1fae1247e4b642741d9339f15386.jpg",
             "iconGrayUrl": "124ea762c8a53a7b680da172bd2307801b864ee4.jpg",
             "hidden": true,
-            "globalPct": 40.9
+            "globalPct": 40.8
         },
         {
             "apiName": "ACH_DRESS_DAMOCLES",
@@ -179,7 +179,7 @@
             "iconUrl": "2e8476e62a4856483d4845633388ba6b99919f24.jpg",
             "iconGrayUrl": "fcde57d4283d6e2e281c61b522ce859ebc5e2f55.jpg",
             "hidden": true,
-            "globalPct": 40
+            "globalPct": 39.9
         },
         {
             "apiName": "ACH_DEFEAT_COMMODUS",
@@ -245,7 +245,7 @@
             "iconUrl": "79994cc0e3036d4e97432e5a237d8280e9c03241.jpg",
             "iconGrayUrl": "42fdf9a7d7b94aadf2205f9fabfef0662bc872bf.jpg",
             "hidden": false,
-            "globalPct": 48.7
+            "globalPct": 48.6
         },
         {
             "apiName": "ACH_COMPLETE_GLOTT",
@@ -267,7 +267,7 @@
             "iconUrl": "54162125b8f8f5eac34fd315084e4cb8380622dd.jpg",
             "iconGrayUrl": "ada388edac6bb95a52cf38d8c8671f6d10b4bca5.jpg",
             "hidden": false,
-            "globalPct": 40.9
+            "globalPct": 40.8
         },
         {
             "apiName": "ACH_COMPLETE_COLOSSEUM",
@@ -432,7 +432,7 @@
             "iconUrl": "a1edc4228421659277d4af5c04875347bbfa8677.jpg",
             "iconGrayUrl": "820ae30c1a0c64210f6e2d95b2e620c9f7b24a40.jpg",
             "hidden": false,
-            "globalPct": 67.1
+            "globalPct": 67
         },
         {
             "apiName": "ACH_COLLECT_ALL_VISTAS",
@@ -476,7 +476,7 @@
             "iconUrl": "ba47801e8a0c3d062ec8a5aaf5134b409e171570.jpg",
             "iconGrayUrl": "d0ef54beded6db07bc2177647a85463779f94048.jpg",
             "hidden": false,
-            "globalPct": 55.5
+            "globalPct": 55.4
         },
         {
             "apiName": "ACH_COLLECT_ALL_CHRONICLES",
@@ -520,7 +520,7 @@
             "iconUrl": "21d01d2812beb147e7e3321e547a81dd233e23da.jpg",
             "iconGrayUrl": "b105d93c87bee4a6ca009449dcd3f0458825b96e.jpg",
             "hidden": false,
-            "globalPct": 5.2
+            "globalPct": 5.1
         },
         {
             "apiName": "ACH_COMPLETE_MULTI_CAMPAIGN",
@@ -575,7 +575,7 @@
             "iconUrl": "3f678ba9205b89939bb981e41279c4502a983ec6.jpg",
             "iconGrayUrl": "20805e27b51ddc8c0a2ad866d12c41f561abf688.jpg",
             "hidden": false,
-            "globalPct": 13.7
+            "globalPct": 13.6
         },
         {
             "apiName": "ACH_RANK_100",
@@ -773,7 +773,7 @@
             "iconUrl": "d14d3821d3535ec45a0a80b9479a7a65558beac1.jpg",
             "iconGrayUrl": "2aa79697f5dd3e1268c50eb737e165de52b18780.jpg",
             "hidden": false,
-            "globalPct": 5.6
+            "globalPct": 5.5
         },
         {
             "apiName": "ACH_EXECUTE_ENVIRONMENT_30_FOREST",
@@ -795,7 +795,7 @@
             "iconUrl": "04d88d6354807075df8bf54d0620010c560b4202.jpg",
             "iconGrayUrl": "51d4195bb0fa0643149d6148a0663e79afc38250.jpg",
             "hidden": false,
-            "globalPct": 2.1
+            "globalPct": 2
         },
         {
             "apiName": "ACH_EXECUTE_MULTI_1000",
@@ -822,7 +822,7 @@
             "unlockedAt": "2018-10-21T11:34:41.000Z",
             "iconUrl": "5a8abde3231d1afbc0c886d35734f77e2e32e4bd.jpg",
             "iconGrayUrl": "3b2d12da61b243372e979a3a2ac87f71824c2353.jpg",
-            "globalPct": 50.2
+            "globalPct": 50.1
         },
         {
             "apiName": "ACH_EXECUTION_FIRE",

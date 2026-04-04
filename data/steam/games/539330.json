@@ -135,7 +135,7 @@
             "iconUrl": "ba27067e37fc5fe077fcb9066bb1dfc110bbf10b.jpg",
             "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
             "hidden": true,
-            "globalPct": 40.2
+            "globalPct": 40.1
         },
         {
             "apiName": "achievement_ep1_precious",
@@ -190,7 +190,7 @@
             "iconUrl": "b4da5ec9cd2b943f8891a001c71deef1a46c803b.jpg",
             "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
             "hidden": true,
-            "globalPct": 13
+            "globalPct": 12.9
         },
         {
             "apiName": "achievement_ep1_ex_number_one",
@@ -256,7 +256,7 @@
             "iconUrl": "b4da5ec9cd2b943f8891a001c71deef1a46c803b.jpg",
             "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
             "hidden": false,
-            "globalPct": 26.2
+            "globalPct": 26.1
         },
         {
             "apiName": "achievement_ep1_friends",
@@ -278,7 +278,7 @@
             "iconUrl": "106744ad5cc7116e164e268cff58803cfd2ccbe7.jpg",
             "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
             "hidden": true,
-            "globalPct": 28.6
+            "globalPct": 28.5
         },
         {
             "apiName": "achievement_ep1_glasses",
@@ -300,7 +300,7 @@
             "iconUrl": "ba27067e37fc5fe077fcb9066bb1dfc110bbf10b.jpg",
             "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
             "hidden": true,
-            "globalPct": 8.2
+            "globalPct": 8.1
         },
         {
             "apiName": "achievement_ep1_clear_p2",
@@ -356,7 +356,7 @@
             "unlockedAt": "2018-11-15T13:29:31.000Z",
             "iconUrl": "b4da5ec9cd2b943f8891a001c71deef1a46c803b.jpg",
             "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
-            "globalPct": 26.2
+            "globalPct": 26.1
         },
         {
             "apiName": "achievement_ep1_kept_materials",
@@ -383,7 +383,7 @@
             "unlockedAt": "2018-11-14T16:26:25.000Z",
             "iconUrl": "ba27067e37fc5fe077fcb9066bb1dfc110bbf10b.jpg",
             "iconGrayUrl": "39e17f77077d630f393d03d4dfcf652fc8c93460.jpg",
-            "globalPct": 40.2
+            "globalPct": 40.1
         }
     ]
 }

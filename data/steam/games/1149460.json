@@ -80,7 +80,7 @@
             "iconUrl": "7282d1ccb65c7bfe3530d895eae14e966d320e41.jpg",
             "iconGrayUrl": "f78f6bd02c211c10a88bec2abca1c665db9c07b2.jpg",
             "hidden": false,
-            "globalPct": 4.6
+            "globalPct": 4.7
         },
         {
             "apiName": "ACH_EXOTICS",
@@ -124,7 +124,7 @@
             "iconUrl": "061789cf6fd61c007fd277f029f42fb98d8f8a61.jpg",
             "iconGrayUrl": "caa6ec77321620c9b5d3b8848e5b6cf22310bf28.jpg",
             "hidden": false,
-            "globalPct": 7.2
+            "globalPct": 7.3
         },
         {
             "apiName": "ACH_T4_BLUEPRINTS",
@@ -135,7 +135,7 @@
             "iconUrl": "f0980ae66a14b6d24fd55d54fd90a5d762dc7116.jpg",
             "iconGrayUrl": "7cf366a467c900883466e94442a5810020315e11.jpg",
             "hidden": false,
-            "globalPct": 8.9
+            "globalPct": 9
         },
         {
             "apiName": "ACH_CATCH_ALL_FISH",
@@ -168,7 +168,7 @@
             "iconUrl": "f762790fdfbe7871cc933d32ee0cf6f373683df6.jpg",
             "iconGrayUrl": "fdfbe004deaf874661e956d33ead65c6e523ec4a.jpg",
             "hidden": false,
-            "globalPct": 14
+            "globalPct": 14.1
         },
         {
             "apiName": "ACH_STRUCK_BY_LIGHTNING_AGAIN",
@@ -179,7 +179,7 @@
             "iconUrl": "76cfbb48f0877116d8223301fb94f11b0aa367bd.jpg",
             "iconGrayUrl": "460a6fcf25227d5947a8d967d4ce819f6c9e40ca.jpg",
             "hidden": false,
-            "globalPct": 6
+            "globalPct": 6.1
         },
         {
             "apiName": "ACH_GRENADE_DEER",
@@ -201,7 +201,7 @@
             "iconUrl": "10c72ebea5fb62d6c14574f524686d8ec7f3c08e.jpg",
             "iconGrayUrl": "e03e1df784057357e2e484c494a51c135a6268d8.jpg",
             "hidden": false,
-            "globalPct": 28.2
+            "globalPct": 28.3
         },
         {
             "apiName": "ACH_MEDIC",
@@ -212,7 +212,7 @@
             "iconUrl": "3df3801175d7b9d52f0742e1c2efb7bf965296cb.jpg",
             "iconGrayUrl": "08d21b815f114318d3ada42928b8f1e3026dd52f.jpg",
             "hidden": false,
-            "globalPct": 36
+            "globalPct": 36.1
         },
         {
             "apiName": "ACH_KILL_ZEBRA",
@@ -278,7 +278,7 @@
             "iconUrl": "20a6a7501eed457b591a703ec3f5aa0519239a77.jpg",
             "iconGrayUrl": "357cce014981a478eb80eeafb920b9ac86447957.jpg",
             "hidden": false,
-            "globalPct": 31.2
+            "globalPct": 31.3
         },
         {
             "apiName": "ACH_LEVEL_CAP",
@@ -289,7 +289,7 @@
             "iconUrl": "ea55ddeb0c413a74f3ffe007ca5c8970ca7671ba.jpg",
             "iconGrayUrl": "d16eced5c4e2a98121127c707d7cd55341ee9b92.jpg",
             "hidden": false,
-            "globalPct": 14.6
+            "globalPct": 14.7
         },
         {
             "apiName": "ACH_MELEE_KILLS",
@@ -377,7 +377,7 @@
             "iconUrl": "1a718c4693115828f005d570c9c6ded690c8fbc7.jpg",
             "iconGrayUrl": "b9271d8f7f32d69b6749291fa90346b59b484bdc.jpg",
             "hidden": false,
-            "globalPct": 17.2
+            "globalPct": 17.3
         },
         {
             "apiName": "ACH_SURVIVE",
@@ -399,7 +399,7 @@
             "iconUrl": "a89398f643ba08303a5395423963d8d24ef60085.jpg",
             "iconGrayUrl": "05010bd29d9e3a24fd1186915cb52f6a1a8ef166.jpg",
             "hidden": false,
-            "globalPct": 63.1
+            "globalPct": 63.2
         },
         {
             "apiName": "ACH_EXPLORE_BIOMES",
@@ -443,7 +443,7 @@
             "iconUrl": "462ad2410267f735dcb9cf36ba797ebd8bbd4817.jpg",
             "iconGrayUrl": "d060bf48176367c18f0c3c0e54028e05fbe9c7bb.jpg",
             "hidden": false,
-            "globalPct": 33.9
+            "globalPct": 34
         },
         {
             "apiName": "ACH_KILL_ROCKGOLEM_BOSS",
@@ -498,7 +498,7 @@
             "iconUrl": "0d39186938a5c69abbb30f9b36e5ed4896c019b9.jpg",
             "iconGrayUrl": "145c18a4567010ef61f9e6ebef9d35a9bec6f3a1.jpg",
             "hidden": false,
-            "globalPct": 1
+            "globalPct": 1.1
         },
         {
             "apiName": "ACH_KILL_ROCKGOLEM_BOSS_HARD",
@@ -641,7 +641,7 @@
             "iconUrl": "206dcad102abc9f13b79431ea4b8f4d88729edd9.jpg",
             "iconGrayUrl": "baf3315523f8dfdee89036c5a22680f144aff3dd.jpg",
             "hidden": false,
-            "globalPct": 2.1
+            "globalPct": 2.2
         },
         {
             "apiName": "ACH_EXTRACT_BIOMASS",
@@ -883,7 +883,7 @@
             "iconUrl": "52fa2719af0a6e9236eada3f3a1a552df493215f.jpg",
             "iconGrayUrl": "b0d7713efb4b56b90b0d4440ebedf536e8ee9567.jpg",
             "hidden": false,
-            "globalPct": 0.5
+            "globalPct": 0.6
         },
         {
             "apiName": "ACH_PROMETHEUS",
@@ -1081,7 +1081,7 @@
             "iconUrl": "5c884f74cfa231309452b4606591cc66f26b6ae3.jpg",
             "iconGrayUrl": "8bd1a21526d0222119599e63b4e45e6b3ae7f59e.jpg",
             "hidden": false,
-            "globalPct": 3.2
+            "globalPct": 3.3
         },
         {
             "apiName": "ACH_TAME_LEVEL50",
@@ -1180,7 +1180,7 @@
             "iconUrl": "c24c7b3d2e37e69d8e7604b79d042f2768b399e7.jpg",
             "iconGrayUrl": "841c28b05382967f138099d8fcdd13dc0c3ab936.jpg",
             "hidden": false,
-            "globalPct": 1.5
+            "globalPct": 1.6
         },
         {
             "apiName": "ACH_FALL_SURVIVE",
@@ -1191,7 +1191,7 @@
             "iconUrl": "c7d8e2141ab65179c926bbb79ea69b135831d677.jpg",
             "iconGrayUrl": "c4915ab4a1bdc2c116e52f9a6be1bb9cd498fbbf.jpg",
             "hidden": false,
-            "globalPct": 10.9
+            "globalPct": 11
         },
         {
             "apiName": "ACH_METEOR_EVENT",
@@ -1246,7 +1246,7 @@
             "iconUrl": "9e0a902c243d0e99803ac3c02894d6e8c3f7f383.jpg",
             "iconGrayUrl": "e0d1352dfcfc0d0fefd08dd40e82960d43443b6e.jpg",
             "hidden": false,
-            "globalPct": 0.8
+            "globalPct": 0.9
         },
         {
             "apiName": "ACH_TAME_HOME",
@@ -1257,7 +1257,7 @@
             "iconUrl": "8a6e6fc2bde08e34bc9df29b6b7fafe42f25d0a3.jpg",
             "iconGrayUrl": "e45aefae792fba98cd0adef364bcc4cdf4607fa9.jpg",
             "hidden": false,
-            "globalPct": 14.2
+            "globalPct": 14.3
         },
         {
             "apiName": "ACH_TAME_ORDER_CHICKEN",
@@ -1334,7 +1334,7 @@
             "iconUrl": "19ce7ac40747cc6471799751bcc0e5b41b91c6ed.jpg",
             "iconGrayUrl": "fca5c07b405738528acc41a47d575ae60f1f1dee.jpg",
             "hidden": false,
-            "globalPct": 1.3
+            "globalPct": 1.4
         },
         {
             "apiName": "ACH_AT_ALL_COSTS",
@@ -1345,7 +1345,7 @@
             "iconUrl": "e07651e9092d2c0b3e70ed23bd839243b99a783c.jpg",
             "iconGrayUrl": "0d13884be28d6dddb6de8fc544777f8138a1b3fe.jpg",
             "hidden": true,
-            "globalPct": 0.2
+            "globalPct": 0.3
         },
         {
             "apiName": "ACH_BIOCHEMICAL_WARFARE",
@@ -1411,7 +1411,7 @@
             "iconUrl": "193c1e6d40f1c1ed87d2598509deac083003727e.jpg",
             "iconGrayUrl": "1161fddc443b527f69c08111f74b43038857220b.jpg",
             "hidden": false,
-            "globalPct": 1.2
+            "globalPct": 1.3
         },
         {
             "apiName": "ACH_ENCRYPTED",
@@ -1433,7 +1433,7 @@
             "iconUrl": "5832f34acf5f16a4717493e6402298cb322d19fc.jpg",
             "iconGrayUrl": "248ec2f523685dbf5c038f26846a8238a875117c.jpg",
             "hidden": true,
-            "globalPct": 1.3
+            "globalPct": 1.4
         },
         {
             "apiName": "ACH_EYES_ON_ME",
@@ -1466,7 +1466,7 @@
             "iconUrl": "f0da341e2d726f12cabf60b44e58fe1b7068f37d.jpg",
             "iconGrayUrl": "48933bb20e2c1e9a0d9964a53cff372de7bc9449.jpg",
             "hidden": false,
-            "globalPct": 0.8
+            "globalPct": 0.9
         },
         {
             "apiName": "ACH_GHOSTED",
@@ -1532,7 +1532,7 @@
             "iconUrl": "d114a63db6722839931d68a5b27b9a4860d2a52d.jpg",
             "iconGrayUrl": "52cd3d07a44f89cd0613608a5e73656c7d47cf8e.jpg",
             "hidden": false,
-            "globalPct": 0.8
+            "globalPct": 0.9
         },
         {
             "apiName": "ACH_HARD_RESET",
@@ -1598,7 +1598,7 @@
             "iconUrl": "e01ecb6ef576e1f425a4bbeaf39133364f96914e.jpg",
             "iconGrayUrl": "816b7471b28f91e3366a7a955b6fbea6944567ab.jpg",
             "hidden": false,
-            "globalPct": 3.6
+            "globalPct": 3.7
         },
         {
             "apiName": "ACH_MUSHROOMS",
@@ -1631,7 +1631,7 @@
             "iconUrl": "83de24f42cfc909d6d40d87588ccdea3658b9a62.jpg",
             "iconGrayUrl": "7c81c5fef56a95e2ed7178ab5b7836bce733e3a5.jpg",
             "hidden": false,
-            "globalPct": 0.9
+            "globalPct": 1
         },
         {
             "apiName": "ACH_OFF_THE_CHARTS",
@@ -1697,7 +1697,7 @@
             "iconUrl": "a3ccefdf6c500e2d01590575b7a6a3ea8dd62e43.jpg",
             "iconGrayUrl": "67fc15741dbde567927a68c6048eddff8a85048a.jpg",
             "hidden": false,
-            "globalPct": 0.1
+            "globalPct": 0.2
         },
         {
             "apiName": "ACH_PLOT_ARMOR",
@@ -1730,7 +1730,7 @@
             "iconUrl": "2b464cb5e42e185601a39be2ec9284ced1f91619.jpg",
             "iconGrayUrl": "5258e721fd8dc75da66c5fe873a9060d3260c226.jpg",
             "hidden": false,
-            "globalPct": 0.3
+            "globalPct": 0.4
         },
         {
             "apiName": "ACH_ROCK_OUT",
@@ -1818,7 +1818,7 @@
             "iconUrl": "7b6b0b862d4a278195ae35201f17864de9fa02a9.jpg",
             "iconGrayUrl": "09272fd4d04ab35ec98f6a806a58b7e888cb61d5.jpg",
             "hidden": false,
-            "globalPct": 1.3
+            "globalPct": 1.4
         },
         {
             "apiName": "ACH_THE_PEOPLES_SYNDICATE",

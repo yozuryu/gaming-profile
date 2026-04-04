@@ -245,7 +245,7 @@
             "iconUrl": "a1a65503617224f590f5bacc804a3f64b472ef6c.jpg",
             "iconGrayUrl": "cff1b55ab1f613964e0912fe205c45076d9b5a12.jpg",
             "hidden": false,
-            "globalPct": 31.4
+            "globalPct": 31.3
         },
         {
             "apiName": "ACH_DEFEAT_BROBOT",
@@ -344,7 +344,7 @@
             "iconUrl": "359a93202aa6dd7ab36e2f0c8df2255726e78c89.jpg",
             "iconGrayUrl": "f37e03b0b24949fe6fcc41f4d93218db64e05ffe.jpg",
             "hidden": false,
-            "globalPct": 32.9
+            "globalPct": 32.8
         },
         {
             "apiName": "ACH_WIN_STAR_GOALS",
@@ -3193,7 +3193,7 @@
             "iconUrl": "3e9d456ea9486b97083f435a76c78e279381bc70.jpg",
             "iconGrayUrl": "757a0796d71a402444313c9c338853ae53856756.jpg",
             "hidden": false,
-            "globalPct": 1.4
+            "globalPct": 1.5
         },
         {
             "apiName": "ACH_OJ47_C21",
@@ -3215,7 +3215,7 @@
             "iconUrl": "1a5d1414aa1dea2ca19b2fed0596e7a9debf371c.jpg",
             "iconGrayUrl": "c6ce69600b6cc54f448ad4ffed2475115f003124.jpg",
             "hidden": false,
-            "globalPct": 1.4
+            "globalPct": 1.5
         },
         {
             "apiName": "ACH_OJ47_C23",
@@ -3369,7 +3369,7 @@
             "iconUrl": "e0f55d1ac68feb534d3587dfa75d4ea3c674effe.jpg",
             "iconGrayUrl": "b12cb37ca270ce9aa3e4600fd0b26898c1b304cd.jpg",
             "hidden": false,
-            "globalPct": 1.6
+            "globalPct": 1.7
         },
         {
             "apiName": "ACH_OJ50_C11",
@@ -3534,7 +3534,7 @@
             "iconUrl": "ccb599c0988a9d5152dfdf5facf04e17c7c953df.jpg",
             "iconGrayUrl": "754b6cb892814a6ef2c1ac3f51c9ba384b1108f6.jpg",
             "hidden": false,
-            "globalPct": 1.3
+            "globalPct": 1.4
         },
         {
             "apiName": "ACH_OJ53_C01",
@@ -3611,7 +3611,7 @@
             "iconUrl": "2b86f470ecba8f0ae851c2ec49afed33b98bb090.jpg",
             "iconGrayUrl": "7f56f7cb1a3a20c9b1405c5e1bbebb46855d8d47.jpg",
             "hidden": false,
-            "globalPct": 0.9
+            "globalPct": 1
         },
         {
             "apiName": "ACH_OJ54_C02",
@@ -3864,7 +3864,7 @@
             "iconUrl": "d360503268e432b4caa3f8a133e6d7a0ad3f235b.jpg",
             "iconGrayUrl": "27a009b52c465afa08cc1f7b5aa3438884667568.jpg",
             "hidden": false,
-            "globalPct": 0.4
+            "globalPct": 0.5
         },
         {
             "apiName": "ACH_OJ58_C02",
@@ -3995,7 +3995,7 @@
             "unlockedAt": "2017-09-11T12:00:36.000Z",
             "iconUrl": "a1a65503617224f590f5bacc804a3f64b472ef6c.jpg",
             "iconGrayUrl": "cff1b55ab1f613964e0912fe205c45076d9b5a12.jpg",
-            "globalPct": 31.4
+            "globalPct": 31.3
         },
         {
             "apiName": "ACH_BUY_RARE",
