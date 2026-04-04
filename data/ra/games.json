@@ -19016,8 +19016,8 @@
                     "trueRatio": 3,
                     "type": "missable",
                     "badgeName": "436078",
-                    "numAwarded": 89,
-                    "numAwardedHardcore": 72,
+                    "numAwarded": 90,
+                    "numAwardedHardcore": 73,
                     "displayOrder": 20
                 },
                 "381702": {
@@ -19121,11 +19121,11 @@
                     "title": "The Quest for the Monoliths",
                     "description": "Complete Phase 2 of Cecilia's Tale",
                     "points": 10,
-                    "trueRatio": 44,
+                    "trueRatio": 43,
                     "type": null,
                     "badgeName": "436119",
-                    "numAwarded": 59,
-                    "numAwardedHardcore": 47,
+                    "numAwarded": 60,
+                    "numAwardedHardcore": 48,
                     "displayOrder": 90
                 },
                 "381711": {
@@ -41540,7 +41540,7 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "162755",
-                    "numAwarded": 1153,
+                    "numAwarded": 1154,
                     "numAwardedHardcore": 464,
                     "displayOrder": 4
                 },
@@ -41552,7 +41552,7 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "162756",
-                    "numAwarded": 1769,
+                    "numAwarded": 1770,
                     "numAwardedHardcore": 678,
                     "displayOrder": 100
                 },
@@ -41588,7 +41588,7 @@
                     "trueRatio": 11,
                     "type": "progression",
                     "badgeName": "162758",
-                    "numAwarded": 947,
+                    "numAwarded": 948,
                     "numAwardedHardcore": 390,
                     "displayOrder": 6
                 },
@@ -42706,7 +42706,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "162849",
-                    "numAwarded": 1434,
+                    "numAwarded": 1435,
                     "numAwardedHardcore": 563,
                     "displayOrder": 613
                 },
@@ -42730,7 +42730,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "162851",
-                    "numAwarded": 1264,
+                    "numAwarded": 1265,
                     "numAwardedHardcore": 536,
                     "displayOrder": 615
                 },
@@ -42754,7 +42754,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "162853",
-                    "numAwarded": 1238,
+                    "numAwarded": 1239,
                     "numAwardedHardcore": 502,
                     "displayOrder": 617
                 },
@@ -42766,7 +42766,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "162854",
-                    "numAwarded": 1437,
+                    "numAwarded": 1438,
                     "numAwardedHardcore": 623,
                     "displayOrder": 618
                 },
@@ -42802,7 +42802,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "162857",
-                    "numAwarded": 1581,
+                    "numAwarded": 1582,
                     "numAwardedHardcore": 622,
                     "displayOrder": 621
                 },
@@ -42994,7 +42994,7 @@
                     "trueRatio": 11,
                     "type": "progression",
                     "badgeName": "162760",
-                    "numAwarded": 1058,
+                    "numAwarded": 1059,
                     "numAwardedHardcore": 428,
                     "displayOrder": 5
                 },
@@ -43090,7 +43090,7 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "162880",
-                    "numAwarded": 1400,
+                    "numAwarded": 1401,
                     "numAwardedHardcore": 557,
                     "displayOrder": 700
                 },
@@ -63906,8 +63906,8 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 140,
-            "numDistinctPlayersHardcore": 140,
+            "numDistinctPlayersCasual": 141,
+            "numDistinctPlayersHardcore": 141,
             "numAchievements": 80,
             "numAwardedToUser": 73,
             "numAwardedToUserHardcore": 73,
@@ -63928,8 +63928,8 @@
                     "trueRatio": 9,
                     "type": "progression",
                     "badgeName": "649918",
-                    "numAwarded": 124,
-                    "numAwardedHardcore": 104,
+                    "numAwarded": 125,
+                    "numAwardedHardcore": 105,
                     "displayOrder": 2,
                     "dateEarned": "2026-01-14 15:24:52",
                     "dateEarnedHardcore": "2026-01-14 15:24:52"
@@ -64009,7 +64009,7 @@
                     "title": "Railcage Overload",
                     "description": "Defeat Jigowatt",
                     "points": 10,
-                    "trueRatio": 38,
+                    "trueRatio": 39,
                     "type": "progression",
                     "badgeName": "649924",
                     "numAwarded": 55,
@@ -64129,7 +64129,7 @@
                     "title": "A Segmented Siege",
                     "description": "Defeat Scaber",
                     "points": 10,
-                    "trueRatio": 48,
+                    "trueRatio": 49,
                     "type": "progression",
                     "badgeName": "649929",
                     "numAwarded": 36,
@@ -64737,7 +64737,7 @@
                     "title": "Colorful Set",
                     "description": "Receive the reward for rescuing 60 people",
                     "points": 10,
-                    "trueRatio": 48,
+                    "trueRatio": 49,
                     "type": null,
                     "badgeName": "649971",
                     "numAwarded": 36,
@@ -64807,7 +64807,7 @@
                     "title": "A Saikyo Tag Team",
                     "description": "Get an accessory and an email address from Sharon",
                     "points": 3,
-                    "trueRatio": 15,
+                    "trueRatio": 16,
                     "type": null,
                     "badgeName": "649976",
                     "numAwarded": 33,
@@ -64863,7 +64863,7 @@
                     "title": "Pen and Paper",
                     "description": "Get an accessory and an email address from Emille",
                     "points": 3,
-                    "trueRatio": 15,
+                    "trueRatio": 16,
                     "type": null,
                     "badgeName": "649980",
                     "numAwarded": 33,
@@ -64877,7 +64877,7 @@
                     "title": "You Wanna Be Friends with Me?",
                     "description": "Get some gear and an email address from Neko",
                     "points": 3,
-                    "trueRatio": 15,
+                    "trueRatio": 16,
                     "type": null,
                     "badgeName": "649981",
                     "numAwarded": 33,
@@ -64891,7 +64891,7 @@
                     "title": "Human Lives Can Be Fleeting Things",
                     "description": "Get a weapon and an email address from Aitelle",
                     "points": 3,
-                    "trueRatio": 15,
+                    "trueRatio": 16,
                     "type": null,
                     "badgeName": "649982",
                     "numAwarded": 33,
@@ -64989,7 +64989,7 @@
                     "title": "Tokyo Tower Cleansed",
                     "description": "Clear all the dragons in Tokyo Tower",
                     "points": 10,
-                    "trueRatio": 54,
+                    "trueRatio": 55,
                     "type": null,
                     "badgeName": "649989",
                     "numAwarded": 32,
@@ -65006,8 +65006,8 @@
                     "trueRatio": 3,
                     "type": "progression",
                     "badgeName": "649990",
-                    "numAwarded": 134,
-                    "numAwardedHardcore": 110,
+                    "numAwarded": 135,
+                    "numAwardedHardcore": 111,
                     "displayOrder": 1,
                     "dateEarned": "2026-01-14 15:16:59",
                     "dateEarnedHardcore": "2026-01-14 15:16:59"
@@ -65034,8 +65034,8 @@
             "consoleId": 24,
             "consoleName": "Pokemon Mini",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1786,
-            "numDistinctPlayersHardcore": 1786,
+            "numDistinctPlayersCasual": 1787,
+            "numDistinctPlayersHardcore": 1787,
             "numAchievements": 6,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -65056,8 +65056,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178581",
-                    "numAwarded": 1771,
-                    "numAwardedHardcore": 1676,
+                    "numAwarded": 1772,
+                    "numAwardedHardcore": 1677,
                     "displayOrder": 1
                 },
                 "158869": {
@@ -65068,8 +65068,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178582",
-                    "numAwarded": 1775,
-                    "numAwardedHardcore": 1675,
+                    "numAwarded": 1776,
+                    "numAwardedHardcore": 1676,
                     "displayOrder": 2
                 },
                 "158870": {
@@ -65080,8 +65080,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178583",
-                    "numAwarded": 1777,
-                    "numAwardedHardcore": 1678,
+                    "numAwarded": 1778,
+                    "numAwardedHardcore": 1679,
                     "displayOrder": 3
                 },
                 "158871": {
@@ -65092,8 +65092,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178584",
-                    "numAwarded": 1767,
-                    "numAwardedHardcore": 1672,
+                    "numAwarded": 1768,
+                    "numAwardedHardcore": 1673,
                     "displayOrder": 4
                 },
                 "158872": {
@@ -65104,8 +65104,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178585",
-                    "numAwarded": 1773,
-                    "numAwardedHardcore": 1673,
+                    "numAwarded": 1774,
+                    "numAwardedHardcore": 1674,
                     "displayOrder": 5
                 },
                 "158873": {
@@ -65116,8 +65116,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178586",
-                    "numAwarded": 1734,
-                    "numAwardedHardcore": 1649,
+                    "numAwarded": 1735,
+                    "numAwardedHardcore": 1650,
                     "displayOrder": 6
                 }
             }
