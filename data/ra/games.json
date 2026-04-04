@@ -21258,7 +21258,7 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "196786",
-                    "numAwarded": 89,
+                    "numAwarded": 90,
                     "numAwardedHardcore": 76,
                     "displayOrder": 57
                 },
@@ -21270,7 +21270,7 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "196786",
-                    "numAwarded": 88,
+                    "numAwarded": 89,
                     "numAwardedHardcore": 75,
                     "displayOrder": 58
                 },
@@ -22074,7 +22074,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "196824",
-                    "numAwarded": 111,
+                    "numAwarded": 112,
                     "numAwardedHardcore": 94,
                     "displayOrder": 105
                 }
@@ -41470,8 +41470,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5021,
-            "numDistinctPlayersHardcore": 5021,
+            "numDistinctPlayersCasual": 5022,
+            "numDistinctPlayersHardcore": 5022,
             "numAchievements": 146,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -42680,7 +42680,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "162847",
-                    "numAwarded": 4815,
+                    "numAwarded": 4816,
                     "numAwardedHardcore": 1696,
                     "displayOrder": 611,
                     "dateEarned": "2026-03-30 16:15:09",
@@ -43412,7 +43412,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "117207",
-                    "numAwarded": 1246,
+                    "numAwarded": 1247,
                     "numAwardedHardcore": 568,
                     "displayOrder": 0
                 },
@@ -43460,7 +43460,7 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "117194",
-                    "numAwarded": 742,
+                    "numAwarded": 743,
                     "numAwardedHardcore": 384,
                     "displayOrder": 0
                 },
@@ -44681,11 +44681,11 @@
                     "title": "Massacre",
                     "description": "Obtain the Slayer sword",
                     "points": 25,
-                    "trueRatio": 150,
+                    "trueRatio": 149,
                     "type": null,
                     "badgeName": "119884",
-                    "numAwarded": 125,
-                    "numAwardedHardcore": 93,
+                    "numAwarded": 126,
+                    "numAwardedHardcore": 94,
                     "displayOrder": 2
                 },
                 "109761": {
@@ -44777,11 +44777,11 @@
                     "title": "Get Off Your High Horse",
                     "description": "Defeat Rider",
                     "points": 25,
-                    "trueRatio": 143,
+                    "trueRatio": 142,
                     "type": null,
                     "badgeName": "120198",
-                    "numAwarded": 153,
-                    "numAwardedHardcore": 98,
+                    "numAwarded": 154,
+                    "numAwardedHardcore": 99,
                     "displayOrder": 4
                 },
                 "110235": {
