@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-04-05
+
+### RetroAchievements
+
+- Guide strip (GameFAQs / YouTube fallback links) now appears on every row in the Watchlist (backlog) tab, not just played GameCards
+
 ## 2026-04-03
 
 ### Steam
