@@ -44682,7 +44682,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "116646",
-                    "numAwarded": 1814,
+                    "numAwarded": 1815,
                     "numAwardedHardcore": 751,
                     "displayOrder": 0
                 },
@@ -44694,7 +44694,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "117192",
-                    "numAwarded": 1730,
+                    "numAwarded": 1731,
                     "numAwardedHardcore": 722,
                     "displayOrder": 0
                 },
@@ -66069,11 +66069,11 @@
                     "title": "Final Showdown Set",
                     "description": "Receive the reward for rescuing 75 people",
                     "points": 10,
-                    "trueRatio": 56,
+                    "trueRatio": 55,
                     "type": "missable",
                     "badgeName": "649972",
-                    "numAwarded": 29,
-                    "numAwardedHardcore": 28,
+                    "numAwarded": 30,
+                    "numAwardedHardcore": 29,
                     "displayOrder": 64,
                     "dateEarned": "2026-04-02 16:08:59",
                     "dateEarnedHardcore": "2026-04-02 16:08:59"
@@ -66352,8 +66352,8 @@
             "consoleId": 24,
             "consoleName": "Pokemon Mini",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1788,
-            "numDistinctPlayersHardcore": 1788,
+            "numDistinctPlayersCasual": 1789,
+            "numDistinctPlayersHardcore": 1789,
             "numAchievements": 6,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -66374,8 +66374,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178581",
-                    "numAwarded": 1773,
-                    "numAwardedHardcore": 1678,
+                    "numAwarded": 1774,
+                    "numAwardedHardcore": 1679,
                     "displayOrder": 1
                 },
                 "158869": {
@@ -66386,8 +66386,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178582",
-                    "numAwarded": 1777,
-                    "numAwardedHardcore": 1677,
+                    "numAwarded": 1778,
+                    "numAwardedHardcore": 1678,
                     "displayOrder": 2
                 },
                 "158870": {
@@ -66398,8 +66398,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178583",
-                    "numAwarded": 1779,
-                    "numAwardedHardcore": 1680,
+                    "numAwarded": 1780,
+                    "numAwardedHardcore": 1681,
                     "displayOrder": 3
                 },
                 "158871": {
@@ -66410,8 +66410,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178584",
-                    "numAwarded": 1769,
-                    "numAwardedHardcore": 1674,
+                    "numAwarded": 1770,
+                    "numAwardedHardcore": 1675,
                     "displayOrder": 4
                 },
                 "158872": {
@@ -66422,8 +66422,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178585",
-                    "numAwarded": 1775,
-                    "numAwardedHardcore": 1675,
+                    "numAwarded": 1776,
+                    "numAwardedHardcore": 1676,
                     "displayOrder": 5
                 },
                 "158873": {
@@ -66434,8 +66434,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178586",
-                    "numAwarded": 1736,
-                    "numAwardedHardcore": 1651,
+                    "numAwarded": 1737,
+                    "numAwardedHardcore": 1652,
                     "displayOrder": 6
                 }
             }
