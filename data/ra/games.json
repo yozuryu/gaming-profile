@@ -19004,7 +19004,7 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "436077",
-                    "numAwarded": 169,
+                    "numAwarded": 170,
                     "numAwardedHardcore": 127,
                     "displayOrder": 10
                 },
@@ -19016,7 +19016,7 @@
                     "trueRatio": 3,
                     "type": "missable",
                     "badgeName": "436078",
-                    "numAwarded": 90,
+                    "numAwarded": 91,
                     "numAwardedHardcore": 73,
                     "displayOrder": 20
                 },
@@ -21462,8 +21462,8 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "196790",
-                    "numAwarded": 86,
-                    "numAwardedHardcore": 73,
+                    "numAwarded": 87,
+                    "numAwardedHardcore": 74,
                     "displayOrder": 56
                 },
                 "176544": {
@@ -41744,8 +41744,8 @@
                     "trueRatio": 15,
                     "type": "progression",
                     "badgeName": "162773",
-                    "numAwarded": 661,
-                    "numAwardedHardcore": 272,
+                    "numAwarded": 662,
+                    "numAwardedHardcore": 273,
                     "displayOrder": 19
                 },
                 "146088": {
@@ -41768,8 +41768,8 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "162775",
-                    "numAwarded": 627,
-                    "numAwardedHardcore": 255,
+                    "numAwarded": 628,
+                    "numAwardedHardcore": 256,
                     "displayOrder": 21
                 },
                 "146090": {
@@ -41885,11 +41885,11 @@
                     "title": "Doesn't Vlad Use That Technique?",
                     "description": "Learn the Shish Kebab technique.",
                     "points": 4,
-                    "trueRatio": 15,
+                    "trueRatio": 14,
                     "type": null,
                     "badgeName": "162784",
-                    "numAwarded": 529,
-                    "numAwardedHardcore": 220,
+                    "numAwarded": 530,
+                    "numAwardedHardcore": 221,
                     "displayOrder": 300
                 },
                 "146100": {
@@ -41900,8 +41900,8 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "162785",
-                    "numAwarded": 583,
-                    "numAwardedHardcore": 234,
+                    "numAwarded": 584,
+                    "numAwardedHardcore": 235,
                     "displayOrder": 301
                 },
                 "146101": {
@@ -42778,8 +42778,8 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "162855",
-                    "numAwarded": 597,
-                    "numAwardedHardcore": 247,
+                    "numAwarded": 598,
+                    "numAwardedHardcore": 248,
                     "displayOrder": 619
                 },
                 "146174": {
@@ -43246,8 +43246,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 3554,
-            "numDistinctPlayersHardcore": 3554,
+            "numDistinctPlayersCasual": 3556,
+            "numDistinctPlayersHardcore": 3556,
             "numAchievements": 129,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -43268,8 +43268,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "116644",
-                    "numAwarded": 3104,
-                    "numAwardedHardcore": 1177,
+                    "numAwarded": 3105,
+                    "numAwardedHardcore": 1178,
                     "displayOrder": 0
                 },
                 "108754": {
@@ -43316,7 +43316,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "117190",
-                    "numAwarded": 2134,
+                    "numAwarded": 2136,
                     "numAwardedHardcore": 856,
                     "displayOrder": 0
                 },
@@ -43328,7 +43328,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "116645",
-                    "numAwarded": 2052,
+                    "numAwarded": 2053,
                     "numAwardedHardcore": 820,
                     "displayOrder": 0
                 },
@@ -43916,8 +43916,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "117215",
-                    "numAwarded": 506,
-                    "numAwardedHardcore": 260,
+                    "numAwarded": 507,
+                    "numAwardedHardcore": 261,
                     "displayOrder": 0
                 },
                 "108808": {
@@ -44480,7 +44480,7 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "119319",
-                    "numAwarded": 1429,
+                    "numAwarded": 1430,
                     "numAwardedHardcore": 613,
                     "displayOrder": 2
                 },
@@ -44492,8 +44492,8 @@
                     "trueRatio": 17,
                     "type": null,
                     "badgeName": "119320",
-                    "numAwarded": 911,
-                    "numAwardedHardcore": 422,
+                    "numAwarded": 912,
+                    "numAwardedHardcore": 423,
                     "displayOrder": 2
                 },
                 "109108": {
@@ -44540,7 +44540,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "119877",
-                    "numAwarded": 2002,
+                    "numAwarded": 2004,
                     "numAwardedHardcore": 840,
                     "displayOrder": 2
                 },
