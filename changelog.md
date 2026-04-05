@@ -5,6 +5,13 @@
 ### RetroAchievements
 
 - Admin panel RA Guides module now includes watchlist (Want to Play) games in the game list, merged with played games and deduplicated by ID; watchlist-only entries are labeled **WL** in the sidebar
+- Added RA Series Hub: new `data/ra/series.json` stores named series with game ID arrays (supports multi-series per game); admin panel Series module (two-panel: series list + game assignment with search); watchlist tab gains a **Series** grouping option — unassigned games fall into an "Other" group
+- Admin Series module: added series recommendations — analyzes unassigned watchlist/played games, groups by shared name prefix (strips subtitles, roman numerals, numbers), shows 💡 badge with count in left panel footer; suggestions view lists each group with a "Create Series" button that pre-fills the name and pre-assigns the games; minimum 3 games required to surface a recommendation
+- Admin Series module: per-series add panel now shows suggested games (unassigned games whose name prefix matches the series name) before the search prompt
+- Admin Series module: all game titles are clickable links to the RA game page in all lists (assigned, suggestions, search results, global recommendations)
+- Admin Series module: fixed `fromWatchlist` flag — games that are both played and on the watchlist were incorrectly missing the WL badge; fixed by building a watchlist ID set before merging
+- Admin Series module: search bar no longer clears after adding a game to a series
+- Watchlist series grouping: series with more than 3 games are collapsed by default
 
 ## 2026-04-03
 

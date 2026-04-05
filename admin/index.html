@@ -36,6 +36,7 @@ import { createRoot } from 'react-dom/client';
 
 const API       = 'http://localhost:3131/api';
 const RA_MEDIA  = 'https://media.retroachievements.org';
+const RA_SITE   = 'https://retroachievements.org';
 
 // ── Generic fetch helpers ─────────────────────────────────────────────────────
 
@@ -371,6 +372,363 @@ function RAGuidesModule() {
                                     + add {c}
                                 </button>
                             ))}
+                        </div>
+                    </>
+                )}
+            </div>
+        </div>
+    );
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// MODULE: RA Series
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// modal: null | { mode: 'add' | 'rename' | 'delete', id?: string, initialValue?: string, suggestedGameIds?: number[] }
+function SeriesModal({ mode, seriesName, initialValue, onConfirm, onCancel }) {
+    const [value, setValue] = useState(mode === 'rename' ? seriesName : (initialValue ?? ''));
+    const inputRef = useRef(null);
+
+    useEffect(() => {
+        inputRef.current?.focus();
+        inputRef.current?.select();
+    }, []);
+
+    const onKey = (e) => {
+        if (e.key === 'Enter' && (mode === 'delete' || value.trim())) onConfirm(value.trim());
+        if (e.key === 'Escape') onCancel();
+    };
+
+    return (
+        <div className="fixed inset-0 z-50 flex items-center justify-center" onKeyDown={onKey}>
+            <div className="absolute inset-0 bg-black/60" onClick={onCancel} />
+            <div className="relative z-10 bg-[#1b2838] border border-[#2a475e] rounded-[3px] shadow-xl w-[320px] flex flex-col">
+                <div className="flex items-center justify-between px-4 py-3 border-b border-[#2a475e]">
+                    <span className="text-[12px] text-white font-medium">
+                        {mode === 'add' ? 'New Series' : mode === 'rename' ? 'Rename Series' : 'Delete Series'}
+                    </span>
+                    <button className="btn-ghost text-[16px] leading-none" onClick={onCancel}>×</button>
+                </div>
+                <div className="px-4 py-4 flex flex-col gap-3">
+                    {mode === 'delete' ? (
+                        <p className="text-[12px] text-[#8f98a0]">
+                            Delete <span className="text-white font-medium">"{seriesName}"</span>? This cannot be undone.
+                        </p>
+                    ) : (
+                        <input ref={inputRef} className="input" value={value} onChange={e => setValue(e.target.value)}
+                            placeholder="Series name…" />
+                    )}
+                    <div className="flex justify-end gap-2">
+                        <button className="btn-ghost" onClick={onCancel}>Cancel</button>
+                        {mode === 'delete'
+                            ? <button className="btn-primary" style={{background:'#c0392b'}}
+                                onClick={() => onConfirm()}>Delete</button>
+                            : <button className="btn-primary" disabled={!value.trim()}
+                                onClick={() => onConfirm(value.trim())}>
+                                {mode === 'add' ? 'Create' : 'Rename'}
+                              </button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+// Derive a "series key" from a game title by stripping subtitles and trailing numbers/roman numerals
+function seriesKey(title) {
+    let s = title;
+    s = s.replace(/\[.*?\]/g, '');   // [Subset - ...], [E3 Preview], etc.
+    s = s.replace(/~[^~]+~/g, '');   // ~Tag~
+    s = s.replace(/\s*:\s+.*$/, ''); // ": subtitle"
+    s = s.replace(/\s+(XIV|XIII|XII|XI|IX|VIII|VII|VI|IV|III|II|I|XVI|XV|X|V)\s*$/i, '');
+    s = s.replace(/\s+\d+(\s*[&]\s*\d+)?\s*$/, '');
+    s = s.replace(/[:\-,]+$/, '').trim();
+    return s.toLowerCase();
+}
+
+function toTitleCase(s) {
+    const minor = new Set(['a','an','the','of','in','on','at','and','but','or','for','nor','to']);
+    return s.replace(/\S+/g, (w, i) => (i === 0 || !minor.has(w)) ? w[0].toUpperCase() + w.slice(1) : w);
+}
+
+function computeRecommendations(allGames, series) {
+    const assignedIds = new Set((series || []).flatMap(s => s.gameIds));
+    const unassigned  = allGames.filter(g => !assignedIds.has(g.id));
+    const groupMap    = new Map();
+    unassigned.forEach(g => {
+        const key = seriesKey(g.title);
+        if (key.length < 4) return;
+        if (!groupMap.has(key)) groupMap.set(key, new Map());
+        groupMap.get(key).set(g.id, g); // dedupe by id
+    });
+    return Array.from(groupMap.entries())
+        .map(([key, gMap]) => ({ name: toTitleCase(key), games: Array.from(gMap.values()) }))
+        .filter(r => r.games.length >= 3)
+        .sort((a, b) => b.games.length - a.games.length);
+}
+
+function RASeriesModule() {
+    const [allGames,        setAllGames]        = useState([]);
+    const [series,          setSeries]          = useState(null);
+    const [selectedId,      setSelectedId]      = useState(null);
+    const [dirty,           setDirty]           = useState(false);
+    const [saving,          setSaving]          = useState(false);
+    const [saved,           setSaved]           = useState(false);
+    const [gameSearch,      setGameSearch]      = useState('');
+    const [listSearch,      setListSearch]      = useState('');
+    const [addSearch,       setAddSearch]       = useState('');
+    const [modal,           setModal]           = useState(null);
+    const [showSuggestions, setShowSuggestions] = useState(false);
+
+    useEffect(() => {
+        Promise.all([
+            apiGet(`${API}/games/ra`),
+            apiData('data/ra/series.json'),
+        ]).then(([g, s]) => {
+            setAllGames(g);
+            setSeries(Array.isArray(s) ? s : []);
+        });
+    }, []);
+
+    const selected = series?.find(s => s.id === selectedId) ?? null;
+
+    const save = async () => {
+        setSaving(true);
+        await apiSave('data/ra/series.json', series);
+        setSaving(false); setDirty(false); setSaved(true);
+    };
+
+    const update = (next) => { setSeries(next); setDirty(true); setSaved(false); };
+
+    const handleModalConfirm = (value) => {
+        const { mode, id, suggestedGameIds } = modal;
+        if (mode === 'add') {
+            const newEntry = { id: Date.now().toString(36), name: value, gameIds: suggestedGameIds ?? [] };
+            update([...(series || []), newEntry]);
+            setSelectedId(newEntry.id);
+            setShowSuggestions(false);
+            setAddSearch('');
+        } else if (mode === 'rename') {
+            update(series.map(s => s.id === id ? { ...s, name: value } : s));
+        } else if (mode === 'delete') {
+            update(series.filter(s => s.id !== id));
+            if (selectedId === id) setSelectedId(null);
+        }
+        setModal(null);
+    };
+
+    const addGame = (gameId) => {
+        if (!selected || selected.gameIds.includes(gameId)) return;
+        update(series.map(s => s.id === selectedId ? { ...s, gameIds: [...s.gameIds, gameId] } : s));
+    };
+
+    const removeGame = (gameId) => {
+        update(series.map(s => s.id === selectedId ? { ...s, gameIds: s.gameIds.filter(id => id !== gameId) } : s));
+    };
+
+    const gameMap = Object.fromEntries(allGames.map(g => [g.id, g]));
+
+    const filteredList = (series || []).filter(s =>
+        !listSearch || s.name.toLowerCase().includes(listSearch.toLowerCase())
+    );
+
+    const assignedIds = new Set(selected?.gameIds ?? []);
+    const addCandidates = allGames.filter(g =>
+        !assignedIds.has(g.id) &&
+        (!addSearch || g.title.toLowerCase().includes(addSearch.toLowerCase()))
+    );
+
+    const filteredAssigned = (selected?.gameIds ?? [])
+        .map(id => gameMap[id])
+        .filter(g => g && (!gameSearch || g.title.toLowerCase().includes(gameSearch.toLowerCase())));
+
+    const recommendations = series ? computeRecommendations(allGames, series) : [];
+
+    // Games not assigned to THIS series whose seriesKey starts with (or equals) this series' key
+    const selectedKey = selected ? seriesKey(selected.name) : '';
+    const seriesSuggestions = selected
+        ? allGames.filter(g => {
+            if (assignedIds.has(g.id)) return false;
+            const gKey = seriesKey(g.title);
+            return gKey === selectedKey || gKey.startsWith(selectedKey + ' ') || gKey.startsWith(selectedKey + ':');
+          })
+        : [];
+
+    if (!series) return <div className="p-6 text-[#546270] text-[11px]">Loading…</div>;
+
+    const modalSeries = modal?.id ? series.find(s => s.id === modal.id) : null;
+
+    return (
+        <div className="flex h-full overflow-hidden relative">
+            {modal && (
+                <SeriesModal
+                    mode={modal.mode}
+                    seriesName={modalSeries?.name ?? ''}
+                    initialValue={modal.initialValue}
+                    onConfirm={handleModalConfirm}
+                    onCancel={() => setModal(null)}
+                />
+            )}
+
+            {/* ── Left: series list ── */}
+            <div className="w-[220px] shrink-0 flex flex-col border-r border-[#2a475e]">
+                <div className="px-3 pt-3 pb-2 border-b border-[#2a475e] flex flex-col gap-2">
+                    <input value={listSearch} onChange={e => setListSearch(e.target.value)}
+                        placeholder="Search series…" className="input" />
+                    <button className="btn-primary w-full" onClick={() => setModal({ mode: 'add' })}>+ New Series</button>
+                </div>
+                <div className="flex-1 overflow-y-auto py-1">
+                    {filteredList.map(s => {
+                        const isSel = s.id === selectedId && !showSuggestions;
+                        return (
+                            <button key={s.id} onClick={() => { setSelectedId(s.id); setShowSuggestions(false); setAddSearch(''); setGameSearch(''); }}
+                                className={`w-full flex items-center gap-2 px-3 py-1.5 text-left transition-colors ${isSel ? 'bg-[#2a475e]' : 'hover:bg-[#1b2838]'}`}>
+                                <span className={`text-[11px] flex-1 truncate ${isSel ? 'text-white' : 'text-[#8f98a0]'}`}>{s.name}</span>
+                                <span className="text-[9px] text-[#546270] shrink-0">{s.gameIds.length}</span>
+                            </button>
+                        );
+                    })}
+                    {filteredList.length === 0 && !showSuggestions && <div className="text-[11px] text-[#546270] text-center py-6">No series yet</div>}
+                </div>
+                <div className="px-3 py-2 border-t border-[#2a475e] flex items-center gap-2">
+                    <span className="text-[10px] text-[#546270] flex-1">
+                        {series.length} series · {series.reduce((n, s) => n + s.gameIds.length, 0)} assigned
+                    </span>
+                    {recommendations.length > 0 && (
+                        <button
+                            onClick={() => setShowSuggestions(v => !v)}
+                            className={`flex items-center gap-1 text-[9px] font-semibold px-2 py-[3px] rounded-[2px] border transition-colors ${showSuggestions ? 'bg-[#e5b143] text-[#101214] border-[#e5b143]' : 'text-[#e5b143] border-[#e5b143]/40 hover:border-[#e5b143]'}`}>
+                            💡 {recommendations.length}
+                        </button>
+                    )}
+                </div>
+            </div>
+
+            {/* ── Right: editor or suggestions ── */}
+            <div className="flex-1 flex flex-col overflow-hidden">
+                {showSuggestions ? (
+                    <>
+                        <div className="flex items-center gap-3 px-4 py-3 border-b border-[#2a475e]">
+                            <span className="text-[13px] text-white font-medium flex-1">Suggestions — {recommendations.length} potential series</span>
+                            <button className="btn-ghost text-[11px]" onClick={() => setShowSuggestions(false)}>← Back</button>
+                        </div>
+                        <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-3">
+                            <p className="text-[10px] text-[#546270]">
+                                Games not yet in any series, grouped by shared name prefix. Click <strong className="text-[#8f98a0]">Create Series</strong> to add one — games will be pre-assigned.
+                            </p>
+                            {recommendations.map((rec, i) => (
+                                <div key={i} className="border border-[#2a475e] rounded-[3px] bg-[#1b2838]">
+                                    <div className="flex items-center gap-3 px-3 py-2 border-b border-[#2a475e]">
+                                        <span className="text-[12px] text-white font-medium flex-1 truncate">{rec.name}</span>
+                                        <span className="text-[9px] text-[#546270] shrink-0">{rec.games.length} games</span>
+                                        <button className="btn-primary shrink-0 text-[10px] py-[3px]"
+                                            onClick={() => setModal({ mode: 'add', initialValue: rec.name, suggestedGameIds: rec.games.map(g => g.id) })}>
+                                            Create Series
+                                        </button>
+                                    </div>
+                                    <div className="p-2 flex flex-col gap-0">
+                                        {rec.games.map(g => (
+                                            <div key={g.id} className="flex items-center gap-2 px-1 py-1">
+                                                <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-5 h-5 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
+                                                <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#8f98a0] hover:text-[#66c0f4] truncate flex-1 transition-colors">{g.title}</a>
+                                                {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </>
+                ) : !selected ? (
+                    <div className="flex items-center justify-center h-full text-[#546270] text-[12px]">Select a series</div>
+                ) : (
+                    <>
+                        {/* Header */}
+                        <div className="flex items-center gap-3 px-4 py-3 border-b border-[#2a475e]">
+                            <span className="text-[13px] text-white font-medium flex-1 truncate">{selected.name}</span>
+                            <button className="btn-ghost text-[11px]" onClick={() => setModal({ mode: 'rename', id: selected.id })}>Rename</button>
+                            <button className="btn-ghost btn-danger text-[11px]" onClick={() => setModal({ mode: 'delete', id: selected.id })}>Delete</button>
+                            <span className="text-[#2a475e]">|</span>
+                            {saved  && <span className="text-[10px] text-[#57cbde]">Saved</span>}
+                            <button className="btn-primary" onClick={save} disabled={!dirty || saving}>
+                                {saving ? 'Saving…' : 'Save'}
+                            </button>
+                        </div>
+
+                        <div className="flex flex-1 overflow-hidden">
+                            {/* Assigned games */}
+                            <div className="flex-1 flex flex-col overflow-hidden border-r border-[#2a475e]">
+                                <div className="px-3 py-2 border-b border-[#2a475e] flex items-center gap-2">
+                                    <span className="text-[10px] text-[#8f98a0] font-semibold uppercase tracking-wider flex-1">
+                                        Assigned — {selected.gameIds.length} game{selected.gameIds.length !== 1 ? 's' : ''}
+                                    </span>
+                                    <input value={gameSearch} onChange={e => setGameSearch(e.target.value)}
+                                        placeholder="Filter…" className="input w-[120px]" />
+                                </div>
+                                <div className="flex-1 overflow-y-auto">
+                                    {filteredAssigned.length === 0 && (
+                                        <div className="text-[11px] text-[#546270] text-center py-6">
+                                            {selected.gameIds.length === 0 ? 'No games assigned yet' : 'No matches'}
+                                        </div>
+                                    )}
+                                    {filteredAssigned.map(g => (
+                                        <div key={g.id} className="flex items-center gap-2 px-3 py-1.5 hover:bg-[#1b2838] border-b border-[#1a2535] group">
+                                            <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
+                                            <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#c6d4df] hover:text-[#66c0f4] flex-1 truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                            {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
+                                            <button className="btn-ghost btn-danger opacity-0 group-hover:opacity-100 transition-opacity text-[16px] leading-none shrink-0"
+                                                onClick={() => removeGame(g.id)}>×</button>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Add games panel */}
+                            <div className="w-[280px] shrink-0 flex flex-col overflow-hidden">
+                                <div className="px-3 py-2 border-b border-[#2a475e]">
+                                    <input value={addSearch} onChange={e => setAddSearch(e.target.value)}
+                                        placeholder="Search to add…" className="input" />
+                                </div>
+                                <div className="flex-1 overflow-y-auto">
+                                    {addSearch === '' && seriesSuggestions.length > 0 && (
+                                        <>
+                                            <div className="px-3 py-1.5 bg-[#172333] border-b border-[#2a475e] flex items-center gap-1.5">
+                                                <span className="text-[9px] font-semibold uppercase tracking-wider text-[#e5b143]">Suggested</span>
+                                                <span className="text-[9px] text-[#546270]">{seriesSuggestions.length} possible match{seriesSuggestions.length !== 1 ? 'es' : ''}</span>
+                                            </div>
+                                            {seriesSuggestions.map(g => (
+                                                <button key={g.id} onClick={() => addGame(g.id)}
+                                                    className="w-full flex items-center gap-2 px-3 py-1.5 hover:bg-[#1b2838] border-b border-[#1a2535] border-l-2 border-l-[#e5b143]/40 text-left">
+                                                    <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
+                                                    <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#c6d4df] hover:text-[#66c0f4] flex-1 truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                                    {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
+                                                    <span className="text-[11px] text-[#e5b143]/60 shrink-0">+</span>
+                                                </button>
+                                            ))}
+                                            <div className="px-3 py-1.5 bg-[#172333] border-b border-[#2a475e]">
+                                                <span className="text-[9px] font-semibold uppercase tracking-wider text-[#546270]">Search</span>
+                                            </div>
+                                            <div className="text-[11px] text-[#546270] text-center py-3">Type to search all games</div>
+                                        </>
+                                    )}
+                                    {addSearch === '' && seriesSuggestions.length === 0 && (
+                                        <div className="text-[11px] text-[#546270] text-center py-4">Type to search games</div>
+                                    )}
+                                    {addSearch !== '' && addCandidates.length === 0 && (
+                                        <div className="text-[11px] text-[#546270] text-center py-4">No matches</div>
+                                    )}
+                                    {addSearch !== '' && addCandidates.map(g => (
+                                        <button key={g.id} onClick={() => addGame(g.id)}
+                                            className="w-full flex items-center gap-2 px-3 py-1.5 hover:bg-[#1b2838] border-b border-[#1a2535] text-left">
+                                            <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
+                                            <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#8f98a0] hover:text-[#66c0f4] flex-1 truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                            {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
+                                            <span className="text-[11px] text-[#546270] shrink-0">+</span>
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </>
                 )}
@@ -754,6 +1112,7 @@ const MODULES = [
     { id: 'pipelines',   label: 'Pipelines',    icon: '▶',   group: 'General',          component: PipelinesModule },
     { id: 'data-diff',   label: 'Data Diff',    icon: '±',   group: 'General',          component: DataDiffModule },
     { id: 'ra-guides',   label: 'Guides',       icon: '📖',  group: 'RetroAchievements', component: RAGuidesModule },
+    { id: 'ra-series',   label: 'Series',       icon: '🗂️',  group: 'RetroAchievements', component: RASeriesModule },
 ];
 
 const GROUPS = [...new Set(MODULES.map(m => m.group))];

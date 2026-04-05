@@ -17,6 +17,7 @@ const ADMIN_HTML = path.join(ROOT, 'admin', 'index.html');
 const ALLOWED = [
     'data/hub/config.json',
     'data/ra/guides.json',
+    'data/ra/series.json',
 ];
 
 // Pipeline definitions — maps a run mode to the script + args
@@ -114,9 +115,10 @@ const server = http.createServer((req, res) => {
         try {
             const raw     = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/ra/games.json'), 'utf8'));
             const profile = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/ra/profile.json'), 'utf8'));
+            const watchlistIds = new Set((profile.wantToPlayList?.results || []).map(g => g.id));
             const map = new Map();
             Object.values(raw.detailedGameProgress).forEach(g => {
-                map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, fromWatchlist: false });
+                map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, fromWatchlist: watchlistIds.has(g.id) });
             });
             (profile.wantToPlayList?.results || []).forEach(g => {
                 if (!map.has(g.id)) map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, fromWatchlist: true });

@@ -1032,6 +1032,7 @@ export default function App() {
   const [collapsedGroups, setCollapsedGroups] = useState(new Set());
   const [selectedGame, setSelectedGame] = useState(null);
   const [guidesData, setGuidesData] = useState({});
+  const [seriesData, setSeriesData] = useState([]);
 
   const loadNextChunk = () => {
     const nextIdx = achievementChunks.findIndex(c => c === null);
@@ -1069,6 +1070,10 @@ export default function App() {
     fetch('../../data/ra/guides.json')
       .then(r => r.ok ? r.json() : {})
       .then(data => setGuidesData(data))
+      .catch(() => {});
+    fetch('../../data/ra/series.json')
+      .then(r => r.ok ? r.json() : [])
+      .then(data => setSeriesData(Array.isArray(data) ? data : []))
       .catch(() => {});
   }, []);
 
@@ -1539,6 +1544,14 @@ export default function App() {
                   const games = filtered.filter(g => getStatus(g) === s);
                   if (games.length > 0) groups.push({ key: s, label: statusMeta[s].label, dot: statusMeta[s].dot, games, defaultOpen: statusMeta[s].defaultOpen });
                 });
+              } else if (watchlistGrouping === 'series') {
+                seriesData.forEach(s => {
+                  const games = s.gameIds.map(id => filtered.find(g => g.id === id)).filter(Boolean);
+                  if (games.length > 0) groups.push({ key: s.id, label: s.name, dot: '#e5b143', games, defaultOpen: games.length <= 3 });
+                });
+                const assignedIds = new Set(seriesData.flatMap(s => s.gameIds));
+                const otherGames = filtered.filter(g => !assignedIds.has(g.id));
+                if (otherGames.length > 0) groups.push({ key: '__other__', label: 'Other', dot: '#546270', games: otherGames, defaultOpen: false });
               }
 
               // Table columns — responsive via CSS classes, not inline styles
@@ -1618,6 +1631,7 @@ export default function App() {
                       { value: 'none',    label: 'None'    },
                       { value: 'console', label: 'Console' },
                       { value: 'status',  label: 'Status'  },
+                      { value: 'series',  label: 'Series'  },
                     ].map(opt => (
                       <button key={opt.value} onClick={() => { setWatchlistGrouping(opt.value); setCollapsedGroups(new Set()); }}
                         className={`text-[9px] font-semibold uppercase tracking-wider px-2 py-[3px] rounded-[2px] border transition-colors ${watchlistGrouping === opt.value ? 'bg-[#1b2838] text-[#c6d4df] border-[#2a475e]' : 'bg-[#101214] text-[#546270] border-[#323f4c] hover:text-[#c6d4df] hover:border-[#546270]'}`}>
