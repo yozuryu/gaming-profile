@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-05T15:38:35.484Z"
+        "extractionTimestamp": "2026-04-05T15:48:56.893Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -51,7 +51,7 @@
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 137634,
+        "totalRanked": 137637,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -1027,7 +1027,7 @@
         ]
     },
     "wantToPlayList": {
-        "total": 449,
+        "total": 456,
         "results": [
             {
                 "id": 27,
@@ -1282,6 +1282,15 @@
                 "achievementsPublished": 76
             },
             {
+                "id": 748,
+                "title": "Classic NES Series: The Legend of Zelda",
+                "consoleId": 5,
+                "consoleName": "Game Boy Advance",
+                "imageIcon": "/Images/060253.png",
+                "pointsTotal": 791,
+                "achievementsPublished": 97
+            },
+            {
                 "id": 767,
                 "title": "Golden Sun",
                 "consoleId": 5,
@@ -1433,6 +1442,15 @@
                 "imageIcon": "/Images/076388.png",
                 "pointsTotal": 620,
                 "achievementsPublished": 69
+            },
+            {
+                "id": 1449,
+                "title": "Final Fantasy",
+                "consoleId": 7,
+                "consoleName": "NES/Famicom",
+                "imageIcon": "/Images/113206.png",
+                "pointsTotal": 360,
+                "achievementsPublished": 40
             },
             {
                 "id": 1470,
@@ -2164,6 +2182,24 @@
                 "achievementsPublished": 74
             },
             {
+                "id": 3515,
+                "title": "Dissidia 012: Duodecim Final Fantasy",
+                "consoleId": 41,
+                "consoleName": "PlayStation Portable",
+                "imageIcon": "/Images/049140.png",
+                "pointsTotal": 1400,
+                "achievementsPublished": 195
+            },
+            {
+                "id": 3517,
+                "title": "Dissidia: Final Fantasy",
+                "consoleId": 41,
+                "consoleName": "PlayStation Portable",
+                "imageIcon": "/Images/049135.png",
+                "pointsTotal": 1100,
+                "achievementsPublished": 152
+            },
+            {
                 "id": 3523,
                 "title": "Genso Suikoden: Tsumugareshi Hyakunen no Toki",
                 "consoleId": 41,
@@ -2297,6 +2333,15 @@
                 "imageIcon": "/Images/053525.png",
                 "pointsTotal": 1095,
                 "achievementsPublished": 86
+            },
+            {
+                "id": 3818,
+                "title": "Dragon Quest I & II",
+                "consoleId": 6,
+                "consoleName": "Game Boy Color",
+                "imageIcon": "/Images/093949.png",
+                "pointsTotal": 477,
+                "achievementsPublished": 73
             },
             {
                 "id": 3843,
@@ -2783,6 +2828,15 @@
                 "imageIcon": "/Images/079538.png",
                 "pointsTotal": 635,
                 "achievementsPublished": 62
+            },
+            {
+                "id": 8376,
+                "title": "Mega Man Zero Collection",
+                "consoleId": 18,
+                "consoleName": "Nintendo DS",
+                "imageIcon": "/Images/053731.png",
+                "pointsTotal": 3070,
+                "achievementsPublished": 279
             },
             {
                 "id": 8413,
@@ -4079,6 +4133,15 @@
                 "imageIcon": "/Images/051837.png",
                 "pointsTotal": 749,
                 "achievementsPublished": 103
+            },
+            {
+                "id": 16382,
+                "title": "Crash of the Titans",
+                "consoleId": 18,
+                "consoleName": "Nintendo DS",
+                "imageIcon": "/Images/047553.png",
+                "pointsTotal": 267,
+                "achievementsPublished": 38
             },
             {
                 "id": 16425,

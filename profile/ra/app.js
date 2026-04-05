@@ -1587,7 +1587,6 @@ export default function App() {
                         : <span className="text-[10px] text-[#8f98a0]">{game.achievementsTotal}</span>}
                     </div>
                   </div>
-                  </div>
                 );
               };
 
