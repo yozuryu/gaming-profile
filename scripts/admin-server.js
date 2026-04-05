@@ -112,12 +112,16 @@ const server = http.createServer((req, res) => {
     // GET /api/games/ra
     if (method === 'GET' && pathname === '/api/games/ra') {
         try {
-            const raw = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/ra/games.json'), 'utf8'));
-            const games = Object.values(raw.detailedGameProgress).map(g => ({
-                id:        g.id,
-                title:     g.title,
-                imageIcon: g.imageIcon,
-            })).sort((a, b) => a.title.localeCompare(b.title));
+            const raw     = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/ra/games.json'), 'utf8'));
+            const profile = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/ra/profile.json'), 'utf8'));
+            const map = new Map();
+            Object.values(raw.detailedGameProgress).forEach(g => {
+                map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, fromWatchlist: false });
+            });
+            (profile.wantToPlayList?.results || []).forEach(g => {
+                if (!map.has(g.id)) map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, fromWatchlist: true });
+            });
+            const games = Array.from(map.values()).sort((a, b) => a.title.localeCompare(b.title));
             send(res, 200, games);
         } catch (e) {
             send(res, 500, { error: e.message });

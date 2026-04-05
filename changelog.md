@@ -4,7 +4,7 @@
 
 ### RetroAchievements
 
-- Guide strip (GameFAQs / YouTube fallback links) now appears on every row in the Watchlist (backlog) tab, not just played GameCards
+- Admin panel RA Guides module now includes watchlist (Want to Play) games in the game list, merged with played games and deduplicated by ID; watchlist-only entries are labeled **WL** in the sidebar
 
 ## 2026-04-03
 

@@ -317,6 +317,7 @@ function RAGuidesModule() {
                                 className={`w-full flex items-center gap-2 px-3 py-1.5 text-left transition-colors ${isSel ? 'bg-[#2a475e]' : 'hover:bg-[#1b2838]'}`}>
                                 <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
                                 <span className={`text-[11px] flex-1 truncate ${isSel ? 'text-white' : 'text-[#8f98a0]'}`}>{g.title}</span>
+                                {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
                                 {hasCustom && <span className="w-1.5 h-1.5 rounded-full bg-[#e5b143] shrink-0" />}
                             </button>
                         );
@@ -324,7 +325,7 @@ function RAGuidesModule() {
                     {filtered.length === 0 && <div className="text-[11px] text-[#546270] text-center py-6">No games found</div>}
                 </div>
                 <div className="px-3 py-2 border-t border-[#2a475e] text-[10px] text-[#546270]">
-                    {customCount} games with custom guides · <span className="text-[#e5b143]">●</span> = has guides
+                    {customCount} games with custom guides · <span className="text-[#e5b143]">●</span> = has guides · <span className="text-[#66c0f4]">WL</span> = watchlist only
                 </div>
             </div>
 

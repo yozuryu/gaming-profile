@@ -2,15 +2,36 @@
   "username": "Yozuryu",
   "motto": "an old man who just want to enjoy some moments of gaming",
   "tags": {
-    "genre": ["RPG", "Side Scrolling", "Souls-like"],
-    "style": ["Cel-Shaded", "Pixel Art", "Story Driven"]
+    "genre": [
+      "RPG",
+      "Side Scrolling",
+      "Souls-like"
+    ],
+    "style": [
+      "Cel-Shaded",
+      "Pixel Art",
+      "Story Driven"
+    ]
   },
   "platforms": {
-    "retroachievements": { "visible": true, "active": true },
-    "steam":             { "visible": true, "active": true },
-    "xbox":              { "visible": true, "active": false }
+    "retroachievements": {
+      "visible": true,
+      "active": true
+    },
+    "steam": {
+      "visible": true,
+      "active": true
+    },
+    "xbox": {
+      "visible": false,
+      "active": false
+    }
   },
   "siteUrl": "yozuryu.github.io/gaming-hub",
-  "activity":     { "visible": true },
-  "completions":  { "visible": true }
+  "activity": {
+    "visible": true
+  },
+  "completions": {
+    "visible": true
+  }
 }

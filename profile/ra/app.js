@@ -1559,8 +1559,7 @@ export default function App() {
                 const hasNoAch     = status === 'noach';
                 const stripe = isMastered ? 'border-l-[#e5b143]' : isInProgress ? 'border-l-[#66c0f4]' : hasNoAch ? 'border-l-[#1e2a35]' : 'border-l-[#546270]';
                 return (
-                  <div className="border-b border-[#1b2838] last:border-b-0">
-                  <div className={`grid gap-2 px-3 py-[5px] items-center hover:bg-[#1b2838] transition-colors border-l-[2px] ${stripe} ${hasNoAch ? 'opacity-50' : ''} ${colClass}`}>
+                  <div key={game.id} className={`grid gap-2 px-3 py-[5px] border-b border-[#1b2838] last:border-b-0 items-center hover:bg-[#1b2838] transition-colors border-l-[2px] ${stripe} ${hasNoAch ? 'opacity-50' : ''} ${colClass}`}>
                     <a href={`${SITE_URL}/game/${game.id}`} target="_blank" rel="noreferrer" className="shrink-0 w-6 h-6 rounded-[2px] overflow-hidden border border-[#101214] bg-black block hover:scale-110 transition-transform">
                       <img src={game.icon} alt={game.title} className="w-full h-full object-cover" />
                     </a>
@@ -1588,7 +1587,6 @@ export default function App() {
                         : <span className="text-[10px] text-[#8f98a0]">{game.achievementsTotal}</span>}
                     </div>
                   </div>
-                  <GuideStrip game={game} guides={null} isLast={false} />
                   </div>
                 );
               };
