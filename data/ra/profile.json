@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-05T14:39:53.244Z"
+        "extractionTimestamp": "2026-04-05T15:38:35.484Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Lv81 Samurai, Lv76 Psychic, and Lv78 Hacker | Illusory Capital | Ch+: 33/33 quests | 47h31",
+        "richPresenceMsg": "Lv82 Samurai, Lv77 Psychic, and Lv78 Hacker | City Hall | Ch+: 33/33 quests | 48h24",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1645,
+        "totalPoints": 1655,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6021,
+        "totalTruePoints": 6084,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Lv81 Samurai, Lv76 Psychic, and Lv78 Hacker | Illusory Capital | Ch+: 33/33 quests | 47h31",
-        "richPresenceMsgDate": "2026-04-05 14:08:27",
+        "richPresenceMsg": "Lv82 Samurai, Lv77 Psychic, and Lv78 Hacker | City Hall | Ch+: 33/33 quests | 48h24",
+        "richPresenceMsgDate": "2026-04-05 15:16:02",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1645,
+        "totalPoints": 1655,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6021,
+        "totalTruePoints": 6084,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 52780,
+        "rank": 52577,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 137620,
+        "totalRanked": 137634,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1645,
+        "points": 1655,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -134,14 +134,14 @@
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
             "imageBoxArt": "/Images/110688.png",
-            "lastPlayed": "2026-04-05 14:08:27",
+            "lastPlayed": "2026-04-05 15:16:02",
             "achievementsTotal": 80,
             "numPossibleAchievements": 80,
             "possibleScore": 475,
-            "numAchieved": 74,
-            "scoreAchieved": 400,
-            "numAchievedHardcore": 74,
-            "scoreAchievedHardcore": 400
+            "numAchieved": 75,
+            "scoreAchieved": 410,
+            "numAchievedHardcore": 75,
+            "scoreAchievedHardcore": 410
         },
         {
             "gameId": 11264,
@@ -407,9 +407,9 @@
                 "consoleId": 41,
                 "consoleName": "PlayStation Portable",
                 "maxPossible": 80,
-                "numAwarded": 74,
-                "numAwardedHardcore": 74,
-                "mostRecentAwardedDate": "2026-04-05T14:01:36+00:00",
+                "numAwarded": 75,
+                "numAwardedHardcore": 75,
+                "mostRecentAwardedDate": "2026-04-05T15:03:22+00:00",
                 "highestAwardKind": "beaten-hardcore",
                 "highestAwardDate": "2026-04-03T13:02:58+00:00"
             },
@@ -5073,12 +5073,12 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-05 14:01:36",
+        "date": "2026-04-05 15:03:22",
         "hardcoreMode": true,
-        "achievementId": 572147,
-        "title": "Illusory Empress",
-        "description": "Defeat the guardian of the illusory Yotsura Evernight",
-        "badgeName": "649925",
+        "achievementId": 572150,
+        "title": "Illusory Gold",
+        "description": "Defeat the guardian of the illusory Kokubunji Searsand",
+        "badgeName": "649927",
         "points": 10,
         "trueRatio": 65,
         "type": null,
@@ -5088,8 +5088,8 @@
         "gameIcon": "/Images/123011.png",
         "gameId": 16452,
         "consoleName": "PlayStation Portable",
-        "cumulScore": 602,
-        "badgeUrl": "/Badge/649925.png",
+        "cumulScore": 612,
+        "badgeUrl": "/Badge/649927.png",
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
@@ -5101,15 +5101,15 @@
         "imageTitle": "/Images/110687.png",
         "imageIngame": "/Images/110689.png",
         "imageBoxArt": "/Images/110688.png",
-        "lastPlayed": "2026-04-05 14:08:27",
+        "lastPlayed": "2026-04-05 15:16:02",
         "achievementsTotal": 80,
         "numPossibleAchievements": 80,
         "possibleScore": 475,
-        "numAchieved": 74,
-        "scoreAchieved": 400,
-        "numAchievedHardcore": 74,
-        "scoreAchievedHardcore": 400
+        "numAchieved": 75,
+        "scoreAchieved": 410,
+        "numAchievedHardcore": 75,
+        "scoreAchievedHardcore": 410
     },
-    "points7Days": 268,
-    "points30Days": 385
+    "points7Days": 256,
+    "points30Days": 395
 }
