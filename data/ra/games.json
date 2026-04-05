@@ -40868,8 +40868,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "107881",
-                    "numAwarded": 6773,
-                    "numAwardedHardcore": 2427,
+                    "numAwarded": 6774,
+                    "numAwardedHardcore": 2428,
                     "displayOrder": 0
                 },
                 "94790": {
@@ -41312,8 +41312,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "106729",
-                    "numAwarded": 1792,
-                    "numAwardedHardcore": 839,
+                    "numAwarded": 1793,
+                    "numAwardedHardcore": 840,
                     "displayOrder": 12
                 },
                 "95532": {
@@ -41756,8 +41756,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "106708",
-                    "numAwarded": 3851,
-                    "numAwardedHardcore": 1543,
+                    "numAwarded": 3852,
+                    "numAwardedHardcore": 1544,
                     "displayOrder": 33
                 },
                 "96415": {
@@ -43194,8 +43194,8 @@
                     "trueRatio": 18,
                     "type": "progression",
                     "badgeName": "162783",
-                    "numAwarded": 528,
-                    "numAwardedHardcore": 217,
+                    "numAwarded": 529,
+                    "numAwardedHardcore": 218,
                     "displayOrder": 29
                 },
                 "146099": {
@@ -43302,8 +43302,8 @@
                     "trueRatio": 19,
                     "type": null,
                     "badgeName": "162792",
-                    "numAwarded": 518,
-                    "numAwardedHardcore": 213,
+                    "numAwarded": 519,
+                    "numAwardedHardcore": 214,
                     "displayOrder": 30
                 },
                 "146108": {
@@ -44336,8 +44336,8 @@
                     "trueRatio": 57,
                     "type": null,
                     "badgeName": "162874",
-                    "numAwarded": 272,
-                    "numAwardedHardcore": 134,
+                    "numAwarded": 273,
+                    "numAwardedHardcore": 135,
                     "displayOrder": 501
                 },
                 "146194": {
@@ -44564,8 +44564,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 3559,
-            "numDistinctPlayersHardcore": 3559,
+            "numDistinctPlayersCasual": 3560,
+            "numDistinctPlayersHardcore": 3560,
             "numAchievements": 129,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -44586,8 +44586,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "116644",
-                    "numAwarded": 3108,
-                    "numAwardedHardcore": 1178,
+                    "numAwarded": 3109,
+                    "numAwardedHardcore": 1179,
                     "displayOrder": 0
                 },
                 "108754": {
@@ -44598,8 +44598,8 @@
                     "trueRatio": 2,
                     "type": "missable",
                     "badgeName": "117136",
-                    "numAwarded": 1632,
-                    "numAwardedHardcore": 736,
+                    "numAwarded": 1633,
+                    "numAwardedHardcore": 737,
                     "displayOrder": 0
                 },
                 "108755": {
@@ -44610,8 +44610,8 @@
                     "trueRatio": 3,
                     "type": "missable",
                     "badgeName": "117188",
-                    "numAwarded": 937,
-                    "numAwardedHardcore": 545,
+                    "numAwarded": 938,
+                    "numAwardedHardcore": 546,
                     "displayOrder": 0
                 },
                 "108756": {
@@ -45723,7 +45723,7 @@
                     "title": "Oooo Shiny",
                     "description": "Learn all skills from Master Marlok",
                     "points": 10,
-                    "trueRatio": 36,
+                    "trueRatio": 37,
                     "type": null,
                     "badgeName": "118905",
                     "numAwarded": 245,
@@ -45831,7 +45831,7 @@
                     "title": "Fishing Star",
                     "description": "Become The Fish",
                     "points": 50,
-                    "trueRatio": 272,
+                    "trueRatio": 273,
                     "type": null,
                     "badgeName": "119322",
                     "numAwarded": 138,
@@ -45858,8 +45858,8 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "119877",
-                    "numAwarded": 2006,
-                    "numAwardedHardcore": 840,
+                    "numAwarded": 2007,
+                    "numAwardedHardcore": 841,
                     "displayOrder": 2
                 },
                 "109412": {
@@ -46107,7 +46107,7 @@
                     "title": "Super Goo",
                     "description": "Defeat a fully powered up Lavoid (9 buffs)",
                     "points": 25,
-                    "trueRatio": 131,
+                    "trueRatio": 132,
                     "type": null,
                     "badgeName": "120200",
                     "numAwarded": 158,
