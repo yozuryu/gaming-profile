@@ -1,5 +1,6 @@
 exclude:
   - CLAUDE.md
+  - TODO.md
   - admin/
   - scripts/
   - package.json
