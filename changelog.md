@@ -1,5 +1,43 @@
 # Changelog
 
+## 2026-04-05
+
+### RetroAchievements
+
+- Removed all `shadowColor`/`shadowBlur` glow effects from share card canvas — flat borders only
+- Horizontal layout height reduced from 630px to 400px (3:1 ratio); left panel narrowed to 340px
+- Replaced achievement icon strips with a single latest achievement block: icon, title, description (truncated), and unlock date; horizontal uses icon-left layout, vertical uses centered layout
+- Status badge (MASTERED/BEATEN/HARDCORE/IN PROGRESS) now uses flat fill for completed states, no glow
+- Progress bar fill is plain flat color (no glow)
+- Avatar circle border in user pill is plain `accentColor` stroke (no glow)
+- Fixed HARDCORE badge not showing: `game.hardcore` directly drives `statusLabel`; beaten/mastered games with hardcore unlocks show the primary badge plus a secondary outlined HARDCORE gold chip
+- Changed vertical share card size to Instagram 4:5 portrait (1080×1350, was 630×1200); icon 190px, margins 64px, hero height 400px
+- Fixed component overlapping in vertical layout: `drawLatestAchievement` now returns its actual drawn height instead of a fixed estimate
+
+## 2026-04-04
+
+### RetroAchievements
+
+- Reworked share card horizontal layout: two-panel split — left panel (solid dark, 440px): icon (210px with glow border), console badge, status/hardcore badge, user pill at bottom; right panel (bg art shows through with cinematic gradient): title, meta, progress bar, pct% inline (26px, not a hero element), stat chips, achievement icon strip
+- Reduced vertical layout completion % from 96px to 64px; moved status badge above the % number
+- HARDCORE now rendered as a proper glowing badge identical to MASTERED/BEATEN (was a plain inline text label); gold color same as MASTERED
+- Achievement icons now show only latest unlocked, sourced directly from `game.achievements` (not the 6-item capped preview) — all icons have accent-colored glow border since they are all unlocked
+- Overhauled share card canvas: right panel of horizontal layout now features a giant glowing completion percentage as the hero stat, with a big status badge beneath it; same treatment on vertical layout
+- Added diagonal faint stamp watermark ("MASTERED" / "BEATEN") overlaid on the image area for completed games
+- Added user avatar + `@username` pill drawn on canvas — avatar loaded via `wsrv.nl` proxy, accent-colored circular border; `username` and `avatar` props passed from App → GameCard → ShareModal → canvas
+- Horizontal layout: game icon enlarged to 190px, title up to 2 word-wrapped lines at 42px, stat chips (Points, Playtime, Players), 8 achievement icons, user pill bottom-left, right panel has "COMPLETION" label + giant % + achievement count + status badge
+- Vertical layout: game icon 170px in hero area, 2-line title 40px, genre/year meta, big % at 96px, progress bar, status badge, 2×2 stat chips, 2 rows × 4 achievement icons, centered user pill
+- Share button on GameCard enlarged with visible "Share" text label (was icon-only)
+- Redesigned share card canvas for social media quality: horizontal now 1200×630 (OG image standard), vertical 630×1200 (story format), both at 2× DPR
+- Full-bleed background image with multi-stop gradient overlay and bottom vignette; dark base color `#0d1520`
+- Left accent bar on horizontal uses a gradient fade; top accent bar on vertical uses horizontal fade
+- Game icon with glow halo shadow and colored border (`accentColor`)
+- Console badge + status/hardcore badge in the same row; status badge glows for mastered/beaten
+- Progress bar with glow shadow (stronger for completed games); achievement count shown alongside label
+- Achievement icons with per-icon accent-colored border glow on unlocked achievements; locked icons dimmed to 25%
+- Image loading now requests appropriately-sized images from `wsrv.nl` proxy
+- Loading spinner placeholder resized to match new canvas aspect ratios
+
 ## 2026-04-03
 
 ### Steam
@@ -14,6 +52,7 @@
 
 ### RetroAchievements
 
+- Added share card feature to `GameCard` — hover to reveal share button; opens modal with horizontal/vertical canvas preview; images fetched via `wsrv.nl` CORS proxy; download as PNG or native share on supported devices
 - Guide strip now always shows dropdown for custom categories (even with 1 link); fallback categories remain direct links
 
 ### Admin

@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Gamepad2, Activity, BarChart2, Award, Star, ChevronDown, AlertCircle, Trophy, Crown, Lock, Unlock, AlertTriangle, Flame, Feather, Medal, ShieldOff, CircleDashed, X, Clock, BookOpen, Youtube, ExternalLink } from 'lucide-react';
+import { createPortal } from 'react-dom';
+import { Gamepad2, Activity, BarChart2, Award, Star, ChevronDown, AlertCircle, Trophy, Crown, Lock, Unlock, AlertTriangle, Flame, Feather, Medal, ShieldOff, CircleDashed, X, Clock, BookOpen, Youtube, ExternalLink, Share2, Download } from 'lucide-react';
 import { MEDIA_URL, SITE_URL, TILDE_TAG_COLORS } from './utils/constants.js';
 import { getMediaUrl, parseTitle } from './utils/helpers.js';
 import { transformData } from './utils/transform.js';
@@ -22,6 +23,754 @@ const renderTildeTags = (tags) => {
 };
 
 // --- Components ---
+
+// ── Share card canvas renderer ────────────────────────────────────────────────
+
+const PROXY = (url, w = 128, h = w) => `https://wsrv.nl/?url=${encodeURIComponent(url)}&w=${w}&h=${h}&fit=cover&output=png`;
+
+async function loadImg(url, w = 128, h = w) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload  = () => resolve(img);
+    img.onerror = () => resolve(null);
+    img.src = PROXY(url, w, h);
+  });
+}
+
+function roundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
+}
+
+function drawImg(ctx, img, x, y, w, h, radius = 3) {
+  if (!img) return;
+  ctx.save();
+  roundRect(ctx, x, y, w, h, radius);
+  ctx.clip();
+  ctx.drawImage(img, x, y, w, h);
+  ctx.restore();
+}
+
+async function generateShareCanvas(game, _previewAchs, variant = 'horizontal', username = '', avatar = null) {
+  const isH = variant === 'horizontal';
+  const W   = isH ? 1200 : 1080;
+  const H   = isH ? 400  : 1350;
+  const DPR = 2;
+
+  const canvas  = document.createElement('canvas');
+  canvas.width  = W * DPR;
+  canvas.height = H * DPR;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(DPR, DPR);
+
+  const accentColor = (game.isMastered || game.hardcore) ? '#e5b143' : game.isBeaten ? '#8f98a0' : '#66c0f4';
+  const accentRgb   = (game.isMastered || game.hardcore) ? '229,177,67' : game.isBeaten ? '143,152,160' : '102,192,244';
+  const statusLabel = game.isMastered ? 'MASTERED' : game.isBeaten ? 'BEATEN' : game.hardcore ? 'HARDCORE' : 'IN PROGRESS';
+  const isCompleted = game.isMastered || game.isBeaten || game.hardcore;
+  // Show secondary HC chip when game is already mastered/beaten in hardcore mode
+  const showHCChip  = game.hardcore && (game.isMastered || game.isBeaten);
+  const pct         = game.achievementsTotal > 0 ? game.achievementsUnlocked / game.achievementsTotal : 0;
+
+  const achList      = game.achievements || [];
+  const pointsEarned = achList.filter(a => a.isUnlocked).reduce((s, a) => s + (a.points || 0), 0);
+  const pointsTotal  = achList.reduce((s, a) => s + (a.points || 0), 0);
+
+  // Single latest unlocked achievement
+  const latestAch = achList
+    .filter(a => a.isUnlocked)
+    .sort((a, b) => new Date(b.unlockDate || 0) - new Date(a.unlockDate || 0))[0] || null;
+
+  const [iconImg, bgImg, avatarImg, latestAchImg] = await Promise.all([
+    loadImg(game.icon, 320, 320),
+    loadImg(game.background, isH ? 1200 : 1080, isH ? 630 : 1350),
+    avatar ? loadImg(avatar, 128, 128) : Promise.resolve(null),
+    latestAch ? loadImg(`${MEDIA_URL}/Badge/${latestAch.badgeName || '00001'}.png`, 128, 128) : Promise.resolve(null),
+  ]);
+
+  // ── Background ────────────────────────────────────────────────────────────
+  ctx.fillStyle = '#080c14';
+  ctx.fillRect(0, 0, W, H);
+
+  if (bgImg) {
+    ctx.save();
+    ctx.globalAlpha = 0.52;
+    ctx.drawImage(bgImg, 0, 0, W, H);
+    ctx.globalAlpha = 1;
+    ctx.restore();
+  }
+
+  // ── Drawing helpers ───────────────────────────────────────────────────────
+
+  function drawStatChip(label, value, x, y, w, h) {
+    ctx.fillStyle = 'rgba(6,10,18,0.78)';
+    roundRect(ctx, x, y, w, h, 4);
+    ctx.fill();
+    ctx.strokeStyle = `rgba(${accentRgb},0.22)`;
+    ctx.lineWidth   = 1;
+    roundRect(ctx, x + 0.5, y + 0.5, w - 1, h - 1, 4);
+    ctx.stroke();
+    ctx.textAlign  = 'left';
+    ctx.fillStyle  = '#546270';
+    ctx.font       = `700 9px "Segoe UI", Arial, sans-serif`;
+    ctx.fillText(label, x + 10, y + 15);
+    ctx.fillStyle  = '#dce8f0';
+    ctx.font       = `600 15px "Segoe UI", Arial, sans-serif`;
+    ctx.fillText(value, x + 10, y + 34, w - 20);
+  }
+
+  function drawProgressBar(x, y, w, h, r) {
+    ctx.fillStyle = 'rgba(6,10,18,0.80)';
+    roundRect(ctx, x, y, w, h, r);
+    ctx.fill();
+    ctx.strokeStyle = '#1e3248';
+    ctx.lineWidth   = 1;
+    roundRect(ctx, x + 0.5, y + 0.5, w - 1, h - 1, r);
+    ctx.stroke();
+    if (pct > 0) {
+      ctx.fillStyle = accentColor;
+      roundRect(ctx, x, y, Math.max(h, w * pct), h, r);
+      ctx.fill();
+    }
+  }
+
+  function truncate(text, maxW) {
+    if (ctx.measureText(text).width <= maxW) return text;
+    let t = text;
+    while (ctx.measureText(t + '…').width > maxW && t.length > 1) t = t.slice(0, -1);
+    return t + '…';
+  }
+
+  function wordWrap(text, maxW, maxLines = 2) {
+    const words = text.split(' ');
+    const lines = [];
+    let line = '';
+    for (const word of words) {
+      const test = line ? line + ' ' + word : word;
+      if (ctx.measureText(test).width > maxW && line) {
+        lines.push(line);
+        line = word;
+        if (lines.length >= maxLines) break;
+      } else {
+        line = test;
+      }
+    }
+    if (line && lines.length < maxLines) lines.push(line);
+    if (lines.length === maxLines && ctx.measureText(lines[maxLines - 1]).width > maxW) {
+      lines[maxLines - 1] = truncate(lines[maxLines - 1], maxW);
+    }
+    return lines;
+  }
+
+  // Filled badge for completed/hardcore; outlined badge for in-progress
+  function drawStatusBadge(centerX, y, fontSize = 13) {
+    ctx.font = `700 ${fontSize}px "Segoe UI", Arial, sans-serif`;
+    const tw = ctx.measureText(statusLabel).width;
+    const bW = tw + 44, bH = fontSize * 2 + 8;
+    const bX = Math.round(centerX - bW / 2);
+    if (isCompleted) {
+      ctx.fillStyle = accentColor;
+      roundRect(ctx, bX, y, bW, bH, 5);
+      ctx.fill();
+      ctx.fillStyle    = '#060a10';
+      ctx.textAlign    = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(statusLabel, centerX, y + bH / 2);
+    } else {
+      ctx.fillStyle  = `rgba(${accentRgb},0.10)`;
+      roundRect(ctx, bX, y, bW, bH, 5);
+      ctx.fill();
+      ctx.strokeStyle = `rgba(${accentRgb},0.45)`;
+      ctx.lineWidth   = 1;
+      roundRect(ctx, bX + 0.5, y + 0.5, bW - 1, bH - 1, 5);
+      ctx.stroke();
+      ctx.fillStyle    = accentColor;
+      ctx.textAlign    = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(statusLabel, centerX, y + bH / 2);
+    }
+    ctx.textBaseline = 'alphabetic';
+    return bH;
+  }
+
+  // Small secondary HARDCORE chip — shown when game is mastered/beaten via hardcore mode
+  function drawHardcoreBadge(centerX, y) {
+    ctx.font = `700 10px "Segoe UI", Arial, sans-serif`;
+    const tw = ctx.measureText('HARDCORE').width;
+    const bW = tw + 24, bH = 22;
+    const bX = Math.round(centerX - bW / 2);
+    ctx.fillStyle = 'rgba(229,177,67,0.12)';
+    roundRect(ctx, bX, y, bW, bH, 4);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(229,177,67,0.60)';
+    ctx.lineWidth   = 1;
+    roundRect(ctx, bX + 0.5, y + 0.5, bW - 1, bH - 1, 4);
+    ctx.stroke();
+    ctx.fillStyle    = '#e5b143';
+    ctx.textAlign    = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('HARDCORE', centerX, y + bH / 2);
+    ctx.textBaseline = 'alphabetic';
+    return bH;
+  }
+
+  function drawDiagonalStamp(cx, cy, text) {
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(-Math.PI / 10);
+    ctx.globalAlpha  = 0.055;
+    ctx.font         = `900 180px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle    = accentColor;
+    ctx.textAlign    = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(text, 0, 0);
+    ctx.globalAlpha  = 1;
+    ctx.textBaseline = 'alphabetic';
+    ctx.restore();
+  }
+
+  function drawUserPill(centerX, y) {
+    if (!username) return;
+    const uname = `@${username}`;
+    ctx.font = `600 12px "Segoe UI", Arial, sans-serif`;
+    const tw    = ctx.measureText(uname).width;
+    const ar    = 16, pillH = 30;
+    const pillW = ar * 2 + 10 + tw + 14;
+    const px    = Math.round(centerX - pillW / 2);
+    ctx.fillStyle = 'rgba(6,10,16,0.88)';
+    roundRect(ctx, px, y, pillW, pillH, pillH / 2);
+    ctx.fill();
+    ctx.strokeStyle = `rgba(${accentRgb},0.40)`;
+    ctx.lineWidth   = 1;
+    roundRect(ctx, px + 0.5, y + 0.5, pillW - 1, pillH - 1, pillH / 2);
+    ctx.stroke();
+    const ax = px + ar + 5, ay = y + pillH / 2;
+    if (avatarImg) {
+      ctx.save();
+      ctx.beginPath(); ctx.arc(ax, ay, ar, 0, Math.PI * 2); ctx.clip();
+      ctx.drawImage(avatarImg, ax - ar, ay - ar, ar * 2, ar * 2);
+      ctx.restore();
+      ctx.strokeStyle = accentColor; ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.arc(ax, ay, ar, 0, Math.PI * 2); ctx.stroke();
+    } else {
+      ctx.fillStyle = `rgba(${accentRgb},0.30)`;
+      ctx.beginPath(); ctx.arc(ax, ay, ar, 0, Math.PI * 2); ctx.fill();
+    }
+    ctx.fillStyle    = '#c6d4df';
+    ctx.font         = `600 12px "Segoe UI", Arial, sans-serif`;
+    ctx.textAlign    = 'left';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(uname, ax + ar + 7, ay);
+    ctx.textBaseline = 'alphabetic';
+  }
+
+  // Single latest achievement block: icon + title + description + date
+  // Returns the total height consumed so callers can advance cy correctly.
+  function drawLatestAchievement(x, y, w, align = 'left') {
+    if (!latestAch) return 0;
+    const startY  = y;
+    const achSize = 56;
+    const textX   = align === 'center' ? x : x + achSize + 14;
+    const textW   = align === 'center' ? w : w - achSize - 14;
+
+    // Section label
+    ctx.font      = `700 9px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle = '#546270';
+    ctx.textAlign = align === 'center' ? 'center' : 'left';
+    ctx.fillText('LATEST ACHIEVEMENT', x, y);
+    y += 14;
+
+    if (align === 'center') {
+      // Centered layout: icon above text
+      const imgX = Math.round(x - achSize / 2);
+      ctx.fillStyle = '#0a0f18';
+      roundRect(ctx, imgX, y, achSize, achSize, 5);
+      ctx.fill();
+      ctx.strokeStyle = `rgba(${accentRgb},0.40)`;
+      ctx.lineWidth   = 1;
+      roundRect(ctx, imgX + 0.5, y + 0.5, achSize - 1, achSize - 1, 5);
+      ctx.stroke();
+      drawImg(ctx, latestAchImg, imgX, y, achSize, achSize, 5);
+      y += achSize + 12;
+      ctx.font      = `700 15px "Segoe UI", Arial, sans-serif`;
+      ctx.fillStyle = '#ffffff';
+      ctx.textAlign = 'center';
+      ctx.fillText(truncate(latestAch.title, w), x, y);
+      y += 20;
+      ctx.font      = `400 11px "Segoe UI", Arial, sans-serif`;
+      ctx.fillStyle = '#8f98a0';
+      const descLines = wordWrap(latestAch.description || '', w, 2);
+      descLines.forEach((line, i) => ctx.fillText(line, x, y + i * 15));
+      y += descLines.length * 15 + 6;
+      if (latestAch.unlockDate) {
+        ctx.font      = `400 10px "Segoe UI", Arial, sans-serif`;
+        ctx.fillStyle = `rgba(${accentRgb},0.70)`;
+        ctx.fillText(new Date(latestAch.unlockDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }), x, y);
+        y += 14;
+      }
+    } else {
+      // Left-aligned layout: icon left, text right
+      ctx.fillStyle = '#0a0f18';
+      roundRect(ctx, x, y, achSize, achSize, 5);
+      ctx.fill();
+      ctx.strokeStyle = `rgba(${accentRgb},0.40)`;
+      ctx.lineWidth   = 1;
+      roundRect(ctx, x + 0.5, y + 0.5, achSize - 1, achSize - 1, 5);
+      ctx.stroke();
+      drawImg(ctx, latestAchImg, x, y, achSize, achSize, 5);
+      // Title
+      ctx.font      = `700 14px "Segoe UI", Arial, sans-serif`;
+      ctx.fillStyle = '#ffffff';
+      ctx.textAlign = 'left';
+      ctx.fillText(truncate(latestAch.title, textW), textX, y + 15);
+      // Description (1 line)
+      ctx.font      = `400 11px "Segoe UI", Arial, sans-serif`;
+      ctx.fillStyle = '#8f98a0';
+      ctx.fillText(truncate(latestAch.description || '', textW), textX, y + 32);
+      // Date
+      if (latestAch.unlockDate) {
+        ctx.font      = `400 10px "Segoe UI", Arial, sans-serif`;
+        ctx.fillStyle = `rgba(${accentRgb},0.70)`;
+        ctx.fillText(new Date(latestAch.unlockDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }), textX, y + 50);
+      }
+      y += achSize;
+    }
+    return y - startY;
+  }
+
+  const title       = game.baseTitle || game.title;
+  const consoleName = (game.console || '').toUpperCase();
+  const metaParts   = [game.genre, game.released ? String(game.released) : null].filter(Boolean);
+  const pctDisplay  = pct >= 1 ? '100%' : `${(pct * 100).toFixed(1)}%`;
+
+  if (isH) {
+    // ═══════════════════════════════════════════════════════════════════════
+    // HORIZONTAL  1200 × 400
+    // Left panel (0–340): identity — solid dark, icon, console, status, user pill
+    // Right panel (340–1200): bg art — title, meta, progress, pct, chips, latest ach
+    // ═══════════════════════════════════════════════════════════════════════
+
+    const lpW = 340;
+
+    // Left panel: near-opaque dark
+    ctx.fillStyle = 'rgba(6,10,16,0.93)';
+    ctx.fillRect(0, 0, lpW, H);
+
+    // Right panel: gradient — opaque near separator, fades right
+    const rpG = ctx.createLinearGradient(lpW, 0, W, 0);
+    rpG.addColorStop(0,    'rgba(6,10,16,0.92)');
+    rpG.addColorStop(0.30, 'rgba(6,10,16,0.76)');
+    rpG.addColorStop(1,    'rgba(6,10,16,0.30)');
+    ctx.fillStyle = rpG;
+    ctx.fillRect(lpW, 0, W - lpW, H);
+
+    // Bottom vignette
+    const bvG = ctx.createLinearGradient(0, H - 50, 0, H);
+    bvG.addColorStop(0, 'transparent');
+    bvG.addColorStop(1, 'rgba(6,10,16,0.90)');
+    ctx.fillStyle = bvG;
+    ctx.fillRect(0, H - 50, W, 50);
+
+    // Diagonal stamp on right panel for completed games
+    if (isCompleted) drawDiagonalStamp(860, 200, statusLabel);
+
+    // Left accent bar — solid color, no glow
+    ctx.fillStyle = accentColor;
+    ctx.fillRect(0, 0, 7, H);
+
+    // Panel separator line
+    {
+      const sg = ctx.createLinearGradient(0, 30, 0, H - 30);
+      sg.addColorStop(0,    'transparent');
+      sg.addColorStop(0.15, `rgba(${accentRgb},0.25)`);
+      sg.addColorStop(0.85, `rgba(${accentRgb},0.25)`);
+      sg.addColorStop(1,    'transparent');
+      ctx.strokeStyle = sg; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(lpW, 0); ctx.lineTo(lpW, H); ctx.stroke();
+    }
+
+    // ── LEFT PANEL ──────────────────────────────────────────────────────────
+    const lpMid = Math.round(lpW / 2);
+
+    // Game icon — vertically centered, taking up most of the left panel height
+    const iconSize = 170;
+    const iconX    = Math.round(lpMid - iconSize / 2);
+    const iconY    = Math.round((H - iconSize) / 2) - 20;
+
+    ctx.fillStyle = '#040810';
+    roundRect(ctx, iconX, iconY, iconSize, iconSize, 8);
+    ctx.fill();
+    drawImg(ctx, iconImg, iconX, iconY, iconSize, iconSize, 8);
+    ctx.strokeStyle = accentColor; ctx.lineWidth = 2;
+    roundRect(ctx, iconX + 1, iconY + 1, iconSize - 2, iconSize - 2, 7);
+    ctx.stroke();
+
+    // Console badge below icon
+    let lpY = iconY + iconSize + 14;
+    ctx.font = `700 11px "Segoe UI", Arial, sans-serif`;
+    const cbW = ctx.measureText(consoleName).width + 22;
+    ctx.fillStyle  = 'rgba(102,192,244,0.10)';
+    roundRect(ctx, Math.round(lpMid - cbW / 2), lpY - 13, cbW, 20, 4);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(102,192,244,0.32)'; ctx.lineWidth = 1;
+    roundRect(ctx, Math.round(lpMid - cbW / 2) + 0.5, lpY - 12.5, cbW - 1, 19, 4);
+    ctx.stroke();
+    ctx.fillStyle = '#66c0f4'; ctx.textAlign = 'center';
+    ctx.fillText(consoleName, lpMid, lpY);
+    lpY += 26;
+
+    // Status badge (+ secondary HARDCORE chip if beaten/mastered via HC)
+    const sbH = drawStatusBadge(lpMid, lpY, 12);
+    if (showHCChip) drawHardcoreBadge(lpMid, lpY + sbH + 6);
+
+    // User pill anchored to bottom of left panel
+    drawUserPill(lpMid, H - 44);
+
+    // ── RIGHT PANEL ─────────────────────────────────────────────────────────
+    const rx = lpW + 28;
+    const rw = W - rx - 36;
+    let   ry = 36;
+
+    // Game title (up to 2 lines, 34px)
+    ctx.font = `700 34px "Segoe UI", Arial, sans-serif`;
+    const titleLines = wordWrap(title, rw, 2);
+    ctx.fillStyle = '#ffffff'; ctx.textAlign = 'left';
+    titleLines.forEach((line, i) => ctx.fillText(line, rx, ry + 34 + i * 42));
+    ry += titleLines.length * 42 + 6;
+
+    // Subset + metadata
+    if (game.subsetName) {
+      ctx.font = `400 12px "Segoe UI", Arial, sans-serif`;
+      ctx.fillStyle = '#8f98a0'; ctx.textAlign = 'left';
+      ctx.fillText(`Subset: ${game.subsetName}`, rx, ry, rw);
+      ry += 18;
+    }
+    if (metaParts.length > 0) {
+      ctx.font = `400 12px "Segoe UI", Arial, sans-serif`;
+      ctx.fillStyle = '#8f98a0'; ctx.textAlign = 'left';
+      ctx.fillText(metaParts.join('  ·  '), rx, ry, rw);
+      ry += 18;
+    }
+    ry += 6;
+
+    // Divider
+    ctx.strokeStyle = `rgba(${accentRgb},0.18)`; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(rx, ry); ctx.lineTo(rx + rw, ry); ctx.stroke();
+    ry += 14;
+
+    // Progress row: label left, count right
+    ctx.font = `700 9px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle = '#546270'; ctx.textAlign = 'left';
+    ctx.fillText('ACHIEVEMENT PROGRESS', rx, ry);
+    ctx.font = `400 11px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle = '#8f98a0'; ctx.textAlign = 'right';
+    ctx.fillText(`${game.achievementsUnlocked} / ${game.achievementsTotal}`, rx + rw, ry);
+    ctx.textAlign = 'left';
+    ry += 12;
+    drawProgressBar(rx, ry, rw, 8, 4);
+    ry += 8 + 8;
+
+    // pct% + "COMPLETION" inline (no glow)
+    ctx.font = `700 24px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle = accentColor; ctx.textAlign = 'left';
+    ctx.fillText(pctDisplay, rx, ry + 24);
+    ctx.font = `400 11px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle = `rgba(${accentRgb},0.55)`;
+    ctx.fillText('  COMPLETION', rx + ctx.measureText(pctDisplay).width, ry + 24);
+    ry += 34;
+
+    // Stat chips (2 across — points + playtime; keep it tight for 400px height)
+    const chips = [
+      pointsTotal > 0 ? { label: 'POINTS EARNED', value: `${pointsEarned.toLocaleString()} / ${pointsTotal.toLocaleString()}` } : null,
+      game.playtime && game.playtime !== 'Unknown' ? { label: 'PLAYTIME', value: game.playtime } : null,
+    ].filter(Boolean).slice(0, 2);
+
+    if (chips.length > 0) {
+      const chipH = 44, chipGap = 10;
+      const chipW = Math.floor((rw - chipGap * (chips.length - 1)) / chips.length);
+      chips.forEach((ch, i) => drawStatChip(ch.label, ch.value, rx + i * (chipW + chipGap), ry, chipW, chipH));
+      ry += chipH + 14;
+    }
+
+    // Latest achievement (icon-left layout)
+    drawLatestAchievement(rx, ry, rw, 'left');
+
+    // Watermark bottom-right
+    ctx.font = `400 10px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle = 'rgba(84,98,112,0.50)'; ctx.textAlign = 'right';
+    ctx.fillText('retroachievements.org', W - 18, H - 12);
+    ctx.textAlign = 'left';
+
+  } else {
+    // ═══════════════════════════════════════════════════════════════════════
+    // VERTICAL  1080 × 1350  (Instagram 4:5 portrait)
+    // Hero area (top 400px): bg image with icon centered
+    // Info area: title, status, %, progress, chips, latest achievement, user pill
+    // ═══════════════════════════════════════════════════════════════════════
+
+    const heroH = 400;
+    const margin = 64; // side margin for content
+
+    // Hero overlay
+    const heroG = ctx.createLinearGradient(0, 0, 0, heroH + 40);
+    heroG.addColorStop(0,   'rgba(6,10,16,0.10)');
+    heroG.addColorStop(0.5, 'rgba(6,10,16,0.50)');
+    heroG.addColorStop(1,   'rgba(6,10,16,0.97)');
+    ctx.fillStyle = heroG;
+    ctx.fillRect(0, 0, W, heroH + 40);
+
+    // Info area: solid dark
+    ctx.fillStyle = 'rgba(6,10,16,0.96)';
+    ctx.fillRect(0, heroH + 40, W, H - heroH - 40);
+
+    // Bottom vignette
+    const bvG = ctx.createLinearGradient(0, H - 60, 0, H);
+    bvG.addColorStop(0, 'transparent');
+    bvG.addColorStop(1, 'rgba(6,10,16,0.95)');
+    ctx.fillStyle = bvG;
+    ctx.fillRect(0, H - 60, W, 60);
+
+    // Diagonal stamp in hero area
+    if (isCompleted) drawDiagonalStamp(W / 2 + 120, heroH / 2, statusLabel);
+
+    // Top accent bar
+    {
+      const tg = ctx.createLinearGradient(0, 0, W, 0);
+      tg.addColorStop(0, 'transparent'); tg.addColorStop(0.06, accentColor);
+      tg.addColorStop(0.94, accentColor); tg.addColorStop(1, 'transparent');
+      ctx.fillStyle = tg;
+      ctx.fillRect(0, 0, W, 6);
+    }
+
+    // Game icon centered in hero
+    const iconSize = 190;
+    const iconX    = Math.round((W - iconSize) / 2);
+    const iconY    = Math.round((heroH - iconSize) / 2);
+
+    ctx.fillStyle = '#040810';
+    roundRect(ctx, iconX, iconY, iconSize, iconSize, 12);
+    ctx.fill();
+    drawImg(ctx, iconImg, iconX, iconY, iconSize, iconSize, 12);
+    ctx.strokeStyle = accentColor; ctx.lineWidth = 3;
+    roundRect(ctx, iconX + 1.5, iconY + 1.5, iconSize - 3, iconSize - 3, 11);
+    ctx.stroke();
+
+    // ── Info area ───────────────────────────────────────────────────────────
+    let cy = heroH + 22;
+    const contentW = W - margin * 2;
+
+    // Console badge (centered)
+    ctx.font = `700 12px "Segoe UI", Arial, sans-serif`;
+    const cbW = ctx.measureText(consoleName).width + 24;
+    const cbX = Math.round((W - cbW) / 2);
+    ctx.fillStyle  = 'rgba(102,192,244,0.10)';
+    roundRect(ctx, cbX, cy - 14, cbW, 22, 4);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(102,192,244,0.32)'; ctx.lineWidth = 1;
+    roundRect(ctx, cbX + 0.5, cy - 13.5, cbW - 1, 21, 4);
+    ctx.stroke();
+    ctx.fillStyle = '#66c0f4'; ctx.textAlign = 'center';
+    ctx.fillText(consoleName, W / 2, cy);
+    cy += 30;
+
+    // Title (2-line, 38px)
+    ctx.font = `700 38px "Segoe UI", Arial, sans-serif`;
+    const titleLines = wordWrap(title, contentW, 2);
+    ctx.fillStyle = '#ffffff'; ctx.textAlign = 'center';
+    titleLines.forEach((line, i) => ctx.fillText(line, W / 2, cy + 38 + i * 48));
+    cy += titleLines.length * 48 + 8;
+
+    // Metadata
+    if (metaParts.length > 0) {
+      ctx.font = `400 13px "Segoe UI", Arial, sans-serif`;
+      ctx.fillStyle = '#8f98a0'; ctx.textAlign = 'center';
+      ctx.fillText(metaParts.join('  ·  '), W / 2, cy);
+      cy += 22;
+    } else {
+      cy += 8;
+    }
+
+    // Divider
+    ctx.strokeStyle = `rgba(${accentRgb},0.20)`; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(margin, cy); ctx.lineTo(W - margin, cy); ctx.stroke();
+    cy += 22;
+
+    // Status badge (+ secondary HARDCORE chip if beaten/mastered via HC)
+    let mainSbH = drawStatusBadge(W / 2, cy, 14);
+    if (showHCChip) {
+      mainSbH += 8 + drawHardcoreBadge(W / 2, cy + mainSbH + 8);
+    }
+    cy += mainSbH + 18;
+
+    // pct% (56px)
+    ctx.font      = `900 60px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle = accentColor;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+    ctx.fillText(pctDisplay, W / 2, cy);
+    ctx.textBaseline = 'alphabetic';
+    ctx.font      = `700 11px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle = `rgba(${accentRgb},0.52)`;
+    ctx.textAlign = 'center';
+    ctx.fillText('COMPLETION', W / 2, cy + 64);
+    cy += 82;
+
+    // Achievement count + progress bar
+    ctx.font = `400 13px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle = '#8f98a0'; ctx.textAlign = 'center';
+    ctx.fillText(`${game.achievementsUnlocked} / ${game.achievementsTotal} achievements`, W / 2, cy);
+    cy += 16;
+    drawProgressBar(margin, cy, contentW, 10, 5);
+    cy += 10 + 20;
+
+    // Stat chips (2×2 grid)
+    const statItems = [
+      pointsTotal > 0 ? { label: 'POINTS EARNED', value: `${pointsEarned.toLocaleString()} / ${pointsTotal.toLocaleString()}` } : null,
+      game.playtime && game.playtime !== 'Unknown' ? { label: 'PLAYTIME', value: game.playtime } : null,
+      game.totalPlayers > 1 ? { label: 'TOTAL PLAYERS', value: game.totalPlayers.toLocaleString() } : null,
+      game.lastPlayed && game.lastPlayed !== 'Unknown' ? { label: 'LAST PLAYED', value: game.lastPlayed } : null,
+    ].filter(Boolean).slice(0, 4);
+
+    if (statItems.length > 0) {
+      const chipGap = 14;
+      const chipW   = Math.floor((contentW - chipGap) / 2);
+      const chipH   = 52;
+      statItems.forEach((item, i) => {
+        const col = i % 2, row = Math.floor(i / 2);
+        drawStatChip(item.label, item.value, margin + col * (chipW + chipGap), cy + row * (chipH + chipGap), chipW, chipH);
+      });
+      cy += Math.ceil(statItems.length / 2) * (chipH + chipGap) + 18;
+    }
+
+    // Divider before latest achievement
+    ctx.strokeStyle = `rgba(${accentRgb},0.15)`; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(margin, cy); ctx.lineTo(W - margin, cy); ctx.stroke();
+    cy += 20;
+
+    // Latest achievement (centered layout) — use actual height returned
+    const achBlockH = drawLatestAchievement(W / 2, cy, contentW, 'center');
+    cy += achBlockH + 18;
+
+    // User pill (centered)
+    drawUserPill(W / 2, cy);
+
+    // Watermark
+    ctx.font = `400 11px "Segoe UI", Arial, sans-serif`;
+    ctx.fillStyle = 'rgba(84,98,112,0.50)'; ctx.textAlign = 'center';
+    ctx.fillText('retroachievements.org', W / 2, H - 16);
+    ctx.textAlign = 'left';
+  }
+
+  return canvas;
+}
+
+// ── ShareModal ─────────────────────────────────────────────────────────────────
+
+const ShareModal = ({ game, previewAchs, username, avatar, onClose }) => {
+  const [variant,  setVariant]  = useState('horizontal');
+  const [canvas,   setCanvas]   = useState(null);
+  const [loading,  setLoading]  = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    setCanvas(null);
+    generateShareCanvas(game, previewAchs, variant, username, avatar).then(c => {
+      setCanvas(c);
+      setLoading(false);
+    });
+  }, [game.id, variant]);
+
+  useEffect(() => {
+    const onKey = e => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = ''; };
+  }, []);
+
+  const download = () => {
+    if (!canvas) return;
+    const a = document.createElement('a');
+    a.download = `${(game.baseTitle || game.title).replace(/[^a-z0-9]/gi, '_')}_${variant}.png`;
+    a.href = canvas.toDataURL('image/png');
+    a.click();
+  };
+
+  const share = async () => {
+    if (!canvas || !navigator.share) return;
+    canvas.toBlob(async blob => {
+      try {
+        await navigator.share({
+          title: game.baseTitle || game.title,
+          files: [new File([blob], 'card.png', { type: 'image/png' })],
+        });
+      } catch {}
+    });
+  };
+
+  const canNativeShare = !!navigator.share;
+
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" onClick={onClose}>
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]" />
+      <div className="relative z-10 bg-[#1b2838] border border-[#2a475e] rounded-[4px] shadow-2xl flex flex-col max-w-[90vw]"
+        onClick={e => e.stopPropagation()}>
+
+        {/* Header */}
+        <div className="flex items-center gap-3 px-4 py-3 border-b border-[#2a475e]">
+          <span className="text-[12px] text-white font-medium flex-1">Share Card</span>
+          {/* Variant toggle */}
+          <div className="flex items-center gap-1">
+            {['horizontal', 'vertical'].map(v => (
+              <button key={v} onClick={() => setVariant(v)}
+                className={`text-[9px] font-semibold uppercase tracking-wider px-2 py-[2px] rounded-[2px] border transition-colors ${variant === v ? 'bg-[#66c0f4] text-[#101214] border-[#66c0f4]' : 'text-[#546270] border-[#2a475e] hover:text-[#c6d4df]'}`}>
+                {v}
+              </button>
+            ))}
+          </div>
+          <button onClick={onClose} className="text-[#546270] hover:text-[#c6d4df] transition-colors ml-1"><X size={14} /></button>
+        </div>
+
+        {/* Preview */}
+        <div className="flex items-center justify-center p-5 bg-[#171a21]">
+          {loading
+            ? <div className="flex items-center justify-center" style={{ width: variant === 'horizontal' ? 400 : 240, height: variant === 'horizontal' ? 133 : 300 }}>
+                <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
+                <div style={{ width: 24, height: 24, border: '3px solid #2a475e', borderTopColor: '#66c0f4', borderRadius: '50%', animation: 'spin 0.7s linear infinite' }} />
+              </div>
+            : canvas && <img src={canvas.toDataURL()} alt="card preview"
+                style={{ maxWidth: '100%', maxHeight: '60vh', borderRadius: 3, border: '1px solid #2a475e' }} />
+          }
+        </div>
+
+        {/* Actions */}
+        <div className="flex items-center gap-2 px-4 py-3 border-t border-[#2a475e]">
+          <button onClick={download} disabled={loading}
+            className="flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1.5 rounded-[2px] bg-[#66c0f4] text-[#101214] hover:bg-[#57cbde] transition-colors disabled:opacity-40">
+            <Download size={12} /> Download
+          </button>
+          {canNativeShare && (
+            <button onClick={share} disabled={loading}
+              className="flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1.5 rounded-[2px] border border-[#2a475e] text-[#8f98a0] hover:text-[#c6d4df] hover:border-[#66c0f4] transition-colors disabled:opacity-40">
+              <Share2 size={12} /> Share
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const GuideStrip = ({ game, guides, isLast }) => {
   const [openCategory, setOpenCategory] = useState(null);
@@ -91,7 +840,8 @@ const GuideStrip = ({ game, guides, isLast }) => {
   );
 };
 
-const GameCard = ({ game, onViewDetails, guides }) => {
+const GameCard = ({ game, onViewDetails, guides, username, avatar }) => {
+  const [showShare, setShowShare] = useState(false);
   const stripeColor = game.isMastered
     ? 'border-l-[#e5b143]'
     : game.isBeaten
@@ -114,9 +864,18 @@ const GameCard = ({ game, onViewDetails, guides }) => {
   }, [game.achievements]);
 
   return (
-    <div className={`flex flex-col bg-[#202d39] rounded-[3px] transition-transform duration-200 hover:-translate-y-0.5 border-l-[3px] border border-[#323f4c] shadow-md ${stripeColor}`}>
+    <div className={`group flex flex-col bg-[#202d39] rounded-[3px] transition-transform duration-200 hover:-translate-y-0.5 border-l-[3px] border border-[#323f4c] shadow-md ${stripeColor}`}>
 
       <div className="relative flex flex-row p-3 gap-3 md:gap-4 items-center min-h-[90px] z-10 overflow-hidden rounded-t-[3px]">
+
+        {/* Share button */}
+        <button
+          onClick={e => { e.stopPropagation(); setShowShare(true); }}
+          className="absolute top-2 right-2 z-20 flex items-center gap-1 text-[10px] font-semibold px-2 py-1 rounded-[2px] border border-[#2a475e] bg-[#1b2838]/80 text-[#546270] hover:text-[#66c0f4] hover:border-[#66c0f4]/60 transition-colors opacity-0 group-hover:opacity-100"
+          title="Share card"
+        >
+          <Share2 size={10} /> Share
+        </button>
 
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden rounded-t-[3px]">
           <img 
@@ -292,6 +1051,11 @@ const GameCard = ({ game, onViewDetails, guides }) => {
             <ChevronDown size={10} className="-rotate-90 text-[#546270] group-hover:text-[#66c0f4] transition-colors" />
           </div>
         </button>
+      )}
+
+      {showShare && createPortal(
+        <ShareModal game={game} previewAchs={previewAchs} username={username} avatar={avatar} onClose={() => setShowShare(false)} />,
+        document.body
       )}
     </div>
   );
@@ -1721,7 +2485,7 @@ export default function App() {
                 </>
               )}
               {displayedGames.map(game => (
-                <GameCard key={game.id} game={game} onViewDetails={setSelectedGame} guides={guidesData[game.id] ?? null} />
+                <GameCard key={game.id} game={game} onViewDetails={setSelectedGame} guides={guidesData[game.id] ?? null} username={PROFILE_DATA?.username} avatar={PROFILE_DATA?.avatar} />
               ))}
             </>
           )}
