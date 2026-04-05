@@ -1,20 +1,20 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-04T23:41:26.973Z"
+        "extractionTimestamp": "2026-04-05T03:33:47.168Z"
     },
     "profile": {
         "steamId": "76561198188939413",
         "displayName": "Yozuryu",
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
-        "status": 0,
+        "status": 1,
         "lastOnline": "2026-04-04T13:03:10.000Z",
         "countryCode": "ID"
     },
     "stats": {
         "totalGames": 1247,
-        "totalPlaytimeMin": 345403,
-        "totalPlaytimeHrs": 5757,
+        "totalPlaytimeMin": 345490,
+        "totalPlaytimeHrs": 5758,
         "gamesWithPlaytime": 815,
         "totalAchievements": 9975,
         "unlockedAchievements": 2789,
@@ -24,6 +24,17 @@
         "avgPlaytimeMin": 423
     },
     "recentlyPlayed": [
+        {
+            "appId": 1282590,
+            "name": "Train Sim World® 2",
+            "playtime2Weeks": 87,
+            "playtimeForever": 561,
+            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/1282590/1ae9efd1d3e696051d6228d84ea74bbf13d5b2dc.jpg",
+            "storeUrl": "https://store.steampowered.com/app/1282590",
+            "lastPlayedTs": "2026-04-05T03:31:06.000Z",
+            "achUnlocked": 6,
+            "achTotal": 435
+        },
         {
             "appId": 539330,
             "name": "Light Fairytale Episode 1",
@@ -103,13 +114,13 @@
         }
     ],
     "mostRecentGame": {
-        "appId": 539330,
-        "name": "Light Fairytale Episode 1",
-        "playtime2Weeks": 15,
-        "playtimeForever": 193,
-        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/539330/fede24802944d93c6453e75e6a1263d738abf347.jpg",
-        "storeUrl": "https://store.steampowered.com/app/539330",
-        "lastPlayedTs": "2026-04-03T14:36:40.000Z"
+        "appId": 1282590,
+        "name": "Train Sim World® 2",
+        "playtime2Weeks": 87,
+        "playtimeForever": 561,
+        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/1282590/1ae9efd1d3e696051d6228d84ea74bbf13d5b2dc.jpg",
+        "storeUrl": "https://store.steampowered.com/app/1282590",
+        "lastPlayedTs": "2026-04-05T03:31:06.000Z"
     },
     "mostRecentUnlock": {
         "appId": 539330,
