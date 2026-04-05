@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-05T03:16:20.472Z"
+        "extractionTimestamp": "2026-04-05T05:46:52.893Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Lvl:1 | ⏰10:32 | 💰:500 | 🤺:0 | 🕵:0 | 🎁:0 | 🐟:Beginner | 🎮💯: 0 | 🐲:0/7 | 🐲🆙:0/4 | Skills 0/76",
-        "lastGameId": 11292,
+        "richPresenceMsg": "Playing The Legend of Dragoon",
+        "lastGameId": 11264,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1635,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Lvl:1 | ⏰10:32 | 💰:500 | 🤺:0 | 🕵:0 | 🎁:0 | 🐟:Beginner | 🎮💯: 0 | 🐲:0/7 | 🐲🆙:0/4 | Skills 0/76",
-        "richPresenceMsgDate": "2026-04-04 02:03:17",
-        "lastGameId": 11292,
+        "richPresenceMsg": "Playing The Legend of Dragoon",
+        "richPresenceMsgDate": "2026-04-05 05:03:43",
+        "lastGameId": 11264,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1635,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 52952,
+        "rank": 52962,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 137555,
+        "totalRanked": 137570,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -125,6 +125,24 @@
         ]
     },
     "recentlyPlayedGames": [
+        {
+            "gameId": 11264,
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "title": "The Legend of Dragoon",
+            "imageIcon": "/Images/035804.png",
+            "imageTitle": "/Images/029832.png",
+            "imageIngame": "/Images/029833.png",
+            "imageBoxArt": "/Images/046705.png",
+            "lastPlayed": "2026-04-05 05:03:43",
+            "achievementsTotal": 108,
+            "numPossibleAchievements": 108,
+            "possibleScore": 874,
+            "numAchieved": 0,
+            "scoreAchieved": 0,
+            "numAchievedHardcore": 0,
+            "scoreAchievedHardcore": 0
+        },
         {
             "gameId": 11292,
             "consoleId": 12,
@@ -372,24 +390,6 @@
             "achievementsTotal": 6,
             "numPossibleAchievements": 6,
             "possibleScore": 6,
-            "numAchieved": 0,
-            "scoreAchieved": 0,
-            "numAchievedHardcore": 0,
-            "scoreAchievedHardcore": 0
-        },
-        {
-            "gameId": 18320,
-            "consoleId": 12,
-            "consoleName": "PlayStation",
-            "title": "~Prototype~ Suikoden II [E3 Preview]",
-            "imageIcon": "/Images/093869.png",
-            "imageTitle": "/Images/051530.png",
-            "imageIngame": "/Images/066838.png",
-            "imageBoxArt": "/Images/051533.png",
-            "lastPlayed": "2026-03-28 02:34:58",
-            "achievementsTotal": 6,
-            "numPossibleAchievements": 6,
-            "possibleScore": 40,
             "numAchieved": 0,
             "scoreAchieved": 0,
             "numAchievedHardcore": 0,
@@ -1027,7 +1027,7 @@
         ]
     },
     "wantToPlayList": {
-        "total": 444,
+        "total": 449,
         "results": [
             {
                 "id": 27,
@@ -2254,6 +2254,15 @@
                 "achievementsPublished": 0
             },
             {
+                "id": 3709,
+                "title": "The Tower of Druaga",
+                "consoleId": 7,
+                "consoleName": "NES/Famicom",
+                "imageIcon": "/Images/102034.png",
+                "pointsTotal": 689,
+                "achievementsPublished": 74
+            },
+            {
                 "id": 3717,
                 "title": "Puzzle Quest: Challenge of the Warlords",
                 "consoleId": 41,
@@ -2738,6 +2747,15 @@
                 "imageIcon": "/Images/058060.png",
                 "pointsTotal": 2255,
                 "achievementsPublished": 320
+            },
+            {
+                "id": 7993,
+                "title": "The Tower of Druaga",
+                "consoleId": 4,
+                "consoleName": "Game Boy",
+                "imageIcon": "/Images/106442.png",
+                "pointsTotal": 517,
+                "achievementsPublished": 132
             },
             {
                 "id": 7994,
@@ -3620,6 +3638,15 @@
                 "imageIcon": "/Images/111387.png",
                 "pointsTotal": 189,
                 "achievementsPublished": 39
+            },
+            {
+                "id": 12826,
+                "title": "Druaga no Tou | The Tower of Druaga",
+                "consoleId": 8,
+                "consoleName": "PC Engine/TurboGrafx-16",
+                "imageIcon": "/Images/020096.png",
+                "pointsTotal": 600,
+                "achievementsPublished": 38
             },
             {
                 "id": 12883,
@@ -4774,6 +4801,15 @@
                 "achievementsPublished": 30
             },
             {
+                "id": 22364,
+                "title": "The Nightmare of Druaga: Fushigi no Dungeon",
+                "consoleId": 21,
+                "consoleName": "PlayStation 2",
+                "imageIcon": "/Images/107325.png",
+                "pointsTotal": 1940,
+                "achievementsPublished": 140
+            },
+            {
                 "id": 22475,
                 "title": "~Prototype~ Crash Bandicoot",
                 "consoleId": 12,
@@ -4898,6 +4934,15 @@
                 "imageIcon": "/Images/112095.png",
                 "pointsTotal": 619,
                 "achievementsPublished": 67
+            },
+            {
+                "id": 32919,
+                "title": "The Nightmare of Druaga: Fushigi no Dungeon [Subset - Alchemy]",
+                "consoleId": 21,
+                "consoleName": "PlayStation 2",
+                "imageIcon": "/Images/107324.png",
+                "pointsTotal": 1300,
+                "achievementsPublished": 150
             },
             {
                 "id": 33170,
@@ -5048,23 +5093,23 @@
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
-        "gameId": 11292,
+        "gameId": 11264,
         "consoleId": 12,
         "consoleName": "PlayStation",
-        "title": "Breath of Fire IV",
-        "imageIcon": "/Images/051208.png",
-        "imageTitle": "/Images/019056.png",
-        "imageIngame": "/Images/019057.png",
-        "imageBoxArt": "/Images/046368.png",
-        "lastPlayed": "2026-04-04 02:03:17",
-        "achievementsTotal": 129,
-        "numPossibleAchievements": 129,
-        "possibleScore": 1200,
+        "title": "The Legend of Dragoon",
+        "imageIcon": "/Images/035804.png",
+        "imageTitle": "/Images/029832.png",
+        "imageIngame": "/Images/029833.png",
+        "imageBoxArt": "/Images/046705.png",
+        "lastPlayed": "2026-04-05 05:03:43",
+        "achievementsTotal": 108,
+        "numPossibleAchievements": 108,
+        "possibleScore": 874,
         "numAchieved": 0,
         "scoreAchieved": 0,
         "numAchievedHardcore": 0,
         "scoreAchievedHardcore": 0
     },
-    "points7Days": 281,
+    "points7Days": 268,
     "points30Days": 375
 }
