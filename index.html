@@ -23,11 +23,11 @@
     /* Platform grid */
     .platform-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: var(--platform-cols, repeat(3, 1fr));
       gap: 12px;
       align-items: stretch;
     }
-    @media (max-width: 640px)  { .platform-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 640px)  { .platform-grid { grid-template-columns: 1fr !important; } }
     @media (min-width: 641px) and (max-width: 900px) { .platform-grid { grid-template-columns: repeat(2, 1fr); } }
 
     /* Active card */
@@ -367,7 +367,7 @@
         const visibleCount = Object.values(platformMap).filter(c => c.visible).length;
         const grid = document.querySelector('.platform-grid');
         if (grid && visibleCount < 3) {
-          grid.style.gridTemplateColumns = `repeat(${visibleCount}, 1fr)`;
+          grid.style.setProperty('--platform-cols', `repeat(${visibleCount}, 1fr)`);
           grid.style.maxWidth = visibleCount === 1 ? '360px' : '680px';
           grid.style.marginLeft  = 'auto';
           grid.style.marginRight = 'auto';

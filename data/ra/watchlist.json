@@ -1,5 +1,5 @@
 {
-    "total": 464,
+    "total": 503,
     "results": [
         {
             "id": 27,
@@ -200,6 +200,60 @@
             "achievementsPublished": 66
         },
         {
+            "id": 567,
+            "title": "Mega Man Battle Network 4.5: Real Operation",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/082480.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
+            "id": 575,
+            "title": "Mega Man Battle Network",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/091410.png",
+            "pointsTotal": 515,
+            "achievementsPublished": 50
+        },
+        {
+            "id": 624,
+            "title": "Mega Man X3",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/038324.png",
+            "pointsTotal": 465,
+            "achievementsPublished": 61
+        },
+        {
+            "id": 625,
+            "title": "Mega Man Zero 3",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/042926.png",
+            "pointsTotal": 750,
+            "achievementsPublished": 53
+        },
+        {
+            "id": 629,
+            "title": "Mega Man X2",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/023582.png",
+            "pointsTotal": 667,
+            "achievementsPublished": 70
+        },
+        {
+            "id": 637,
+            "title": "Mega Man X",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/043274.png",
+            "pointsTotal": 521,
+            "achievementsPublished": 57
+        },
+        {
             "id": 668,
             "title": "Pokémon Emerald Version",
             "consoleId": 5,
@@ -245,6 +299,15 @@
             "achievementsPublished": 36
         },
         {
+            "id": 713,
+            "title": "Mega Man Xtreme",
+            "consoleId": 6,
+            "consoleName": "Game Boy Color",
+            "imageIcon": "/Images/023366.png",
+            "pointsTotal": 398,
+            "achievementsPublished": 44
+        },
+        {
             "id": 723,
             "title": "Pokémon Yellow Version: Special Pikachu Edition",
             "consoleId": 4,
@@ -279,6 +342,114 @@
             "imageIcon": "/Images/056475.png",
             "pointsTotal": 963,
             "achievementsPublished": 90
+        },
+        {
+            "id": 773,
+            "title": "Mega Man Battle Network 2",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/086570.png",
+            "pointsTotal": 902,
+            "achievementsPublished": 80
+        },
+        {
+            "id": 774,
+            "title": "Mega Man Battle Network 3: Blue Version",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/102929.png",
+            "pointsTotal": 724,
+            "achievementsPublished": 79
+        },
+        {
+            "id": 775,
+            "title": "Mega Man Battle Network 3: White Version",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/102930.png",
+            "pointsTotal": 808,
+            "achievementsPublished": 89
+        },
+        {
+            "id": 776,
+            "title": "Mega Man Battle Network 4: Blue Moon",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/112987.png",
+            "pointsTotal": 815,
+            "achievementsPublished": 55
+        },
+        {
+            "id": 777,
+            "title": "Mega Man Battle Network 4: Red Sun",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/112985.png",
+            "pointsTotal": 570,
+            "achievementsPublished": 44
+        },
+        {
+            "id": 778,
+            "title": "Mega Man Battle Network 5: Team Colonel",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/080695.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
+            "id": 779,
+            "title": "Mega Man Battle Network 5: Team Protoman",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/080694.png",
+            "pointsTotal": 872,
+            "achievementsPublished": 88
+        },
+        {
+            "id": 780,
+            "title": "Mega Man Battle Network 6: Cybeast Falzar",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/080787.png",
+            "pointsTotal": 579,
+            "achievementsPublished": 57
+        },
+        {
+            "id": 781,
+            "title": "Mega Man Battle Network 6: Cybeast Gregar",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/080788.png",
+            "pointsTotal": 646,
+            "achievementsPublished": 49
+        },
+        {
+            "id": 782,
+            "title": "Mega Man Zero",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/025922.png",
+            "pointsTotal": 495,
+            "achievementsPublished": 44
+        },
+        {
+            "id": 783,
+            "title": "Mega Man Zero 2",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/124432.png",
+            "pointsTotal": 510,
+            "achievementsPublished": 45
+        },
+        {
+            "id": 784,
+            "title": "Mega Man Zero 4",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/124431.png",
+            "pointsTotal": 700,
+            "achievementsPublished": 52
         },
         {
             "id": 810,
@@ -702,6 +873,15 @@
             "imageIcon": "/Images/105341.png",
             "pointsTotal": 1250,
             "achievementsPublished": 112
+        },
+        {
+            "id": 2680,
+            "title": "Mega Man X8",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/053049.png",
+            "pointsTotal": 1071,
+            "achievementsPublished": 113
         },
         {
             "id": 2683,
@@ -1514,6 +1694,24 @@
             "achievementsPublished": 68
         },
         {
+            "id": 4909,
+            "title": "Mega Man Battle Chip Challenge",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/038243.png",
+            "pointsTotal": 385,
+            "achievementsPublished": 32
+        },
+        {
+            "id": 4912,
+            "title": "Mega Man Xtreme 2",
+            "consoleId": 6,
+            "consoleName": "Game Boy Color",
+            "imageIcon": "/Images/023367.png",
+            "pointsTotal": 416,
+            "achievementsPublished": 44
+        },
+        {
             "id": 4946,
             "title": "Bravely Second: End Layer",
             "consoleId": 62,
@@ -1649,6 +1847,24 @@
             "achievementsPublished": 102
         },
         {
+            "id": 5673,
+            "title": "Mega Man X7",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/067660.png",
+            "pointsTotal": 615,
+            "achievementsPublished": 44
+        },
+        {
+            "id": 5679,
+            "title": "Mega Man X Collection",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/076135.png",
+            "pointsTotal": 4171,
+            "achievementsPublished": 328
+        },
+        {
             "id": 5800,
             "title": "Dragon Quest V",
             "consoleId": 21,
@@ -1728,6 +1944,15 @@
             "imageIcon": "/Images/067893.png",
             "pointsTotal": 667,
             "achievementsPublished": 97
+        },
+        {
+            "id": 6928,
+            "title": "Mega Man X Collection",
+            "consoleId": 16,
+            "consoleName": "GameCube",
+            "imageIcon": "/Images/089033.png",
+            "pointsTotal": 4209,
+            "achievementsPublished": 407
         },
         {
             "id": 7095,
@@ -2486,6 +2711,15 @@
             "achievementsPublished": 69
         },
         {
+            "id": 11335,
+            "title": "Mega Man X5",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/056204.png",
+            "pointsTotal": 900,
+            "achievementsPublished": 53
+        },
+        {
             "id": 11336,
             "title": "Alundra",
             "consoleId": 12,
@@ -2531,6 +2765,15 @@
             "achievementsPublished": 48
         },
         {
+            "id": 11353,
+            "title": "Mega Man X4",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/044075.png",
+            "pointsTotal": 370,
+            "achievementsPublished": 58
+        },
+        {
             "id": 11357,
             "title": "Toy Story 2: Buzz Lightyear to the Rescue!",
             "consoleId": 12,
@@ -2574,6 +2817,15 @@
             "imageIcon": "/Images/103153.png",
             "pointsTotal": 550,
             "achievementsPublished": 55
+        },
+        {
+            "id": 11382,
+            "title": "Mega Man X6",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/032736.png",
+            "pointsTotal": 1050,
+            "achievementsPublished": 65
         },
         {
             "id": 11402,
@@ -2943,6 +3195,15 @@
             "imageIcon": "/Images/065895.png",
             "pointsTotal": 630,
             "achievementsPublished": 67
+        },
+        {
+            "id": 14738,
+            "title": "Mega Man X3",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/056201.png",
+            "pointsTotal": 728,
+            "achievementsPublished": 74
         },
         {
             "id": 14809,
@@ -3348,6 +3609,15 @@
             "imageIcon": "/Images/122182.png",
             "pointsTotal": 681,
             "achievementsPublished": 55
+        },
+        {
+            "id": 17889,
+            "title": "Rockman.EXE: Operate Shooting Star",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/112363.png",
+            "pointsTotal": 488,
+            "achievementsPublished": 63
         },
         {
             "id": 17890,
@@ -3881,6 +4151,15 @@
             "achievementsPublished": 30
         },
         {
+            "id": 22099,
+            "title": "Mega Man Zero [Subset - Bonus]",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/080418.png",
+            "pointsTotal": 1205,
+            "achievementsPublished": 31
+        },
+        {
             "id": 22364,
             "title": "The Nightmare of Druaga: Fushigi no Dungeon",
             "consoleId": 21,
@@ -3908,6 +4187,15 @@
             "achievementsPublished": 174
         },
         {
+            "id": 23908,
+            "title": "Mega Man Battle Network 5: Double Team DS",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/082472.png",
+            "pointsTotal": 1238,
+            "achievementsPublished": 109
+        },
+        {
             "id": 24186,
             "title": "Pokémon Emerald Version [Subset - Professor Oak Challenge]",
             "consoleId": 5,
@@ -3933,6 +4221,15 @@
             "imageIcon": "/Images/116231.png",
             "pointsTotal": 239,
             "achievementsPublished": 43
+        },
+        {
+            "id": 25454,
+            "title": "Mega Man Network Transmission",
+            "consoleId": 16,
+            "consoleName": "GameCube",
+            "imageIcon": "/Images/093034.png",
+            "pointsTotal": 561,
+            "achievementsPublished": 50
         },
         {
             "id": 26353,
@@ -3998,6 +4295,24 @@
             "achievementsPublished": 0
         },
         {
+            "id": 29784,
+            "title": "Mega Man Battle Network 3: White Version [Subset - Powerless]",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/099109.png",
+            "pointsTotal": 300,
+            "achievementsPublished": 25
+        },
+        {
+            "id": 30059,
+            "title": "Mega Man Zero 2 [Subset - Bonus]",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/100732.png",
+            "pointsTotal": 1090,
+            "achievementsPublished": 27
+        },
+        {
             "id": 30125,
             "title": "Mega Man X: Command Mission",
             "consoleId": 16,
@@ -4005,6 +4320,15 @@
             "imageIcon": "/Images/099083.png",
             "pointsTotal": 838,
             "achievementsPublished": 88
+        },
+        {
+            "id": 30129,
+            "title": "Mega Man Battle Network 3: White Version [Subset - Omega S-Ranks]",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/099110.png",
+            "pointsTotal": 200,
+            "achievementsPublished": 17
         },
         {
             "id": 30277,
@@ -4025,6 +4349,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 31768,
+            "title": "Mega Man Zero 3 [Subset - Bonus]",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/105368.png",
+            "pointsTotal": 885,
+            "achievementsPublished": 28
+        },
+        {
             "id": 32564,
             "title": "Kingdom Hearts II",
             "consoleId": 21,
@@ -4043,6 +4376,15 @@
             "achievementsPublished": 67
         },
         {
+            "id": 32800,
+            "title": "Mega Man Zero 4 [Subset - Bonus]",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/106400.png",
+            "pointsTotal": 940,
+            "achievementsPublished": 24
+        },
+        {
             "id": 32919,
             "title": "The Nightmare of Druaga: Fushigi no Dungeon [Subset - Alchemy]",
             "consoleId": 21,
@@ -4059,6 +4401,15 @@
             "imageIcon": "/Images/112694.png",
             "pointsTotal": 35,
             "achievementsPublished": 6
+        },
+        {
+            "id": 33632,
+            "title": "Mega Man Battle Network 3: White Version [Subset - Glitch Showcase]",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/112505.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
         },
         {
             "id": 33764,
