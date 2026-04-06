@@ -40810,8 +40810,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 6934,
-            "numDistinctPlayersHardcore": 6934,
+            "numDistinctPlayersCasual": 6936,
+            "numDistinctPlayersHardcore": 6936,
             "numAchievements": 108,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -40832,8 +40832,8 @@
                     "trueRatio": 6,
                     "type": "missable",
                     "badgeName": "106754",
-                    "numAwarded": 3467,
-                    "numAwardedHardcore": 1462,
+                    "numAwarded": 3468,
+                    "numAwardedHardcore": 1463,
                     "displayOrder": 30
                 },
                 "94787": {
@@ -40868,8 +40868,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "107881",
-                    "numAwarded": 6781,
-                    "numAwardedHardcore": 2431,
+                    "numAwarded": 6783,
+                    "numAwardedHardcore": 2432,
                     "displayOrder": 0
                 },
                 "94790": {
@@ -41084,8 +41084,8 @@
                     "trueRatio": 12,
                     "type": "missable",
                     "badgeName": "106725",
-                    "numAwarded": 885,
-                    "numAwardedHardcore": 514,
+                    "numAwarded": 886,
+                    "numAwardedHardcore": 515,
                     "displayOrder": 63
                 },
                 "95249": {
@@ -41432,8 +41432,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "106743",
-                    "numAwarded": 938,
-                    "numAwardedHardcore": 511,
+                    "numAwarded": 939,
+                    "numAwardedHardcore": 512,
                     "displayOrder": 22
                 },
                 "95542": {
@@ -41444,8 +41444,8 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "106743",
-                    "numAwarded": 802,
-                    "numAwardedHardcore": 439,
+                    "numAwarded": 803,
+                    "numAwardedHardcore": 440,
                     "displayOrder": 23
                 },
                 "95543": {
@@ -41456,8 +41456,8 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "106743",
-                    "numAwarded": 712,
-                    "numAwardedHardcore": 404,
+                    "numAwarded": 713,
+                    "numAwardedHardcore": 405,
                     "displayOrder": 24
                 },
                 "95544": {
@@ -41744,8 +41744,8 @@
                     "trueRatio": 2,
                     "type": "missable",
                     "badgeName": "106725",
-                    "numAwarded": 840,
-                    "numAwardedHardcore": 496,
+                    "numAwarded": 841,
+                    "numAwardedHardcore": 497,
                     "displayOrder": 60
                 },
                 "96414": {
@@ -41756,7 +41756,7 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "106708",
-                    "numAwarded": 3857,
+                    "numAwarded": 3858,
                     "numAwardedHardcore": 1547,
                     "displayOrder": 33
                 },
@@ -41840,7 +41840,7 @@
                     "trueRatio": 10,
                     "type": "missable",
                     "badgeName": "107872",
-                    "numAwarded": 1251,
+                    "numAwarded": 1252,
                     "numAwardedHardcore": 633,
                     "displayOrder": 53
                 },
@@ -41864,8 +41864,8 @@
                     "trueRatio": 70,
                     "type": "missable",
                     "badgeName": "107876",
-                    "numAwarded": 654,
-                    "numAwardedHardcore": 449,
+                    "numAwarded": 655,
+                    "numAwardedHardcore": 450,
                     "displayOrder": 62
                 },
                 "97667": {
@@ -43734,8 +43734,8 @@
                     "trueRatio": 24,
                     "type": "progression",
                     "badgeName": "162827",
-                    "numAwarded": 384,
-                    "numAwardedHardcore": 159,
+                    "numAwarded": 385,
+                    "numAwardedHardcore": 160,
                     "displayOrder": 61
                 },
                 "146144": {
@@ -43746,8 +43746,8 @@
                     "trueRatio": 24,
                     "type": "progression",
                     "badgeName": "162828",
-                    "numAwarded": 384,
-                    "numAwardedHardcore": 159,
+                    "numAwarded": 385,
+                    "numAwardedHardcore": 160,
                     "displayOrder": 62
                 },
                 "146145": {
@@ -43791,11 +43791,11 @@
                     "title": "The Legendary hero",
                     "description": "Finish the game.",
                     "points": 25,
-                    "trueRatio": 127,
+                    "trueRatio": 126,
                     "type": "win_condition",
                     "badgeName": "163377",
-                    "numAwarded": 375,
-                    "numAwardedHardcore": 155,
+                    "numAwarded": 376,
+                    "numAwardedHardcore": 156,
                     "displayOrder": 66
                 },
                 "146149": {
@@ -44192,8 +44192,8 @@
                     "trueRatio": 52,
                     "type": null,
                     "badgeName": "162863",
-                    "numAwarded": 297,
-                    "numAwardedHardcore": 149,
+                    "numAwarded": 298,
+                    "numAwardedHardcore": 150,
                     "displayOrder": 200
                 },
                 "146182": {
@@ -44201,11 +44201,11 @@
                     "title": "This Collection Is Awesome!",
                     "description": "Open all action figures of Series 2.",
                     "points": 10,
-                    "trueRatio": 59,
+                    "trueRatio": 58,
                     "type": null,
                     "badgeName": "162864",
-                    "numAwarded": 251,
-                    "numAwardedHardcore": 131,
+                    "numAwarded": 252,
+                    "numAwardedHardcore": 132,
                     "displayOrder": 201
                 },
                 "146183": {
@@ -44213,11 +44213,11 @@
                     "title": "Will Tim Like My Toys?",
                     "description": "Open all action figures of Series 3.",
                     "points": 10,
-                    "trueRatio": 68,
+                    "trueRatio": 67,
                     "type": null,
                     "badgeName": "162865",
-                    "numAwarded": 214,
-                    "numAwardedHardcore": 112,
+                    "numAwarded": 215,
+                    "numAwardedHardcore": 113,
                     "displayOrder": 202
                 },
                 "146184": {
@@ -44228,8 +44228,8 @@
                     "trueRatio": 68,
                     "type": null,
                     "badgeName": "162866",
-                    "numAwarded": 206,
-                    "numAwardedHardcore": 111,
+                    "numAwarded": 207,
+                    "numAwardedHardcore": 112,
                     "displayOrder": 203
                 },
                 "146185": {
@@ -44240,8 +44240,8 @@
                     "trueRatio": 72,
                     "type": null,
                     "badgeName": "162867",
-                    "numAwarded": 197,
-                    "numAwardedHardcore": 104,
+                    "numAwarded": 198,
+                    "numAwardedHardcore": 105,
                     "displayOrder": 204
                 },
                 "146186": {
@@ -44249,11 +44249,11 @@
                     "title": "Today I'm Going To Play With these!",
                     "description": "Open all action figures of Series 6.",
                     "points": 10,
-                    "trueRatio": 85,
+                    "trueRatio": 84,
                     "type": null,
                     "badgeName": "162868",
-                    "numAwarded": 155,
-                    "numAwardedHardcore": 87,
+                    "numAwarded": 156,
+                    "numAwardedHardcore": 88,
                     "displayOrder": 205
                 },
                 "146187": {
@@ -44261,11 +44261,11 @@
                     "title": "My Favorite Things",
                     "description": "Open all action figures of Series Especial.",
                     "points": 25,
-                    "trueRatio": 270,
+                    "trueRatio": 266,
                     "type": null,
                     "badgeName": "162869",
-                    "numAwarded": 111,
-                    "numAwardedHardcore": 68,
+                    "numAwarded": 112,
+                    "numAwardedHardcore": 69,
                     "displayOrder": 206
                 },
                 "146188": {
@@ -44300,8 +44300,8 @@
                     "trueRatio": 53,
                     "type": null,
                     "badgeName": "162872",
-                    "numAwarded": 322,
-                    "numAwardedHardcore": 146,
+                    "numAwarded": 323,
+                    "numAwardedHardcore": 147,
                     "displayOrder": 1004
                 },
                 "146191": {
@@ -44826,7 +44826,7 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "116650",
-                    "numAwarded": 1063,
+                    "numAwarded": 1064,
                     "numAwardedHardcore": 473,
                     "displayOrder": 0
                 },
@@ -44838,7 +44838,7 @@
                     "trueRatio": 17,
                     "type": "progression",
                     "badgeName": "118444",
-                    "numAwarded": 997,
+                    "numAwarded": 998,
                     "numAwardedHardcore": 452,
                     "displayOrder": 0
                 },
@@ -44850,7 +44850,7 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "117208",
-                    "numAwarded": 993,
+                    "numAwarded": 994,
                     "numAwardedHardcore": 448,
                     "displayOrder": 0
                 },
@@ -45810,7 +45810,7 @@
                     "trueRatio": 17,
                     "type": null,
                     "badgeName": "119320",
-                    "numAwarded": 914,
+                    "numAwarded": 915,
                     "numAwardedHardcore": 424,
                     "displayOrder": 2
                 },
