@@ -1,5 +1,5 @@
 {
-    "total": 503,
+    "total": 539,
     "results": [
         {
             "id": 27,
@@ -497,6 +497,24 @@
             "achievementsPublished": 75
         },
         {
+            "id": 1302,
+            "title": "Ys III: Wanderers from Ys",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/111797.png",
+            "pointsTotal": 225,
+            "achievementsPublished": 46
+        },
+        {
+            "id": 1303,
+            "title": "Resident Evil CODE: Veronica X",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/060156.png",
+            "pointsTotal": 695,
+            "achievementsPublished": 90
+        },
+        {
             "id": 1304,
             "title": "Dark Cloud",
             "consoleId": 21,
@@ -632,6 +650,15 @@
             "achievementsPublished": 19
         },
         {
+            "id": 2117,
+            "title": "Ys IV: Mask of the Sun",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/050718.png",
+            "pointsTotal": 455,
+            "achievementsPublished": 40
+        },
+        {
             "id": 2148,
             "title": "Dragon Quest V",
             "consoleId": 3,
@@ -666,6 +693,15 @@
             "imageIcon": "/Images/017036.png",
             "pointsTotal": 1144,
             "achievementsPublished": 150
+        },
+        {
+            "id": 2370,
+            "title": "~Prototype~ Resident Evil",
+            "consoleId": 6,
+            "consoleName": "Game Boy Color",
+            "imageIcon": "/Images/040116.png",
+            "pointsTotal": 115,
+            "achievementsPublished": 19
         },
         {
             "id": 2403,
@@ -729,6 +765,15 @@
             "imageIcon": "/Images/059249.png",
             "pointsTotal": 717,
             "achievementsPublished": 97
+        },
+        {
+            "id": 2606,
+            "title": "Resident Evil 4",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/053369.png",
+            "pointsTotal": 1800,
+            "achievementsPublished": 182
         },
         {
             "id": 2609,
@@ -983,6 +1028,15 @@
             "achievementsPublished": 80
         },
         {
+            "id": 2760,
+            "title": "Ys: The Ark of Napishtim",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/067084.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
             "id": 2780,
             "title": "Kingdom Hearts: Final Mix",
             "consoleId": 21,
@@ -1136,6 +1190,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 3132,
+            "title": "Ys: The Oath in Felghana",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/124081.png",
+            "pointsTotal": 1270,
+            "achievementsPublished": 95
+        },
+        {
             "id": 3142,
             "title": "Valkyrie Profile 2: Silmeria",
             "consoleId": 21,
@@ -1161,6 +1224,24 @@
             "imageIcon": "/Images/061546.png",
             "pointsTotal": 630,
             "achievementsPublished": 54
+        },
+        {
+            "id": 3159,
+            "title": "Ys I & II Chronicles",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/057456.png",
+            "pointsTotal": 1752,
+            "achievementsPublished": 182
+        },
+        {
+            "id": 3160,
+            "title": "Ys Seven",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/047359.png",
+            "pointsTotal": 1740,
+            "achievementsPublished": 202
         },
         {
             "id": 3161,
@@ -1244,6 +1325,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 3297,
+            "title": "Ys I & II: Eternal Story",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/092920.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
             "id": 3298,
             "title": "Tales of the Abyss",
             "consoleId": 21,
@@ -1251,6 +1341,15 @@
             "imageIcon": "/Images/056322.png",
             "pointsTotal": 2500,
             "achievementsPublished": 277
+        },
+        {
+            "id": 3300,
+            "title": "Ys: The Ark of Napishtim",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/066014.png",
+            "pointsTotal": 1242,
+            "achievementsPublished": 138
         },
         {
             "id": 3308,
@@ -1269,6 +1368,15 @@
             "imageIcon": "/Images/101838.png",
             "pointsTotal": 1172,
             "achievementsPublished": 201
+        },
+        {
+            "id": 3336,
+            "title": "Ys V: Lost Kefin, Kingdom of Sand",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/116355.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
         },
         {
             "id": 3470,
@@ -1424,6 +1532,15 @@
             "achievementsPublished": 180
         },
         {
+            "id": 3568,
+            "title": "The Legend of Heroes: Trails in the Sky the 3rd",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/050836.png",
+            "pointsTotal": 1255,
+            "achievementsPublished": 151
+        },
+        {
             "id": 3582,
             "title": "Mega Man: Powered Up",
             "consoleId": 41,
@@ -1458,6 +1575,15 @@
             "imageIcon": "/Images/047372.png",
             "pointsTotal": 750,
             "achievementsPublished": 56
+        },
+        {
+            "id": 3725,
+            "title": "Ys vs. Sora no Kiseki: Alternative Saga",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/121176.png",
+            "pointsTotal": 1025,
+            "achievementsPublished": 133
         },
         {
             "id": 3728,
@@ -1613,6 +1739,15 @@
             "achievementsPublished": 123
         },
         {
+            "id": 4002,
+            "title": "Ys V: Ushinawareta Suna no Miyako Kefin",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/125282.png",
+            "pointsTotal": 542,
+            "achievementsPublished": 47
+        },
+        {
             "id": 4130,
             "title": "Tales of Symphonia: Dawn of the New World",
             "consoleId": 19,
@@ -1665,6 +1800,15 @@
             "imageIcon": "/Images/074707.png",
             "pointsTotal": 816,
             "achievementsPublished": 63
+        },
+        {
+            "id": 4705,
+            "title": "Ys: Ancient Ys Vanished",
+            "consoleId": 7,
+            "consoleName": "NES/Famicom",
+            "imageIcon": "/Images/125352.png",
+            "pointsTotal": 235,
+            "achievementsPublished": 32
         },
         {
             "id": 4707,
@@ -1775,6 +1919,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 5133,
+            "title": "Resident Evil: Gaiden",
+            "consoleId": 6,
+            "consoleName": "Game Boy Color",
+            "imageIcon": "/Images/034861.png",
+            "pointsTotal": 350,
+            "achievementsPublished": 34
+        },
+        {
             "id": 5137,
             "title": "Castlevania Legends",
             "consoleId": 4,
@@ -1865,6 +2018,24 @@
             "achievementsPublished": 328
         },
         {
+            "id": 5761,
+            "title": "Resident Evil Outbreak",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/095930.png",
+            "pointsTotal": 900,
+            "achievementsPublished": 72
+        },
+        {
+            "id": 5762,
+            "title": "Resident Evil Outbreak: File #2",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/095936.png",
+            "pointsTotal": 1385,
+            "achievementsPublished": 113
+        },
+        {
             "id": 5800,
             "title": "Dragon Quest V",
             "consoleId": 21,
@@ -1899,6 +2070,24 @@
             "imageIcon": "/Images/069067.png",
             "pointsTotal": 510,
             "achievementsPublished": 52
+        },
+        {
+            "id": 5949,
+            "title": "Ys II: Ancient Ys Vanished - The Final Chapter",
+            "consoleId": 7,
+            "consoleName": "NES/Famicom",
+            "imageIcon": "/Images/055878.png",
+            "pointsTotal": 562,
+            "achievementsPublished": 73
+        },
+        {
+            "id": 5950,
+            "title": "Ys III: Wanderers From Ys",
+            "consoleId": 7,
+            "consoleName": "NES/Famicom",
+            "imageIcon": "/Images/119918.png",
+            "pointsTotal": 250,
+            "achievementsPublished": 41
         },
         {
             "id": 5999,
@@ -2162,6 +2351,15 @@
             "achievementsPublished": 74
         },
         {
+            "id": 9451,
+            "title": "Ys III: Wanderers from Ys",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/116354.png",
+            "pointsTotal": 655,
+            "achievementsPublished": 62
+        },
+        {
             "id": 9483,
             "title": "Shin Megami Tensei: Devil Survivor 2",
             "consoleId": 18,
@@ -2225,6 +2423,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 9896,
+            "title": "Legacy of Ys: Books I & II",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/101102.png",
+            "pointsTotal": 590,
+            "achievementsPublished": 128
+        },
+        {
             "id": 9931,
             "title": "Ragnarok DS",
             "consoleId": 18,
@@ -2277,6 +2484,42 @@
             "imageIcon": "/Images/081550.png",
             "pointsTotal": 990,
             "achievementsPublished": 117
+        },
+        {
+            "id": 10479,
+            "title": "The Legend of Heroes: Trails in the Sky FC",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/038832.png",
+            "pointsTotal": 1400,
+            "achievementsPublished": 150
+        },
+        {
+            "id": 10481,
+            "title": "The Legend of Heroes: Trails in the Sky SC",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/051354.png",
+            "pointsTotal": 2000,
+            "achievementsPublished": 245
+        },
+        {
+            "id": 10513,
+            "title": "The Legend of Heroes: Trails to Azure | Eiyuu Densetsu: Ao no Kiseki",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/038836.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
+            "id": 10521,
+            "title": "The Legend of Heroes: Trails from Zero",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/038835.png",
+            "pointsTotal": 1667,
+            "achievementsPublished": 257
         },
         {
             "id": 10525,
@@ -2466,6 +2709,15 @@
             "imageIcon": "/Images/107651.png",
             "pointsTotal": 1170,
             "achievementsPublished": 119
+        },
+        {
+            "id": 11268,
+            "title": "Resident Evil: Director's Cut",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/079667.png",
+            "pointsTotal": 640,
+            "achievementsPublished": 115
         },
         {
             "id": 11269,
@@ -2864,6 +3116,15 @@
             "achievementsPublished": 95
         },
         {
+            "id": 11419,
+            "title": "Resident Evil: Survivor",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/102291.png",
+            "pointsTotal": 400,
+            "achievementsPublished": 45
+        },
+        {
             "id": 11732,
             "title": "Pokémon Platinum Version",
             "consoleId": 18,
@@ -2934,6 +3195,15 @@
             "imageIcon": "/Images/098537.png",
             "pointsTotal": 439,
             "achievementsPublished": 78
+        },
+        {
+            "id": 12748,
+            "title": "~Prototype~ Resident Evil 2",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/101590.png",
+            "pointsTotal": 25,
+            "achievementsPublished": 11
         },
         {
             "id": 12783,
@@ -3404,6 +3674,15 @@
             "achievementsPublished": 76
         },
         {
+            "id": 16274,
+            "title": "Resident Evil: Deadly Silence",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/047094.png",
+            "pointsTotal": 1150,
+            "achievementsPublished": 150
+        },
+        {
             "id": 16347,
             "title": "Mizzurna Falls",
             "consoleId": 12,
@@ -3843,6 +4122,24 @@
             "imageIcon": "/Images/061146.png",
             "pointsTotal": 210,
             "achievementsPublished": 40
+        },
+        {
+            "id": 19022,
+            "title": "Resident Evil: Dead Aim",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/117786.png",
+            "pointsTotal": 286,
+            "achievementsPublished": 25
+        },
+        {
+            "id": 19030,
+            "title": "Gun Survivor 2 BIOHAZARD CODE: Veronica",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/070781.png",
+            "pointsTotal": 749,
+            "achievementsPublished": 79
         },
         {
             "id": 19038,
@@ -4295,6 +4592,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 29328,
+            "title": "Resident Evil",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/103090.png",
+            "pointsTotal": 615,
+            "achievementsPublished": 64
+        },
+        {
             "id": 29784,
             "title": "Mega Man Battle Network 3: White Version [Subset - Powerless]",
             "consoleId": 5,
@@ -4457,6 +4763,15 @@
             "achievementsPublished": 111
         },
         {
+            "id": 34704,
+            "title": "Resident Evil Archives: Resident Evil",
+            "consoleId": 19,
+            "consoleName": "Wii",
+            "imageIcon": "/Images/126434.png",
+            "pointsTotal": 1251,
+            "achievementsPublished": 114
+        },
+        {
             "id": 34707,
             "title": "Rune Factory: Tides of Destiny",
             "consoleId": 19,
@@ -4464,6 +4779,15 @@
             "imageIcon": "/Images/118748.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
+        },
+        {
+            "id": 34766,
+            "title": "Resident Evil: The Darkside Chronicles",
+            "consoleId": 19,
+            "consoleName": "Wii",
+            "imageIcon": "/Images/119770.png",
+            "pointsTotal": 1496,
+            "achievementsPublished": 193
         },
         {
             "id": 34776,

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-04-07
+
+### Hub
+
+- Fixed platform grid layout on mobile when fewer than 3 platforms are visible — the JS `gridTemplateColumns` inline style was overriding the CSS media query, causing 2-column side-by-side layout on mobile instead of single column; fixed by using a CSS custom property (`--platform-cols`) for the desktop/reduced-count layout and `!important` on the mobile `1fr` breakpoint
+
 ## 2026-04-06
 
 ### Pipelines
