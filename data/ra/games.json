@@ -40810,8 +40810,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 6938,
-            "numDistinctPlayersHardcore": 6938,
+            "numDistinctPlayersCasual": 6940,
+            "numDistinctPlayersHardcore": 6940,
             "numAchievements": 108,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -40832,8 +40832,8 @@
                     "trueRatio": 6,
                     "type": "missable",
                     "badgeName": "106754",
-                    "numAwarded": 3469,
-                    "numAwardedHardcore": 1463,
+                    "numAwarded": 3470,
+                    "numAwardedHardcore": 1464,
                     "displayOrder": 30
                 },
                 "94787": {
@@ -40868,8 +40868,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "107881",
-                    "numAwarded": 6785,
-                    "numAwardedHardcore": 2433,
+                    "numAwarded": 6787,
+                    "numAwardedHardcore": 2434,
                     "displayOrder": 0
                 },
                 "94790": {
@@ -41525,11 +41525,11 @@
                     "title": "Considerate Regicide",
                     "description": "With Rose and Haschel in your party, defeat the Divine Dragon without destroying any of its appendages.",
                     "points": 25,
-                    "trueRatio": 78,
+                    "trueRatio": 77,
                     "type": "missable",
                     "badgeName": "106697",
-                    "numAwarded": 593,
-                    "numAwardedHardcore": 393,
+                    "numAwarded": 594,
+                    "numAwardedHardcore": 394,
                     "displayOrder": 76
                 },
                 "95620": {
@@ -41540,8 +41540,8 @@
                     "trueRatio": 33,
                     "type": "missable",
                     "badgeName": "106695",
-                    "numAwarded": 490,
-                    "numAwardedHardcore": 357,
+                    "numAwarded": 491,
+                    "numAwardedHardcore": 358,
                     "displayOrder": 78
                 },
                 "95621": {
@@ -41576,8 +41576,8 @@
                     "trueRatio": 68,
                     "type": "missable",
                     "badgeName": "106677",
-                    "numAwarded": 923,
-                    "numAwardedHardcore": 465,
+                    "numAwarded": 924,
+                    "numAwardedHardcore": 466,
                     "displayOrder": 74
                 },
                 "96073": {
@@ -41756,7 +41756,7 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "106708",
-                    "numAwarded": 3859,
+                    "numAwarded": 3860,
                     "numAwardedHardcore": 1547,
                     "displayOrder": 33
                 },
@@ -41825,7 +41825,7 @@
                     "title": "Desertion",
                     "description": "Defeat Fruegel before either Guftas or Rodriguez.",
                     "points": 10,
-                    "trueRatio": 22,
+                    "trueRatio": 23,
                     "type": "missable",
                     "badgeName": "106705",
                     "numAwarded": 894,
@@ -41948,8 +41948,8 @@
                     "trueRatio": 132,
                     "type": "missable",
                     "badgeName": "108038",
-                    "numAwarded": 962,
-                    "numAwardedHardcore": 481,
+                    "numAwarded": 963,
+                    "numAwardedHardcore": 482,
                     "displayOrder": 75
                 },
                 "98040": {
@@ -41960,8 +41960,8 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "106779",
-                    "numAwarded": 964,
-                    "numAwardedHardcore": 468,
+                    "numAwarded": 965,
+                    "numAwardedHardcore": 469,
                     "displayOrder": 77
                 },
                 "98127": {
@@ -41972,8 +41972,8 @@
                     "trueRatio": 30,
                     "type": "missable",
                     "badgeName": "108055",
-                    "numAwarded": 702,
-                    "numAwardedHardcore": 402,
+                    "numAwarded": 703,
+                    "numAwardedHardcore": 403,
                     "displayOrder": 79
                 },
                 "98128": {
@@ -41984,8 +41984,8 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "106779",
-                    "numAwarded": 927,
-                    "numAwardedHardcore": 458,
+                    "numAwarded": 928,
+                    "numAwardedHardcore": 459,
                     "displayOrder": 79
                 },
                 "98138": {
@@ -42973,7 +42973,7 @@
                 "146080": {
                     "id": 146080,
                     "title": "Candy Candy",
-                    "description": "Receive a special gift from the Mayor's hands after fix Steamwood.",
+                    "description": "Receive a special gift from the Mayor's hands after fixing Steamwood.",
                     "points": 5,
                     "trueRatio": 15,
                     "type": null,
@@ -43021,7 +43021,7 @@
                 "146084": {
                     "id": 146084,
                     "title": "Four Lives, Two Swords",
-                    "description": "Defeat Skullpion without letting him attack any of the your helpers.",
+                    "description": "Defeat Skullpion without letting him attack any of your helpers.",
                     "points": 10,
                     "trueRatio": 49,
                     "type": null,
@@ -44564,8 +44564,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 3573,
-            "numDistinctPlayersHardcore": 3573,
+            "numDistinctPlayersCasual": 3575,
+            "numDistinctPlayersHardcore": 3575,
             "numAchievements": 129,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -44586,8 +44586,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "116644",
-                    "numAwarded": 3120,
-                    "numAwardedHardcore": 1182,
+                    "numAwarded": 3122,
+                    "numAwardedHardcore": 1183,
                     "displayOrder": 0
                 },
                 "108754": {
@@ -44766,7 +44766,7 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "116648",
-                    "numAwarded": 1203,
+                    "numAwarded": 1204,
                     "numAwardedHardcore": 538,
                     "displayOrder": 0
                 },
@@ -44778,7 +44778,7 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "117194",
-                    "numAwarded": 747,
+                    "numAwarded": 748,
                     "numAwardedHardcore": 385,
                     "displayOrder": 0
                 },
@@ -45063,7 +45063,7 @@
                     "title": "Gentle Breeze",
                     "description": "Obtain the Healing Wind evocation from the Grass Dragon",
                     "points": 5,
-                    "trueRatio": 11,
+                    "trueRatio": 12,
                     "type": null,
                     "badgeName": "117213",
                     "numAwarded": 552,
@@ -45411,7 +45411,7 @@
                     "title": "Tyrannical",
                     "description": "Defeat Tyrant",
                     "points": 10,
-                    "trueRatio": 30,
+                    "trueRatio": 31,
                     "type": "progression",
                     "badgeName": "116665",
                     "numAwarded": 407,
@@ -45579,7 +45579,7 @@
                     "title": "Sand-drifter III",
                     "description": "Finish the race from Shikk to Kyoin in 38 seconds or under",
                     "points": 10,
-                    "trueRatio": 48,
+                    "trueRatio": 49,
                     "type": null,
                     "badgeName": "116672",
                     "numAwarded": 167,
@@ -45798,7 +45798,7 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "119319",
-                    "numAwarded": 1436,
+                    "numAwarded": 1437,
                     "numAwardedHardcore": 616,
                     "displayOrder": 2
                 },
@@ -45831,7 +45831,7 @@
                     "title": "Fishing Star",
                     "description": "Become The Fish",
                     "points": 50,
-                    "trueRatio": 273,
+                    "trueRatio": 274,
                     "type": null,
                     "badgeName": "119322",
                     "numAwarded": 138,
@@ -45858,7 +45858,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "119877",
-                    "numAwarded": 2013,
+                    "numAwarded": 2014,
                     "numAwardedHardcore": 843,
                     "displayOrder": 2
                 },
@@ -45966,8 +45966,8 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "119727",
-                    "numAwarded": 317,
-                    "numAwardedHardcore": 196,
+                    "numAwarded": 318,
+                    "numAwardedHardcore": 197,
                     "displayOrder": 2
                 },
                 "109706": {
@@ -45999,7 +45999,7 @@
                     "title": "Massacre",
                     "description": "Obtain the Slayer sword",
                     "points": 25,
-                    "trueRatio": 149,
+                    "trueRatio": 150,
                     "type": null,
                     "badgeName": "119884",
                     "numAwarded": 127,
@@ -57558,8 +57558,8 @@
                     "trueRatio": 18,
                     "type": null,
                     "badgeName": "442054",
-                    "numAwarded": 172,
-                    "numAwardedHardcore": 153,
+                    "numAwarded": 173,
+                    "numAwardedHardcore": 154,
                     "displayOrder": 49
                 },
                 "384404": {
@@ -58896,8 +58896,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "129021",
-                    "numAwarded": 297,
-                    "numAwardedHardcore": 262,
+                    "numAwarded": 298,
+                    "numAwardedHardcore": 263,
                     "displayOrder": 0
                 },
                 "292822": {
@@ -59064,8 +59064,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "129037",
-                    "numAwarded": 332,
-                    "numAwardedHardcore": 288,
+                    "numAwarded": 333,
+                    "numAwardedHardcore": 289,
                     "displayOrder": 0
                 },
                 "292836": {
@@ -59676,8 +59676,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "129089",
-                    "numAwarded": 163,
-                    "numAwardedHardcore": 153,
+                    "numAwarded": 164,
+                    "numAwardedHardcore": 154,
                     "displayOrder": 0
                 },
                 "292887": {
@@ -59916,8 +59916,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "129109",
-                    "numAwarded": 294,
-                    "numAwardedHardcore": 261,
+                    "numAwarded": 295,
+                    "numAwardedHardcore": 262,
                     "displayOrder": 0
                 },
                 "292907": {
@@ -59976,8 +59976,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "129115",
-                    "numAwarded": 149,
-                    "numAwardedHardcore": 137,
+                    "numAwarded": 150,
+                    "numAwardedHardcore": 138,
                     "displayOrder": 0
                 },
                 "292912": {
@@ -65299,11 +65299,11 @@
                     "title": "There's Too Much to Explain Right Now",
                     "description": "Meet Takehaya in the Shibuya Flowersea",
                     "points": 5,
-                    "trueRatio": 15,
+                    "trueRatio": 14,
                     "type": "progression",
                     "badgeName": "649922",
-                    "numAwarded": 75,
-                    "numAwardedHardcore": 59,
+                    "numAwarded": 76,
+                    "numAwardedHardcore": 60,
                     "displayOrder": 6,
                     "dateEarned": "2026-03-19 07:57:44",
                     "dateEarnedHardcore": "2026-03-19 07:57:44"
@@ -81192,8 +81192,8 @@
                     "trueRatio": 4,
                     "type": "win_condition",
                     "badgeName": "623281",
-                    "numAwarded": 239,
-                    "numAwardedHardcore": 223,
+                    "numAwarded": 240,
+                    "numAwardedHardcore": 224,
                     "displayOrder": 2,
                     "dateEarned": "2026-03-28 14:52:14",
                     "dateEarnedHardcore": "2026-03-28 14:52:14"
