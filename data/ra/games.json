@@ -41360,8 +41360,8 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "106699",
-                    "numAwarded": 1018,
-                    "numAwardedHardcore": 568,
+                    "numAwarded": 1019,
+                    "numAwardedHardcore": 569,
                     "displayOrder": 16
                 },
                 "95536": {
@@ -41528,8 +41528,8 @@
                     "trueRatio": 77,
                     "type": "missable",
                     "badgeName": "106697",
-                    "numAwarded": 594,
-                    "numAwardedHardcore": 394,
+                    "numAwarded": 595,
+                    "numAwardedHardcore": 395,
                     "displayOrder": 76
                 },
                 "95620": {
@@ -41780,8 +41780,8 @@
                     "trueRatio": 1,
                     "type": "missable",
                     "badgeName": "106708",
-                    "numAwarded": 2811,
-                    "numAwardedHardcore": 1196,
+                    "numAwarded": 2813,
+                    "numAwardedHardcore": 1197,
                     "displayOrder": 34
                 },
                 "96626": {
@@ -41960,8 +41960,8 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "106779",
-                    "numAwarded": 965,
-                    "numAwardedHardcore": 469,
+                    "numAwarded": 966,
+                    "numAwardedHardcore": 470,
                     "displayOrder": 77
                 },
                 "98127": {
@@ -42092,8 +42092,8 @@
                     "trueRatio": 10,
                     "type": "missable",
                     "badgeName": "209992",
-                    "numAwarded": 1042,
-                    "numAwardedHardcore": 628,
+                    "numAwarded": 1043,
+                    "numAwardedHardcore": 629,
                     "displayOrder": 34
                 },
                 "189208": {
@@ -42116,8 +42116,8 @@
                     "trueRatio": 21,
                     "type": "missable",
                     "badgeName": "209994",
-                    "numAwarded": 1113,
-                    "numAwardedHardcore": 654,
+                    "numAwarded": 1114,
+                    "numAwardedHardcore": 655,
                     "displayOrder": 36
                 }
             }
@@ -42788,8 +42788,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5033,
-            "numDistinctPlayersHardcore": 5033,
+            "numDistinctPlayersCasual": 5035,
+            "numDistinctPlayersHardcore": 5035,
             "numAchievements": 146,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -42810,8 +42810,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "162751",
-                    "numAwarded": 3513,
-                    "numAwardedHardcore": 1356,
+                    "numAwarded": 3514,
+                    "numAwardedHardcore": 1357,
                     "displayOrder": 0
                 },
                 "146067": {
@@ -42834,8 +42834,8 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "162753",
-                    "numAwarded": 2794,
-                    "numAwardedHardcore": 1122,
+                    "numAwarded": 2795,
+                    "numAwardedHardcore": 1123,
                     "displayOrder": 2
                 },
                 "146069": {
@@ -42987,7 +42987,7 @@
                     "title": "Rock 'N' Roll Mountain",
                     "description": "Climb the mountain where the Earth Scroll is before Rootrick reaches the top.",
                     "points": 5,
-                    "trueRatio": 20,
+                    "trueRatio": 21,
                     "type": null,
                     "badgeName": "162767",
                     "numAwarded": 442,
@@ -43767,7 +43767,7 @@
                     "title": "The Last Duel",
                     "description": "Dark Lumina (Final Form) without taking damage.",
                     "points": 25,
-                    "trueRatio": 348,
+                    "trueRatio": 349,
                     "type": null,
                     "badgeName": "162830",
                     "numAwarded": 121,
@@ -43998,8 +43998,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "162847",
-                    "numAwarded": 4828,
-                    "numAwardedHardcore": 1698,
+                    "numAwarded": 4830,
+                    "numAwardedHardcore": 1699,
                     "displayOrder": 611,
                     "dateEarned": "2026-03-30 16:15:09",
                     "dateEarnedHardcore": "2026-03-30 16:15:09"
@@ -44084,7 +44084,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "162854",
-                    "numAwarded": 1438,
+                    "numAwarded": 1439,
                     "numAwardedHardcore": 624,
                     "displayOrder": 618
                 },
@@ -44156,8 +44156,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "162860",
-                    "numAwarded": 3159,
-                    "numAwardedHardcore": 1243,
+                    "numAwarded": 3161,
+                    "numAwardedHardcore": 1244,
                     "displayOrder": 624
                 },
                 "146179": {
@@ -44537,7 +44537,7 @@
                     "title": "Almost Alone",
                     "description": "Finish the game with 365 or less of maximum BP.",
                     "points": 50,
-                    "trueRatio": 710,
+                    "trueRatio": 711,
                     "type": null,
                     "badgeName": "163765",
                     "numAwarded": 63,
@@ -44549,7 +44549,7 @@
                     "title": "Believe In Yourself",
                     "description": "Finish the game with 150 of maximum HP.",
                     "points": 50,
-                    "trueRatio": 710,
+                    "trueRatio": 711,
                     "type": null,
                     "badgeName": "163763",
                     "numAwarded": 63,
@@ -44564,8 +44564,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 3578,
-            "numDistinctPlayersHardcore": 3578,
+            "numDistinctPlayersCasual": 3579,
+            "numDistinctPlayersHardcore": 3579,
             "numAchievements": 129,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -44598,8 +44598,8 @@
                     "trueRatio": 2,
                     "type": "missable",
                     "badgeName": "117136",
-                    "numAwarded": 1638,
-                    "numAwardedHardcore": 741,
+                    "numAwarded": 1639,
+                    "numAwardedHardcore": 742,
                     "displayOrder": 0
                 },
                 "108755": {
@@ -44610,8 +44610,8 @@
                     "trueRatio": 3,
                     "type": "missable",
                     "badgeName": "117188",
-                    "numAwarded": 941,
-                    "numAwardedHardcore": 548,
+                    "numAwarded": 942,
+                    "numAwardedHardcore": 549,
                     "displayOrder": 0
                 },
                 "108756": {
@@ -44682,7 +44682,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "116646",
-                    "numAwarded": 1827,
+                    "numAwarded": 1828,
                     "numAwardedHardcore": 753,
                     "displayOrder": 0
                 },
@@ -44742,8 +44742,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "116647",
-                    "numAwarded": 1350,
-                    "numAwardedHardcore": 577,
+                    "numAwarded": 1351,
+                    "numAwardedHardcore": 578,
                     "displayOrder": 0
                 },
                 "108767": {
@@ -44778,7 +44778,7 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "117194",
-                    "numAwarded": 748,
+                    "numAwarded": 749,
                     "numAwardedHardcore": 385,
                     "displayOrder": 0
                 },
@@ -45042,7 +45042,7 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "117211",
-                    "numAwarded": 532,
+                    "numAwarded": 533,
                     "numAwardedHardcore": 283,
                     "displayOrder": 0
                 },
@@ -45603,7 +45603,7 @@
                     "title": "Sand-drifter V",
                     "description": "Finish the race from Shikk to Shyde in 39 seconds or under",
                     "points": 10,
-                    "trueRatio": 50,
+                    "trueRatio": 51,
                     "type": null,
                     "badgeName": "116674",
                     "numAwarded": 159,
@@ -45711,7 +45711,7 @@
                     "title": "Genocide",
                     "description": "Learn all skills from Master Abbess",
                     "points": 10,
-                    "trueRatio": 29,
+                    "trueRatio": 30,
                     "type": null,
                     "badgeName": "118904",
                     "numAwarded": 357,
@@ -45798,8 +45798,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "119319",
-                    "numAwarded": 1437,
-                    "numAwardedHardcore": 616,
+                    "numAwarded": 1438,
+                    "numAwardedHardcore": 617,
                     "displayOrder": 2
                 },
                 "109107": {
@@ -45807,7 +45807,7 @@
                     "title": "Fat Fish",
                     "description": "Catch your first crown-sized fish",
                     "points": 10,
-                    "trueRatio": 17,
+                    "trueRatio": 18,
                     "type": null,
                     "badgeName": "119320",
                     "numAwarded": 915,
@@ -45891,7 +45891,7 @@
                     "title": "Rise from the Ashes",
                     "description": "Perform Nina's secret combo",
                     "points": 5,
-                    "trueRatio": 14,
+                    "trueRatio": 15,
                     "type": null,
                     "badgeName": "119722",
                     "numAwarded": 318,
@@ -46086,7 +46086,7 @@
                     "trueRatio": 33,
                     "type": null,
                     "badgeName": "120199",
-                    "numAwarded": 341,
+                    "numAwarded": 342,
                     "numAwardedHardcore": 185,
                     "displayOrder": 2
                 },
@@ -56922,8 +56922,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "442171",
-                    "numAwarded": 175,
-                    "numAwardedHardcore": 159,
+                    "numAwarded": 176,
+                    "numAwardedHardcore": 160,
                     "displayOrder": 12
                 },
                 "376663": {
@@ -57462,8 +57462,8 @@
                     "trueRatio": 20,
                     "type": null,
                     "badgeName": "442060",
-                    "numAwarded": 147,
-                    "numAwardedHardcore": 136,
+                    "numAwarded": 148,
+                    "numAwardedHardcore": 137,
                     "displayOrder": 54
                 },
                 "384396": {
@@ -57474,8 +57474,8 @@
                     "trueRatio": 19,
                     "type": null,
                     "badgeName": "442061",
-                    "numAwarded": 153,
-                    "numAwardedHardcore": 141,
+                    "numAwarded": 154,
+                    "numAwardedHardcore": 142,
                     "displayOrder": 55
                 },
                 "384397": {
@@ -57486,8 +57486,8 @@
                     "trueRatio": 19,
                     "type": null,
                     "badgeName": "442062",
-                    "numAwarded": 152,
-                    "numAwardedHardcore": 141,
+                    "numAwarded": 153,
+                    "numAwardedHardcore": 142,
                     "displayOrder": 56
                 },
                 "384398": {
