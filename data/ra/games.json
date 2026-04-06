@@ -19097,11 +19097,11 @@
                     "title": "The Maiden & the Peddler",
                     "description": "Fulfill all the Peddler Guy's requests at Palfina Temple on Cecilia's Tale",
                     "points": 10,
-                    "trueRatio": 171,
+                    "trueRatio": 157,
                     "type": null,
                     "badgeName": "436858",
-                    "numAwarded": 12,
-                    "numAwardedHardcore": 11,
+                    "numAwarded": 13,
+                    "numAwardedHardcore": 12,
                     "displayOrder": 315
                 },
                 "381709": {
@@ -21483,11 +21483,11 @@
                     "title": "Meteor Impact",
                     "description": "Destroy a Pain Carrier using Star Comet.",
                     "points": 25,
-                    "trueRatio": 160,
+                    "trueRatio": 156,
                     "type": null,
                     "badgeName": "196790",
-                    "numAwarded": 49,
-                    "numAwardedHardcore": 41,
+                    "numAwarded": 50,
+                    "numAwardedHardcore": 42,
                     "displayOrder": 62
                 },
                 "176546": {
@@ -21522,8 +21522,8 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "196790",
-                    "numAwarded": 57,
-                    "numAwardedHardcore": 48,
+                    "numAwarded": 58,
+                    "numAwardedHardcore": 49,
                     "displayOrder": 77
                 },
                 "176549": {
@@ -21534,8 +21534,8 @@
                     "trueRatio": 27,
                     "type": null,
                     "badgeName": "196790",
-                    "numAwarded": 57,
-                    "numAwardedHardcore": 48,
+                    "numAwarded": 58,
+                    "numAwardedHardcore": 49,
                     "displayOrder": 78
                 },
                 "176550": {
@@ -21546,8 +21546,8 @@
                     "trueRatio": 27,
                     "type": null,
                     "badgeName": "196790",
-                    "numAwarded": 57,
-                    "numAwardedHardcore": 48,
+                    "numAwarded": 58,
+                    "numAwardedHardcore": 49,
                     "displayOrder": 79
                 },
                 "176551": {
@@ -40810,8 +40810,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 6931,
-            "numDistinctPlayersHardcore": 6931,
+            "numDistinctPlayersCasual": 6933,
+            "numDistinctPlayersHardcore": 6933,
             "numAchievements": 108,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -40868,7 +40868,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "107881",
-                    "numAwarded": 6778,
+                    "numAwarded": 6780,
                     "numAwardedHardcore": 2429,
                     "displayOrder": 0
                 },
@@ -41108,7 +41108,7 @@
                     "trueRatio": 12,
                     "type": "progression",
                     "badgeName": "106777",
-                    "numAwarded": 1111,
+                    "numAwarded": 1112,
                     "numAwardedHardcore": 534,
                     "displayOrder": 66
                 },
@@ -41168,7 +41168,7 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "106755",
-                    "numAwarded": 2292,
+                    "numAwarded": 2293,
                     "numAwardedHardcore": 1085,
                     "displayOrder": 1
                 },
@@ -41312,8 +41312,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "106729",
-                    "numAwarded": 1795,
-                    "numAwardedHardcore": 841,
+                    "numAwarded": 1796,
+                    "numAwardedHardcore": 842,
                     "displayOrder": 12
                 },
                 "95532": {
@@ -41912,7 +41912,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "106725",
-                    "numAwarded": 1116,
+                    "numAwarded": 1117,
                     "numAwardedHardcore": 532,
                     "displayOrder": 65
                 },
@@ -41924,7 +41924,7 @@
                     "trueRatio": 14,
                     "type": "missable",
                     "badgeName": "108035",
-                    "numAwarded": 717,
+                    "numAwarded": 718,
                     "numAwardedHardcore": 435,
                     "displayOrder": 65
                 },
@@ -43110,8 +43110,8 @@
                     "trueRatio": 50,
                     "type": null,
                     "badgeName": "163371",
-                    "numAwarded": 364,
-                    "numAwardedHardcore": 156,
+                    "numAwarded": 365,
+                    "numAwardedHardcore": 157,
                     "displayOrder": 502
                 },
                 "146092": {
@@ -43242,8 +43242,8 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "162787",
-                    "numAwarded": 488,
-                    "numAwardedHardcore": 203,
+                    "numAwarded": 489,
+                    "numAwardedHardcore": 204,
                     "displayOrder": 303
                 },
                 "146103": {
@@ -43254,8 +43254,8 @@
                     "trueRatio": 18,
                     "type": null,
                     "badgeName": "162788",
-                    "numAwarded": 399,
-                    "numAwardedHardcore": 170,
+                    "numAwarded": 400,
+                    "numAwardedHardcore": 171,
                     "displayOrder": 304
                 },
                 "146104": {
@@ -43467,11 +43467,11 @@
                     "title": "One Good Deed",
                     "description": "Return the profit of the village shopkeepers stolen by the fake Princess.",
                     "points": 5,
-                    "trueRatio": 22,
+                    "trueRatio": 21,
                     "type": "progression",
                     "badgeName": "162806",
-                    "numAwarded": 451,
-                    "numAwardedHardcore": 182,
+                    "numAwarded": 452,
+                    "numAwardedHardcore": 183,
                     "displayOrder": 46
                 },
                 "146122": {
@@ -43482,8 +43482,8 @@
                     "trueRatio": 21,
                     "type": "progression",
                     "badgeName": "162807",
-                    "numAwarded": 450,
-                    "numAwardedHardcore": 184,
+                    "numAwarded": 451,
+                    "numAwardedHardcore": 185,
                     "displayOrder": 47
                 },
                 "146123": {
@@ -43494,8 +43494,8 @@
                     "trueRatio": 13,
                     "type": "progression",
                     "badgeName": "162808",
-                    "numAwarded": 436,
-                    "numAwardedHardcore": 184,
+                    "numAwarded": 437,
+                    "numAwardedHardcore": 185,
                     "displayOrder": 48
                 },
                 "146124": {
@@ -43506,8 +43506,8 @@
                     "trueRatio": 21,
                     "type": "progression",
                     "badgeName": "162809",
-                    "numAwarded": 447,
-                    "numAwardedHardcore": 184,
+                    "numAwarded": 448,
+                    "numAwardedHardcore": 185,
                     "displayOrder": 49
                 },
                 "146125": {
@@ -43518,8 +43518,8 @@
                     "trueRatio": 53,
                     "type": null,
                     "badgeName": "162810",
-                    "numAwarded": 324,
-                    "numAwardedHardcore": 146,
+                    "numAwarded": 325,
+                    "numAwardedHardcore": 147,
                     "displayOrder": 504
                 },
                 "146126": {
@@ -43554,8 +43554,8 @@
                     "trueRatio": 22,
                     "type": "progression",
                     "badgeName": "162813",
-                    "numAwarded": 448,
-                    "numAwardedHardcore": 178,
+                    "numAwarded": 449,
+                    "numAwardedHardcore": 179,
                     "displayOrder": 52
                 },
                 "146129": {
@@ -43563,11 +43563,11 @@
                     "title": "*~ Allucaneet ~*",
                     "description": "Rescue everyone from bincho field.",
                     "points": 25,
-                    "trueRatio": 121,
+                    "trueRatio": 120,
                     "type": null,
                     "badgeName": "162814",
-                    "numAwarded": 411,
-                    "numAwardedHardcore": 163,
+                    "numAwarded": 412,
+                    "numAwardedHardcore": 164,
                     "displayOrder": 701
                 },
                 "146130": {
@@ -43575,11 +43575,11 @@
                     "title": "Rabbits? Dogs? Does Not Matter! You Are Very Cute ~",
                     "description": "Find all Minkus.",
                     "points": 25,
-                    "trueRatio": 137,
+                    "trueRatio": 136,
                     "type": null,
                     "badgeName": "162815",
-                    "numAwarded": 304,
-                    "numAwardedHardcore": 142,
+                    "numAwarded": 305,
+                    "numAwardedHardcore": 143,
                     "displayOrder": 702
                 },
                 "146131": {
@@ -43590,7 +43590,7 @@
                     "trueRatio": 72,
                     "type": null,
                     "badgeName": "162816",
-                    "numAwarded": 404,
+                    "numAwarded": 405,
                     "numAwardedHardcore": 105,
                     "displayOrder": 1002
                 },
@@ -43611,11 +43611,11 @@
                     "title": "You Know Your Mom Will Love You",
                     "description": "Find and defeat Minku Mom.",
                     "points": 10,
-                    "trueRatio": 58,
+                    "trueRatio": 57,
                     "type": null,
                     "badgeName": "162818",
-                    "numAwarded": 270,
-                    "numAwardedHardcore": 133,
+                    "numAwarded": 271,
+                    "numAwardedHardcore": 134,
                     "displayOrder": 702
                 },
                 "146134": {
@@ -43878,8 +43878,8 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "162837",
-                    "numAwarded": 325,
-                    "numAwardedHardcore": 151,
+                    "numAwarded": 326,
+                    "numAwardedHardcore": 152,
                     "displayOrder": 601
                 },
                 "146156": {
@@ -44180,8 +44180,8 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "162862",
-                    "numAwarded": 576,
-                    "numAwardedHardcore": 247,
+                    "numAwarded": 577,
+                    "numAwardedHardcore": 248,
                     "displayOrder": 626
                 },
                 "146181": {
@@ -44285,11 +44285,11 @@
                     "title": "Who Will Face Shogun?",
                     "description": "Have 500 of maximum HP.",
                     "points": 10,
-                    "trueRatio": 59,
+                    "trueRatio": 58,
                     "type": null,
                     "badgeName": "162871",
-                    "numAwarded": 278,
-                    "numAwardedHardcore": 131,
+                    "numAwarded": 279,
+                    "numAwardedHardcore": 132,
                     "displayOrder": 1003
                 },
                 "146190": {
@@ -44348,8 +44348,8 @@
                     "trueRatio": 52,
                     "type": null,
                     "badgeName": "162875",
-                    "numAwarded": 331,
-                    "numAwardedHardcore": 148,
+                    "numAwarded": 332,
+                    "numAwardedHardcore": 149,
                     "displayOrder": 500
                 },
                 "146195": {
@@ -44432,8 +44432,8 @@
                     "trueRatio": 21,
                     "type": null,
                     "badgeName": "162882",
-                    "numAwarded": 320,
-                    "numAwardedHardcore": 146,
+                    "numAwarded": 321,
+                    "numAwardedHardcore": 147,
                     "displayOrder": 309
                 },
                 "146202": {
@@ -44468,8 +44468,8 @@
                     "trueRatio": 24,
                     "type": null,
                     "badgeName": "162885",
-                    "numAwarded": 364,
-                    "numAwardedHardcore": 159,
+                    "numAwarded": 365,
+                    "numAwardedHardcore": 160,
                     "displayOrder": 312
                 },
                 "146205": {
@@ -44610,7 +44610,7 @@
                     "trueRatio": 3,
                     "type": "missable",
                     "badgeName": "117188",
-                    "numAwarded": 938,
+                    "numAwarded": 939,
                     "numAwardedHardcore": 546,
                     "displayOrder": 0
                 },
@@ -44622,7 +44622,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "117189",
-                    "numAwarded": 2281,
+                    "numAwarded": 2282,
                     "numAwardedHardcore": 895,
                     "displayOrder": 0
                 },
@@ -44634,7 +44634,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "117190",
-                    "numAwarded": 2144,
+                    "numAwarded": 2145,
                     "numAwardedHardcore": 857,
                     "displayOrder": 0
                 },
@@ -44742,7 +44742,7 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "116647",
-                    "numAwarded": 1348,
+                    "numAwarded": 1349,
                     "numAwardedHardcore": 576,
                     "displayOrder": 0
                 },
@@ -44766,7 +44766,7 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "116648",
-                    "numAwarded": 1202,
+                    "numAwarded": 1203,
                     "numAwardedHardcore": 538,
                     "displayOrder": 0
                 },
@@ -44814,7 +44814,7 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "116649",
-                    "numAwarded": 1074,
+                    "numAwarded": 1075,
                     "numAwardedHardcore": 482,
                     "displayOrder": 0
                 },
@@ -44826,7 +44826,7 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "116650",
-                    "numAwarded": 1062,
+                    "numAwarded": 1063,
                     "numAwardedHardcore": 473,
                     "displayOrder": 0
                 },
@@ -57318,8 +57318,8 @@
                     "trueRatio": 17,
                     "type": null,
                     "badgeName": "442049",
-                    "numAwarded": 187,
-                    "numAwardedHardcore": 166,
+                    "numAwarded": 188,
+                    "numAwardedHardcore": 167,
                     "displayOrder": 44
                 },
                 "384384": {
@@ -63879,11 +63879,11 @@
                     "title": "Herb Collector",
                     "description": "Defeat Zu atop Mount Vaal",
                     "points": 10,
-                    "trueRatio": 53,
+                    "trueRatio": 52,
                     "type": "progression",
                     "badgeName": "614932",
-                    "numAwarded": 30,
-                    "numAwardedHardcore": 26,
+                    "numAwarded": 31,
+                    "numAwardedHardcore": 27,
                     "displayOrder": 5
                 },
                 "540652": {
@@ -63894,8 +63894,8 @@
                     "trueRatio": 16,
                     "type": "progression",
                     "badgeName": "614933",
-                    "numAwarded": 29,
-                    "numAwardedHardcore": 25,
+                    "numAwarded": 30,
+                    "numAwardedHardcore": 26,
                     "displayOrder": 6
                 },
                 "540653": {
