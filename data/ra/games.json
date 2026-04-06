@@ -19436,7 +19436,7 @@
                     "trueRatio": 62,
                     "type": null,
                     "badgeName": "438128",
-                    "numAwarded": 54,
+                    "numAwarded": 55,
                     "numAwardedHardcore": 32,
                     "displayOrder": 2630
                 },
@@ -21651,11 +21651,11 @@
                     "title": "NYC Rematch! Nafe",
                     "description": "Defeat the A Class alien Nafe.",
                     "points": 10,
-                    "trueRatio": 62,
+                    "trueRatio": 61,
                     "type": "progression",
                     "badgeName": "196798",
                     "numAwarded": 51,
-                    "numAwardedHardcore": 42,
+                    "numAwardedHardcore": 43,
                     "displayOrder": 31
                 },
                 "176560": {
@@ -21738,8 +21738,8 @@
                     "trueRatio": 27,
                     "type": "progression",
                     "badgeName": "196804",
-                    "numAwarded": 57,
-                    "numAwardedHardcore": 48,
+                    "numAwarded": 58,
+                    "numAwardedHardcore": 49,
                     "displayOrder": 48
                 },
                 "176567": {
@@ -21954,8 +21954,8 @@
                     "trueRatio": 50,
                     "type": null,
                     "badgeName": "196822",
-                    "numAwarded": 66,
-                    "numAwardedHardcore": 53,
+                    "numAwarded": 67,
+                    "numAwardedHardcore": 54,
                     "displayOrder": 95
                 },
                 "176585": {
@@ -34732,8 +34732,8 @@
             "consoleId": 18,
             "consoleName": "Nintendo DS",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 58,
-            "numDistinctPlayersHardcore": 58,
+            "numDistinctPlayersCasual": 57,
+            "numDistinctPlayersHardcore": 57,
             "numAchievements": 81,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -34835,7 +34835,7 @@
                     "title": "I Had 666 Problems and a Dragon Is No Longer One",
                     "description": "Eliminate all wandering dragons",
                     "points": 25,
-                    "trueRatio": 381,
+                    "trueRatio": 380,
                     "type": null,
                     "badgeName": "593675",
                     "numAwarded": 8,
@@ -34850,8 +34850,8 @@
                     "trueRatio": 13,
                     "type": "progression",
                     "badgeName": "589825",
-                    "numAwarded": 51,
-                    "numAwardedHardcore": 44,
+                    "numAwarded": 50,
+                    "numAwardedHardcore": 43,
                     "displayOrder": 2
                 },
                 "515734": {
@@ -34862,8 +34862,8 @@
                     "trueRatio": 15,
                     "type": "progression",
                     "badgeName": "589827",
-                    "numAwarded": 44,
-                    "numAwardedHardcore": 37,
+                    "numAwarded": 43,
+                    "numAwardedHardcore": 36,
                     "displayOrder": 3
                 },
                 "515735": {
@@ -34871,11 +34871,11 @@
                     "title": "Reclaiming Our Lost Land",
                     "description": "Complete the mission Take Back Kazan",
                     "points": 5,
-                    "trueRatio": 23,
+                    "trueRatio": 24,
                     "type": "progression",
                     "badgeName": "589829",
-                    "numAwarded": 34,
-                    "numAwardedHardcore": 28,
+                    "numAwarded": 33,
+                    "numAwardedHardcore": 27,
                     "displayOrder": 6
                 },
                 "515736": {
@@ -34895,7 +34895,7 @@
                     "title": "Journeying to the West for More Allies",
                     "description": "Complete the missions World Alliance and Rushe King's Trial",
                     "points": 5,
-                    "trueRatio": 47,
+                    "trueRatio": 48,
                     "type": "progression",
                     "badgeName": "589836",
                     "numAwarded": 14,
@@ -34955,7 +34955,7 @@
                     "title": "Proving Yourself to a Hero of Eld",
                     "description": "Prove your strength to Takehaya and receieve the Dragon Chronicle",
                     "points": 10,
-                    "trueRatio": 122,
+                    "trueRatio": 123,
                     "type": "progression",
                     "badgeName": "589851",
                     "numAwarded": 10,
@@ -34967,7 +34967,7 @@
                     "title": "Testing Out Our Guinea Pig",
                     "description": "Encounter and defeat Haze in Valorian Wood",
                     "points": 5,
-                    "trueRatio": 67,
+                    "trueRatio": 68,
                     "type": "progression",
                     "badgeName": "589853",
                     "numAwarded": 9,
@@ -34979,7 +34979,7 @@
                     "title": "And They All Lived Happily Ever After...",
                     "description": "Complete the mission The Bridge to the Future",
                     "points": 25,
-                    "trueRatio": 381,
+                    "trueRatio": 380,
                     "type": "win_condition",
                     "badgeName": "589860",
                     "numAwarded": 8,
@@ -35075,7 +35075,7 @@
                     "title": "Skipping the Scenic Route",
                     "description": "Defeat Earthshaker without destroying any of its body parts around the dungeon, without receiving help from Jake, using Trick React and Hide, or having any character above level 55",
                     "points": 10,
-                    "trueRatio": 135,
+                    "trueRatio": 136,
                     "type": "missable",
                     "badgeName": "589841",
                     "numAwarded": 9,
@@ -35123,7 +35123,7 @@
                     "title": "Helping the Resistance",
                     "description": "Complete the Sleeping Lion sub-event and receive Skanda's Cloak as your reward",
                     "points": 4,
-                    "trueRatio": 61,
+                    "trueRatio": 60,
                     "type": null,
                     "badgeName": "589881",
                     "numAwarded": 8,
@@ -35135,7 +35135,7 @@
                     "title": "The Spirit of the Rushe",
                     "description": "Complete the Rushe People sub-event and receive Ukonvasara as your reward and the option to buy King Fortresses from Bernard",
                     "points": 4,
-                    "trueRatio": 61,
+                    "trueRatio": 60,
                     "type": null,
                     "badgeName": "589882",
                     "numAwarded": 8,
@@ -35255,7 +35255,7 @@
                     "title": "Harnessing the Demonic and Holy Cages",
                     "description": "Unlock access to the Princess EX Skills",
                     "points": 5,
-                    "trueRatio": 67,
+                    "trueRatio": 68,
                     "type": null,
                     "badgeName": "589893",
                     "numAwarded": 9,
@@ -35498,8 +35498,8 @@
                     "trueRatio": 18,
                     "type": "missable",
                     "badgeName": "589826",
-                    "numAwarded": 40,
-                    "numAwardedHardcore": 38,
+                    "numAwarded": 39,
+                    "numAwardedHardcore": 37,
                     "displayOrder": 1
                 },
                 "515789": {
@@ -35510,8 +35510,8 @@
                     "trueRatio": 15,
                     "type": "missable",
                     "badgeName": "589828",
-                    "numAwarded": 32,
-                    "numAwardedHardcore": 26,
+                    "numAwarded": 31,
+                    "numAwardedHardcore": 25,
                     "displayOrder": 4
                 },
                 "515790": {
@@ -35519,11 +35519,11 @@
                     "title": "Prime Real Estate",
                     "description": "Acquire your own house and enter it for the first time",
                     "points": 2,
-                    "trueRatio": 9,
+                    "trueRatio": 10,
                     "type": null,
                     "badgeName": "589831",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 27,
+                    "numAwarded": 32,
+                    "numAwardedHardcore": 26,
                     "displayOrder": 7
                 },
                 "515791": {
@@ -35555,7 +35555,7 @@
                     "title": "Standing Your Line",
                     "description": "Defeat Invisible without using the Front and Back commands, using Trick React and Hide, or having any character above level 55",
                     "points": 10,
-                    "trueRatio": 135,
+                    "trueRatio": 136,
                     "type": "missable",
                     "badgeName": "589845",
                     "numAwarded": 9,
@@ -35579,7 +35579,7 @@
                     "title": "Please, Stop Healing for ONE TURN!!",
                     "description": "Defeat Flame Eater without defeating the two Magmaroths in Doma Volcano, using Trick React and Hide, or having any character above level 55",
                     "points": 10,
-                    "trueRatio": 135,
+                    "trueRatio": 136,
                     "type": "missable",
                     "badgeName": "589847",
                     "numAwarded": 9,
@@ -35591,7 +35591,7 @@
                     "title": "Two Sides to the Same Fight",
                     "description": "Defeat Takehaya while only dealing fire, ice and lightning damage in his human form and only dealing physical damage in his dragon form, without using EX gauges, using Trick React and Hide, or having any character above level 60",
                     "points": 10,
-                    "trueRatio": 135,
+                    "trueRatio": 136,
                     "type": "missable",
                     "badgeName": "589852",
                     "numAwarded": 9,
@@ -35687,11 +35687,11 @@
                     "title": "Revenge Against the King",
                     "description": "Defeat King without dealing Ice-type damage, having any party member die, using Trick React and Hide, or having any character above level 20",
                     "points": 5,
-                    "trueRatio": 24,
+                    "trueRatio": 25,
                     "type": "missable",
                     "badgeName": "589830",
-                    "numAwarded": 31,
-                    "numAwardedHardcore": 27,
+                    "numAwarded": 30,
+                    "numAwardedHardcore": 26,
                     "displayOrder": 5
                 },
                 "515805": {
@@ -40810,8 +40810,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 6933,
-            "numDistinctPlayersHardcore": 6933,
+            "numDistinctPlayersCasual": 6934,
+            "numDistinctPlayersHardcore": 6934,
             "numAchievements": 108,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -40833,7 +40833,7 @@
                     "type": "missable",
                     "badgeName": "106754",
                     "numAwarded": 3467,
-                    "numAwardedHardcore": 1461,
+                    "numAwardedHardcore": 1462,
                     "displayOrder": 30
                 },
                 "94787": {
@@ -40853,7 +40853,7 @@
                     "title": "Twinkle, Twinkle, Little Stardust",
                     "description": "Collect all 50 Stardust.",
                     "points": 25,
-                    "trueRatio": 76,
+                    "trueRatio": 77,
                     "type": "missable",
                     "badgeName": "106754",
                     "numAwarded": 676,
@@ -40868,8 +40868,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "107881",
-                    "numAwarded": 6780,
-                    "numAwardedHardcore": 2429,
+                    "numAwarded": 6781,
+                    "numAwardedHardcore": 2431,
                     "displayOrder": 0
                 },
                 "94790": {
@@ -41169,7 +41169,7 @@
                     "type": null,
                     "badgeName": "106755",
                     "numAwarded": 2293,
-                    "numAwardedHardcore": 1085,
+                    "numAwardedHardcore": 1086,
                     "displayOrder": 1
                 },
                 "95520": {
@@ -41288,8 +41288,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "106756",
-                    "numAwarded": 956,
-                    "numAwardedHardcore": 514,
+                    "numAwarded": 957,
+                    "numAwardedHardcore": 515,
                     "displayOrder": 10
                 },
                 "95530": {
@@ -41549,7 +41549,7 @@
                     "title": "The Will of the Fallen",
                     "description": "Defeat the Polter Armor.",
                     "points": 25,
-                    "trueRatio": 71,
+                    "trueRatio": 72,
                     "type": "missable",
                     "badgeName": "106693",
                     "numAwarded": 811,
@@ -41757,7 +41757,7 @@
                     "type": "progression",
                     "badgeName": "106708",
                     "numAwarded": 3857,
-                    "numAwardedHardcore": 1546,
+                    "numAwardedHardcore": 1547,
                     "displayOrder": 33
                 },
                 "96415": {
@@ -41769,7 +41769,7 @@
                     "type": "progression",
                     "badgeName": "106717",
                     "numAwarded": 3731,
-                    "numAwardedHardcore": 1509,
+                    "numAwardedHardcore": 1510,
                     "displayOrder": 34
                 },
                 "96511": {
@@ -41792,7 +41792,7 @@
                     "trueRatio": 1,
                     "type": "missable",
                     "badgeName": "106707",
-                    "numAwarded": 1790,
+                    "numAwarded": 1791,
                     "numAwardedHardcore": 862,
                     "displayOrder": 37
                 },
@@ -41945,11 +41945,11 @@
                     "title": "Only the Dauntless May Wield Me",
                     "description": "With Albert and Miranda in your party, defeat the Grand Jewel while guarding no more than five times.",
                     "points": 50,
-                    "trueRatio": 133,
+                    "trueRatio": 132,
                     "type": "missable",
                     "badgeName": "108038",
-                    "numAwarded": 961,
-                    "numAwardedHardcore": 480,
+                    "numAwarded": 962,
+                    "numAwardedHardcore": 481,
                     "displayOrder": 75
                 },
                 "98040": {
@@ -42077,7 +42077,7 @@
                     "title": "Measure Twice, Cut Once",
                     "description": "Finish off Zieg with an attack item, and it must be the only item you use.",
                     "points": 10,
-                    "trueRatio": 35,
+                    "trueRatio": 36,
                     "type": "missable",
                     "badgeName": "108085",
                     "numAwarded": 438,
@@ -43587,11 +43587,11 @@
                     "title": "Will Kurt Open The Store Today?",
                     "description": "Accumulate 50000 Drans.",
                     "points": 10,
-                    "trueRatio": 72,
+                    "trueRatio": 71,
                     "type": null,
                     "badgeName": "162816",
                     "numAwarded": 405,
-                    "numAwardedHardcore": 105,
+                    "numAwardedHardcore": 106,
                     "displayOrder": 1002
                 },
                 "146132": {
@@ -43626,8 +43626,8 @@
                     "trueRatio": 22,
                     "type": "progression",
                     "badgeName": "162819",
-                    "numAwarded": 427,
-                    "numAwardedHardcore": 177,
+                    "numAwarded": 428,
+                    "numAwardedHardcore": 178,
                     "displayOrder": 53
                 },
                 "146135": {
@@ -43638,8 +43638,8 @@
                     "trueRatio": 53,
                     "type": null,
                     "badgeName": "163374",
-                    "numAwarded": 350,
-                    "numAwardedHardcore": 145,
+                    "numAwarded": 351,
+                    "numAwardedHardcore": 146,
                     "displayOrder": 505
                 },
                 "146136": {
@@ -43683,11 +43683,11 @@
                     "title": "I Don't Believe Your Eyes",
                     "description": "Defeat Tower of Death without taking damage.",
                     "points": 10,
-                    "trueRatio": 137,
+                    "trueRatio": 134,
                     "type": null,
                     "badgeName": "162823",
-                    "numAwarded": 116,
-                    "numAwardedHardcore": 53,
+                    "numAwarded": 117,
+                    "numAwardedHardcore": 54,
                     "displayOrder": 60
                 },
                 "146140": {
@@ -43698,8 +43698,8 @@
                     "trueRatio": 23,
                     "type": "progression",
                     "badgeName": "162824",
-                    "numAwarded": 414,
-                    "numAwardedHardcore": 167,
+                    "numAwarded": 415,
+                    "numAwardedHardcore": 168,
                     "displayOrder": 55
                 },
                 "146141": {
@@ -43710,8 +43710,8 @@
                     "trueRatio": 24,
                     "type": "progression",
                     "badgeName": "162825",
-                    "numAwarded": 399,
-                    "numAwardedHardcore": 159,
+                    "numAwarded": 400,
+                    "numAwardedHardcore": 160,
                     "displayOrder": 57
                 },
                 "146142": {
@@ -43722,8 +43722,8 @@
                     "trueRatio": 25,
                     "type": "progression",
                     "badgeName": "162826",
-                    "numAwarded": 388,
-                    "numAwardedHardcore": 155,
+                    "numAwarded": 389,
+                    "numAwardedHardcore": 156,
                     "displayOrder": 59
                 },
                 "146143": {
@@ -43767,11 +43767,11 @@
                     "title": "The Last Duel",
                     "description": "Dark Lumina (Final Form) without taking damage.",
                     "points": 25,
-                    "trueRatio": 355,
+                    "trueRatio": 348,
                     "type": null,
                     "badgeName": "162830",
-                    "numAwarded": 120,
-                    "numAwardedHardcore": 51,
+                    "numAwarded": 121,
+                    "numAwardedHardcore": 52,
                     "displayOrder": 64
                 },
                 "146147": {
@@ -43851,11 +43851,11 @@
                     "title": "The Child Who Likes Ancient Artifacts",
                     "description": "Open all the treasure chests in the game.",
                     "points": 25,
-                    "trueRatio": 185,
+                    "trueRatio": 183,
                     "type": null,
                     "badgeName": "163372",
-                    "numAwarded": 200,
-                    "numAwardedHardcore": 102,
+                    "numAwarded": 201,
+                    "numAwardedHardcore": 103,
                     "displayOrder": 506
                 },
                 "146154": {
@@ -43866,8 +43866,8 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "162836",
-                    "numAwarded": 342,
-                    "numAwardedHardcore": 146,
+                    "numAwarded": 343,
+                    "numAwardedHardcore": 147,
                     "displayOrder": 600
                 },
                 "146155": {
@@ -43962,8 +43962,8 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "162844",
-                    "numAwarded": 293,
-                    "numAwardedHardcore": 132,
+                    "numAwarded": 294,
+                    "numAwardedHardcore": 133,
                     "displayOrder": 608
                 },
                 "146163": {
@@ -43986,8 +43986,8 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "162846",
-                    "numAwarded": 304,
-                    "numAwardedHardcore": 136,
+                    "numAwarded": 305,
+                    "numAwardedHardcore": 137,
                     "displayOrder": 610
                 },
                 "146165": {
@@ -44012,8 +44012,8 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "162848",
-                    "numAwarded": 345,
-                    "numAwardedHardcore": 146,
+                    "numAwarded": 346,
+                    "numAwardedHardcore": 147,
                     "displayOrder": 612
                 },
                 "146167": {
@@ -44646,7 +44646,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "116645",
-                    "numAwarded": 2062,
+                    "numAwarded": 2063,
                     "numAwardedHardcore": 821,
                     "displayOrder": 0
                 },
@@ -44814,7 +44814,7 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "116649",
-                    "numAwarded": 1075,
+                    "numAwarded": 1076,
                     "numAwardedHardcore": 482,
                     "displayOrder": 0
                 },
@@ -57330,8 +57330,8 @@
                     "trueRatio": 18,
                     "type": null,
                     "badgeName": "442050",
-                    "numAwarded": 176,
-                    "numAwardedHardcore": 159,
+                    "numAwarded": 177,
+                    "numAwardedHardcore": 160,
                     "displayOrder": 45
                 },
                 "384385": {
@@ -57342,8 +57342,8 @@
                     "trueRatio": 18,
                     "type": null,
                     "badgeName": "442051",
-                    "numAwarded": 173,
-                    "numAwardedHardcore": 155,
+                    "numAwarded": 174,
+                    "numAwardedHardcore": 156,
                     "displayOrder": 46
                 },
                 "384386": {
