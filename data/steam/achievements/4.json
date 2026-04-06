@@ -1,6 +1,16 @@
 {
     "recentAchievements": [
         {
+            "appId": 1903340,
+            "gameName": "Clair Obscur: Expedition 33",
+            "apiName": "ENDLESS_TOWER",
+            "displayName": "“Endless”",
+            "description": "",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/0dee098aef8c5fde525653a6a19f508e7f5945ae.jpg",
+            "unlockedAt": "2025-07-07T14:07:43.000Z",
+            "globalPct": 19.1
+        },
+        {
             "appId": 1282150,
             "gameName": "SpongeBob SquarePants: The Cosmic Shake",
             "apiName": "SpecialBikiniBottomBoss",
