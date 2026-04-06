@@ -435,6 +435,13 @@ function SeriesModal({ mode, seriesName, initialValue, onConfirm, onCancel }) {
     );
 }
 
+// Sort key: symbols first (0), numbers second (1), letters last (2)
+const seriesSortKey = name => {
+    if (/^[a-zA-Z]/.test(name)) return '2' + name.toLowerCase();
+    if (/^\d/.test(name))       return '1' + name.toLowerCase();
+    return                             '0' + name.toLowerCase();
+};
+
 // Derive a "series key" from a game title by stripping subtitles and trailing numbers/roman numerals
 function seriesKey(title) {
     let s = title;
@@ -444,6 +451,7 @@ function seriesKey(title) {
     s = s.replace(/\s+(XIV|XIII|XII|XI|IX|VIII|VII|VI|IV|III|II|I|XVI|XV|X|V)\s*$/i, '');
     s = s.replace(/\s+\d+(\s*[&]\s*\d+)?\s*$/, '');
     s = s.replace(/[:\-,]+$/, '').trim();
+    s = s.replace(/[^a-zA-Z0-9\s]/g, '').trim(); // strip remaining symbols (keep alphanumeric + spaces)
     return s.toLowerCase();
 }
 
@@ -479,7 +487,9 @@ function RASeriesModule() {
     const [listSearch,      setListSearch]      = useState('');
     const [addSearch,       setAddSearch]       = useState('');
     const [modal,           setModal]           = useState(null);
-    const [showSuggestions, setShowSuggestions] = useState(false);
+    const [showSuggestions,  setShowSuggestions]  = useState(false);
+    const [showUnassigned,   setShowUnassigned]   = useState(false);
+    const [unassignedSearch, setUnassignedSearch] = useState('');
 
     useEffect(() => {
         Promise.all([
@@ -487,7 +497,7 @@ function RASeriesModule() {
             apiData('data/ra/series.json'),
         ]).then(([g, s]) => {
             setAllGames(g);
-            setSeries(Array.isArray(s) ? s : []);
+            setSeries((Array.isArray(s) ? s : []).sort((a, b) => seriesSortKey(a.name).localeCompare(seriesSortKey(b.name))));
         });
     }, []);
 
@@ -505,15 +515,18 @@ function RASeriesModule() {
         const { mode, id, suggestedGameIds } = modal;
         if (mode === 'add') {
             const newEntry = { id: Date.now().toString(36), name: value, gameIds: suggestedGameIds ?? [] };
-            update([...(series || []), newEntry]);
+            update([...(series || []), newEntry].sort((a, b) => seriesSortKey(a.name).localeCompare(seriesSortKey(b.name))));
             setSelectedId(newEntry.id);
             setShowSuggestions(false);
+            setShowUnassigned(false);
             setAddSearch('');
         } else if (mode === 'rename') {
-            update(series.map(s => s.id === id ? { ...s, name: value } : s));
+            update(series.map(s => s.id === id ? { ...s, name: value } : s).sort((a, b) => seriesSortKey(a.name).localeCompare(seriesSortKey(b.name))));
         } else if (mode === 'delete') {
-            update(series.filter(s => s.id !== id));
+            const next = series.filter(s => s.id !== id);
+            update(next);
             if (selectedId === id) setSelectedId(null);
+            apiSave('data/ra/series.json', next);
         }
         setModal(null);
     };
@@ -543,15 +556,25 @@ function RASeriesModule() {
         .map(id => gameMap[id])
         .filter(g => g && (!gameSearch || g.title.toLowerCase().includes(gameSearch.toLowerCase())));
 
-    const recommendations = series ? computeRecommendations(allGames, series) : [];
+    const recommendations  = series ? computeRecommendations(allGames, series) : [];
+    const allAssignedIds   = new Set((series || []).flatMap(s => s.gameIds));
+    const allUnassigned    = allGames.filter(g => !allAssignedIds.has(g.id));
+    const filteredUnassigned = unassignedSearch
+        ? allUnassigned.filter(g => g.title.toLowerCase().includes(unassignedSearch.toLowerCase()))
+        : allUnassigned;
 
-    // Games not assigned to THIS series whose seriesKey starts with (or equals) this series' key
+    // Games not assigned to THIS series whose seriesKey overlaps with this series' key (bidirectional prefix)
     const selectedKey = selected ? seriesKey(selected.name) : '';
     const seriesSuggestions = selected
         ? allGames.filter(g => {
             if (assignedIds.has(g.id)) return false;
             const gKey = seriesKey(g.title);
-            return gKey === selectedKey || gKey.startsWith(selectedKey + ' ') || gKey.startsWith(selectedKey + ':');
+            if (gKey === selectedKey) return true;
+            // game key is longer: "summon night swordcraft story 2" matches series "summon night swordcraft story"
+            if (gKey.startsWith(selectedKey + ' ')) return true;
+            // game key is shorter: "summon night" (from "Summon Night: Swordcraft Story") matches series "summon night swordcraft story"
+            if (selectedKey.startsWith(gKey + ' ') || selectedKey === gKey) return true;
+            return false;
           })
         : [];
 
@@ -580,24 +603,31 @@ function RASeriesModule() {
                 </div>
                 <div className="flex-1 overflow-y-auto py-1">
                     {filteredList.map(s => {
-                        const isSel = s.id === selectedId && !showSuggestions;
+                        const isSel = s.id === selectedId && !showSuggestions && !showUnassigned;
                         return (
-                            <button key={s.id} onClick={() => { setSelectedId(s.id); setShowSuggestions(false); setAddSearch(''); setGameSearch(''); }}
+                            <button key={s.id} onClick={() => { setSelectedId(s.id); setShowSuggestions(false); setShowUnassigned(false); setAddSearch(''); setGameSearch(''); }}
                                 className={`w-full flex items-center gap-2 px-3 py-1.5 text-left transition-colors ${isSel ? 'bg-[#2a475e]' : 'hover:bg-[#1b2838]'}`}>
                                 <span className={`text-[11px] flex-1 truncate ${isSel ? 'text-white' : 'text-[#8f98a0]'}`}>{s.name}</span>
                                 <span className="text-[9px] text-[#546270] shrink-0">{s.gameIds.length}</span>
                             </button>
                         );
                     })}
-                    {filteredList.length === 0 && !showSuggestions && <div className="text-[11px] text-[#546270] text-center py-6">No series yet</div>}
+                    {filteredList.length === 0 && !showSuggestions && !showUnassigned && <div className="text-[11px] text-[#546270] text-center py-6">No series yet</div>}
                 </div>
                 <div className="px-3 py-2 border-t border-[#2a475e] flex items-center gap-2">
                     <span className="text-[10px] text-[#546270] flex-1">
                         {series.length} series · {series.reduce((n, s) => n + s.gameIds.length, 0)} assigned
                     </span>
+                    {allUnassigned.length > 0 && (
+                        <button
+                            onClick={() => { if (showUnassigned) { setShowUnassigned(false); } else { setShowUnassigned(true); setShowSuggestions(false); setSelectedId(null); setUnassignedSearch(''); } }}
+                            className={`flex items-center gap-1 text-[9px] font-semibold px-2 py-[3px] rounded-[2px] border transition-colors ${showUnassigned ? 'bg-[#8f98a0] text-[#101214] border-[#8f98a0]' : 'text-[#8f98a0] border-[#8f98a0]/40 hover:border-[#8f98a0]'}`}>
+                            📋 {allUnassigned.length}
+                        </button>
+                    )}
                     {recommendations.length > 0 && (
                         <button
-                            onClick={() => setShowSuggestions(v => !v)}
+                            onClick={() => { if (showSuggestions) { setShowSuggestions(false); } else { setShowSuggestions(true); setShowUnassigned(false); } }}
                             className={`flex items-center gap-1 text-[9px] font-semibold px-2 py-[3px] rounded-[2px] border transition-colors ${showSuggestions ? 'bg-[#e5b143] text-[#101214] border-[#e5b143]' : 'text-[#e5b143] border-[#e5b143]/40 hover:border-[#e5b143]'}`}>
                             💡 {recommendations.length}
                         </button>
@@ -605,9 +635,38 @@ function RASeriesModule() {
                 </div>
             </div>
 
-            {/* ── Right: editor or suggestions ── */}
+            {/* ── Right: editor, unassigned, or suggestions ── */}
             <div className="flex-1 flex flex-col overflow-hidden">
-                {showSuggestions ? (
+                {showUnassigned ? (
+                    <>
+                        <div className="flex items-center gap-3 px-4 py-3 border-b border-[#2a475e]">
+                            <span className="text-[13px] text-white font-medium flex-1">Unassigned — {allUnassigned.length} game{allUnassigned.length !== 1 ? 's' : ''}</span>
+                            <button className="btn-ghost text-[11px]" onClick={() => setShowUnassigned(false)}>← Back</button>
+                        </div>
+                        <div className="px-3 py-2 border-b border-[#2a475e]">
+                            <input value={unassignedSearch} onChange={e => setUnassignedSearch(e.target.value)}
+                                placeholder="Search unassigned games…" className="input" />
+                        </div>
+                        <div className="flex-1 overflow-y-auto">
+                            {filteredUnassigned.length === 0 && (
+                                <div className="text-[11px] text-[#546270] text-center py-6">
+                                    {unassignedSearch ? 'No matches' : 'All games are assigned to a series!'}
+                                </div>
+                            )}
+                            {filteredUnassigned.map(g => (
+                                <div key={g.id} className="flex items-center gap-2 px-3 py-1.5 hover:bg-[#1b2838] border-b border-[#1a2535]">
+                                    <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
+                                    <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#c6d4df] hover:text-[#66c0f4] flex-1 truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                    {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
+                                    <button className="btn-primary shrink-0 text-[9px] py-[2px] px-2 whitespace-nowrap"
+                                        onClick={() => setModal({ mode: 'add', initialValue: g.title, suggestedGameIds: [g.id] })}>
+                                        New Series
+                                    </button>
+                                </div>
+                            ))}
+                        </div>
+                    </>
+                ) : showSuggestions ? (
                     <>
                         <div className="flex items-center gap-3 px-4 py-3 border-b border-[#2a475e]">
                             <span className="text-[13px] text-white font-medium flex-1">Suggestions — {recommendations.length} potential series</span>
@@ -747,9 +806,10 @@ function RASeriesModule() {
 
 const PIPELINE_MODES = [
     { platform: 'RetroAchievements', color: '#e5b143', modes: [
-        { id: 'ra',       label: 'Incremental',   desc: 'Profile + recent achievements' },
-        { id: 'ra-full',  label: 'Full Refresh',   desc: 'Re-fetch all game details' },
-        { id: 'ra-debug', label: 'Debug',          desc: 'Print API responses, no writes' },
+        { id: 'ra',            label: 'Incremental',    desc: 'Profile + recent achievements' },
+        { id: 'ra-watchlist',  label: 'Watchlist Only', desc: 'Fetch want-to-play list only' },
+        { id: 'ra-full',       label: 'Full Refresh',   desc: 'Re-fetch all game details' },
+        { id: 'ra-debug',      label: 'Debug',          desc: 'Print API responses, no writes' },
     ]},
     { platform: 'Steam', color: '#66c0f4', modes: [
         { id: 'steam',            label: 'Incremental',         desc: 'Recently played only' },

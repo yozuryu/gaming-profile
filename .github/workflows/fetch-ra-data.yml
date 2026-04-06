@@ -1,7 +1,7 @@
 name: Fetch RA Data
 
 run-name: >-
-  ${{ github.event_name == 'workflow_dispatch' && format('RA Data — manual ({0})', inputs.refresh_games == true && 'full refresh' || 'incremental') ||
+  ${{ github.event_name == 'workflow_dispatch' && format('RA Data — manual ({0})', inputs.mode) ||
       github.event.schedule == '0 0 * * *'     && 'RA Data — midnight full refresh' ||
       'RA Data — 1h incremental' }}
 
@@ -11,10 +11,14 @@ on:
     - cron: '0 0 * * *'    # midnight UTC — full game refresh
   workflow_dispatch:
     inputs:
-      refresh_games:
-        description: 'Full game refresh (--refresh-games)'
-        type: boolean
-        default: false
+      mode:
+        description: 'Run mode'
+        type: choice
+        default: incremental
+        options:
+          - incremental
+          - full-refresh
+          - watchlist-only
 
 concurrency:
   group: data-pipeline
@@ -46,9 +50,12 @@ jobs:
           RA_USERNAME: ${{ secrets.RA_USERNAME }}
           RA_API_KEY: ${{ secrets.RA_API_KEY }}
         run: |
-          if [ "${{ github.event.schedule }}" = "0 0 * * *" ] || [ "${{ inputs.refresh_games }}" = "true" ]; then
+          if [ "${{ github.event.schedule }}" = "0 0 * * *" ] || [ "${{ inputs.mode }}" = "full-refresh" ]; then
             echo "Mode: full game refresh"
             npm run ra-fetch:full
+          elif [ "${{ inputs.mode }}" = "watchlist-only" ]; then
+            echo "Mode: watchlist only"
+            npm run ra-fetch:watchlist
           else
             echo "Mode: incremental"
             npm run ra-fetch
@@ -59,8 +66,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ra/
-          if [ "${{ github.event.schedule }}" = "0 0 * * *" ] || [ "${{ inputs.refresh_games }}" = "true" ]; then
+          if [ "${{ github.event.schedule }}" = "0 0 * * *" ] || [ "${{ inputs.mode }}" = "full-refresh" ]; then
             MSG="chore: full refresh ra data $(date -u '+%Y-%m-%d %H:%M UTC')"
+          elif [ "${{ inputs.mode }}" = "watchlist-only" ]; then
+            MSG="chore: update ra watchlist $(date -u '+%Y-%m-%d %H:%M UTC')"
           else
             MSG="chore: update ra data $(date -u '+%Y-%m-%d %H:%M UTC')"
           fi

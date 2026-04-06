@@ -1004,8 +1004,9 @@ const ActivitySkeleton = () => (
 
 export default function App() {
   // ── Split data state ─────────────────────────────────────
-  const [profileData,  setProfileData]  = useState(null); // profile.json
-  const [gamesData,    setGamesData]    = useState(null); // games.json
+  const [profileData,   setProfileData]   = useState(null); // profile.json
+  const [watchlistData, setWatchlistData] = useState(null); // watchlist.json
+  const [gamesData,     setGamesData]     = useState(null); // games.json
   const [heatmapData,  setHeatmapData]  = useState({});   // achievements/heatmap.json
 
   const TOTAL_ACH_CHUNKS = 4;
@@ -1061,12 +1062,16 @@ export default function App() {
     const next = new Set(prev); next.has(key) ? next.delete(key) : next.add(key); return next;
   });
 
-  // ── Fetch profile.json + guides.json on mount ────────────
+  // ── Fetch profile.json + watchlist.json + guides.json on mount ──
   useEffect(() => {
     fetch('../../data/ra/profile.json')
       .then(r => { if (!r.ok) throw new Error('Failed to load profile.json'); return r.json(); })
       .then(data => { setProfileData(data); setLoadingProfile(false); })
       .catch(err => { setError(err.message); setLoadingProfile(false); });
+    fetch('../../data/ra/watchlist.json')
+      .then(r => r.ok ? r.json() : { total: 0, results: [] })
+      .then(data => setWatchlistData(data))
+      .catch(() => setWatchlistData({ total: 0, results: [] }));
     fetch('../../data/ra/guides.json')
       .then(r => r.ok ? r.json() : {})
       .then(data => setGuidesData(data))
@@ -1112,15 +1117,16 @@ export default function App() {
 
   const loadedChunkCount = achievementChunks.filter(c => c !== null).length;
 
-  // ── Merge profile + games into the shape transformData expects ──
+  // ── Merge profile + watchlist + games into the shape transformData expects ──
   const rawData = useMemo(() => {
     if (!profileData) return null;
     return {
       ...profileData,
-      recentAchievements:   [],  // loaded separately in chunks for Activity tab
+      wantToPlayList:       watchlistData,  // from watchlist.json
+      recentAchievements:   [],             // loaded separately in chunks for Activity tab
       detailedGameProgress: gamesData?.detailedGameProgress ?? {},
     };
-  }, [profileData, gamesData]);
+  }, [profileData, watchlistData, gamesData]);
 
   const { profile: PROFILE_DATA, games: ALL_GAMES, backlog: BACKLOG } = useMemo(() => transformData(rawData), [rawData]);
 
@@ -1545,7 +1551,10 @@ export default function App() {
                   if (games.length > 0) groups.push({ key: s, label: statusMeta[s].label, dot: statusMeta[s].dot, games, defaultOpen: statusMeta[s].defaultOpen });
                 });
               } else if (watchlistGrouping === 'series') {
-                seriesData.forEach(s => {
+                [...seriesData].sort((a, b) => {
+                  const key = n => /^[a-zA-Z]/.test(n) ? '2' + n.toLowerCase() : /^\d/.test(n) ? '1' + n.toLowerCase() : '0' + n.toLowerCase();
+                  return key(a.name).localeCompare(key(b.name));
+                }).forEach(s => {
                   const games = s.gameIds.map(id => filtered.find(g => g.id === id)).filter(Boolean);
                   if (games.length > 0) groups.push({ key: s.id, label: s.name, dot: '#e5b143', games, defaultOpen: games.length <= 3 });
                 });

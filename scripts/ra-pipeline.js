@@ -68,14 +68,17 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const fmtDate = (d) => d.toISOString().substring(0, 10);
 
 // ── CLI Flags ──────────────────────────────────────────────
-// --refresh-games  : re-fetch all game details (full refresh)
-// --debug          : verbose output; skips file writes (dry run)
-// (default)        : load existing games.json, only fetch new games
-const REFRESH_GAMES = process.argv.includes('--refresh-games');
+// --refresh-games   : re-fetch all game details (full refresh)
+// --watchlist-only  : only fetch + write watchlist.json, skip everything else
+// --debug           : verbose output; skips file writes (dry run)
+// (default)         : load existing games.json, only fetch new games
+const REFRESH_GAMES    = process.argv.includes('--refresh-games');
+const WATCHLIST_ONLY   = process.argv.includes('--watchlist-only');
 
 log.ok(`RetroAchievements authenticated as: ${RA_USERNAME}`);
 log.ok('Firebase Admin SDK initialized');
 log.ok(`Game details mode        : ${REFRESH_GAMES ? 'Full refresh  (--refresh-games)' : 'Incremental   (new games only)'}`);
+log.ok(`Watchlist-only mode      : ${WATCHLIST_ONLY ? 'yes  (--watchlist-only)' : 'no'}`);
 log.ok(`Debug mode               : ${DEBUG ? 'enabled  (--debug)' : 'disabled'}`);
 
 // =========================================================
@@ -350,11 +353,16 @@ function serializeLocally(payload) {
         pageAwards: payload.pageAwards,
         recentlyPlayedGames: payload.recentlyPlayedGames,
         gameAwardsAndProgress: payload.gameAwardsAndProgress,
-        wantToPlayList: payload.wantToPlayList,
         mostRecentAchievement: payload.mostRecentAchievement,
         mostRecentGame: payload.mostRecentGame,
         points7Days: payload.points7Days,
         points30Days: payload.points30Days,
+    });
+
+    // watchlist.json — want-to-play list, split out for independent refresh
+    write('watchlist.json', {
+        total: payload.wantToPlayList?.total ?? 0,
+        results: payload.wantToPlayList?.results ?? [],
     });
 
     // achievements/heatmap.json — compact day→points map for the Activity heatmap
@@ -465,17 +473,58 @@ async function synchronizeWithFirestore(enabled, data) {
 }
 
 // =========================================================
+// Watchlist-Only Fast Path
+// =========================================================
+
+async function executeWatchlistOnly(targetUser) {
+    log.section(`Watchlist-Only Extraction  [ ${targetUser} ]`);
+
+    log.step('Fetching want-to-play list...');
+    const PAGE_SIZE = 500;
+    const firstPage = await getUserWantToPlayList(authorization, { username: targetUser, count: PAGE_SIZE, offset: 0 });
+    const allWantToPlay = [...(firstPage.results || [])];
+    const totalWantToPlay = firstPage.total ?? allWantToPlay.length;
+    let offset = PAGE_SIZE;
+    while (allWantToPlay.length < totalWantToPlay) {
+        await sleep(1500);
+        const page = await getUserWantToPlayList(authorization, { username: targetUser, count: PAGE_SIZE, offset });
+        const batch = page.results || [];
+        if (batch.length === 0) break;
+        allWantToPlay.push(...batch);
+        offset += PAGE_SIZE;
+    }
+    log.done(`${totalWantToPlay} total, ${allWantToPlay.length} fetched`);
+    return { total: totalWantToPlay, results: allWantToPlay };
+}
+
+// =========================================================
 // Phase 5: ETL Orchestration
 // =========================================================
 
 async function runPipeline() {
     try {
+        if (WATCHLIST_ONLY) {
+            const wl = await executeWatchlistOnly(RA_USERNAME);
+            if (!DEBUG) {
+                const outPath = path.join(__dirname, '..', 'data', 'ra', 'watchlist.json');
+                const json = JSON.stringify(wl, null, 4);
+                const sizeKb = (Buffer.byteLength(json, 'utf8') / 1024).toFixed(1);
+                fs.writeFileSync(outPath, json, 'utf8');
+                log.ok(`watchlist.json           ${sizeKb} KB  →  ${outPath}`);
+            } else {
+                log.debug('watchlist', wl);
+            }
+            log.section('Pipeline Complete');
+            log.ok(`Watchlist entries     : ${wl.total}`);
+            console.log();
+            process.exit(0);
+        }
+
         const payload = await executeProfileExtraction(RA_USERNAME);
         serializeLocally(payload);
         await synchronizeWithFirestore(false, payload);
 
-        const totalGames   = Object.keys(payload.detailedGameProgress).length;
-        const cachedGames  = REFRESH_GAMES ? 0 : totalGames; // approximate — exact count logged during fetch
+        const totalGames = Object.keys(payload.detailedGameProgress).length;
 
         log.section('Pipeline Complete');
         log.ok(`Extraction timestamp  : ${payload.metadata.extractionTimestamp}`);

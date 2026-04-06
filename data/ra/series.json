@@ -1,54 +1,62 @@
 [
   {
-    "id": "mnlyodzf",
-    "name": "Dragon Quest",
+    "id": "mnlzmttk",
+    "name": ".hack",
     "gameIds": [
-      1471,
-      1470,
-      1667,
-      6231,
-      4612,
-      9093,
-      2148,
-      5800,
-      6013,
-      11289,
-      2721,
-      1405,
-      3818
+      19015,
+      19016,
+      19017,
+      19021,
+      3470,
+      19012,
+      19013,
+      19019
     ]
   },
   {
-    "id": "mnlypgal",
-    "name": "Rayman",
+    "id": "mnmlqtbm",
+    "name": "7th Dragon",
     "gameIds": [
-      14013,
-      11346,
-      2995,
-      11334,
-      19115,
-      8413,
-      19231,
-      34862,
-      12934,
-      34703,
-      16995
+      3952,
+      16452,
+      18318,
+      5208
     ]
   },
   {
-    "id": "mnlyplfb",
-    "name": "Suikoden",
+    "id": "mnnbx57q",
+    "name": "Animal Crossing",
     "gameIds": [
-      18320,
-      11255,
-      10536,
-      11241,
-      20352,
-      2609,
-      2617,
-      2621,
-      2622,
-      9077
+      34566,
+      38074,
+      9594
+    ]
+  },
+  {
+    "id": "mnnbx925",
+    "name": "Armored Core",
+    "gameIds": [
+      11348,
+      3316,
+      3308
+    ]
+  },
+  {
+    "id": "mnnbxg6m",
+    "name": "Atelier",
+    "gameIds": [
+      19228,
+      19188,
+      19227
+    ]
+  },
+  {
+    "id": "mnnbxq3k",
+    "name": "Brandish",
+    "gameIds": [
+      446,
+      2705,
+      14502
     ]
   },
   {
@@ -66,104 +74,23 @@
     ]
   },
   {
-    "id": "mnlypzwm",
-    "name": "Kingdom Hearts",
+    "id": "mnnbwznq",
+    "name": "Castlevania",
     "gameIds": [
-      32650,
-      32564,
-      2781,
-      2642,
-      3556,
-      768,
-      2780,
-      19290,
-      14828
+      5013,
+      2805,
+      2679,
+      689,
+      5137
     ]
   },
   {
-    "id": "mnlyqcj8",
-    "name": "Mega Man Star Force",
+    "id": "mnncb6kk",
+    "name": "Chocobo",
     "gameIds": [
-      15656,
-      17895,
-      17729,
-      17896,
-      17890,
-      15334,
-      17894
-    ]
-  },
-  {
-    "id": "mnlyqo7l",
-    "name": "Summon Night",
-    "gameIds": [
-      16474,
-      18472,
-      18473,
-      33764,
-      2588,
-      2589,
-      9880
-    ]
-  },
-  {
-    "id": "mnlyqxmi",
-    "name": "The Legend of Zelda",
-    "gameIds": [
-      2198,
-      669,
-      11202,
-      559,
-      9190,
-      204,
-      3934
-    ]
-  },
-  {
-    "id": "mnlyr2e8",
-    "name": "Crash Bandicoot",
-    "gameIds": [
-      22475,
-      10434,
-      10432,
-      10433,
-      21740,
-      19043
-    ]
-  },
-  {
-    "id": "mnlyrdmv",
-    "name": "Star Ocean",
-    "gameIds": [
-      1392,
-      5228,
-      3908,
-      3909,
-      11253,
-      19070
-    ]
-  },
-  {
-    "id": "mnlyrm7o",
-    "name": "Wild Arms",
-    "gameIds": [
-      11310,
-      11313,
-      2685,
-      2686,
-      2687,
-      19076
-    ]
-  },
-  {
-    "id": "mnlyrydm",
-    "name": "Shin Megami Tensei",
-    "gameIds": [
-      819,
-      3496,
-      9483,
-      2646,
-      2652
+      7300,
+      11352,
+      13183
     ]
   },
   {
@@ -177,43 +104,37 @@
     ]
   },
   {
-    "id": "mnlz2ufb",
-    "name": "Mega Man",
+    "id": "mnlyr2e8",
+    "name": "Crash Bandicoot",
     "gameIds": [
-      11280,
-      28162,
-      11262,
-      3219,
-      15656,
-      17895,
-      17729,
-      17896,
-      17890,
-      15334,
-      17894,
-      30125,
-      5670,
-      8376,
-      8306,
-      3582
+      22475,
+      10434,
+      10432,
+      10433,
+      21740,
+      19043,
+      33170,
+      10907,
+      16382,
+      20852,
+      10438
     ]
   },
   {
-    "id": "mnlz367d",
-    "name": "Mega Man X",
+    "id": "mnndi0k4",
+    "name": "Dept. Heaven",
     "gameIds": [
-      30125,
-      5670,
-      3219
-    ]
-  },
-  {
-    "id": "mnlz3xsz",
-    "name": "Mega Man Zero",
-    "gameIds": [
-      8376,
-      8306,
-      9818
+      3890,
+      5512,
+      14657,
+      28837,
+      28836,
+      6061,
+      7568,
+      31505,
+      14650,
+      16657,
+      3540
     ]
   },
   {
@@ -239,13 +160,41 @@
     ]
   },
   {
-    "id": "mnlzc4v5",
-    "name": "Final Fantasy Crystal Chronicles",
+    "id": "mnlyodzf",
+    "name": "Dragon Quest",
     "gameIds": [
-      3885,
-      16632,
-      16244,
-      34679
+      1471,
+      1470,
+      1667,
+      6231,
+      4612,
+      9093,
+      2148,
+      5800,
+      6013,
+      11289,
+      2721,
+      1405,
+      3818
+    ]
+  },
+  {
+    "id": "mnlzmhpi",
+    "name": "Fatal Frame",
+    "gameIds": [
+      1275,
+      2725,
+      2726,
+      34874
+    ]
+  },
+  {
+    "id": "mnnd2jpx",
+    "name": "Fate",
+    "gameIds": [
+      18159,
+      18760,
+      25384
     ]
   },
   {
@@ -265,7 +214,20 @@
       519,
       3236,
       3919,
-      14837
+      14837,
+      2713,
+      3515,
+      3517
+    ]
+  },
+  {
+    "id": "mnmlm638",
+    "name": "Final Fantasy Crystal Chronicles",
+    "gameIds": [
+      3885,
+      16632,
+      16244,
+      34679
     ]
   },
   {
@@ -278,27 +240,99 @@
     ]
   },
   {
-    "id": "mnlzgv8n",
-    "name": "Xeno",
+    "id": "mnnbxtzu",
+    "name": "Golden Sun",
     "gameIds": [
-      100,
-      11248,
-      3155,
-      3157,
-      3212
+      767,
+      11788,
+      2592
     ]
   },
   {
-    "id": "mnlzj17k",
-    "name": "Seiken Densetsu",
+    "id": "mnnbxy6s",
+    "name": "Grandia",
     "gameIds": [
-      9752,
-      2709,
-      9695,
-      11288,
-      400,
-      4206,
-      1391
+      11281,
+      5812,
+      2668,
+      2670
+    ]
+  },
+  {
+    "id": "mnnby35y",
+    "name": "Guitar Hero",
+    "gameIds": [
+      7994,
+      9049,
+      5579
+    ]
+  },
+  {
+    "id": "mnmlhhju",
+    "name": "Kingdom Hearts",
+    "gameIds": [
+      32650,
+      32564,
+      2781,
+      2642,
+      3556,
+      768,
+      2780,
+      19290,
+      14828
+    ]
+  },
+  {
+    "id": "mnlz2ufb",
+    "name": "Mega Man",
+    "gameIds": [
+      11280,
+      28162,
+      11262,
+      3219,
+      15656,
+      17895,
+      17729,
+      17896,
+      17890,
+      15334,
+      17894,
+      30125,
+      5670,
+      8376,
+      8306,
+      3582
+    ]
+  },
+  {
+    "id": "mnlyqcj8",
+    "name": "Mega Man Star Force",
+    "gameIds": [
+      15656,
+      17895,
+      17729,
+      17896,
+      17890,
+      15334,
+      17894
+    ]
+  },
+  {
+    "id": "mnlz367d",
+    "name": "Mega Man X",
+    "gameIds": [
+      30125,
+      5670,
+      3219
+    ]
+  },
+  {
+    "id": "mnlz3xsz",
+    "name": "Mega Man Zero",
+    "gameIds": [
+      8376,
+      8306,
+      9818
     ]
   },
   {
@@ -311,12 +345,12 @@
     ]
   },
   {
-    "id": "mnlzli3k",
-    "name": "Shadow Hearts",
+    "id": "mnnby6x5",
+    "name": "Patapon",
     "gameIds": [
-      2989,
-      7899,
-      8425
+      10525,
+      3506,
+      3507
     ]
   },
   {
@@ -335,6 +369,60 @@
     ]
   },
   {
+    "id": "mnnbyc6h",
+    "name": "Pokémon",
+    "gameIds": [
+      17492,
+      14853,
+      2816,
+      17393,
+      16597,
+      5853,
+      810,
+      668,
+      24186,
+      515,
+      11732,
+      16211,
+      723
+    ]
+  },
+  {
+    "id": "mnnc8epg",
+    "name": "Pokémon Mystery Dungeon",
+    "gameIds": [
+      17492,
+      14853,
+      2816
+    ]
+  },
+  {
+    "id": "mnlypgal",
+    "name": "Rayman",
+    "gameIds": [
+      14013,
+      11346,
+      2995,
+      11334,
+      19115,
+      8413,
+      19231,
+      34862,
+      12934,
+      34703,
+      16995
+    ]
+  },
+  {
+    "id": "mnmlqjfk",
+    "name": "Resident Evil",
+    "gameIds": [
+      11245,
+      11265,
+      97
+    ]
+  },
+  {
     "id": "mnlzm74i",
     "name": "Rune Factory",
     "gameIds": [
@@ -343,6 +431,53 @@
       12704,
       34776,
       34707
+    ]
+  },
+  {
+    "id": "mnlzj17k",
+    "name": "Seiken Densetsu",
+    "gameIds": [
+      9752,
+      2709,
+      9695,
+      11288,
+      400,
+      4206,
+      1391
+    ]
+  },
+  {
+    "id": "mnlzli3k",
+    "name": "Shadow Hearts",
+    "gameIds": [
+      2989,
+      7899,
+      8425
+    ]
+  },
+  {
+    "id": "mnlyrydm",
+    "name": "Shin Megami Tensei",
+    "gameIds": [
+      819,
+      3496,
+      9483,
+      2646,
+      2652
+    ]
+  },
+  {
+    "id": "mnnbws4f",
+    "name": "Shining Force",
+    "gameIds": [
+      65,
+      75,
+      14541,
+      4707,
+      12639,
+      10569,
+      19363,
+      12640
     ]
   },
   {
@@ -357,37 +492,57 @@
     ]
   },
   {
-    "id": "mnlzmhpi",
-    "name": "Fatal Frame",
+    "id": "mnlyrdmv",
+    "name": "Star Ocean",
     "gameIds": [
-      1275,
-      2725,
-      2726,
-      34874
+      1392,
+      5228,
+      3908,
+      3909,
+      11253,
+      19070
     ]
   },
   {
-    "id": "mnlzmttk",
-    "name": ".hack",
+    "id": "mnlyplfb",
+    "name": "Suikoden",
     "gameIds": [
-      19015,
-      19016,
-      19017,
-      19021,
-      3470,
-      19012,
-      19013,
-      19019
+      18320,
+      11255,
+      10536,
+      11241,
+      20352,
+      2609,
+      2617,
+      2621,
+      2622,
+      9077,
+      3523,
+      14370,
+      14371
     ]
   },
   {
-    "id": "mnlzn7yv",
-    "name": "Valkyrie Profile",
+    "id": "mnlyqo7l",
+    "name": "Summon Night",
     "gameIds": [
-      11249,
-      3142,
-      6004,
-      14169
+      16474,
+      18472,
+      18473,
+      33764,
+      2588,
+      2589,
+      9880,
+      9334
+    ]
+  },
+  {
+    "id": "mnnc0pp8",
+    "name": "Summon Night Swordcraft Story",
+    "gameIds": [
+      2588,
+      2589,
+      9334
     ]
   },
   {
@@ -407,6 +562,72 @@
       5111,
       3179,
       3259
+    ]
+  },
+  {
+    "id": "mnmljwrh",
+    "name": "The Legend of Heroes",
+    "gameIds": [
+      3563,
+      3567,
+      3562
+    ]
+  },
+  {
+    "id": "mnnd0hta",
+    "name": "The Legend of Zelda",
+    "gameIds": [
+      2198,
+      669,
+      11202,
+      559,
+      9190,
+      204,
+      3934
+    ]
+  },
+  {
+    "id": "mnlzn7yv",
+    "name": "Valkyrie Profile",
+    "gameIds": [
+      11249,
+      3142,
+      6004,
+      14169
+    ]
+  },
+  {
+    "id": "mnlyrm7o",
+    "name": "Wild Arms",
+    "gameIds": [
+      11310,
+      11313,
+      2685,
+      2686,
+      2687,
+      19076,
+      3944
+    ]
+  },
+  {
+    "id": "mnlzgv8n",
+    "name": "Xeno",
+    "gameIds": [
+      100,
+      11248,
+      3155,
+      3157,
+      3212
+    ]
+  },
+  {
+    "id": "mnnd34m8",
+    "name": "Zoids",
+    "gameIds": [
+      5581,
+      8671,
+      4951,
+      30277
     ]
   }
 ]

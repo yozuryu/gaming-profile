@@ -23,6 +23,7 @@ const ALLOWED = [
 // Pipeline definitions — maps a run mode to the script + args
 const PIPELINES = {
     'ra':               { script: 'scripts/ra-pipeline.js',    args: [] },
+    'ra-watchlist':     { script: 'scripts/ra-pipeline.js',    args: ['--watchlist-only'] },
     'ra-full':          { script: 'scripts/ra-pipeline.js',    args: ['--refresh-games'] },
     'ra-debug':         { script: 'scripts/ra-pipeline.js',    args: ['--debug'] },
     'steam':            { script: 'scripts/steam-pipeline.js', args: [] },
@@ -113,14 +114,14 @@ const server = http.createServer((req, res) => {
     // GET /api/games/ra
     if (method === 'GET' && pathname === '/api/games/ra') {
         try {
-            const raw     = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/ra/games.json'), 'utf8'));
-            const profile = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/ra/profile.json'), 'utf8'));
-            const watchlistIds = new Set((profile.wantToPlayList?.results || []).map(g => g.id));
+            const raw       = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/ra/games.json'), 'utf8'));
+            const watchlist = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/ra/watchlist.json'), 'utf8'));
+            const watchlistIds = new Set((watchlist.results || []).map(g => g.id));
             const map = new Map();
             Object.values(raw.detailedGameProgress).forEach(g => {
                 map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, fromWatchlist: watchlistIds.has(g.id) });
             });
-            (profile.wantToPlayList?.results || []).forEach(g => {
+            (watchlist.results || []).forEach(g => {
                 if (!map.has(g.id)) map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, fromWatchlist: true });
             });
             const games = Array.from(map.values()).sort((a, b) => a.title.localeCompare(b.title));

@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-04-06
+
+### Pipelines
+
+- RA pipeline: split `wantToPlayList` out of `profile.json` into its own `data/ra/watchlist.json`; profile page fetches it as a separate request and merges it before rendering the backlog tab
+- RA pipeline: added `--watchlist-only` flag — fetches only the want-to-play list and writes `watchlist.json`, skipping profile/achievements/games entirely; exposed as `npm run ra-fetch:watchlist`
+- RA pipeline: replaced two boolean `workflow_dispatch` inputs (`refresh_games`, `watchlist_only`) with a single `mode` choice dropdown (`incremental` / `full-refresh` / `watchlist-only`)
+- Admin server: `/api/games/ra` now reads watchlist from `data/ra/watchlist.json` instead of `data/ra/profile.json`
+
+### RetroAchievements
+
+- Admin Series module: added Unassigned Games panel — 📋 badge in left panel footer shows count of games not in any series; clicking opens a searchable right-panel view listing all unassigned games with icon, title link, WL badge, and a "New Series" button that pre-fills the series name and pre-assigns the game; badge count reflects live state as games get assigned
+- Admin Series module: fixed delete not persisting — deletion now immediately writes to `data/ra/series.json` (previously the save button was hidden after deselecting, so changes were lost on refresh)
+- Admin Series module: series list is now sorted alphabetically after create and rename
+- Watchlist series grouping: groups are now sorted alphabetically (was file order)
+
 ## 2026-04-05
 
 ### RetroAchievements
