@@ -14,7 +14,7 @@
             "iconUrl": "992478d94bb0eaa026d014e6376e009c9f95c120.jpg",
             "iconGrayUrl": "2993fb271787f33b3acbb752f7054026baf36473.jpg",
             "hidden": false,
-            "globalPct": 27.9
+            "globalPct": 28
         },
         {
             "apiName": "CompleteSideStories",
@@ -36,7 +36,7 @@
             "iconUrl": "5db43e13925c4b2da5fa383dc043c51a5a78908a.jpg",
             "iconGrayUrl": "52547b57dc59f9a8109fb23066fdb1c2a8100052.jpg",
             "hidden": false,
-            "globalPct": 15.3
+            "globalPct": 15.4
         },
         {
             "apiName": "PlayerChair",
@@ -69,7 +69,7 @@
             "iconUrl": "3429231d1e876916d7f1462583ba6f1ba7b86b37.jpg",
             "iconGrayUrl": "5be851cc612289526c781480c6310c43a51a6641.jpg",
             "hidden": false,
-            "globalPct": 3.5
+            "globalPct": 3.6
         },
         {
             "apiName": "ThrowStones",
@@ -239,7 +239,7 @@
             "unlockedAt": "2025-05-02T15:55:37.000Z",
             "iconUrl": "992478d94bb0eaa026d014e6376e009c9f95c120.jpg",
             "iconGrayUrl": "2993fb271787f33b3acbb752f7054026baf36473.jpg",
-            "globalPct": 27.9
+            "globalPct": 28
         },
         {
             "apiName": "TazerBotKill",
@@ -284,7 +284,7 @@
             "unlockedAt": null,
             "iconUrl": "5db43e13925c4b2da5fa383dc043c51a5a78908a.jpg",
             "iconGrayUrl": "52547b57dc59f9a8109fb23066fdb1c2a8100052.jpg",
-            "globalPct": 15.3
+            "globalPct": 15.4
         }
     ]
 }

@@ -168,7 +168,7 @@
             "iconUrl": "9a0850f024b70facbea421860d32524df198dcde.jpg",
             "iconGrayUrl": "8daa20948af87f82d6ec110be4f5e1f6b9414c33.jpg",
             "hidden": false,
-            "globalPct": 79.9
+            "globalPct": 80
         },
         {
             "apiName": "ACH_DECRYPT_1ST_MASTERCARD",
@@ -311,7 +311,7 @@
             "iconUrl": "47cd4697cf8d77bb82155a509adcc37a011cdc8a.jpg",
             "iconGrayUrl": "8daa20948af87f82d6ec110be4f5e1f6b9414c33.jpg",
             "hidden": false,
-            "globalPct": 15.2
+            "globalPct": 15.3
         },
         {
             "apiName": "ACH_COMPLETE_ALL_MEDIUM",
@@ -509,7 +509,7 @@
             "iconUrl": "47deaeb1c21a6a102aabb50cbeebf6466c467f14.jpg",
             "iconGrayUrl": "8daa20948af87f82d6ec110be4f5e1f6b9414c33.jpg",
             "hidden": false,
-            "globalPct": 8.4
+            "globalPct": 8.5
         },
         {
             "apiName": "ACH_COOP_REPRINT_ALLY",

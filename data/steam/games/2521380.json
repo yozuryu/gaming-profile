@@ -102,7 +102,7 @@
             "iconUrl": "d7234ec6137dc7c2340257ddab055f8c198fc517.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 24
+            "globalPct": 23.9
         },
         {
             "apiName": "SR1_KILL_TOMB_GUARDIAN",
@@ -146,7 +146,7 @@
             "iconUrl": "46beb76d2dba71341b8bf466c7eb2598061d4e55.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 19.4
+            "globalPct": 19.3
         },
         {
             "apiName": "SR1_KILL_DUMAH",
@@ -168,7 +168,7 @@
             "iconUrl": "f6e6223a6703b5863c2cc1635e02548b9c7b0ddc.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 18
+            "globalPct": 17.9
         },
         {
             "apiName": "SR1_CHRONOPLAST_CHAMBERS",
@@ -366,7 +366,7 @@
             "iconUrl": "4c254b4bfa4aac69ac1d9a929a75fd4bdc55f139.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 17.3
+            "globalPct": 17.2
         },
         {
             "apiName": "SR1_TALK_TO_DUMAH",
@@ -432,7 +432,7 @@
             "iconUrl": "6d4c38e9aa2b37589e298fab80eae3c1305979fc.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 36.9
+            "globalPct": 36.8
         },
         {
             "apiName": "SR1_ALL_WARP_GATES",
@@ -476,7 +476,7 @@
             "iconUrl": "e113c611b201b15c454d44f35c916a42d14f0e9c.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 27
+            "globalPct": 26.9
         },
         {
             "apiName": "SR1_STONE_GLYPH",
@@ -608,7 +608,7 @@
             "iconUrl": "ff6f2129bc26e0f57fff8d44be4729cbdab6b977.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 19.4
+            "globalPct": 19.3
         },
         {
             "apiName": "SR2_CONFRONT_KAIN",
@@ -619,7 +619,7 @@
             "iconUrl": "7cd29c91d207890b162a27469a7cff2281d335bc.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 15.7
+            "globalPct": 15.6
         },
         {
             "apiName": "SR2_GET_DARK_REAVER",
@@ -630,7 +630,7 @@
             "iconUrl": "6a5dcfd7d9a4c17b30598047ae7048188a111843.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 12.6
+            "globalPct": 12.5
         },
         {
             "apiName": "SR2_TALK_TO_VORADOR",
@@ -685,7 +685,7 @@
             "iconUrl": "9a3223c44a90a7463a684ab4a9a842e2ef91239b.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 10.2
+            "globalPct": 10.1
         },
         {
             "apiName": "SR2_GET_AIR_REAVER",
@@ -707,7 +707,7 @@
             "iconUrl": "3f34c90e22ac64f998cc907ca9d76c881354d13f.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 9.4
+            "globalPct": 9.3
         },
         {
             "apiName": "SR2_GET_FIRE_REAVER",
@@ -729,7 +729,7 @@
             "iconUrl": "35fba1578bdf71c5e93ef3d4b39c93aad2cdf9b9.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 9.2
+            "globalPct": 9.1
         },
         {
             "apiName": "SR2_STRONGHOLD_BEFORE_JANOS",
@@ -740,7 +740,7 @@
             "iconUrl": "79f2239d13fe868f8c422a15e7a1eb1756d85747.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 3.8
+            "globalPct": 3.7
         },
         {
             "apiName": "SR2_DROWN_HUMAN",
@@ -828,7 +828,7 @@
             "iconUrl": "8e1bc6d592c6242fb66056dfb15fd6492cdce502.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 16.1
+            "globalPct": 16
         },
         {
             "apiName": "SR2_LIFT_ENEMY_W_AIR_REAVER",

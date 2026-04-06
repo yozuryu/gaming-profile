@@ -25,7 +25,7 @@
             "iconUrl": "70ff5ba41548568aad51c3bd0d4a53d5c17399ed.jpg",
             "iconGrayUrl": "16cab0ef2c0b0acac9779a6cd9776158faa77a8a.jpg",
             "hidden": false,
-            "globalPct": 39.8
+            "globalPct": 39.7
         },
         {
             "apiName": "BLESSED",
@@ -36,7 +36,7 @@
             "iconUrl": "d53ad10288be837b8aab693b8fcc6549960460f1.jpg",
             "iconGrayUrl": "a577316f7ae64c8cfdd0568209a915a9fad0f8ad.jpg",
             "hidden": false,
-            "globalPct": 20
+            "globalPct": 19.9
         },
         {
             "apiName": "PROTECTED",
@@ -58,7 +58,7 @@
             "iconUrl": "bc53e3b71da8b6997a92ee2085f8029daa520d17.jpg",
             "iconGrayUrl": "6073f18f0da90c88ce535826b716ddc098723ae7.jpg",
             "hidden": false,
-            "globalPct": 20.1
+            "globalPct": 20
         },
         {
             "apiName": "SOULFUL",
@@ -355,7 +355,7 @@
             "iconUrl": "f35cd67af303aa5d609cd1183e9eb29295b302b7.jpg",
             "iconGrayUrl": "5a85ae25f9102058a0ac5bf541d08a510b466764.jpg",
             "hidden": false,
-            "globalPct": 37.6
+            "globalPct": 37.5
         },
         {
             "apiName": "WATCHER",
@@ -399,7 +399,7 @@
             "iconUrl": "11d67c16467ae72066c2a3d33388325c65e9f7f7.jpg",
             "iconGrayUrl": "9f9fca30082bf6d65e8beb8cf5eb9955c0ed0bbf.jpg",
             "hidden": false,
-            "globalPct": 37.5
+            "globalPct": 37.4
         },
         {
             "apiName": "COLOSSEUM_2",
@@ -730,7 +730,7 @@
             "unlockedAt": null,
             "iconUrl": "70ff5ba41548568aad51c3bd0d4a53d5c17399ed.jpg",
             "iconGrayUrl": "16cab0ef2c0b0acac9779a6cd9776158faa77a8a.jpg",
-            "globalPct": 39.8
+            "globalPct": 39.7
         },
         {
             "apiName": "BLESSED",
@@ -739,7 +739,7 @@
             "unlockedAt": null,
             "iconUrl": "d53ad10288be837b8aab693b8fcc6549960460f1.jpg",
             "iconGrayUrl": "a577316f7ae64c8cfdd0568209a915a9fad0f8ad.jpg",
-            "globalPct": 20
+            "globalPct": 19.9
         },
         {
             "apiName": "PROTECTED",
@@ -757,7 +757,7 @@
             "unlockedAt": null,
             "iconUrl": "bc53e3b71da8b6997a92ee2085f8029daa520d17.jpg",
             "iconGrayUrl": "6073f18f0da90c88ce535826b716ddc098723ae7.jpg",
-            "globalPct": 20.1
+            "globalPct": 20
         }
     ]
 }
