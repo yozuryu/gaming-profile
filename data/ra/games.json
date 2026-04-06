@@ -40810,8 +40810,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 6936,
-            "numDistinctPlayersHardcore": 6936,
+            "numDistinctPlayersCasual": 6938,
+            "numDistinctPlayersHardcore": 6938,
             "numAchievements": 108,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -40832,7 +40832,7 @@
                     "trueRatio": 6,
                     "type": "missable",
                     "badgeName": "106754",
-                    "numAwarded": 3468,
+                    "numAwarded": 3469,
                     "numAwardedHardcore": 1463,
                     "displayOrder": 30
                 },
@@ -40868,8 +40868,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "107881",
-                    "numAwarded": 6783,
-                    "numAwardedHardcore": 2432,
+                    "numAwarded": 6785,
+                    "numAwardedHardcore": 2433,
                     "displayOrder": 0
                 },
                 "94790": {
@@ -41528,8 +41528,8 @@
                     "trueRatio": 78,
                     "type": "missable",
                     "badgeName": "106697",
-                    "numAwarded": 592,
-                    "numAwardedHardcore": 392,
+                    "numAwarded": 593,
+                    "numAwardedHardcore": 393,
                     "displayOrder": 76
                 },
                 "95620": {
@@ -41621,7 +41621,7 @@
                     "title": "Ful, Losei Dovahkiin?",
                     "description": "Defeat the spirit of the Divine Dragon in Mayfil.",
                     "points": 25,
-                    "trueRatio": 78,
+                    "trueRatio": 79,
                     "type": "missable",
                     "badgeName": "106736",
                     "numAwarded": 723,
@@ -59112,8 +59112,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "129040",
-                    "numAwarded": 318,
-                    "numAwardedHardcore": 282,
+                    "numAwarded": 319,
+                    "numAwardedHardcore": 283,
                     "displayOrder": 0
                 },
                 "292840": {
@@ -59964,8 +59964,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "129114",
-                    "numAwarded": 169,
-                    "numAwardedHardcore": 150,
+                    "numAwarded": 170,
+                    "numAwardedHardcore": 151,
                     "displayOrder": 0
                 },
                 "292911": {
@@ -60000,8 +60000,8 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "129118",
-                    "numAwarded": 74,
-                    "numAwardedHardcore": 68,
+                    "numAwarded": 75,
+                    "numAwardedHardcore": 69,
                     "displayOrder": 0
                 },
                 "292914": {
@@ -60048,8 +60048,8 @@
                     "trueRatio": 26,
                     "type": null,
                     "badgeName": "129122",
-                    "numAwarded": 65,
-                    "numAwardedHardcore": 59,
+                    "numAwarded": 66,
+                    "numAwardedHardcore": 60,
                     "displayOrder": 0
                 },
                 "292918": {
@@ -60192,8 +60192,8 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "129212",
-                    "numAwarded": 171,
-                    "numAwardedHardcore": 160,
+                    "numAwarded": 172,
+                    "numAwardedHardcore": 161,
                     "displayOrder": 0
                 },
                 "292930": {
@@ -65227,9 +65227,9 @@
             "numDistinctPlayersCasual": 142,
             "numDistinctPlayersHardcore": 142,
             "numAchievements": 80,
-            "numAwardedToUser": 75,
-            "numAwardedToUserHardcore": 75,
-            "userTotalPlaytime": 70559,
+            "numAwardedToUser": 76,
+            "numAwardedToUserHardcore": 76,
+            "userTotalPlaytime": 71176,
             "imageIcon": "/Images/123011.png",
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
@@ -65288,8 +65288,8 @@
                     "trueRatio": 14,
                     "type": "progression",
                     "badgeName": "649921",
-                    "numAwarded": 80,
-                    "numAwardedHardcore": 63,
+                    "numAwarded": 81,
+                    "numAwardedHardcore": 64,
                     "displayOrder": 5,
                     "dateEarned": "2026-02-28 06:19:41",
                     "dateEarnedHardcore": "2026-02-28 06:19:41"
@@ -65439,12 +65439,14 @@
                     "title": "Illusory Dream",
                     "description": "Defeat the guardian of the illusory Shibuya Flowersea",
                     "points": 10,
-                    "trueRatio": 67,
+                    "trueRatio": 65,
                     "type": null,
                     "badgeName": "649928",
-                    "numAwarded": 24,
-                    "numAwardedHardcore": 23,
-                    "displayOrder": 93
+                    "numAwarded": 25,
+                    "numAwardedHardcore": 24,
+                    "displayOrder": 93,
+                    "dateEarned": "2026-04-06 15:32:41",
+                    "dateEarnedHardcore": "2026-04-06 15:32:41"
                 },
                 "572153": {
                     "id": 572153,
@@ -65558,8 +65560,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "649935",
-                    "numAwarded": 77,
-                    "numAwardedHardcore": 60,
+                    "numAwarded": 78,
+                    "numAwardedHardcore": 61,
                     "displayOrder": 21,
                     "dateEarned": "2026-03-17 03:24:07",
                     "dateEarnedHardcore": "2026-03-17 03:24:07"
@@ -65572,8 +65574,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "649936",
-                    "numAwarded": 71,
-                    "numAwardedHardcore": 55,
+                    "numAwarded": 72,
+                    "numAwardedHardcore": 56,
                     "displayOrder": 22,
                     "dateEarned": "2026-03-19 08:03:09",
                     "dateEarnedHardcore": "2026-03-19 08:03:09"

@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-06T14:55:07.739Z"
+        "extractionTimestamp": "2026-04-06T15:54:35.805Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Lv82 Samurai, Lv77 Psychic, and Lv78 Hacker | City Hall | Ch+: 33/33 quests | 48h24",
+        "richPresenceMsg": "Lv83 Samurai, Lv78 Psychic, and Lv79 Hacker | Illusory Capital | Ch+: 33/33 quests | 48h48",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1655,
+        "totalPoints": 1665,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6084,
+        "totalTruePoints": 6139,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Lv82 Samurai, Lv77 Psychic, and Lv78 Hacker | City Hall | Ch+: 33/33 quests | 48h24",
-        "richPresenceMsgDate": "2026-04-05 15:16:02",
+        "richPresenceMsg": "Lv83 Samurai, Lv78 Psychic, and Lv79 Hacker | Illusory Capital | Ch+: 33/33 quests | 48h48",
+        "richPresenceMsgDate": "2026-04-06 15:39:35",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1655,
+        "totalPoints": 1665,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6084,
+        "totalTruePoints": 6139,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 52658,
+        "rank": 52430,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 137827,
+        "totalRanked": 137834,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1655,
+        "points": 1665,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -134,14 +134,14 @@
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
             "imageBoxArt": "/Images/110688.png",
-            "lastPlayed": "2026-04-05 15:16:02",
+            "lastPlayed": "2026-04-06 15:39:35",
             "achievementsTotal": 80,
             "numPossibleAchievements": 80,
             "possibleScore": 475,
-            "numAchieved": 75,
-            "scoreAchieved": 410,
-            "numAchievedHardcore": 75,
-            "scoreAchievedHardcore": 410
+            "numAchieved": 76,
+            "scoreAchieved": 420,
+            "numAchievedHardcore": 76,
+            "scoreAchievedHardcore": 420
         },
         {
             "gameId": 11264,
@@ -407,9 +407,9 @@
                 "consoleId": 41,
                 "consoleName": "PlayStation Portable",
                 "maxPossible": 80,
-                "numAwarded": 75,
-                "numAwardedHardcore": 75,
-                "mostRecentAwardedDate": "2026-04-05T15:03:22+00:00",
+                "numAwarded": 76,
+                "numAwardedHardcore": 76,
+                "mostRecentAwardedDate": "2026-04-06T15:32:41+00:00",
                 "highestAwardKind": "beaten-hardcore",
                 "highestAwardDate": "2026-04-03T13:02:58+00:00"
             },
@@ -1027,7 +1027,7 @@
         ]
     },
     "wantToPlayList": {
-        "total": 457,
+        "total": 464,
         "results": [
             {
                 "id": 27,
@@ -2362,6 +2362,15 @@
                 "achievementsPublished": 138
             },
             {
+                "id": 3890,
+                "title": "Riviera: The Promised Land",
+                "consoleId": 41,
+                "consoleName": "PlayStation Portable",
+                "imageIcon": "/Images/000001.png",
+                "pointsTotal": 0,
+                "achievementsPublished": 0
+            },
+            {
                 "id": 3894,
                 "title": "SaGa 2: Hihou Densetsu - Goddess of Destiny",
                 "consoleId": 18,
@@ -2729,6 +2738,15 @@
                 "imageIcon": "/Images/038653.png",
                 "pointsTotal": 490,
                 "achievementsPublished": 84
+            },
+            {
+                "id": 6061,
+                "title": "Yggdra Union",
+                "consoleId": 41,
+                "consoleName": "PlayStation Portable",
+                "imageIcon": "/Images/000001.png",
+                "pointsTotal": 0,
+                "achievementsPublished": 0
             },
             {
                 "id": 6231,
@@ -3919,6 +3937,24 @@
                 "achievementsPublished": 44
             },
             {
+                "id": 14650,
+                "title": "Knights in the Nightmare",
+                "consoleId": 41,
+                "consoleName": "PlayStation Portable",
+                "imageIcon": "/Images/046045.png",
+                "pointsTotal": 0,
+                "achievementsPublished": 0
+            },
+            {
+                "id": 14657,
+                "title": "Riviera: Yakusoku no Chi Riviera",
+                "consoleId": 53,
+                "consoleName": "WonderSwan",
+                "imageIcon": "/Images/030103.png",
+                "pointsTotal": 580,
+                "achievementsPublished": 46
+            },
+            {
                 "id": 14662,
                 "title": "Valkyria Chronicles 2",
                 "consoleId": 41,
@@ -4963,6 +4999,24 @@
                 "achievementsPublished": 49
             },
             {
+                "id": 28836,
+                "title": "Gloria Union: Twin Fates in Blue Ocean",
+                "consoleId": 41,
+                "consoleName": "PlayStation Portable",
+                "imageIcon": "/Images/000001.png",
+                "pointsTotal": 0,
+                "achievementsPublished": 0
+            },
+            {
+                "id": 28837,
+                "title": "Blaze Union: Story to Reach the Future",
+                "consoleId": 41,
+                "consoleName": "PlayStation Portable",
+                "imageIcon": "/Images/000001.png",
+                "pointsTotal": 0,
+                "achievementsPublished": 0
+            },
+            {
                 "id": 29232,
                 "title": "Monster Kingdom: Jewel Summoner",
                 "consoleId": 41,
@@ -4986,6 +5040,15 @@
                 "consoleId": 16,
                 "consoleName": "GameCube",
                 "imageIcon": "/Images/118833.png",
+                "pointsTotal": 0,
+                "achievementsPublished": 0
+            },
+            {
+                "id": 31505,
+                "title": "Yggdra Unison: Seiken Buyuuden",
+                "consoleId": 18,
+                "consoleName": "Nintendo DS",
+                "imageIcon": "/Images/000001.png",
                 "pointsTotal": 0,
                 "achievementsPublished": 0
             },
@@ -5145,12 +5208,12 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-05 15:03:22",
+        "date": "2026-04-06 15:32:41",
         "hardcoreMode": true,
-        "achievementId": 572150,
-        "title": "Illusory Gold",
-        "description": "Defeat the guardian of the illusory Kokubunji Searsand",
-        "badgeName": "649927",
+        "achievementId": 572152,
+        "title": "Illusory Dream",
+        "description": "Defeat the guardian of the illusory Shibuya Flowersea",
+        "badgeName": "649928",
         "points": 10,
         "trueRatio": 65,
         "type": null,
@@ -5160,8 +5223,8 @@
         "gameIcon": "/Images/123011.png",
         "gameId": 16452,
         "consoleName": "PlayStation Portable",
-        "cumulScore": 612,
-        "badgeUrl": "/Badge/649927.png",
+        "cumulScore": 622,
+        "badgeUrl": "/Badge/649928.png",
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
@@ -5173,15 +5236,15 @@
         "imageTitle": "/Images/110687.png",
         "imageIngame": "/Images/110689.png",
         "imageBoxArt": "/Images/110688.png",
-        "lastPlayed": "2026-04-05 15:16:02",
+        "lastPlayed": "2026-04-06 15:39:35",
         "achievementsTotal": 80,
         "numPossibleAchievements": 80,
         "possibleScore": 475,
-        "numAchieved": 75,
-        "scoreAchieved": 410,
-        "numAchievedHardcore": 75,
-        "scoreAchievedHardcore": 410
+        "numAchieved": 76,
+        "scoreAchieved": 420,
+        "numAchievedHardcore": 76,
+        "scoreAchievedHardcore": 420
     },
-    "points7Days": 256,
-    "points30Days": 395
+    "points7Days": 266,
+    "points30Days": 405
 }
