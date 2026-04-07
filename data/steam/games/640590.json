@@ -245,7 +245,7 @@
             "iconUrl": "1b6bbd019e785c8b5f8e8fd1a49c31eca7553669.jpg",
             "iconGrayUrl": "8f566261c9fe80b318747a6eb7d6cfcc88e2ffe5.jpg",
             "hidden": false,
-            "globalPct": 50.1
+            "globalPct": 50.2
         },
         {
             "apiName": "MASTER_DISGUISE",
@@ -289,7 +289,7 @@
             "iconUrl": "208428e6e5558773833600dc453bdce7de735381.jpg",
             "iconGrayUrl": "c29d561a43998c07f46eb9cc7564d8956f59f79a.jpg",
             "hidden": false,
-            "globalPct": 7.4
+            "globalPct": 7.5
         },
         {
             "apiName": "STUDENT_CREATION",
@@ -355,7 +355,7 @@
             "iconUrl": "eadb5e75d4968364d8667fab13b473e505476d9f.jpg",
             "iconGrayUrl": "72d801aa88fdaaff22ce0b675b8d5daf9761b6db.jpg",
             "hidden": false,
-            "globalPct": 14.5
+            "globalPct": 14.6
         },
         {
             "apiName": "APPRENTICE_GOLDEN_ART",
@@ -443,7 +443,7 @@
             "iconUrl": "ce65731bebca3db22c5509bb32b61a4b5351f1a8.jpg",
             "iconGrayUrl": "f8d986376e4e656c32a528ce7f6cbf894a648ca7.jpg",
             "hidden": false,
-            "globalPct": 9.7
+            "globalPct": 9.8
         },
         {
             "apiName": "STUDENT_UPGRADES",
@@ -454,7 +454,7 @@
             "iconUrl": "cfe05d607d29af25f410ab262537a5649bcbfef9.jpg",
             "iconGrayUrl": "6446d430518d785d8415bae7a225fabb99cf9d8a.jpg",
             "hidden": false,
-            "globalPct": 75.5
+            "globalPct": 75.6
         },
         {
             "apiName": "MASTER_UPGRADES",
@@ -587,7 +587,7 @@
             "unlockedAt": "2024-08-07T13:22:06.000Z",
             "iconUrl": "cfe05d607d29af25f410ab262537a5649bcbfef9.jpg",
             "iconGrayUrl": "6446d430518d785d8415bae7a225fabb99cf9d8a.jpg",
-            "globalPct": 75.5
+            "globalPct": 75.6
         },
         {
             "apiName": "COMPLETE_LOCATION1",

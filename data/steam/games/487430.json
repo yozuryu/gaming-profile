@@ -14,7 +14,7 @@
             "iconUrl": "592812977391d2b63b1fb5e21444c7ccd0995c92.jpg",
             "iconGrayUrl": "9d51b1adc2c7bab53bc4c51504ced2792f252176.jpg",
             "hidden": false,
-            "globalPct": 62.9
+            "globalPct": 62.8
         },
         {
             "apiName": "english_play",
@@ -36,7 +36,7 @@
             "iconUrl": "ff723d78f55cc030b71286c98432384243473994.jpg",
             "iconGrayUrl": "9d79d6f2bc57e19660b0eeb1d29b1708469c5365.jpg",
             "hidden": false,
-            "globalPct": 29.4
+            "globalPct": 29.3
         },
         {
             "apiName": "chapter1_complete",
@@ -47,7 +47,7 @@
             "iconUrl": "1253470d855f2a94799d0bd4756564c67b5a9a9a.jpg",
             "iconGrayUrl": "cc34293b885f5ea893c80e8ec28ffbbf09a6c0ce.jpg",
             "hidden": false,
-            "globalPct": 39.4
+            "globalPct": 39.3
         },
         {
             "apiName": "chapter2_complete",
@@ -58,7 +58,7 @@
             "iconUrl": "a126a8c39a169230a1762a14db55e58f59ee11e3.jpg",
             "iconGrayUrl": "42d5bef569d4aafe71222a582a5d90956b6569ed.jpg",
             "hidden": false,
-            "globalPct": 32.6
+            "globalPct": 32.5
         },
         {
             "apiName": "cg_complete",
@@ -96,7 +96,7 @@
             "unlockedAt": "2017-09-20T22:00:31.000Z",
             "iconUrl": "1253470d855f2a94799d0bd4756564c67b5a9a9a.jpg",
             "iconGrayUrl": "cc34293b885f5ea893c80e8ec28ffbbf09a6c0ce.jpg",
-            "globalPct": 39.4
+            "globalPct": 39.3
         },
         {
             "apiName": "japanese_play",
@@ -105,7 +105,7 @@
             "unlockedAt": "2017-09-19T20:12:58.000Z",
             "iconUrl": "ff723d78f55cc030b71286c98432384243473994.jpg",
             "iconGrayUrl": "9d79d6f2bc57e19660b0eeb1d29b1708469c5365.jpg",
-            "globalPct": 29.4
+            "globalPct": 29.3
         },
         {
             "apiName": "english_play",
@@ -123,7 +123,7 @@
             "unlockedAt": "2017-09-19T20:12:32.000Z",
             "iconUrl": "592812977391d2b63b1fb5e21444c7ccd0995c92.jpg",
             "iconGrayUrl": "9d51b1adc2c7bab53bc4c51504ced2792f252176.jpg",
-            "globalPct": 62.9
+            "globalPct": 62.8
         },
         {
             "apiName": "chapter2_complete",
@@ -132,7 +132,7 @@
             "unlockedAt": null,
             "iconUrl": "a126a8c39a169230a1762a14db55e58f59ee11e3.jpg",
             "iconGrayUrl": "42d5bef569d4aafe71222a582a5d90956b6569ed.jpg",
-            "globalPct": 32.6
+            "globalPct": 32.5
         },
         {
             "apiName": "cg_complete",

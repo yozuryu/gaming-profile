@@ -102,7 +102,7 @@
             "iconUrl": "3deb3cfa871a353d61e0d1fab6d6e023c45a2ef9.jpg",
             "iconGrayUrl": "66b44539998211e9fc551f0766b74c2852b7b360.jpg",
             "hidden": true,
-            "globalPct": 26.7
+            "globalPct": 26.8
         },
         {
             "apiName": "Dordogne_Progression_10",
@@ -135,7 +135,7 @@
             "iconUrl": "903146656e40cc121062165da17b46f3e2210dbf.jpg",
             "iconGrayUrl": "1389a7a7cabc207c8e2d5f9df33e91f4e0733990.jpg",
             "hidden": false,
-            "globalPct": 5.1
+            "globalPct": 5
         },
         {
             "apiName": "Dordogne_Completion_03",
@@ -344,7 +344,7 @@
             "iconUrl": "5f2b62b92ea250b05f6818ff10fe54625f4734f2.jpg",
             "iconGrayUrl": "e95d9e206408063d6c8345e83aa780de4177f0fa.jpg",
             "hidden": true,
-            "globalPct": 16.1
+            "globalPct": 16
         }
     ],
     "playtimeForever": 286,

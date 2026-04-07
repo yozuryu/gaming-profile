@@ -47,7 +47,7 @@
             "iconUrl": "df5c15da9a88c1f24c11c8672b18b004886ea177.jpg",
             "iconGrayUrl": "206d51096881951812c7b726e179b323a40f5cb2.jpg",
             "hidden": false,
-            "globalPct": 51.9
+            "globalPct": 51.8
         },
         {
             "apiName": "PDP_100deaths",
@@ -344,7 +344,7 @@
             "iconUrl": "a5f31681a8ecaa8d410701268cefb4b0e20dddfc.jpg",
             "iconGrayUrl": "03b0dfd05009d95e549eeffb611d96405ddd9d16.jpg",
             "hidden": false,
-            "globalPct": 33.9
+            "globalPct": 33.8
         },
         {
             "apiName": "PDP_Duck",
@@ -702,7 +702,7 @@
             "unlockedAt": null,
             "iconUrl": "df5c15da9a88c1f24c11c8672b18b004886ea177.jpg",
             "iconGrayUrl": "206d51096881951812c7b726e179b323a40f5cb2.jpg",
-            "globalPct": 51.9
+            "globalPct": 51.8
         }
     ]
 }
