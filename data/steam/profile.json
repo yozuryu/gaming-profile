@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-07T11:10:59.140Z"
+        "extractionTimestamp": "2026-04-07T13:56:25.404Z"
     },
     "profile": {
         "steamId": "76561198188939413",
@@ -100,17 +100,6 @@
             "lastPlayedTs": "2026-03-26T05:20:31.000Z",
             "achUnlocked": 0,
             "achTotal": 31
-        },
-        {
-            "appId": 275850,
-            "name": "No Man's Sky",
-            "playtime2Weeks": 62,
-            "playtimeForever": 1334,
-            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/275850/fccb20f309ac5ae05b3cb4576a8a3357edf86f2e.jpg",
-            "storeUrl": "https://store.steampowered.com/app/275850",
-            "lastPlayedTs": "2026-03-24T13:47:19.000Z",
-            "achUnlocked": 1,
-            "achTotal": 27
         }
     ],
     "mostRecentGame": {
