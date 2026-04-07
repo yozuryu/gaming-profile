@@ -31849,11 +31849,11 @@
                     "title": "Scotia of Beautiful Water",
                     "description": "Restore Scotia to her original form, obtain the sacred treasure Dellepied and Scotia's power along with saving Lita",
                     "points": 10,
-                    "trueRatio": 37,
+                    "trueRatio": 36,
                     "type": "progression",
                     "badgeName": "222028",
-                    "numAwarded": 69,
-                    "numAwardedHardcore": 55,
+                    "numAwarded": 70,
+                    "numAwardedHardcore": 56,
                     "displayOrder": 40
                 },
                 "200086": {
@@ -31864,8 +31864,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "222212",
-                    "numAwarded": 56,
-                    "numAwardedHardcore": 46,
+                    "numAwarded": 57,
+                    "numAwardedHardcore": 47,
                     "displayOrder": 41
                 },
                 "200087": {
@@ -31876,8 +31876,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "222213",
-                    "numAwarded": 57,
-                    "numAwardedHardcore": 46,
+                    "numAwarded": 58,
+                    "numAwardedHardcore": 47,
                     "displayOrder": 42
                 },
                 "200088": {
@@ -40832,8 +40832,8 @@
                     "trueRatio": 6,
                     "type": "missable",
                     "badgeName": "106754",
-                    "numAwarded": 3476,
-                    "numAwardedHardcore": 1467,
+                    "numAwarded": 3477,
+                    "numAwardedHardcore": 1468,
                     "displayOrder": 30
                 },
                 "94787": {
@@ -42788,8 +42788,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5038,
-            "numDistinctPlayersHardcore": 5038,
+            "numDistinctPlayersCasual": 5039,
+            "numDistinctPlayersHardcore": 5039,
             "numAchievements": 146,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -43998,7 +43998,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "162847",
-                    "numAwarded": 4833,
+                    "numAwarded": 4834,
                     "numAwardedHardcore": 1700,
                     "displayOrder": 611,
                     "dateEarned": "2026-03-30 16:15:09",
@@ -44598,7 +44598,7 @@
                     "trueRatio": 2,
                     "type": "missable",
                     "badgeName": "117136",
-                    "numAwarded": 1644,
+                    "numAwarded": 1645,
                     "numAwardedHardcore": 744,
                     "displayOrder": 0
                 },
@@ -44634,7 +44634,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "117190",
-                    "numAwarded": 2154,
+                    "numAwarded": 2155,
                     "numAwardedHardcore": 862,
                     "displayOrder": 0
                 },
@@ -44646,7 +44646,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "116645",
-                    "numAwarded": 2070,
+                    "numAwarded": 2071,
                     "numAwardedHardcore": 825,
                     "displayOrder": 0
                 },
@@ -44715,11 +44715,11 @@
                     "title": "Round and Round",
                     "description": "Spin the Sleuce so well that you receive a Toad as a reward. (Wait for ?!)",
                     "points": 2,
-                    "trueRatio": 4,
+                    "trueRatio": 3,
                     "type": "missable",
                     "badgeName": "117206",
-                    "numAwarded": 608,
-                    "numAwardedHardcore": 363,
+                    "numAwarded": 609,
+                    "numAwardedHardcore": 364,
                     "displayOrder": 0
                 },
                 "108765": {
@@ -45798,8 +45798,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "119319",
-                    "numAwarded": 1441,
-                    "numAwardedHardcore": 618,
+                    "numAwarded": 1442,
+                    "numAwardedHardcore": 619,
                     "displayOrder": 2
                 },
                 "109107": {
@@ -45810,8 +45810,8 @@
                     "trueRatio": 17,
                     "type": null,
                     "badgeName": "119320",
-                    "numAwarded": 918,
-                    "numAwardedHardcore": 425,
+                    "numAwarded": 919,
+                    "numAwardedHardcore": 426,
                     "displayOrder": 2
                 },
                 "109108": {
@@ -64873,11 +64873,11 @@
                     "title": "Crash is the Titan",
                     "description": "Max Crash's Defence",
                     "points": 10,
-                    "trueRatio": 58,
+                    "trueRatio": 56,
                     "type": null,
                     "badgeName": "442830",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 26,
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 27,
                     "displayOrder": 99
                 },
                 "373282": {
@@ -65017,11 +65017,11 @@
                     "title": "False Advertising",
                     "description": "Break all the crates in N-Trapment Temple without dying",
                     "points": 5,
-                    "trueRatio": 28,
+                    "trueRatio": 27,
                     "type": null,
                     "badgeName": "442937",
-                    "numAwarded": 32,
-                    "numAwardedHardcore": 27,
+                    "numAwarded": 33,
+                    "numAwardedHardcore": 28,
                     "displayOrder": 10
                 },
                 "373612": {
@@ -65029,11 +65029,11 @@
                     "title": "Ancient Heist",
                     "description": "Collect all gems and Crystal in N-Trapment Temple",
                     "points": 10,
-                    "trueRatio": 56,
+                    "trueRatio": 54,
                     "type": null,
                     "badgeName": "442935",
-                    "numAwarded": 31,
-                    "numAwardedHardcore": 27,
+                    "numAwarded": 32,
+                    "numAwardedHardcore": 28,
                     "displayOrder": 10
                 },
                 "373614": {
@@ -65041,11 +65041,11 @@
                     "title": "Tiny's Escalation",
                     "description": "Break all the crates in Tiny's Excavation without dying",
                     "points": 5,
-                    "trueRatio": 27,
+                    "trueRatio": 26,
                     "type": null,
                     "badgeName": "442933",
-                    "numAwarded": 33,
-                    "numAwardedHardcore": 28,
+                    "numAwarded": 34,
+                    "numAwardedHardcore": 29,
                     "displayOrder": 9
                 },
                 "373615": {
@@ -65068,8 +65068,8 @@
                     "trueRatio": 25,
                     "type": "progression",
                     "badgeName": "442912",
-                    "numAwarded": 38,
-                    "numAwardedHardcore": 30,
+                    "numAwarded": 39,
+                    "numAwardedHardcore": 31,
                     "displayOrder": 11
                 },
                 "373617": {
@@ -65188,8 +65188,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "442831",
-                    "numAwarded": 51,
-                    "numAwardedHardcore": 43,
+                    "numAwarded": 52,
+                    "numAwardedHardcore": 44,
                     "displayOrder": 99
                 },
                 "374217": {
@@ -65229,7 +65229,7 @@
             "numAchievements": 80,
             "numAwardedToUser": 76,
             "numAwardedToUserHardcore": 76,
-            "userTotalPlaytime": 71176,
+            "userTotalPlaytime": 72196,
             "imageIcon": "/Images/123011.png",
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
@@ -65327,11 +65327,11 @@
                     "title": "Railcage Overload",
                     "description": "Defeat Jigowatt",
                     "points": 10,
-                    "trueRatio": 38,
+                    "trueRatio": 37,
                     "type": "progression",
                     "badgeName": "649924",
-                    "numAwarded": 56,
-                    "numAwardedHardcore": 44,
+                    "numAwarded": 57,
+                    "numAwardedHardcore": 45,
                     "displayOrder": 8,
                     "dateEarned": "2026-03-23 16:21:05",
                     "dateEarnedHardcore": "2026-03-23 16:21:05"
@@ -65630,8 +65630,8 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "649940",
-                    "numAwarded": 65,
-                    "numAwardedHardcore": 51,
+                    "numAwarded": 66,
+                    "numAwardedHardcore": 52,
                     "displayOrder": 27,
                     "dateEarned": "2026-03-19 14:03:43",
                     "dateEarnedHardcore": "2026-03-19 14:03:43"
@@ -66019,11 +66019,11 @@
                     "title": "Cultivation Set 1",
                     "description": "Receive the reward for rescuing 15 people",
                     "points": 5,
-                    "trueRatio": 18,
+                    "trueRatio": 17,
                     "type": null,
                     "badgeName": "649968",
-                    "numAwarded": 58,
-                    "numAwardedHardcore": 47,
+                    "numAwarded": 59,
+                    "numAwardedHardcore": 48,
                     "displayOrder": 60,
                     "dateEarned": "2026-03-19 14:18:20",
                     "dateEarnedHardcore": "2026-03-19 14:18:20"
