@@ -20804,8 +20804,8 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 544,
-            "numDistinctPlayersHardcore": 544,
+            "numDistinctPlayersCasual": 545,
+            "numDistinctPlayersHardcore": 545,
             "numAchievements": 105,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -20826,7 +20826,7 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "196783",
-                    "numAwarded": 461,
+                    "numAwarded": 462,
                     "numAwardedHardcore": 362,
                     "displayOrder": 1
                 },
@@ -20886,7 +20886,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "196785",
-                    "numAwarded": 444,
+                    "numAwarded": 445,
                     "numAwardedHardcore": 338,
                     "displayOrder": 4
                 },
@@ -31948,8 +31948,8 @@
                     "trueRatio": 18,
                     "type": "progression",
                     "badgeName": "222253",
-                    "numAwarded": 68,
-                    "numAwardedHardcore": 55,
+                    "numAwarded": 69,
+                    "numAwardedHardcore": 56,
                     "displayOrder": 48
                 },
                 "200253": {
@@ -40810,8 +40810,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 6946,
-            "numDistinctPlayersHardcore": 6946,
+            "numDistinctPlayersCasual": 6947,
+            "numDistinctPlayersHardcore": 6947,
             "numAchievements": 108,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -40868,7 +40868,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "107881",
-                    "numAwarded": 6793,
+                    "numAwarded": 6794,
                     "numAwardedHardcore": 2438,
                     "displayOrder": 0
                 },
@@ -40916,7 +40916,7 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "106749",
-                    "numAwarded": 2232,
+                    "numAwarded": 2233,
                     "numAwardedHardcore": 977,
                     "displayOrder": 37
                 },
@@ -41972,8 +41972,8 @@
                     "trueRatio": 30,
                     "type": "missable",
                     "badgeName": "108055",
-                    "numAwarded": 703,
-                    "numAwardedHardcore": 403,
+                    "numAwarded": 704,
+                    "numAwardedHardcore": 404,
                     "displayOrder": 79
                 },
                 "98128": {
@@ -43626,8 +43626,8 @@
                     "trueRatio": 22,
                     "type": "progression",
                     "badgeName": "162819",
-                    "numAwarded": 428,
-                    "numAwardedHardcore": 178,
+                    "numAwarded": 429,
+                    "numAwardedHardcore": 179,
                     "displayOrder": 53
                 },
                 "146135": {
@@ -43698,8 +43698,8 @@
                     "trueRatio": 23,
                     "type": "progression",
                     "badgeName": "162824",
-                    "numAwarded": 416,
-                    "numAwardedHardcore": 168,
+                    "numAwarded": 417,
+                    "numAwardedHardcore": 169,
                     "displayOrder": 55
                 },
                 "146141": {
@@ -43815,11 +43815,11 @@
                     "title": "What Is A Hundred Thousand Leagues For A Time Traveler?",
                     "description": "Maximize Mind status.",
                     "points": 10,
-                    "trueRatio": 70,
+                    "trueRatio": 69,
                     "type": null,
                     "badgeName": "162833",
-                    "numAwarded": 207,
-                    "numAwardedHardcore": 108,
+                    "numAwarded": 208,
+                    "numAwardedHardcore": 109,
                     "displayOrder": 801
                 },
                 "146151": {
@@ -43890,8 +43890,8 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "162838",
-                    "numAwarded": 608,
-                    "numAwardedHardcore": 244,
+                    "numAwarded": 609,
+                    "numAwardedHardcore": 245,
                     "displayOrder": 602
                 },
                 "146157": {
@@ -44144,7 +44144,7 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "162859",
-                    "numAwarded": 452,
+                    "numAwarded": 453,
                     "numAwardedHardcore": 191,
                     "displayOrder": 623
                 },
@@ -44372,7 +44372,7 @@
                     "trueRatio": 12,
                     "type": "progression",
                     "badgeName": "162877",
-                    "numAwarded": 475,
+                    "numAwarded": 476,
                     "numAwardedHardcore": 197,
                     "displayOrder": 40
                 },
@@ -44420,8 +44420,8 @@
                     "trueRatio": 21,
                     "type": null,
                     "badgeName": "162881",
-                    "numAwarded": 295,
-                    "numAwardedHardcore": 143,
+                    "numAwarded": 296,
+                    "numAwardedHardcore": 144,
                     "displayOrder": 308
                 },
                 "146201": {
@@ -44432,8 +44432,8 @@
                     "trueRatio": 21,
                     "type": null,
                     "badgeName": "162882",
-                    "numAwarded": 321,
-                    "numAwardedHardcore": 147,
+                    "numAwarded": 322,
+                    "numAwardedHardcore": 148,
                     "displayOrder": 309
                 },
                 "146202": {
@@ -44564,8 +44564,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 3586,
-            "numDistinctPlayersHardcore": 3586,
+            "numDistinctPlayersCasual": 3589,
+            "numDistinctPlayersHardcore": 3589,
             "numAchievements": 129,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -44586,8 +44586,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "116644",
-                    "numAwarded": 3132,
-                    "numAwardedHardcore": 1186,
+                    "numAwarded": 3133,
+                    "numAwardedHardcore": 1187,
                     "displayOrder": 0
                 },
                 "108754": {
@@ -44670,7 +44670,7 @@
                     "trueRatio": 2,
                     "type": "missable",
                     "badgeName": "117205",
-                    "numAwarded": 1422,
+                    "numAwarded": 1423,
                     "numAwardedHardcore": 623,
                     "displayOrder": 0
                 },
@@ -44694,7 +44694,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "117192",
-                    "numAwarded": 1744,
+                    "numAwarded": 1745,
                     "numAwardedHardcore": 724,
                     "displayOrder": 0
                 },
@@ -44706,7 +44706,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "117193",
-                    "numAwarded": 1693,
+                    "numAwarded": 1695,
                     "numAwardedHardcore": 697,
                     "displayOrder": 0
                 },
@@ -44715,7 +44715,7 @@
                     "title": "Round and Round",
                     "description": "Spin the Sleuce so well that you receive a Toad as a reward. (Wait for ?!)",
                     "points": 2,
-                    "trueRatio": 3,
+                    "trueRatio": 4,
                     "type": "missable",
                     "badgeName": "117206",
                     "numAwarded": 609,
@@ -44730,8 +44730,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "117207",
-                    "numAwarded": 1254,
-                    "numAwardedHardcore": 568,
+                    "numAwarded": 1255,
+                    "numAwardedHardcore": 569,
                     "displayOrder": 0
                 },
                 "108766": {
@@ -44766,7 +44766,7 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "116648",
-                    "numAwarded": 1204,
+                    "numAwarded": 1205,
                     "numAwardedHardcore": 538,
                     "displayOrder": 0
                 },
@@ -44919,7 +44919,7 @@
                     "title": "Windy Chasm",
                     "description": "Obtain the Wind Flute",
                     "points": 5,
-                    "trueRatio": 9,
+                    "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "117436",
                     "numAwarded": 775,
@@ -45039,7 +45039,7 @@
                     "title": "Sandstorm",
                     "description": "Obtain the Onslaught evocation from the Sand Dragon",
                     "points": 5,
-                    "trueRatio": 11,
+                    "trueRatio": 12,
                     "type": null,
                     "badgeName": "117211",
                     "numAwarded": 533,
@@ -45051,7 +45051,7 @@
                     "title": "Muddied Waters",
                     "description": "Obtain the Mud Flow evocation from the Mud Dragon",
                     "points": 5,
-                    "trueRatio": 11,
+                    "trueRatio": 12,
                     "type": null,
                     "badgeName": "117212",
                     "numAwarded": 548,
@@ -45075,7 +45075,7 @@
                     "title": "Piqued Interest",
                     "description": "Become an apprentice of Master Njomo",
                     "points": 5,
-                    "trueRatio": 11,
+                    "trueRatio": 12,
                     "type": null,
                     "badgeName": "117197",
                     "numAwarded": 528,
@@ -45639,7 +45639,7 @@
                     "title": "Kecak Master",
                     "description": "Score 1500 or more in the Kecak minigame in Faerie Village",
                     "points": 25,
-                    "trueRatio": 162,
+                    "trueRatio": 163,
                     "type": null,
                     "badgeName": "118807",
                     "numAwarded": 123,
@@ -45810,8 +45810,8 @@
                     "trueRatio": 17,
                     "type": null,
                     "badgeName": "119320",
-                    "numAwarded": 919,
-                    "numAwardedHardcore": 426,
+                    "numAwarded": 920,
+                    "numAwardedHardcore": 427,
                     "displayOrder": 2
                 },
                 "109108": {
@@ -45819,7 +45819,7 @@
                     "title": "Plethora of Fish",
                     "description": "Catch one of every fish",
                     "points": 50,
-                    "trueRatio": 225,
+                    "trueRatio": 226,
                     "type": null,
                     "badgeName": "119321",
                     "numAwarded": 190,
@@ -45831,7 +45831,7 @@
                     "title": "Fishing Star",
                     "description": "Become The Fish",
                     "points": 50,
-                    "trueRatio": 274,
+                    "trueRatio": 275,
                     "type": null,
                     "badgeName": "119322",
                     "numAwarded": 138,
@@ -45858,8 +45858,8 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "119877",
-                    "numAwarded": 2019,
-                    "numAwardedHardcore": 845,
+                    "numAwarded": 2022,
+                    "numAwardedHardcore": 848,
                     "displayOrder": 2
                 },
                 "109412": {
@@ -46047,7 +46047,7 @@
                     "title": "A Man of Culture I See",
                     "description": "Max out your village's culture level",
                     "points": 10,
-                    "trueRatio": 23,
+                    "trueRatio": 24,
                     "type": null,
                     "badgeName": "119984",
                     "numAwarded": 549,
@@ -59772,8 +59772,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "129097",
-                    "numAwarded": 78,
-                    "numAwardedHardcore": 70,
+                    "numAwarded": 79,
+                    "numAwardedHardcore": 71,
                     "displayOrder": 0
                 },
                 "292895": {
