@@ -47,7 +47,7 @@
             "iconUrl": "467a17f28c8b630c619c8d4047104966e4d9bc63.jpg",
             "iconGrayUrl": "fbf5ae81eb3d09b2d327a1f094b11f021566fd11.jpg",
             "hidden": false,
-            "globalPct": 52.9
+            "globalPct": 52.8
         },
         {
             "apiName": "BIOME_REACHED_SEWERS",
@@ -201,7 +201,7 @@
             "iconUrl": "7defcc0b376a6230e3f9fe1b095dd2a41903b5e8.jpg",
             "iconGrayUrl": "1f86349e23ec4eaa37f0f6500e1d1516821b1ca0.jpg",
             "hidden": false,
-            "globalPct": 25.7
+            "globalPct": 25.6
         },
         {
             "apiName": "FIGHT_BEAT_BEHEMOTH_NODAMAGE",
@@ -443,7 +443,7 @@
             "iconUrl": "91108f070ec4da405ad07b2c89320b284bbdd7d3.jpg",
             "iconGrayUrl": "fbe7369c123d6d5b88a60d17a6238994a77518ff.jpg",
             "hidden": false,
-            "globalPct": 45.8
+            "globalPct": 45.7
         },
         {
             "apiName": "EXPLO_GETBOSSRUNE_FIRST",
@@ -795,7 +795,7 @@
             "iconUrl": "d634329bb6271dd2b1cb38c0a5703364985aea9b.jpg",
             "iconGrayUrl": "cd77947847b8fb961587f84c9f393e4bab060911.jpg",
             "hidden": false,
-            "globalPct": 26.4
+            "globalPct": 26.3
         },
         {
             "apiName": "BIOME_REACHED_DISTILLERY",
@@ -806,7 +806,7 @@
             "iconUrl": "40ceac56f4d531259009be5d96a1e66a2ffdb25d.jpg",
             "iconGrayUrl": "db5372061f43b3ed6b0d53bd9f84f63dfeb7c3d9.jpg",
             "hidden": false,
-            "globalPct": 26.4
+            "globalPct": 26.3
         },
         {
             "apiName": "FEAT_FINISHLEVEL_NOLAUNCHER",
@@ -850,7 +850,7 @@
             "iconUrl": "b082be84c16c32a283240caff2121ab184c9286d.jpg",
             "iconGrayUrl": "a5145712427934209dc1dd3b7fdc2c88f1362cf6.jpg",
             "hidden": false,
-            "globalPct": 13
+            "globalPct": 12.9
         },
         {
             "apiName": "BIOME_REACHED_TUMULUS",
@@ -1125,7 +1125,7 @@
             "iconUrl": "409342f362db4ea000ff039ee5a9fc9e642e7f9d.jpg",
             "iconGrayUrl": "5435233987dbac9eb1774c5ef3a4cfb4eabad4bf.jpg",
             "hidden": false,
-            "globalPct": 17.1
+            "globalPct": 17
         },
         {
             "apiName": "FEAT_STAPHY_KILL_STAPHY",
@@ -1224,7 +1224,7 @@
             "iconUrl": "64d0624a5f0d5eef000376524da46aae816c63f6.jpg",
             "iconGrayUrl": "f79260b718ffc034ae264b1bc5a688f6a3d0277e.jpg",
             "hidden": false,
-            "globalPct": 16.8
+            "globalPct": 16.7
         },
         {
             "apiName": "BIOME_REACHED_DOOKU",
@@ -1246,7 +1246,7 @@
             "iconUrl": "225a7c1f80f893166b28d820c18aefd92c91a7b2.jpg",
             "iconGrayUrl": "7bcd55e9e4d0f4c137ce10e25dc50a436526da85.jpg",
             "hidden": false,
-            "globalPct": 14.5
+            "globalPct": 14.4
         },
         {
             "apiName": "FIGHT_BEAT_DEATH_NODAMAGE",

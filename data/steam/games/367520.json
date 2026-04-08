@@ -25,7 +25,7 @@
             "iconUrl": "70ff5ba41548568aad51c3bd0d4a53d5c17399ed.jpg",
             "iconGrayUrl": "16cab0ef2c0b0acac9779a6cd9776158faa77a8a.jpg",
             "hidden": false,
-            "globalPct": 39.7
+            "globalPct": 39.8
         },
         {
             "apiName": "BLESSED",
@@ -36,7 +36,7 @@
             "iconUrl": "d53ad10288be837b8aab693b8fcc6549960460f1.jpg",
             "iconGrayUrl": "a577316f7ae64c8cfdd0568209a915a9fad0f8ad.jpg",
             "hidden": false,
-            "globalPct": 19.9
+            "globalPct": 20
         },
         {
             "apiName": "PROTECTED",
@@ -47,7 +47,7 @@
             "iconUrl": "2461c5d7f6595602443a0bf0da24f48795873671.jpg",
             "iconGrayUrl": "4764a78f55fbf49a82f479414a1198d182bcb43d.jpg",
             "hidden": false,
-            "globalPct": 47.7
+            "globalPct": 47.8
         },
         {
             "apiName": "MASKED",
@@ -58,7 +58,7 @@
             "iconUrl": "bc53e3b71da8b6997a92ee2085f8029daa520d17.jpg",
             "iconGrayUrl": "6073f18f0da90c88ce535826b716ddc098723ae7.jpg",
             "hidden": false,
-            "globalPct": 20
+            "globalPct": 20.1
         },
         {
             "apiName": "SOULFUL",
@@ -80,7 +80,7 @@
             "iconUrl": "9093ee5b02a988b32deedd9fe89b72c733ba0bf6.jpg",
             "iconGrayUrl": "7830df3185b0252edd0e4830da6dcc008b162541.jpg",
             "hidden": false,
-            "globalPct": 25.1
+            "globalPct": 25.2
         },
         {
             "apiName": "FK_DEFEAT",
@@ -135,7 +135,7 @@
             "iconUrl": "2d3e4c6217b6d911d8a211f3ab4f3f37e49a584c.jpg",
             "iconGrayUrl": "4f4fedac5e0f99fe9ac8d849296fbe6a202cdb5e.jpg",
             "hidden": false,
-            "globalPct": 46.9
+            "globalPct": 47
         },
         {
             "apiName": "BROKEN_VESSEL",
@@ -344,7 +344,7 @@
             "iconUrl": "96d2673f15230fb83dd61384eb05458f1e0475bc.jpg",
             "iconGrayUrl": "502e5ea328ab9c1e226544bd85a5771c12f2d723.jpg",
             "hidden": false,
-            "globalPct": 32.8
+            "globalPct": 32.9
         },
         {
             "apiName": "TEACHER",
@@ -509,7 +509,7 @@
             "iconUrl": "990df88f2440225e3c9ee49fc68233c1cc476807.jpg",
             "iconGrayUrl": "6efa8b82b7062070451e05e3569356d0a871dce3.jpg",
             "hidden": false,
-            "globalPct": 5.3
+            "globalPct": 5.4
         },
         {
             "apiName": "STEELSOUL",
@@ -730,7 +730,7 @@
             "unlockedAt": null,
             "iconUrl": "70ff5ba41548568aad51c3bd0d4a53d5c17399ed.jpg",
             "iconGrayUrl": "16cab0ef2c0b0acac9779a6cd9776158faa77a8a.jpg",
-            "globalPct": 39.7
+            "globalPct": 39.8
         },
         {
             "apiName": "BLESSED",
@@ -739,7 +739,7 @@
             "unlockedAt": null,
             "iconUrl": "d53ad10288be837b8aab693b8fcc6549960460f1.jpg",
             "iconGrayUrl": "a577316f7ae64c8cfdd0568209a915a9fad0f8ad.jpg",
-            "globalPct": 19.9
+            "globalPct": 20
         },
         {
             "apiName": "PROTECTED",
@@ -748,7 +748,7 @@
             "unlockedAt": null,
             "iconUrl": "2461c5d7f6595602443a0bf0da24f48795873671.jpg",
             "iconGrayUrl": "4764a78f55fbf49a82f479414a1198d182bcb43d.jpg",
-            "globalPct": 47.7
+            "globalPct": 47.8
         },
         {
             "apiName": "MASKED",
@@ -757,7 +757,7 @@
             "unlockedAt": null,
             "iconUrl": "bc53e3b71da8b6997a92ee2085f8029daa520d17.jpg",
             "iconGrayUrl": "6073f18f0da90c88ce535826b716ddc098723ae7.jpg",
-            "globalPct": 20
+            "globalPct": 20.1
         }
     ]
 }
