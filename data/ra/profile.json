@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-08T09:09:55.241Z"
+        "extractionTimestamp": "2026-04-08T10:37:07.774Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Lv99 Samurai, Lv98 Psychic, and Lv99 Hacker | Illusory Capital | Ch+: 33/33 quests | 59h49",
+        "richPresenceMsg": "Titles",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1695,
+        "totalPoints": 1720,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6320,
+        "totalTruePoints": 6499,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,37 +33,37 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Lv99 Samurai, Lv98 Psychic, and Lv99 Hacker | Illusory Capital | Ch+: 33/33 quests | 59h49",
-        "richPresenceMsgDate": "2026-04-07 16:51:36",
+        "richPresenceMsg": "Titles",
+        "richPresenceMsgDate": "2026-04-08 10:29:07",
         "lastGameId": 16452,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1695,
+        "totalPoints": 1720,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6320,
+        "totalTruePoints": 6499,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51944,
+        "rank": 51462,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 138168,
+        "totalRanked": 138173,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1695,
+        "points": 1720,
         "softcorePoints": 1
     },
     "pageAwards": {
-        "totalAwardsCount": 4,
+        "totalAwardsCount": 5,
         "hiddenAwardsCount": 0,
-        "masteryAwardsCount": 0,
+        "masteryAwardsCount": 1,
         "completionAwardsCount": 0,
         "beatenHardcoreAwardsCount": 3,
         "beatenSoftcoreAwardsCount": 0,
@@ -121,6 +121,19 @@
                 "awardData": 16452,
                 "awardDataExtra": 1,
                 "displayOrder": 0
+            },
+            {
+                "awardedAt": "2026-04-08T10:28:32+00:00",
+                "title": "7th Dragon 2020",
+                "consoleId": 41,
+                "consoleName": "PlayStation Portable",
+                "flags": null,
+                "imageIcon": "/Images/123011.png",
+                "display_award_tier": null,
+                "awardType": "Mastery/Completion",
+                "awardData": 16452,
+                "awardDataExtra": 1,
+                "displayOrder": 0
             }
         ]
     },
@@ -134,14 +147,14 @@
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
             "imageBoxArt": "/Images/110688.png",
-            "lastPlayed": "2026-04-07 16:51:36",
+            "lastPlayed": "2026-04-08 10:29:07",
             "achievementsTotal": 80,
             "numPossibleAchievements": 80,
             "possibleScore": 475,
-            "numAchieved": 79,
-            "scoreAchieved": 450,
-            "numAchievedHardcore": 79,
-            "scoreAchievedHardcore": 450
+            "numAchieved": 80,
+            "scoreAchieved": 475,
+            "numAchievedHardcore": 80,
+            "scoreAchievedHardcore": 475
         },
         {
             "gameId": 11264,
@@ -407,11 +420,11 @@
                 "consoleId": 41,
                 "consoleName": "PlayStation Portable",
                 "maxPossible": 80,
-                "numAwarded": 79,
-                "numAwardedHardcore": 79,
-                "mostRecentAwardedDate": "2026-04-07T16:41:59+00:00",
-                "highestAwardKind": "beaten-hardcore",
-                "highestAwardDate": "2026-04-03T13:02:58+00:00"
+                "numAwarded": 80,
+                "numAwardedHardcore": 80,
+                "mostRecentAwardedDate": "2026-04-08T10:28:32+00:00",
+                "highestAwardKind": "mastered",
+                "highestAwardDate": "2026-04-08T10:28:32+00:00"
             },
             {
                 "gameId": 11290,
@@ -1027,14 +1040,14 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-07 16:41:59",
+        "date": "2026-04-08 10:28:32",
         "hardcoreMode": true,
-        "achievementId": 572159,
-        "title": "Illusory Bellow",
-        "description": "Defeat the guardian of the illusory Tokyo Hall Inverted",
-        "badgeName": "649933",
-        "points": 10,
-        "trueRatio": 63,
+        "achievementId": 572160,
+        "title": "The Dragoner",
+        "description": "Defeat the guardian of the illusory Tokyo Tower",
+        "badgeName": "649934",
+        "points": 25,
+        "trueRatio": 164,
         "type": null,
         "author": "Jamiras",
         "authorUlid": "01BJY8JSBTA7NVT0NYSVDCK5TY",
@@ -1042,8 +1055,8 @@
         "gameIcon": "/Images/123011.png",
         "gameId": 16452,
         "consoleName": "PlayStation Portable",
-        "cumulScore": 652,
-        "badgeUrl": "/Badge/649933.png",
+        "cumulScore": 677,
+        "badgeUrl": "/Badge/649934.png",
         "gameUrl": "/game/16452"
     },
     "mostRecentGame": {
@@ -1055,15 +1068,15 @@
         "imageTitle": "/Images/110687.png",
         "imageIngame": "/Images/110689.png",
         "imageBoxArt": "/Images/110688.png",
-        "lastPlayed": "2026-04-07 16:51:36",
+        "lastPlayed": "2026-04-08 10:29:07",
         "achievementsTotal": 80,
         "numPossibleAchievements": 80,
         "possibleScore": 475,
-        "numAchieved": 79,
-        "scoreAchieved": 450,
-        "numAchievedHardcore": 79,
-        "scoreAchievedHardcore": 450
+        "numAchieved": 80,
+        "scoreAchieved": 475,
+        "numAchievedHardcore": 80,
+        "scoreAchievedHardcore": 475
     },
-    "points7Days": 294,
-    "points30Days": 435
+    "points7Days": 319,
+    "points30Days": 460
 }

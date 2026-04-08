@@ -40810,8 +40810,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 6952,
-            "numDistinctPlayersHardcore": 6952,
+            "numDistinctPlayersCasual": 6953,
+            "numDistinctPlayersHardcore": 6953,
             "numAchievements": 108,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -40832,8 +40832,8 @@
                     "trueRatio": 6,
                     "type": "missable",
                     "badgeName": "106754",
-                    "numAwarded": 3477,
-                    "numAwardedHardcore": 1469,
+                    "numAwarded": 3478,
+                    "numAwardedHardcore": 1470,
                     "displayOrder": 30
                 },
                 "94787": {
@@ -40868,8 +40868,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "107881",
-                    "numAwarded": 6798,
-                    "numAwardedHardcore": 2439,
+                    "numAwarded": 6799,
+                    "numAwardedHardcore": 2440,
                     "displayOrder": 0
                 },
                 "94790": {
@@ -43758,7 +43758,7 @@
                     "trueRatio": 120,
                     "type": null,
                     "badgeName": "162829",
-                    "numAwarded": 139,
+                    "numAwarded": 140,
                     "numAwardedHardcore": 61,
                     "displayOrder": 63
                 },
@@ -43782,7 +43782,7 @@
                     "trueRatio": 179,
                     "type": null,
                     "badgeName": "162831",
-                    "numAwarded": 214,
+                    "numAwarded": 215,
                     "numAwardedHardcore": 106,
                     "displayOrder": 65
                 },
@@ -43794,7 +43794,7 @@
                     "trueRatio": 125,
                     "type": "win_condition",
                     "badgeName": "163377",
-                    "numAwarded": 378,
+                    "numAwarded": 379,
                     "numAwardedHardcore": 157,
                     "displayOrder": 66
                 },
@@ -44252,7 +44252,7 @@
                     "trueRatio": 85,
                     "type": null,
                     "badgeName": "162868",
-                    "numAwarded": 156,
+                    "numAwarded": 157,
                     "numAwardedHardcore": 88,
                     "displayOrder": 205
                 },
@@ -44730,7 +44730,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "117207",
-                    "numAwarded": 1257,
+                    "numAwarded": 1258,
                     "numAwardedHardcore": 569,
                     "displayOrder": 0
                 },
@@ -44742,7 +44742,7 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "116647",
-                    "numAwarded": 1355,
+                    "numAwarded": 1356,
                     "numAwardedHardcore": 579,
                     "displayOrder": 0
                 },
@@ -44754,7 +44754,7 @@
                     "trueRatio": 10,
                     "type": "missable",
                     "badgeName": "117420",
-                    "numAwarded": 492,
+                    "numAwarded": 493,
                     "numAwardedHardcore": 338,
                     "displayOrder": 0
                 },
@@ -65227,9 +65227,9 @@
             "numDistinctPlayersCasual": 147,
             "numDistinctPlayersHardcore": 147,
             "numAchievements": 80,
-            "numAwardedToUser": 79,
-            "numAwardedToUserHardcore": 79,
-            "userTotalPlaytime": 78024,
+            "numAwardedToUser": 80,
+            "numAwardedToUserHardcore": 80,
+            "userTotalPlaytime": 82115,
             "imageIcon": "/Images/123011.png",
             "imageTitle": "/Images/110687.png",
             "imageIngame": "/Images/110689.png",
@@ -65551,12 +65551,14 @@
                     "title": "The Dragoner",
                     "description": "Defeat the guardian of the illusory Tokyo Tower",
                     "points": 25,
-                    "trueRatio": 171,
+                    "trueRatio": 164,
                     "type": null,
                     "badgeName": "649934",
-                    "numAwarded": 24,
-                    "numAwardedHardcore": 23,
-                    "displayOrder": 97
+                    "numAwarded": 25,
+                    "numAwardedHardcore": 24,
+                    "displayOrder": 97,
+                    "dateEarned": "2026-04-08 10:28:32",
+                    "dateEarnedHardcore": "2026-04-08 10:28:32"
                 },
                 "572161": {
                     "id": 572161,
@@ -66364,8 +66366,8 @@
             "consoleId": 24,
             "consoleName": "Pokemon Mini",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1796,
-            "numDistinctPlayersHardcore": 1796,
+            "numDistinctPlayersCasual": 1797,
+            "numDistinctPlayersHardcore": 1797,
             "numAchievements": 6,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -66386,8 +66388,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178581",
-                    "numAwarded": 1780,
-                    "numAwardedHardcore": 1685,
+                    "numAwarded": 1781,
+                    "numAwardedHardcore": 1686,
                     "displayOrder": 1
                 },
                 "158869": {
@@ -66398,8 +66400,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178582",
-                    "numAwarded": 1785,
-                    "numAwardedHardcore": 1684,
+                    "numAwarded": 1786,
+                    "numAwardedHardcore": 1685,
                     "displayOrder": 2
                 },
                 "158870": {
@@ -66410,8 +66412,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178583",
-                    "numAwarded": 1787,
-                    "numAwardedHardcore": 1687,
+                    "numAwarded": 1788,
+                    "numAwardedHardcore": 1688,
                     "displayOrder": 3
                 },
                 "158871": {
@@ -66422,8 +66424,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178584",
-                    "numAwarded": 1776,
-                    "numAwardedHardcore": 1681,
+                    "numAwarded": 1777,
+                    "numAwardedHardcore": 1682,
                     "displayOrder": 4
                 },
                 "158872": {
@@ -66434,8 +66436,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178585",
-                    "numAwarded": 1782,
-                    "numAwardedHardcore": 1682,
+                    "numAwarded": 1783,
+                    "numAwardedHardcore": 1683,
                     "displayOrder": 5
                 },
                 "158873": {
@@ -66446,8 +66448,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "178586",
-                    "numAwarded": 1744,
-                    "numAwardedHardcore": 1659,
+                    "numAwarded": 1745,
+                    "numAwardedHardcore": 1660,
                     "displayOrder": 6
                 }
             }
