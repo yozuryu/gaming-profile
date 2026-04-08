@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Gamepad2, Activity, BarChart2, Award, Star, ChevronDown, AlertCircle, Trophy, Crown, Lock, Unlock, AlertTriangle, Flame, Feather, Medal, ShieldOff, CircleDashed, X, Clock, BookOpen, Youtube, ExternalLink } from 'lucide-react';
 import { MEDIA_URL, SITE_URL, TILDE_TAG_COLORS } from './utils/constants.js';
-import { getMediaUrl, parseTitle } from './utils/helpers.js';
+import { getMediaUrl, parseTitle, formatTimeAgo } from './utils/helpers.js';
 import { transformData } from './utils/transform.js';
 
 // --- JSX Helpers ---
@@ -1002,6 +1002,196 @@ const ActivitySkeleton = () => (
   </div>
 );
 
+// ─────────────────────────────────────────────────────────────────────────────
+// SeriesProgressTab
+// ─────────────────────────────────────────────────────────────────────────────
+
+function SeriesProgressTab({ seriesData, gamesData, watchlistData }) {
+  const cards = useMemo(() => {
+    const visible = seriesData.filter(s => s.showProgress);
+
+    // Build a flat icon lookup from any source we have: detailedGameProgress + watchlist
+    const gameProgress = gamesData?.detailedGameProgress ?? {};
+    const wlMap = Object.fromEntries((watchlistData?.results ?? []).map(g => [g.id, g]));
+    const getGameInfo = (id) => gameProgress[id] ?? wlMap[id] ?? null;
+
+    return visible.map(series => {
+      const total = series.gameIds.length;
+
+      let tracked = 0, inProgress = 0, mastered = 0;
+      let pointsEarned = 0, pointsTotal = 0;
+      let achEarned = 0, achTotal = 0;
+      let latestAch = null; // { title, gameTitle, date }
+      const icons = [];
+
+      const iconsNoAch = [];
+      series.gameIds.forEach(id => {
+        const g  = gameProgress[id];
+        const wl = wlMap[id];
+
+        const numAchs = g?.numAchievements ?? wl?.achievementsPublished ?? 0;
+        const hasAch  = numAchs > 0;
+
+        if (hasAch) {
+          tracked++;
+          // Points total: sum from achievement data if available, else watchlist pointsTotal
+          if (g?.achievements) {
+            Object.values(g.achievements).forEach(a => {
+              pointsTotal += a.points ?? 0;
+              achTotal++;
+              if (a.dateEarned) {
+                pointsEarned += a.points ?? 0;
+                achEarned++;
+                const t = new Date(a.dateEarned);
+                if (!latestAch || t > new Date(latestAch.date)) {
+                  latestAch = { title: a.title, badgeName: a.badgeName, achId: a.id, gameTitle: g.title, gameId: id, date: a.dateEarned };
+                }
+              }
+            });
+          } else if (wl) {
+            if (wl.pointsTotal)           pointsTotal += wl.pointsTotal;
+            if (wl.achievementsPublished) achTotal    += wl.achievementsPublished;
+          }
+
+          if (g) {
+            const numAwarded = g.numAwardedToUser ?? 0;
+            if (numAwarded === g.numAchievements) mastered++;
+            else if (numAwarded > 0)              inProgress++;
+          }
+        }
+
+        const imageIcon = g?.imageIcon ?? wl?.imageIcon ?? null;
+        const title     = g?.title ?? wl?.title ?? String(id);
+        if (imageIcon) {
+          const entry = { id, icon: getMediaUrl(imageIcon), title, hasAch };
+          if (hasAch) icons.push(entry);
+          else        iconsNoAch.push(entry);
+        }
+      });
+      const allIcons = [...icons, ...iconsNoAch];
+
+      // Cover game: explicitly set, or fall back to first game in series
+      // Check both detailedGameProgress and watchlist so unplayed games still resolve
+      const coverId   = series.coverGameId ?? series.gameIds[0];
+      const coverGame = getGameInfo(coverId);
+      const coverBg   = coverGame
+        ? getMediaUrl(coverGame.imageIngame || coverGame.imageTitle || coverGame.imageIcon)
+        : null;
+      const coverIcon = coverGame ? getMediaUrl(coverGame.imageIcon) : null;
+
+      return { series, total, tracked, inProgress, mastered, pointsEarned, pointsTotal, achEarned, achTotal, latestAch, icons: allIcons, coverBg, coverIcon, coverId };
+    }).sort((a, b) => {
+      const key = n => /^[a-zA-Z]/.test(n) ? '2' + n.toLowerCase() : /^\d/.test(n) ? '1' + n.toLowerCase() : '0' + n.toLowerCase();
+      return key(a.series.name).localeCompare(key(b.series.name));
+    });
+  }, [seriesData, gamesData, watchlistData]);
+
+  if (cards.length === 0) {
+    return (
+      <div className="text-center py-12 text-[#546270] text-[12px]">
+        No series flagged for progress tracking yet.<br />
+        <span className="text-[11px]">Enable <strong className="text-[#8f98a0]">📊 Progress</strong> on a series in the admin panel.</span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex flex-col gap-3">
+      {cards.map(({ series, total, tracked, inProgress, mastered, pointsEarned, pointsTotal, achEarned, achTotal, latestAch, icons, coverBg, coverIcon, coverId }) => {
+        const achPct = achTotal > 0 ? (achEarned / achTotal) * 100 : 0;
+        const ICON_LIMIT   = 8;
+        const shownIcons   = icons.slice(0, ICON_LIMIT);
+        const extraIcons   = icons.length - ICON_LIMIT;
+        const latestAchTimeAgo = latestAch ? formatTimeAgo(latestAch.date) : null;
+
+        return (
+          <div key={series.id} className="flex flex-col bg-[#202d39] rounded-[3px] border-l-[3px] border border-[#323f4c] shadow-md overflow-hidden" style={{ borderLeftColor: '#e5b143' }}>
+
+            {/* Top section: bg image + cover icon + title (mirrors GameCard header) */}
+            <div className="relative flex flex-row p-3 gap-3 md:gap-4 items-center min-h-[90px] overflow-hidden rounded-t-[3px]">
+              {/* Background image */}
+              {coverBg && (
+                <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden rounded-t-[3px]">
+                  <img src={coverBg} alt="" className="absolute right-0 top-0 h-full w-full md:w-1/2 object-cover opacity-[0.55] object-center mix-blend-screen mask-fade" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#202d39] via-[#202d39]/95 to-transparent" />
+                </div>
+              )}
+
+              {/* Cover icon */}
+              <a href={`${SITE_URL}/game/${coverId}`} target="_blank" rel="noreferrer"
+                className="relative z-10 shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-[2px] shadow-sm border border-[#101214] overflow-hidden bg-[#101214] hover:scale-105 transition-transform">
+                {coverIcon
+                  ? <img src={coverIcon} alt={series.name} className="w-full h-full object-cover" />
+                  : <div className="w-full h-full bg-[#172333] flex items-center justify-center text-[#546270] text-[20px]">🗂</div>
+                }
+              </a>
+
+              {/* Title + points */}
+              <div className="relative z-10 flex-1 flex flex-col justify-center min-w-0 gap-1">
+                <span className="text-[15px] md:text-base text-white font-medium tracking-wide drop-shadow-sm truncate">{series.name}</span>
+                {pointsTotal > 0 && (
+                  <span className="text-[11px] text-[#e5b143] font-medium tabular-nums drop-shadow-sm">
+                    {pointsEarned.toLocaleString()} <span className="text-[#8f98a0] font-normal">/ {pointsTotal.toLocaleString()} pts</span>
+                  </span>
+                )}
+                {latestAch && (
+                  <div className="flex items-center gap-1 min-w-0">
+                    <span className="shrink-0 w-3.5 h-3.5 rounded-[1px] overflow-hidden border border-[#101214] bg-black block">
+                      <img src={`${MEDIA_URL}/Badge/${latestAch.badgeName}.png`} alt="" className="w-full h-full object-cover" />
+                    </span>
+                    <a href={`${SITE_URL}/achievement/${latestAch.achId}`} target="_blank" rel="noreferrer"
+                      className="text-[9px] text-[#8f98a0] hover:text-[#c6d4df] truncate transition-colors">{latestAch.title}</a>
+                    <span className="text-[9px] text-[#546270] shrink-0">in</span>
+                    <a href={`${SITE_URL}/game/${latestAch.gameId}`} target="_blank" rel="noreferrer"
+                      className="text-[9px] text-[#66c0f4] hover:text-[#c6d4df] truncate transition-colors">{latestAch.gameTitle}</a>
+                    <span className="text-[9px] text-[#546270] shrink-0">at {latestAchTimeAgo}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Progress bar */}
+            <div className="px-3 pb-3 pt-2 border-t border-[#2a475e]">
+              <div className="flex items-center gap-2 mb-2.5">
+                <div className="flex items-center gap-1.5 flex-1 flex-wrap">
+                  <span className="text-[9px] font-semibold uppercase tracking-wider text-[#c6d4df] border border-[#323f4c] bg-[#101214]/60 px-1.5 py-[1px] rounded-sm">{total} games</span>
+                  <span className="text-[9px] font-semibold uppercase tracking-wider text-[#8f98a0] border border-[#323f4c] bg-[#101214]/60 px-1.5 py-[1px] rounded-sm">{tracked} tracked</span>
+                  {inProgress > 0 && <span className="text-[9px] font-semibold uppercase tracking-wider text-[#66c0f4] border border-[#66c0f4]/30 bg-[#101214]/60 px-1.5 py-[1px] rounded-sm">{inProgress} in progress</span>}
+                  {mastered > 0 && <span className="text-[9px] font-bold uppercase tracking-wider text-[#101214] bg-[#e5b143] px-1.5 py-[1px] rounded-sm">{mastered} mastered</span>}
+                </div>
+                <span className="text-[10px] text-[#8f98a0] tabular-nums shrink-0">{achEarned.toLocaleString()} / {achTotal.toLocaleString()}</span>
+                <span className="text-[10px] font-semibold tabular-nums shrink-0" style={{ color: achPct > 0 ? '#e5b143' : '#546270' }}>
+                  {achPct.toFixed(2)}%
+                </span>
+              </div>
+              <div className="h-[7px] bg-[#101214] rounded-full overflow-hidden border border-[#0a0f14]">
+                <div style={{ width: `${achPct}%`, background: achPct === 100 ? 'linear-gradient(90deg,#e5b143,#f0c96a)' : '#e5b143' }}
+                  className="h-full rounded-full transition-all" />
+              </div>
+            </div>
+
+            {/* Icon strip */}
+            {shownIcons.length > 0 && (
+              <div className="flex items-center gap-1 px-3 pb-2.5 flex-wrap border-t border-[#2a475e] pt-2.5">
+                {shownIcons.map(g => (
+                  <a key={g.id} href={`${SITE_URL}/game/${g.id}`} target="_blank" rel="noreferrer"
+                    className="shrink-0 w-8 h-8 rounded-[2px] overflow-hidden border border-[#101214] bg-black hover:scale-110 transition-transform block">
+                    <img src={g.icon} alt={g.title} className={`w-full h-full object-cover ${g.hasAch ? '' : 'brightness-[0.35] grayscale'}`} />
+                  </a>
+                ))}
+                {extraIcons > 0 && (
+                  <span className="text-[10px] text-[#546270] ml-1 shrink-0">+{extraIcons}</span>
+                )}
+              </div>
+            )}
+
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function App() {
   // ── Split data state ─────────────────────────────────────
   const [profileData,   setProfileData]   = useState(null); // profile.json
@@ -1017,7 +1207,7 @@ export default function App() {
   const [loadingGames,   setLoadingGames]   = useState(false);
   const [error, setError] = useState(null);
 
-  const VALID_TABS = ['recent', 'progress', 'activity', 'backlog'];
+  const VALID_TABS = ['recent', 'progress', 'series', 'activity', 'backlog'];
   const initialTab = (() => {
     const p = new URLSearchParams(window.location.search).get('tab');
     return VALID_TABS.includes(p) ? p : 'recent';
@@ -1098,7 +1288,7 @@ export default function App() {
 
   // ── Fetch games.json when Recent or Progress tab is opened ─
   useEffect(() => {
-    if (['recent', 'progress'].includes(activeTab) && !gamesData && !loadingGames) {
+    if (['recent', 'progress', 'series'].includes(activeTab) && !gamesData && !loadingGames) {
       setLoadingGames(true);
       fetch('../../data/ra/games.json')
         .then(r => { if (!r.ok) throw new Error('Failed to load games.json'); return r.json(); })
@@ -1473,7 +1663,17 @@ export default function App() {
             {activeTab === 'progress' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}
           </button>
 
-          <button 
+          {seriesData.some(s => s.showProgress) && (
+            <button
+              onClick={() => setTab('series')}
+              className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'series' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
+            >
+              Series Progress
+              {activeTab === 'series' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#e5b143]"></div>}
+            </button>
+          )}
+
+          <button
             onClick={() => setTab('activity')}
             className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'activity' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
           >
@@ -1492,7 +1692,9 @@ export default function App() {
         </div>
 
         <div className="flex flex-col gap-3">
-          {activeTab === 'activity' ? (
+          {activeTab === 'series' ? (
+            <SeriesProgressTab seriesData={seriesData} gamesData={gamesData} watchlistData={watchlistData} />
+          ) : activeTab === 'activity' ? (
             loadedChunkCount === 0 && loadingChunkIdx !== null
               ? <ActivitySkeleton />
               : <ActivityTab

@@ -1,12 +1,36 @@
 # Changelog
 
+## 2026-04-08
+
+Series Progress tab added with rich cards — background image, points, latest achievement, icon strip, and per-series progress tracking; admin gets Show Progress flag, cover game selector, gold dot indicator, and console names in all game lists.
+
+### RetroAchievements
+
+- Added Series Progress tab — shows per-series cards for series with **Show Progress** enabled; tab only appears when at least one series has the flag set
+- Series card design mirrors GameCard: left-border gold accent, background image (from cover game), cover icon (links to RA game page), series name, GameCard-style layout
+- Series card stats: **Games** (total in series) · **Tracked** (games with an achievement set, sourced from `detailedGameProgress.numAchievements` or `watchlist.achievementsPublished`) · **In Progress** · **Mastered** (`numAwardedToUser === numAchievements`, no page awards dependency) — shown as inline badge labels
+- Series card progress bar: `mastered / tracked` with percentage; gold fill, gradient at 100%
+- Series card icon strip: game icons below the bar; games without achievement sets shown dimmed (`brightness-[0.35] grayscale`) after games that have sets
+- Series card points: earned / total points shown under series name, sourced from per-achievement `points` field and watchlist `pointsTotal`
+- Series card latest achievement: badge icon + achievement name (links to RA achievement page) + game title (links to RA game page) + time ago; achievement and game title are clickable
+- Fixed Series Progress tab showing all zeros when navigated to directly — `games.json` was only fetched for the `recent` and `progress` tabs; added `series` to the trigger condition
+- Admin Series module: added **Show Progress** toggle in series editor header — gold when enabled, stored as `showProgress` in `data/ra/series.json`
+- Admin Series module: added ★ cover game selector — hover any assigned game row to reveal the star; clicking sets `coverGameId`; clicking again clears it; cover game falls back to first game in series if unset; cover game resolves from `detailedGameProgress` or watchlist so unplayed games work
+- Admin Series module: series list now shows a gold dot next to series with `showProgress` enabled
+- Admin Series module + Guides module: all game rows now show console name as a muted subtitle under the title for disambiguation
+- Admin server: `/api/games/ra` now includes `consoleName` in each game entry
+
 ## 2026-04-07
+
+Hub mobile layout fixed for fewer than 3 visible platforms.
 
 ### Hub
 
 - Fixed platform grid layout on mobile when fewer than 3 platforms are visible — the JS `gridTemplateColumns` inline style was overriding the CSS media query, causing 2-column side-by-side layout on mobile instead of single column; fixed by using a CSS custom property (`--platform-cols`) for the desktop/reduced-count layout and `!important` on the mobile `1fr` breakpoint
 
 ## 2026-04-06
+
+Watchlist split into its own JSON file with independent pipeline refresh; RA Series admin gets unassigned games panel, delete persistence fix, and alphabetical sorting.
 
 ### Pipelines
 
@@ -24,6 +48,8 @@
 
 ## 2026-04-05
 
+RA Series Hub launched — admin module with game assignment, recommendations, per-series suggestions, and watchlist grouping in profile.
+
 ### RetroAchievements
 
 - Admin panel RA Guides module now includes watchlist (Want to Play) games in the game list, merged with played games and deduplicated by ID; watchlist-only entries are labeled **WL** in the sidebar
@@ -36,6 +62,8 @@
 - Watchlist series grouping: series with more than 3 games are collapsed by default
 
 ## 2026-04-03
+
+Admin panel expanded with Credentials, Data Diff, and server controls; Steam/RA filter UI buttons standardized; guide strip dropdown fix.
 
 ### Steam
 

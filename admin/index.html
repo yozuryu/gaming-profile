@@ -317,7 +317,10 @@ function RAGuidesModule() {
                             <button key={g.id} onClick={() => setSelected(g)}
                                 className={`w-full flex items-center gap-2 px-3 py-1.5 text-left transition-colors ${isSel ? 'bg-[#2a475e]' : 'hover:bg-[#1b2838]'}`}>
                                 <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
-                                <span className={`text-[11px] flex-1 truncate ${isSel ? 'text-white' : 'text-[#8f98a0]'}`}>{g.title}</span>
+                                <div className="flex-1 flex flex-col min-w-0">
+                                    <span className={`text-[11px] truncate ${isSel ? 'text-white' : 'text-[#8f98a0]'}`}>{g.title}</span>
+                                    {g.consoleName && <span className="text-[9px] text-[#546270] truncate">{g.consoleName}</span>}
+                                </div>
                                 {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
                                 {hasCustom && <span className="w-1.5 h-1.5 rounded-full bg-[#e5b143] shrink-0" />}
                             </button>
@@ -608,6 +611,7 @@ function RASeriesModule() {
                             <button key={s.id} onClick={() => { setSelectedId(s.id); setShowSuggestions(false); setShowUnassigned(false); setAddSearch(''); setGameSearch(''); }}
                                 className={`w-full flex items-center gap-2 px-3 py-1.5 text-left transition-colors ${isSel ? 'bg-[#2a475e]' : 'hover:bg-[#1b2838]'}`}>
                                 <span className={`text-[11px] flex-1 truncate ${isSel ? 'text-white' : 'text-[#8f98a0]'}`}>{s.name}</span>
+                                {s.showProgress && <span className="w-1.5 h-1.5 rounded-full bg-[#e5b143] shrink-0" />}
                                 <span className="text-[9px] text-[#546270] shrink-0">{s.gameIds.length}</span>
                             </button>
                         );
@@ -656,7 +660,10 @@ function RASeriesModule() {
                             {filteredUnassigned.map(g => (
                                 <div key={g.id} className="flex items-center gap-2 px-3 py-1.5 hover:bg-[#1b2838] border-b border-[#1a2535]">
                                     <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
-                                    <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#c6d4df] hover:text-[#66c0f4] flex-1 truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                    <div className="flex-1 flex flex-col min-w-0">
+                                        <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#c6d4df] hover:text-[#66c0f4] truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                        {g.consoleName && <span className="text-[9px] text-[#546270] truncate">{g.consoleName}</span>}
+                                    </div>
                                     {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
                                     <button className="btn-primary shrink-0 text-[9px] py-[2px] px-2 whitespace-nowrap"
                                         onClick={() => setModal({ mode: 'add', initialValue: g.title, suggestedGameIds: [g.id] })}>
@@ -706,6 +713,12 @@ function RASeriesModule() {
                         {/* Header */}
                         <div className="flex items-center gap-3 px-4 py-3 border-b border-[#2a475e]">
                             <span className="text-[13px] text-white font-medium flex-1 truncate">{selected.name}</span>
+                            <button
+                                onClick={() => update(series.map(s => s.id === selectedId ? { ...s, showProgress: !s.showProgress } : s))}
+                                title="Show in Series Progress tab"
+                                className={`flex items-center gap-1 text-[9px] font-semibold px-2 py-[3px] rounded-[2px] border transition-colors ${selected.showProgress ? 'bg-[#e5b143] text-[#101214] border-[#e5b143]' : 'text-[#546270] border-[#323f4c] hover:text-[#8f98a0] hover:border-[#546270]'}`}>
+                                Show Progress
+                            </button>
                             <button className="btn-ghost text-[11px]" onClick={() => setModal({ mode: 'rename', id: selected.id })}>Rename</button>
                             <button className="btn-ghost btn-danger text-[11px]" onClick={() => setModal({ mode: 'delete', id: selected.id })}>Delete</button>
                             <span className="text-[#2a475e]">|</span>
@@ -731,15 +744,27 @@ function RASeriesModule() {
                                             {selected.gameIds.length === 0 ? 'No games assigned yet' : 'No matches'}
                                         </div>
                                     )}
-                                    {filteredAssigned.map(g => (
+                                    {filteredAssigned.map(g => {
+                                        const isCover = g.id === selected.coverGameId;
+                                        return (
                                         <div key={g.id} className="flex items-center gap-2 px-3 py-1.5 hover:bg-[#1b2838] border-b border-[#1a2535] group">
                                             <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
-                                            <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#c6d4df] hover:text-[#66c0f4] flex-1 truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                            <div className="flex-1 flex flex-col min-w-0">
+                                                <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#c6d4df] hover:text-[#66c0f4] truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                                {g.consoleName && <span className="text-[9px] text-[#546270] truncate">{g.consoleName}</span>}
+                                            </div>
                                             {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
+                                            <button
+                                                title={isCover ? 'Cover game' : 'Set as cover'}
+                                                onClick={() => update(series.map(s => s.id === selectedId ? { ...s, coverGameId: isCover ? null : g.id } : s))}
+                                                className={`shrink-0 text-[13px] leading-none transition-opacity ${isCover ? 'text-[#e5b143]' : 'opacity-0 group-hover:opacity-100 text-[#546270] hover:text-[#e5b143]'}`}>
+                                                ★
+                                            </button>
                                             <button className="btn-ghost btn-danger opacity-0 group-hover:opacity-100 transition-opacity text-[16px] leading-none shrink-0"
                                                 onClick={() => removeGame(g.id)}>×</button>
                                         </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                             </div>
 
@@ -760,7 +785,10 @@ function RASeriesModule() {
                                                 <button key={g.id} onClick={() => addGame(g.id)}
                                                     className="w-full flex items-center gap-2 px-3 py-1.5 hover:bg-[#1b2838] border-b border-[#1a2535] border-l-2 border-l-[#e5b143]/40 text-left">
                                                     <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
-                                                    <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#c6d4df] hover:text-[#66c0f4] flex-1 truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                                    <div className="flex-1 flex flex-col min-w-0">
+                                                        <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#c6d4df] hover:text-[#66c0f4] truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                                        {g.consoleName && <span className="text-[9px] text-[#546270] truncate">{g.consoleName}</span>}
+                                                    </div>
                                                     {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
                                                     <span className="text-[11px] text-[#e5b143]/60 shrink-0">+</span>
                                                 </button>
@@ -781,7 +809,10 @@ function RASeriesModule() {
                                         <button key={g.id} onClick={() => addGame(g.id)}
                                             className="w-full flex items-center gap-2 px-3 py-1.5 hover:bg-[#1b2838] border-b border-[#1a2535] text-left">
                                             <img src={`${RA_MEDIA}${g.imageIcon}`} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
-                                            <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#8f98a0] hover:text-[#66c0f4] flex-1 truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                            <div className="flex-1 flex flex-col min-w-0">
+                                                <a href={`${RA_SITE}/game/${g.id}`} target="_blank" rel="noreferrer" className="text-[11px] text-[#8f98a0] hover:text-[#66c0f4] truncate transition-colors" onClick={e => e.stopPropagation()}>{g.title}</a>
+                                                {g.consoleName && <span className="text-[9px] text-[#546270] truncate">{g.consoleName}</span>}
+                                            </div>
                                             {g.fromWatchlist && <span className="text-[8px] text-[#66c0f4] border border-[#66c0f4]/30 px-1 py-[1px] rounded-[2px] shrink-0 leading-none">WL</span>}
                                             <span className="text-[11px] text-[#546270] shrink-0">+</span>
                                         </button>

@@ -119,10 +119,10 @@ const server = http.createServer((req, res) => {
             const watchlistIds = new Set((watchlist.results || []).map(g => g.id));
             const map = new Map();
             Object.values(raw.detailedGameProgress).forEach(g => {
-                map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, fromWatchlist: watchlistIds.has(g.id) });
+                map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, consoleName: g.consoleName ?? null, fromWatchlist: watchlistIds.has(g.id) });
             });
             (watchlist.results || []).forEach(g => {
-                if (!map.has(g.id)) map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, fromWatchlist: true });
+                if (!map.has(g.id)) map.set(g.id, { id: g.id, title: g.title, imageIcon: g.imageIcon, consoleName: g.consoleName ?? null, fromWatchlist: true });
             });
             const games = Array.from(map.values()).sort((a, b) => a.title.localeCompare(b.title));
             send(res, 200, games);

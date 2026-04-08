@@ -11,7 +11,9 @@
       19012,
       19013,
       19019
-    ]
+    ],
+    "showProgress": false,
+    "coverGameId": 19021
   },
   {
     "id": "mnmlqtbm",
@@ -21,7 +23,9 @@
       16452,
       18318,
       5208
-    ]
+    ],
+    "showProgress": true,
+    "coverGameId": 16452
   },
   {
     "id": "mnnbx57q",
@@ -71,7 +75,9 @@
       11269,
       11292,
       9362
-    ]
+    ],
+    "coverGameId": 11292,
+    "showProgress": true
   },
   {
     "id": "mnnbwznq",
@@ -101,7 +107,9 @@
       2698,
       12746,
       17005
-    ]
+    ],
+    "coverGameId": 12746,
+    "showProgress": true
   },
   {
     "id": "mnlyr2e8",
@@ -135,7 +143,9 @@
       14650,
       16657,
       3540
-    ]
+    ],
+    "coverGameId": 5512,
+    "showProgress": true
   },
   {
     "id": "mnlzbhcd",
@@ -157,7 +167,8 @@
       16152,
       3935,
       11307
-    ]
+    ],
+    "coverGameId": 16152
   },
   {
     "id": "mnlyodzf",
@@ -195,7 +206,8 @@
       2725,
       2726,
       34874
-    ]
+    ],
+    "coverGameId": 1275
   },
   {
     "id": "mnnd2jpx",
@@ -227,7 +239,9 @@
       2713,
       3515,
       3517
-    ]
+    ],
+    "showProgress": true,
+    "coverGameId": 16244
   },
   {
     "id": "mnmlm638",
@@ -255,7 +269,8 @@
       767,
       11788,
       2592
-    ]
+    ],
+    "coverGameId": 767
   },
   {
     "id": "mnnbxy6s",
@@ -289,7 +304,9 @@
       2780,
       19290,
       14828
-    ]
+    ],
+    "coverGameId": 32650,
+    "showProgress": true
   },
   {
     "id": "mnne3pkq",
@@ -359,7 +376,9 @@
       784,
       32800,
       9818
-    ]
+    ],
+    "coverGameId": 17729,
+    "showProgress": true
   },
   {
     "id": "mnndz5d5",
@@ -443,7 +462,9 @@
       11277,
       11309,
       3511
-    ]
+    ],
+    "coverGameId": 11309,
+    "showProgress": true
   },
   {
     "id": "mnnby6x5",
@@ -486,7 +507,9 @@
       11732,
       16211,
       723
-    ]
+    ],
+    "coverGameId": 668,
+    "showProgress": true
   },
   {
     "id": "mnnc8epg",
@@ -616,7 +639,9 @@
       3909,
       11253,
       19070
-    ]
+    ],
+    "coverGameId": 11253,
+    "showProgress": true
   },
   {
     "id": "mnlyplfb",
@@ -649,7 +674,9 @@
       2589,
       9880,
       9334
-    ]
+    ],
+    "coverGameId": 2589,
+    "showProgress": true
   },
   {
     "id": "mnnc0pp8",
@@ -677,7 +704,9 @@
       5111,
       3179,
       3259
-    ]
+    ],
+    "coverGameId": 11301,
+    "showProgress": true
   },
   {
     "id": "mnmljwrh",
@@ -691,7 +720,9 @@
       10481,
       3568,
       10513
-    ]
+    ],
+    "coverGameId": 10479,
+    "showProgress": true
   },
   {
     "id": "mnnd0hta",
