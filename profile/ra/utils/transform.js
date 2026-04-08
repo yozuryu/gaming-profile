@@ -147,7 +147,7 @@ export const transformData = (data) => {
     ? (data.coreProfile.totalTruePoints / data.coreProfile.totalPoints).toFixed(2)
     : "0.00";
 
-  const beatenGamesCount = data.pageAwards.visibleUserAwards.filter(a => a.awardType === "Game Beaten" || a.awardType === "Game Mastered").length;
+  const beatenGamesCount = data.pageAwards.visibleUserAwards.filter(a => a.awardType === "Game Beaten" || a.awardType === "Mastery/Completion").length;
 
   const startedGames = ALL_GAMES.filter(g => g.achievementsUnlocked > 0 && g.achievementsTotal > 0);
   const startedGamesCount = startedGames.length;
@@ -240,7 +240,7 @@ export const transformData = (data) => {
       ],
 
       siteAwards: data.pageAwards.visibleUserAwards
-        .filter(a => a.awardType !== "Game Beaten" && a.awardType !== "Game Mastered")
+        .filter(a => a.awardType !== "Game Beaten" && a.awardType !== "Mastery/Completion")
         .map((a, i) => {
           let iconUrl = getMediaUrl(a.imageIcon);
           if (a.awardType && a.awardType.toLowerCase().includes('patreon')) {
@@ -248,22 +248,32 @@ export const transformData = (data) => {
           }
           return { id: i, title: a.awardType, icon: iconUrl };
         }),
-      gameAwards: data.pageAwards.visibleUserAwards
-        .filter(a => a.awardType === "Game Beaten" || a.awardType === "Game Mastered")
-        .sort((a, b) => {
-          const typeOrder = { "Game Mastered": 0, "Game Beaten": 1 };
-          if (typeOrder[a.awardType] !== typeOrder[b.awardType]) return typeOrder[a.awardType] - typeOrder[b.awardType];
-          return new Date(b.awardedAt) - new Date(a.awardedAt);
-        })
-        .map((a, i) => ({
-          id: i,
-          title: a.title || "Unknown Game",
-          ...parseTitle(a.title || "Unknown Game"),
-          type: a.awardType,
-          console: a.consoleName || "Unknown Console",
-          date: formatDate(a.awardedAt),
-          icon: getMediaUrl(a.imageIcon)
-        }))
+      gameAwards: (() => {
+          // Deduplicate by game ID: if a game has both Beaten and Mastery/Completion, keep only Mastery/Completion
+          const byGameId = new Map();
+          data.pageAwards.visibleUserAwards
+            .filter(a => a.awardType === "Game Beaten" || a.awardType === "Mastery/Completion")
+            .forEach(a => {
+              const key = a.awardData ?? a.title;
+              const existing = byGameId.get(key);
+              if (!existing || a.awardType === "Mastery/Completion") byGameId.set(key, a);
+            });
+          return Array.from(byGameId.values())
+            .sort((a, b) => {
+              const typeOrder = { "Mastery/Completion": 0, "Game Beaten": 1 };
+              if (typeOrder[a.awardType] !== typeOrder[b.awardType]) return typeOrder[a.awardType] - typeOrder[b.awardType];
+              return new Date(b.awardedAt) - new Date(a.awardedAt);
+            })
+            .map((a, i) => ({
+              id: i,
+              title: a.title || "Unknown Game",
+              ...parseTitle(a.title || "Unknown Game"),
+              type: a.awardType,
+              console: a.consoleName || "Unknown Console",
+              date: formatDate(a.awardedAt),
+              icon: getMediaUrl(a.imageIcon)
+            }));
+        })()
     },
     games: ALL_GAMES,
     recentAchievements: Array.isArray(data.recentAchievements)

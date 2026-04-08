@@ -168,7 +168,8 @@
       3935,
       11307
     ],
-    "coverGameId": 16152
+    "coverGameId": 16152,
+    "showProgress": true
   },
   {
     "id": "mnlyodzf",
@@ -207,7 +208,8 @@
       2726,
       34874
     ],
-    "coverGameId": 1275
+    "coverGameId": 1275,
+    "showProgress": true
   },
   {
     "id": "mnnd2jpx",
@@ -270,7 +272,8 @@
       11788,
       2592
     ],
-    "coverGameId": 767
+    "coverGameId": 767,
+    "showProgress": true
   },
   {
     "id": "mnnbxy6s",
@@ -280,7 +283,9 @@
       5812,
       2668,
       2670
-    ]
+    ],
+    "coverGameId": 2668,
+    "showProgress": true
   },
   {
     "id": "mnnby35y",
@@ -558,7 +563,9 @@
       5133,
       11419,
       34766
-    ]
+    ],
+    "coverGameId": 11245,
+    "showProgress": true
   },
   {
     "id": "mnlzm74i",
@@ -582,7 +589,9 @@
       400,
       4206,
       1391
-    ]
+    ],
+    "coverGameId": 9695,
+    "showProgress": true
   },
   {
     "id": "mnlzli3k",
@@ -660,7 +669,9 @@
       3523,
       14370,
       14371
-    ]
+    ],
+    "coverGameId": 11255,
+    "showProgress": true
   },
   {
     "id": "mnlyqo7l",
@@ -735,7 +746,9 @@
       9190,
       204,
       3934
-    ]
+    ],
+    "coverGameId": 559,
+    "showProgress": true
   },
   {
     "id": "mnlzn7yv",
@@ -758,7 +771,9 @@
       2687,
       19076,
       3944
-    ]
+    ],
+    "coverGameId": 19076,
+    "showProgress": true
   },
   {
     "id": "mnlzgv8n",

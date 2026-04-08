@@ -1060,15 +1060,25 @@ function SeriesProgressTab({ seriesData, gamesData, watchlistData }) {
           }
         }
 
-        const imageIcon = g?.imageIcon ?? wl?.imageIcon ?? null;
-        const title     = g?.title ?? wl?.title ?? String(id);
+        const imageIcon    = g?.imageIcon ?? wl?.imageIcon ?? null;
+        const title        = g?.title ?? wl?.title ?? String(id);
+        const isMastered   = hasAch && g && g.numAwardedToUser === g.numAchievements && g.numAchievements > 0;
+        const isInProgress = hasAch && g && g.numAwardedToUser > 0 && !isMastered;
+        const lastUnlockDate = (isMastered || isInProgress) && g?.achievements
+          ? Math.max(...Object.values(g.achievements).filter(a => a.dateEarned).map(a => new Date(a.dateEarned).getTime()))
+          : 0;
+        const sortBucket = isMastered ? 0 : isInProgress ? 1 : hasAch ? 2 : 3;
         if (imageIcon) {
-          const entry = { id, icon: getMediaUrl(imageIcon), title, hasAch };
+          const entry = { id, icon: getMediaUrl(imageIcon), title, hasAch, isMastered, lastUnlockDate, sortBucket };
           if (hasAch) icons.push(entry);
           else        iconsNoAch.push(entry);
         }
       });
-      const allIcons = [...icons, ...iconsNoAch];
+      const allIcons = [...icons, ...iconsNoAch].sort((a, b) => {
+        if (a.sortBucket !== b.sortBucket) return a.sortBucket - b.sortBucket;
+        if (a.sortBucket <= 1) return b.lastUnlockDate - a.lastUnlockDate;
+        return a.title.localeCompare(b.title);
+      });
 
       // Cover game: explicitly set, or fall back to first game in series
       // Check both detailedGameProgress and watchlist so unplayed games still resolve
@@ -1154,8 +1164,8 @@ function SeriesProgressTab({ seriesData, gamesData, watchlistData }) {
             <div className="px-3 pb-3 pt-2 border-t border-[#2a475e]">
               <div className="flex items-center gap-2 mb-2.5">
                 <div className="flex items-center gap-1.5 flex-1 flex-wrap">
-                  <span className="text-[9px] font-semibold uppercase tracking-wider text-[#c6d4df] border border-[#323f4c] bg-[#101214]/60 px-1.5 py-[1px] rounded-sm">{total} games</span>
-                  <span className="text-[9px] font-semibold uppercase tracking-wider text-[#8f98a0] border border-[#323f4c] bg-[#101214]/60 px-1.5 py-[1px] rounded-sm">{tracked} tracked</span>
+                  <span className="text-[9px] font-semibold uppercase tracking-wider text-[#8f98a0] border border-[#323f4c] bg-[#101214]/60 px-1.5 py-[1px] rounded-sm">{total} games</span>
+                  <span className="text-[9px] font-semibold uppercase tracking-wider text-[#c6d4df] border border-[#323f4c] bg-[#101214]/60 px-1.5 py-[1px] rounded-sm">{tracked} tracked</span>
                   {inProgress > 0 && <span className="text-[9px] font-semibold uppercase tracking-wider text-[#66c0f4] border border-[#66c0f4]/30 bg-[#101214]/60 px-1.5 py-[1px] rounded-sm">{inProgress} in progress</span>}
                   {mastered > 0 && <span className="text-[9px] font-bold uppercase tracking-wider text-[#101214] bg-[#e5b143] px-1.5 py-[1px] rounded-sm">{mastered} mastered</span>}
                 </div>
@@ -1175,7 +1185,7 @@ function SeriesProgressTab({ seriesData, gamesData, watchlistData }) {
               <div className="flex items-center gap-1 px-3 pb-2.5 flex-wrap border-t border-[#2a475e] pt-2.5">
                 {shownIcons.map(g => (
                   <a key={g.id} href={`${SITE_URL}/game/${g.id}`} target="_blank" rel="noreferrer"
-                    className="shrink-0 w-8 h-8 rounded-[2px] overflow-hidden border border-[#101214] bg-black hover:scale-110 transition-transform block">
+                    className={`shrink-0 w-8 h-8 rounded-[2px] overflow-hidden bg-black hover:scale-110 transition-transform block ${g.isMastered ? 'border-2 border-[#e5b143]' : 'border border-[#101214]'}`}>
                     <img src={g.icon} alt={g.title} className={`w-full h-full object-cover ${g.hasAch ? '' : 'brightness-[0.35] grayscale'}`} />
                   </a>
                 ))}
@@ -1595,10 +1605,10 @@ export default function App() {
               <div className="p-3 grid grid-cols-5 sm:grid-cols-8 lg:grid-cols-5 gap-2 min-h-[60px]">
                 {PROFILE_DATA.gameAwards.length > 0 ? PROFILE_DATA.gameAwards.map(award => (
                   <div key={award.id} className="relative group cursor-help">
-                    <img 
-                      src={award.icon} 
+                    <img
+                      src={award.icon}
                       alt={award.title}
-                      className="w-full aspect-square rounded-[2px] border border-[#e5b143]/30 group-hover:scale-110 group-hover:border-[#e5b143]/80 transition-all duration-200 bg-black relative z-10" 
+                      className={`w-full aspect-square rounded-[2px] border transition-all duration-200 bg-black relative z-10 group-hover:scale-110 ${award.type === 'Mastery/Completion' ? 'border-2 border-[#e5b143]' : 'border border-[#e5b143]/30 group-hover:border-[#e5b143]/80'}`}
                     />
 
                     <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[200px] bg-[#1b2838] border border-[#2a475e] rounded-[2px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-[100] shadow-xl pointer-events-none overflow-hidden">
@@ -1625,7 +1635,7 @@ export default function App() {
                         <div className="h-px bg-[#2a475e]"></div>
                         <div className="flex items-center justify-between">
                           <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Award</span>
-                          {award.type === 'Game Mastered'
+                          {award.type === 'Mastery/Completion'
                             ? <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-[1px] rounded-[2px] bg-[#e5b143] text-[#101214]">Mastered</span>
                             : <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-[1px] rounded-[2px] bg-[#546270] text-white border border-[#c6d4df]/20">Beaten</span>
                           }
@@ -1646,7 +1656,8 @@ export default function App() {
           </div>
         </div>
 
-        <div className="sticky top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 px-4 md:px-8 flex items-center gap-6 mb-4 border-b border-[#2a475e]">
+        <div className="sticky top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 mb-4 border-b border-[#2a475e]">
+          <div className="flex items-center gap-6 px-4 md:px-8 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none' }}>
           <button 
             onClick={() => setTab('recent')}
             className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'recent' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
@@ -1689,6 +1700,7 @@ export default function App() {
             {activeTab === 'backlog' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}
           </button>
 
+          </div>
         </div>
 
         <div className="flex flex-col gap-3">

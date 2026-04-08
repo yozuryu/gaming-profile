@@ -2,7 +2,7 @@
 
 ## 2026-04-08
 
-Series Progress tab added with rich cards — background image, points, latest achievement, icon strip, and per-series progress tracking; admin gets Show Progress flag, cover game selector, gold dot indicator, and console names in all game lists.
+Series Progress tab added with rich cards — background image, points, latest achievement, icon strip, and per-series progress tracking; admin gets Show Progress flag, cover game selector, gold dot indicator, and console names in all game lists. Game awards deduplicated so mastered game shows single Mastered award with solid gold border. Series card icon strip now sorted by mastery status with gold borders; award type corrected to `Mastery/Completion`.
 
 ### RetroAchievements
 
@@ -19,6 +19,12 @@ Series Progress tab added with rich cards — background image, points, latest a
 - Admin Series module: series list now shows a gold dot next to series with `showProgress` enabled
 - Admin Series module + Guides module: all game rows now show console name as a muted subtitle under the title for disambiguation
 - Admin server: `/api/games/ra` now includes `consoleName` in each game entry
+- Game Awards panel: deduplicate awards per game — if a game has both Beaten and Mastered awards, only Mastered is shown; dedup key is `awardData` (game ID), Mastery/Completion wins over Game Beaten
+- Fixed award type strings throughout — RA API returns `"Mastery/Completion"` not `"Game Mastered"`; corrected in `transform.js` (siteAwards filter, gameAwards filter, beatenGamesCount) and `app.js` (icon border condition, tooltip label)
+- Mastered award icons now have a 2px solid gold border (`border-2 border-[#e5b143]`); Beaten awards keep the original dimmed border
+- Series card icon strip: icons now sorted — mastered games first (desc by mastery date) → in-progress games (desc by last unlock date) → no-progress games (alphabetical) → no-achievement games (alphabetical)
+- Series card icon strip: mastered game icons get a 2px gold border matching the Game Awards panel style
+- Series card stats labels: `games` (total) is now muted, `tracked` (games with achievement set) is lighter — visually prioritises the actionable subset
 
 ## 2026-04-07
 
