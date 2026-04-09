@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-09T22:50:22.063Z"
+        "extractionTimestamp": "2026-04-09T23:41:18.862Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -34,7 +34,7 @@
             "data2": null
         },
         "richPresenceMsg": "On the title screen",
-        "richPresenceMsgDate": "2026-04-09 17:00:22",
+        "richPresenceMsgDate": "2026-04-09 23:19:52",
         "lastGameId": 11382,
         "contribCount": 0,
         "contribYield": 0,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51545,
+        "rank": 51546,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 138443,
+        "totalRanked": 138450,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -147,13 +147,13 @@
             "imageTitle": "/Images/027231.png",
             "imageIngame": "/Images/027340.png",
             "imageBoxArt": "/Images/027234.png",
-            "lastPlayed": "2026-04-09 17:00:22",
+            "lastPlayed": "2026-04-09 23:19:52",
             "achievementsTotal": 65,
             "numPossibleAchievements": 65,
             "possibleScore": 1050,
-            "numAchieved": 1,
+            "numAchieved": 2,
             "scoreAchieved": 0,
-            "numAchievedHardcore": 1,
+            "numAchievedHardcore": 2,
             "scoreAchievedHardcore": 0
         },
         {
@@ -420,9 +420,9 @@
                 "consoleId": 12,
                 "consoleName": "PlayStation",
                 "maxPossible": 65,
-                "numAwarded": 1,
-                "numAwardedHardcore": 1,
-                "mostRecentAwardedDate": "2026-04-09T17:00:22+00:00",
+                "numAwarded": 2,
+                "numAwardedHardcore": 2,
+                "mostRecentAwardedDate": "2026-04-09T23:19:52+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -1053,12 +1053,12 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-09 17:00:22",
+        "date": "2026-04-09 23:19:52",
         "hardcoreMode": true,
-        "achievementId": 85717,
-        "title": "Classified Weaponry",
-        "description": "Press Left, Left, Left, Right on Game Start to activate Ultimate Armor X - this will block ALL other achievements!",
-        "badgeName": "114925",
+        "achievementId": 85718,
+        "title": "The Cheated Copy",
+        "description": "Press L1, L1, L1, R2 on Game Start to activate Black Zero - this will block ALL other achievements!",
+        "badgeName": "114926",
         "points": 0,
         "trueRatio": 0,
         "type": null,
@@ -1069,7 +1069,7 @@
         "gameId": 11382,
         "consoleName": "PlayStation",
         "cumulScore": 677,
-        "badgeUrl": "/Badge/114925.png",
+        "badgeUrl": "/Badge/114926.png",
         "gameUrl": "/game/11382"
     },
     "mostRecentGame": {
@@ -1081,13 +1081,13 @@
         "imageTitle": "/Images/027231.png",
         "imageIngame": "/Images/027340.png",
         "imageBoxArt": "/Images/027234.png",
-        "lastPlayed": "2026-04-09 17:00:22",
+        "lastPlayed": "2026-04-09 23:19:52",
         "achievementsTotal": 65,
         "numPossibleAchievements": 65,
         "possibleScore": 1050,
-        "numAchieved": 1,
+        "numAchieved": 2,
         "scoreAchieved": 0,
-        "numAchievedHardcore": 1,
+        "numAchievedHardcore": 2,
         "scoreAchievedHardcore": 0
     },
     "points7Days": 140,
