@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-09T14:07:38.266Z"
+        "extractionTimestamp": "2026-04-09T15:50:48.337Z"
     },
     "profile": {
         "steamId": "76561198188939413",
@@ -78,17 +78,6 @@
             "lastPlayedTs": "2026-03-28T13:02:56.000Z",
             "achUnlocked": 6,
             "achTotal": 105
-        },
-        {
-            "appId": 2183900,
-            "name": "Warhammer 40,000: Space Marine 2",
-            "playtime2Weeks": 36,
-            "playtimeForever": 159,
-            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/2183900/0fccfb5eb2acb934db1fe95a4e578f25ccbd71ec.jpg",
-            "storeUrl": "https://store.steampowered.com/app/2183900",
-            "lastPlayedTs": "2026-03-26T14:43:54.000Z",
-            "achUnlocked": 3,
-            "achTotal": 50
         }
     ],
     "mostRecentGame": {
