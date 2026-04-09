@@ -14,7 +14,7 @@
             "iconUrl": "a10200e848a433997f684d338172b107b1bb0ec2.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": false,
-            "globalPct": 10.2
+            "globalPct": 10.3
         },
         {
             "apiName": "Achievement_START_CHAPTER_1",
@@ -25,7 +25,7 @@
             "iconUrl": "4f0e1e30442060aa564430d0526aa5526daf837a.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 65.8
+            "globalPct": 65.7
         },
         {
             "apiName": "Achievement_START_CHAPTER_2",
@@ -47,7 +47,7 @@
             "iconUrl": "606cfdf24e13653c2e9c3f38f6ce6035c930dcff.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 40.3
+            "globalPct": 40.4
         },
         {
             "apiName": "Achievement_START_CHAPTER_4",
@@ -102,7 +102,7 @@
             "iconUrl": "e0b47bb179e22a9a8cb9d04ce64c1d16d38e81e7.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 35.5
+            "globalPct": 35.6
         },
         {
             "apiName": "Achievement_START_CHAPTER_9",
@@ -168,7 +168,7 @@
             "iconUrl": "ea7b8a2ada1456930c83667740ec10d7abde4f50.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 24.9
+            "globalPct": 25
         },
         {
             "apiName": "Achievement_FOUND_THE_HANA",
@@ -201,7 +201,7 @@
             "iconUrl": "fe04c4bff29123d63f950d0cabb06763acc413e0.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 34
+            "globalPct": 34.1
         },
         {
             "apiName": "Achievement_PASS_NONO",
@@ -402,7 +402,7 @@
             "unlockedAt": "2020-07-04T09:49:30.000Z",
             "iconUrl": "4f0e1e30442060aa564430d0526aa5526daf837a.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
-            "globalPct": 65.8
+            "globalPct": 65.7
         },
         {
             "apiName": "Achievement_ALL_UNLOCK",
@@ -411,7 +411,7 @@
             "unlockedAt": null,
             "iconUrl": "a10200e848a433997f684d338172b107b1bb0ec2.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
-            "globalPct": 10.2
+            "globalPct": 10.3
         },
         {
             "apiName": "Achievement_START_CHAPTER_2",
@@ -429,7 +429,7 @@
             "unlockedAt": null,
             "iconUrl": "606cfdf24e13653c2e9c3f38f6ce6035c930dcff.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
-            "globalPct": 40.3
+            "globalPct": 40.4
         },
         {
             "apiName": "Achievement_START_CHAPTER_4",

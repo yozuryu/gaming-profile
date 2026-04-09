@@ -47,7 +47,7 @@
             "iconUrl": "004d1c07516cb60c2f7e24ba08059e4a12bdba2f.jpg",
             "iconGrayUrl": "c06edc65d7fa1df91dfba05fe05bcb3cf310d20a.jpg",
             "hidden": false,
-            "globalPct": 63.2
+            "globalPct": 63.3
         },
         {
             "apiName": "set_spawn",
@@ -113,7 +113,7 @@
             "iconUrl": "c073e1bb0a5a0b833ff13906878e5be2a3640423.jpg",
             "iconGrayUrl": "f168a1e2d549bdf918f459854fb8ec88b74d643d.jpg",
             "hidden": false,
-            "globalPct": 46.1
+            "globalPct": 46.2
         },
         {
             "apiName": "play_24h",
@@ -135,7 +135,7 @@
             "iconUrl": "e9709055b38535bbb9c7827338ef134fc499c71f.jpg",
             "iconGrayUrl": "5466f0013394ea0d8d3f7e4319215d2ebebbd015.jpg",
             "hidden": false,
-            "globalPct": 37.9
+            "globalPct": 38
         },
         {
             "apiName": "village_helper",
@@ -311,7 +311,7 @@
             "iconUrl": "8eb90bc2a7950550f9ff4480fba6a5e99690d3d2.jpg",
             "iconGrayUrl": "d5a2cdd91bf0a40da98397772dbe9f5583f705f1.jpg",
             "hidden": false,
-            "globalPct": 25.3
+            "globalPct": 25.4
         },
         {
             "apiName": "complete_incursion",
@@ -388,7 +388,7 @@
             "iconUrl": "ee57f3ef761eb5ee0952e31ac4c6d6f890b649a7.jpg",
             "iconGrayUrl": "a192d5b6e4c7536df18d9a01c3924bea16a9f186.jpg",
             "hidden": false,
-            "globalPct": 10.3
+            "globalPct": 10.4
         },
         {
             "apiName": "hot_tub",
@@ -399,7 +399,7 @@
             "iconUrl": "1d4e85200b21085df2804154c0a6987e8764a49e.jpg",
             "iconGrayUrl": "1576e9a7147eba7d9fe91f115728a0ad5dda1c2c.jpg",
             "hidden": false,
-            "globalPct": 8.6
+            "globalPct": 8.7
         },
         {
             "apiName": "adventure_begins",
@@ -498,7 +498,7 @@
             "iconUrl": "44a13741a0d66ed43cdc7deb65b202ed2ed3a307.jpg",
             "iconGrayUrl": "f2534888704241a4ecfd8c96f02c9d922527e6ce.jpg",
             "hidden": false,
-            "globalPct": 2.1
+            "globalPct": 2.2
         },
         {
             "apiName": "settling_down",
@@ -583,7 +583,7 @@
             "unlockedAt": null,
             "iconUrl": "004d1c07516cb60c2f7e24ba08059e4a12bdba2f.jpg",
             "iconGrayUrl": "c06edc65d7fa1df91dfba05fe05bcb3cf310d20a.jpg",
-            "globalPct": 63.2
+            "globalPct": 63.3
         },
         {
             "apiName": "enchant_item",

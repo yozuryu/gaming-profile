@@ -124,7 +124,7 @@
             "iconUrl": "7e95153c1c518bcf7eb1f0dddb0bf1c5b0a12aaa.jpg",
             "iconGrayUrl": "be39ee3123ac7dad54551d37dda6a26b5bb7ec84.jpg",
             "hidden": false,
-            "globalPct": 59.7
+            "globalPct": 59.8
         },
         {
             "apiName": "SCOUT_CARDS_90",
@@ -201,7 +201,7 @@
             "iconUrl": "d87b6a6320c775f46140b244ac1cd10ede0f3df1.jpg",
             "iconGrayUrl": "44137ed7ad4ec34be4a6ab4a3e6a75cc5f9d0f79.jpg",
             "hidden": false,
-            "globalPct": 47.5
+            "globalPct": 47.6
         },
         {
             "apiName": "EVENT_CHAMPION",
@@ -443,7 +443,7 @@
             "iconUrl": "755632f35a0643afb243fd9419c424a1976a985b.jpg",
             "iconGrayUrl": "a88b5702315b21cec8f61be3f923bbe5df2477f8.jpg",
             "hidden": false,
-            "globalPct": 37.3
+            "globalPct": 37.4
         },
         {
             "apiName": "TOWN_MASTERCRAFTMAN",
@@ -553,7 +553,7 @@
             "iconUrl": "647838cd4dfd37896b1e6b92899040dc69b152b8.jpg",
             "iconGrayUrl": "d33fbffea904bef89f8dc307904a154f2ceb9067.jpg",
             "hidden": false,
-            "globalPct": 24.1
+            "globalPct": 24.2
         },
         {
             "apiName": "MISC_RECRUIT",
@@ -685,7 +685,7 @@
             "iconUrl": "f54ad63e3d0654c3f2b9de2450fe65919e1349c2.jpg",
             "iconGrayUrl": "ee3b3842043e7356e64ea2a2daa5e1da601ea61b.jpg",
             "hidden": false,
-            "globalPct": 36.8
+            "globalPct": 36.9
         },
         {
             "apiName": "CHARGES_BLOODY",
@@ -696,7 +696,7 @@
             "iconUrl": "2d2aee9a17bbcc9e798b3a2e1a679babfd4d09ec.jpg",
             "iconGrayUrl": "2f50fed66db5fd7f2d6f5fda406ec762eff03d60.jpg",
             "hidden": false,
-            "globalPct": 55.7
+            "globalPct": 55.8
         },
         {
             "apiName": "CHARGES_BLOODBATH",
@@ -839,7 +839,7 @@
             "iconUrl": "390e3801e60dc75e2f50e68e249617af3b55cd5b.jpg",
             "iconGrayUrl": "6ca095edecef42dbf1979322920991e470d8eca6.jpg",
             "hidden": false,
-            "globalPct": 27.1
+            "globalPct": 27.2
         },
         {
             "apiName": "CHARGES_SPIKY",
@@ -850,7 +850,7 @@
             "iconUrl": "9b70483c9fe6a59ea48e0746c651cc400b69be47.jpg",
             "iconGrayUrl": "3c87c8b388798d3ca1ae18fce9b7c4cbf7576f86.jpg",
             "hidden": false,
-            "globalPct": 40.8
+            "globalPct": 40.9
         },
         {
             "apiName": "CHARGES_DRYAD",
@@ -1169,7 +1169,7 @@
             "iconUrl": "f504b524275b11ac3c12ad4e889ae84ceae452ca.jpg",
             "iconGrayUrl": "3176b0e134dcd044ed4aed393075baa1c9428b58.jpg",
             "hidden": false,
-            "globalPct": 46.9
+            "globalPct": 47
         },
         {
             "apiName": "BOSS_ARCHONNIHR",
@@ -1191,7 +1191,7 @@
             "iconUrl": "0e02ccb06db9979dca4568044d86ac6de87be697.jpg",
             "iconGrayUrl": "ed3c2f44d030f5edeb20c873e1c48d41217016d1.jpg",
             "hidden": false,
-            "globalPct": 33
+            "globalPct": 33.1
         },
         {
             "apiName": "UNLOCK_WARLOCK",
@@ -1411,7 +1411,7 @@
             "iconUrl": "aebba3001e879b201dd27bcbe53dda80b829a1ae.jpg",
             "iconGrayUrl": "32057ebf81cdc4bbf053eb633c66cfa468fd7eb0.jpg",
             "hidden": false,
-            "globalPct": 24.2
+            "globalPct": 24.1
         },
         {
             "apiName": "EVENT_BIGFEAST",
@@ -1631,7 +1631,7 @@
             "iconUrl": "d47a891ec877c6e0f38b10e0d78e62efd6aed1c1.jpg",
             "iconGrayUrl": "50196d20d5f4a2fb6bcd777fc7537ba54ec2eb5b.jpg",
             "hidden": false,
-            "globalPct": 1.7
+            "globalPct": 1.8
         }
     ],
     "playtimeForever": 346,
