@@ -150,10 +150,10 @@ const GameCard = ({ game, onViewDetails, guides }) => {
             )}
           </div>
 
-          <div className="text-[11px] text-[#66c0f4] mb-1.5 truncate flex items-center gap-2">
-            <span className="flex items-center gap-1"><Gamepad2 size={12} /> {game.console}</span>
-            <span className="text-[#546270]">|</span>
-            <div className="flex items-center gap-1.5">
+          <div className="text-[11px] text-[#66c0f4] mb-1.5 flex items-center gap-2 flex-wrap">
+            <span className="flex items-center gap-1 shrink-0"><Gamepad2 size={12} /> {game.console}</span>
+            <span className="text-[#546270] shrink-0">|</span>
+            <div className="flex items-center gap-1.5 flex-wrap">
               
               {!hasAchievements ? (
                 <span className="shrink-0 text-[9px] text-[#546270] border border-[#323f4c] bg-[#101214]/60 px-1.5 py-[1px] rounded-sm font-semibold uppercase tracking-wider flex items-center gap-1">
@@ -371,15 +371,17 @@ const RAchievementModal = ({ game, onClose }) => {
             <div className="flex items-center gap-2 flex-wrap mb-2 text-[10px]">
               <span className="text-[#66c0f4] flex items-center gap-1"><Gamepad2 size={10} />{game.console}</span>
               <span className="text-[#546270]">·</span>
-              {game.isMastered ? (
-                <span className="text-[#e5b143] flex items-center gap-1"><Trophy size={9} /> Mastered</span>
-              ) : game.isBeaten ? (
-                <span className="text-[#8f98a0] flex items-center gap-1"><Medal size={9} /> Beaten</span>
-              ) : game.hardcore ? (
-                <span className="text-[#ff6b6b] flex items-center gap-1"><Flame size={9} /> Hardcore</span>
-              ) : game.achievementsUnlocked > 0 ? (
-                <span className="text-[#8f98a0] flex items-center gap-1"><Feather size={9} /> Softcore</span>
-              ) : null}
+              {!game.achievementsUnlocked ? null : game.hardcore ? (
+                <span className="shrink-0 text-[9px] text-[#ff6b6b] border border-[#ff6b6b]/30 bg-[#101214]/60 px-1.5 py-[1px] rounded-sm font-semibold uppercase tracking-wider flex items-center gap-1"><Flame size={10} /> Hardcore</span>
+              ) : (
+                <span className="shrink-0 text-[9px] text-[#8f98a0] border border-[#323f4c] bg-[#101214]/60 px-1.5 py-[1px] rounded-sm font-semibold uppercase tracking-wider flex items-center gap-1"><Feather size={10} /> Softcore</span>
+              )}
+              {game.isMastered && (
+                <span className="shrink-0 text-[9px] text-[#101214] bg-[#e5b143] px-1.5 py-[1px] rounded-sm font-bold uppercase tracking-wider flex items-center gap-1"><Trophy size={10} /> Mastered</span>
+              )}
+              {game.isBeaten && !game.isMastered && (
+                <span className="shrink-0 text-[9px] text-white bg-[#546270] px-1.5 py-[1px] rounded-sm font-bold uppercase tracking-wider border border-[#c6d4df]/30 flex items-center gap-1"><Medal size={10} /> Beaten</span>
+              )}
             </div>
             {/* Progress bars */}
             <div className="flex flex-col gap-1">
@@ -1657,18 +1659,18 @@ export default function App() {
         </div>
 
         <div className="sticky top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 mb-4 border-b border-[#2a475e]">
-          <div className="flex items-center gap-6 px-4 md:px-8 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none' }}>
-          <button 
+          <div className="flex items-center gap-3 md:gap-6 px-4 md:px-8 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none' }}>
+          <button
             onClick={() => setTab('recent')}
-            className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'recent' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
+            className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === 'recent' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
           >
             Recent Games
             {activeTab === 'recent' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}
           </button>
-          
-          <button 
+
+          <button
             onClick={() => setTab('progress')}
-            className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'progress' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
+            className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === 'progress' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
           >
             Completion Progress
             {activeTab === 'progress' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}
@@ -1677,7 +1679,7 @@ export default function App() {
           {seriesData.some(s => s.showProgress) && (
             <button
               onClick={() => setTab('series')}
-              className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'series' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
+              className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === 'series' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
             >
               Series Progress
               {activeTab === 'series' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#e5b143]"></div>}
@@ -1686,15 +1688,15 @@ export default function App() {
 
           <button
             onClick={() => setTab('activity')}
-            className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'activity' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
+            className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === 'activity' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
           >
             Activity
             {activeTab === 'activity' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}
           </button>
 
-          <button 
+          <button
             onClick={() => setTab('backlog')}
-            className={`pb-2 text-[14px] uppercase tracking-wide font-medium transition-colors relative ${activeTab === 'backlog' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
+            className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === 'backlog' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
           >
             Watchlist
             {activeTab === 'backlog' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}

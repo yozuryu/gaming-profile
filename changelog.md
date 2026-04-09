@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-04-09
+
+Tab sizing unified across RA and Steam; GameCard and modal label styles aligned; series card icon sort improved.
+
+### RetroAchievements
+
+- Tab bar: fixed inconsistent text size on mobile — changed from fixed `text-[14px]` to `text-[11px] md:text-[14px]` and `gap-3 md:gap-6` with `whitespace-nowrap`, matching Steam's implementation
+- GameCard: status row (`Hardcore`/`Softcore`/`Mastered`/`Beaten` labels) now wraps on narrow screens instead of truncating — changed outer div from `truncate` to `flex-wrap`; console name and separator get `shrink-0`
+- Game modal: status labels now use the same badge style as GameCard (`border`, `bg`, `font-bold uppercase tracking-wider`) instead of plain colored text; `Hardcore` and `Mastered` are shown as independent badges (a hardcore mastered game shows both)
+- Series card icon strip: icons now sorted into four buckets — mastered (desc by mastery date) → in progress (desc by last unlock date) → no progress (alphabetical) → no achievement (alphabetical)
+
+### Steam
+
+- Achievement modal: moved Perfect badge from beside the progress bar to under the game title, matching RA modal layout
+
 ## 2026-04-08
 
 Series Progress tab added with rich cards — background image, points, latest achievement, icon strip, and per-series progress tracking; admin gets Show Progress flag, cover game selector, gold dot indicator, and console names in all game lists. Game awards deduplicated so mastered game shows single Mastered award with solid gold border. Series card icon strip now sorted by mastery status with gold borders; award type corrected to `Mastery/Completion`.

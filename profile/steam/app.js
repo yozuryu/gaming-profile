@@ -262,8 +262,15 @@ const AchievementModal = ({ game, achievementData, onClose }) => {
                         >
                             {game.name}
                         </a>
+                        {isPerfect && (
+                            <div className="flex items-center gap-1.5 mt-1">
+                                <span className="shrink-0 text-[9px] text-[#101214] bg-[#e5b143] px-1.5 py-[1px] rounded-sm font-bold uppercase tracking-wider flex items-center gap-1">
+                                    <Star size={9} /> Perfect
+                                </span>
+                            </div>
+                        )}
                         {pct !== null && (
-                            <div className="flex items-center gap-2 mt-1">
+                            <div className="flex items-center gap-2 mt-1.5">
                                 <div className="flex-1 bg-[#101214] h-[3px] rounded-sm overflow-hidden">
                                     <div className="h-full rounded-sm" style={{ width: `${pct}%`, background: isPerfect ? '#e5b143' : '#66c0f4' }} />
                                 </div>
@@ -271,11 +278,6 @@ const AchievementModal = ({ game, achievementData, onClose }) => {
                                     <span className="text-[#c6d4df]">{achievementData.unlocked}</span>/{achievementData.total}
                                     <span className="ml-0.5">({Math.floor(pct)}%)</span>
                                 </span>
-                                {isPerfect && (
-                                    <span className="text-[8px] font-bold uppercase tracking-[0.07em] px-1.5 py-[1px] rounded-[2px] bg-[#e5b143] text-[#101214] flex items-center gap-1">
-                                        <Star size={7} /> Perfect
-                                    </span>
-                                )}
                             </div>
                         )}
                     </div>
