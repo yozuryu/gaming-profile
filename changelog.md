@@ -2,7 +2,14 @@
 
 ## 2026-04-09
 
-Tab sizing unified across RA and Steam; GameCard and modal label styles aligned; series card icon sort improved.
+Tab sizing unified across RA and Steam; GameCard and modal label styles aligned; series card icon sort improved. PWA support added — installable on mobile with offline fallback.
+
+### Structure
+
+- Added `manifest.json` — PWA web app manifest with name, icons, theme color, start URL and scope set to `/gaming-hub/`
+- Added `sw.js` — service worker with network-first caching for `data/**` and `changelog.md`, cache-first for all static assets; old caches deleted on activation
+- Generated `assets/icon-192.png` and `assets/icon-512.png` from `avatar.png` for PWA icon sizes
+- Added `<link rel="manifest">` and SW registration script to all six `index.html` files
 
 ### RetroAchievements
 

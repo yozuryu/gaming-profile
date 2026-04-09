@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="manifest" href="../manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yozuryu · Changelog</title>
 
@@ -38,5 +39,6 @@
 <body class="bg-[#171a21]">
     <div id="root"></div>
     <script type="text/babel" data-type="module" src="./app.js"></script>
+    <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/gaming-hub/sw.js', { scope: '/gaming-hub/' });</script>
 </body>
 </html>
