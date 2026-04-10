@@ -14,7 +14,7 @@
             "iconUrl": "9d77be1c422cd2ada0606c376a5b0f724b74cf01.jpg",
             "iconGrayUrl": "b361284f74bd5b7b1373ac7f8192173325514380.jpg",
             "hidden": false,
-            "globalPct": 5.4
+            "globalPct": 5.5
         },
         {
             "apiName": "TROPHY2_MAX_APRANK",
@@ -179,7 +179,7 @@
             "iconUrl": "b0e0d0a891e5cb35697219719dfeea8a56eeb4c8.jpg",
             "iconGrayUrl": "6d966fa436ca4b7a1f7e53e922e570604e0075c0.jpg",
             "hidden": false,
-            "globalPct": 65.3
+            "globalPct": 65.4
         },
         {
             "apiName": "TROPHY2_BATTLECOUNT_A",
@@ -245,7 +245,7 @@
             "iconUrl": "e5702b4087211323d59798f0395d4957605640ff.jpg",
             "iconGrayUrl": "04642419580eb57b5031dc467a049cc08d93073b.jpg",
             "hidden": false,
-            "globalPct": 74.7
+            "globalPct": 74.8
         },
         {
             "apiName": "TROPHY2_MASSIVE_BASTER",
@@ -278,7 +278,7 @@
             "iconUrl": "f55d489cf7e990e369bf72a289f855ac2f0b1afd.jpg",
             "iconGrayUrl": "99b3354c6e4cb5a6b56525102160f6140e939755.jpg",
             "hidden": false,
-            "globalPct": 68.2
+            "globalPct": 68.3
         },
         {
             "apiName": "TROPHY2_MASTER_RUSH",
@@ -399,7 +399,7 @@
             "iconUrl": "04ccd2246993be1326f19dcda5ce9324dd95b18a.jpg",
             "iconGrayUrl": "fef4eeab989cb3a66f933f47b575ecbed0cf96ef.jpg",
             "hidden": false,
-            "globalPct": 20.8
+            "globalPct": 20.9
         },
         {
             "apiName": "TROPHY2_KIZUNA_JUSIS",
@@ -421,7 +421,7 @@
             "iconUrl": "fd42f7f0786527a0e56adb60a4b600f26e0b751b.jpg",
             "iconGrayUrl": "1f49b5e60c90f9d23316d53cf33c911ef6b3e850.jpg",
             "hidden": false,
-            "globalPct": 24.1
+            "globalPct": 24.2
         },
         {
             "apiName": "TROPHY2_KIZUNA_GAIUS",
@@ -509,7 +509,7 @@
             "iconUrl": "0c25c079341450c784e004ed72c1d05f8a7d869f.jpg",
             "iconGrayUrl": "ebf1aaedced458aa37f89a52f5ff9d48330dea65.jpg",
             "hidden": true,
-            "globalPct": 77.3
+            "globalPct": 77.4
         },
         {
             "apiName": "TROPHY2_SCENARIO_INTER",
@@ -553,7 +553,7 @@
             "iconUrl": "d4649d04a9022e57a36aa9737d00230452d2cd6c.jpg",
             "iconGrayUrl": "17fdb907735b1d07480466177de0555f6cfa6223.jpg",
             "hidden": true,
-            "globalPct": 65.1
+            "globalPct": 65.2
         },
         {
             "apiName": "TROPHY2_SCENARIO_AFTER",
@@ -564,7 +564,7 @@
             "iconUrl": "a4445dede09040e7a6d17d50dc07ff363104b4f1.jpg",
             "iconGrayUrl": "3dd5053766d854f273f3846fcb6b35b59f08eb00.jpg",
             "hidden": true,
-            "globalPct": 59.4
+            "globalPct": 59.5
         }
     ],
     "playtimeForever": 6615,
@@ -580,7 +580,7 @@
             "unlockedAt": "2018-03-29T21:46:27.000Z",
             "iconUrl": "9d77be1c422cd2ada0606c376a5b0f724b74cf01.jpg",
             "iconGrayUrl": "b361284f74bd5b7b1373ac7f8192173325514380.jpg",
-            "globalPct": 5.4
+            "globalPct": 5.5
         },
         {
             "apiName": "TROPHY2_GETALL_TREASURE",

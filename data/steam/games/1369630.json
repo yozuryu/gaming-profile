@@ -102,7 +102,7 @@
             "iconUrl": "0e8ada288312007cca91c1bbe2a54704f33ca9f8.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
             "hidden": false,
-            "globalPct": 68.1
+            "globalPct": 68.2
         },
         {
             "apiName": "ACH_SPIRIT_GET_COUNT_10",
@@ -157,7 +157,7 @@
             "iconUrl": "800ad834268103da8a2b793d7812d965a4f3015d.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
             "hidden": true,
-            "globalPct": 39.5
+            "globalPct": 39.6
         },
         {
             "apiName": "ACH_PASSIVE_GET_COUNT_ALL",
@@ -256,7 +256,7 @@
             "iconUrl": "a7cc73d61276b6c6356bd1630749d6001df3ebda.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
             "hidden": true,
-            "globalPct": 24.2
+            "globalPct": 24.3
         },
         {
             "apiName": "ACH_ITEMS_GET_ALL_HEALPOWER",
@@ -267,7 +267,7 @@
             "iconUrl": "7ba90c72761694c2f71a2758ae2d6f2be73ac33e.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
             "hidden": true,
-            "globalPct": 31
+            "globalPct": 31.1
         },
         {
             "apiName": "ACH_TIPS_GET_024-028",
@@ -333,7 +333,7 @@
             "iconUrl": "9c2d6eb65fa85337d11f5f7bfeef8883b2459e20.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
             "hidden": true,
-            "globalPct": 30.1
+            "globalPct": 30.2
         },
         {
             "apiName": "ACH_ENDING_A",
@@ -355,7 +355,7 @@
             "iconUrl": "25179fcf505f657a8d95ea9c03b5b1bbc0ac1267.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
             "hidden": true,
-            "globalPct": 29.4
+            "globalPct": 29.5
         },
         {
             "apiName": "ACH_ENDING_C",
@@ -377,7 +377,7 @@
             "iconUrl": "1f2084320edacecb8b337001672de7cf10571184.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
             "hidden": true,
-            "globalPct": 35.5
+            "globalPct": 35.6
         },
         {
             "apiName": "ACH_ACTION_PILE_LVL3",
@@ -473,7 +473,7 @@
             "unlockedAt": "2026-03-01T13:08:39.000Z",
             "iconUrl": "0e8ada288312007cca91c1bbe2a54704f33ca9f8.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
-            "globalPct": 68.1
+            "globalPct": 68.2
         },
         {
             "apiName": "ACH_PLAYER_LEVEL_10",

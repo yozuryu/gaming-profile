@@ -88,7 +88,7 @@
             "description": "Play the “Mr. Porter’s Feast” minigame",
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1374990/b2a0195070131049710d503f611a652154715107.jpg",
             "unlockedAt": "2025-09-13T09:36:22.000Z",
-            "globalPct": 61.1
+            "globalPct": 61
         },
         {
             "appId": 1374990,
@@ -98,7 +98,7 @@
             "description": "Complete the “Everest's Snowy Adventure” minigame the first time",
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1374990/6cc9cf3beb1cf20a561d6dc535951e3d4c0fb24f.jpg",
             "unlockedAt": "2025-09-13T09:33:03.000Z",
-            "globalPct": 57.1
+            "globalPct": 57
         },
         {
             "appId": 1374990,
@@ -218,7 +218,7 @@
             "description": "",
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/738540/990c1a0791d8e5f892d11deab73e239dc3166dc2.jpg",
             "unlockedAt": "2025-07-20T02:55:53.000Z",
-            "globalPct": 16.9
+            "globalPct": 16.8
         },
         {
             "appId": 1903340,
@@ -258,7 +258,7 @@
             "description": "",
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/5aad0ceada59780c0dabc820a7af23418bda5332.jpg",
             "unlockedAt": "2025-07-14T13:58:03.000Z",
-            "globalPct": 44
+            "globalPct": 44.1
         },
         {
             "appId": 1903340,
@@ -308,7 +308,7 @@
             "description": "Get Pipp",
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/2235440/25b8e90aee1b2dfda1ce2059d7a7d4b2099b2131.jpg",
             "unlockedAt": "2025-07-11T13:32:16.000Z",
-            "globalPct": 29.2
+            "globalPct": 29.1
         }
     ]
 }

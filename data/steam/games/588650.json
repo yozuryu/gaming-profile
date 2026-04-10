@@ -366,7 +366,7 @@
             "iconUrl": "6b0198aca19d5f42b173593403247f39346e416a.jpg",
             "iconGrayUrl": "ec1af1dbd8f650c74e7b2ab015d1430111c54eba.jpg",
             "hidden": true,
-            "globalPct": 11.9
+            "globalPct": 12
         },
         {
             "apiName": "BIOME_REACHED_CLOCKTOWER",
@@ -388,7 +388,7 @@
             "iconUrl": "0452b59170b2f1359159c978a537057d17e6ffc4.jpg",
             "iconGrayUrl": "843a425721810907d1653304e14b074b30f7c7d6.jpg",
             "hidden": false,
-            "globalPct": 57.2
+            "globalPct": 57.3
         },
         {
             "apiName": "BIOME_REACHED_ANCIENTTEMPLE",
@@ -1169,7 +1169,7 @@
             "iconUrl": "b18aab2ef7358bdec73fa59e334bcd3c55a7f995.jpg",
             "iconGrayUrl": "5b0c340bbed5706e7c4cf98f64a3d370594f3953.jpg",
             "hidden": false,
-            "globalPct": 33
+            "globalPct": 33.1
         },
         {
             "apiName": "FEAT_DEBT",
@@ -1202,7 +1202,7 @@
             "iconUrl": "1e66316277c961f3a61812dfce92a547986946b7.jpg",
             "iconGrayUrl": "cee9cac435e1e9c569da32f1e9bca1f10d514535.jpg",
             "hidden": false,
-            "globalPct": 21.7
+            "globalPct": 21.8
         },
         {
             "apiName": "BIOME_REACHED_PCASTLE",

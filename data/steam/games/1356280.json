@@ -69,7 +69,7 @@
             "iconUrl": "b57b0591848222646156367a61999a0b4ec00a8d.jpg",
             "iconGrayUrl": "777fbf985adb7b25bf412116c8131719e76c838b.jpg",
             "hidden": false,
-            "globalPct": 9.5
+            "globalPct": 9.6
         },
         {
             "apiName": "ACV_TheNewDuty",
@@ -223,7 +223,7 @@
             "iconUrl": "24bf4c9046f355dec7baae3943a7dcc9ad59e37e.jpg",
             "iconGrayUrl": "09a116296ba08cd192865fd4e25bf123abc56860.jpg",
             "hidden": false,
-            "globalPct": 12.3
+            "globalPct": 12.4
         },
         {
             "apiName": "ACV_ExemplarySoldier",
@@ -300,7 +300,7 @@
             "iconUrl": "523b1c938116470666d70c095289d7a0fd9019f1.jpg",
             "iconGrayUrl": "10fc1dd39822cc623e28c87ed5e172749ff6c5ee.jpg",
             "hidden": false,
-            "globalPct": 12
+            "globalPct": 12.1
         },
         {
             "apiName": "ACV_DefeatSnowmonster",
@@ -515,7 +515,7 @@
             "unlockedAt": null,
             "iconUrl": "b57b0591848222646156367a61999a0b4ec00a8d.jpg",
             "iconGrayUrl": "777fbf985adb7b25bf412116c8131719e76c838b.jpg",
-            "globalPct": 9.5
+            "globalPct": 9.6
         }
     ]
 }

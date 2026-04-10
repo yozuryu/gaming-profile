@@ -25,7 +25,7 @@
             "iconUrl": "488f728785df894915f393064b49d355a4cba081.jpg",
             "iconGrayUrl": "97f44eb89a444e3ff91d6cfd85a9286958c37ec5.jpg",
             "hidden": false,
-            "globalPct": 50.1
+            "globalPct": 50
         },
         {
             "apiName": "japanese_play",
@@ -80,7 +80,7 @@
             "iconUrl": "449131f4468e7e7262b15ae5cf0e75e02082fefa.jpg",
             "iconGrayUrl": "c1c1597b95cb7a4d9c75d418b43f0631d40ddaa2.jpg",
             "hidden": false,
-            "globalPct": 32.5
+            "globalPct": 32.4
         }
     ],
     "playtimeForever": 393,
@@ -114,7 +114,7 @@
             "unlockedAt": "2017-09-19T20:12:35.000Z",
             "iconUrl": "488f728785df894915f393064b49d355a4cba081.jpg",
             "iconGrayUrl": "97f44eb89a444e3ff91d6cfd85a9286958c37ec5.jpg",
-            "globalPct": 50.1
+            "globalPct": 50
         },
         {
             "apiName": "first_play",
