@@ -41048,7 +41048,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "106742",
-                    "numAwarded": 1406,
+                    "numAwarded": 1407,
                     "numAwardedHardcore": 673,
                     "displayOrder": 54
                 },
@@ -41096,7 +41096,7 @@
                     "trueRatio": 71,
                     "type": "missable",
                     "badgeName": "106745",
-                    "numAwarded": 843,
+                    "numAwarded": 844,
                     "numAwardedHardcore": 438,
                     "displayOrder": 64
                 },
@@ -41168,8 +41168,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "106755",
-                    "numAwarded": 2302,
-                    "numAwardedHardcore": 1089,
+                    "numAwarded": 2303,
+                    "numAwardedHardcore": 1090,
                     "displayOrder": 1
                 },
                 "95520": {
@@ -41492,7 +41492,7 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "106698",
-                    "numAwarded": 772,
+                    "numAwarded": 773,
                     "numAwardedHardcore": 446,
                     "displayOrder": 27
                 },
@@ -41876,8 +41876,8 @@
                     "trueRatio": 7,
                     "type": "missable",
                     "badgeName": "107870",
-                    "numAwarded": 2432,
-                    "numAwardedHardcore": 1112,
+                    "numAwarded": 2433,
+                    "numAwardedHardcore": 1113,
                     "displayOrder": 34
                 },
                 "97752": {
@@ -41888,7 +41888,7 @@
                     "trueRatio": 13,
                     "type": "missable",
                     "badgeName": "107878",
-                    "numAwarded": 742,
+                    "numAwarded": 743,
                     "numAwardedHardcore": 461,
                     "displayOrder": 65
                 },
@@ -41900,7 +41900,7 @@
                     "trueRatio": 30,
                     "type": "missable",
                     "badgeName": "107880",
-                    "numAwarded": 568,
+                    "numAwarded": 569,
                     "numAwardedHardcore": 406,
                     "displayOrder": 65
                 },
@@ -44564,8 +44564,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 3601,
-            "numDistinctPlayersHardcore": 3601,
+            "numDistinctPlayersCasual": 3602,
+            "numDistinctPlayersHardcore": 3602,
             "numAchievements": 129,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -44622,7 +44622,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "117189",
-                    "numAwarded": 2305,
+                    "numAwarded": 2306,
                     "numAwardedHardcore": 907,
                     "displayOrder": 0
                 },
@@ -44634,7 +44634,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "117190",
-                    "numAwarded": 2167,
+                    "numAwarded": 2168,
                     "numAwardedHardcore": 868,
                     "displayOrder": 0
                 },
@@ -44646,7 +44646,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "116645",
-                    "numAwarded": 2084,
+                    "numAwarded": 2085,
                     "numAwardedHardcore": 832,
                     "displayOrder": 0
                 },
@@ -44694,7 +44694,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "117192",
-                    "numAwarded": 1755,
+                    "numAwarded": 1756,
                     "numAwardedHardcore": 731,
                     "displayOrder": 0
                 },
@@ -44766,8 +44766,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "116648",
-                    "numAwarded": 1211,
-                    "numAwardedHardcore": 541,
+                    "numAwarded": 1212,
+                    "numAwardedHardcore": 542,
                     "displayOrder": 0
                 },
                 "108769": {
@@ -44778,8 +44778,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "117194",
-                    "numAwarded": 754,
-                    "numAwardedHardcore": 387,
+                    "numAwarded": 755,
+                    "numAwardedHardcore": 388,
                     "displayOrder": 0
                 },
                 "108770": {
@@ -44790,8 +44790,8 @@
                     "trueRatio": 12,
                     "type": "missable",
                     "badgeName": "117421",
-                    "numAwarded": 399,
-                    "numAwardedHardcore": 273,
+                    "numAwarded": 400,
+                    "numAwardedHardcore": 274,
                     "displayOrder": 0
                 },
                 "108771": {
@@ -44871,7 +44871,7 @@
                     "title": "Stop Picking on Him",
                     "description": "Defeat Kahn again",
                     "points": 5,
-                    "trueRatio": 8,
+                    "trueRatio": 9,
                     "type": "progression",
                     "badgeName": "116652",
                     "numAwarded": 934,
@@ -44898,7 +44898,7 @@
                     "trueRatio": 9,
                     "type": "progression",
                     "badgeName": "116651",
-                    "numAwarded": 883,
+                    "numAwarded": 884,
                     "numAwardedHardcore": 407,
                     "displayOrder": 0
                 },
@@ -44922,7 +44922,7 @@
                     "trueRatio": 9,
                     "type": "progression",
                     "badgeName": "117436",
-                    "numAwarded": 780,
+                    "numAwarded": 781,
                     "numAwardedHardcore": 366,
                     "displayOrder": 0
                 },
@@ -44958,7 +44958,7 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "116655",
-                    "numAwarded": 741,
+                    "numAwarded": 742,
                     "numAwardedHardcore": 350,
                     "displayOrder": 0
                 },
@@ -44970,7 +44970,7 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "117209",
-                    "numAwarded": 730,
+                    "numAwarded": 731,
                     "numAwardedHardcore": 347,
                     "displayOrder": 0
                 },
@@ -45051,7 +45051,7 @@
                     "title": "Muddied Waters",
                     "description": "Obtain the Mud Flow evocation from the Mud Dragon",
                     "points": 5,
-                    "trueRatio": 11,
+                    "trueRatio": 12,
                     "type": null,
                     "badgeName": "117212",
                     "numAwarded": 551,
@@ -45075,7 +45075,7 @@
                     "title": "Piqued Interest",
                     "description": "Become an apprentice of Master Njomo",
                     "points": 5,
-                    "trueRatio": 11,
+                    "trueRatio": 12,
                     "type": null,
                     "badgeName": "117197",
                     "numAwarded": 532,
@@ -45354,7 +45354,7 @@
                     "trueRatio": 25,
                     "type": "progression",
                     "badgeName": "116662",
-                    "numAwarded": 521,
+                    "numAwarded": 522,
                     "numAwardedHardcore": 265,
                     "displayOrder": 1
                 },
@@ -45591,7 +45591,7 @@
                     "title": "Sand-drifter IV",
                     "description": "Finish the race from Kyoin to Shikk in 39 seconds or under",
                     "points": 10,
-                    "trueRatio": 44,
+                    "trueRatio": 45,
                     "type": null,
                     "badgeName": "116673",
                     "numAwarded": 188,
@@ -45711,7 +45711,7 @@
                     "title": "Genocide",
                     "description": "Learn all skills from Master Abbess",
                     "points": 10,
-                    "trueRatio": 29,
+                    "trueRatio": 30,
                     "type": null,
                     "badgeName": "118904",
                     "numAwarded": 359,
@@ -45783,7 +45783,7 @@
                     "title": "That's a Lot of Damage",
                     "description": "Learn all skills from Master Bunyan",
                     "points": 10,
-                    "trueRatio": 44,
+                    "trueRatio": 45,
                     "type": null,
                     "badgeName": "118910",
                     "numAwarded": 198,
@@ -45858,8 +45858,8 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "119877",
-                    "numAwarded": 2030,
-                    "numAwardedHardcore": 852,
+                    "numAwarded": 2032,
+                    "numAwardedHardcore": 853,
                     "displayOrder": 2
                 },
                 "109412": {
@@ -45891,7 +45891,7 @@
                     "title": "Rise from the Ashes",
                     "description": "Perform Nina's secret combo",
                     "points": 5,
-                    "trueRatio": 14,
+                    "trueRatio": 15,
                     "type": null,
                     "badgeName": "119722",
                     "numAwarded": 319,
@@ -45975,7 +45975,7 @@
                     "title": "Dragonborne",
                     "description": "Obtain all of the dragon equipment from chests (Bought/Stolen Tear doesn't count)",
                     "points": 10,
-                    "trueRatio": 44,
+                    "trueRatio": 45,
                     "type": null,
                     "badgeName": "119883",
                     "numAwarded": 200,
@@ -46095,7 +46095,7 @@
                     "title": "Get Off Your High Horse",
                     "description": "Defeat Rider",
                     "points": 25,
-                    "trueRatio": 143,
+                    "trueRatio": 144,
                     "type": null,
                     "badgeName": "120198",
                     "numAwarded": 154,
@@ -54550,7 +54550,7 @@
                     "trueRatio": 17,
                     "type": "missable",
                     "badgeName": "114982",
-                    "numAwarded": 1177,
+                    "numAwarded": 1178,
                     "numAwardedHardcore": 723,
                     "displayOrder": 57
                 },
@@ -54574,7 +54574,7 @@
                     "trueRatio": 18,
                     "type": "missable",
                     "badgeName": "114984",
-                    "numAwarded": 1019,
+                    "numAwarded": 1020,
                     "numAwardedHardcore": 651,
                     "displayOrder": 59
                 },
@@ -54586,7 +54586,7 @@
                     "trueRatio": 18,
                     "type": "missable",
                     "badgeName": "114985",
-                    "numAwarded": 1057,
+                    "numAwarded": 1058,
                     "numAwardedHardcore": 668,
                     "displayOrder": 60
                 },
@@ -54610,7 +54610,7 @@
                     "trueRatio": 18,
                     "type": "missable",
                     "badgeName": "114987",
-                    "numAwarded": 1092,
+                    "numAwarded": 1093,
                     "numAwardedHardcore": 659,
                     "displayOrder": 62
                 },
@@ -54634,7 +54634,7 @@
                     "trueRatio": 19,
                     "type": "missable",
                     "badgeName": "114989",
-                    "numAwarded": 992,
+                    "numAwarded": 993,
                     "numAwardedHardcore": 617,
                     "displayOrder": 64
                 },
@@ -54778,7 +54778,7 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "114936",
-                    "numAwarded": 1419,
+                    "numAwarded": 1420,
                     "numAwardedHardcore": 811,
                     "displayOrder": 10
                 },
@@ -54874,7 +54874,7 @@
                     "trueRatio": 54,
                     "type": "win_condition",
                     "badgeName": "114946",
-                    "numAwarded": 852,
+                    "numAwarded": 853,
                     "numAwardedHardcore": 518,
                     "displayOrder": 20
                 },
@@ -54934,7 +54934,7 @@
                     "trueRatio": 150,
                     "type": null,
                     "badgeName": "114948",
-                    "numAwarded": 470,
+                    "numAwarded": 471,
                     "numAwardedHardcore": 339,
                     "displayOrder": 22
                 },
@@ -54970,7 +54970,7 @@
                     "trueRatio": 18,
                     "type": "missable",
                     "badgeName": "114955",
-                    "numAwarded": 1040,
+                    "numAwarded": 1041,
                     "numAwardedHardcore": 659,
                     "displayOrder": 29
                 },
@@ -54982,7 +54982,7 @@
                     "trueRatio": 17,
                     "type": null,
                     "badgeName": "114956",
-                    "numAwarded": 1140,
+                    "numAwarded": 1141,
                     "numAwardedHardcore": 703,
                     "displayOrder": 30
                 },
@@ -54994,7 +54994,7 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "114957",
-                    "numAwarded": 1343,
+                    "numAwarded": 1344,
                     "numAwardedHardcore": 791,
                     "displayOrder": 31
                 },
@@ -55006,7 +55006,7 @@
                     "trueRatio": 17,
                     "type": null,
                     "badgeName": "114958",
-                    "numAwarded": 1227,
+                    "numAwarded": 1228,
                     "numAwardedHardcore": 741,
                     "displayOrder": 32
                 },
@@ -55058,7 +55058,7 @@
                     "trueRatio": 18,
                     "type": "missable",
                     "badgeName": "114959",
-                    "numAwarded": 1059,
+                    "numAwarded": 1060,
                     "numAwardedHardcore": 662,
                     "displayOrder": 33
                 },
@@ -55262,7 +55262,7 @@
                     "trueRatio": 24,
                     "type": null,
                     "badgeName": "114976",
-                    "numAwarded": 713,
+                    "numAwarded": 714,
                     "numAwardedHardcore": 447,
                     "displayOrder": 50
                 },
@@ -66030,8 +66030,8 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 148,
-            "numDistinctPlayersHardcore": 148,
+            "numDistinctPlayersCasual": 149,
+            "numDistinctPlayersHardcore": 149,
             "numAchievements": 80,
             "numAwardedToUser": 80,
             "numAwardedToUserHardcore": 80,
@@ -66161,7 +66161,7 @@
                     "title": "Moonlit Massacre",
                     "description": "Defeat Lore-a-Lua",
                     "points": 10,
-                    "trueRatio": 42,
+                    "trueRatio": 43,
                     "type": "progression",
                     "badgeName": "649925",
                     "numAwarded": 46,
@@ -67144,7 +67144,7 @@
                     "trueRatio": 3,
                     "type": "progression",
                     "badgeName": "649990",
-                    "numAwarded": 139,
+                    "numAwarded": 140,
                     "numAwardedHardcore": 114,
                     "displayOrder": 1,
                     "dateEarned": "2026-01-14 15:16:59",
