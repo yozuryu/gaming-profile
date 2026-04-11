@@ -1230,6 +1230,8 @@ export default function App() {
   const [progressSearch, setProgressSearch] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [showFloatingTabs, setShowFloatingTabs] = useState(false);
+  const [pillLeaving, setPillLeaving] = useState(false);
+  const pillLeaveTimer = useRef(null);
   const [statsExpanded, setStatsExpanded] = useState(false);
   const tabBarRef = useRef(null);
   const [watchlistSearch, setWatchlistSearch] = useState('');
@@ -1341,7 +1343,23 @@ export default function App() {
       setShowScrollTop(y > 400);
       if (window.innerWidth < 768 && tabBarRef.current) {
         const bottom = tabBarRef.current.getBoundingClientRect().bottom;
-        setShowFloatingTabs(bottom < 0);
+        if (bottom < 0) {
+          if (pillLeaveTimer.current) { clearTimeout(pillLeaveTimer.current); pillLeaveTimer.current = null; }
+          setPillLeaving(false);
+          setShowFloatingTabs(true);
+        } else {
+          setShowFloatingTabs(prev => {
+            if (prev && !pillLeaveTimer.current) {
+              setPillLeaving(true);
+              pillLeaveTimer.current = setTimeout(() => {
+                setShowFloatingTabs(false);
+                setPillLeaving(false);
+                pillLeaveTimer.current = null;
+              }, 210);
+            }
+            return prev;
+          });
+        }
       }
     };
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -1717,7 +1735,7 @@ export default function App() {
         </div>
 
         {/* ── Floating tab pill (mobile only, shown when natural bar scrolls off screen) ── */}
-        {showFloatingTabs && (
+        {(showFloatingTabs || pillLeaving) && (
           <div
             className="md:hidden fixed z-[190] flex items-center gap-0.5 px-1.5 py-1.5 rounded-full shadow-[0_4px_24px_rgba(0,0,0,0.7)]"
             style={{
@@ -1728,6 +1746,7 @@ export default function App() {
               border: '1px solid #2a475e',
               backdropFilter: 'blur(8px)',
               WebkitBackdropFilter: 'blur(8px)',
+              animation: pillLeaving ? 'slideDownPill 0.2s ease both' : 'slideUpPill 0.2s ease both',
             }}
           >
             {[
@@ -2072,6 +2091,15 @@ export default function App() {
         .mask-fade {
            mask-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
            -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+
+        @keyframes slideUpPill {
+          from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+          to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+        @keyframes slideDownPill {
+          from { opacity: 1; transform: translateX(-50%) translateY(0); }
+          to   { opacity: 0; transform: translateX(-50%) translateY(12px); }
         }
 
         /* Shimmer skeleton */

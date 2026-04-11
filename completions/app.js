@@ -221,7 +221,14 @@ const App = () => {
     }, []);
 
     const completions = useMemo(() => {
-        const ra    = normalizeRA(raProfile?.pageAwards?.visibleUserAwards ?? [], showBeaten);
+        const raRaw = normalizeRA(raProfile?.pageAwards?.visibleUserAwards ?? [], showBeaten);
+        // Deduplicate RA entries by gameId: prefer mastered over beaten
+        const raMap = new Map();
+        for (const entry of raRaw) {
+            const key = entry.gameId;
+            if (!raMap.has(key) || entry.type === 'mastered') raMap.set(key, entry);
+        }
+        const ra    = Array.from(raMap.values());
         const steam = normalizeSteam(steamProfile?.perfectGames ?? []);
         let all = [...ra, ...steam];
         if (platform === 'ra')    all = all.filter(c => c.platform === 'ra');

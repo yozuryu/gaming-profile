@@ -864,6 +864,10 @@ const App = () => {
     })();
     const [activeTab, setActiveTab] = useState(initialTab);
     const [showScrollTop, setShowScrollTop] = useState(false);
+    const [showFloatingTabs, setShowFloatingTabs] = useState(false);
+    const [pillLeaving, setPillLeaving] = useState(false);
+    const pillLeaveTimer = useRef(null);
+    const tabBarRef = useRef(null);
     const setTab = (tab) => {
         setActiveTab(tab);
         const url = new URL(window.location);
@@ -872,7 +876,30 @@ const App = () => {
     };
 
     useEffect(() => {
-        const onScroll = () => setShowScrollTop(window.scrollY > 400);
+        const onScroll = () => {
+            const y = window.scrollY;
+            setShowScrollTop(y > 400);
+            if (window.innerWidth < 768 && tabBarRef.current) {
+                const bottom = tabBarRef.current.getBoundingClientRect().bottom;
+                if (bottom < 0) {
+                    if (pillLeaveTimer.current) { clearTimeout(pillLeaveTimer.current); pillLeaveTimer.current = null; }
+                    setPillLeaving(false);
+                    setShowFloatingTabs(true);
+                } else {
+                    setShowFloatingTabs(prev => {
+                        if (prev && !pillLeaveTimer.current) {
+                            setPillLeaving(true);
+                            pillLeaveTimer.current = setTimeout(() => {
+                                setShowFloatingTabs(false);
+                                setPillLeaving(false);
+                                pillLeaveTimer.current = null;
+                            }, 210);
+                        }
+                        return prev;
+                    });
+                }
+            }
+        };
         window.addEventListener('scroll', onScroll, { passive: true });
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
@@ -992,14 +1019,18 @@ const App = () => {
         { label: 'Perfect Games',          value: (stats.perfectCount ?? (gamesData ? perfectGames.length : null))?.toString() ?? '—' },
     ];
 
-    const TABS = [
-        { id: 'recent',   label: 'Recent Games' },
-        { id: 'progress', label: 'Completion Progress' },
-        { id: 'activity', label: 'Activity'     },
-    ];
-
     return (
         <div className="bg-[#171a21] text-[#c6d4df] min-h-screen flex flex-col font-sans selection:bg-[#66c0f4] selection:text-[#171a21]">
+            <style>{`
+                @keyframes slideUpPill {
+                    from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+                    to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+                }
+                @keyframes slideDownPill {
+                    from { opacity: 1; transform: translateX(-50%) translateY(0); }
+                    to   { opacity: 0; transform: translateX(-50%) translateY(12px); }
+                }
+            `}</style>
 
             {/* Topbar */}
             <div className="page-topbar sticky top-0 z-50 bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
@@ -1280,21 +1311,68 @@ const App = () => {
 
                 </div>
 
-                {/* ── Tab bar — RA style ── */}
-                <div className="sticky top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 mb-4 border-b border-[#2a475e]">
-                <div className="flex items-center gap-3 md:gap-6 px-4 md:px-8 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none' }}>
-                    {TABS.map(({ id, label }) => (
-                        <button
-                            key={id}
-                            onClick={() => setTab(id)}
-                            className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === id ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
-                        >
-                            {label}
-                            {activeTab === id && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]" />}
-                        </button>
-                    ))}
+                {/* ── Tab bar ── */}
+                <div ref={tabBarRef} className="md:sticky md:top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 mb-4 border-b border-[#2a475e]">
+                <div className="flex items-center gap-1 md:gap-6 px-2 md:px-8 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none' }}>
+                    <button onClick={() => setTab('recent')} className={`flex-1 md:flex-none flex flex-col md:flex-row items-center justify-center gap-1 md:gap-0 py-2.5 md:py-0 md:pb-2 px-1 md:px-0 transition-colors relative ${activeTab === 'recent' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}>
+                        <Clock size={18} className="block md:hidden shrink-0" />
+                        <span className="block md:hidden text-[9px] font-semibold uppercase tracking-[0.06em] leading-none">Recent</span>
+                        <span className="hidden md:inline text-[11px] md:text-[14px] uppercase tracking-wide font-medium whitespace-nowrap">Recent Games</span>
+                        {activeTab === 'recent' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]" />}
+                    </button>
+                    <button onClick={() => setTab('progress')} className={`flex-1 md:flex-none flex flex-col md:flex-row items-center justify-center gap-1 md:gap-0 py-2.5 md:py-0 md:pb-2 px-1 md:px-0 transition-colors relative ${activeTab === 'progress' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}>
+                        <BarChart2 size={18} className="block md:hidden shrink-0" />
+                        <span className="block md:hidden text-[9px] font-semibold uppercase tracking-[0.06em] leading-none">Progress</span>
+                        <span className="hidden md:inline text-[11px] md:text-[14px] uppercase tracking-wide font-medium whitespace-nowrap">Completion Progress</span>
+                        {activeTab === 'progress' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]" />}
+                    </button>
+                    <button onClick={() => setTab('activity')} className={`flex-1 md:flex-none flex flex-col md:flex-row items-center justify-center gap-1 md:gap-0 py-2.5 md:py-0 md:pb-2 px-1 md:px-0 transition-colors relative ${activeTab === 'activity' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}>
+                        <Activity size={18} className="block md:hidden shrink-0" />
+                        <span className="block md:hidden text-[9px] font-semibold uppercase tracking-[0.06em] leading-none">Activity</span>
+                        <span className="hidden md:inline text-[11px] md:text-[14px] uppercase tracking-wide font-medium whitespace-nowrap">Activity</span>
+                        {activeTab === 'activity' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]" />}
+                    </button>
                 </div>
                 </div>
+
+                {/* ── Floating tab pill (mobile only) ── */}
+                {(showFloatingTabs || pillLeaving) && (
+                    <div
+                        className="md:hidden fixed z-[190] flex items-center gap-0.5 px-1.5 py-1.5 rounded-full shadow-[0_4px_24px_rgba(0,0,0,0.7)]"
+                        style={{
+                            bottom: 'calc(68px + env(safe-area-inset-bottom, 0px))',
+                            left: '50%',
+                            transform: 'translateX(-50%)',
+                            background: 'rgba(19,26,34,0.92)',
+                            border: '1px solid #2a475e',
+                            backdropFilter: 'blur(8px)',
+                            WebkitBackdropFilter: 'blur(8px)',
+                            animation: pillLeaving ? 'slideDownPill 0.2s ease both' : 'slideUpPill 0.2s ease both',
+                        }}
+                    >
+                        {[
+                            { id: 'recent',   icon: <Clock size={17} />,    label: 'Recent'   },
+                            { id: 'progress', icon: <BarChart2 size={17} />, label: 'Progress' },
+                            { id: 'activity', icon: <Activity size={17} />,  label: 'Activity' },
+                        ].map(({ id, icon, label }) => (
+                            <button
+                                key={id}
+                                onClick={() => setTab(id)}
+                                title={label}
+                                className="relative w-10 h-10 flex items-center justify-center rounded-full transition-all"
+                                style={{
+                                    color: activeTab === id ? '#66c0f4' : '#546270',
+                                    background: activeTab === id ? '#66c0f422' : 'transparent',
+                                }}
+                            >
+                                {icon}
+                                {activeTab === id && (
+                                    <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-[#66c0f4]" />
+                                )}
+                            </button>
+                        ))}
+                    </div>
+                )}
 
                 {/* ── Tab content ── */}
                 <div className="flex flex-col gap-3">
@@ -1348,7 +1426,8 @@ const App = () => {
             {showScrollTop && (
                 <button
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                    className="scroll-top-btn fixed bottom-14 right-4 z-50 w-10 h-10 bg-[#131a22] border border-[#2a475e] hover:border-[#66c0f4] hover:text-[#66c0f4] text-[#8f98a0] rounded-full flex items-center justify-center shadow-lg transition-all duration-200 active:scale-90"
+                    className="scroll-top-btn fixed right-4 z-50 w-10 h-10 bg-[#131a22] border border-[#2a475e] hover:border-[#66c0f4] hover:text-[#66c0f4] text-[#8f98a0] rounded-full flex items-center justify-center shadow-lg transition-all duration-200 active:scale-90"
+                    style={{ bottom: (showFloatingTabs || pillLeaving) ? 'calc(120px + env(safe-area-inset-bottom, 0px))' : '3.5rem' }}
                     title="Scroll to top"
                 >
                     <ChevronDown size={16} className="rotate-180" />

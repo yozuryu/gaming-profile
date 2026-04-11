@@ -2,6 +2,39 @@
 
 ## 2026-04-11
 
+Steam profile tab bar gets full RA-style mobile treatment.
+
+### Steam
+
+- Tab bar on mobile: icons (Clock / BarChart2 / Activity) with short labels, full text labels on desktop — matches RA tab bar layout
+- Tab bar no longer sticky on mobile; scroll-aware floating pill appears when the bar scrolls off screen
+- Floating pill slides up on appear and slides down on disappear (`slideUpPill` / `slideDownPill` keyframes)
+- Scroll-to-top button shifts up when floating pill is visible, same as RA profile
+
+## 2026-04-11
+
+Mobile nav popup vertical pills with slide animations; RA floating tabs gain slide-down exit animation.
+
+### Hub
+
+- Profile popup redesigned as vertical stacked pills: frosted glass rounded-rect container, each platform is a horizontal pill (icon + label), active platform highlighted with color tint
+- Popup slides up on open and slides down on close via CSS transition
+
+### RetroAchievements
+
+- Floating tab pill slides up on appear and slides down on disappear using `slideUpPill` / `slideDownPill` keyframes
+- Exit animation deferred with a 210ms timer so the pill animates out before being unmounted
+
+## 2026-04-11
+
+Mobile refinements across all pages — header spacing, scroll-to-top FAB, stats collapse, Series tab icon, and Completions deduplication.
+
+### Completions
+
+- Deduplicate RA entries by `gameId`: when a game is both mastered and beaten, only the mastered entry is shown — prevents the same game appearing twice when "Show Beaten" is enabled
+
+## 2026-04-11
+
 Mobile refinements across all pages — header spacing, scroll-to-top FAB, stats collapse, and Series tab icon.
 
 ### RetroAchievements

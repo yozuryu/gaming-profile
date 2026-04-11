@@ -211,17 +211,22 @@
       position: fixed;
       left: 50%;
       transform: translateX(-50%) translateY(12px);
-      bottom: calc(64px + env(safe-area-inset-bottom, 0px));
+      bottom: calc(68px + env(safe-area-inset-bottom, 0px));
       z-index: 199;
-      background: #1b2838;
+      background: rgba(19,26,34,0.92);
       border: 1px solid #2a475e;
-      border-radius: 3px;
-      min-width: 220px;
-      max-width: 90vw;
-      box-shadow: 0 -4px 24px rgba(0,0,0,0.5);
+      border-radius: 14px;
+      min-width: 160px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 6px;
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.15s, transform 0.15s;
+      transition: opacity 0.2s, transform 0.2s;
     }
     .mnav-popup.open {
       opacity: 1;
@@ -229,75 +234,62 @@
       transform: translateX(-50%) translateY(0);
     }
 
-    .mnav-popup-hdr {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      font-size: 8px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #546270;
-      padding: 8px 12px 6px;
-      border-bottom: 1px solid #2a475e;
-    }
-
     .mnav-popup-item {
       display: flex;
+      flex-direction: row;
       align-items: center;
-      gap: 10px;
-      padding: 10px 12px;
+      gap: 8px;
+      height: 40px;
+      padding: 0 14px 0 8px;
+      border-radius: 9999px;
       text-decoration: none;
-      color: #c6d4df;
-      border-bottom: 1px solid #1a2535;
-      transition: background 0.1s;
+      color: #546270;
+      transition: background 0.15s, color 0.15s;
       -webkit-tap-highlight-color: transparent;
+      white-space: nowrap;
     }
-    .mnav-popup-item:last-child { border-bottom: none; }
-    .mnav-popup-item:active { background: rgba(255,255,255,0.04); }
+    .mnav-popup-item:active { background: rgba(255,255,255,0.06); }
 
     .mnav-popup-item.mnav-popup-active {
       color: var(--item-color, #66c0f4);
-    }
-    .mnav-popup-item.mnav-popup-active .mnav-popup-item-label {
-      color: var(--item-color, #66c0f4);
+      background: color-mix(in srgb, var(--item-color, #66c0f4) 13%, transparent);
     }
 
     .mnav-popup-icon {
-      width: 24px;
-      height: 24px;
-      border-radius: 2px;
+      width: 20px;
+      height: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      overflow: hidden;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid #2a475e;
     }
     .mnav-popup-icon img {
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
       object-fit: contain;
+      filter: brightness(0.55);
+      transition: filter 0.15s;
+    }
+    .mnav-popup-item.mnav-popup-active .mnav-popup-icon img {
+      filter: none;
     }
 
     .mnav-popup-item-label {
       font-family: 'Segoe UI', Arial, sans-serif;
-      font-size: 12px;
-      font-weight: 500;
-      color: #c6d4df;
-      flex: 1;
-    }
-
-    .mnav-popup-item-arr {
-      font-size: 10px;
-      color: #546270;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      line-height: 1;
+      color: currentColor;
     }
 
     .mnav-popup-loading {
       font-family: 'Segoe UI', Arial, sans-serif;
       font-size: 11px;
       color: #546270;
-      padding: 12px;
-      text-align: center;
+      padding: 12px 16px;
+      white-space: nowrap;
     }
   `;
   document.head.appendChild(style);
@@ -336,10 +328,7 @@
   popup.className = 'mnav-popup';
   popup.setAttribute('role', 'dialog');
   popup.setAttribute('aria-label', 'Select platform');
-  popup.innerHTML = `
-    <div class="mnav-popup-hdr">Select Platform</div>
-    <div class="mnav-popup-loading">Loading…</div>
-  `;
+  popup.innerHTML = `<span class="mnav-popup-loading">Loading…</span>`;
   document.body.appendChild(popup);
 
   // ── Popup open / close ────────────────────────────────────────────────────
@@ -410,7 +399,6 @@
             <img src="${p.icon}" alt="${p.short}" onerror="this.style.display='none'">
           </span>
           <span class="mnav-popup-item-label">${p.label}</span>
-          <span class="mnav-popup-item-arr">→</span>
         `;
         a.addEventListener('click', closePopup);
         popup.appendChild(a);
