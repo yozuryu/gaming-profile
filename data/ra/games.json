@@ -41266,8 +41266,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 6975,
-            "numDistinctPlayersHardcore": 6975,
+            "numDistinctPlayersCasual": 6976,
+            "numDistinctPlayersHardcore": 6976,
             "numAchievements": 108,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -41288,8 +41288,8 @@
                     "trueRatio": 6,
                     "type": "missable",
                     "badgeName": "106754",
-                    "numAwarded": 3488,
-                    "numAwardedHardcore": 1475,
+                    "numAwarded": 3489,
+                    "numAwardedHardcore": 1476,
                     "displayOrder": 30
                 },
                 "94787": {
@@ -41324,8 +41324,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "107881",
-                    "numAwarded": 6821,
-                    "numAwardedHardcore": 2449,
+                    "numAwarded": 6822,
+                    "numAwardedHardcore": 2450,
                     "displayOrder": 0
                 },
                 "94790": {
@@ -41504,8 +41504,8 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "106742",
-                    "numAwarded": 1407,
-                    "numAwardedHardcore": 673,
+                    "numAwarded": 1408,
+                    "numAwardedHardcore": 674,
                     "displayOrder": 54
                 },
                 "95004": {
@@ -41600,8 +41600,8 @@
                     "trueRatio": 25,
                     "type": "missable",
                     "badgeName": "106763",
-                    "numAwarded": 1028,
-                    "numAwardedHardcore": 505,
+                    "numAwarded": 1029,
+                    "numAwardedHardcore": 506,
                     "displayOrder": 70
                 },
                 "95431": {
@@ -41981,7 +41981,7 @@
                     "title": "Considerate Regicide",
                     "description": "With Rose and Haschel in your party, defeat the Divine Dragon without destroying any of its appendages.",
                     "points": 25,
-                    "trueRatio": 77,
+                    "trueRatio": 78,
                     "type": "missable",
                     "badgeName": "106697",
                     "numAwarded": 597,
@@ -43443,11 +43443,11 @@
                     "title": "Rock 'N' Roll Mountain",
                     "description": "Climb the mountain where the Earth Scroll is before Rootrick reaches the top.",
                     "points": 5,
-                    "trueRatio": 21,
+                    "trueRatio": 20,
                     "type": null,
                     "badgeName": "162767",
-                    "numAwarded": 443,
-                    "numAwardedHardcore": 193,
+                    "numAwarded": 444,
+                    "numAwardedHardcore": 194,
                     "displayOrder": 13
                 },
                 "146082": {
@@ -43458,8 +43458,8 @@
                     "trueRatio": 14,
                     "type": "progression",
                     "badgeName": "162768",
-                    "numAwarded": 750,
-                    "numAwardedHardcore": 302,
+                    "numAwarded": 751,
+                    "numAwardedHardcore": 303,
                     "displayOrder": 14
                 },
                 "146083": {
@@ -45020,8 +45020,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 3606,
-            "numDistinctPlayersHardcore": 3606,
+            "numDistinctPlayersCasual": 3607,
+            "numDistinctPlayersHardcore": 3607,
             "numAchievements": 129,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -45042,7 +45042,7 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "116644",
-                    "numAwarded": 3151,
+                    "numAwarded": 3152,
                     "numAwardedHardcore": 1194,
                     "displayOrder": 0
                 },
@@ -45186,7 +45186,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "117207",
-                    "numAwarded": 1265,
+                    "numAwarded": 1266,
                     "numAwardedHardcore": 573,
                     "displayOrder": 0
                 },
@@ -66834,8 +66834,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "649935",
-                    "numAwarded": 78,
-                    "numAwardedHardcore": 61,
+                    "numAwarded": 79,
+                    "numAwardedHardcore": 62,
                     "displayOrder": 21,
                     "dateEarned": "2026-03-17 03:24:07",
                     "dateEarnedHardcore": "2026-03-17 03:24:07"
@@ -66848,8 +66848,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "649936",
-                    "numAwarded": 72,
-                    "numAwardedHardcore": 56,
+                    "numAwarded": 73,
+                    "numAwardedHardcore": 57,
                     "displayOrder": 22,
                     "dateEarned": "2026-03-19 08:03:09",
                     "dateEarnedHardcore": "2026-03-19 08:03:09"
@@ -66859,11 +66859,11 @@
                     "title": "Quest: Find a Lost Woman",
                     "description": "Complete the Find a Lost Woman quest",
                     "points": 3,
-                    "trueRatio": 9,
+                    "trueRatio": 8,
                     "type": null,
                     "badgeName": "649937",
-                    "numAwarded": 77,
-                    "numAwardedHardcore": 60,
+                    "numAwarded": 78,
+                    "numAwardedHardcore": 61,
                     "displayOrder": 23,
                     "dateEarned": "2026-03-17 03:33:19",
                     "dateEarnedHardcore": "2026-03-17 03:33:19"
