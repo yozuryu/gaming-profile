@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-11T07:07:46.942Z"
+        "extractionTimestamp": "2026-04-11T07:22:17.240Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Tomba is at Large Mine Underground. 💯 44,700 🗒️11/12",
-        "lastGameId": 11306,
+        "richPresenceMsg": "A Silver Guild novice without a Guardian Beast - Day 1 - Level 1 - 0b - No Weapon - No Weapon - No Weapon",
+        "lastGameId": 2588,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1730,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Tomba is at Large Mine Underground. 💯 44,700 🗒️11/12",
-        "richPresenceMsgDate": "2026-04-10 16:19:43",
-        "lastGameId": 11306,
+        "richPresenceMsg": "A Silver Guild novice without a Guardian Beast - Day 1 - Level 1 - 0b - No Weapon - No Weapon - No Weapon",
+        "richPresenceMsgDate": "2026-04-11 07:20:40",
+        "lastGameId": 2588,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1730,
@@ -51,7 +51,7 @@
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 138715,
+        "totalRanked": 138716,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -138,6 +138,24 @@
         ]
     },
     "recentlyPlayedGames": [
+        {
+            "gameId": 2588,
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "title": "Summon Night: Swordcraft Story",
+            "imageIcon": "/Images/121536.png",
+            "imageTitle": "/Images/010288.png",
+            "imageIngame": "/Images/010289.png",
+            "imageBoxArt": "/Images/007653.png",
+            "lastPlayed": "2026-04-11 07:20:40",
+            "achievementsTotal": 36,
+            "numPossibleAchievements": 36,
+            "possibleScore": 500,
+            "numAchieved": 0,
+            "scoreAchieved": 0,
+            "numAchievedHardcore": 0,
+            "scoreAchievedHardcore": 0
+        },
         {
             "gameId": 11306,
             "consoleId": 12,
@@ -385,24 +403,6 @@
             "achievementsTotal": 114,
             "numPossibleAchievements": 114,
             "possibleScore": 645,
-            "numAchieved": 0,
-            "scoreAchieved": 0,
-            "numAchievedHardcore": 0,
-            "scoreAchievedHardcore": 0
-        },
-        {
-            "gameId": 16382,
-            "consoleId": 18,
-            "consoleName": "Nintendo DS",
-            "title": "Crash of the Titans",
-            "imageIcon": "/Images/047553.png",
-            "imageTitle": "/Images/047551.png",
-            "imageIngame": "/Images/047552.png",
-            "imageBoxArt": "/Images/047554.png",
-            "lastPlayed": "2026-03-28 06:33:24",
-            "achievementsTotal": 38,
-            "numPossibleAchievements": 38,
-            "possibleScore": 267,
             "numAchieved": 0,
             "scoreAchieved": 0,
             "numAchievedHardcore": 0,
@@ -1073,22 +1073,22 @@
         "gameUrl": "/game/11306"
     },
     "mostRecentGame": {
-        "gameId": 11306,
-        "consoleId": 12,
-        "consoleName": "PlayStation",
-        "title": "Tomba! 2: The Evil Swine Return",
-        "imageIcon": "/Images/124477.png",
-        "imageTitle": "/Images/050910.png",
-        "imageIngame": "/Images/050909.png",
-        "imageBoxArt": "/Images/097460.png",
-        "lastPlayed": "2026-04-10 16:19:43",
-        "achievementsTotal": 45,
-        "numPossibleAchievements": 45,
-        "possibleScore": 604,
-        "numAchieved": 3,
-        "scoreAchieved": 15,
-        "numAchievedHardcore": 3,
-        "scoreAchievedHardcore": 15
+        "gameId": 2588,
+        "consoleId": 5,
+        "consoleName": "Game Boy Advance",
+        "title": "Summon Night: Swordcraft Story",
+        "imageIcon": "/Images/121536.png",
+        "imageTitle": "/Images/010288.png",
+        "imageIngame": "/Images/010289.png",
+        "imageBoxArt": "/Images/007653.png",
+        "lastPlayed": "2026-04-11 07:20:40",
+        "achievementsTotal": 36,
+        "numPossibleAchievements": 36,
+        "possibleScore": 500,
+        "numAchieved": 0,
+        "scoreAchieved": 0,
+        "numAchievedHardcore": 0,
+        "scoreAchievedHardcore": 0
     },
     "points7Days": 95,
     "points30Days": 470
