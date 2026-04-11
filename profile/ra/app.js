@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Gamepad2, Activity, BarChart2, Award, Star, ChevronDown, AlertCircle, Trophy, Crown, Lock, Unlock, AlertTriangle, Flame, Feather, Medal, ShieldOff, CircleDashed, X, Clock, BookOpen, Youtube, ExternalLink } from 'lucide-react';
+import { Gamepad2, Activity, BarChart2, Award, Star, ChevronDown, AlertCircle, Trophy, Crown, Lock, Unlock, AlertTriangle, Flame, Feather, Medal, ShieldOff, CircleDashed, X, Clock, BookOpen, Youtube, ExternalLink, Layers } from 'lucide-react';
 import { MEDIA_URL, SITE_URL, TILDE_TAG_COLORS } from './utils/constants.js';
 import { getMediaUrl, parseTitle, formatTimeAgo } from './utils/helpers.js';
 import { transformData } from './utils/transform.js';
@@ -888,7 +888,7 @@ const ProfileLoadingSkeleton = () => (
       <Sk w="w-16" h="h-2.5" /><span className="text-[#2a475e]">›</span><Sk w="w-28" h="h-2.5" /><span className="text-[#2a475e]">›</span><Sk w="w-20" h="h-2.5" />
     </div>
     {/* Header */}
-    <div className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 py-5">
+    <div className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 pt-8 pb-5 md:pt-5">
       <div className="max-w-5xl mx-auto flex items-center gap-5">
         <div className="shimmer w-20 h-20 md:w-24 md:h-24 rounded-[2px] flex-shrink-0" />
         <div className="flex flex-col gap-2.5 flex-1">
@@ -1229,6 +1229,9 @@ export default function App() {
   const [progressSort,   setProgressSort]   = useState('overall');
   const [progressSearch, setProgressSearch] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [showFloatingTabs, setShowFloatingTabs] = useState(false);
+  const [statsExpanded, setStatsExpanded] = useState(false);
+  const tabBarRef = useRef(null);
   const [watchlistSearch, setWatchlistSearch] = useState('');
   const [watchlistStatusFilter, setWatchlistStatusFilter] = useState('all');
   const [watchlistGrouping, setWatchlistGrouping] = useState('none');
@@ -1333,7 +1336,14 @@ export default function App() {
   const { profile: PROFILE_DATA, games: ALL_GAMES, backlog: BACKLOG } = useMemo(() => transformData(rawData), [rawData]);
 
   useEffect(() => {
-    const onScroll = () => setShowScrollTop(window.scrollY > 400);
+    const onScroll = () => {
+      const y = window.scrollY;
+      setShowScrollTop(y > 400);
+      if (window.innerWidth < 768 && tabBarRef.current) {
+        const bottom = tabBarRef.current.getBoundingClientRect().bottom;
+        setShowFloatingTabs(bottom < 0);
+      }
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -1370,7 +1380,7 @@ export default function App() {
     <div className="min-h-screen bg-[#171a21] text-[#c6d4df] font-sans selection:bg-[#66c0f4] selection:text-[#171a21] flex flex-col">
       
       {/* Topbar */}
-      <div className="sticky top-0 z-50 bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
+      <div className="page-topbar sticky top-0 z-50 bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
         <a href="../../" className="text-[#546270] font-bold tracking-[0.15em] uppercase hover:text-[#8f98a0] transition-colors">Yozuryu</a>
         <span className="text-[#2a475e]">›</span>
         <a href="../../" className="text-[#546270] hover:text-[#8f98a0] transition-colors">Gaming Hub</a>
@@ -1379,7 +1389,7 @@ export default function App() {
       </div>
 
       {/* Header */}
-      <header className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 py-5 shadow-md">
+      <header className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 pt-8 pb-5 md:pt-5 shadow-md">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-5">
 
           {/* Avatar */}
@@ -1545,9 +1555,9 @@ export default function App() {
                 <span className="w-[3px] h-[14px] bg-[#66c0f4] rounded-[1px] shrink-0"></span>
                 <BarChart2 size={15} className="text-[#66c0f4]"/> User Stats
               </h2>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 md:gap-x-8 px-1">
-                
+
                 <div className="flex flex-col">
                   {PROFILE_DATA.statsLeft.map((stat, i) => (
                     <div key={`left-${i}`} className="flex items-end text-[11px] py-[3px] group hover:bg-[#202d39]/40 rounded-sm px-1 transition-colors">
@@ -1558,7 +1568,8 @@ export default function App() {
                   ))}
                 </div>
 
-                <div className="flex flex-col">
+                {/* Right column: always visible on sm+, hidden on mobile until expanded */}
+                <div className={`flex flex-col ${statsExpanded ? '' : 'hidden sm:flex'}`}>
                   {PROFILE_DATA.statsRight.map((stat, i) => (
                     <div key={`right-${i}`} className="flex items-end text-[11px] py-[3px] group hover:bg-[#202d39]/40 rounded-sm px-1 transition-colors">
                       <span className="text-[#8f98a0] font-medium leading-tight whitespace-nowrap">{stat.label}</span>
@@ -1569,6 +1580,15 @@ export default function App() {
                 </div>
 
               </div>
+
+              {/* Mobile-only expand/collapse toggle */}
+              <button
+                onClick={() => setStatsExpanded(v => !v)}
+                className="sm:hidden mt-2 w-full flex items-center justify-center gap-1.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-[#546270] hover:text-[#8f98a0] transition-colors border-t border-[#1e2d3a]"
+              >
+                <ChevronDown size={13} className={`transition-transform duration-200 ${statsExpanded ? 'rotate-180' : ''}`} />
+                {statsExpanded ? 'Show less' : 'Show more'}
+              </button>
             </div>
 
           </div>
@@ -1658,52 +1678,83 @@ export default function App() {
           </div>
         </div>
 
-        <div className="sticky top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 mb-4 border-b border-[#2a475e]">
-          <div className="flex items-center gap-3 md:gap-6 px-4 md:px-8 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none' }}>
-          <button
-            onClick={() => setTab('recent')}
-            className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === 'recent' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
-          >
-            Recent Games
-            {activeTab === 'recent' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}
-          </button>
-
-          <button
-            onClick={() => setTab('progress')}
-            className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === 'progress' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
-          >
-            Completion Progress
-            {activeTab === 'progress' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}
-          </button>
-
-          {seriesData.some(s => s.showProgress) && (
-            <button
-              onClick={() => setTab('series')}
-              className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === 'series' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
-            >
-              Series Progress
-              {activeTab === 'series' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#e5b143]"></div>}
+        {/* ── Tab bar (natural in-flow position; desktop: sticky) ── */}
+        <div ref={tabBarRef} className="md:sticky md:top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 mb-4 border-b border-[#2a475e]">
+          <div className="flex items-center gap-1 md:gap-6 px-2 md:px-8 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none' }}>
+            <button onClick={() => setTab('recent')} className={`flex-1 md:flex-none flex flex-col md:flex-row items-center justify-center gap-1 md:gap-0 py-2.5 md:py-0 md:pb-2 px-1 md:px-0 transition-colors relative ${activeTab === 'recent' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}>
+              <Clock size={18} className="block md:hidden shrink-0" />
+              <span className="block md:hidden text-[9px] font-semibold uppercase tracking-[0.06em] leading-none">Recent</span>
+              <span className="hidden md:inline text-[11px] md:text-[14px] uppercase tracking-wide font-medium whitespace-nowrap">Recent Games</span>
+              {activeTab === 'recent' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]" />}
             </button>
-          )}
-
-          <button
-            onClick={() => setTab('activity')}
-            className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === 'activity' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
-          >
-            Activity
-            {activeTab === 'activity' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}
-          </button>
-
-          <button
-            onClick={() => setTab('backlog')}
-            className={`pb-2 text-[11px] md:text-[14px] uppercase tracking-wide font-medium transition-colors relative whitespace-nowrap ${activeTab === 'backlog' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}
-          >
-            Watchlist
-            {activeTab === 'backlog' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]"></div>}
-          </button>
-
+            <button onClick={() => setTab('progress')} className={`flex-1 md:flex-none flex flex-col md:flex-row items-center justify-center gap-1 md:gap-0 py-2.5 md:py-0 md:pb-2 px-1 md:px-0 transition-colors relative ${activeTab === 'progress' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}>
+              <BarChart2 size={18} className="block md:hidden shrink-0" />
+              <span className="block md:hidden text-[9px] font-semibold uppercase tracking-[0.06em] leading-none">Progress</span>
+              <span className="hidden md:inline text-[11px] md:text-[14px] uppercase tracking-wide font-medium whitespace-nowrap">Completion Progress</span>
+              {activeTab === 'progress' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]" />}
+            </button>
+            {seriesData.some(s => s.showProgress) && (
+              <button onClick={() => setTab('series')} className={`flex-1 md:flex-none flex flex-col md:flex-row items-center justify-center gap-1 md:gap-0 py-2.5 md:py-0 md:pb-2 px-1 md:px-0 transition-colors relative ${activeTab === 'series' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}>
+                <Layers size={18} className="block md:hidden shrink-0" />
+                <span className="block md:hidden text-[9px] font-semibold uppercase tracking-[0.06em] leading-none">Series</span>
+                <span className="hidden md:inline text-[11px] md:text-[14px] uppercase tracking-wide font-medium whitespace-nowrap">Series Progress</span>
+                {activeTab === 'series' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#e5b143]" />}
+              </button>
+            )}
+            <button onClick={() => setTab('activity')} className={`flex-1 md:flex-none flex flex-col md:flex-row items-center justify-center gap-1 md:gap-0 py-2.5 md:py-0 md:pb-2 px-1 md:px-0 transition-colors relative ${activeTab === 'activity' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}>
+              <Activity size={18} className="block md:hidden shrink-0" />
+              <span className="block md:hidden text-[9px] font-semibold uppercase tracking-[0.06em] leading-none">Activity</span>
+              <span className="hidden md:inline text-[11px] md:text-[14px] uppercase tracking-wide font-medium whitespace-nowrap">Activity</span>
+              {activeTab === 'activity' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]" />}
+            </button>
+            <button onClick={() => setTab('backlog')} className={`flex-1 md:flex-none flex flex-col md:flex-row items-center justify-center gap-1 md:gap-0 py-2.5 md:py-0 md:pb-2 px-1 md:px-0 transition-colors relative ${activeTab === 'backlog' ? 'text-white' : 'text-[#546270] hover:text-[#c6d4df]'}`}>
+              <Star size={18} className="block md:hidden shrink-0" />
+              <span className="block md:hidden text-[9px] font-semibold uppercase tracking-[0.06em] leading-none">Watchlist</span>
+              <span className="hidden md:inline text-[11px] md:text-[14px] uppercase tracking-wide font-medium whitespace-nowrap">Watchlist</span>
+              {activeTab === 'backlog' && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]" />}
+            </button>
           </div>
         </div>
+
+        {/* ── Floating tab pill (mobile only, shown when natural bar scrolls off screen) ── */}
+        {showFloatingTabs && (
+          <div
+            className="md:hidden fixed z-[190] flex items-center gap-0.5 px-1.5 py-1.5 rounded-full shadow-[0_4px_24px_rgba(0,0,0,0.7)]"
+            style={{
+              bottom: 'calc(68px + env(safe-area-inset-bottom, 0px))',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              background: 'rgba(19,26,34,0.92)',
+              border: '1px solid #2a475e',
+              backdropFilter: 'blur(8px)',
+              WebkitBackdropFilter: 'blur(8px)',
+            }}
+          >
+            {[
+              { id: 'recent',   icon: <Clock size={17} />,    color: '#66c0f4', label: 'Recent' },
+              { id: 'progress', icon: <BarChart2 size={17} />, color: '#66c0f4', label: 'Progress' },
+              ...(seriesData.some(s => s.showProgress) ? [{ id: 'series', icon: <Layers size={17} />, color: '#e5b143', label: 'Series' }] : []),
+              { id: 'activity', icon: <Activity size={17} />, color: '#66c0f4', label: 'Activity' },
+              { id: 'backlog',  icon: <Star size={17} />,     color: '#66c0f4', label: 'Watchlist' },
+            ].map(({ id, icon, color, label }) => (
+              <button
+                key={id}
+                onClick={() => setTab(id)}
+                title={label}
+                className="relative w-10 h-10 flex items-center justify-center rounded-full transition-all"
+                style={{
+                  color: activeTab === id ? color : '#546270',
+                  background: activeTab === id ? `${color}22` : 'transparent',
+                }}
+              >
+                {icon}
+                {activeTab === id && (
+                  <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full" style={{ background: color }} />
+                )}
+              </button>
+            ))}
+          </div>
+        )}
 
         <div className="flex flex-col gap-3">
           {activeTab === 'series' ? (
@@ -1985,7 +2036,8 @@ export default function App() {
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-14 right-5 z-50 w-9 h-9 bg-[#1b2838] border border-[#2a475e] hover:border-[#66c0f4] hover:text-[#66c0f4] text-[#8f98a0] rounded-[2px] flex items-center justify-center shadow-lg transition-all duration-200 hover:-translate-y-0.5"
+          className="scroll-top-btn fixed right-4 z-[195] w-10 h-10 bg-[#131a22] border border-[#2a475e] hover:border-[#66c0f4] hover:text-[#66c0f4] text-[#8f98a0] rounded-full flex items-center justify-center shadow-lg transition-all duration-200 active:scale-90"
+          style={{ bottom: showFloatingTabs ? 'calc(120px + env(safe-area-inset-bottom, 0px))' : '3.5rem' }}
           title="Scroll to top"
         >
           <ChevronDown size={16} className="rotate-180" />

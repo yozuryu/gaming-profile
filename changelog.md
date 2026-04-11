@@ -1,5 +1,51 @@
 # Changelog
 
+## 2026-04-11
+
+Mobile refinements across all pages — header spacing, scroll-to-top FAB, stats collapse, and Series tab icon.
+
+### RetroAchievements
+
+- User Stats: right column hidden on mobile by default; "Show more / Show less" toggle expands it; always both columns on `sm:` and up
+- Series tab icon changed from `Trophy` to `Layers` — better represents grouped series content
+- Floating tab pill: Series tab updated to use `Layers` icon in both natural bar and floating pill
+- Scroll-to-top button: `rounded-full` FAB (`w-10 h-10`, `bg-[#131a22]`, `active:scale-90`); `bottom` shifts from `3.5rem` to `120px` when floating pill is visible
+
+### Structure
+
+- All page headers: `pt-8 pb-5 md:pt-5` — extra top padding on mobile to compensate for hidden breadcrumb bar; applied to RA, Steam, Activity, Completions, Changelog, and Hub
+
+## 2026-04-10
+
+Mobile UX overhaul — bottom navigation bar, safe area support, scroll-to-top repositioning, and three mobile bug fixes.
+
+### RetroAchievements
+
+- Tab bar: icon + short label on mobile (`Clock`/Recent, `BarChart2`/Progress, `Layers`/Series, `Activity`, `Star`/Watchlist), text-only on desktop; tabs distribute evenly with `flex-1` on mobile
+- Tab bar on mobile: sits at natural in-flow position; once scrolled off screen a floating icon pill appears centered above the bottom nav (`z-190`, frosted glass background with `backdrop-filter: blur`)
+- Floating pill shows active tab with accent-colored background circle and dot indicator; desktop unchanged (`md:sticky md:top-[26px]`)
+- Scroll-to-top button shifts up (`bottom: 120px`) when floating pill is visible to prevent overlap
+
+### Steam
+
+- Fixed tab bar clipping on mobile: wrapped tab buttons in `overflow-x-auto scrollbar-none` inner div so hidden tabs are reachable by horizontal scroll (matches existing RA tab bar pattern)
+
+### Hub
+
+- Completions strip: mobile view now shows Mastered / Beaten / Perfect breakdown (colored counts) instead of just a plain total count; `flex-1 min-w-0` + `text-overflow: ellipsis` prevents overflow
+
+### Structure
+
+- Added `assets/mobile-nav.js` — shared bottom navigation bar injected into all pages via `<script>` tag; visible only on screens < 768px
+- Bottom nav has 5 tabs: Home, Profile (dynamic platform picker), Activity, Completions, Changelog (cyan accent)
+- Topbar breadcrumb and `footer` elements hidden on mobile via `.page-topbar` and `footer` CSS rules — bottom nav replaces them; class `page-topbar` added to topbar divs in all 5 React app.js files and `index.html`
+- Profile tab fetches `data/hub/config.json` and shows only `visible: true` platforms in a popup; navigates directly if only one platform is configured
+- Platform popup slides up above the nav; backdrop tap dismisses it; active platform highlighted in its accent color
+- Active tab is auto-detected from `window.location.pathname`; active state shows accent color + top indicator bar
+- Safe area insets applied to nav height via `env(safe-area-inset-bottom)` for notched iPhones
+- `viewport-fit=cover` added to all 6 `index.html` viewport meta tags to enable safe area CSS variables
+- Scroll-to-top buttons in `profile/ra/app.js`, `profile/steam/app.js`, `activity/app.js` given `.scroll-top-btn` class; mobile-nav CSS repositions them above the nav bar on mobile
+
 ## 2026-04-09
 
 Tab sizing unified across RA and Steam; GameCard and modal label styles aligned; series card icon sort improved. PWA support added — installable on mobile with offline fallback.

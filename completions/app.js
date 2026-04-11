@@ -248,7 +248,7 @@ const App = () => {
         <div className="bg-[#171a21] text-[#c6d4df] min-h-screen flex flex-col font-sans selection:bg-[#66c0f4] selection:text-[#171a21]">
 
             {/* Topbar */}
-            <div className="sticky top-0 z-50 bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
+            <div className="page-topbar sticky top-0 z-50 bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
                 <a href="../" className="text-[#546270] font-bold tracking-[0.15em] uppercase hover:text-[#8f98a0] transition-colors">Yozuryu</a>
                 <span className="text-[#2a475e]">›</span>
                 <a href="../" className="text-[#546270] hover:text-[#8f98a0] transition-colors">Gaming Hub</a>
@@ -257,7 +257,7 @@ const App = () => {
             </div>
 
             {/* Header */}
-            <header className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 py-5 shadow-md">
+            <header className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 pt-8 pb-5 md:pt-5 shadow-md">
                 <div className="max-w-3xl mx-auto">
                     <div className="flex items-center gap-3">
                         <span className="w-[3px] h-6 bg-[#e5b143] rounded-[1px] shrink-0" />

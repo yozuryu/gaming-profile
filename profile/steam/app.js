@@ -802,7 +802,7 @@ const ProfileLoadingSkeleton = () => (
         <div className="bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2">
             <Sk w="w-16" h="h-2.5" /><span className="text-[#2a475e]">›</span><Sk w="w-20" h="h-2.5" />
         </div>
-        <header className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 py-5">
+        <header className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 pt-8 pb-5 md:pt-5">
             <div className="max-w-5xl mx-auto flex items-center gap-5">
                 <div className="shimmer w-20 h-20 md:w-24 md:h-24 rounded-[2px] shrink-0" />
                 <div className="flex flex-col gap-2.5 flex-1">
@@ -1002,7 +1002,7 @@ const App = () => {
         <div className="bg-[#171a21] text-[#c6d4df] min-h-screen flex flex-col font-sans selection:bg-[#66c0f4] selection:text-[#171a21]">
 
             {/* Topbar */}
-            <div className="sticky top-0 z-50 bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
+            <div className="page-topbar sticky top-0 z-50 bg-[#131a22] border-b border-[#101214] px-4 md:px-8 py-1.5 flex items-center gap-2 text-[10px]">
                 <a href="../../" className="text-[#546270] font-bold tracking-[0.15em] uppercase hover:text-[#8f98a0] transition-colors">Yozuryu</a>
                 <span className="text-[#2a475e]">›</span>
                 <a href="../../" className="text-[#546270] hover:text-[#8f98a0] transition-colors">Gaming Hub</a>
@@ -1011,7 +1011,7 @@ const App = () => {
             </div>
 
             {/* Header */}
-            <header className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 py-5 shadow-md">
+            <header className="bg-[#1b2838] border-b border-[#2a475e] px-4 md:px-8 pt-8 pb-5 md:pt-5 shadow-md">
                 <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-5">
 
                     {/* Avatar */}
@@ -1281,7 +1281,8 @@ const App = () => {
                 </div>
 
                 {/* ── Tab bar — RA style ── */}
-                <div className="sticky top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 px-4 md:px-8 flex items-center gap-3 md:gap-6 mb-4 border-b border-[#2a475e]">
+                <div className="sticky top-[26px] z-40 bg-[#171a21] -mx-4 md:-mx-8 mb-4 border-b border-[#2a475e]">
+                <div className="flex items-center gap-3 md:gap-6 px-4 md:px-8 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none' }}>
                     {TABS.map(({ id, label }) => (
                         <button
                             key={id}
@@ -1292,6 +1293,7 @@ const App = () => {
                             {activeTab === id && <div className="absolute bottom-[-1px] left-0 w-full h-[3px] bg-[#66c0f4]" />}
                         </button>
                     ))}
+                </div>
                 </div>
 
                 {/* ── Tab content ── */}
@@ -1346,7 +1348,7 @@ const App = () => {
             {showScrollTop && (
                 <button
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                    className="fixed bottom-14 right-5 z-50 w-9 h-9 bg-[#1b2838] border border-[#2a475e] hover:border-[#66c0f4] hover:text-[#66c0f4] text-[#8f98a0] rounded-[2px] flex items-center justify-center shadow-lg transition-all duration-200 hover:-translate-y-0.5"
+                    className="scroll-top-btn fixed bottom-14 right-4 z-50 w-10 h-10 bg-[#131a22] border border-[#2a475e] hover:border-[#66c0f4] hover:text-[#66c0f4] text-[#8f98a0] rounded-full flex items-center justify-center shadow-lg transition-all duration-200 active:scale-90"
                     title="Scroll to top"
                 >
                     <ChevronDown size={16} className="rotate-180" />
