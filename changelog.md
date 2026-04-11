@@ -1,55 +1,41 @@
 # Changelog
 
-## 2026-04-11
+## v26.04.11
 
-Steam profile tab bar gets full RA-style mobile treatment.
-
-### Steam
-
-- Tab bar on mobile: icons (Clock / BarChart2 / Activity) with short labels, full text labels on desktop — matches RA tab bar layout
-- Tab bar no longer sticky on mobile; scroll-aware floating pill appears when the bar scrolls off screen
-- Floating pill slides up on appear and slides down on disappear (`slideUpPill` / `slideDownPill` keyframes)
-- Scroll-to-top button shifts up when floating pill is visible, same as RA profile
-
-## 2026-04-11
-
-Mobile nav popup vertical pills with slide animations; RA floating tabs gain slide-down exit animation.
-
-### Hub
-
-- Profile popup redesigned as vertical stacked pills: frosted glass rounded-rect container, each platform is a horizontal pill (icon + label), active platform highlighted with color tint
-- Popup slides up on open and slides down on close via CSS transition
-
-### RetroAchievements
-
-- Floating tab pill slides up on appear and slides down on disappear using `slideUpPill` / `slideDownPill` keyframes
-- Exit animation deferred with a 210ms timer so the pill animates out before being unmounted
-
-## 2026-04-11
-
-Mobile refinements across all pages — header spacing, scroll-to-top FAB, stats collapse, Series tab icon, and Completions deduplication.
-
-### Completions
-
-- Deduplicate RA entries by `gameId`: when a game is both mastered and beaten, only the mastered entry is shown — prevents the same game appearing twice when "Show Beaten" is enabled
-
-## 2026-04-11
-
-Mobile refinements across all pages — header spacing, scroll-to-top FAB, stats collapse, and Series tab icon.
+Mobile polish pass — floating tab pills, platform popup redesign, Steam tab parity, stats collapse, Completions deduplication, icon refresh, and hub page simplification.
 
 ### RetroAchievements
 
 - User Stats: right column hidden on mobile by default; "Show more / Show less" toggle expands it; always both columns on `sm:` and up
 - Series tab icon changed from `Trophy` to `Layers` — better represents grouped series content
-- Floating tab pill: Series tab updated to use `Layers` icon in both natural bar and floating pill
+- Floating tab pill: slides up on appear and slides down on disappear (`slideUpPill` / `slideDownPill` keyframes); exit animation deferred 210ms so it completes before unmount
 - Scroll-to-top button: `rounded-full` FAB (`w-10 h-10`, `bg-[#131a22]`, `active:scale-90`); `bottom` shifts from `3.5rem` to `120px` when floating pill is visible
+
+### Steam
+
+- Tab bar on mobile: icons (Clock / BarChart2 / Activity) with short labels, full text on desktop — matches RA tab bar layout
+- Tab bar no longer sticky on mobile; scroll-aware floating pill appears when the bar scrolls off screen, with same slide-up / slide-down animations as RA
+- Scroll-to-top button shifts up when floating pill is visible
+
+### Hub
+
+- Profile platform popup redesigned as vertical stacked pills: frosted glass rounded-rect container, each platform is a horizontal pill (icon + full label), active platform highlighted with color tint
+- Popup slides up on open and slides down on close via CSS transition
+- Mobile: platform cards reduced to header + stats grid only — recently played rows and card footers hidden; navigation handled by bottom nav bar
+- Mobile: completions strip and activity "View all →" link hidden — redundant with bottom nav tabs
+- Mobile: Recent Activity feed collapses to 4 rows by default; "Show N more / Show less" toggle button reveals the rest
+- Desktop layout unchanged
+
+### Completions
+
+- Deduplicate RA entries by `gameId`: when a game is both mastered and beaten, only the mastered entry is shown — prevents the same game appearing twice when "Show Beaten" is enabled
 
 ### Structure
 
 - All page headers: `pt-8 pb-5 md:pt-5` — extra top padding on mobile to compensate for hidden breadcrumb bar; applied to RA, Steam, Activity, Completions, Changelog, and Hub
 - PWA icons (`assets/icon-192.png`, `assets/icon-512.png`) replaced: sourced from new `assets/appicon.png` (gaming controller + trophy logo); cropped to 860×860px to remove outer padding and bottom-right watermark, then resized to 192 and 512
 
-## 2026-04-10
+## v26.04.10
 
 Mobile UX overhaul — bottom navigation bar, safe area support, scroll-to-top repositioning, and three mobile bug fixes.
 
@@ -80,7 +66,7 @@ Mobile UX overhaul — bottom navigation bar, safe area support, scroll-to-top r
 - `viewport-fit=cover` added to all 6 `index.html` viewport meta tags to enable safe area CSS variables
 - Scroll-to-top buttons in `profile/ra/app.js`, `profile/steam/app.js`, `activity/app.js` given `.scroll-top-btn` class; mobile-nav CSS repositions them above the nav bar on mobile
 
-## 2026-04-09
+## v26.04.09
 
 Tab sizing unified across RA and Steam; GameCard and modal label styles aligned; series card icon sort improved. PWA support added — installable on mobile with offline fallback.
 
@@ -102,7 +88,7 @@ Tab sizing unified across RA and Steam; GameCard and modal label styles aligned;
 
 - Achievement modal: moved Perfect badge from beside the progress bar to under the game title, matching RA modal layout
 
-## 2026-04-08
+## v26.04.08
 
 Series Progress tab added with rich cards — background image, points, latest achievement, icon strip, and per-series progress tracking; admin gets Show Progress flag, cover game selector, gold dot indicator, and console names in all game lists. Game awards deduplicated so mastered game shows single Mastered award with solid gold border. Series card icon strip now sorted by mastery status with gold borders; award type corrected to `Mastery/Completion`.
 
@@ -128,7 +114,7 @@ Series Progress tab added with rich cards — background image, points, latest a
 - Series card icon strip: mastered game icons get a 2px gold border matching the Game Awards panel style
 - Series card stats labels: `games` (total) is now muted, `tracked` (games with achievement set) is lighter — visually prioritises the actionable subset
 
-## 2026-04-07
+## v26.04.07
 
 Hub mobile layout fixed for fewer than 3 visible platforms.
 
@@ -136,7 +122,7 @@ Hub mobile layout fixed for fewer than 3 visible platforms.
 
 - Fixed platform grid layout on mobile when fewer than 3 platforms are visible — the JS `gridTemplateColumns` inline style was overriding the CSS media query, causing 2-column side-by-side layout on mobile instead of single column; fixed by using a CSS custom property (`--platform-cols`) for the desktop/reduced-count layout and `!important` on the mobile `1fr` breakpoint
 
-## 2026-04-06
+## v26.04.06
 
 Watchlist split into its own JSON file with independent pipeline refresh; RA Series admin gets unassigned games panel, delete persistence fix, and alphabetical sorting.
 
@@ -154,7 +140,7 @@ Watchlist split into its own JSON file with independent pipeline refresh; RA Ser
 - Admin Series module: series list is now sorted alphabetically after create and rename
 - Watchlist series grouping: groups are now sorted alphabetically (was file order)
 
-## 2026-04-05
+## v26.04.05
 
 RA Series Hub launched — admin module with game assignment, recommendations, per-series suggestions, and watchlist grouping in profile.
 
@@ -169,7 +155,7 @@ RA Series Hub launched — admin module with game assignment, recommendations, p
 - Admin Series module: search bar no longer clears after adding a game to a series
 - Watchlist series grouping: series with more than 3 games are collapsed by default
 
-## 2026-04-03
+## v26.04.03
 
 Admin panel expanded with Credentials, Data Diff, and server controls; Steam/RA filter UI buttons standardized; guide strip dropdown fix.
 
@@ -195,7 +181,7 @@ Admin panel expanded with Credentials, Data Diff, and server controls; Steam/RA 
 - Added hash-based routing (`#module-id`) so page refresh preserves active section
 - Guide search link in RA Guides game header opens GameFAQs search in new tab
 
-## 2026-04-03
+## v26.04.03
 
 Steam games data split into per-game files for faster initial load.
 
@@ -224,7 +210,7 @@ Steam games data split into per-game files for faster initial load.
 
 ---
 
-## 2026-04-02
+## v26.04.02
 
 Streak panel redesigned with circles, 14-day window, connectors, and per-day achievement counts; streak UTC date bug fixed; Steam mobile overflow fixed.
 
@@ -250,7 +236,7 @@ Streak panel redesigned with circles, 14-day window, connectors, and per-day ach
 
 ---
 
-## 2026-04-01
+## v26.04.01
 
 RA game awards sorted by type then date; combined activity page gains achievement unlock streak tracking with a 14-day visual.
 
@@ -266,7 +252,7 @@ RA game awards sorted by type then date; combined activity page gains achievemen
 
 ---
 
-## 2026-03-29
+## v26.03.29
 
 RA achievement display simplified; Steam game images upgraded; sticky headers fixed; heatmap platform filter corrected; pipelines now hourly with concurrent queue and debug mode; search added to completion progress on both platforms.
 
@@ -305,7 +291,7 @@ RA achievement display simplified; Steam game images upgraded; sticky headers fi
 
 ---
 
-## 2026-03-28
+## v26.03.28
 
 RA bug fixes; lazy loading across all activity pages; Steam progress hides perfect games by default; tilde tag and subset parsing extended site-wide; game card playtime row redesigned with clock icon and dot separator.
 
@@ -342,7 +328,7 @@ RA bug fixes; lazy loading across all activity pages; Steam progress hides perfe
 - Completions page (`/completions/`) now parses tilde tags and subset names — `CompletionCard` renders `baseTitle` with inline tilde tag badges or a `Subset` badge + subset name subline
 - Hub completions strip parses the latest RA completion title and renders `baseTitle` + badges + subset subline; shared `_parseTitle`/`_tildeBadgesHtml`/`_BADGE_BASE` helpers moved to script scope so they're accessible outside `loadHubProfile`
 
-## 2026-03-27
+## v26.03.27
 
 Achievement detail modals for RA and Steam; achievement preview strips on game cards; completions page with hub strip; activity shimmer loading; data restructured with sharded achievement chunks and ~2.4MB pipeline savings.
 
@@ -401,7 +387,7 @@ Achievement detail modals for RA and Steam; achievement preview strips on game c
 
 ---
 
-## 2026-03-26
+## v26.03.26
 
 Combined activity feed launched at `/activity/`, hub gets a recent activity snippet, project restructured under `/profile/` and renamed to `gaming-hub`. Changelog page added.
 
@@ -438,7 +424,7 @@ Combined activity feed launched at `/activity/`, hub gets a recent activity snip
 
 ---
 
-## 2026-03-25
+## v26.03.25
 
 Steam profile fully built out with achievement rarity system and pipeline automation; hub overhauled with dynamic config and per-platform visibility controls.
 
@@ -481,7 +467,7 @@ Steam profile fully built out with achievement rarity system and pipeline automa
 
 ---
 
-## 2026-03-24
+## v26.03.24
 
 Hub rendered dynamically from config file; RA dashboard improvements including lazy-loaded activity, tilde tag badges, and refactored utils; automated data pipeline introduced.
 
@@ -505,7 +491,7 @@ Hub rendered dynamically from config file; RA dashboard improvements including l
 
 ---
 
-## 2025-03-23 — Initial release
+## v25.03.23 — Initial release
 
 First release — hub page with RA card, full RA dashboard with heatmap and timeline, and ETL pipeline for data fetching.
 

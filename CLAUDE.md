@@ -17,18 +17,27 @@ Personal gaming statistics dashboard aggregating RetroAchievements (RA) and Stea
 ```
 gaming-hub/
 ├── index.html                      # Hub landing page (vanilla JS, no React)
+├── manifest.json                   # PWA manifest
+├── sw.js                           # Service worker (network-first data, cache-first assets)
 ├── changelog.md                    # Project changelog (Markdown, parsed by changelog app)
 ├── CLAUDE.md                       # This file
 │
-├── assets/                         # Static images (avatar, platform icons)
+├── assets/
+│   ├── mobile-nav.js               # Shared bottom nav bar, injected into all pages via <script>
+│   ├── avatar.png                  # User avatar
+│   ├── appicon.png                 # Source icon (1024×1024, used to generate PWA icons)
+│   ├── icon-192.png / icon-512.png # PWA icons (generated from appicon.png)
+│   └── icon-ra.png / icon-steam.png / icon-xbox.png
 │
-├── data/                           # JSON data written by pipelines, read by apps
-│   ├── hub/config.json             # Site config: username, motto, platform visibility
+├── data/                           # JSON written by pipelines, read by browser
+│   ├── hub/config.json             # Username, motto, tags, platform visibility flags
 │   ├── ra/
-│   │   ├── profile.json            # RA user profile, stats, awards, recent achievements
+│   │   ├── profile.json            # RA profile, stats, awards, recently played
 │   │   ├── games.json              # All RA games with per-achievement details
+│   │   ├── watchlist.json          # Want-to-play list (fetched separately by profile page)
+│   │   ├── series.json             # Named series with game ID arrays
 │   │   └── achievements/
-│   │       ├── 1.json – 4.json     # Recent achievements chunked by quarter (91 days each)
+│   │       ├── 1.json – 4.json     # Recent achievements chunked by 91-day windows
 │   │       └── heatmap.json        # { "YYYY-MM-DD": { count, points } }
 │   └── steam/
 │       ├── profile.json            # Steam profile, stats, recently played
@@ -37,39 +46,19 @@ gaming-hub/
 │       │   ├── {appId}.json        # Full game data + achievements[], lazy-fetched per game
 │       │   └── sentinel.json       # Pipeline-only: no-achievement game cache (never loaded by frontend)
 │       └── achievements/
-│           ├── 1.json – 4.json     # Recent achievements chunked by quarter
+│           ├── 1.json – 4.json     # Recent achievements chunked by 91-day windows
 │           └── heatmap.json        # { "YYYY-MM-DD": { count } }
 │
 ├── profile/
-│   ├── ra/
-│   │   ├── index.html
-│   │   ├── app.js                  # ~2500 LOC — GameCard, tabs, awards, backlog
-│   │   └── utils/
-│   │       ├── constants.js        # MEDIA_URL, SITE_URL, TILDE_TAG_COLORS
-│   │       ├── helpers.js          # formatTimeAgo, formatDate, getMediaUrl, parseTitle
-│   │       └── transform.js        # transformData() — merges profile + games + progress
-│   └── steam/
-│       ├── index.html
-│       ├── app.js                  # ~1800 LOC — SteamGameCard, ProgressTab, ActivityTab
-│       └── utils/
-│           ├── constants.js        # STEAM_STATUS, PROGRESS_SORTS
-│           └── helpers.js          # formatPlaytime, achIconUrl, headerUrl, rarityLabel, etc.
+│   ├── ra/                         # CLAUDE.md in this directory
+│   └── steam/                      # CLAUDE.md in this directory
 │
-├── activity/
-│   ├── index.html
-│   ├── app.js                      # ~1100 LOC — Heatmap, streak, timeline, lazy loading
-│   └── utils/
-│       ├── constants.js            # PLATFORM_COLOR, TILDE_TAG_COLORS
-│       ├── helpers.js              # fmtDay, fmtTime, parseTitle
-│       └── normalizers.js          # normalizeRA(), normalizeSteam() → unified shape
+├── activity/                       # CLAUDE.md in this directory
+├── completions/                    # CLAUDE.md in this directory
+├── changelog/                      # CLAUDE.md in this directory
 │
-├── completions/
-│   ├── index.html
-│   └── app.js                      # ~600 LOC — grouped by month, mastered/beaten/perfect
-│
-├── changelog/
-│   ├── index.html
-│   └── app.js                      # Parses changelog.md and renders collapsible releases
+├── admin/
+│   └── index.html                  # Admin panel (series management, guides, config)
 │
 ├── scripts/
 │   ├── ra-pipeline.js              # RA ETL: API → data/ra/ (~600 LOC)
@@ -82,56 +71,90 @@ gaming-hub/
 
 ---
 
-## Pages
+## Hub Page (`index.html`)
 
-### Hub (`index.html`)
-Vanilla JS (no React). Reads `data/hub/config.json`, `data/ra/profile.json`, `data/steam/profile.json`, and chunk 1 from both platforms. Shows platform cards, recent achievements, summary stats. Has its own shimmer skeleton in `<style>`.
+Vanilla JS, no React. Reads `data/hub/config.json`, `data/ra/profile.json`, `data/steam/profile.json`.
 
-### RA Profile (`profile/ra/`)
-Reads `data/ra/profile.json` (via `transform.js`) and `data/ra/games.json`. Key sections: game awards (Mastered/Beaten sorted by type then date desc), tabs for games/backlog/recent achievements, site awards. `transform.js` is the critical data layer — it merges multiple API response shapes into what the UI expects.
+**Platform cards** — on desktop: full cards with header, stats grid, recently played rows, footer link. On mobile: header + stats grid only (recently played and footer hidden via CSS). Cards are not shown if `platforms[key].visible` is false in config.json.
 
-### Steam Profile (`profile/steam/`)
-Reads `data/steam/profile.json` on mount, then `data/steam/games/index.json` when any game tab opens (~200KB, no achievement arrays). Full achievement data for a specific game is lazy-fetched from `data/steam/games/{appId}.json` only when the user opens the achievement modal (`handleViewDetails`). Three tabs: Recent Games, Completion Progress, Activity. The `SteamGameCard` component is reused across both Recent Games and Completion Progress tabs and uses pre-computed `preview`, `lastUnlockedAt`, and `lastUnlockName` fields from the index — it does not need `achievements[]`. The Activity tab has its own heatmap (Steam-only, blue tones).
+**Stats order and colors** (by relevance):
+- RA: Points (gold) → Rank (white) → Mastered (gold) → Beaten (gray) → Achievements (blue) → Games (muted)
+- Steam: Hours (blue) → Perfect (gold) → Achievements (blue) → Games (muted) → Played (muted) → w/ Unlocks (muted)
 
-### Activity (`activity/`)
-Combined RA + Steam activity. Reads both heatmaps and both achievement chunk sets. Key features:
-- **Heatmap**: 365-day GitHub-style grid, filterable by platform (RA/Steam/All)
-- **Streak panel**: Below heatmap. 14-day circle timeline, current/longest streak, animated flame icons on active days, gold connectors between consecutive active days. Today is never counted as a streak break — the streak holds until the day ends without any achievements.
-- **Timeline**: Achievement groups by day → game → individual achievements. Lazy-loads chunks 2–4 via IntersectionObserver (300px rootMargin).
+**Completions strip** (desktop only, hidden on mobile via CSS):
+- Shows: N total · N Completed (gold) · N Beaten (blue)
+- "Completed" = RA Mastered + Steam Perfect merged — they are the same concept
+- Most recent completion shown with icon, name, and time ago
 
-### Completions (`completions/`)
-Shows mastered (RA), beaten (RA), and perfect (Steam) games grouped by month.
+**Recent Activity feed** — up to 8 rows, combined RA + Steam sorted by date. On mobile collapses to 4 rows with a "Show more / Show less" toggle button below the feed.
 
-### Changelog (`changelog/`)
-Fetches `../changelog.md`, parses `## date`, `### section`, `- entry` structure. Sections are color-coded: RetroAchievements (gold), Steam (blue), Activity (teal), etc. Inline backtick code rendered as `<code>`.
+---
+
+## Mobile / PWA
+
+### Bottom navigation (`assets/mobile-nav.js`)
+Self-contained IIFE injected into every page via `<script src="...assets/mobile-nav.js">`. Visible only on screens < 768px.
+
+- 5 tabs: Home, Profile (popup), Activity, Done (Completions), Log (Changelog)
+- **Profile tab** fetches `data/hub/config.json` and builds a vertical pill popup showing only `visible: true` platforms. Popup slides up/down via CSS transition (no JS animation). If only one platform, navigates directly.
+- `BASE` is derived from `document.currentScript.src` — works on any host (GitHub Pages `/gaming-hub/`, local `/`, etc.)
+- Mobile CSS injected via `<style>`: hides `.page-topbar` and `footer`, adds `padding-bottom` to body, repositions `.scroll-top-btn`
+- All pages must have `class="page-topbar"` on the breadcrumb topbar div
+- Safe area: `env(safe-area-inset-bottom)` used on nav, body padding, scroll-top button, and floating pills
+
+### PWA
+- `manifest.json` + `sw.js` at root
+- `viewport-fit=cover` on all 6 `index.html` viewport meta tags
+- Icons: `assets/icon-192.png` and `assets/icon-512.png` generated from `assets/appicon.png`
+- Service worker: network-first for `data/**` and `changelog.md`, cache-first for all other static assets
+
+### Page headers (mobile)
+All page headers use `pt-8 pb-5 md:pt-5` — extra top padding on mobile compensates for the hidden breadcrumb bar. Desktop keeps the original `pt-5`. Apply this to any new pages.
+
+### Hub page (mobile)
+- Platform cards: header + stats grid only — recently played rows (`.recent-label`, `#ra-recent`, `#steam-recent`) and card footers (`.card-ftr`) hidden via `@media (max-width: 767px)` CSS in `index.html`
+- Completions strip (`#completions-strip`): hidden on mobile entirely via same media query — redundant with Done nav tab
+- Activity feed: collapses to 4 rows on mobile; rows 4+ have `data-activity-extra="1"` attribute and class `activity-row-hidden`; toggle button `#activity-toggle-btn` shown/hidden by JS after feed renders
+
+### RA Profile stats (mobile)
+- Stats are split into `statsLeft` and `statsRight` columns in `transform.js`
+- On mobile, `statsRight` is hidden by default (`hidden sm:flex`)
+- `statsExpanded` state + "Show more / Show less" toggle button (`sm:hidden`) controls visibility
+- Toggle button has a rotating `ChevronDown` icon
+
+### Floating tab pill (RA and Steam profile pages)
+- Appears when the natural tab bar scrolls off screen (`getBoundingClientRect().bottom < 0`)
+- Slides up on appear (`slideUpPill` keyframe), slides down on disappear (`slideDownPill` keyframe)
+- Exit animation: `pillLeaving` state + 210ms deferred unmount so animation completes before DOM removal
+- Positioned above bottom nav: `bottom: calc(68px + env(safe-area-inset-bottom, 0px))`
+- Scroll-to-top button shifts up to `calc(120px + ...)` when pill is visible
 
 ---
 
 ## Data Pipelines
 
-### Shared behavior
-- Both pipelines write JSON to `data/{ra,steam}/` and commit to main via GitHub Actions.
-- Concurrency group `data-pipeline` prevents overlapping runs.
-- `--debug` flag on either pipeline prints API responses without writing files.
-- Chunk files split by 91-day windows: chunk 1 = 0–91 days, chunk 2 = 91–182, etc.
-
 ### RA Pipeline (`scripts/ra-pipeline.js`)
 Env vars: `RA_USERNAME`, `RA_API_KEY`. Uses `@retroachievements/api` package.
 - Default (incremental): fetches profile + recent achievements + progress
 - `--refresh-games`: re-fetches per-game achievement details
+- `--watchlist-only`: fetches only want-to-play list → `watchlist.json`
 - Game details cached in Firestore to avoid re-fetching unchanged games
-- Outputs: `profile.json`, `games.json`, `achievements/1-4.json`, `achievements/heatmap.json`
+- Outputs: `profile.json`, `games.json`, `watchlist.json`, `achievements/1-4.json`, `achievements/heatmap.json`
 
 ### Steam Pipeline (`scripts/steam-pipeline.js`)
 Env vars: `STEAM_API_KEY`, `STEAM_USER_ID`.
 - Default: recently played games only
 - `--refresh-unlocked-games`: re-fetches games with any unlocked achievements
 - `--refresh-games`: all owned games
-- Stores achievement icon hash only (not full URL) to keep file sizes down
-- Cache loading reads individual `games/{appId}.json` files; falls back to legacy `games.json` on first migration run
-- Outputs: `profile.json`, `games/index.json`, `games/{appId}.json`, `games/sentinel.json`, `achievements/1-4.json`, `achievements/heatmap.json`
-- `games/index.json` pre-computes `lastUnlockedAt`, `lastUnlockName`, and `preview` (top 6 achievement icons) per game
+- `games/index.json` pre-computes `lastUnlockedAt`, `lastUnlockName`, `preview` (top 6 icon hashes) per game
 - `games/sentinel.json` tracks no-achievement games (pipeline-only, never fetched by frontend)
+- Outputs: `profile.json`, `games/index.json`, `games/{appId}.json`, `games/sentinel.json`, `achievements/1-4.json`, `achievements/heatmap.json`
+
+### Shared behavior
+- Both pipelines write JSON to `data/{ra,steam}/` and commit to main via GitHub Actions
+- Concurrency group `data-pipeline` prevents overlapping runs
+- `--debug` flag prints API responses without writing files
+- Chunk files split by 91-day windows: chunk 1 = 0–91 days, chunk 2 = 91–182, etc.
 
 ---
 
@@ -156,12 +179,12 @@ There is **no bundler, no npm for the frontend, no TypeScript**. All frontend fi
 ### Styling
 - **Tailwind className** for fixed/structural styles
 - **Inline `style={{}}`** for dynamic values (colors from data, animations with delays)
-- **`<style>` tag with `@keyframes`** for CSS animations injected inside the React return — this is the established pattern for animations (see `activity/app.js`)
+- **`<style>` tag with `@keyframes`** for CSS animations — injected inside the React return. Established pattern across all pages.
 - Arbitrary Tailwind values are used extensively: `text-[11px]`, `w-[140px]`, `tracking-[0.07em]`
 
 ### Component patterns
 - All functional components with hooks (`useState`, `useEffect`, `useMemo`, `useRef`, `useCallback`)
-- `useMemo` used aggressively for derived data (heatmapData, sourceAchs, groups, streakInfo, etc.)
+- `useMemo` used aggressively for derived data
 - Large `app.js` files contain all components for that page — no separate component files
 - Sub-components defined at module level, not inline
 
@@ -184,6 +207,7 @@ RA game titles use special syntax handled by `parseTitle()`:
 Background:        #171a21   (page bg)
 Card bg:           #1b2838   (primary card)
 Card bg darker:    #202d39   (secondary card, hover)
+Card bg dark:      #131a22   (topbar, FAB buttons)
 Border:            #2a475e   (standard border)
 Border dark:       #101214   (inner/inset border)
 Text primary:      #c6d4df
@@ -195,15 +219,18 @@ Steam blue:        #66c0f4
 Cyan accent:       #57cbde
 ```
 
-### Platform colors
-- **RA**: `#e5b143` (gold) — mastered, points, heatmap peak
-- **Steam**: `#66c0f4` (blue) — perfect, progress, heatmap peak
-
 ### Completion status colors
-- Mastered / Perfect: `#e5b143` (gold)
-- Beaten: `#8f98a0` (gray)
+- Mastered / Perfect / Completed: `#e5b143` (gold)
+- Beaten: `#8f98a0` (gray) — lesser tier
 - In Progress: `#66c0f4` (blue)
 - Not started / border: `#323f4c`
+
+### Stat number colors (hub cards + profile stats)
+- Gold `#e5b143` — earned value: Points, Mastered, Perfect
+- White `#c6d4df` — identity: Rank
+- Blue `#66c0f4` — engagement: Hours, Achievements
+- Gray `#8f98a0` — lesser tier: Beaten
+- Muted `#546270` — context/breadth: Games, Played, w/ Unlocks
 
 ### Rarity colors (Steam achievements)
 - Ultra Rare (<5%): `#e5b143` (gold)
@@ -213,10 +240,10 @@ Cyan accent:       #57cbde
 - Common (≥50%): `#546270` (muted)
 
 ### Tilde tag colors
-- Hack: red tones
-- Homebrew: blue tones
-- Demo: cyan tones
-- Prototype: gray tones
+- Hack: red `#ff6b6b`
+- Homebrew: blue `#66c0f4`
+- Demo: cyan `#57cbde`
+- Prototype: gray `#8f98a0`
 
 ### Typography
 - Font: `'Segoe UI', Arial, sans-serif`
@@ -227,22 +254,25 @@ Cyan accent:       #57cbde
 ### Section headers
 Consistent pattern across all pages:
 ```jsx
-<span className="w-[3px] h-[14px] bg-[#66c0f4] rounded-[1px] shrink-0" />  {/* accent bar */}
+<span className="w-[3px] h-[14px] bg-[#66c0f4] rounded-[1px] shrink-0" />
 <span className="text-[13px] text-white tracking-wide uppercase font-medium">Title</span>
 ```
-RA sections use `#e5b143`, Steam/Activity sections use `#66c0f4`.
+RA sections use `#e5b143`, Steam/Activity/Hub sections use `#66c0f4`.
 
 ### Shimmer skeleton
 Defined in each `index.html` `<style>` block (not in app.js). Class name: `.shimmer`. Used on loading placeholders before data arrives.
+
+### Scroll-to-top button
+Rounded FAB: `w-10 h-10 rounded-full bg-[#131a22] border border-[#2a475e] active:scale-90`. Has class `scroll-top-btn` so mobile-nav.js can reposition it above the nav bar.
 
 ---
 
 ## Overflow / Mobile Notes
 
-- `html, body { overflow-x: clip }` must be on **both** `html` and `body` in each `index.html` — `clip` on `body` alone does not propagate to the viewport scroller.
+- `html, body { overflow-x: clip }` must be on **both** `html` and `body` — `clip` on `body` alone does not propagate to the viewport scroller.
 - The RA profile `index.html` has no overflow rule (its content fits without it).
-- Use `flex-wrap` on toolbar rows that contain multiple buttons on mobile.
-- Heatmaps use `overflow-x: auto` wrapper with `minWidth: ${53 * 14}px` inner — this is intentional and correct.
+- Heatmaps use `overflow-x: auto` wrapper with `minWidth: ${53 * 14}px` inner — intentional.
+- Page headers use `pt-8 pb-5 md:pt-5` — extra top padding on mobile compensates for the hidden breadcrumb.
 
 ---
 
@@ -250,9 +280,11 @@ Defined in each `index.html` `<style>` block (not in app.js). Class name: `.shim
 
 **Always update `changelog.md` after making any code changes.** Every feature, fix, or improvement must be logged — do not wait for the user to ask.
 
-When making changes, add an entry to `changelog.md` at the top under a `## YYYY-MM-DD` heading with:
-- A one-line summary after the date
-- `### SectionName` subsections matching the page changed (RetroAchievements, Steam, Activity, Hub, Completions, Pipelines, Structure)
+Version format: `## vYY.MM.DD` (e.g. `## v26.04.11`). **If an entry for today's date already exists, add to it — never create a second `## vYY.MM.DD` header for the same date.** Check the top of `changelog.md` before adding a new header.
+
+Structure:
+- One-line summary after the version
+- `### SectionName` subsections matching the page changed
 - Bullet points per change, technical but readable
 
-Section order in `SECTION_ORDER` (changelog/app.js): RetroAchievements, Steam, Hub, Completions, Activity, Pipelines, Structure.
+Section order (matches `SECTION_ORDER` in `changelog/app.js`): RetroAchievements, Steam, Hub, Completions, Activity, Pipelines, Structure.

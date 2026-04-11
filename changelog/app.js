@@ -106,13 +106,10 @@ const Release = ({ date, summary, sections, defaultOpen }) => {
     const [open, setOpen] = useState(defaultOpen);
     const totalEntries = sections.reduce((s, sec) => s + sec.entries.length, 0);
 
-    // Format "2026-03-26" → "26 Mar 2026", handle "YYYY-MM-DD — Label" pattern
-    const [rawDate, ...labelParts] = date.split('—');
+    // Handle "vYYYY.MM.DD — Label" or plain version strings
+    const [rawVersion, ...labelParts] = date.split('—');
     const label = labelParts.join('—').trim();
-    const formatted = (() => {
-        const d = new Date(rawDate.trim() + 'T00:00:00Z');
-        return isNaN(d) ? rawDate.trim() : d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
-    })();
+    const formatted = rawVersion.trim();
 
     return (
         <div className="mb-3">
