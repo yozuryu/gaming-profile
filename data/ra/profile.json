@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-11T07:22:17.240Z"
+        "extractionTimestamp": "2026-04-11T07:53:33.805Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "A Silver Guild novice without a Guardian Beast - Day 1 - Level 1 - 0b - No Weapon - No Weapon - No Weapon",
+        "richPresenceMsg": "A Silver Guild novice and Sugar - Day 1 - Level 1 - 0b - No Weapon - No Weapon - No Weapon",
         "lastGameId": 2588,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1730,
+        "totalPoints": 1740,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6509,
+        "totalTruePoints": 6519,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "A Silver Guild novice without a Guardian Beast - Day 1 - Level 1 - 0b - No Weapon - No Weapon - No Weapon",
-        "richPresenceMsgDate": "2026-04-11 07:20:40",
+        "richPresenceMsg": "A Silver Guild novice and Sugar - Day 1 - Level 1 - 0b - No Weapon - No Weapon - No Weapon",
+        "richPresenceMsgDate": "2026-04-11 07:52:20",
         "lastGameId": 2588,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1730,
+        "totalPoints": 1740,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6509,
+        "totalTruePoints": 6519,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51409,
+        "rank": 51255,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 138716,
+        "totalRanked": 138719,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1730,
+        "points": 1740,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -147,14 +147,14 @@
             "imageTitle": "/Images/010288.png",
             "imageIngame": "/Images/010289.png",
             "imageBoxArt": "/Images/007653.png",
-            "lastPlayed": "2026-04-11 07:20:40",
+            "lastPlayed": "2026-04-11 07:52:20",
             "achievementsTotal": 36,
             "numPossibleAchievements": 36,
             "possibleScore": 500,
-            "numAchieved": 0,
-            "scoreAchieved": 0,
-            "numAchievedHardcore": 0,
-            "scoreAchievedHardcore": 0
+            "numAchieved": 1,
+            "scoreAchieved": 10,
+            "numAchievedHardcore": 1,
+            "scoreAchievedHardcore": 10
         },
         {
             "gameId": 11306,
@@ -410,9 +410,22 @@
         }
     ],
     "gameAwardsAndProgress": {
-        "count": 49,
-        "total": 49,
+        "count": 50,
+        "total": 50,
         "results": [
+            {
+                "gameId": 2588,
+                "title": "Summon Night: Swordcraft Story",
+                "imageIcon": "/Images/121536.png",
+                "consoleId": 5,
+                "consoleName": "Game Boy Advance",
+                "maxPossible": 36,
+                "numAwarded": 1,
+                "numAwardedHardcore": 1,
+                "mostRecentAwardedDate": "2026-04-11T07:52:20+00:00",
+                "highestAwardKind": null,
+                "highestAwardDate": null
+            },
             {
                 "gameId": 11306,
                 "title": "Tomba! 2: The Evil Swine Return",
@@ -1053,24 +1066,24 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-10 16:18:28",
+        "date": "2026-04-11 07:52:20",
         "hardcoreMode": true,
-        "achievementId": 88941,
-        "title": "A Strange Contraption",
-        "description": "Bring Win the golden crabs.",
-        "badgeName": "103291",
-        "points": 5,
-        "trueRatio": 5,
+        "achievementId": 49122,
+        "title": "The Tournament Begins",
+        "description": "Complete the 1st day.",
+        "badgeName": "49739",
+        "points": 10,
+        "trueRatio": 10,
         "type": "progression",
-        "author": "Alfex",
-        "authorUlid": "0197V7CT1S4MM0HP5T3ECB6VY0",
-        "gameTitle": "Tomba! 2: The Evil Swine Return",
-        "gameIcon": "/Images/124477.png",
-        "gameId": 11306,
-        "consoleName": "PlayStation",
-        "cumulScore": 682,
-        "badgeUrl": "/Badge/103291.png",
-        "gameUrl": "/game/11306"
+        "author": "goodmanjones",
+        "authorUlid": "01BH1VW188CHCA1KJJD89HM67D",
+        "gameTitle": "Summon Night: Swordcraft Story",
+        "gameIcon": "/Images/121536.png",
+        "gameId": 2588,
+        "consoleName": "Game Boy Advance",
+        "cumulScore": 692,
+        "badgeUrl": "/Badge/49739.png",
+        "gameUrl": "/game/2588"
     },
     "mostRecentGame": {
         "gameId": 2588,
@@ -1081,15 +1094,15 @@
         "imageTitle": "/Images/010288.png",
         "imageIngame": "/Images/010289.png",
         "imageBoxArt": "/Images/007653.png",
-        "lastPlayed": "2026-04-11 07:20:40",
+        "lastPlayed": "2026-04-11 07:52:20",
         "achievementsTotal": 36,
         "numPossibleAchievements": 36,
         "possibleScore": 500,
-        "numAchieved": 0,
-        "scoreAchieved": 0,
-        "numAchievedHardcore": 0,
-        "scoreAchievedHardcore": 0
+        "numAchieved": 1,
+        "scoreAchieved": 10,
+        "numAchievedHardcore": 1,
+        "scoreAchievedHardcore": 10
     },
-    "points7Days": 95,
-    "points30Days": 470
+    "points7Days": 105,
+    "points30Days": 480
 }

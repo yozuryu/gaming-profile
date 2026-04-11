@@ -17300,12 +17300,12 @@
             "consoleId": 5,
             "consoleName": "Game Boy Advance",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 3263,
-            "numDistinctPlayersHardcore": 3263,
+            "numDistinctPlayersCasual": 3264,
+            "numDistinctPlayersHardcore": 3264,
             "numAchievements": 36,
-            "numAwardedToUser": 0,
-            "numAwardedToUserHardcore": 0,
-            "userTotalPlaytime": 1160,
+            "numAwardedToUser": 1,
+            "numAwardedToUserHardcore": 1,
+            "userTotalPlaytime": 1989,
             "imageIcon": "/Images/121536.png",
             "imageTitle": "/Images/010288.png",
             "imageIngame": "/Images/010289.png",
@@ -17322,9 +17322,11 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "49739",
-                    "numAwarded": 3103,
-                    "numAwardedHardcore": 1927,
-                    "displayOrder": 0
+                    "numAwarded": 3104,
+                    "numAwardedHardcore": 1928,
+                    "displayOrder": 0,
+                    "dateEarned": "2026-04-11 07:52:20",
+                    "dateEarnedHardcore": "2026-04-11 07:52:20"
                 },
                 "49123": {
                     "id": 49123,
@@ -17451,7 +17453,7 @@
                     "title": "Swordcraft Story",
                     "description": "Complete the final day, and save Wystern from destruction.",
                     "points": 25,
-                    "trueRatio": 63,
+                    "trueRatio": 64,
                     "type": "win_condition",
                     "badgeName": "49761",
                     "numAwarded": 566,
@@ -17478,8 +17480,8 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "49742",
-                    "numAwarded": 1382,
-                    "numAwardedHardcore": 909,
+                    "numAwarded": 1383,
+                    "numAwardedHardcore": 910,
                     "displayOrder": 0
                 },
                 "49136": {
@@ -42162,8 +42164,8 @@
                     "trueRatio": 3,
                     "type": "missable",
                     "badgeName": "106701",
-                    "numAwarded": 688,
-                    "numAwardedHardcore": 388,
+                    "numAwarded": 689,
+                    "numAwardedHardcore": 389,
                     "displayOrder": 111
                 },
                 "96231": {
@@ -42507,11 +42509,11 @@
                     "title": "If Only He Never Had a Name...",
                     "description": "Defeat Michael without guarding.",
                     "points": 10,
-                    "trueRatio": 36,
+                    "trueRatio": 35,
                     "type": "missable",
                     "badgeName": "108083",
-                    "numAwarded": 472,
-                    "numAwardedHardcore": 332,
+                    "numAwarded": 473,
+                    "numAwardedHardcore": 333,
                     "displayOrder": 111
                 },
                 "98230": {
@@ -43720,8 +43722,8 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "162789",
-                    "numAwarded": 555,
-                    "numAwardedHardcore": 224,
+                    "numAwarded": 556,
+                    "numAwardedHardcore": 225,
                     "displayOrder": 305
                 },
                 "146105": {
@@ -44898,8 +44900,8 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "162883",
-                    "numAwarded": 599,
-                    "numAwardedHardcore": 250,
+                    "numAwarded": 600,
+                    "numAwardedHardcore": 251,
                     "displayOrder": 310
                 },
                 "146203": {
@@ -45184,8 +45186,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "117207",
-                    "numAwarded": 1264,
-                    "numAwardedHardcore": 572,
+                    "numAwarded": 1265,
+                    "numAwardedHardcore": 573,
                     "displayOrder": 0
                 },
                 "108766": {
@@ -45856,7 +45858,7 @@
                     "trueRatio": 28,
                     "type": "progression",
                     "badgeName": "116664",
-                    "numAwarded": 438,
+                    "numAwarded": 439,
                     "numAwardedHardcore": 224,
                     "displayOrder": 1
                 },
@@ -45904,7 +45906,7 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "116690",
-                    "numAwarded": 511,
+                    "numAwarded": 512,
                     "numAwardedHardcore": 262,
                     "displayOrder": 2
                 },
@@ -55164,8 +55166,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "114932",
-                    "numAwarded": 1704,
-                    "numAwardedHardcore": 988,
+                    "numAwarded": 1705,
+                    "numAwardedHardcore": 989,
                     "displayOrder": 6
                 },
                 "85312": {
