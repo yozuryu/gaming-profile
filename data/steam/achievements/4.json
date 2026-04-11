@@ -1,6 +1,16 @@
 {
     "recentAchievements": [
         {
+            "appId": 1903340,
+            "gameName": "Clair Obscur: Expedition 33",
+            "apiName": "PAINTING_WORKSHOP",
+            "displayName": "Noir et Blanc",
+            "description": "",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/75d20ef2b7e8c0fab546d50347644c8cf8001192.jpg",
+            "unlockedAt": "2025-07-12T14:08:55.000Z",
+            "globalPct": 19.6
+        },
+        {
             "appId": 2235440,
             "gameName": "My Little Pony: A Zephyr Heights Mystery",
             "apiName": "2",
