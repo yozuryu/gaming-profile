@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-11T11:39:51.584Z"
+        "extractionTimestamp": "2026-04-11T13:19:17.620Z"
     },
     "profile": {
         "steamId": "76561198188939413",
@@ -60,24 +60,13 @@
         {
             "appId": 578330,
             "name": "LEGO® City Undercover",
-            "playtime2Weeks": 200,
+            "playtime2Weeks": 184,
             "playtimeForever": 2137,
             "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/578330/48536e84b21951f851ec4ecf8349370a867e2c37.jpg",
             "storeUrl": "https://store.steampowered.com/app/578330",
             "lastPlayedTs": "2026-04-01T13:28:24.000Z",
             "achUnlocked": 4,
             "achTotal": 48
-        },
-        {
-            "appId": 996580,
-            "name": "Spyro™ Reignited Trilogy",
-            "playtime2Weeks": 17,
-            "playtimeForever": 1131,
-            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/996580/58d9d5bb243382cdb00259733d71e7621f502a2d.jpg",
-            "storeUrl": "https://store.steampowered.com/app/996580",
-            "lastPlayedTs": "2026-03-28T13:02:56.000Z",
-            "achUnlocked": 6,
-            "achTotal": 105
         }
     ],
     "mostRecentGame": {
@@ -108,7 +97,7 @@
             "completedAt": "2026-04-03T05:39:52.000Z",
             "lastAchName": "WayOut",
             "lastAchIconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/551110/108a5f657bb471aeb80b1a49d987cd758e3a31e2.jpg",
-            "lastAchGlobalPct": 5.6,
+            "lastAchGlobalPct": 5.7,
             "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/551110/bb0ad694b15682ccc19cc6c071de283398f4ad3c.jpg"
         },
         {
