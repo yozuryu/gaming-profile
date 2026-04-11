@@ -1,4 +1,4 @@
-# gaming-profile — Project Context for Claude
+# gaming-hub — Project Context for Claude
 
 ## Working Style
 
@@ -15,7 +15,7 @@ Personal gaming statistics dashboard aggregating RetroAchievements (RA) and Stea
 ## Directory Structure
 
 ```
-gaming-profile/
+gaming-hub/
 ├── index.html                      # Hub landing page (vanilla JS, no React)
 ├── changelog.md                    # Project changelog (Markdown, parsed by changelog app)
 ├── CLAUDE.md                       # This file

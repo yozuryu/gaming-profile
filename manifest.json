@@ -1,6 +1,6 @@
 {
-  "name": "Gaming Profile",
-  "short_name": "Gaming",
+  "name": "Gaming Hub",
+  "short_name": "Gaming Hub",
   "description": "Personal gaming statistics dashboard — RetroAchievements & Steam",
   "start_url": "/gaming-hub/",
   "scope": "/gaming-hub/",

@@ -14,6 +14,7 @@ Mobile refinements across all pages — header spacing, scroll-to-top FAB, stats
 ### Structure
 
 - All page headers: `pt-8 pb-5 md:pt-5` — extra top padding on mobile to compensate for hidden breadcrumb bar; applied to RA, Steam, Activity, Completions, Changelog, and Hub
+- PWA icons (`assets/icon-192.png`, `assets/icon-512.png`) replaced: sourced from new `assets/appicon.png` (gaming controller + trophy logo); cropped to 860×860px to remove outer padding and bottom-right watermark, then resized to 192 and 512
 
 ## 2026-04-10
 
