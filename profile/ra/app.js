@@ -531,6 +531,12 @@ const ActivityTab = ({ achievements, refTime, heatmapData, loadedChunks, totalCh
   const [collapsedDays, setCollapsedDays] = useState(new Set());
 
   const sentinelRef = useRef(null);
+  const heatmapScrollRef = useRef(null);
+  const heatmapKeys = Object.keys(heatmapData).length;
+  useEffect(() => {
+    if (!heatmapScrollRef.current || heatmapKeys === 0) return;
+    requestAnimationFrame(() => { heatmapScrollRef.current.scrollLeft = heatmapScrollRef.current.scrollWidth; });
+  }, [heatmapKeys]);
   const onLoadMoreRef = useRef(onLoadMore);
   useEffect(() => { onLoadMoreRef.current = onLoadMore; }, [onLoadMore]);
   useEffect(() => {
@@ -661,7 +667,7 @@ const ActivityTab = ({ achievements, refTime, heatmapData, loadedChunks, totalCh
           <span className="text-[10px] text-[#546270] ml-auto sm:hidden">{achievements.length} achievements</span>
         </div>
 
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto" ref={heatmapScrollRef}>
           <div style={{ minWidth: `${53 * 14}px` }}>
             {/* Month labels */}
             <div className="flex mb-1" style={{ paddingLeft: '28px' }}>

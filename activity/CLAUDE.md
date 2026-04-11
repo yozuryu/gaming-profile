@@ -16,10 +16,13 @@ All RA/Steam achievements are normalized to a unified shape via `utils/normalize
 - Filterable by platform (All / RA / Steam)
 - RA peak color: `#e5b143` (gold). Steam peak color: `#66c0f4` (blue).
 - `overflow-x: auto` wrapper with `minWidth: ${53 * 14}px` inner — intentional, do not change.
+- `scrollRef` on the wrapper div; `useEffect` auto-scrolls to `scrollWidth` on mount so the most recent weeks are visible immediately on mobile.
 
 ### Streak Panel
 - Below heatmap
-- 14-day circle timeline, current/longest streak, animated flame icons (`flameFlicker` keyframe) on active days
+- Circle timeline showing last **5 days on mobile** / **14 days on desktop** — evaluated at render time via `window.innerWidth < 768 ? streakInfo.last14.slice(-5) : streakInfo.last14`
+- Connector logic uses `arr[i-1]` (the rendered slice) not the original `streakInfo.last14[i-1]`
+- Current/longest streak, animated flame icons (`flameFlicker` keyframe) on active days
 - Gold connectors between consecutive active days
 - Today is **never** counted as a streak break — the streak holds until the day ends with no achievements
 

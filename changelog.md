@@ -2,7 +2,7 @@
 
 ## v26.04.11
 
-Mobile polish pass — floating tab pills, platform popup redesign, Steam tab parity, stats collapse, Completions deduplication, icon refresh, and hub page simplification.
+Mobile polish pass — floating tab pills, platform popup redesign, Steam tab parity, stats collapse, Completions deduplication, icon refresh, hub page simplification, heatmap/streak mobile improvements, and stat color/order refinements.
 
 ### RetroAchievements
 
@@ -26,6 +26,19 @@ Mobile polish pass — floating tab pills, platform popup redesign, Steam tab pa
 - Mobile: Recent Activity feed collapses to 4 rows by default; "Show N more / Show less" toggle button reveals the rest
 - Desktop layout unchanged
 
+### Activity
+
+- Heatmap: auto-scrolls to the rightmost (most recent) position on mount on all three pages (Activity, RA profile, Steam profile) — fires after `heatmapData` is populated using `requestAnimationFrame` to ensure DOM has rendered full width first
+- Streak panel: shows 5 circles on mobile (last 5 days) instead of 14 — fits without horizontal scroll on any phone; desktop still shows all 14
+
+### Hub
+
+- Completions strip: merged RA Mastered + Steam Perfect into single "Completed" count (gold); Beaten shown separately in blue; these are the same concept across platforms
+- RA stats order updated by relevance: Points → Rank → Mastered → Beaten → Achievements → Games; stat colors: gold (Points/Mastered), white (Rank), blue (Achievements), gray (Beaten), muted (Games)
+- Steam stats order updated by relevance: Hours → Perfect → Achievements → Games → Played → w/ Unlocks; same color logic applied
+- RA card: Wishlist stat replaced with Achievements (sum of `numAwarded` across all tracked games)
+- Changelog version headers changed from date format (`2026-04-11`) to short CalVer (`v26.04.11`)
+
 ### Completions
 
 - Deduplicate RA entries by `gameId`: when a game is both mastered and beaten, only the mastered entry is shown — prevents the same game appearing twice when "Show Beaten" is enabled
@@ -34,6 +47,7 @@ Mobile polish pass — floating tab pills, platform popup redesign, Steam tab pa
 
 - All page headers: `pt-8 pb-5 md:pt-5` — extra top padding on mobile to compensate for hidden breadcrumb bar; applied to RA, Steam, Activity, Completions, Changelog, and Hub
 - PWA icons (`assets/icon-192.png`, `assets/icon-512.png`) replaced: sourced from new `assets/appicon.png` (gaming controller + trophy logo); cropped to 860×860px to remove outer padding and bottom-right watermark, then resized to 192 and 512
+- Per-page `CLAUDE.md` files added to `profile/ra/`, `profile/steam/`, `activity/`, `completions/`, `changelog/` — root `CLAUDE.md` updated to reflect current architecture
 
 ## v26.04.10
 

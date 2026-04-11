@@ -20,6 +20,13 @@ const renderTildeTags = (tags) => {
 // ── Heatmap ───────────────────────────────────────────────────────────────────
 
 const Heatmap = ({ heatmapData, filter, selectedDay, onSelectDay }) => {
+    const scrollRef = useRef(null);
+    const heatmapKeys = Object.keys(heatmapData).length;
+
+    useEffect(() => {
+        if (!scrollRef.current || heatmapKeys === 0) return;
+        requestAnimationFrame(() => { scrollRef.current.scrollLeft = scrollRef.current.scrollWidth; });
+    }, [heatmapKeys]);
 
     const days = useMemo(() => {
         const arr = [];
@@ -82,7 +89,7 @@ const Heatmap = ({ heatmapData, filter, selectedDay, onSelectDay }) => {
         : ['#101214', '#1a4a70', '#2a6b9e', '#66c0f4', '#e5b143'];
 
     return (
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto" ref={scrollRef}>
             <div style={{ minWidth: `${53 * 14}px` }}>
                 <div className="flex mb-1" style={{ paddingLeft: '28px' }}>
                     {weeks.map((_, wi) => {
@@ -601,14 +608,14 @@ const App = () => {
                                         </span>
                                     </div>
                                 </div>
-                                {/* 14-day circles */}
+                                {/* 14-day circles (7 on mobile, 14 on desktop) */}
                                 <div style={{ overflowX: 'auto' }}>
                                     <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-                                        {streakInfo.last14.map((d, i) => (
+                                        {(window.innerWidth < 768 ? streakInfo.last14.slice(-5) : streakInfo.last14).map((d, i, arr) => (
                                             <React.Fragment key={d.key}>
                                                 {i > 0 && (
                                                     <div style={{ flex: 1, minWidth: 6, paddingTop: 24, display: 'flex', alignItems: 'flex-start' }}>
-                                                        <div style={{ width: '100%', height: 1.5, background: streakInfo.last14[i - 1].active && d.active ? 'rgba(229,177,67,0.35)' : 'transparent' }} />
+                                                        <div style={{ width: '100%', height: 1.5, background: arr[i - 1].active && d.active ? 'rgba(229,177,67,0.35)' : 'transparent' }} />
                                                     </div>
                                                 )}
                                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 5 }}>
