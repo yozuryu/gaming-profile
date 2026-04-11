@@ -3,6 +3,16 @@
         {
             "appId": 1903340,
             "gameName": "Clair Obscur: Expedition 33",
+            "apiName": "CLEA",
+            "displayName": "Clea",
+            "description": "",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/3bdd69001337b9489645949414007759a8b56a82.jpg",
+            "unlockedAt": "2025-07-12T15:26:38.000Z",
+            "globalPct": 20.8
+        },
+        {
+            "appId": 1903340,
+            "gameName": "Clair Obscur: Expedition 33",
             "apiName": "PAINTING_WORKSHOP",
             "displayName": "Noir et Blanc",
             "description": "",
