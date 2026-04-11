@@ -36,7 +36,7 @@
             "iconUrl": "866aa804c7405ab186d119639a5232a2b938542e.jpg",
             "iconGrayUrl": "b9435b1288ad8eeb993d2bff46675d64988be096.jpg",
             "hidden": false,
-            "globalPct": 29.1
+            "globalPct": 29.2
         },
         {
             "apiName": "STROPHY_COMP_QUEST",
@@ -190,7 +190,7 @@
             "iconUrl": "497fc3f32f0649f134949cbd081398f89ae1ff67.jpg",
             "iconGrayUrl": "e4964cdbb843087fbcce012077d8a642897f0a8b.jpg",
             "hidden": false,
-            "globalPct": 28.9
+            "globalPct": 29
         },
         {
             "apiName": "STROPHY_BATTLECOUNT_A",
@@ -234,7 +234,7 @@
             "iconUrl": "23ba8afe50e8a5e5552502ceb8e1450d33ac0771.jpg",
             "iconGrayUrl": "7202e7369d43551ebe825306b394c34da2e037a1.jpg",
             "hidden": false,
-            "globalPct": 23.8
+            "globalPct": 23.9
         },
         {
             "apiName": "STROPHY_SBREAK",
@@ -278,7 +278,7 @@
             "iconUrl": "5002b8a0e207899c40e330ef55da301d33c14b19.jpg",
             "iconGrayUrl": "013d95ee7896e6bc74f740b95ed88e1cc4dab177.jpg",
             "hidden": false,
-            "globalPct": 38.1
+            "globalPct": 38.2
         },
         {
             "apiName": "STROPHY_MASTER_LINK",
@@ -366,7 +366,7 @@
             "iconUrl": "af4b169e408d4c208cd575009ab7b22aaa586e81.jpg",
             "iconGrayUrl": "4de4686f3dc20508de4470fdf1deaff31d72f0a7.jpg",
             "hidden": false,
-            "globalPct": 15.8
+            "globalPct": 15.9
         },
         {
             "apiName": "STROPHY_KIZUNA_MACHIAS",
@@ -377,7 +377,7 @@
             "iconUrl": "6006937e2ddbae28c20f890d2c154a3665b7113a.jpg",
             "iconGrayUrl": "d851876d80f8a549c80a5c42d9884a285e30c282.jpg",
             "hidden": false,
-            "globalPct": 5.8
+            "globalPct": 5.9
         },
         {
             "apiName": "STROPHY_KIZUNA_EMMA",
@@ -531,7 +531,7 @@
             "iconUrl": "6c92a3395da582d3c7c28d1a5fffaa8d4dd0f6c5.jpg",
             "iconGrayUrl": "8d0d13130211303aacb81cacc3cea83a90e9dc86.jpg",
             "hidden": true,
-            "globalPct": 47.9
+            "globalPct": 48
         },
         {
             "apiName": "STROPHY_SCENARIO_05",
@@ -564,7 +564,7 @@
             "iconUrl": "1fd375abd794c6fa0585875b0b30f923c14ad334.jpg",
             "iconGrayUrl": "8f025a53d4f610cc0019c5de623320104ab398a4.jpg",
             "hidden": true,
-            "globalPct": 42.8
+            "globalPct": 42.9
         }
     ],
     "playtimeForever": 5263,
@@ -580,7 +580,7 @@
             "unlockedAt": "2017-09-03T19:43:46.000Z",
             "iconUrl": "1fd375abd794c6fa0585875b0b30f923c14ad334.jpg",
             "iconGrayUrl": "8f025a53d4f610cc0019c5de623320104ab398a4.jpg",
-            "globalPct": 42.8
+            "globalPct": 42.9
         },
         {
             "apiName": "STROPHY_KIZUNA_ALISA",
@@ -607,7 +607,7 @@
             "unlockedAt": "2017-09-01T21:18:12.000Z",
             "iconUrl": "23ba8afe50e8a5e5552502ceb8e1450d33ac0771.jpg",
             "iconGrayUrl": "7202e7369d43551ebe825306b394c34da2e037a1.jpg",
-            "globalPct": 23.8
+            "globalPct": 23.9
         },
         {
             "apiName": "STROPHY_BATTLECOUNT_B",

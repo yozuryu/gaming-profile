@@ -113,7 +113,7 @@
             "iconUrl": "3a0fb1f10b97b332d5c437b79d55c9bed29e5837.jpg",
             "iconGrayUrl": "daa6488020035ea2892bfda94ca675226fd365c6.jpg",
             "hidden": false,
-            "globalPct": 87.6
+            "globalPct": 87.7
         },
         {
             "apiName": "EXPLO_GETRUNE_TELEPORT",
@@ -366,7 +366,7 @@
             "iconUrl": "6b0198aca19d5f42b173593403247f39346e416a.jpg",
             "iconGrayUrl": "ec1af1dbd8f650c74e7b2ab015d1430111c54eba.jpg",
             "hidden": true,
-            "globalPct": 12
+            "globalPct": 11.9
         },
         {
             "apiName": "BIOME_REACHED_CLOCKTOWER",
@@ -388,7 +388,7 @@
             "iconUrl": "0452b59170b2f1359159c978a537057d17e6ffc4.jpg",
             "iconGrayUrl": "843a425721810907d1653304e14b074b30f7c7d6.jpg",
             "hidden": false,
-            "globalPct": 57.3
+            "globalPct": 57.2
         },
         {
             "apiName": "BIOME_REACHED_ANCIENTTEMPLE",
@@ -806,7 +806,7 @@
             "iconUrl": "40ceac56f4d531259009be5d96a1e66a2ffdb25d.jpg",
             "iconGrayUrl": "db5372061f43b3ed6b0d53bd9f84f63dfeb7c3d9.jpg",
             "hidden": false,
-            "globalPct": 26.4
+            "globalPct": 26.3
         },
         {
             "apiName": "FEAT_FINISHLEVEL_NOLAUNCHER",
@@ -1169,7 +1169,7 @@
             "iconUrl": "b18aab2ef7358bdec73fa59e334bcd3c55a7f995.jpg",
             "iconGrayUrl": "5b0c340bbed5706e7c4cf98f64a3d370594f3953.jpg",
             "hidden": false,
-            "globalPct": 33.1
+            "globalPct": 33
         },
         {
             "apiName": "FEAT_DEBT",
@@ -1202,7 +1202,7 @@
             "iconUrl": "1e66316277c961f3a61812dfce92a547986946b7.jpg",
             "iconGrayUrl": "cee9cac435e1e9c569da32f1e9bca1f10d514535.jpg",
             "hidden": false,
-            "globalPct": 21.8
+            "globalPct": 21.7
         },
         {
             "apiName": "BIOME_REACHED_PCASTLE",

@@ -91,7 +91,7 @@
             "iconUrl": "a688ea175559be10d9e24341006b02089d27b4ed.jpg",
             "iconGrayUrl": "567bacf85d48f37bd34ef4b0a3578058e992b059.jpg",
             "hidden": false,
-            "globalPct": 14.6
+            "globalPct": 14.5
         },
         {
             "apiName": "TROPHY3_COMP_BOOKNOTE",
@@ -212,7 +212,7 @@
             "iconUrl": "0a0219474099d5740fb0d3277a21cffd377fa206.jpg",
             "iconGrayUrl": "4de672dcd95647f1b4fced858b1c95e95530a26b.jpg",
             "hidden": false,
-            "globalPct": 39.9
+            "globalPct": 40
         },
         {
             "apiName": "TROPHY3_FASTATTACK",
@@ -234,7 +234,7 @@
             "iconUrl": "05474fd32b6f928fc31b21f37231fd38532ed329.jpg",
             "iconGrayUrl": "9e268db3fce5f195a60493a7cb6326743475eaa5.jpg",
             "hidden": false,
-            "globalPct": 48.6
+            "globalPct": 48.7
         },
         {
             "apiName": "TROPHY3_TBONUS",
@@ -399,7 +399,7 @@
             "iconUrl": "070a09a4689a5bec89b275f69f6bbbf622cb8c1c.jpg",
             "iconGrayUrl": "4de34286552cfd64c05acf328cc94b607551f980.jpg",
             "hidden": false,
-            "globalPct": 39.3
+            "globalPct": 39.4
         },
         {
             "apiName": "TROPHY3_KIZUNA_ELIOT",
@@ -443,7 +443,7 @@
             "iconUrl": "f6cfe7ef08415f2801e7ca1ff43ad82bc94a63e3.jpg",
             "iconGrayUrl": "40a83e5a5db1aae793da149d2b4dbdea14b7ff7c.jpg",
             "hidden": false,
-            "globalPct": 31.2
+            "globalPct": 31.3
         },
         {
             "apiName": "TROPHY3_KIZUNA_JUSIS",
@@ -465,7 +465,7 @@
             "iconUrl": "7aa82332d65212afaf235e0ca76db1f186b992ac.jpg",
             "iconGrayUrl": "30d8a802c54dd74d318bedeb5caab5b2937c4694.jpg",
             "hidden": false,
-            "globalPct": 33.1
+            "globalPct": 33.2
         },
         {
             "apiName": "TROPHY3_KIZUNA_GAIUS",
@@ -509,7 +509,7 @@
             "iconUrl": "8be4764993cd4c6db3ccf5ba8c8cec89a4326a7b.jpg",
             "iconGrayUrl": "714ff177210857af5faa6d033baf72479bc33f54.jpg",
             "hidden": true,
-            "globalPct": 44.3
+            "globalPct": 44.4
         },
         {
             "apiName": "TROPHY3_SCENARIO_START",
@@ -620,7 +620,7 @@
             "unlockedAt": "2021-04-25T01:07:23.000Z",
             "iconUrl": "0a0219474099d5740fb0d3277a21cffd377fa206.jpg",
             "iconGrayUrl": "4de672dcd95647f1b4fced858b1c95e95530a26b.jpg",
-            "globalPct": 39.9
+            "globalPct": 40
         },
         {
             "apiName": "TROPHY3_MASTER_ORDER",

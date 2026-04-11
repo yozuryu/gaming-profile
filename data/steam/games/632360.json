@@ -608,7 +608,7 @@
             "iconUrl": "45702bf45442c446c5700a78b1e0eab73d532b41.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 43.1
+            "globalPct": 43.2
         },
         {
             "apiName": "KillTotalEnemies",
@@ -1257,7 +1257,7 @@
             "iconUrl": "b5e7d51f1a3d72307d5c43bc1370898dc2a3be07.jpg",
             "iconGrayUrl": "fc2c3bc152468994a7e8d32b4eada925e46301c3.jpg",
             "hidden": false,
-            "globalPct": 10.8
+            "globalPct": 10.9
         },
         {
             "apiName": "RailgunnerConsecutiveWeakPoints",
@@ -1345,7 +1345,7 @@
             "iconUrl": "28129f2cc820a97fd11c633e5a8e6877aa8084c2.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 2.9
+            "globalPct": 3
         },
         {
             "apiName": "BarbecueQuantityBisonInRun",
@@ -1433,7 +1433,7 @@
             "iconUrl": "ec14a34f2499289b7c03eb19af43aa9d37ee58e7.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 4.1
+            "globalPct": 4.2
         },
         {
             "apiName": "SeekerPerfect20Meditation",
@@ -1543,7 +1543,7 @@
             "iconUrl": "d3e8ed9f3da8d30643ec3613f7e9dd885756cfdd.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 4.1
+            "globalPct": 4.2
         },
         {
             "apiName": "LoaderClearMeridianEvent",
@@ -1576,7 +1576,7 @@
             "iconUrl": "8ef664e97a8754810e7af0304cf6f9ed7b5ac603.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 3.4
+            "globalPct": 3.5
         },
         {
             "apiName": "RailgunnerClearMeridianEvent",
@@ -1587,7 +1587,7 @@
             "iconUrl": "49406bbb571dd24f174926863b757c1a47bc6317.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 3.8
+            "globalPct": 3.9
         },
         {
             "apiName": "TreebotClearMeridianEvent",
@@ -1752,7 +1752,7 @@
             "iconUrl": "1e72182343b60561b3acbcd9ae4486b4d399b4cf.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": true,
-            "globalPct": 1.3
+            "globalPct": 1.4
         },
         {
             "apiName": "ToolbotPurge",
@@ -1884,7 +1884,7 @@
             "iconUrl": "66f0659c71746f654540cd4a59e1c0d3380f4e19.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 1.7
+            "globalPct": 1.8
         }
     ],
     "playtimeForever": 2080,
