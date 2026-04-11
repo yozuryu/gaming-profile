@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-11T13:10:57.688Z"
+        "extractionTimestamp": "2026-04-11T13:32:38.134Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "A Silver Guild novice and Sugar - Day 1 - Level 1 - 0b - No Weapon - No Weapon - No Weapon",
-        "lastGameId": 2588,
+        "richPresenceMsg": "Playing Summon Night: Swordcraft Story 2",
+        "lastGameId": 2589,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1740,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "A Silver Guild novice and Sugar - Day 1 - Level 1 - 0b - No Weapon - No Weapon - No Weapon",
-        "richPresenceMsgDate": "2026-04-11 07:52:20",
-        "lastGameId": 2588,
+        "richPresenceMsg": "Playing Summon Night: Swordcraft Story 2",
+        "richPresenceMsgDate": "2026-04-11 13:31:06",
+        "lastGameId": 2589,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1740,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51267,
+        "rank": 51269,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 138742,
+        "totalRanked": 138743,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -138,6 +138,24 @@
         ]
     },
     "recentlyPlayedGames": [
+        {
+            "gameId": 2589,
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "title": "Summon Night: Swordcraft Story 2",
+            "imageIcon": "/Images/122120.png",
+            "imageTitle": "/Images/011162.png",
+            "imageIngame": "/Images/011163.png",
+            "imageBoxArt": "/Images/011161.png",
+            "lastPlayed": "2026-04-11 13:31:06",
+            "achievementsTotal": 81,
+            "numPossibleAchievements": 81,
+            "possibleScore": 678,
+            "numAchieved": 0,
+            "scoreAchieved": 0,
+            "numAchievedHardcore": 0,
+            "scoreAchievedHardcore": 0
+        },
         {
             "gameId": 2588,
             "consoleId": 5,
@@ -385,24 +403,6 @@
             "achievementsTotal": 81,
             "numPossibleAchievements": 81,
             "possibleScore": 506,
-            "numAchieved": 0,
-            "scoreAchieved": 0,
-            "numAchievedHardcore": 0,
-            "scoreAchievedHardcore": 0
-        },
-        {
-            "gameId": 14717,
-            "consoleId": 24,
-            "consoleName": "Pokemon Mini",
-            "title": "Pokémon Shock Tetris",
-            "imageIcon": "/Images/035887.png",
-            "imageTitle": "/Images/035812.png",
-            "imageIngame": "/Images/035813.png",
-            "imageBoxArt": "/Images/035814.png",
-            "lastPlayed": "2026-03-28 09:25:13",
-            "achievementsTotal": 114,
-            "numPossibleAchievements": 114,
-            "possibleScore": 645,
             "numAchieved": 0,
             "scoreAchieved": 0,
             "numAchievedHardcore": 0,
@@ -1086,22 +1086,22 @@
         "gameUrl": "/game/2588"
     },
     "mostRecentGame": {
-        "gameId": 2588,
+        "gameId": 2589,
         "consoleId": 5,
         "consoleName": "Game Boy Advance",
-        "title": "Summon Night: Swordcraft Story",
-        "imageIcon": "/Images/121536.png",
-        "imageTitle": "/Images/010288.png",
-        "imageIngame": "/Images/010289.png",
-        "imageBoxArt": "/Images/007653.png",
-        "lastPlayed": "2026-04-11 07:52:20",
-        "achievementsTotal": 36,
-        "numPossibleAchievements": 36,
-        "possibleScore": 500,
-        "numAchieved": 1,
-        "scoreAchieved": 10,
-        "numAchievedHardcore": 1,
-        "scoreAchievedHardcore": 10
+        "title": "Summon Night: Swordcraft Story 2",
+        "imageIcon": "/Images/122120.png",
+        "imageTitle": "/Images/011162.png",
+        "imageIngame": "/Images/011163.png",
+        "imageBoxArt": "/Images/011161.png",
+        "lastPlayed": "2026-04-11 13:31:06",
+        "achievementsTotal": 81,
+        "numPossibleAchievements": 81,
+        "possibleScore": 678,
+        "numAchieved": 0,
+        "scoreAchieved": 0,
+        "numAchievedHardcore": 0,
+        "scoreAchievedHardcore": 0
     },
     "points7Days": 105,
     "points30Days": 480
