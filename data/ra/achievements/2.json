@@ -739,6 +739,26 @@
             "cumulScore": 107,
             "badgeUrl": "/Badge/569815.png",
             "gameUrl": "/game/19038"
+        },
+        {
+            "date": "2026-01-11 16:13:48",
+            "hardcoreMode": true,
+            "achievementId": 474244,
+            "title": "Listen to Your Elders",
+            "description": "[Z1] Do as the old man says and pick up the Wooden Sword in either quest",
+            "badgeName": "538036",
+            "points": 1,
+            "trueRatio": 1,
+            "type": null,
+            "author": "lonegraywolf2000",
+            "authorUlid": "01FAS7YTJ7QRXH3H6NK24CYCEN",
+            "gameTitle": "The Legend of Zelda: Collector's Edition",
+            "gameIcon": "/Images/103269.png",
+            "gameId": 2198,
+            "consoleName": "GameCube",
+            "cumulScore": 108,
+            "badgeUrl": "/Badge/538036.png",
+            "gameUrl": "/game/2198"
         }
     ]
 }
