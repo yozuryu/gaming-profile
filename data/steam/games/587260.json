@@ -102,7 +102,7 @@
             "iconUrl": "29c20268186b5908e2e7564a4522151d497a5685.jpg",
             "iconGrayUrl": "5c9b4b5aa8847e825b3af0dd4c3e6fa80dc88a48.jpg",
             "hidden": false,
-            "globalPct": 10
+            "globalPct": 10.1
         },
         {
             "apiName": "ACHIEVEMENT_11",
@@ -245,7 +245,7 @@
             "iconUrl": "b285c9c28eb28f2c0c26511e9e30cf7f5361d168.jpg",
             "iconGrayUrl": "5c9b4b5aa8847e825b3af0dd4c3e6fa80dc88a48.jpg",
             "hidden": false,
-            "globalPct": 23.9
+            "globalPct": 24
         },
         {
             "apiName": "ACHIEVEMENT_25",
@@ -454,7 +454,7 @@
             "iconUrl": "b285c9c28eb28f2c0c26511e9e30cf7f5361d168.jpg",
             "iconGrayUrl": "5c9b4b5aa8847e825b3af0dd4c3e6fa80dc88a48.jpg",
             "hidden": true,
-            "globalPct": 85.2
+            "globalPct": 85.3
         },
         {
             "apiName": "ACHIEVEMENT_44",
@@ -553,7 +553,7 @@
             "iconUrl": "b285c9c28eb28f2c0c26511e9e30cf7f5361d168.jpg",
             "iconGrayUrl": "5c9b4b5aa8847e825b3af0dd4c3e6fa80dc88a48.jpg",
             "hidden": true,
-            "globalPct": 18.8
+            "globalPct": 18.9
         },
         {
             "apiName": "ACHIEVEMENT_53",
@@ -669,7 +669,7 @@
             "unlockedAt": "2017-12-20T22:30:14.000Z",
             "iconUrl": "b285c9c28eb28f2c0c26511e9e30cf7f5361d168.jpg",
             "iconGrayUrl": "5c9b4b5aa8847e825b3af0dd4c3e6fa80dc88a48.jpg",
-            "globalPct": 85.2
+            "globalPct": 85.3
         }
     ]
 }
