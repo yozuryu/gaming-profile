@@ -14,7 +14,7 @@
             "iconUrl": "1d07dbd69a5a2eedb4138f6270bb9ab3aba53e44.jpg",
             "iconGrayUrl": "8f5e06c989796c4755ed1fca732a95c0175afd4a.jpg",
             "hidden": false,
-            "globalPct": 21.8
+            "globalPct": 21.7
         },
         {
             "apiName": "Level1_10",
@@ -36,7 +36,7 @@
             "iconUrl": "9f5c2583eb8e97046da1f3efb6a82aae29849175.jpg",
             "iconGrayUrl": "6552410dc814153d5ad96d2421059e846a4aff6b.jpg",
             "hidden": false,
-            "globalPct": 7.6
+            "globalPct": 7.5
         },
         {
             "apiName": "Level1_13",
@@ -135,7 +135,7 @@
             "iconUrl": "3382353cfb43018dfa5b0a82cc302274d5b5537b.jpg",
             "iconGrayUrl": "a97284e553f50f5a7fca42fb20f3d4b943184ec2.jpg",
             "hidden": false,
-            "globalPct": 28.1
+            "globalPct": 28
         },
         {
             "apiName": "Level2_15",
@@ -157,7 +157,7 @@
             "iconUrl": "d67256e6cfaa12405798ec6707cfd85977965b87.jpg",
             "iconGrayUrl": "20d73606684d3631af430cda52dd735d3ef4de15.jpg",
             "hidden": false,
-            "globalPct": 13.8
+            "globalPct": 13.7
         },
         {
             "apiName": "Level2_18",
@@ -443,7 +443,7 @@
             "iconUrl": "108a5f657bb471aeb80b1a49d987cd758e3a31e2.jpg",
             "iconGrayUrl": "f2f191c4cae612aeca35b95126e06c5e5914c807.jpg",
             "hidden": true,
-            "globalPct": 5.7
+            "globalPct": 5.6
         },
         {
             "apiName": "Level7_01",
@@ -476,7 +476,7 @@
             "iconUrl": "abc6f82b606d0a1a15579e91758901dc908ca23a.jpg",
             "iconGrayUrl": "6eadf04f1135d210128962283565a1c87254cf08.jpg",
             "hidden": false,
-            "globalPct": 11
+            "globalPct": 10.9
         },
         {
             "apiName": "Level7_04",
@@ -542,7 +542,7 @@
             "iconUrl": "35c8111620ea36fefd33c700a3dfe6f95f2e69b1.jpg",
             "iconGrayUrl": "597300f6c2297b34d569fbfa980e5e57c5e55037.jpg",
             "hidden": false,
-            "globalPct": 6.7
+            "globalPct": 6.6
         },
         {
             "apiName": "Level7_10",
@@ -652,7 +652,7 @@
             "iconUrl": "48176b3ff103679c814cee36e88f5738dbd3c74c.jpg",
             "iconGrayUrl": "74d2db40caac35b2a857b56b2c021cb4efffa978.jpg",
             "hidden": false,
-            "globalPct": 6.2
+            "globalPct": 6.1
         },
         {
             "apiName": "Level7_20",
@@ -745,7 +745,7 @@
             "unlockedAt": "2026-04-03T05:39:52.000Z",
             "iconUrl": "108a5f657bb471aeb80b1a49d987cd758e3a31e2.jpg",
             "iconGrayUrl": "f2f191c4cae612aeca35b95126e06c5e5914c807.jpg",
-            "globalPct": 5.7
+            "globalPct": 5.6
         },
         {
             "apiName": "Level6_07",
