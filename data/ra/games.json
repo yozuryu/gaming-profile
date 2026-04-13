@@ -6,8 +6,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5311,
-            "numDistinctPlayersHardcore": 5311,
+            "numDistinctPlayersCasual": 5312,
+            "numDistinctPlayersHardcore": 5312,
             "numAchievements": 59,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -28,8 +28,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "248314",
-                    "numAwarded": 5090,
-                    "numAwardedHardcore": 3088,
+                    "numAwarded": 5091,
+                    "numAwardedHardcore": 3089,
                     "displayOrder": 1
                 },
                 "17735": {
@@ -328,8 +328,8 @@
                     "trueRatio": 48,
                     "type": "progression",
                     "badgeName": "248306",
-                    "numAwarded": 1158,
-                    "numAwardedHardcore": 938,
+                    "numAwarded": 1159,
+                    "numAwardedHardcore": 939,
                     "displayOrder": 36
                 },
                 "17760": {
@@ -340,8 +340,8 @@
                     "trueRatio": 97,
                     "type": "win_condition",
                     "badgeName": "248286",
-                    "numAwarded": 1144,
-                    "numAwardedHardcore": 932,
+                    "numAwarded": 1145,
+                    "numAwardedHardcore": 933,
                     "displayOrder": 37
                 },
                 "17761": {
@@ -520,8 +520,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "248256",
-                    "numAwarded": 1158,
-                    "numAwardedHardcore": 959,
+                    "numAwarded": 1159,
+                    "numAwardedHardcore": 960,
                     "displayOrder": 43
                 },
                 "17777": {
@@ -736,8 +736,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 2058,
-            "numDistinctPlayersHardcore": 2058,
+            "numDistinctPlayersCasual": 2059,
+            "numDistinctPlayersHardcore": 2059,
             "numAchievements": 87,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -758,8 +758,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "252216",
-                    "numAwarded": 1901,
-                    "numAwardedHardcore": 1265,
+                    "numAwarded": 1902,
+                    "numAwardedHardcore": 1266,
                     "displayOrder": 2
                 },
                 "16669": {
@@ -986,8 +986,8 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "252243",
-                    "numAwarded": 667,
-                    "numAwardedHardcore": 519,
+                    "numAwarded": 668,
+                    "numAwardedHardcore": 520,
                     "displayOrder": 34
                 },
                 "16688": {
@@ -998,8 +998,8 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "252244",
-                    "numAwarded": 667,
-                    "numAwardedHardcore": 518,
+                    "numAwarded": 668,
+                    "numAwardedHardcore": 519,
                     "displayOrder": 35
                 },
                 "16689": {
@@ -1502,8 +1502,8 @@
                     "trueRatio": 1,
                     "type": "missable",
                     "badgeName": "252253",
-                    "numAwarded": 1023,
-                    "numAwardedHardcore": 828,
+                    "numAwarded": 1024,
+                    "numAwardedHardcore": 829,
                     "displayOrder": 1
                 },
                 "16746": {
@@ -22205,6 +22205,810 @@
                     "numAwarded": 10,
                     "numAwardedHardcore": 9,
                     "displayOrder": 1105
+                }
+            }
+        },
+        "2873": {
+            "id": 2873,
+            "title": "Donald Duck: Goin' Quackers",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "parentGameId": null,
+            "numDistinctPlayersCasual": 5291,
+            "numDistinctPlayersHardcore": 5291,
+            "numAchievements": 65,
+            "numAwardedToUser": 1,
+            "numAwardedToUserHardcore": 1,
+            "userTotalPlaytime": 314,
+            "imageIcon": "/Images/113907.png",
+            "imageTitle": "/Images/032748.png",
+            "imageIngame": "/Images/050578.png",
+            "publisher": "Ubisoft",
+            "developer": "Ubisoft",
+            "genre": "3D Platforming",
+            "released": "2000-11-14",
+            "achievements": {
+                "106178": {
+                    "id": 106178,
+                    "title": "Tutorial TV",
+                    "description": "Use one of the Tutorial TVs in Forest Edge.",
+                    "points": 1,
+                    "trueRatio": 1,
+                    "type": "missable",
+                    "badgeName": "405191",
+                    "numAwarded": 4893,
+                    "numAwardedHardcore": 3496,
+                    "displayOrder": 0,
+                    "dateEarned": "2026-04-13 23:19:44",
+                    "dateEarnedHardcore": "2026-04-13 23:19:44"
+                },
+                "106179": {
+                    "id": 106179,
+                    "title": "Quack Attack!",
+                    "description": "Defeat your first enemy in Forest Edge.",
+                    "points": 1,
+                    "trueRatio": 1,
+                    "type": null,
+                    "badgeName": "405192",
+                    "numAwarded": 5103,
+                    "numAwardedHardcore": 3614,
+                    "displayOrder": 1
+                },
+                "106180": {
+                    "id": 106180,
+                    "title": "Shake Things Up!",
+                    "description": "Drink your first milkshake in Forest Edge.",
+                    "points": 1,
+                    "trueRatio": 1,
+                    "type": null,
+                    "badgeName": "405193",
+                    "numAwarded": 5084,
+                    "numAwardedHardcore": 3611,
+                    "displayOrder": 2
+                },
+                "106181": {
+                    "id": 106181,
+                    "title": "Silly Old Bears",
+                    "description": "Collect all of Huey's teddy bears in Forest Edge.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405256",
+                    "numAwarded": 4790,
+                    "numAwardedHardcore": 3470,
+                    "displayOrder": 5
+                },
+                "106182": {
+                    "id": 106182,
+                    "title": "If a Ball Falls in the Forest...",
+                    "description": "Collect Forest Edge's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405257",
+                    "numAwarded": 5001,
+                    "numAwardedHardcore": 3591,
+                    "displayOrder": 4
+                },
+                "106183": {
+                    "id": 106183,
+                    "title": "Duck Trails",
+                    "description": "Set a new record time in Forest Edge.",
+                    "points": 5,
+                    "trueRatio": 5,
+                    "type": null,
+                    "badgeName": "405197",
+                    "numAwarded": 3399,
+                    "numAwardedHardcore": 2733,
+                    "displayOrder": 6
+                },
+                "106184": {
+                    "id": 106184,
+                    "title": "Second Spark",
+                    "description": "Collect The Gorge's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405198",
+                    "numAwarded": 4334,
+                    "numAwardedHardcore": 3337,
+                    "displayOrder": 7
+                },
+                "106185": {
+                    "id": 106185,
+                    "title": "Bear-ly Made It",
+                    "description": "Collect all of Huey's teddy bears in The Gorge.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405199",
+                    "numAwarded": 4259,
+                    "numAwardedHardcore": 3285,
+                    "displayOrder": 8
+                },
+                "106186": {
+                    "id": 106186,
+                    "title": "Don't Gorge Yourself",
+                    "description": "Set a new record time in The Gorge.",
+                    "points": 5,
+                    "trueRatio": 5,
+                    "type": null,
+                    "badgeName": "405200",
+                    "numAwarded": 3021,
+                    "numAwardedHardcore": 2506,
+                    "displayOrder": 9
+                },
+                "106187": {
+                    "id": 106187,
+                    "title": "Hand It Over Huey!",
+                    "description": "Collect Huey's Track's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405201",
+                    "numAwarded": 4049,
+                    "numAwardedHardcore": 3218,
+                    "displayOrder": 10
+                },
+                "106188": {
+                    "id": 106188,
+                    "title": "Tracked Them Down",
+                    "description": "Collect all of Huey's teddy bears in Huey's Track.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405202",
+                    "numAwarded": 4016,
+                    "numAwardedHardcore": 3181,
+                    "displayOrder": 11
+                },
+                "106189": {
+                    "id": 106189,
+                    "title": "Quack and Field",
+                    "description": "Set a new record time in Huey's Track.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405203",
+                    "numAwarded": 2780,
+                    "numAwardedHardcore": 2342,
+                    "displayOrder": 12
+                },
+                "106190": {
+                    "id": 106190,
+                    "title": "Let's Get Dangerous",
+                    "description": "Collect Dangerous Cliff's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405204",
+                    "numAwarded": 3964,
+                    "numAwardedHardcore": 3164,
+                    "displayOrder": 13
+                },
+                "106191": {
+                    "id": 106191,
+                    "title": "I Can't Bear This Anymore",
+                    "description": "Collect all of Huey's teddy bears in Dangerous Cliff.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405205",
+                    "numAwarded": 3902,
+                    "numAwardedHardcore": 3113,
+                    "displayOrder": 14
+                },
+                "106192": {
+                    "id": 106192,
+                    "title": "A Dip Into Danger",
+                    "description": "Set a new record time in Dangerous Cliff.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405206",
+                    "numAwarded": 2763,
+                    "numAwardedHardcore": 2334,
+                    "displayOrder": 15
+                },
+                "106193": {
+                    "id": 106193,
+                    "title": "Poking the Bear",
+                    "description": "Complete Bears' Path.",
+                    "points": 5,
+                    "trueRatio": 5,
+                    "type": null,
+                    "badgeName": "405207",
+                    "numAwarded": 3217,
+                    "numAwardedHardcore": 2624,
+                    "displayOrder": 16
+                },
+                "106194": {
+                    "id": 106194,
+                    "title": "Duck Duck Bird",
+                    "description": "Defeat Bernadette the Bird.",
+                    "points": 5,
+                    "trueRatio": 5,
+                    "type": "progression",
+                    "badgeName": "405208",
+                    "numAwarded": 3829,
+                    "numAwardedHardcore": 3092,
+                    "displayOrder": 17
+                },
+                "106195": {
+                    "id": 106195,
+                    "title": "Tourist Trap",
+                    "description": "Obtain 100% completion of every stage in Duckie Mountain.",
+                    "points": 10,
+                    "trueRatio": 12,
+                    "type": null,
+                    "badgeName": "405209",
+                    "numAwarded": 2694,
+                    "numAwardedHardcore": 2285,
+                    "displayOrder": 18
+                },
+                "106196": {
+                    "id": 106196,
+                    "title": "Balling in the Street",
+                    "description": "Collect First Avenue's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405210",
+                    "numAwarded": 3558,
+                    "numAwardedHardcore": 2969,
+                    "displayOrder": 19
+                },
+                "106197": {
+                    "id": 106197,
+                    "title": "Later Skater",
+                    "description": "Collect all of Dewey's roller skates in First Avenue.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405211",
+                    "numAwarded": 3327,
+                    "numAwardedHardcore": 2752,
+                    "displayOrder": 20
+                },
+                "106198": {
+                    "id": 106198,
+                    "title": "Over the Speed Limit",
+                    "description": "Set a new record time in First Avenue.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405212",
+                    "numAwarded": 2561,
+                    "numAwardedHardcore": 2194,
+                    "displayOrder": 21
+                },
+                "106199": {
+                    "id": 106199,
+                    "title": "Lightning Rod",
+                    "description": "Collect The Roofs's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405213",
+                    "numAwarded": 3496,
+                    "numAwardedHardcore": 2926,
+                    "displayOrder": 22
+                },
+                "106200": {
+                    "id": 106200,
+                    "title": "Rolling on The Roofs",
+                    "description": "Collect all of Dewey's roller skates in The Roofs.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405214",
+                    "numAwarded": 3485,
+                    "numAwardedHardcore": 2912,
+                    "displayOrder": 23
+                },
+                "106201": {
+                    "id": 106201,
+                    "title": "Raise the Rooftops",
+                    "description": "Set a new record time in The Roofs.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405215",
+                    "numAwarded": 2540,
+                    "numAwardedHardcore": 2175,
+                    "displayOrder": 24
+                },
+                "106202": {
+                    "id": 106202,
+                    "title": "Drop It Dewey!",
+                    "description": "Collect Dewey's Rooftops's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405216",
+                    "numAwarded": 3476,
+                    "numAwardedHardcore": 2920,
+                    "displayOrder": 25
+                },
+                "106203": {
+                    "id": 106203,
+                    "title": "But Why Three Skates?",
+                    "description": "Collect all of Dewey's roller skates in Dewey's Rooftops.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405217",
+                    "numAwarded": 3358,
+                    "numAwardedHardcore": 2817,
+                    "displayOrder": 26
+                },
+                "106204": {
+                    "id": 106204,
+                    "title": "Rooftop Run",
+                    "description": "Set a new record time in Dewey's Rooftops.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405218",
+                    "numAwarded": 2472,
+                    "numAwardedHardcore": 2126,
+                    "displayOrder": 27
+                },
+                "106205": {
+                    "id": 106205,
+                    "title": "A Spark in the Sky",
+                    "description": "Collect Urban High-Rises's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405219",
+                    "numAwarded": 3414,
+                    "numAwardedHardcore": 2888,
+                    "displayOrder": 28
+                },
+                "106206": {
+                    "id": 106206,
+                    "title": "A Real Pro Skater",
+                    "description": "Collect all of Dewey's roller skates in Urban High-Rises.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405220",
+                    "numAwarded": 3379,
+                    "numAwardedHardcore": 2833,
+                    "displayOrder": 29
+                },
+                "106207": {
+                    "id": 106207,
+                    "title": "He Rises to the Occasion",
+                    "description": "Set a new record time in Urban High-Rises.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405221",
+                    "numAwarded": 2473,
+                    "numAwardedHardcore": 2130,
+                    "displayOrder": 30
+                },
+                "106208": {
+                    "id": 106208,
+                    "title": "Escape from the Street",
+                    "description": "Complete Main Street.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405222",
+                    "numAwarded": 2794,
+                    "numAwardedHardcore": 2351,
+                    "displayOrder": 31
+                },
+                "106209": {
+                    "id": 106209,
+                    "title": "Construction Cruise",
+                    "description": "Defeat the Beagle Boy.",
+                    "points": 5,
+                    "trueRatio": 5,
+                    "type": "progression",
+                    "badgeName": "405223",
+                    "numAwarded": 3385,
+                    "numAwardedHardcore": 2871,
+                    "displayOrder": 32
+                },
+                "106210": {
+                    "id": 106210,
+                    "title": "Snooze Cruise",
+                    "description": "Obtain 100% completion of every stage in Duckberg.",
+                    "points": 10,
+                    "trueRatio": 12,
+                    "type": null,
+                    "badgeName": "405224",
+                    "numAwarded": 2450,
+                    "numAwardedHardcore": 2107,
+                    "displayOrder": 33
+                },
+                "106211": {
+                    "id": 106211,
+                    "title": "Hall Monitor",
+                    "description": "Collect Haunted Hall's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405225",
+                    "numAwarded": 3282,
+                    "numAwardedHardcore": 2812,
+                    "displayOrder": 34
+                },
+                "106212": {
+                    "id": 106212,
+                    "title": "Set Phasers to Stun",
+                    "description": "Collect all of Louie's ray guns in Haunted Hall.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405226",
+                    "numAwarded": 3032,
+                    "numAwardedHardcore": 2579,
+                    "displayOrder": 35
+                },
+                "106213": {
+                    "id": 106213,
+                    "title": "Not Your Usual Haunt",
+                    "description": "Set a new record time in Haunted Hall.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405227",
+                    "numAwarded": 2363,
+                    "numAwardedHardcore": 2050,
+                    "displayOrder": 36
+                },
+                "106214": {
+                    "id": 106214,
+                    "title": "Keep the Ball Rolling!",
+                    "description": "Collect Earie Alley's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405228",
+                    "numAwarded": 3251,
+                    "numAwardedHardcore": 2794,
+                    "displayOrder": 37
+                },
+                "106215": {
+                    "id": 106215,
+                    "title": "Straight Shot",
+                    "description": "Collect all of Louie's ray guns in Earie Alley.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405229",
+                    "numAwarded": 3147,
+                    "numAwardedHardcore": 2696,
+                    "displayOrder": 38
+                },
+                "106216": {
+                    "id": 106216,
+                    "title": "Peaks and Alleys",
+                    "description": "Set a new record time in Earie Alley.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405230",
+                    "numAwarded": 2343,
+                    "numAwardedHardcore": 2037,
+                    "displayOrder": 39
+                },
+                "106217": {
+                    "id": 106217,
+                    "title": "Leave It Louie!",
+                    "description": "Collect Louie's Creepy Corridor's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405231",
+                    "numAwarded": 3231,
+                    "numAwardedHardcore": 2774,
+                    "displayOrder": 40
+                },
+                "106218": {
+                    "id": 106218,
+                    "title": "Run and Gun",
+                    "description": "Collect all of Louie's ray guns in Louie's Creepy Corridor.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405232",
+                    "numAwarded": 3085,
+                    "numAwardedHardcore": 2643,
+                    "displayOrder": 41
+                },
+                "106219": {
+                    "id": 106219,
+                    "title": "No More Corridor",
+                    "description": "Set a new record time in Louie's Creepy Corridor.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405233",
+                    "numAwarded": 2333,
+                    "numAwardedHardcore": 2030,
+                    "displayOrder": 42
+                },
+                "106220": {
+                    "id": 106220,
+                    "title": "Signs of Life",
+                    "description": "Collect Ghostly Path's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405234",
+                    "numAwarded": 3220,
+                    "numAwardedHardcore": 2771,
+                    "displayOrder": 43
+                },
+                "106221": {
+                    "id": 106221,
+                    "title": "Blaster Master",
+                    "description": "Collect all of Louie's ray guns in Ghostly Path.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405235",
+                    "numAwarded": 2899,
+                    "numAwardedHardcore": 2483,
+                    "displayOrder": 44
+                },
+                "106222": {
+                    "id": 106222,
+                    "title": "Gone and Ghosted",
+                    "description": "Set a new record time in Ghostly Path.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405236",
+                    "numAwarded": 2289,
+                    "numAwardedHardcore": 1997,
+                    "displayOrder": 45
+                },
+                "106223": {
+                    "id": 106223,
+                    "title": "It's No Master Hand",
+                    "description": "Complete Under 'Hand'ed.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405237",
+                    "numAwarded": 2532,
+                    "numAwardedHardcore": 2163,
+                    "displayOrder": 46
+                },
+                "106224": {
+                    "id": 106224,
+                    "title": "Let Me Spell This Out",
+                    "description": "Defeat Magica De Spell.",
+                    "points": 5,
+                    "trueRatio": 5,
+                    "type": "progression",
+                    "badgeName": "405238",
+                    "numAwarded": 3172,
+                    "numAwardedHardcore": 2741,
+                    "displayOrder": 47
+                },
+                "106225": {
+                    "id": 106225,
+                    "title": "Penguin Suit",
+                    "description": "Obtain 100% completion of every stage in Magica De Spell's Manor.",
+                    "points": 10,
+                    "trueRatio": 13,
+                    "type": null,
+                    "badgeName": "405239",
+                    "numAwarded": 2288,
+                    "numAwardedHardcore": 1991,
+                    "displayOrder": 48
+                },
+                "106226": {
+                    "id": 106226,
+                    "title": "Wak like an Egyptian",
+                    "description": "Collect Temple's Entrance's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405240",
+                    "numAwarded": 2575,
+                    "numAwardedHardcore": 2160,
+                    "displayOrder": 49
+                },
+                "106227": {
+                    "id": 106227,
+                    "title": "No Fly Zone",
+                    "description": "Collect all of the triplets' toy airplanes in Temple's Entrance.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405241",
+                    "numAwarded": 2514,
+                    "numAwardedHardcore": 2113,
+                    "displayOrder": 50
+                },
+                "106228": {
+                    "id": 106228,
+                    "title": "Temple Run",
+                    "description": "Set a new record time in Temple's Entrance.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405242",
+                    "numAwarded": 2210,
+                    "numAwardedHardcore": 1933,
+                    "displayOrder": 51
+                },
+                "106229": {
+                    "id": 106229,
+                    "title": "Go with the Lava Flow",
+                    "description": "Collect Artifact Way's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405243",
+                    "numAwarded": 2518,
+                    "numAwardedHardcore": 2121,
+                    "displayOrder": 52
+                },
+                "106230": {
+                    "id": 106230,
+                    "title": "Bit of a Bumpy Flight",
+                    "description": "Collect all of the triplets' toy airplanes in Artifact Way.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405244",
+                    "numAwarded": 2492,
+                    "numAwardedHardcore": 2105,
+                    "displayOrder": 53
+                },
+                "106231": {
+                    "id": 106231,
+                    "title": "No Respect for the Ruins",
+                    "description": "Set a new record time in Artifact Way.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405245",
+                    "numAwarded": 2200,
+                    "numAwardedHardcore": 1924,
+                    "displayOrder": 54
+                },
+                "106232": {
+                    "id": 106232,
+                    "title": "Triple Trouble",
+                    "description": "Collect The Nephews' Murky Way's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405246",
+                    "numAwarded": 2495,
+                    "numAwardedHardcore": 2102,
+                    "displayOrder": 55
+                },
+                "106233": {
+                    "id": 106233,
+                    "title": "Stop Toying with Me!",
+                    "description": "Collect all of the triplets' toy airplanes in The Nephews' Murky Way.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405247",
+                    "numAwarded": 2452,
+                    "numAwardedHardcore": 2071,
+                    "displayOrder": 56
+                },
+                "106234": {
+                    "id": 106234,
+                    "title": "Playing with Fire",
+                    "description": "Set a new record time in The Nephews' Murky Way.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405248",
+                    "numAwarded": 2189,
+                    "numAwardedHardcore": 1916,
+                    "displayOrder": 57
+                },
+                "106235": {
+                    "id": 106235,
+                    "title": "The Ball's in your Court",
+                    "description": "Collect Ancient Fate's energy ball.",
+                    "points": 2,
+                    "trueRatio": 2,
+                    "type": null,
+                    "badgeName": "405249",
+                    "numAwarded": 2493,
+                    "numAwardedHardcore": 2099,
+                    "displayOrder": 58
+                },
+                "106236": {
+                    "id": 106236,
+                    "title": "Last Call for This Flight",
+                    "description": "Collect all of the triplets' toy airplanes in Ancient Fate.",
+                    "points": 3,
+                    "trueRatio": 3,
+                    "type": null,
+                    "badgeName": "405250",
+                    "numAwarded": 2447,
+                    "numAwardedHardcore": 2072,
+                    "displayOrder": 59
+                },
+                "106237": {
+                    "id": 106237,
+                    "title": "Faster than Fate",
+                    "description": "Set a new record time in Ancient Fate.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405251",
+                    "numAwarded": 2188,
+                    "numAwardedHardcore": 1916,
+                    "displayOrder": 60
+                },
+                "106238": {
+                    "id": 106238,
+                    "title": "He's on a Roll!",
+                    "description": "Complete Head Alley.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": null,
+                    "badgeName": "405252",
+                    "numAwarded": 2330,
+                    "numAwardedHardcore": 1998,
+                    "displayOrder": 61
+                },
+                "106239": {
+                    "id": 106239,
+                    "title": "Save the Girl",
+                    "description": "Defeat Merlock the Wizard.",
+                    "points": 5,
+                    "trueRatio": 6,
+                    "type": "win_condition",
+                    "badgeName": "405253",
+                    "numAwarded": 2471,
+                    "numAwardedHardcore": 2087,
+                    "displayOrder": 62
+                },
+                "106240": {
+                    "id": 106240,
+                    "title": "Now All You Need's a Whip",
+                    "description": "Obtain 100% completion of every stage in Merlock's Temple.",
+                    "points": 10,
+                    "trueRatio": 13,
+                    "type": null,
+                    "badgeName": "405254",
+                    "numAwarded": 2174,
+                    "numAwardedHardcore": 1905,
+                    "displayOrder": 63
+                },
+                "106241": {
+                    "id": 106241,
+                    "title": "Can't Pluck This Duck",
+                    "description": "Have 20 or more lives at once.",
+                    "points": 10,
+                    "trueRatio": 11,
+                    "type": null,
+                    "badgeName": "405194",
+                    "numAwarded": 3342,
+                    "numAwardedHardcore": 2767,
+                    "displayOrder": 3
+                },
+                "106242": {
+                    "id": 106242,
+                    "title": "Goin' Quackers",
+                    "description": "Obtain 112% completion.",
+                    "points": 25,
+                    "trueRatio": 34,
+                    "type": null,
+                    "badgeName": "405255",
+                    "numAwarded": 2172,
+                    "numAwardedHardcore": 1904,
+                    "displayOrder": 64
                 }
             }
         },
@@ -43538,8 +44342,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 43658,
-            "numDistinctPlayersHardcore": 43658,
+            "numDistinctPlayersCasual": 43661,
+            "numDistinctPlayersHardcore": 43661,
             "numAchievements": 46,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -43560,8 +44364,8 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "89266",
-                    "numAwarded": 41239,
-                    "numAwardedHardcore": 17347,
+                    "numAwarded": 41243,
+                    "numAwardedHardcore": 17349,
                     "displayOrder": 1
                 },
                 "82937": {
@@ -43572,8 +44376,8 @@
                     "trueRatio": 13,
                     "type": "progression",
                     "badgeName": "89267",
-                    "numAwarded": 18973,
-                    "numAwardedHardcore": 9687,
+                    "numAwarded": 18975,
+                    "numAwardedHardcore": 9688,
                     "displayOrder": 2
                 },
                 "82938": {
@@ -43596,8 +44400,8 @@
                     "trueRatio": 20,
                     "type": "progression",
                     "badgeName": "89269",
-                    "numAwarded": 9103,
-                    "numAwardedHardcore": 4971,
+                    "numAwarded": 9104,
+                    "numAwardedHardcore": 4972,
                     "displayOrder": 4
                 },
                 "82945": {
@@ -43608,8 +44412,8 @@
                     "trueRatio": 21,
                     "type": "progression",
                     "badgeName": "89270",
-                    "numAwarded": 8213,
-                    "numAwardedHardcore": 4560,
+                    "numAwarded": 8214,
+                    "numAwardedHardcore": 4561,
                     "displayOrder": 5
                 },
                 "82952": {
@@ -43644,8 +44448,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "89273",
-                    "numAwarded": 13366,
-                    "numAwardedHardcore": 7437,
+                    "numAwarded": 13367,
+                    "numAwardedHardcore": 7438,
                     "displayOrder": 8
                 },
                 "82966": {
@@ -43656,8 +44460,8 @@
                     "trueRatio": 24,
                     "type": null,
                     "badgeName": "89274",
-                    "numAwarded": 6032,
-                    "numAwardedHardcore": 3794,
+                    "numAwarded": 6033,
+                    "numAwardedHardcore": 3795,
                     "displayOrder": 9
                 },
                 "82970": {
@@ -43800,8 +44604,8 @@
                     "trueRatio": 26,
                     "type": null,
                     "badgeName": "89286",
-                    "numAwarded": 5710,
-                    "numAwardedHardcore": 3430,
+                    "numAwarded": 5711,
+                    "numAwardedHardcore": 3431,
                     "displayOrder": 21
                 },
                 "82982": {
@@ -43812,8 +44616,8 @@
                     "trueRatio": 25,
                     "type": null,
                     "badgeName": "89287",
-                    "numAwarded": 5862,
-                    "numAwardedHardcore": 3739,
+                    "numAwarded": 5863,
+                    "numAwardedHardcore": 3740,
                     "displayOrder": 22
                 },
                 "82983": {
@@ -43836,8 +44640,8 @@
                     "trueRatio": 25,
                     "type": null,
                     "badgeName": "89289",
-                    "numAwarded": 5911,
-                    "numAwardedHardcore": 3596,
+                    "numAwarded": 5912,
+                    "numAwardedHardcore": 3597,
                     "displayOrder": 24
                 },
                 "82985": {
@@ -43848,8 +44652,8 @@
                     "trueRatio": 26,
                     "type": null,
                     "badgeName": "89290",
-                    "numAwarded": 5857,
-                    "numAwardedHardcore": 3568,
+                    "numAwarded": 5858,
+                    "numAwardedHardcore": 3569,
                     "displayOrder": 25
                 },
                 "82986": {
@@ -43956,8 +44760,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "89299",
-                    "numAwarded": 6349,
-                    "numAwardedHardcore": 3733,
+                    "numAwarded": 6350,
+                    "numAwardedHardcore": 3734,
                     "displayOrder": 34
                 },
                 "82995": {
@@ -43992,8 +44796,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "89302",
-                    "numAwarded": 30408,
-                    "numAwardedHardcore": 13577,
+                    "numAwarded": 30411,
+                    "numAwardedHardcore": 13579,
                     "displayOrder": 1
                 },
                 "82998": {
@@ -44016,8 +44820,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "89304",
-                    "numAwarded": 7876,
-                    "numAwardedHardcore": 5268,
+                    "numAwarded": 7877,
+                    "numAwardedHardcore": 5269,
                     "displayOrder": 39
                 },
                 "83000": {
@@ -44040,8 +44844,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "89306",
-                    "numAwarded": 5414,
-                    "numAwardedHardcore": 3672,
+                    "numAwarded": 5415,
+                    "numAwardedHardcore": 3673,
                     "displayOrder": 43
                 },
                 "83002": {
@@ -44100,8 +44904,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "197567",
-                    "numAwarded": 5147,
-                    "numAwardedHardcore": 3553,
+                    "numAwarded": 5148,
+                    "numAwardedHardcore": 3554,
                     "displayOrder": 42
                 }
             }
@@ -45132,8 +45936,8 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "106750",
-                    "numAwarded": 2027,
-                    "numAwardedHardcore": 898,
+                    "numAwarded": 2028,
+                    "numAwardedHardcore": 899,
                     "displayOrder": 38
                 },
                 "94793": {
@@ -45564,7 +46368,7 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "106729",
-                    "numAwarded": 846,
+                    "numAwarded": 847,
                     "numAwardedHardcore": 459,
                     "displayOrder": 14
                 },
@@ -45576,7 +46380,7 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "106729",
-                    "numAwarded": 819,
+                    "numAwarded": 820,
                     "numAwardedHardcore": 450,
                     "displayOrder": 15
                 },
@@ -45756,7 +46560,7 @@
                     "trueRatio": 77,
                     "type": "missable",
                     "badgeName": "106697",
-                    "numAwarded": 599,
+                    "numAwarded": 600,
                     "numAwardedHardcore": 397,
                     "displayOrder": 76
                 },
@@ -45996,7 +46800,7 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "106717",
-                    "numAwarded": 3769,
+                    "numAwarded": 3770,
                     "numAwardedHardcore": 1528,
                     "displayOrder": 34
                 },
@@ -46188,7 +46992,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "106779",
-                    "numAwarded": 973,
+                    "numAwarded": 974,
                     "numAwardedHardcore": 473,
                     "displayOrder": 77
                 },
@@ -48814,7 +49618,7 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "116644",
-                    "numAwarded": 3166,
+                    "numAwarded": 3167,
                     "numAwardedHardcore": 1198,
                     "displayOrder": 0
                 },
@@ -48826,7 +49630,7 @@
                     "trueRatio": 2,
                     "type": "missable",
                     "badgeName": "117136",
-                    "numAwarded": 1664,
+                    "numAwarded": 1665,
                     "numAwardedHardcore": 752,
                     "displayOrder": 0
                 },
@@ -48838,7 +49642,7 @@
                     "trueRatio": 3,
                     "type": "missable",
                     "badgeName": "117188",
-                    "numAwarded": 959,
+                    "numAwarded": 960,
                     "numAwardedHardcore": 557,
                     "displayOrder": 0
                 },
@@ -48850,7 +49654,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "117189",
-                    "numAwarded": 2320,
+                    "numAwarded": 2321,
                     "numAwardedHardcore": 910,
                     "displayOrder": 0
                 },
@@ -48898,7 +49702,7 @@
                     "trueRatio": 2,
                     "type": "missable",
                     "badgeName": "117205",
-                    "numAwarded": 1442,
+                    "numAwarded": 1443,
                     "numAwardedHardcore": 632,
                     "displayOrder": 0
                 },
@@ -48910,7 +49714,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "116646",
-                    "numAwarded": 1855,
+                    "numAwarded": 1856,
                     "numAwardedHardcore": 764,
                     "displayOrder": 0
                 },
@@ -49138,8 +49942,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "117419",
-                    "numAwarded": 797,
-                    "numAwardedHardcore": 382,
+                    "numAwarded": 798,
+                    "numAwardedHardcore": 383,
                     "displayOrder": 0
                 },
                 "108781": {
@@ -49150,7 +49954,7 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "117436",
-                    "numAwarded": 784,
+                    "numAwarded": 785,
                     "numAwardedHardcore": 366,
                     "displayOrder": 0
                 },
@@ -49210,7 +50014,7 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "116656",
-                    "numAwarded": 726,
+                    "numAwarded": 727,
                     "numAwardedHardcore": 348,
                     "displayOrder": 0
                 },
@@ -49222,7 +50026,7 @@
                     "trueRatio": 20,
                     "type": "progression",
                     "badgeName": "118443",
-                    "numAwarded": 725,
+                    "numAwarded": 726,
                     "numAwardedHardcore": 348,
                     "displayOrder": 0
                 },
@@ -49234,7 +50038,7 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "116686",
-                    "numAwarded": 720,
+                    "numAwarded": 721,
                     "numAwardedHardcore": 348,
                     "displayOrder": 0
                 },
@@ -55314,7 +56118,7 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "103287",
-                    "numAwarded": 736,
+                    "numAwarded": 737,
                     "numAwardedHardcore": 392,
                     "displayOrder": 32
                 },
@@ -58791,11 +59595,11 @@
                     "title": "Central Museum Completionist",
                     "description": "Collect the Heart Tank, Armor Part, and rescue all 16 Reploids in the Central Museum on Normal difficulty or higher",
                     "points": 10,
-                    "trueRatio": 19,
+                    "trueRatio": 18,
                     "type": "missable",
                     "badgeName": "114983",
-                    "numAwarded": 999,
-                    "numAwardedHardcore": 632,
+                    "numAwarded": 1000,
+                    "numAwardedHardcore": 633,
                     "displayOrder": 58
                 },
                 "85272": {
@@ -58842,8 +59646,8 @@
                     "trueRatio": 18,
                     "type": "missable",
                     "badgeName": "114987",
-                    "numAwarded": 1098,
-                    "numAwardedHardcore": 660,
+                    "numAwarded": 1099,
+                    "numAwardedHardcore": 661,
                     "displayOrder": 62
                 },
                 "85289": {
@@ -58866,8 +59670,8 @@
                     "trueRatio": 19,
                     "type": "missable",
                     "badgeName": "114989",
-                    "numAwarded": 996,
-                    "numAwardedHardcore": 618,
+                    "numAwarded": 997,
+                    "numAwardedHardcore": 619,
                     "displayOrder": 64
                 },
                 "85292": {
@@ -58938,8 +59742,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "114932",
-                    "numAwarded": 1709,
-                    "numAwardedHardcore": 991,
+                    "numAwarded": 1710,
+                    "numAwardedHardcore": 992,
                     "displayOrder": 6
                 },
                 "85312": {
@@ -58950,8 +59754,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "114933",
-                    "numAwarded": 1495,
-                    "numAwardedHardcore": 857,
+                    "numAwarded": 1496,
+                    "numAwardedHardcore": 858,
                     "displayOrder": 7
                 },
                 "85313": {
@@ -59010,8 +59814,8 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "114936",
-                    "numAwarded": 1423,
-                    "numAwardedHardcore": 812,
+                    "numAwarded": 1424,
+                    "numAwardedHardcore": 813,
                     "displayOrder": 10
                 },
                 "85323": {
@@ -67763,11 +68567,11 @@
                     "title": "Molten Monstrosity",
                     "description": "Defeat Trinitro",
                     "points": 10,
-                    "trueRatio": 44,
+                    "trueRatio": 43,
                     "type": "progression",
                     "badgeName": "649927",
-                    "numAwarded": 43,
-                    "numAwardedHardcore": 38,
+                    "numAwarded": 44,
+                    "numAwardedHardcore": 39,
                     "displayOrder": 11,
                     "dateEarned": "2026-03-29 14:46:21",
                     "dateEarnedHardcore": "2026-03-29 14:46:21"
