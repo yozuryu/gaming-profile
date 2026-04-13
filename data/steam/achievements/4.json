@@ -3,6 +3,16 @@
         {
             "appId": 1903340,
             "gameName": "Clair Obscur: Expedition 33",
+            "apiName": "LEVEL_99",
+            "displayName": "Survivor",
+            "description": "Reach level 99.",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/67b062a511bbcdcf13e2ffecc4d800652962fb81.jpg",
+            "unlockedAt": "2025-07-14T15:41:05.000Z",
+            "globalPct": 12.8
+        },
+        {
+            "appId": 1903340,
+            "gameName": "Clair Obscur: Expedition 33",
             "apiName": "SCIEL_FORETELL",
             "displayName": "Maximization",
             "description": "",
