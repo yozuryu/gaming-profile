@@ -927,7 +927,7 @@
             "iconUrl": "087405eb4dc9468f4bcc53019a6da5d16a51a07d.jpg",
             "iconGrayUrl": "ff98e204d727a59c6c1d0996b2ef187b868bac5c.jpg",
             "hidden": false,
-            "globalPct": 1
+            "globalPct": 1.1
         },
         {
             "apiName": "TVL_COMPLETE_SCENARIO_1",
@@ -2731,7 +2731,7 @@
             "iconUrl": "e86e1ab0a74e1ba964055aa89d191e046f208381.jpg",
             "iconGrayUrl": "ff98e204d727a59c6c1d0996b2ef187b868bac5c.jpg",
             "hidden": false,
-            "globalPct": 0.5
+            "globalPct": 0.6
         },
         {
             "apiName": "SEH_COMPLETE_TUTORIALS",
