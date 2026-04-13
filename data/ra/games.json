@@ -304,8 +304,8 @@
                     "trueRatio": 48,
                     "type": "progression",
                     "badgeName": "248280",
-                    "numAwarded": 1182,
-                    "numAwardedHardcore": 954,
+                    "numAwarded": 1183,
+                    "numAwardedHardcore": 955,
                     "displayOrder": 33
                 },
                 "17758": {
@@ -316,8 +316,8 @@
                     "trueRatio": 19,
                     "type": "progression",
                     "badgeName": "248264",
-                    "numAwarded": 1164,
-                    "numAwardedHardcore": 946,
+                    "numAwarded": 1165,
+                    "numAwardedHardcore": 947,
                     "displayOrder": 34
                 },
                 "17759": {
@@ -328,8 +328,8 @@
                     "trueRatio": 48,
                     "type": "progression",
                     "badgeName": "248306",
-                    "numAwarded": 1157,
-                    "numAwardedHardcore": 937,
+                    "numAwarded": 1158,
+                    "numAwardedHardcore": 938,
                     "displayOrder": 36
                 },
                 "17760": {
@@ -340,8 +340,8 @@
                     "trueRatio": 97,
                     "type": "win_condition",
                     "badgeName": "248286",
-                    "numAwarded": 1143,
-                    "numAwardedHardcore": 931,
+                    "numAwarded": 1144,
+                    "numAwardedHardcore": 932,
                     "displayOrder": 37
                 },
                 "17761": {
@@ -712,8 +712,8 @@
                     "trueRatio": 19,
                     "type": null,
                     "badgeName": "248311",
-                    "numAwarded": 1183,
-                    "numAwardedHardcore": 958,
+                    "numAwarded": 1184,
+                    "numAwardedHardcore": 959,
                     "displayOrder": 53
                 },
                 "17793": {
@@ -724,8 +724,8 @@
                     "trueRatio": 19,
                     "type": "progression",
                     "badgeName": "248302",
-                    "numAwarded": 1162,
-                    "numAwardedHardcore": 944,
+                    "numAwarded": 1164,
+                    "numAwardedHardcore": 946,
                     "displayOrder": 35
                 }
             }
@@ -1286,8 +1286,8 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "252224",
-                    "numAwarded": 966,
-                    "numAwardedHardcore": 740,
+                    "numAwarded": 967,
+                    "numAwardedHardcore": 741,
                     "displayOrder": 68
                 },
                 "16728": {
@@ -1730,8 +1730,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "252251",
-                    "numAwarded": 781,
-                    "numAwardedHardcore": 619,
+                    "numAwarded": 782,
+                    "numAwardedHardcore": 620,
                     "displayOrder": 65
                 },
                 "16766": {
@@ -24144,8 +24144,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "196785",
-                    "numAwarded": 365,
-                    "numAwardedHardcore": 278,
+                    "numAwarded": 366,
+                    "numAwardedHardcore": 279,
                     "displayOrder": 5
                 },
                 "176497": {
@@ -24168,8 +24168,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "196785",
-                    "numAwarded": 359,
-                    "numAwardedHardcore": 273,
+                    "numAwarded": 360,
+                    "numAwardedHardcore": 274,
                     "displayOrder": 7
                 },
                 "176499": {
@@ -24180,8 +24180,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "196785",
-                    "numAwarded": 344,
-                    "numAwardedHardcore": 259,
+                    "numAwarded": 345,
+                    "numAwardedHardcore": 260,
                     "displayOrder": 8
                 },
                 "176500": {
@@ -25197,11 +25197,11 @@
                     "title": "Level MAX",
                     "description": "Reach Level 50 for BRS to unlock Poolside costume.",
                     "points": 10,
-                    "trueRatio": 49,
+                    "trueRatio": 48,
                     "type": null,
                     "badgeName": "196822",
-                    "numAwarded": 67,
-                    "numAwardedHardcore": 55,
+                    "numAwarded": 68,
+                    "numAwardedHardcore": 56,
                     "displayOrder": 95
                 },
                 "176585": {
@@ -36656,8 +36656,8 @@
                     "trueRatio": 25,
                     "type": "missable",
                     "badgeName": "536676",
-                    "numAwarded": 183,
-                    "numAwardedHardcore": 113,
+                    "numAwarded": 184,
+                    "numAwardedHardcore": 114,
                     "displayOrder": 98
                 },
                 "472158": {
@@ -36677,11 +36677,11 @@
                     "title": "All Pirates' Hideout Treasure",
                     "description": "Loot all of the Pirates' Hideout treasure",
                     "points": 10,
-                    "trueRatio": 34,
+                    "trueRatio": 33,
                     "type": "missable",
                     "badgeName": "536677",
-                    "numAwarded": 114,
-                    "numAwardedHardcore": 78,
+                    "numAwarded": 115,
+                    "numAwardedHardcore": 79,
                     "displayOrder": 99
                 },
                 "472160": {
@@ -36764,8 +36764,8 @@
                     "trueRatio": 11,
                     "type": "missable",
                     "badgeName": "535150",
-                    "numAwarded": 212,
-                    "numAwardedHardcore": 125,
+                    "numAwarded": 213,
+                    "numAwardedHardcore": 126,
                     "displayOrder": 6
                 },
                 "472167": {
@@ -37217,11 +37217,11 @@
                     "title": "St. Elmo's Water",
                     "description": "Receive the Saint Elmo's Charm from the Blue-eyed Boy on the Portmith Docks",
                     "points": 2,
-                    "trueRatio": 7,
+                    "trueRatio": 6,
                     "type": "missable",
                     "badgeName": "535187",
-                    "numAwarded": 117,
-                    "numAwardedHardcore": 76,
+                    "numAwarded": 118,
+                    "numAwardedHardcore": 77,
                     "displayOrder": 11
                 },
                 "472206": {
@@ -37352,8 +37352,8 @@
                     "trueRatio": 5,
                     "type": "missable",
                     "badgeName": "535198",
-                    "numAwarded": 177,
-                    "numAwardedHardcore": 103,
+                    "numAwarded": 178,
+                    "numAwardedHardcore": 104,
                     "displayOrder": 5
                 },
                 "472217": {
@@ -37412,8 +37412,8 @@
                     "trueRatio": 5,
                     "type": "missable",
                     "badgeName": "535203",
-                    "numAwarded": 166,
-                    "numAwardedHardcore": 97,
+                    "numAwarded": 167,
+                    "numAwardedHardcore": 98,
                     "displayOrder": 10
                 },
                 "472222": {
@@ -37424,8 +37424,8 @@
                     "trueRatio": 13,
                     "type": "missable",
                     "badgeName": "535204",
-                    "numAwarded": 178,
-                    "numAwardedHardcore": 102,
+                    "numAwarded": 179,
+                    "numAwardedHardcore": 103,
                     "displayOrder": 8
                 },
                 "472223": {
@@ -37508,8 +37508,8 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "535211",
-                    "numAwarded": 238,
-                    "numAwardedHardcore": 140,
+                    "numAwarded": 239,
+                    "numAwardedHardcore": 141,
                     "displayOrder": 4
                 },
                 "472230": {
@@ -43538,8 +43538,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 43629,
-            "numDistinctPlayersHardcore": 43629,
+            "numDistinctPlayersCasual": 43631,
+            "numDistinctPlayersHardcore": 43631,
             "numAchievements": 46,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -43560,7 +43560,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "89266",
-                    "numAwarded": 41213,
+                    "numAwarded": 41214,
                     "numAwardedHardcore": 17336,
                     "displayOrder": 1
                 },
@@ -43572,7 +43572,7 @@
                     "trueRatio": 13,
                     "type": "progression",
                     "badgeName": "89267",
-                    "numAwarded": 18956,
+                    "numAwarded": 18957,
                     "numAwardedHardcore": 9682,
                     "displayOrder": 2
                 },
@@ -43992,7 +43992,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "89302",
-                    "numAwarded": 30384,
+                    "numAwarded": 30385,
                     "numAwardedHardcore": 13569,
                     "displayOrder": 1
                 },
@@ -44004,7 +44004,7 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "89303",
-                    "numAwarded": 8947,
+                    "numAwarded": 8948,
                     "numAwardedHardcore": 4855,
                     "displayOrder": 1
                 },
@@ -45038,8 +45038,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 6995,
-            "numDistinctPlayersHardcore": 6995,
+            "numDistinctPlayersCasual": 6997,
+            "numDistinctPlayersHardcore": 6997,
             "numAchievements": 108,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -45096,8 +45096,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "107881",
-                    "numAwarded": 6840,
-                    "numAwardedHardcore": 2455,
+                    "numAwarded": 6842,
+                    "numAwardedHardcore": 2456,
                     "displayOrder": 0
                 },
                 "94790": {
@@ -55213,7 +55213,7 @@
                     "type": "progression",
                     "badgeName": "102804",
                     "numAwarded": 1996,
-                    "numAwardedHardcore": 822,
+                    "numAwardedHardcore": 823,
                     "displayOrder": 0,
                     "dateEarned": "2025-11-02 16:20:17",
                     "dateEarnedHardcore": "2025-11-02 16:20:17"
@@ -55482,7 +55482,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "102836",
-                    "numAwarded": 938,
+                    "numAwarded": 939,
                     "numAwardedHardcore": 451,
                     "displayOrder": 23
                 },
@@ -55494,7 +55494,7 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "102837",
-                    "numAwarded": 842,
+                    "numAwarded": 843,
                     "numAwardedHardcore": 417,
                     "displayOrder": 36
                 },
@@ -55518,7 +55518,7 @@
                     "trueRatio": 14,
                     "type": "progression",
                     "badgeName": "102839",
-                    "numAwarded": 831,
+                    "numAwarded": 832,
                     "numAwardedHardcore": 406,
                     "displayOrder": 14
                 },
@@ -55530,7 +55530,7 @@
                     "trueRatio": 46,
                     "type": "missable",
                     "badgeName": "102838",
-                    "numAwarded": 454,
+                    "numAwarded": 455,
                     "numAwardedHardcore": 285,
                     "displayOrder": 20
                 },
@@ -55638,7 +55638,7 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "103294",
-                    "numAwarded": 836,
+                    "numAwarded": 837,
                     "numAwardedHardcore": 412,
                     "displayOrder": 41
                 },
@@ -55695,7 +55695,7 @@
                     "title": "I'm Invincible!",
                     "description": "Obtain the Golden Powder.",
                     "points": 10,
-                    "trueRatio": 17,
+                    "trueRatio": 18,
                     "type": null,
                     "badgeName": "102846",
                     "numAwarded": 566,
@@ -67577,11 +67577,11 @@
                     "title": "Illusory Charger",
                     "description": "Defeat the guardian of the illusory Ikebukuro Railcage",
                     "points": 10,
-                    "trueRatio": 62,
+                    "trueRatio": 60,
                     "type": null,
                     "badgeName": "649924",
-                    "numAwarded": 27,
-                    "numAwardedHardcore": 26,
+                    "numAwarded": 28,
+                    "numAwardedHardcore": 27,
                     "displayOrder": 90,
                     "dateEarned": "2026-04-03 15:55:42",
                     "dateEarnedHardcore": "2026-04-03 15:55:42"
@@ -67605,11 +67605,11 @@
                     "title": "Illusory Empress",
                     "description": "Defeat the guardian of the illusory Yotsura Evernight",
                     "points": 10,
-                    "trueRatio": 64,
+                    "trueRatio": 62,
                     "type": null,
                     "badgeName": "649925",
-                    "numAwarded": 26,
-                    "numAwardedHardcore": 25,
+                    "numAwarded": 27,
+                    "numAwardedHardcore": 26,
                     "displayOrder": 91,
                     "dateEarned": "2026-04-05 14:01:36",
                     "dateEarnedHardcore": "2026-04-05 14:01:36"
@@ -67647,11 +67647,11 @@
                     "title": "Illusory Gold",
                     "description": "Defeat the guardian of the illusory Kokubunji Searsand",
                     "points": 10,
-                    "trueRatio": 64,
+                    "trueRatio": 62,
                     "type": null,
                     "badgeName": "649927",
-                    "numAwarded": 26,
-                    "numAwardedHardcore": 25,
+                    "numAwarded": 27,
+                    "numAwardedHardcore": 26,
                     "displayOrder": 92,
                     "dateEarned": "2026-04-05 15:03:22",
                     "dateEarnedHardcore": "2026-04-05 15:03:22"
@@ -67675,11 +67675,11 @@
                     "title": "Illusory Dream",
                     "description": "Defeat the guardian of the illusory Shibuya Flowersea",
                     "points": 10,
-                    "trueRatio": 64,
+                    "trueRatio": 62,
                     "type": null,
                     "badgeName": "649928",
-                    "numAwarded": 26,
-                    "numAwardedHardcore": 25,
+                    "numAwarded": 27,
+                    "numAwardedHardcore": 26,
                     "displayOrder": 93,
                     "dateEarned": "2026-04-06 15:32:41",
                     "dateEarnedHardcore": "2026-04-06 15:32:41"
@@ -67703,11 +67703,11 @@
                     "title": "Illusory Insectoi",
                     "description": "Defeat the guardian of the illusory Tokyo Underground",
                     "points": 10,
-                    "trueRatio": 64,
+                    "trueRatio": 62,
                     "type": null,
                     "badgeName": "649929",
-                    "numAwarded": 26,
-                    "numAwardedHardcore": 25,
+                    "numAwarded": 27,
+                    "numAwardedHardcore": 26,
                     "displayOrder": 94,
                     "dateEarned": "2026-04-07 16:16:33",
                     "dateEarnedHardcore": "2026-04-07 16:16:33"
@@ -67731,11 +67731,11 @@
                     "title": "Illusory Azure",
                     "description": "Defeat the guardian of the illusory Daiba Icepack #13",
                     "points": 10,
-                    "trueRatio": 64,
+                    "trueRatio": 62,
                     "type": null,
                     "badgeName": "649930",
-                    "numAwarded": 26,
-                    "numAwardedHardcore": 25,
+                    "numAwarded": 27,
+                    "numAwardedHardcore": 26,
                     "displayOrder": 95,
                     "dateEarned": "2026-04-07 16:28:13",
                     "dateEarnedHardcore": "2026-04-07 16:28:13"
