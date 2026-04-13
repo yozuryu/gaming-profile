@@ -179,7 +179,7 @@
             "iconUrl": "4cec4d9d184217c217e13a433ea8ffb0243d0352.jpg",
             "iconGrayUrl": "cef31cfb29bdecf6121efe2a4e0326a7deffc594.jpg",
             "hidden": false,
-            "globalPct": 47
+            "globalPct": 47.1
         },
         {
             "apiName": "STROPHY_STRONGEST_WEAPON",
@@ -212,7 +212,7 @@
             "iconUrl": "afdd50b9415188c92faa97476ce23e61081efe2f.jpg",
             "iconGrayUrl": "98580a01cf240dd4128efdea5a7f7eee550dd819.jpg",
             "hidden": false,
-            "globalPct": 35.7
+            "globalPct": 35.8
         },
         {
             "apiName": "STROPHY_BATTLECOUNT_C",
@@ -465,7 +465,7 @@
             "iconUrl": "ee5f362a05502993f02d39fdbb16eb85044262ec.jpg",
             "iconGrayUrl": "343c55a04b37f60c5d4bb1f22c117a2932e3c198.jpg",
             "hidden": true,
-            "globalPct": 7.6
+            "globalPct": 7.7
         },
         {
             "apiName": "STROPHY_SCENARIO_START",
@@ -553,7 +553,7 @@
             "iconUrl": "efe9f91c0e86ddbeaa1516a160bc7e67ae88967f.jpg",
             "iconGrayUrl": "20b9b94befe7068923ed8f1a10dd2cf1ae2acd38.jpg",
             "hidden": true,
-            "globalPct": 44
+            "globalPct": 44.1
         },
         {
             "apiName": "STROPHY_SCENARIO_CLEAR",
@@ -598,7 +598,7 @@
             "unlockedAt": "2017-09-03T01:05:59.000Z",
             "iconUrl": "efe9f91c0e86ddbeaa1516a160bc7e67ae88967f.jpg",
             "iconGrayUrl": "20b9b94befe7068923ed8f1a10dd2cf1ae2acd38.jpg",
-            "globalPct": 44
+            "globalPct": 44.1
         },
         {
             "apiName": "STROPHY_FASTATTACK",
@@ -616,7 +616,7 @@
             "unlockedAt": "2017-09-01T21:05:38.000Z",
             "iconUrl": "afdd50b9415188c92faa97476ce23e61081efe2f.jpg",
             "iconGrayUrl": "98580a01cf240dd4128efdea5a7f7eee550dd819.jpg",
-            "globalPct": 35.7
+            "globalPct": 35.8
         },
         {
             "apiName": "STROPHY_SCENARIO_05",

@@ -113,7 +113,7 @@
             "iconUrl": "a6144ed6c24aeb3890ba063ceeb3662cc101d906.jpg",
             "iconGrayUrl": "c548032d736a4f08fc0da0046328690e40699e91.jpg",
             "hidden": false,
-            "globalPct": 30
+            "globalPct": 29.9
         },
         {
             "apiName": "ACHIEVEMENT_11",
@@ -168,7 +168,7 @@
             "iconUrl": "b1f1c1a799347a5f2c76a93c4f8d832babe8b41b.jpg",
             "iconGrayUrl": "68ce1ae50d1c1ae8572460036799c4fe3d56b8ab.jpg",
             "hidden": false,
-            "globalPct": 27.7
+            "globalPct": 27.6
         },
         {
             "apiName": "ACHIEVEMENT_16",
@@ -223,7 +223,7 @@
             "iconUrl": "f64904d96fb91b1d5e57624af6c137dae82596b4.jpg",
             "iconGrayUrl": "1d7ded24cad1fc4033a32a9fa286c4403f583df2.jpg",
             "hidden": false,
-            "globalPct": 16.2
+            "globalPct": 16.1
         },
         {
             "apiName": "ACHIEVEMENT_21",
@@ -245,7 +245,7 @@
             "iconUrl": "a0ceb790aaf7d7ad087d9cca999d0bc4f1d6c4f3.jpg",
             "iconGrayUrl": "27063b58bbdc802ef303a12dd83559ed5e3698c1.jpg",
             "hidden": false,
-            "globalPct": 8.5
+            "globalPct": 8.4
         },
         {
             "apiName": "ACHIEVEMENT_23",
@@ -278,7 +278,7 @@
             "iconUrl": "acc101587f92873f289cbb6851b6e5ea17c5dbc0.jpg",
             "iconGrayUrl": "b311e6682c4847a10a488981f214076839dc4b15.jpg",
             "hidden": false,
-            "globalPct": 7.8
+            "globalPct": 7.7
         }
     ],
     "playtimeForever": 578,
@@ -303,7 +303,7 @@
             "unlockedAt": "2025-01-12T15:02:30.000Z",
             "iconUrl": "b1f1c1a799347a5f2c76a93c4f8d832babe8b41b.jpg",
             "iconGrayUrl": "68ce1ae50d1c1ae8572460036799c4fe3d56b8ab.jpg",
-            "globalPct": 27.7
+            "globalPct": 27.6
         },
         {
             "apiName": "ACHIEVEMENT_07",

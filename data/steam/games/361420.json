@@ -91,7 +91,7 @@
             "iconUrl": "60934dd2194d984abe430a6e10b544122b09fdd6.jpg",
             "iconGrayUrl": "7e351b2583f1ab68430c5161891c677a449eebd7.jpg",
             "hidden": false,
-            "globalPct": 51
+            "globalPct": 50.9
         },
         {
             "apiName": "UseShredder",
@@ -135,7 +135,7 @@
             "iconUrl": "772482f0cb392c737dc646c33ac7f0a37aba5dba.jpg",
             "iconGrayUrl": "f2a76cb6a02e1a2e2d6fdc8d24fd71abc4c7a534.jpg",
             "hidden": false,
-            "globalPct": 35.5
+            "globalPct": 35.4
         },
         {
             "apiName": "PlantSeed",
@@ -476,7 +476,7 @@
             "iconUrl": "be1f603db35e80bb6b2513ddb22cc60d90dd9f45.jpg",
             "iconGrayUrl": "fa94e8fba74e4d28616e9b6333eb7d8543b893a4.jpg",
             "hidden": true,
-            "globalPct": 27.6
+            "globalPct": 27.5
         },
         {
             "apiName": "BeatGame",
@@ -553,7 +553,7 @@
             "iconUrl": "90f00a3cbc1d513c4614dbef663183428ea61841.jpg",
             "iconGrayUrl": "6203f4a0f0802c793489805f3b95a1bc1029c4f3.jpg",
             "hidden": false,
-            "globalPct": 28.1
+            "globalPct": 28
         },
         {
             "apiName": "MPCore",
