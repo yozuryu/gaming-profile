@@ -3,6 +3,36 @@
         {
             "appId": 1903340,
             "gameName": "Clair Obscur: Expedition 33",
+            "apiName": "MAELLE_STANCES",
+            "displayName": "Synergy",
+            "description": "",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/5aad0ceada59780c0dabc820a7af23418bda5332.jpg",
+            "unlockedAt": "2025-07-14T13:58:03.000Z",
+            "globalPct": 44.1
+        },
+        {
+            "appId": 1903340,
+            "gameName": "Clair Obscur: Expedition 33",
+            "apiName": "LUNE_STAINS",
+            "displayName": "Perfect Flow",
+            "description": "",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/b3e389aaddccdf582cf2ff09112b9f60bde817af.jpg",
+            "unlockedAt": "2025-07-14T13:42:45.000Z",
+            "globalPct": 50.5
+        },
+        {
+            "appId": 212480,
+            "gameName": "Sonic & All-Stars Racing Transformed Collection",
+            "apiName": "34",
+            "displayName": "You Got The Horn!",
+            "description": "Level-up a character",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/212480/5945fbee4fee8a05505f6657fe4f55a7813c5388.jpg",
+            "unlockedAt": "2025-07-14T12:45:30.000Z",
+            "globalPct": 58
+        },
+        {
+            "appId": 1903340,
+            "gameName": "Clair Obscur: Expedition 33",
             "apiName": "CLEA",
             "displayName": "Clea",
             "description": "",
