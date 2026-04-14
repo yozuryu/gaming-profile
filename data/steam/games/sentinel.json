@@ -269,11 +269,23 @@
     "537990": {
         "gameName": "Heroine Anthem Zero"
     },
+    "539330": {
+        "gameName": "Light Fairytale Episode 1",
+        "error": "JSON parse failed: Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON"
+    },
     "550390": {
         "gameName": "Kingdom of Aurelia: Mystery of the Poisoned Dagger"
     },
+    "551110": {
+        "gameName": "WayOut",
+        "error": "JSON parse failed: Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON"
+    },
     "568930": {
         "gameName": "The Land of Pain"
+    },
+    "578330": {
+        "gameName": "LEGO® City Undercover",
+        "error": "JSON parse failed: Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON"
     },
     "581230": {
         "gameName": "Soul Saber 2"
