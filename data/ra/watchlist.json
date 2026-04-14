@@ -1,5 +1,5 @@
 {
-    "total": 539,
+    "total": 540,
     "results": [
         {
             "id": 27,
@@ -3060,6 +3060,15 @@
             "imageIcon": "/Images/072312.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
+        },
+        {
+            "id": 11374,
+            "title": "Pac-Man World",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/039422.png",
+            "pointsTotal": 650,
+            "achievementsPublished": 50
         },
         {
             "id": 11379,

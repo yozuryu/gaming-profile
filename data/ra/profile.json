@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-14T12:00:48.189Z"
+        "extractionTimestamp": "2026-04-14T14:52:48.173Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -12,9 +12,9 @@
         "lastGameId": 2873,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1741,
+        "totalPoints": 1753,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6520,
+        "totalTruePoints": 6532,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -34,30 +34,30 @@
             "data2": null
         },
         "richPresenceMsg": "Donald Duck is in Gyro Gearloose's Lab",
-        "richPresenceMsgDate": "2026-04-13 23:19:44",
+        "richPresenceMsgDate": "2026-04-14 13:47:11",
         "lastGameId": 2873,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1741,
+        "totalPoints": 1753,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6520,
+        "totalTruePoints": 6532,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51470,
+        "rank": 51242,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 139323,
+        "totalRanked": 139345,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1741,
+        "points": 1753,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -147,14 +147,14 @@
             "imageTitle": "/Images/032748.png",
             "imageIngame": "/Images/050578.png",
             "imageBoxArt": "/Images/096299.png",
-            "lastPlayed": "2026-04-13 23:19:44",
+            "lastPlayed": "2026-04-14 13:47:11",
             "achievementsTotal": 65,
             "numPossibleAchievements": 65,
             "possibleScore": 278,
-            "numAchieved": 1,
-            "scoreAchieved": 1,
-            "numAchievedHardcore": 1,
-            "scoreAchievedHardcore": 1
+            "numAchieved": 7,
+            "scoreAchieved": 13,
+            "numAchievedHardcore": 7,
+            "scoreAchievedHardcore": 13
         },
         {
             "gameId": 14370,
@@ -420,9 +420,9 @@
                 "consoleId": 12,
                 "consoleName": "PlayStation",
                 "maxPossible": 65,
-                "numAwarded": 1,
-                "numAwardedHardcore": 1,
-                "mostRecentAwardedDate": "2026-04-13T23:19:44+00:00",
+                "numAwarded": 7,
+                "numAwardedHardcore": 7,
+                "mostRecentAwardedDate": "2026-04-14T13:46:40+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -1079,23 +1079,23 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-13 23:19:44",
+        "date": "2026-04-14 13:46:40",
         "hardcoreMode": true,
-        "achievementId": 106178,
-        "title": "Tutorial TV",
-        "description": "Use one of the Tutorial TVs in Forest Edge.",
-        "badgeName": "405191",
-        "points": 1,
-        "trueRatio": 1,
-        "type": "missable",
+        "achievementId": 106185,
+        "title": "Bear-ly Made It",
+        "description": "Collect all of Huey's teddy bears in The Gorge.",
+        "badgeName": "405199",
+        "points": 3,
+        "trueRatio": 3,
+        "type": null,
         "author": "BrunoKiko",
         "authorUlid": "01DJNMSJXE6B07E6A4WRTC6X9B",
         "gameTitle": "Donald Duck: Goin' Quackers",
         "gameIcon": "/Images/113907.png",
         "gameId": 2873,
         "consoleName": "PlayStation",
-        "cumulScore": 682,
-        "badgeUrl": "/Badge/405191.png",
+        "cumulScore": 694,
+        "badgeUrl": "/Badge/405199.png",
         "gameUrl": "/game/2873"
     },
     "mostRecentGame": {
@@ -1107,15 +1107,15 @@
         "imageTitle": "/Images/032748.png",
         "imageIngame": "/Images/050578.png",
         "imageBoxArt": "/Images/096299.png",
-        "lastPlayed": "2026-04-13 23:19:44",
+        "lastPlayed": "2026-04-14 13:47:11",
         "achievementsTotal": 65,
         "numPossibleAchievements": 65,
         "possibleScore": 278,
-        "numAchieved": 1,
-        "scoreAchieved": 1,
-        "numAchievedHardcore": 1,
-        "scoreAchievedHardcore": 1
+        "numAchieved": 7,
+        "scoreAchieved": 13,
+        "numAchievedHardcore": 7,
+        "scoreAchievedHardcore": 13
     },
-    "points7Days": 76,
-    "points30Days": 481
+    "points7Days": 88,
+    "points30Days": 493
 }
