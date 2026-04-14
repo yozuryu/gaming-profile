@@ -1,5 +1,5 @@
 {
-    "total": 540,
+    "total": 590,
     "results": [
         {
             "id": 27,
@@ -695,6 +695,15 @@
             "achievementsPublished": 150
         },
         {
+            "id": 2355,
+            "title": "Metal Gear Solid: Portable Ops Plus",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/051182.png",
+            "pointsTotal": 500,
+            "achievementsPublished": 30
+        },
+        {
             "id": 2370,
             "title": "~Prototype~ Resident Evil",
             "consoleId": 6,
@@ -1100,6 +1109,15 @@
             "achievementsPublished": 50
         },
         {
+            "id": 2919,
+            "title": "Harvest Moon: Hero of Leaf Valley",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/101986.png",
+            "pointsTotal": 895,
+            "achievementsPublished": 107
+        },
+        {
             "id": 2923,
             "title": "Black Rock Shooter: The Game",
             "consoleId": 41,
@@ -1253,6 +1271,33 @@
             "achievementsPublished": 173
         },
         {
+            "id": 3164,
+            "title": "Shin Megami Tensei: Persona 3 Portable",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/123004.png",
+            "pointsTotal": 1195,
+            "achievementsPublished": 139
+        },
+        {
+            "id": 3165,
+            "title": "Castlevania: The Dracula X Chronicles",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/085805.png",
+            "pointsTotal": 1570,
+            "achievementsPublished": 191
+        },
+        {
+            "id": 3169,
+            "title": "Final Fantasy IV: The Complete Collection",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/093953.png",
+            "pointsTotal": 2081,
+            "achievementsPublished": 306
+        },
+        {
             "id": 3179,
             "title": "Tales of the World: Radiant Mythology",
             "consoleId": 41,
@@ -1260,6 +1305,15 @@
             "imageIcon": "/Images/097785.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
+        },
+        {
+            "id": 3192,
+            "title": "Crash Tag Team Racing",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/074990.png",
+            "pointsTotal": 696,
+            "achievementsPublished": 75
         },
         {
             "id": 3212,
@@ -1278,6 +1332,24 @@
             "imageIcon": "/Images/093810.png",
             "pointsTotal": 730,
             "achievementsPublished": 77
+        },
+        {
+            "id": 3215,
+            "title": "Final Fantasy",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/070784.png",
+            "pointsTotal": 571,
+            "achievementsPublished": 57
+        },
+        {
+            "id": 3216,
+            "title": "Final Fantasy III",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/070789.png",
+            "pointsTotal": 840,
+            "achievementsPublished": 152
         },
         {
             "id": 3219,
@@ -1379,6 +1451,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 3466,
+            "title": "Crystal Defenders",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/048344.png",
+            "pointsTotal": 300,
+            "achievementsPublished": 36
+        },
+        {
             "id": 3470,
             "title": ".hack//Link",
             "consoleId": 41,
@@ -1386,6 +1467,15 @@
             "imageIcon": "/Images/061280.png",
             "pointsTotal": 834,
             "achievementsPublished": 132
+        },
+        {
+            "id": 3471,
+            "title": "Metal Slug: Anthology",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/048777.png",
+            "pointsTotal": 1695,
+            "achievementsPublished": 94
         },
         {
             "id": 3495,
@@ -1451,6 +1541,15 @@
             "achievementsPublished": 195
         },
         {
+            "id": 3516,
+            "title": "Hatsune Miku: Project DIVA Extend",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/061884.png",
+            "pointsTotal": 940,
+            "achievementsPublished": 107
+        },
+        {
             "id": 3517,
             "title": "Dissidia: Final Fantasy",
             "consoleId": 41,
@@ -1469,6 +1568,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 3539,
+            "title": "Half-Minute Hero",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/125562.png",
+            "pointsTotal": 795,
+            "achievementsPublished": 110
+        },
+        {
             "id": 3540,
             "title": "Gungnir",
             "consoleId": 41,
@@ -1476,6 +1584,15 @@
             "imageIcon": "/Images/000001.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
+        },
+        {
+            "id": 3541,
+            "title": "Corpse Party",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/114111.png",
+            "pointsTotal": 197,
+            "achievementsPublished": 33
         },
         {
             "id": 3549,
@@ -1550,6 +1667,33 @@
             "achievementsPublished": 143
         },
         {
+            "id": 3585,
+            "title": "Metal Gear Acid",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/047343.png",
+            "pointsTotal": 790,
+            "achievementsPublished": 85
+        },
+        {
+            "id": 3589,
+            "title": "Metal Gear Solid: Portable Ops",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/047374.png",
+            "pointsTotal": 900,
+            "achievementsPublished": 54
+        },
+        {
+            "id": 3597,
+            "title": "Disgaea 2: Dark Hero Days",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/069073.png",
+            "pointsTotal": 1127,
+            "achievementsPublished": 103
+        },
+        {
             "id": 3598,
             "title": "PoPoLoCrois",
             "consoleId": 41,
@@ -1604,6 +1748,24 @@
             "achievementsPublished": 242
         },
         {
+            "id": 3736,
+            "title": "Persona 2: Eternal Punishment",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/077538.png",
+            "pointsTotal": 1276,
+            "achievementsPublished": 127
+        },
+        {
+            "id": 3737,
+            "title": "Shin Megami Tensei: Persona 2: Innocent Sin",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/115940.png",
+            "pointsTotal": 699,
+            "achievementsPublished": 96
+        },
+        {
             "id": 3738,
             "title": "Phantasy Star Portable",
             "consoleId": 41,
@@ -1620,6 +1782,15 @@
             "imageIcon": "/Images/093949.png",
             "pointsTotal": 477,
             "achievementsPublished": 73
+        },
+        {
+            "id": 3822,
+            "title": "Final Fantasy II",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/070786.png",
+            "pointsTotal": 840,
+            "achievementsPublished": 115
         },
         {
             "id": 3843,
@@ -1647,6 +1818,15 @@
             "imageIcon": "/Images/000001.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
+        },
+        {
+            "id": 3891,
+            "title": "Shin Megami Tensei: Persona",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/077388.png",
+            "pointsTotal": 1088,
+            "achievementsPublished": 118
         },
         {
             "id": 3894,
@@ -1694,6 +1874,24 @@
             "achievementsPublished": 0
         },
         {
+            "id": 3921,
+            "title": "Hatsune Miku: Project DIVA",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/061882.png",
+            "pointsTotal": 833,
+            "achievementsPublished": 95
+        },
+        {
+            "id": 3923,
+            "title": "Hatsune Miku: Project DIVA 2nd",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/061883.png",
+            "pointsTotal": 926,
+            "achievementsPublished": 108
+        },
+        {
             "id": 3934,
             "title": "The Legend of Zelda: Twilight Princess",
             "consoleId": 16,
@@ -1710,6 +1908,15 @@
             "imageIcon": "/Images/124983.png",
             "pointsTotal": 1745,
             "achievementsPublished": 220
+        },
+        {
+            "id": 3940,
+            "title": "Metal Gear Acid 2",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/051474.png",
+            "pointsTotal": 1500,
+            "achievementsPublished": 80
         },
         {
             "id": 3944,
@@ -1730,6 +1937,42 @@
             "achievementsPublished": 81
         },
         {
+            "id": 3974,
+            "title": "Pangya Fantasy Golf",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/047346.png",
+            "pointsTotal": 1694,
+            "achievementsPublished": 283
+        },
+        {
+            "id": 3979,
+            "title": "Disgaea: Afternoon of Darkness",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/061059.png",
+            "pointsTotal": 914,
+            "achievementsPublished": 82
+        },
+        {
+            "id": 3980,
+            "title": "Corpse Party: Book of Shadows",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/114110.png",
+            "pointsTotal": 310,
+            "achievementsPublished": 44
+        },
+        {
+            "id": 3999,
+            "title": "Nayuta no Kiseki",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/057745.png",
+            "pointsTotal": 1747,
+            "achievementsPublished": 249
+        },
+        {
             "id": 4000,
             "title": "Paper Mario: The Thousand-Year Door",
             "consoleId": 16,
@@ -1746,6 +1989,15 @@
             "imageIcon": "/Images/125282.png",
             "pointsTotal": 542,
             "achievementsPublished": 47
+        },
+        {
+            "id": 4004,
+            "title": "Metal Slug XX",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/065558.png",
+            "pointsTotal": 1115,
+            "achievementsPublished": 52
         },
         {
             "id": 4130,
@@ -2450,6 +2702,15 @@
             "achievementsPublished": 66
         },
         {
+            "id": 10387,
+            "title": "Crisis Core: Final Fantasy VII",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/056892.png",
+            "pointsTotal": 1590,
+            "achievementsPublished": 238
+        },
+        {
             "id": 10432,
             "title": "Crash Bandicoot 2: Cortex Strikes Back",
             "consoleId": 12,
@@ -2556,6 +2817,15 @@
             "imageIcon": "/Images/017743.png",
             "pointsTotal": 1122,
             "achievementsPublished": 112
+        },
+        {
+            "id": 10846,
+            "title": "Prinny: Can I Really Be the Hero?",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/047369.png",
+            "pointsTotal": 1744,
+            "achievementsPublished": 98
         },
         {
             "id": 10907,
@@ -3314,6 +3584,24 @@
             "achievementsPublished": 161
         },
         {
+            "id": 14201,
+            "title": "Lunar: Silver Star Harmony",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/089013.png",
+            "pointsTotal": 570,
+            "achievementsPublished": 95
+        },
+        {
+            "id": 14203,
+            "title": "Lumines II",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/082265.png",
+            "pointsTotal": 808,
+            "achievementsPublished": 93
+        },
+        {
             "id": 14370,
             "title": "Suikogaiden Vol. 1: Swordsman of Harmonia",
             "consoleId": 12,
@@ -3953,6 +4241,24 @@
             "achievementsPublished": 506
         },
         {
+            "id": 17996,
+            "title": "Final Fantasy [Subset - Solo Class]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/119404.png",
+            "pointsTotal": 1518,
+            "achievementsPublished": 186
+        },
+        {
+            "id": 18005,
+            "title": "Hatsune Miku: Project DIVA [Subset - Full Combo Songs]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/063299.png",
+            "pointsTotal": 815,
+            "achievementsPublished": 36
+        },
+        {
             "id": 18142,
             "title": "Digimon Adventure",
             "consoleId": 41,
@@ -3962,6 +4268,24 @@
             "achievementsPublished": 140
         },
         {
+            "id": 18153,
+            "title": "DJMax Portable",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/067955.png",
+            "pointsTotal": 2700,
+            "achievementsPublished": 419
+        },
+        {
+            "id": 18157,
+            "title": "DJ Max Fever",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/080862.png",
+            "pointsTotal": 3300,
+            "achievementsPublished": 467
+        },
+        {
             "id": 18159,
             "title": "Fate/Extra",
             "consoleId": 41,
@@ -3969,6 +4293,24 @@
             "imageIcon": "/Images/087496.png",
             "pointsTotal": 627,
             "achievementsPublished": 90
+        },
+        {
+            "id": 18160,
+            "title": "Crash of the Titans",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/081112.png",
+            "pointsTotal": 630,
+            "achievementsPublished": 76
+        },
+        {
+            "id": 18161,
+            "title": "Crash: Mind Over Mutant",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/081068.png",
+            "pointsTotal": 491,
+            "achievementsPublished": 76
         },
         {
             "id": 18163,
@@ -4016,6 +4358,15 @@
             "achievementsPublished": 6
         },
         {
+            "id": 18366,
+            "title": "Digivice Ver. Portable",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/114933.png",
+            "pointsTotal": 226,
+            "achievementsPublished": 28
+        },
+        {
             "id": 18472,
             "title": "Summon Night 4",
             "consoleId": 41,
@@ -4041,6 +4392,15 @@
             "imageIcon": "/Images/096942.png",
             "pointsTotal": 823,
             "achievementsPublished": 101
+        },
+        {
+            "id": 18761,
+            "title": "Phantom Brave: The Hermuda Triangle",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/107491.png",
+            "pointsTotal": 900,
+            "achievementsPublished": 116
         },
         {
             "id": 18762,
@@ -4367,6 +4727,15 @@
             "achievementsPublished": 202
         },
         {
+            "id": 19563,
+            "title": "Nayuta no Kiseki [Subset - Boss Challenges]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/093539.png",
+            "pointsTotal": 865,
+            "achievementsPublished": 30
+        },
+        {
             "id": 19798,
             "title": "Sonic Unleashed",
             "consoleId": 21,
@@ -4383,6 +4752,24 @@
             "imageIcon": "/Images/000001.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
+        },
+        {
+            "id": 19920,
+            "title": "Metal Gear Acid [Subset - NG Extreme]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/059260.png",
+            "pointsTotal": 660,
+            "achievementsPublished": 50
+        },
+        {
+            "id": 19921,
+            "title": "Mega Man: Powered Up [Subset - 468 Stages]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/073205.png",
+            "pointsTotal": 3683,
+            "achievementsPublished": 480
         },
         {
             "id": 20063,
@@ -4439,6 +4826,15 @@
             "achievementsPublished": 81
         },
         {
+            "id": 21435,
+            "title": "Hatsune Miku: Project DIVA 2nd [Subset - Full Combo Songs]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/063141.png",
+            "pointsTotal": 1535,
+            "achievementsPublished": 46
+        },
+        {
             "id": 21436,
             "title": "Digimon Rumble Arena 2",
             "consoleId": 21,
@@ -4446,6 +4842,15 @@
             "imageIcon": "/Images/107802.png",
             "pointsTotal": 960,
             "achievementsPublished": 82
+        },
+        {
+            "id": 21443,
+            "title": "Hatsune Miku: Project DIVA Extend [Subset - Full Combo Songs]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/063262.png",
+            "pointsTotal": 1530,
+            "achievementsPublished": 38
         },
         {
             "id": 21740,
@@ -4466,6 +4871,15 @@
             "achievementsPublished": 31
         },
         {
+            "id": 22178,
+            "title": "Final Fantasy III [Subset - Max Jobs]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/073193.png",
+            "pointsTotal": 560,
+            "achievementsPublished": 93
+        },
+        {
             "id": 22364,
             "title": "The Nightmare of Druaga: Fushigi no Dungeon",
             "consoleId": 21,
@@ -4484,6 +4898,15 @@
             "achievementsPublished": 96
         },
         {
+            "id": 22482,
+            "title": "Disgaea Infinite",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/122485.png",
+            "pointsTotal": 115,
+            "achievementsPublished": 17
+        },
+        {
             "id": 22488,
             "title": "Sword Art Online: Infinity Moment",
             "consoleId": 41,
@@ -4491,6 +4914,15 @@
             "imageIcon": "/Images/084566.png",
             "pointsTotal": 1281,
             "achievementsPublished": 174
+        },
+        {
+            "id": 22826,
+            "title": "Crisis Core: Final Fantasy VII [Subset - Cursed - Lv.6]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/069297.png",
+            "pointsTotal": 915,
+            "achievementsPublished": 103
         },
         {
             "id": 23908,
@@ -4671,6 +5103,24 @@
             "imageIcon": "/Images/105368.png",
             "pointsTotal": 885,
             "achievementsPublished": 28
+        },
+        {
+            "id": 32345,
+            "title": "Shin Megami Tensei: Persona 2: Innocent Sin [Subset - Theater DLC]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/105524.png",
+            "pointsTotal": 176,
+            "achievementsPublished": 14
+        },
+        {
+            "id": 32426,
+            "title": "Kingdom Hearts: Birth by Sleep -Final Mix- [Subset - Level 1 Critical Mode]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/105741.png",
+            "pointsTotal": 469,
+            "achievementsPublished": 32
         },
         {
             "id": 32564,

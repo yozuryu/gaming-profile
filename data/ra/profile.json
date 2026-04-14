@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-14T14:52:48.173Z"
+        "extractionTimestamp": "2026-04-14T16:13:12.530Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Donald Duck is in Gyro Gearloose's Lab",
-        "lastGameId": 2873,
+        "richPresenceMsg": "Playing Final Fantasy III",
+        "lastGameId": 3216,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1753,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Donald Duck is in Gyro Gearloose's Lab",
-        "richPresenceMsgDate": "2026-04-14 13:47:11",
-        "lastGameId": 2873,
+        "richPresenceMsg": "Playing Final Fantasy III",
+        "richPresenceMsgDate": "2026-04-14 15:55:58",
+        "lastGameId": 3216,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1753,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51242,
+        "rank": 51247,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 139345,
+        "totalRanked": 139349,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -138,6 +138,24 @@
         ]
     },
     "recentlyPlayedGames": [
+        {
+            "gameId": 3216,
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "title": "Final Fantasy III",
+            "imageIcon": "/Images/070789.png",
+            "imageTitle": "/Images/066755.png",
+            "imageIngame": "/Images/066756.png",
+            "imageBoxArt": "/Images/050431.png",
+            "lastPlayed": "2026-04-14 15:55:58",
+            "achievementsTotal": 152,
+            "numPossibleAchievements": 152,
+            "possibleScore": 840,
+            "numAchieved": 0,
+            "scoreAchieved": 0,
+            "numAchievedHardcore": 0,
+            "scoreAchievedHardcore": 0
+        },
         {
             "gameId": 2873,
             "consoleId": 12,
@@ -389,24 +407,6 @@
             "scoreAchieved": 0,
             "numAchievedHardcore": 0,
             "scoreAchievedHardcore": 0
-        },
-        {
-            "gameId": 11290,
-            "consoleId": 12,
-            "consoleName": "PlayStation",
-            "title": "Brave Fencer Musashi",
-            "imageIcon": "/Images/026882.png",
-            "imageTitle": "/Images/026883.png",
-            "imageIngame": "/Images/026885.png",
-            "imageBoxArt": "/Images/046305.png",
-            "lastPlayed": "2026-03-30 16:18:06",
-            "achievementsTotal": 146,
-            "numPossibleAchievements": 146,
-            "possibleScore": 1175,
-            "numAchieved": 1,
-            "scoreAchieved": 2,
-            "numAchievedHardcore": 1,
-            "scoreAchievedHardcore": 2
         }
     ],
     "gameAwardsAndProgress": {
@@ -1099,22 +1099,22 @@
         "gameUrl": "/game/2873"
     },
     "mostRecentGame": {
-        "gameId": 2873,
-        "consoleId": 12,
-        "consoleName": "PlayStation",
-        "title": "Donald Duck: Goin' Quackers",
-        "imageIcon": "/Images/113907.png",
-        "imageTitle": "/Images/032748.png",
-        "imageIngame": "/Images/050578.png",
-        "imageBoxArt": "/Images/096299.png",
-        "lastPlayed": "2026-04-14 13:47:11",
-        "achievementsTotal": 65,
-        "numPossibleAchievements": 65,
-        "possibleScore": 278,
-        "numAchieved": 7,
-        "scoreAchieved": 13,
-        "numAchievedHardcore": 7,
-        "scoreAchievedHardcore": 13
+        "gameId": 3216,
+        "consoleId": 41,
+        "consoleName": "PlayStation Portable",
+        "title": "Final Fantasy III",
+        "imageIcon": "/Images/070789.png",
+        "imageTitle": "/Images/066755.png",
+        "imageIngame": "/Images/066756.png",
+        "imageBoxArt": "/Images/050431.png",
+        "lastPlayed": "2026-04-14 15:55:58",
+        "achievementsTotal": 152,
+        "numPossibleAchievements": 152,
+        "possibleScore": 840,
+        "numAchieved": 0,
+        "scoreAchieved": 0,
+        "numAchievedHardcore": 0,
+        "scoreAchievedHardcore": 0
     },
     "points7Days": 88,
     "points30Days": 493
