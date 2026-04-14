@@ -168,7 +168,7 @@
             "iconUrl": "ce0b23c86d3ffcd27ad06a40c132c155b4a0d57f.jpg",
             "iconGrayUrl": "1524a62cac914e1a94971f3b79bf52c35a0d6e55.jpg",
             "hidden": true,
-            "globalPct": 0.9
+            "globalPct": 1
         },
         {
             "apiName": "BOSS_NETHERKING_HC_ELITE",
@@ -1180,7 +1180,7 @@
             "iconUrl": "cd47b86309f59442bf11d5ab991b21f10fbd7c9c.jpg",
             "iconGrayUrl": "13e3437ba489a12b90c2f2b271f7d110c2fb549c.jpg",
             "hidden": true,
-            "globalPct": 6.1
+            "globalPct": 6.2
         },
         {
             "apiName": "BOSS_DRAGON_SPIRIT",
@@ -1279,7 +1279,7 @@
             "iconUrl": "df363ed461cb88c326afa5d73a5485af95dbc4e2.jpg",
             "iconGrayUrl": "b6073f12c5d6e1a4708190676860bae942631a8d.jpg",
             "hidden": true,
-            "globalPct": 7.2
+            "globalPct": 7.3
         },
         {
             "apiName": "BOSS_THREESISTERS_VERONA",
