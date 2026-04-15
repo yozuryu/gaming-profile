@@ -47,7 +47,7 @@
             "iconUrl": "76fab7711056dcadfa719f6490146b0679ba80d7.jpg",
             "iconGrayUrl": "98c7b39bac432a32f449d6132d102d78bceef8eb.jpg",
             "hidden": false,
-            "globalPct": 21.8
+            "globalPct": 21.9
         },
         {
             "apiName": "STORY4",
@@ -69,7 +69,7 @@
             "iconUrl": "02843891fa47a7a63fceecba4c72482ce39f77c3.jpg",
             "iconGrayUrl": "e619b626cfda1df214362ba6ddbea1742f81662c.jpg",
             "hidden": false,
-            "globalPct": 32.9
+            "globalPct": 33
         },
         {
             "apiName": "BIRDS",
@@ -179,7 +179,7 @@
             "iconUrl": "8a75ba7216730865c3c0f604a609fa55bd6700f0.jpg",
             "iconGrayUrl": "5bce45fbb15f79d73b452e064712891016cf24bf.jpg",
             "hidden": false,
-            "globalPct": 12.1
+            "globalPct": 12.2
         },
         {
             "apiName": "CHAIN6",
@@ -311,7 +311,7 @@
             "iconUrl": "e93d119d5816ee8a50ed9508a4bfa46bc6306065.jpg",
             "iconGrayUrl": "c4b17fe07b7880301078f70baa49c6464198b2af.jpg",
             "hidden": false,
-            "globalPct": 23.9
+            "globalPct": 24
         },
         {
             "apiName": "CLASS3",
@@ -333,7 +333,7 @@
             "iconUrl": "fdc688a6780ca6f51a96b0c3e6bec3a1da0f866f.jpg",
             "iconGrayUrl": "f5c8a9cddc7d46683f67469fa2a9cdedf4fe74ef.jpg",
             "hidden": false,
-            "globalPct": 21
+            "globalPct": 21.1
         },
         {
             "apiName": "PLATYPUS",
@@ -453,7 +453,7 @@
             "unlockedAt": null,
             "iconUrl": "76fab7711056dcadfa719f6490146b0679ba80d7.jpg",
             "iconGrayUrl": "98c7b39bac432a32f449d6132d102d78bceef8eb.jpg",
-            "globalPct": 21.8
+            "globalPct": 21.9
         },
         {
             "apiName": "STORY4",
@@ -471,7 +471,7 @@
             "unlockedAt": null,
             "iconUrl": "02843891fa47a7a63fceecba4c72482ce39f77c3.jpg",
             "iconGrayUrl": "e619b626cfda1df214362ba6ddbea1742f81662c.jpg",
-            "globalPct": 32.9
+            "globalPct": 33
         }
     ]
 }

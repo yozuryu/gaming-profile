@@ -58,7 +58,7 @@
             "iconUrl": "a126a8c39a169230a1762a14db55e58f59ee11e3.jpg",
             "iconGrayUrl": "42d5bef569d4aafe71222a582a5d90956b6569ed.jpg",
             "hidden": false,
-            "globalPct": 32.5
+            "globalPct": 32.4
         },
         {
             "apiName": "cg_complete",
@@ -69,7 +69,7 @@
             "iconUrl": "c50b71b3bc8459a58c9938cc8db991ba49c89f65.jpg",
             "iconGrayUrl": "39c37cb2e1c609da4dcedd1eb53421c6d5e199d4.jpg",
             "hidden": false,
-            "globalPct": 32.5
+            "globalPct": 32.4
         },
         {
             "apiName": "sound_complete",
@@ -132,7 +132,7 @@
             "unlockedAt": null,
             "iconUrl": "a126a8c39a169230a1762a14db55e58f59ee11e3.jpg",
             "iconGrayUrl": "42d5bef569d4aafe71222a582a5d90956b6569ed.jpg",
-            "globalPct": 32.5
+            "globalPct": 32.4
         },
         {
             "apiName": "cg_complete",
@@ -141,7 +141,7 @@
             "unlockedAt": null,
             "iconUrl": "c50b71b3bc8459a58c9938cc8db991ba49c89f65.jpg",
             "iconGrayUrl": "39c37cb2e1c609da4dcedd1eb53421c6d5e199d4.jpg",
-            "globalPct": 32.5
+            "globalPct": 32.4
         }
     ]
 }

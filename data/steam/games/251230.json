@@ -267,7 +267,7 @@
             "iconUrl": "46b1b61fde2a9a9805c1b8a011626b77c1fbc5f4.jpg",
             "iconGrayUrl": "8daa20948af87f82d6ec110be4f5e1f6b9414c33.jpg",
             "hidden": false,
-            "globalPct": 18.3
+            "globalPct": 18.2
         },
         {
             "apiName": "ACH_COMPLETE_ACT1",
@@ -311,7 +311,7 @@
             "iconUrl": "47cd4697cf8d77bb82155a509adcc37a011cdc8a.jpg",
             "iconGrayUrl": "8daa20948af87f82d6ec110be4f5e1f6b9414c33.jpg",
             "hidden": false,
-            "globalPct": 15.3
+            "globalPct": 15.2
         },
         {
             "apiName": "ACH_COMPLETE_ALL_MEDIUM",
@@ -421,7 +421,7 @@
             "iconUrl": "85dd65be7f6c59f743e7a36c2716795bfeaa6cb3.jpg",
             "iconGrayUrl": "8daa20948af87f82d6ec110be4f5e1f6b9414c33.jpg",
             "hidden": false,
-            "globalPct": 77
+            "globalPct": 76.9
         },
         {
             "apiName": "ACH_AUDIOLOG_STORY_ALL",
@@ -605,7 +605,7 @@
             "unlockedAt": "2018-09-08T05:34:57.000Z",
             "iconUrl": "85dd65be7f6c59f743e7a36c2716795bfeaa6cb3.jpg",
             "iconGrayUrl": "8daa20948af87f82d6ec110be4f5e1f6b9414c33.jpg",
-            "globalPct": 77
+            "globalPct": 76.9
         },
         {
             "apiName": "ACH_STREAK_5",
