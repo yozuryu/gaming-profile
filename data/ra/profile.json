@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-16T22:49:56.930Z"
+        "extractionTimestamp": "2026-04-16T23:49:38.664Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51264,
+        "rank": 51266,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 139729,
+        "totalRanked": 139736,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -81,19 +81,6 @@
                 "awardType": "Game Beaten",
                 "awardData": 13444,
                 "awardDataExtra": 1,
-                "displayOrder": 0
-            },
-            {
-                "awardedAt": "2025-03-06T10:39:19+00:00",
-                "title": null,
-                "consoleId": null,
-                "consoleName": null,
-                "flags": null,
-                "imageIcon": "https://static.retroachievements.org/assets/images/badge/patreon.png",
-                "display_award_tier": null,
-                "awardType": "Patreon Supporter",
-                "awardData": 0,
-                "awardDataExtra": 0,
                 "displayOrder": 0
             },
             {
@@ -134,6 +121,19 @@
                 "awardData": 16452,
                 "awardDataExtra": 1,
                 "displayOrder": 0
+            },
+            {
+                "awardedAt": "2025-03-06T10:39:19+00:00",
+                "title": null,
+                "consoleId": null,
+                "consoleName": null,
+                "flags": null,
+                "imageIcon": "https://static.retroachievements.org/assets/images/badge/patreon.png",
+                "display_award_tier": null,
+                "awardType": "Patreon Supporter",
+                "awardData": 0,
+                "awardDataExtra": 0,
+                "displayOrder": 1
             }
         ]
     },
