@@ -168,7 +168,7 @@
             "iconUrl": "7505670c8e4283da41ce575341bc35f72ff2639b.jpg",
             "iconGrayUrl": "c98d546145ff3a8b0eed20ca5426b94d714127bd.jpg",
             "hidden": false,
-            "globalPct": 42.7
+            "globalPct": 42.6
         },
         {
             "apiName": "MANTIS_LORDS",
@@ -234,7 +234,7 @@
             "iconUrl": "054a9800b71efbf708869cb55f611658ecffa2f3.jpg",
             "iconGrayUrl": "1b88bf9ae2b7d4b90ea3ad86470c98df618a8229.jpg",
             "hidden": false,
-            "globalPct": 20.1
+            "globalPct": 20
         },
         {
             "apiName": "GRUBFRIEND",
@@ -432,7 +432,7 @@
             "iconUrl": "39db59cf079011e52d49a621de9c540652f9d2d4.jpg",
             "iconGrayUrl": "f62b5c62df1ccfcf68b18da288ee220e6bc34b2b.jpg",
             "hidden": true,
-            "globalPct": 24.2
+            "globalPct": 24.1
         },
         {
             "apiName": "ENDING_B",
@@ -498,7 +498,7 @@
             "iconUrl": "1f0cab3df919fd1d48aaacd2db3a4d10334bae1d.jpg",
             "iconGrayUrl": "eba8bd5fc8e2d0b968bc2eb80433b8112a0d337c.jpg",
             "hidden": false,
-            "globalPct": 18.9
+            "globalPct": 18.8
         },
         {
             "apiName": "SPEED_COMPLETION",
@@ -597,7 +597,7 @@
             "iconUrl": "8c26d557c3582c7784f338523316f56068e4426d.jpg",
             "iconGrayUrl": "e9699d861ee64eb0b3bfd57f2571896be5db12b4.jpg",
             "hidden": true,
-            "globalPct": 21.5
+            "globalPct": 21.4
         },
         {
             "apiName": "GRIMM",
@@ -608,7 +608,7 @@
             "iconUrl": "982f6bd69415e06696e2fc414bc595700663ab37.jpg",
             "iconGrayUrl": "549b3980b3a8d04368758d1bd59e007bf31cae1b.jpg",
             "hidden": true,
-            "globalPct": 26.6
+            "globalPct": 26.5
         },
         {
             "apiName": "NIGHTMARE_GRIMM",
@@ -652,7 +652,7 @@
             "iconUrl": "17f7d048decf5c20bab0a7bd11f2fac5caca050a.jpg",
             "iconGrayUrl": "",
             "hidden": true,
-            "globalPct": 16.2
+            "globalPct": 16.1
         },
         {
             "apiName": "PANTHEON3",
@@ -663,7 +663,7 @@
             "iconUrl": "382c7998e9b0b60a850d8bdf4c7f4a515a8b3481.jpg",
             "iconGrayUrl": "",
             "hidden": true,
-            "globalPct": 12.1
+            "globalPct": 12
         },
         {
             "apiName": "PANTHEON4",
