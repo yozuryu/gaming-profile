@@ -1,13 +1,13 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-17T13:54:00.657Z"
+        "extractionTimestamp": "2026-04-17T15:08:11.167Z"
     },
     "profile": {
         "steamId": "76561198188939413",
         "displayName": "Yozuryu",
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
-        "status": 3,
+        "status": 4,
         "lastOnline": "2026-04-17T11:29:58.000Z",
         "countryCode": "ID"
     },
@@ -45,17 +45,6 @@
             "lastPlayedTs": "2026-04-05T03:31:06.000Z",
             "achUnlocked": 6,
             "achTotal": 435
-        },
-        {
-            "appId": 539330,
-            "name": "Light Fairytale Episode 1",
-            "playtime2Weeks": 15,
-            "playtimeForever": 193,
-            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/539330/fede24802944d93c6453e75e6a1263d738abf347.jpg",
-            "storeUrl": "https://store.steampowered.com/app/539330",
-            "lastPlayedTs": "2026-04-03T14:36:40.000Z",
-            "achUnlocked": 15,
-            "achTotal": 29
         }
     ],
     "mostRecentGame": {
