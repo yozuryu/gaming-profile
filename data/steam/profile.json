@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-17T03:42:08.146Z"
+        "extractionTimestamp": "2026-04-17T06:10:50.192Z"
     },
     "profile": {
         "steamId": "76561198188939413",
@@ -56,17 +56,6 @@
             "lastPlayedTs": "2026-04-03T14:36:40.000Z",
             "achUnlocked": 15,
             "achTotal": 29
-        },
-        {
-            "appId": 551110,
-            "name": "WayOut",
-            "playtime2Weeks": 24,
-            "playtimeForever": 78,
-            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/551110/bb0ad694b15682ccc19cc6c071de283398f4ad3c.jpg",
-            "storeUrl": "https://store.steampowered.com/app/551110",
-            "lastPlayedTs": "2026-04-03T05:40:13.000Z",
-            "achUnlocked": 66,
-            "achTotal": 66
         }
     ],
     "mostRecentGame": {
@@ -86,7 +75,7 @@
         "description": "",
         "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/539330/b4da5ec9cd2b943f8891a001c71deef1a46c803b.jpg",
         "unlockedAt": "2026-04-03T14:32:32.000Z",
-        "globalPct": 27
+        "globalPct": 27.1
     },
     "perfectGames": [
         {
