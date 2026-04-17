@@ -1,37 +1,37 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-17T10:21:30.185Z"
+        "extractionTimestamp": "2026-04-17T12:00:26.832Z"
     },
     "profile": {
         "steamId": "76561198188939413",
         "displayName": "Yozuryu",
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
-        "status": 0,
-        "lastOnline": "2026-04-16T17:28:14.000Z",
+        "status": 1,
+        "lastOnline": "2026-04-17T11:29:58.000Z",
         "countryCode": "ID"
     },
     "stats": {
         "totalGames": 1247,
-        "totalPlaytimeMin": 345553,
-        "totalPlaytimeHrs": 5759,
+        "totalPlaytimeMin": 345584,
+        "totalPlaytimeHrs": 5760,
         "gamesWithPlaytime": 815,
         "totalAchievements": 9975,
         "unlockedAchievements": 2789,
         "gamesWithAchievements": 168,
         "perfectCount": 16,
         "completionPct": 27,
-        "avgPlaytimeMin": 423
+        "avgPlaytimeMin": 424
     },
     "recentlyPlayed": [
         {
             "appId": 578330,
             "name": "LEGO® City Undercover",
-            "playtime2Weeks": 62,
-            "playtimeForever": 2200,
+            "playtime2Weeks": 93,
+            "playtimeForever": 2231,
             "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/578330/48536e84b21951f851ec4ecf8349370a867e2c37.jpg",
             "storeUrl": "https://store.steampowered.com/app/578330",
-            "lastPlayedTs": "2026-04-16T13:29:22.000Z",
+            "lastPlayedTs": "2026-04-17T11:59:59.000Z",
             "achUnlocked": 4,
             "achTotal": 48
         },
@@ -61,11 +61,11 @@
     "mostRecentGame": {
         "appId": 578330,
         "name": "LEGO® City Undercover",
-        "playtime2Weeks": 62,
-        "playtimeForever": 2200,
+        "playtime2Weeks": 93,
+        "playtimeForever": 2231,
         "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/578330/48536e84b21951f851ec4ecf8349370a867e2c37.jpg",
         "storeUrl": "https://store.steampowered.com/app/578330",
-        "lastPlayedTs": "2026-04-16T13:29:22.000Z"
+        "lastPlayedTs": "2026-04-17T11:59:59.000Z"
     },
     "mostRecentUnlock": {
         "appId": 539330,
@@ -75,7 +75,7 @@
         "description": "",
         "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/539330/b4da5ec9cd2b943f8891a001c71deef1a46c803b.jpg",
         "unlockedAt": "2026-04-03T14:32:32.000Z",
-        "globalPct": 27.1
+        "globalPct": 27
     },
     "perfectGames": [
         {
