@@ -3,6 +3,16 @@
         {
             "appId": 1903340,
             "gameName": "Clair Obscur: Expedition 33",
+            "apiName": "SIMON",
+            "displayName": "Peace At Last",
+            "description": "",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/a3e595c517c9ea83634dd0c98570f436a26a14ff.jpg",
+            "unlockedAt": "2025-07-18T15:31:53.000Z",
+            "globalPct": 16.1
+        },
+        {
+            "appId": 1903340,
+            "gameName": "Clair Obscur: Expedition 33",
             "apiName": "LEVEL_99",
             "displayName": "Survivor",
             "description": "Reach level 99.",
