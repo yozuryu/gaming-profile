@@ -1,5 +1,5 @@
 {
-    "total": 590,
+    "total": 594,
     "results": [
         {
             "id": 27,
@@ -4277,6 +4277,24 @@
             "achievementsPublished": 419
         },
         {
+            "id": 18154,
+            "title": "DJMax Portable 3",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/068356.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
+            "id": 18155,
+            "title": "DJMax Portable Clazziquai Edition",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/121175.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
             "id": 18157,
             "title": "DJ Max Fever",
             "consoleId": 41,
@@ -4889,6 +4907,15 @@
             "achievementsPublished": 140
         },
         {
+            "id": 22370,
+            "title": "DJMax Portable 2",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/068341.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
             "id": 22475,
             "title": "~Prototype~ Crash Bandicoot",
             "consoleId": 12,
@@ -4914,6 +4941,15 @@
             "imageIcon": "/Images/084566.png",
             "pointsTotal": 1281,
             "achievementsPublished": 174
+        },
+        {
+            "id": 22549,
+            "title": "DJMax Portable Hot Tunes",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/068350.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
         },
         {
             "id": 22826,
