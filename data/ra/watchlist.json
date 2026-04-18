@@ -1,5 +1,5 @@
 {
-    "total": 594,
+    "total": 602,
     "results": [
         {
             "id": 27,
@@ -1730,6 +1730,15 @@
             "achievementsPublished": 133
         },
         {
+            "id": 3726,
+            "title": "Tactics Ogre: Let Us Cling Together",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/085080.png",
+            "pointsTotal": 1604,
+            "achievementsPublished": 148
+        },
+        {
             "id": 3728,
             "title": "Dragoneer's Aria",
             "consoleId": 41,
@@ -2324,6 +2333,15 @@
             "achievementsPublished": 52
         },
         {
+            "id": 5932,
+            "title": "The Legend of Heroes: Trails in the Sky the 3rd [Subset - NG Nightmare]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/054817.png",
+            "pointsTotal": 1075,
+            "achievementsPublished": 55
+        },
+        {
             "id": 5949,
             "title": "Ys II: Ancient Ys Vanished - The Final Chapter",
             "consoleId": 7,
@@ -2844,6 +2862,15 @@
             "imageIcon": "/Images/103450.png",
             "pointsTotal": 612,
             "achievementsPublished": 87
+        },
+        {
+            "id": 11115,
+            "title": "The Legend of Heroes: Trails in the Sky FC [Subset - NG Nightmare]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/048312.png",
+            "pointsTotal": 800,
+            "achievementsPublished": 59
         },
         {
             "id": 11141,
@@ -4799,6 +4826,15 @@
             "achievementsPublished": 62
         },
         {
+            "id": 20229,
+            "title": "Mega Man: Powered Up [Subset - No Damage Clears]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/073206.png",
+            "pointsTotal": 7342,
+            "achievementsPublished": 480
+        },
+        {
             "id": 20352,
             "title": "Suikoden II [Subset - Bonus]",
             "consoleId": 12,
@@ -4898,6 +4934,15 @@
             "achievementsPublished": 93
         },
         {
+            "id": 22296,
+            "title": "Megpoid the Music ♯",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/121382.png",
+            "pointsTotal": 886,
+            "achievementsPublished": 52
+        },
+        {
             "id": 22364,
             "title": "The Nightmare of Druaga: Fushigi no Dungeon",
             "consoleId": 21,
@@ -4961,6 +5006,15 @@
             "achievementsPublished": 103
         },
         {
+            "id": 22866,
+            "title": "Tactics Ogre: Let Us Cling Together [Subset - Skill Mastery, Best Weapons]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/085081.png",
+            "pointsTotal": 1520,
+            "achievementsPublished": 228
+        },
+        {
             "id": 23908,
             "title": "Mega Man Battle Network 5: Double Team DS",
             "consoleId": 18,
@@ -4986,6 +5040,15 @@
             "imageIcon": "/Images/117557.png",
             "pointsTotal": 232,
             "achievementsPublished": 20
+        },
+        {
+            "id": 25201,
+            "title": "Megpoid the Music ♯ [Subset - Full Combo Songs]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/121383.png",
+            "pointsTotal": 625,
+            "achievementsPublished": 30
         },
         {
             "id": 25384,
@@ -5310,6 +5373,15 @@
             "imageIcon": "/Images/120695.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
+        },
+        {
+            "id": 35586,
+            "title": "The Legend of Heroes: Trails from Zero [Subset - NG Nightmare]",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/119670.png",
+            "pointsTotal": 1043,
+            "achievementsPublished": 72
         },
         {
             "id": 36547,
