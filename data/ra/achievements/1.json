@@ -2001,46 +2001,6 @@
             "gameUrl": "/game/16452"
         },
         {
-            "date": "2026-03-28 06:36:57",
-            "hardcoreMode": true,
-            "achievementId": 548200,
-            "title": "Good Ol' Wumpa Island!",
-            "description": "Finish Level 1",
-            "badgeName": "623279",
-            "points": 2,
-            "trueRatio": 2,
-            "type": "progression",
-            "author": "BEXUS",
-            "authorUlid": "01H1G8YX0338974WVESDBN0M8N",
-            "gameTitle": "~Prototype~ Crash Landed",
-            "gameIcon": "/Images/112694.png",
-            "gameId": 33170,
-            "consoleName": "Nintendo DS",
-            "cumulScore": 249,
-            "badgeUrl": "/Badge/623279.png",
-            "gameUrl": "/game/33170"
-        },
-        {
-            "date": "2026-03-28 14:52:14",
-            "hardcoreMode": true,
-            "achievementId": 548201,
-            "title": "Don't Get Impaled!",
-            "description": "Finish Level 2",
-            "badgeName": "623281",
-            "points": 3,
-            "trueRatio": 4,
-            "type": "win_condition",
-            "author": "BEXUS",
-            "authorUlid": "01H1G8YX0338974WVESDBN0M8N",
-            "gameTitle": "~Prototype~ Crash Landed",
-            "gameIcon": "/Images/112694.png",
-            "gameId": 33170,
-            "consoleName": "Nintendo DS",
-            "cumulScore": 252,
-            "badgeUrl": "/Badge/623281.png",
-            "gameUrl": "/game/33170"
-        },
-        {
             "date": "2026-03-28 15:19:02",
             "hardcoreMode": true,
             "achievementId": 572169,
@@ -2056,7 +2016,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 257,
+            "cumulScore": 252,
             "badgeUrl": "/Badge/649943.png",
             "gameUrl": "/game/16452"
         },
@@ -2076,7 +2036,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 259,
+            "cumulScore": 254,
             "badgeUrl": "/Badge/649974.png",
             "gameUrl": "/game/16452"
         },
@@ -2096,7 +2056,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 269,
+            "cumulScore": 264,
             "badgeUrl": "/Badge/649985.png",
             "gameUrl": "/game/16452"
         },
@@ -2116,7 +2076,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 271,
+            "cumulScore": 266,
             "badgeUrl": "/Badge/649942.png",
             "gameUrl": "/game/16452"
         },
@@ -2136,7 +2096,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 281,
+            "cumulScore": 276,
             "badgeUrl": "/Badge/649925.png",
             "gameUrl": "/game/16452"
         },
@@ -2156,7 +2116,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 286,
+            "cumulScore": 281,
             "badgeUrl": "/Badge/649950.png",
             "gameUrl": "/game/16452"
         },
@@ -2176,7 +2136,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 288,
+            "cumulScore": 283,
             "badgeUrl": "/Badge/649948.png",
             "gameUrl": "/game/16452"
         },
@@ -2196,7 +2156,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 292,
+            "cumulScore": 287,
             "badgeUrl": "/Badge/649952.png",
             "gameUrl": "/game/16452"
         },
@@ -2216,7 +2176,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 294,
+            "cumulScore": 289,
             "badgeUrl": "/Badge/649947.png",
             "gameUrl": "/game/16452"
         },
@@ -2236,7 +2196,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 304,
+            "cumulScore": 299,
             "badgeUrl": "/Badge/649926.png",
             "gameUrl": "/game/16452"
         },
@@ -2256,7 +2216,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 314,
+            "cumulScore": 309,
             "badgeUrl": "/Badge/649927.png",
             "gameUrl": "/game/16452"
         },
@@ -2276,7 +2236,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 319,
+            "cumulScore": 314,
             "badgeUrl": "/Badge/649970.png",
             "gameUrl": "/game/16452"
         },
@@ -2296,7 +2256,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 321,
+            "cumulScore": 316,
             "badgeUrl": "/Badge/649949.png",
             "gameUrl": "/game/16452"
         },
@@ -2316,7 +2276,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 323,
+            "cumulScore": 318,
             "badgeUrl": "/Badge/649951.png",
             "gameUrl": "/game/16452"
         },
@@ -2336,7 +2296,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 326,
+            "cumulScore": 321,
             "badgeUrl": "/Badge/649953.png",
             "gameUrl": "/game/16452"
         },
@@ -2356,7 +2316,7 @@
             "gameIcon": "/Images/086971.png",
             "gameId": 2883,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 326,
+            "cumulScore": 321,
             "badgeUrl": "/Badge/436076.png",
             "gameUrl": "/game/2883"
         },
@@ -2376,7 +2336,7 @@
             "gameIcon": "/Images/026882.png",
             "gameId": 11290,
             "consoleName": "PlayStation",
-            "cumulScore": 328,
+            "cumulScore": 323,
             "badgeUrl": "/Badge/162847.png",
             "gameUrl": "/game/11290"
         },
@@ -2396,7 +2356,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 338,
+            "cumulScore": 333,
             "badgeUrl": "/Badge/649928.png",
             "gameUrl": "/game/16452"
         },
@@ -2416,7 +2376,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 348,
+            "cumulScore": 343,
             "badgeUrl": "/Badge/649983.png",
             "gameUrl": "/game/16452"
         },
@@ -2436,7 +2396,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 351,
+            "cumulScore": 346,
             "badgeUrl": "/Badge/649959.png",
             "gameUrl": "/game/16452"
         },
@@ -2456,7 +2416,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 354,
+            "cumulScore": 349,
             "badgeUrl": "/Badge/649954.png",
             "gameUrl": "/game/16452"
         },
@@ -2476,7 +2436,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 357,
+            "cumulScore": 352,
             "badgeUrl": "/Badge/649975.png",
             "gameUrl": "/game/16452"
         },
@@ -2496,7 +2456,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 362,
+            "cumulScore": 357,
             "badgeUrl": "/Badge/649973.png",
             "gameUrl": "/game/16452"
         },
@@ -2516,7 +2476,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 364,
+            "cumulScore": 359,
             "badgeUrl": "/Badge/649955.png",
             "gameUrl": "/game/16452"
         },
@@ -2536,7 +2496,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 366,
+            "cumulScore": 361,
             "badgeUrl": "/Badge/649957.png",
             "gameUrl": "/game/16452"
         },
@@ -2556,7 +2516,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 371,
+            "cumulScore": 366,
             "badgeUrl": "/Badge/649958.png",
             "gameUrl": "/game/16452"
         },
@@ -2576,7 +2536,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 381,
+            "cumulScore": 376,
             "badgeUrl": "/Badge/649986.png",
             "gameUrl": "/game/16452"
         },
@@ -2596,7 +2556,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 391,
+            "cumulScore": 386,
             "badgeUrl": "/Badge/649971.png",
             "gameUrl": "/game/16452"
         },
@@ -2616,7 +2576,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 393,
+            "cumulScore": 388,
             "badgeUrl": "/Badge/649956.png",
             "gameUrl": "/game/16452"
         },
@@ -2636,7 +2596,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 396,
+            "cumulScore": 391,
             "badgeUrl": "/Badge/649976.png",
             "gameUrl": "/game/16452"
         },
@@ -2656,7 +2616,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 406,
+            "cumulScore": 401,
             "badgeUrl": "/Badge/649929.png",
             "gameUrl": "/game/16452"
         },
@@ -2676,7 +2636,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 409,
+            "cumulScore": 404,
             "badgeUrl": "/Badge/649977.png",
             "gameUrl": "/game/16452"
         },
@@ -2696,7 +2656,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 411,
+            "cumulScore": 406,
             "badgeUrl": "/Badge/649961.png",
             "gameUrl": "/game/16452"
         },
@@ -2716,7 +2676,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 414,
+            "cumulScore": 409,
             "badgeUrl": "/Badge/649960.png",
             "gameUrl": "/game/16452"
         },
@@ -2736,7 +2696,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 416,
+            "cumulScore": 411,
             "badgeUrl": "/Badge/649962.png",
             "gameUrl": "/game/16452"
         },
@@ -2756,7 +2716,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 419,
+            "cumulScore": 414,
             "badgeUrl": "/Badge/649978.png",
             "gameUrl": "/game/16452"
         },
@@ -2776,7 +2736,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 422,
+            "cumulScore": 417,
             "badgeUrl": "/Badge/649979.png",
             "gameUrl": "/game/16452"
         },
@@ -2796,7 +2756,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 432,
+            "cumulScore": 427,
             "badgeUrl": "/Badge/649984.png",
             "gameUrl": "/game/16452"
         },
@@ -2816,7 +2776,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 442,
+            "cumulScore": 437,
             "badgeUrl": "/Badge/649930.png",
             "gameUrl": "/game/16452"
         },
@@ -2836,7 +2796,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 452,
+            "cumulScore": 447,
             "badgeUrl": "/Badge/649988.png",
             "gameUrl": "/game/16452"
         },
@@ -2856,7 +2816,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 455,
+            "cumulScore": 450,
             "badgeUrl": "/Badge/649964.png",
             "gameUrl": "/game/16452"
         },
@@ -2876,7 +2836,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 457,
+            "cumulScore": 452,
             "badgeUrl": "/Badge/649963.png",
             "gameUrl": "/game/16452"
         },
@@ -2896,7 +2856,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 467,
+            "cumulScore": 462,
             "badgeUrl": "/Badge/649987.png",
             "gameUrl": "/game/16452"
         },
@@ -2916,7 +2876,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 470,
+            "cumulScore": 465,
             "badgeUrl": "/Badge/649980.png",
             "gameUrl": "/game/16452"
         },
@@ -2936,7 +2896,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 474,
+            "cumulScore": 469,
             "badgeUrl": "/Badge/649965.png",
             "gameUrl": "/game/16452"
         },
@@ -2956,7 +2916,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 477,
+            "cumulScore": 472,
             "badgeUrl": "/Badge/649982.png",
             "gameUrl": "/game/16452"
         },
@@ -2976,7 +2936,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 481,
+            "cumulScore": 476,
             "badgeUrl": "/Badge/649967.png",
             "gameUrl": "/game/16452"
         },
@@ -2996,7 +2956,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 484,
+            "cumulScore": 479,
             "badgeUrl": "/Badge/649966.png",
             "gameUrl": "/game/16452"
         },
@@ -3016,7 +2976,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 487,
+            "cumulScore": 482,
             "badgeUrl": "/Badge/649981.png",
             "gameUrl": "/game/16452"
         },
@@ -3036,7 +2996,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 497,
+            "cumulScore": 492,
             "badgeUrl": "/Badge/649991.png",
             "gameUrl": "/game/16452"
         },
@@ -3056,7 +3016,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 507,
+            "cumulScore": 502,
             "badgeUrl": "/Badge/649972.png",
             "gameUrl": "/game/16452"
         },
@@ -3076,7 +3036,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 517,
+            "cumulScore": 512,
             "badgeUrl": "/Badge/649931.png",
             "gameUrl": "/game/16452"
         },
@@ -3096,7 +3056,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 527,
+            "cumulScore": 522,
             "badgeUrl": "/Badge/649989.png",
             "gameUrl": "/game/16452"
         },
@@ -3116,7 +3076,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 552,
+            "cumulScore": 547,
             "badgeUrl": "/Badge/649932.png",
             "gameUrl": "/game/16452"
         },
@@ -3136,7 +3096,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 562,
+            "cumulScore": 557,
             "badgeUrl": "/Badge/649924.png",
             "gameUrl": "/game/16452"
         },
@@ -3156,7 +3116,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 572,
+            "cumulScore": 567,
             "badgeUrl": "/Badge/649925.png",
             "gameUrl": "/game/16452"
         },
@@ -3176,7 +3136,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 582,
+            "cumulScore": 577,
             "badgeUrl": "/Badge/649927.png",
             "gameUrl": "/game/16452"
         },
@@ -3196,7 +3156,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 592,
+            "cumulScore": 587,
             "badgeUrl": "/Badge/649928.png",
             "gameUrl": "/game/16452"
         },
@@ -3216,7 +3176,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 602,
+            "cumulScore": 597,
             "badgeUrl": "/Badge/649929.png",
             "gameUrl": "/game/16452"
         },
@@ -3236,7 +3196,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 612,
+            "cumulScore": 607,
             "badgeUrl": "/Badge/649930.png",
             "gameUrl": "/game/16452"
         },
@@ -3256,7 +3216,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 622,
+            "cumulScore": 617,
             "badgeUrl": "/Badge/649933.png",
             "gameUrl": "/game/16452"
         },
@@ -3276,7 +3236,7 @@
             "gameIcon": "/Images/123011.png",
             "gameId": 16452,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 647,
+            "cumulScore": 642,
             "badgeUrl": "/Badge/649934.png",
             "gameUrl": "/game/16452"
         },
@@ -3296,7 +3256,7 @@
             "gameIcon": "/Images/032736.png",
             "gameId": 11382,
             "consoleName": "PlayStation",
-            "cumulScore": 647,
+            "cumulScore": 642,
             "badgeUrl": "/Badge/114925.png",
             "gameUrl": "/game/11382"
         },
@@ -3316,7 +3276,7 @@
             "gameIcon": "/Images/032736.png",
             "gameId": 11382,
             "consoleName": "PlayStation",
-            "cumulScore": 647,
+            "cumulScore": 642,
             "badgeUrl": "/Badge/114926.png",
             "gameUrl": "/game/11382"
         },
@@ -3336,7 +3296,7 @@
             "gameIcon": "/Images/124477.png",
             "gameId": 11306,
             "consoleName": "PlayStation",
-            "cumulScore": 652,
+            "cumulScore": 647,
             "badgeUrl": "/Badge/103285.png",
             "gameUrl": "/game/11306"
         },
@@ -3356,7 +3316,7 @@
             "gameIcon": "/Images/124477.png",
             "gameId": 11306,
             "consoleName": "PlayStation",
-            "cumulScore": 657,
+            "cumulScore": 652,
             "badgeUrl": "/Badge/103291.png",
             "gameUrl": "/game/11306"
         },
@@ -3376,7 +3336,7 @@
             "gameIcon": "/Images/121536.png",
             "gameId": 2588,
             "consoleName": "Game Boy Advance",
-            "cumulScore": 667,
+            "cumulScore": 662,
             "badgeUrl": "/Badge/49739.png",
             "gameUrl": "/game/2588"
         },
@@ -3396,7 +3356,7 @@
             "gameIcon": "/Images/113907.png",
             "gameId": 2873,
             "consoleName": "PlayStation",
-            "cumulScore": 668,
+            "cumulScore": 663,
             "badgeUrl": "/Badge/405191.png",
             "gameUrl": "/game/2873"
         },
@@ -3416,7 +3376,7 @@
             "gameIcon": "/Images/113907.png",
             "gameId": 2873,
             "consoleName": "PlayStation",
-            "cumulScore": 669,
+            "cumulScore": 664,
             "badgeUrl": "/Badge/405192.png",
             "gameUrl": "/game/2873"
         },
@@ -3436,7 +3396,7 @@
             "gameIcon": "/Images/113907.png",
             "gameId": 2873,
             "consoleName": "PlayStation",
-            "cumulScore": 670,
+            "cumulScore": 665,
             "badgeUrl": "/Badge/405193.png",
             "gameUrl": "/game/2873"
         },
@@ -3456,7 +3416,7 @@
             "gameIcon": "/Images/113907.png",
             "gameId": 2873,
             "consoleName": "PlayStation",
-            "cumulScore": 673,
+            "cumulScore": 668,
             "badgeUrl": "/Badge/405256.png",
             "gameUrl": "/game/2873"
         },
@@ -3476,7 +3436,7 @@
             "gameIcon": "/Images/113907.png",
             "gameId": 2873,
             "consoleName": "PlayStation",
-            "cumulScore": 675,
+            "cumulScore": 670,
             "badgeUrl": "/Badge/405257.png",
             "gameUrl": "/game/2873"
         },
@@ -3496,7 +3456,7 @@
             "gameIcon": "/Images/113907.png",
             "gameId": 2873,
             "consoleName": "PlayStation",
-            "cumulScore": 677,
+            "cumulScore": 672,
             "badgeUrl": "/Badge/405198.png",
             "gameUrl": "/game/2873"
         },
@@ -3516,7 +3476,7 @@
             "gameIcon": "/Images/113907.png",
             "gameId": 2873,
             "consoleName": "PlayStation",
-            "cumulScore": 680,
+            "cumulScore": 675,
             "badgeUrl": "/Badge/405199.png",
             "gameUrl": "/game/2873"
         },
@@ -3536,7 +3496,7 @@
             "gameIcon": "/Images/113907.png",
             "gameId": 2873,
             "consoleName": "PlayStation",
-            "cumulScore": 683,
+            "cumulScore": 678,
             "badgeUrl": "/Badge/405202.png",
             "gameUrl": "/game/2873"
         },
@@ -3556,7 +3516,7 @@
             "gameIcon": "/Images/113907.png",
             "gameId": 2873,
             "consoleName": "PlayStation",
-            "cumulScore": 685,
+            "cumulScore": 680,
             "badgeUrl": "/Badge/405201.png",
             "gameUrl": "/game/2873"
         },
@@ -3576,8 +3536,88 @@
             "gameIcon": "/Images/080862.png",
             "gameId": 18157,
             "consoleName": "PlayStation Portable",
-            "cumulScore": 686,
+            "cumulScore": 681,
             "badgeUrl": "/Badge/420741.png",
+            "gameUrl": "/game/18157"
+        },
+        {
+            "date": "2026-04-18 16:16:23",
+            "hardcoreMode": true,
+            "achievementId": 374122,
+            "title": "For Seasons Clear",
+            "description": "Clear 'For Seasons' (Non-mission)",
+            "badgeName": "420767",
+            "points": 1,
+            "trueRatio": 1,
+            "type": "progression",
+            "author": "ACheapLemon",
+            "authorUlid": "01D36HWVNT3NCRWQ4GBB743HTA",
+            "gameTitle": "DJ Max Fever",
+            "gameIcon": "/Images/080862.png",
+            "gameId": 18157,
+            "consoleName": "PlayStation Portable",
+            "cumulScore": 682,
+            "badgeUrl": "/Badge/420767.png",
+            "gameUrl": "/game/18157"
+        },
+        {
+            "date": "2026-04-18 16:19:17",
+            "hardcoreMode": true,
+            "achievementId": 374145,
+            "title": "Every Morning Clear",
+            "description": "Clear 'Every Morning' (Non-mission)",
+            "badgeName": "420790",
+            "points": 1,
+            "trueRatio": 2,
+            "type": "progression",
+            "author": "ACheapLemon",
+            "authorUlid": "01D36HWVNT3NCRWQ4GBB743HTA",
+            "gameTitle": "DJ Max Fever",
+            "gameIcon": "/Images/080862.png",
+            "gameId": 18157,
+            "consoleName": "PlayStation Portable",
+            "cumulScore": 683,
+            "badgeUrl": "/Badge/420790.png",
+            "gameUrl": "/game/18157"
+        },
+        {
+            "date": "2026-04-18 16:22:02",
+            "hardcoreMode": true,
+            "achievementId": 374149,
+            "title": "End of Moonlight Clear",
+            "description": "Clear 'End of Moonlight' (Non-mission)",
+            "badgeName": "420794",
+            "points": 1,
+            "trueRatio": 1,
+            "type": "progression",
+            "author": "ACheapLemon",
+            "authorUlid": "01D36HWVNT3NCRWQ4GBB743HTA",
+            "gameTitle": "DJ Max Fever",
+            "gameIcon": "/Images/080862.png",
+            "gameId": 18157,
+            "consoleName": "PlayStation Portable",
+            "cumulScore": 684,
+            "badgeUrl": "/Badge/420794.png",
+            "gameUrl": "/game/18157"
+        },
+        {
+            "date": "2026-04-18 16:24:32",
+            "hardcoreMode": true,
+            "achievementId": 374105,
+            "title": "ON Clear",
+            "description": "Clear 'ON' (Non-mission)",
+            "badgeName": "420750",
+            "points": 1,
+            "trueRatio": 2,
+            "type": "progression",
+            "author": "ACheapLemon",
+            "authorUlid": "01D36HWVNT3NCRWQ4GBB743HTA",
+            "gameTitle": "DJ Max Fever",
+            "gameIcon": "/Images/080862.png",
+            "gameId": 18157,
+            "consoleName": "PlayStation Portable",
+            "cumulScore": 685,
+            "badgeUrl": "/Badge/420750.png",
             "gameUrl": "/game/18157"
         }
     ]
