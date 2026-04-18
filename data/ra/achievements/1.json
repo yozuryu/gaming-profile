@@ -3028,7 +3028,7 @@
             "description": "Unlock all 14 party skills",
             "badgeName": "649991",
             "points": 10,
-            "trueRatio": 50,
+            "trueRatio": 49,
             "type": null,
             "author": "Jamiras",
             "authorUlid": "01BJY8JSBTA7NVT0NYSVDCK5TY",
@@ -3048,7 +3048,7 @@
             "description": "Receive the reward for rescuing 75 people",
             "badgeName": "649972",
             "points": 10,
-            "trueRatio": 53,
+            "trueRatio": 52,
             "type": "missable",
             "author": "Jamiras",
             "authorUlid": "01BJY8JSBTA7NVT0NYSVDCK5TY",
@@ -3248,7 +3248,7 @@
             "description": "Defeat the guardian of the illusory Tokyo Hall Inverted",
             "badgeName": "649933",
             "points": 10,
-            "trueRatio": 63,
+            "trueRatio": 61,
             "type": null,
             "author": "Jamiras",
             "authorUlid": "01BJY8JSBTA7NVT0NYSVDCK5TY",
@@ -3559,6 +3559,26 @@
             "cumulScore": 685,
             "badgeUrl": "/Badge/405201.png",
             "gameUrl": "/game/2873"
+        },
+        {
+            "date": "2026-04-18 13:18:20",
+            "hardcoreMode": true,
+            "achievementId": 374096,
+            "title": "LuvFlow Clear",
+            "description": "Clear 'LuvFlow' (Non-mission)",
+            "badgeName": "420741",
+            "points": 1,
+            "trueRatio": 1,
+            "type": "progression",
+            "author": "ACheapLemon",
+            "authorUlid": "01D36HWVNT3NCRWQ4GBB743HTA",
+            "gameTitle": "DJ Max Fever",
+            "gameIcon": "/Images/080862.png",
+            "gameId": 18157,
+            "consoleName": "PlayStation Portable",
+            "cumulScore": 686,
+            "badgeUrl": "/Badge/420741.png",
+            "gameUrl": "/game/18157"
         }
     ]
 }
