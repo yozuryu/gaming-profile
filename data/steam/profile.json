@@ -1,20 +1,20 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-18T09:02:20.127Z"
+        "extractionTimestamp": "2026-04-18T10:55:03.850Z"
     },
     "profile": {
         "steamId": "76561198188939413",
         "displayName": "Yozuryu",
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
-        "status": 0,
+        "status": 1,
         "lastOnline": "2026-04-18T06:58:41.000Z",
         "countryCode": "ID"
     },
     "stats": {
         "totalGames": 1247,
-        "totalPlaytimeMin": 345624,
-        "totalPlaytimeHrs": 5760,
+        "totalPlaytimeMin": 345654,
+        "totalPlaytimeHrs": 5761,
         "gamesWithPlaytime": 815,
         "totalAchievements": 9975,
         "unlockedAchievements": 2789,
@@ -27,11 +27,11 @@
         {
             "appId": 578330,
             "name": "LEGO® City Undercover",
-            "playtime2Weeks": 134,
-            "playtimeForever": 2271,
+            "playtime2Weeks": 164,
+            "playtimeForever": 2301,
             "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/578330/48536e84b21951f851ec4ecf8349370a867e2c37.jpg",
             "storeUrl": "https://store.steampowered.com/app/578330",
-            "lastPlayedTs": "2026-04-17T12:40:11.000Z",
+            "lastPlayedTs": "2026-04-18T10:48:26.000Z",
             "achUnlocked": 4,
             "achTotal": 48
         },
@@ -50,11 +50,11 @@
     "mostRecentGame": {
         "appId": 578330,
         "name": "LEGO® City Undercover",
-        "playtime2Weeks": 134,
-        "playtimeForever": 2271,
+        "playtime2Weeks": 164,
+        "playtimeForever": 2301,
         "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/578330/48536e84b21951f851ec4ecf8349370a867e2c37.jpg",
         "storeUrl": "https://store.steampowered.com/app/578330",
-        "lastPlayedTs": "2026-04-17T12:40:11.000Z"
+        "lastPlayedTs": "2026-04-18T10:48:26.000Z"
     },
     "mostRecentUnlock": {
         "appId": 539330,
