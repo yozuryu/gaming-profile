@@ -333,7 +333,7 @@
             "iconUrl": "490f98f7a7b80566c690551d9de0baaf9660c208.jpg",
             "iconGrayUrl": "ff98e204d727a59c6c1d0996b2ef187b868bac5c.jpg",
             "hidden": false,
-            "globalPct": 15
+            "globalPct": 14.9
         },
         {
             "apiName": "ACH_FIRST_SCENARIO_CREATED",
@@ -553,7 +553,7 @@
             "iconUrl": "9b54770245b99414e4d570399528220b60c88379.jpg",
             "iconGrayUrl": "ff98e204d727a59c6c1d0996b2ef187b868bac5c.jpg",
             "hidden": false,
-            "globalPct": 0.5
+            "globalPct": 0.4
         },
         {
             "apiName": "F40PH_COMPLETE_TUTORIAL",
@@ -663,7 +663,7 @@
             "iconUrl": "191348f03b1af55bb75259ed40c3e174eee4af8c.jpg",
             "iconGrayUrl": "ff98e204d727a59c6c1d0996b2ef187b868bac5c.jpg",
             "hidden": false,
-            "globalPct": 5.5
+            "globalPct": 5.4
         },
         {
             "apiName": "COMPLETED_BR143_TUTORIAL",
@@ -1807,7 +1807,7 @@
             "iconUrl": "cfc11b161cf33f451cca883a9d4e7f74fd0ff0c9.jpg",
             "iconGrayUrl": "694c742cbc0ec03ad659e8d27c1db316a41504d3.jpg",
             "hidden": false,
-            "globalPct": 0.7
+            "globalPct": 0.6
         },
         {
             "apiName": "WSR_CL09_HORN_USE_COUNT",
@@ -2247,7 +2247,7 @@
             "iconUrl": "9d1cacde3dfd51a87639d651dd948d6418a93a8d.jpg",
             "iconGrayUrl": "ff98e204d727a59c6c1d0996b2ef187b868bac5c.jpg",
             "hidden": false,
-            "globalPct": 0.7
+            "globalPct": 0.6
         },
         {
             "apiName": "BR204_RAIL_VEHICLE_LEVEL",
