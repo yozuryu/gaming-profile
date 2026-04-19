@@ -1,5 +1,5 @@
 {
-    "total": 611,
+    "total": 616,
     "results": [
         {
             "id": 27,
@@ -702,6 +702,15 @@
             "imageIcon": "/Images/103269.png",
             "pointsTotal": 2537,
             "achievementsPublished": 391
+        },
+        {
+            "id": 2209,
+            "title": "Tales of Phantasia",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/117711.png",
+            "pointsTotal": 625,
+            "achievementsPublished": 76
         },
         {
             "id": 2246,
@@ -2459,6 +2468,15 @@
             "achievementsPublished": 407
         },
         {
+            "id": 6981,
+            "title": "Tales of Symphonia",
+            "consoleId": 16,
+            "consoleName": "GameCube",
+            "imageIcon": "/Images/092333.png",
+            "pointsTotal": 2510,
+            "achievementsPublished": 294
+        },
+        {
             "id": 7095,
             "title": "Shining Soul II",
             "consoleId": 5,
@@ -3674,6 +3692,15 @@
             "achievementsPublished": 93
         },
         {
+            "id": 14369,
+            "title": "Arc the Lad",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/064459.png",
+            "pointsTotal": 1980,
+            "achievementsPublished": 179
+        },
+        {
             "id": 14370,
             "title": "Suikogaiden Vol. 1: Swordsman of Harmonia",
             "consoleId": 12,
@@ -3690,6 +3717,15 @@
             "imageIcon": "/Images/098150.png",
             "pointsTotal": 50,
             "achievementsPublished": 8
+        },
+        {
+            "id": 14373,
+            "title": "Arc the Lad II",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/029640.png",
+            "pointsTotal": 5640,
+            "achievementsPublished": 637
         },
         {
             "id": 14417,
@@ -4079,15 +4115,6 @@
             "achievementsPublished": 0
         },
         {
-            "id": 16452,
-            "title": "7th Dragon 2020",
-            "consoleId": 41,
-            "consoleName": "PlayStation Portable",
-            "imageIcon": "/Images/123011.png",
-            "pointsTotal": 475,
-            "achievementsPublished": 80
-        },
-        {
             "id": 16474,
             "title": "Summon Night",
             "consoleId": 12,
@@ -4178,6 +4205,15 @@
             "achievementsPublished": 84
         },
         {
+            "id": 17001,
+            "title": "Arc the Lad II [Subset - Arc Arena: Monster Tournament]",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/105856.png",
+            "pointsTotal": 610,
+            "achievementsPublished": 77
+        },
+        {
             "id": 17005,
             "title": "Clock Tower: The First Fear",
             "consoleId": 12,
@@ -4194,6 +4230,15 @@
             "imageIcon": "/Images/074321.png",
             "pointsTotal": 285,
             "achievementsPublished": 33
+        },
+        {
+            "id": 17166,
+            "title": "...Iru!",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/103338.png",
+            "pointsTotal": 151,
+            "achievementsPublished": 28
         },
         {
             "id": 17213,

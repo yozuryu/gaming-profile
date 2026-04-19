@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-19T11:39:55.559Z"
+        "extractionTimestamp": "2026-04-19T13:13:55.687Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "⏰0:00 | 🤺:0 | 🕵:0 | 🎁:0 | 🐟:0 | 🐲0/18",
-        "lastGameId": 11269,
+        "richPresenceMsg": "Rudy 🔫 is exploring 🗺️ Filgaia. [🕰️ 0:00.00]",
+        "lastGameId": 11310,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1758,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "⏰0:00 | 🤺:0 | 🕵:0 | 🎁:0 | 🐟:0 | 🐲0/18",
-        "richPresenceMsgDate": "2026-04-19 07:20:11",
-        "lastGameId": 11269,
+        "richPresenceMsg": "Rudy 🔫 is exploring 🗺️ Filgaia. [🕰️ 0:00.00]",
+        "richPresenceMsgDate": "2026-04-19 12:06:12",
+        "lastGameId": 11310,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1758,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51459,
+        "rank": 51463,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 140175,
+        "totalRanked": 140186,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -125,6 +125,24 @@
         ]
     },
     "recentlyPlayedGames": [
+        {
+            "gameId": 11310,
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "title": "Wild Arms",
+            "imageIcon": "/Images/058584.png",
+            "imageTitle": "/Images/019083.png",
+            "imageIngame": "/Images/045507.png",
+            "imageBoxArt": "/Images/015390.png",
+            "lastPlayed": "2026-04-19 12:06:12",
+            "achievementsTotal": 155,
+            "numPossibleAchievements": 155,
+            "possibleScore": 1078,
+            "numAchieved": 0,
+            "scoreAchieved": 0,
+            "numAchievedHardcore": 0,
+            "scoreAchievedHardcore": 0
+        },
         {
             "gameId": 11269,
             "consoleId": 12,
@@ -376,24 +394,6 @@
             "scoreAchieved": 10,
             "numAchievedHardcore": 1,
             "scoreAchievedHardcore": 10
-        },
-        {
-            "gameId": 11306,
-            "consoleId": 12,
-            "consoleName": "PlayStation",
-            "title": "Tomba! 2: The Evil Swine Return",
-            "imageIcon": "/Images/124477.png",
-            "imageTitle": "/Images/050910.png",
-            "imageIngame": "/Images/050909.png",
-            "imageBoxArt": "/Images/097460.png",
-            "lastPlayed": "2026-04-10 16:19:43",
-            "achievementsTotal": 45,
-            "numPossibleAchievements": 45,
-            "possibleScore": 604,
-            "numAchieved": 3,
-            "scoreAchieved": 15,
-            "numAchievedHardcore": 3,
-            "scoreAchievedHardcore": 15
         }
     ],
     "gameAwardsAndProgress": {
@@ -1086,18 +1086,18 @@
         "gameUrl": "/game/18157"
     },
     "mostRecentGame": {
-        "gameId": 11269,
+        "gameId": 11310,
         "consoleId": 12,
         "consoleName": "PlayStation",
-        "title": "Breath of Fire III",
-        "imageIcon": "/Images/019054.png",
-        "imageTitle": "/Images/019052.png",
-        "imageIngame": "/Images/019053.png",
-        "imageBoxArt": "/Images/053050.png",
-        "lastPlayed": "2026-04-19 07:20:11",
-        "achievementsTotal": 99,
-        "numPossibleAchievements": 99,
-        "possibleScore": 840,
+        "title": "Wild Arms",
+        "imageIcon": "/Images/058584.png",
+        "imageTitle": "/Images/019083.png",
+        "imageIngame": "/Images/045507.png",
+        "imageBoxArt": "/Images/015390.png",
+        "lastPlayed": "2026-04-19 12:06:12",
+        "achievementsTotal": 155,
+        "numPossibleAchievements": 155,
+        "possibleScore": 1078,
         "numAchieved": 0,
         "scoreAchieved": 0,
         "numAchievedHardcore": 0,
