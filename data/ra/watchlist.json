@@ -1,5 +1,5 @@
 {
-    "total": 602,
+    "total": 603,
     "results": [
         {
             "id": 27,
@@ -117,6 +117,15 @@
             "imageIcon": "/Images/083806.png",
             "pointsTotal": 413,
             "achievementsPublished": 43
+        },
+        {
+            "id": 270,
+            "title": "ActRaiser",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/110040.png",
+            "pointsTotal": 653,
+            "achievementsPublished": 66
         },
         {
             "id": 319,
@@ -5299,7 +5308,7 @@
             "consoleId": 19,
             "consoleName": "Wii",
             "imageIcon": "/Images/119676.png",
-            "pointsTotal": 1380,
+            "pointsTotal": 1385,
             "achievementsPublished": 173
         },
         {
