@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-19T14:47:34.931Z"
+        "extractionTimestamp": "2026-04-19T15:42:24.516Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Beyond the World Map",
+        "richPresenceMsg": "Beyond Border Church",
         "lastGameId": 11415,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1763,
+        "totalPoints": 1768,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6458,
+        "totalTruePoints": 6465,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Beyond the World Map",
-        "richPresenceMsgDate": "2026-04-19 14:28:43",
+        "richPresenceMsg": "Beyond Border Church",
+        "richPresenceMsgDate": "2026-04-19 15:22:54",
         "lastGameId": 11415,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1763,
+        "totalPoints": 1768,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6458,
+        "totalTruePoints": 6465,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51381,
+        "rank": 51289,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 140203,
+        "totalRanked": 140209,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1763,
+        "points": 1768,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -134,14 +134,14 @@
             "imageTitle": "/Images/019045.png",
             "imageIngame": "/Images/045602.png",
             "imageBoxArt": "/Images/063085.png",
-            "lastPlayed": "2026-04-19 14:28:43",
+            "lastPlayed": "2026-04-19 15:22:54",
             "achievementsTotal": 63,
             "numPossibleAchievements": 63,
             "possibleScore": 560,
-            "numAchieved": 2,
-            "scoreAchieved": 10,
-            "numAchievedHardcore": 2,
-            "scoreAchievedHardcore": 10
+            "numAchieved": 4,
+            "scoreAchieved": 15,
+            "numAchievedHardcore": 4,
+            "scoreAchievedHardcore": 15
         },
         {
             "gameId": 17166,
@@ -407,9 +407,9 @@
                 "consoleId": 12,
                 "consoleName": "PlayStation",
                 "maxPossible": 63,
-                "numAwarded": 2,
-                "numAwardedHardcore": 2,
-                "mostRecentAwardedDate": "2026-04-19T14:24:43+00:00",
+                "numAwarded": 4,
+                "numAwardedHardcore": 4,
+                "mostRecentAwardedDate": "2026-04-19T15:22:07+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -1066,14 +1066,14 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-19 14:24:43",
+        "date": "2026-04-19 15:22:07",
         "hardcoreMode": true,
-        "achievementId": 330222,
-        "title": "Prison Break",
-        "description": "Bust Edward out of prison",
-        "badgeName": "373252",
+        "achievementId": 330223,
+        "title": "Sacred Slides",
+        "description": "Solve the puzzle at Border Church",
+        "badgeName": "373267",
         "points": 5,
-        "trueRatio": 7,
+        "trueRatio": 8,
         "type": "progression",
         "author": "tele",
         "authorUlid": "01A224YXMF3HRHYJWHNNC90ZTV",
@@ -1082,7 +1082,7 @@
         "gameId": 11415,
         "consoleName": "PlayStation",
         "cumulScore": 689,
-        "badgeUrl": "/Badge/373252.png",
+        "badgeUrl": "/Badge/373267.png",
         "gameUrl": "/game/11415"
     },
     "mostRecentGame": {
@@ -1094,15 +1094,15 @@
         "imageTitle": "/Images/019045.png",
         "imageIngame": "/Images/045602.png",
         "imageBoxArt": "/Images/063085.png",
-        "lastPlayed": "2026-04-19 14:28:43",
+        "lastPlayed": "2026-04-19 15:22:54",
         "achievementsTotal": 63,
         "numPossibleAchievements": 63,
         "possibleScore": 560,
-        "numAchieved": 2,
-        "scoreAchieved": 10,
-        "numAchievedHardcore": 2,
-        "scoreAchievedHardcore": 10
+        "numAchieved": 4,
+        "scoreAchieved": 15,
+        "numAchievedHardcore": 4,
+        "scoreAchievedHardcore": 15
     },
-    "points7Days": 28,
-    "points30Days": 465
+    "points7Days": 33,
+    "points30Days": 470
 }
