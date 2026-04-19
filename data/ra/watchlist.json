@@ -1,5 +1,5 @@
 {
-    "total": 610,
+    "total": 611,
     "results": [
         {
             "id": 27,
@@ -5373,6 +5373,15 @@
             "imageIcon": "/Images/119676.png",
             "pointsTotal": 1385,
             "achievementsPublished": 173
+        },
+        {
+            "id": 34676,
+            "title": "Dragon Quest Swords: The Masked Queen and the Tower of Mirrors",
+            "consoleId": 19,
+            "consoleName": "Wii",
+            "imageIcon": "/Images/118853.png",
+            "pointsTotal": 609,
+            "achievementsPublished": 68
         },
         {
             "id": 34679,
