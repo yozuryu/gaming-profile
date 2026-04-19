@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-19T06:02:01.057Z"
+        "extractionTimestamp": "2026-04-19T08:08:20.997Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Beyond Border Church",
-        "lastGameId": 11415,
+        "richPresenceMsg": "⏰0:00 | 🤺:0 | 🕵:0 | 🎁:0 | 🐟:0 | 🐲0/18",
+        "lastGameId": 11269,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1758,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Beyond Border Church",
-        "richPresenceMsgDate": "2026-04-19 03:12:35",
-        "lastGameId": 11415,
+        "richPresenceMsg": "⏰0:00 | 🤺:0 | 🕵:0 | 🎁:0 | 🐟:0 | 🐲0/18",
+        "richPresenceMsgDate": "2026-04-19 07:20:11",
+        "lastGameId": 11269,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1758,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51444,
+        "rank": 51451,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 140145,
+        "totalRanked": 140153,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -125,6 +125,24 @@
         ]
     },
     "recentlyPlayedGames": [
+        {
+            "gameId": 11269,
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "title": "Breath of Fire III",
+            "imageIcon": "/Images/019054.png",
+            "imageTitle": "/Images/019052.png",
+            "imageIngame": "/Images/019053.png",
+            "imageBoxArt": "/Images/053050.png",
+            "lastPlayed": "2026-04-19 07:20:11",
+            "achievementsTotal": 99,
+            "numPossibleAchievements": 99,
+            "possibleScore": 840,
+            "numAchieved": 0,
+            "scoreAchieved": 0,
+            "numAchievedHardcore": 0,
+            "scoreAchievedHardcore": 0
+        },
         {
             "gameId": 11415,
             "consoleId": 12,
@@ -376,24 +394,6 @@
             "scoreAchieved": 15,
             "numAchievedHardcore": 3,
             "scoreAchievedHardcore": 15
-        },
-        {
-            "gameId": 11382,
-            "consoleId": 12,
-            "consoleName": "PlayStation",
-            "title": "Mega Man X6",
-            "imageIcon": "/Images/032736.png",
-            "imageTitle": "/Images/027231.png",
-            "imageIngame": "/Images/027340.png",
-            "imageBoxArt": "/Images/027234.png",
-            "lastPlayed": "2026-04-09 23:19:52",
-            "achievementsTotal": 65,
-            "numPossibleAchievements": 65,
-            "possibleScore": 1050,
-            "numAchieved": 2,
-            "scoreAchieved": 0,
-            "numAchievedHardcore": 2,
-            "scoreAchievedHardcore": 0
         }
     ],
     "gameAwardsAndProgress": {
@@ -1086,22 +1086,22 @@
         "gameUrl": "/game/18157"
     },
     "mostRecentGame": {
-        "gameId": 11415,
+        "gameId": 11269,
         "consoleId": 12,
         "consoleName": "PlayStation",
-        "title": "Beyond the Beyond",
-        "imageIcon": "/Images/075811.png",
-        "imageTitle": "/Images/019045.png",
-        "imageIngame": "/Images/045602.png",
-        "imageBoxArt": "/Images/063085.png",
-        "lastPlayed": "2026-04-19 03:12:35",
-        "achievementsTotal": 63,
-        "numPossibleAchievements": 63,
-        "possibleScore": 560,
-        "numAchieved": 1,
-        "scoreAchieved": 5,
-        "numAchievedHardcore": 1,
-        "scoreAchievedHardcore": 5
+        "title": "Breath of Fire III",
+        "imageIcon": "/Images/019054.png",
+        "imageTitle": "/Images/019052.png",
+        "imageIngame": "/Images/019053.png",
+        "imageBoxArt": "/Images/053050.png",
+        "lastPlayed": "2026-04-19 07:20:11",
+        "achievementsTotal": 99,
+        "numPossibleAchievements": 99,
+        "possibleScore": 840,
+        "numAchieved": 0,
+        "scoreAchieved": 0,
+        "numAchievedHardcore": 0,
+        "scoreAchievedHardcore": 0
     },
     "points7Days": 23,
     "points30Days": 460

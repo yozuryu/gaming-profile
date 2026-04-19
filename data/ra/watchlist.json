@@ -1,5 +1,5 @@
 {
-    "total": 603,
+    "total": 610,
     "results": [
         {
             "id": 27,
@@ -117,6 +117,15 @@
             "imageIcon": "/Images/083806.png",
             "pointsTotal": 413,
             "achievementsPublished": 43
+        },
+        {
+            "id": 264,
+            "title": "EarthBound",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/100662.png",
+            "pointsTotal": 745,
+            "achievementsPublished": 105
         },
         {
             "id": 270,
@@ -279,6 +288,15 @@
             "imageIcon": "/Images/105114.png",
             "pointsTotal": 297,
             "achievementsPublished": 30
+        },
+        {
+            "id": 677,
+            "title": "Mother 3",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/122954.png",
+            "pointsTotal": 700,
+            "achievementsPublished": 132
         },
         {
             "id": 689,
@@ -783,6 +801,15 @@
             "imageIcon": "/Images/059249.png",
             "pointsTotal": 717,
             "achievementsPublished": 97
+        },
+        {
+            "id": 2595,
+            "title": "Mother 1+2",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/121262.png",
+            "pointsTotal": 1015,
+            "achievementsPublished": 181
         },
         {
             "id": 2606,
@@ -1791,6 +1818,15 @@
             "imageIcon": "/Images/053525.png",
             "pointsTotal": 1095,
             "achievementsPublished": 86
+        },
+        {
+            "id": 3814,
+            "title": "EarthBound Beginnings",
+            "consoleId": 7,
+            "consoleName": "NES/Famicom",
+            "imageIcon": "/Images/079668.png",
+            "pointsTotal": 405,
+            "achievementsPublished": 47
         },
         {
             "id": 3818,
@@ -4394,6 +4430,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 18280,
+            "title": "EarthBound [Subset - Rare Drops]",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/117091.png",
+            "pointsTotal": 225,
+            "achievementsPublished": 21
+        },
+        {
             "id": 18318,
             "title": "7th Dragon 2020-II",
             "consoleId": 41,
@@ -5078,6 +5123,15 @@
             "achievementsPublished": 50
         },
         {
+            "id": 25631,
+            "title": "EarthBound [Subset - Camera Shy]",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/116066.png",
+            "pointsTotal": 100,
+            "achievementsPublished": 9
+        },
+        {
             "id": 26353,
             "title": "Fushigi no Dungeon: Fuurai no Shiren 3 Portable",
             "consoleId": 41,
@@ -5256,6 +5310,15 @@
             "imageIcon": "/Images/106400.png",
             "pointsTotal": 940,
             "achievementsPublished": 24
+        },
+        {
+            "id": 32804,
+            "title": "EarthBound [Subset - Low Level Run]",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/106421.png",
+            "pointsTotal": 860,
+            "achievementsPublished": 27
         },
         {
             "id": 32919,
