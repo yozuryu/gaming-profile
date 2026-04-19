@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-19T02:12:14.372Z"
+        "extractionTimestamp": "2026-04-19T03:28:19.302Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "[Miku] [🎵:8/36] [🧸:3/122] [🖼️:5/198] [👫:1/53]",
-        "lastGameId": 3921,
+        "richPresenceMsg": "Beyond Border Church",
+        "lastGameId": 11415,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1758,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "[Miku] [🎵:8/36] [🧸:3/122] [🖼️:5/198] [👫:1/53]",
-        "richPresenceMsgDate": "2026-04-18 16:37:54",
-        "lastGameId": 3921,
+        "richPresenceMsg": "Beyond Border Church",
+        "richPresenceMsgDate": "2026-04-19 03:12:35",
+        "lastGameId": 11415,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1758,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51427,
+        "rank": 51434,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 140120,
+        "totalRanked": 140132,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -126,6 +126,24 @@
     },
     "recentlyPlayedGames": [
         {
+            "gameId": 11415,
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "title": "Beyond the Beyond",
+            "imageIcon": "/Images/075811.png",
+            "imageTitle": "/Images/019045.png",
+            "imageIngame": "/Images/045602.png",
+            "imageBoxArt": "/Images/063085.png",
+            "lastPlayed": "2026-04-19 03:12:35",
+            "achievementsTotal": 63,
+            "numPossibleAchievements": 63,
+            "possibleScore": 560,
+            "numAchieved": 1,
+            "scoreAchieved": 5,
+            "numAchievedHardcore": 1,
+            "scoreAchievedHardcore": 5
+        },
+        {
             "gameId": 3921,
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
@@ -159,24 +177,6 @@
             "numAchieved": 5,
             "scoreAchieved": 5,
             "numAchievedHardcore": 5,
-            "scoreAchievedHardcore": 5
-        },
-        {
-            "gameId": 11415,
-            "consoleId": 12,
-            "consoleName": "PlayStation",
-            "title": "Beyond the Beyond",
-            "imageIcon": "/Images/075811.png",
-            "imageTitle": "/Images/019045.png",
-            "imageIngame": "/Images/045602.png",
-            "imageBoxArt": "/Images/063085.png",
-            "lastPlayed": "2026-04-18 16:05:48",
-            "achievementsTotal": 63,
-            "numPossibleAchievements": 63,
-            "possibleScore": 560,
-            "numAchieved": 1,
-            "scoreAchieved": 5,
-            "numAchievedHardcore": 1,
             "scoreAchievedHardcore": 5
         },
         {
@@ -1086,22 +1086,22 @@
         "gameUrl": "/game/18157"
     },
     "mostRecentGame": {
-        "gameId": 3921,
-        "consoleId": 41,
-        "consoleName": "PlayStation Portable",
-        "title": "Hatsune Miku: Project DIVA",
-        "imageIcon": "/Images/061882.png",
-        "imageTitle": "/Images/046940.png",
-        "imageIngame": "/Images/046941.png",
-        "imageBoxArt": "/Images/046939.png",
-        "lastPlayed": "2026-04-18 16:37:54",
-        "achievementsTotal": 95,
-        "numPossibleAchievements": 95,
-        "possibleScore": 833,
-        "numAchieved": 0,
-        "scoreAchieved": 0,
-        "numAchievedHardcore": 0,
-        "scoreAchievedHardcore": 0
+        "gameId": 11415,
+        "consoleId": 12,
+        "consoleName": "PlayStation",
+        "title": "Beyond the Beyond",
+        "imageIcon": "/Images/075811.png",
+        "imageTitle": "/Images/019045.png",
+        "imageIngame": "/Images/045602.png",
+        "imageBoxArt": "/Images/063085.png",
+        "lastPlayed": "2026-04-19 03:12:35",
+        "achievementsTotal": 63,
+        "numPossibleAchievements": 63,
+        "possibleScore": 560,
+        "numAchieved": 1,
+        "scoreAchieved": 5,
+        "numAchievedHardcore": 1,
+        "scoreAchievedHardcore": 5
     },
     "points7Days": 23,
     "points30Days": 460
