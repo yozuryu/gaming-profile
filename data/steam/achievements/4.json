@@ -1,6 +1,26 @@
 {
     "recentAchievements": [
         {
+            "appId": 738540,
+            "gameName": "Tales of Vesperia: Definitive Edition",
+            "apiName": "TROP042",
+            "displayName": "Secret Mission 24",
+            "description": "",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/738540/cfb9698696c0de0afb67a6e9deeeb7c5f5992034.jpg",
+            "unlockedAt": "2025-07-20T02:55:53.000Z",
+            "globalPct": 5
+        },
+        {
+            "appId": 738540,
+            "gameName": "Tales of Vesperia: Definitive Edition",
+            "apiName": "TROP053",
+            "displayName": "Defeated the Adephagos",
+            "description": "",
+            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/738540/990c1a0791d8e5f892d11deab73e239dc3166dc2.jpg",
+            "unlockedAt": "2025-07-20T02:55:53.000Z",
+            "globalPct": 16.9
+        },
+        {
             "appId": 1903340,
             "gameName": "Clair Obscur: Expedition 33",
             "apiName": "SIMON",
