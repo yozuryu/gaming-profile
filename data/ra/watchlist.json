@@ -1,5 +1,5 @@
 {
-    "total": 616,
+    "total": 618,
     "results": [
         {
             "id": 27,
@@ -4142,6 +4142,15 @@
             "achievementsPublished": 17
         },
         {
+            "id": 16624,
+            "title": "Time Hollow",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/099369.png",
+            "pointsTotal": 66,
+            "achievementsPublished": 25
+        },
+        {
             "id": 16632,
             "title": "Final Fantasy Crystal Chronicles: Echoes of Time",
             "consoleId": 18,
@@ -5229,6 +5238,15 @@
             "imageIcon": "/Images/000001.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
+        },
+        {
+            "id": 29047,
+            "title": "~Homebrew~ Hollow Knight Silksong",
+            "consoleId": 6,
+            "consoleName": "Game Boy Color",
+            "imageIcon": "/Images/111197.png",
+            "pointsTotal": 87,
+            "achievementsPublished": 16
         },
         {
             "id": 29232,
