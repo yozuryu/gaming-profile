@@ -1,5 +1,5 @@
 {
-    "total": 618,
+    "total": 649,
     "results": [
         {
             "id": 27,
@@ -74,6 +74,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 112,
+            "title": "Final Fantasy Crystal Chronicles: My Life as a Darklord",
+            "consoleId": 19,
+            "consoleName": "Wii",
+            "imageIcon": "/Images/114622.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
             "id": 131,
             "title": "Fragile Dreams: Farewell Ruins of the Moon",
             "consoleId": 19,
@@ -119,6 +128,15 @@
             "achievementsPublished": 43
         },
         {
+            "id": 259,
+            "title": "Final Fantasy II",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/074336.png",
+            "pointsTotal": 240,
+            "achievementsPublished": 21
+        },
+        {
             "id": 264,
             "title": "EarthBound",
             "consoleId": 3,
@@ -144,6 +162,15 @@
             "imageIcon": "/Images/093950.png",
             "pointsTotal": 572,
             "achievementsPublished": 76
+        },
+        {
+            "id": 341,
+            "title": "Final Fantasy VI",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/070796.png",
+            "pointsTotal": 843,
+            "achievementsPublished": 115
         },
         {
             "id": 400,
@@ -353,6 +380,42 @@
             "achievementsPublished": 97
         },
         {
+            "id": 762,
+            "title": "Final Fantasy I & II: Dawn of Souls",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/059662.png",
+            "pointsTotal": 775,
+            "achievementsPublished": 69
+        },
+        {
+            "id": 763,
+            "title": "Final Fantasy IV: Advance",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/070792.png",
+            "pointsTotal": 657,
+            "achievementsPublished": 95
+        },
+        {
+            "id": 764,
+            "title": "Final Fantasy V: Advance",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/086246.png",
+            "pointsTotal": 1220,
+            "achievementsPublished": 172
+        },
+        {
+            "id": 765,
+            "title": "Final Fantasy VI: Advance",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/070797.png",
+            "pointsTotal": 576,
+            "achievementsPublished": 85
+        },
+        {
             "id": 767,
             "title": "Golden Sun",
             "consoleId": 5,
@@ -497,6 +560,15 @@
             "achievementsPublished": 65
         },
         {
+            "id": 909,
+            "title": "Final Fantasy: Mystic Quest",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/073901.png",
+            "pointsTotal": 324,
+            "achievementsPublished": 51
+        },
+        {
             "id": 1132,
             "title": "Team Buddies",
             "consoleId": 12,
@@ -585,6 +657,15 @@
             "imageIcon": "/Images/107573.png",
             "pointsTotal": 666,
             "achievementsPublished": 66
+        },
+        {
+            "id": 1386,
+            "title": "Final Fantasy V",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/070795.png",
+            "pointsTotal": 808,
+            "achievementsPublished": 116
         },
         {
             "id": 1391,
@@ -1087,6 +1168,24 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "imageIcon": "/Images/067084.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
+            "id": 2778,
+            "title": "Final Fantasy X: International",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/125350.png",
+            "pointsTotal": 1852,
+            "achievementsPublished": 249
+        },
+        {
+            "id": 2779,
+            "title": "Final Fantasy X-2: International + Last Mission",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/070803.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
         },
@@ -1613,6 +1712,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 3528,
+            "title": "Final Fantasy IV",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/070790.png",
+            "pointsTotal": 850,
+            "achievementsPublished": 130
+        },
+        {
             "id": 3539,
             "title": "Half-Minute Hero",
             "consoleId": 41,
@@ -2099,6 +2207,15 @@
             "achievementsPublished": 43
         },
         {
+            "id": 4663,
+            "title": "Final Fantasy III",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/089330.png",
+            "pointsTotal": 1106,
+            "achievementsPublished": 162
+        },
+        {
             "id": 4686,
             "title": "Bravely Default",
             "consoleId": 62,
@@ -2288,6 +2405,24 @@
             "achievementsPublished": 76
         },
         {
+            "id": 5527,
+            "title": "Final Fantasy II",
+            "consoleId": 7,
+            "consoleName": "NES/Famicom",
+            "imageIcon": "/Images/089327.png",
+            "pointsTotal": 450,
+            "achievementsPublished": 64
+        },
+        {
+            "id": 5553,
+            "title": "Final Fantasy III",
+            "consoleId": 7,
+            "consoleName": "NES/Famicom",
+            "imageIcon": "/Images/089329.png",
+            "pointsTotal": 654,
+            "achievementsPublished": 90
+        },
+        {
             "id": 5579,
             "title": "Guitar Hero III: Legends of Rock",
             "consoleId": 21,
@@ -2358,6 +2493,24 @@
             "imageIcon": "/Images/066456.png",
             "pointsTotal": 640,
             "achievementsPublished": 97
+        },
+        {
+            "id": 5802,
+            "title": "Final Fantasy XII",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/121682.png",
+            "pointsTotal": 1000,
+            "achievementsPublished": 154
+        },
+        {
+            "id": 5803,
+            "title": "Final Fantasy XII: International Zodiac Job System",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/125284.png",
+            "pointsTotal": 3200,
+            "achievementsPublished": 325
         },
         {
             "id": 5812,
@@ -2518,6 +2671,15 @@
             "consoleId": 5,
             "consoleName": "Game Boy Advance",
             "imageIcon": "/Images/077681.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
+            "id": 7741,
+            "title": "Final Fantasy Crystal Chronicles: My Life as a King",
+            "consoleId": 19,
+            "consoleName": "Wii",
+            "imageIcon": "/Images/126091.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
         },
@@ -2774,6 +2936,15 @@
             "achievementsPublished": 43
         },
         {
+            "id": 9994,
+            "title": "Final Fantasy IV",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/070791.png",
+            "pointsTotal": 953,
+            "achievementsPublished": 110
+        },
+        {
             "id": 9999,
             "title": "Phantasy Star",
             "consoleId": 11,
@@ -2963,6 +3134,15 @@
             "achievementsPublished": 113
         },
         {
+            "id": 11242,
+            "title": "Final Fantasy VII",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/070798.png",
+            "pointsTotal": 1700,
+            "achievementsPublished": 207
+        },
+        {
             "id": 11243,
             "title": "Final Fantasy Chronicles: Chrono Trigger",
             "consoleId": 12,
@@ -2988,6 +3168,24 @@
             "imageIcon": "/Images/027365.png",
             "pointsTotal": 1300,
             "achievementsPublished": 131
+        },
+        {
+            "id": 11246,
+            "title": "Final Fantasy Tactics",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/070804.png",
+            "pointsTotal": 842,
+            "achievementsPublished": 121
+        },
+        {
+            "id": 11247,
+            "title": "Final Fantasy IX",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/070800.png",
+            "pointsTotal": 1010,
+            "achievementsPublished": 104
         },
         {
             "id": 11248,
@@ -3087,6 +3285,15 @@
             "imageIcon": "/Images/019054.png",
             "pointsTotal": 840,
             "achievementsPublished": 99
+        },
+        {
+            "id": 11270,
+            "title": "Final Fantasy VIII",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/126426.png",
+            "pointsTotal": 925,
+            "achievementsPublished": 104
         },
         {
             "id": 11274,
@@ -3303,6 +3510,15 @@
             "imageIcon": "/Images/125756.png",
             "pointsTotal": 666,
             "achievementsPublished": 90
+        },
+        {
+            "id": 11332,
+            "title": "Final Fantasy Origins",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/060249.png",
+            "pointsTotal": 945,
+            "achievementsPublished": 119
         },
         {
             "id": 11333,
@@ -3737,6 +3953,24 @@
             "achievementsPublished": 26
         },
         {
+            "id": 14434,
+            "title": "Final Fantasy Anthology: Final Fantasy VI",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/076139.png",
+            "pointsTotal": 735,
+            "achievementsPublished": 83
+        },
+        {
+            "id": 14435,
+            "title": "Final Fantasy Anthology: Final Fantasy V",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/070807.png",
+            "pointsTotal": 1437,
+            "achievementsPublished": 146
+        },
+        {
             "id": 14457,
             "title": "Monsters, Inc. Scream Team",
             "consoleId": 12,
@@ -4133,6 +4367,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 16572,
+            "title": "Final Fantasy XII: Revenant Wings",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/089312.png",
+            "pointsTotal": 724,
+            "achievementsPublished": 74
+        },
+        {
             "id": 16597,
             "title": "~Prototype~ Pokémon Picross",
             "consoleId": 6,
@@ -4158,6 +4401,15 @@
             "imageIcon": "/Images/073415.png",
             "pointsTotal": 1267,
             "achievementsPublished": 126
+        },
+        {
+            "id": 16633,
+            "title": "Final Fantasy Fables: Chocobo Tales",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/087757.png",
+            "pointsTotal": 1032,
+            "achievementsPublished": 155
         },
         {
             "id": 16650,
@@ -4293,6 +4545,15 @@
             "imageIcon": "/Images/044315.png",
             "pointsTotal": 1388,
             "achievementsPublished": 149
+        },
+        {
+            "id": 17526,
+            "title": "Final Fantasy Chronicles: Final Fantasy IV",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/060425.png",
+            "pointsTotal": 670,
+            "achievementsPublished": 79
         },
         {
             "id": 17560,
@@ -4952,6 +5213,15 @@
             "achievementsPublished": 175
         },
         {
+            "id": 20529,
+            "title": "~Demo~ Final Fantasy XII: Playable Demo Version",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/112768.png",
+            "pointsTotal": 100,
+            "achievementsPublished": 15
+        },
+        {
             "id": 20626,
             "title": "Tales of Rebirth",
             "consoleId": 21,
@@ -5247,6 +5517,15 @@
             "imageIcon": "/Images/111197.png",
             "pointsTotal": 87,
             "achievementsPublished": 16
+        },
+        {
+            "id": 29090,
+            "title": "Final Fantasy X-2",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/121077.png",
+            "pointsTotal": 1180,
+            "achievementsPublished": 232
         },
         {
             "id": 29232,
