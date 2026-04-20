@@ -14,7 +14,7 @@
             "iconUrl": "17f60812241f852530650bc209d8462f992f97ae.jpg",
             "iconGrayUrl": "ee2794355abd2d378f0a2acc16f0aebf7bf9dc7a.jpg",
             "hidden": false,
-            "globalPct": 15.6
+            "globalPct": 15.7
         },
         {
             "apiName": "ACH01",
@@ -25,7 +25,7 @@
             "iconUrl": "768da8bec8e6cf31d5fb0ac90523b10e22056b82.jpg",
             "iconGrayUrl": "ee2794355abd2d378f0a2acc16f0aebf7bf9dc7a.jpg",
             "hidden": false,
-            "globalPct": 97.5
+            "globalPct": 97.4
         },
         {
             "apiName": "ACH02",
@@ -256,7 +256,7 @@
             "iconUrl": "f6cc64dd5ca53c5b3188df01696f0dba16a8210a.jpg",
             "iconGrayUrl": "ee2794355abd2d378f0a2acc16f0aebf7bf9dc7a.jpg",
             "hidden": true,
-            "globalPct": 54.2
+            "globalPct": 54.3
         },
         {
             "apiName": "ACH23",
@@ -300,7 +300,7 @@
             "iconUrl": "1c5473ed4547f5de4ea998797a88a194f7b6e135.jpg",
             "iconGrayUrl": "ee2794355abd2d378f0a2acc16f0aebf7bf9dc7a.jpg",
             "hidden": true,
-            "globalPct": 17.9
+            "globalPct": 18
         },
         {
             "apiName": "ACH27",
@@ -366,7 +366,7 @@
             "iconUrl": "90b13006bc07fbf6aeacff86a45358eb21b3b6c2.jpg",
             "iconGrayUrl": "ee2794355abd2d378f0a2acc16f0aebf7bf9dc7a.jpg",
             "hidden": true,
-            "globalPct": 58.4
+            "globalPct": 58.5
         },
         {
             "apiName": "ACH33",
@@ -377,7 +377,7 @@
             "iconUrl": "3f1ff5bffc629c3cc99a686f790a129122633cdb.jpg",
             "iconGrayUrl": "ee2794355abd2d378f0a2acc16f0aebf7bf9dc7a.jpg",
             "hidden": true,
-            "globalPct": 48.7
+            "globalPct": 48.8
         },
         {
             "apiName": "ACH34",
@@ -410,7 +410,7 @@
             "iconUrl": "9f02d118a9ee8780c4adb5f820fe881506e4a523.jpg",
             "iconGrayUrl": "ee2794355abd2d378f0a2acc16f0aebf7bf9dc7a.jpg",
             "hidden": true,
-            "globalPct": 46.9
+            "globalPct": 47
         }
     ],
     "playtimeForever": 689,

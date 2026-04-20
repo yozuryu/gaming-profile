@@ -36,7 +36,7 @@
             "iconUrl": "3d3cea948ddf6252f2c24b7541c77658010f561a.jpg",
             "iconGrayUrl": "1bd3aa1af1768d52fcbaca6b21ca5761b788c945.jpg",
             "hidden": true,
-            "globalPct": 74.4
+            "globalPct": 74.5
         },
         {
             "apiName": "ANCIENT_SANCTUARY",
@@ -80,7 +80,7 @@
             "iconUrl": "0c93c5dd809f9a0c17756b6149163937e90c193b.jpg",
             "iconGrayUrl": "78bcdfc829c30d4bf47a3d90b4f15a82bb010b09.jpg",
             "hidden": true,
-            "globalPct": 62.7
+            "globalPct": 62.8
         },
         {
             "apiName": "FORGOTTEN_BATTLEFIELD",
@@ -113,7 +113,7 @@
             "iconUrl": "42a1ff184366183a572499289529c5faad5ce9c7.jpg",
             "iconGrayUrl": "3f95d91bfaa0d5de3efd887f200ad347bca668a6.jpg",
             "hidden": true,
-            "globalPct": 55.5
+            "globalPct": 55.6
         },
         {
             "apiName": "FIRST_AXON",
@@ -124,7 +124,7 @@
             "iconUrl": "643c3ddc9ecfeb546409561cc5af8f027cd64f78.jpg",
             "iconGrayUrl": "5a6b40fe2bfed7a199a70aeeee6b8b32c86ab0da.jpg",
             "hidden": true,
-            "globalPct": 52.8
+            "globalPct": 52.9
         },
         {
             "apiName": "SECOND_AXON",
@@ -146,7 +146,7 @@
             "iconUrl": "22b401dc062b4eb00257e72c53fdcbfe6b6e87ba.jpg",
             "iconGrayUrl": "10cefd7d61852b3904f6d1fd326411fe82e3f622.jpg",
             "hidden": true,
-            "globalPct": 50.6
+            "globalPct": 50.7
         },
         {
             "apiName": "PAINTRESS",
@@ -179,7 +179,7 @@
             "iconUrl": "b3ea2c44ab6c5642b220f7dc4ae9075c8a70b3f1.jpg",
             "iconGrayUrl": "d451fa9a94d7fe423e713ccdd7d37cbce6176f90.jpg",
             "hidden": true,
-            "globalPct": 39.3
+            "globalPct": 39.4
         },
         {
             "apiName": "ESQUIE_UPGRADES",
@@ -190,7 +190,7 @@
             "iconUrl": "7bdff2763d0975b1d1a0b7741a810eadd487c733.jpg",
             "iconGrayUrl": "19a606703fa581feaa8fe8581bc6146f5e77cc1a.jpg",
             "hidden": true,
-            "globalPct": 34.5
+            "globalPct": 34.6
         },
         {
             "apiName": "JOURNALS",
@@ -212,7 +212,7 @@
             "iconUrl": "fd5606a2e27f06fd1f1e226d82aa29e405f97eaf.jpg",
             "iconGrayUrl": "f41d424cce7417bf69357fbdc3a0efc957e348ff.jpg",
             "hidden": true,
-            "globalPct": 13.5
+            "globalPct": 13.6
         },
         {
             "apiName": "SIMON",
@@ -366,7 +366,7 @@
             "iconUrl": "0b2ab7f8548f7aad819a93076ceb988d896116d2.jpg",
             "iconGrayUrl": "aa9b4191bee77929898ef9803c0ae52f36057a0c.jpg",
             "hidden": false,
-            "globalPct": 72.5
+            "globalPct": 72.6
         },
         {
             "apiName": "WEAPON_FULL_UPGRADE",
@@ -388,7 +388,7 @@
             "iconUrl": "a2d8d1f61b70a4dde9db124fdac5e8d553b39ee7.jpg",
             "iconGrayUrl": "2fb6f89282c281f4bc2625aeacebe2bd60d99ae8.jpg",
             "hidden": false,
-            "globalPct": 71.9
+            "globalPct": 72
         },
         {
             "apiName": "LEVEL_33",
@@ -399,7 +399,7 @@
             "iconUrl": "893a5719f74928a4706ad295b4ab42cf0a2ffacb.jpg",
             "iconGrayUrl": "459eae107d426e55d0ade6ce65e98bec756310c8.jpg",
             "hidden": false,
-            "globalPct": 54.7
+            "globalPct": 54.8
         },
         {
             "apiName": "LEVEL_66",
@@ -410,7 +410,7 @@
             "iconUrl": "17ca73615b8124664ce5f788025cf475749ad0d0.jpg",
             "iconGrayUrl": "1cdc4c9918c0c80b5853b827f058965d3a2ccb47.jpg",
             "hidden": false,
-            "globalPct": 33.5
+            "globalPct": 33.6
         },
         {
             "apiName": "LEVEL_99",
@@ -443,7 +443,7 @@
             "iconUrl": "b3e389aaddccdf582cf2ff09112b9f60bde817af.jpg",
             "iconGrayUrl": "9982734563dd247451e61b32041f700740d27297.jpg",
             "hidden": true,
-            "globalPct": 50.5
+            "globalPct": 50.6
         },
         {
             "apiName": "MAELLE_STANCES",
@@ -509,7 +509,7 @@
             "iconUrl": "e6a2b3d3bfafc55a517e373f67aaecec4b31c0bc.jpg",
             "iconGrayUrl": "90783dcecfde9c3359113a58688a76bb975734e6.jpg",
             "hidden": true,
-            "globalPct": 15
+            "globalPct": 15.1
         },
         {
             "apiName": "ALL_CHARACTERS",
@@ -575,7 +575,7 @@
             "iconUrl": "62d4676ebd03f2a3cefb99ea6fe4039cf4f5b838.jpg",
             "iconGrayUrl": "148809abf1e8bd9a5db902a1d4623dc7143eb6fb.jpg",
             "hidden": false,
-            "globalPct": 51.5
+            "globalPct": 51.6
         },
         {
             "apiName": "OPTIONAL_CAMP",
@@ -660,7 +660,7 @@
             "unlockedAt": "2025-07-14T13:42:45.000Z",
             "iconUrl": "b3e389aaddccdf582cf2ff09112b9f60bde817af.jpg",
             "iconGrayUrl": "9982734563dd247451e61b32041f700740d27297.jpg",
-            "globalPct": 50.5
+            "globalPct": 50.6
         },
         {
             "apiName": "CLEA",

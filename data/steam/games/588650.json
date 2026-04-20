@@ -47,7 +47,7 @@
             "iconUrl": "467a17f28c8b630c619c8d4047104966e4d9bc63.jpg",
             "iconGrayUrl": "fbf5ae81eb3d09b2d327a1f094b11f021566fd11.jpg",
             "hidden": false,
-            "globalPct": 52.9
+            "globalPct": 52.8
         },
         {
             "apiName": "BIOME_REACHED_SEWERS",
@@ -322,7 +322,7 @@
             "iconUrl": "5235c2886d7e2518161a847ce7cfb9071951870e.jpg",
             "iconGrayUrl": "a15020ee67ee0dbb8835f4b40411dff8faecdfbd.jpg",
             "hidden": false,
-            "globalPct": 77.8
+            "globalPct": 77.7
         },
         {
             "apiName": "FEAT_COMPLETE_1_DAILYRUN",
@@ -344,7 +344,7 @@
             "iconUrl": "5a6279452eef65ba31e1050eb87670bc148bdb8f.jpg",
             "iconGrayUrl": "4777aec5eca23e2fc54edfa812b516685973cbd6.jpg",
             "hidden": false,
-            "globalPct": 73.2
+            "globalPct": 73.1
         },
         {
             "apiName": "FIGHT_BEAT_BERSERK",
@@ -388,7 +388,7 @@
             "iconUrl": "0452b59170b2f1359159c978a537057d17e6ffc4.jpg",
             "iconGrayUrl": "843a425721810907d1653304e14b074b30f7c7d6.jpg",
             "hidden": false,
-            "globalPct": 57.3
+            "globalPct": 57.2
         },
         {
             "apiName": "BIOME_REACHED_ANCIENTTEMPLE",
@@ -410,7 +410,7 @@
             "iconUrl": "58a8e13072225ea2321362055f3059fbf6e57a2e.jpg",
             "iconGrayUrl": "0204695d3807235a2a1d35effcfa435a0f2d7c96.jpg",
             "hidden": false,
-            "globalPct": 39.3
+            "globalPct": 39.2
         },
         {
             "apiName": "EQUIP_ENDGAME_YOLO",
@@ -443,7 +443,7 @@
             "iconUrl": "91108f070ec4da405ad07b2c89320b284bbdd7d3.jpg",
             "iconGrayUrl": "fbe7369c123d6d5b88a60d17a6238994a77518ff.jpg",
             "hidden": false,
-            "globalPct": 45.8
+            "globalPct": 45.7
         },
         {
             "apiName": "EXPLO_GETBOSSRUNE_FIRST",
@@ -509,7 +509,7 @@
             "iconUrl": "754e88ddfb53cfe2bd274c264b248b7aa8da0540.jpg",
             "iconGrayUrl": "7a81002947f029566e0385343686b24cc49890d3.jpg",
             "hidden": true,
-            "globalPct": 10.4
+            "globalPct": 10.5
         },
         {
             "apiName": "FIGHT_BEAT_KINGSHAND",
@@ -1213,7 +1213,7 @@
             "iconUrl": "d6d8a26854d17f5c6be88dd5c1535cd73e613bd0.jpg",
             "iconGrayUrl": "a2e21e9272f8302aef9352beaddb28086a018916.jpg",
             "hidden": false,
-            "globalPct": 18.4
+            "globalPct": 18.5
         },
         {
             "apiName": "BIOME_REACHED_DEATH",
@@ -1368,7 +1368,7 @@
             "unlockedAt": "2019-04-20T01:56:17.000Z",
             "iconUrl": "5a6279452eef65ba31e1050eb87670bc148bdb8f.jpg",
             "iconGrayUrl": "4777aec5eca23e2fc54edfa812b516685973cbd6.jpg",
-            "globalPct": 73.2
+            "globalPct": 73.1
         },
         {
             "apiName": "FIGHT_BEAT_BEHEMOTH",

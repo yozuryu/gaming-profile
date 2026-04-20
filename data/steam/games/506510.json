@@ -14,7 +14,7 @@
             "iconUrl": "35e3dc1f0a33579a2b95c91d07e9ab58a8b49941.jpg",
             "iconGrayUrl": "59084dba89bf1a0a7ff49da2c6f2289e88233dfd.jpg",
             "hidden": false,
-            "globalPct": 41.9
+            "globalPct": 42
         },
         {
             "apiName": "reach_level_25",
@@ -25,7 +25,7 @@
             "iconUrl": "a1d035c1de7afc677cc622557f9c1dca02b34233.jpg",
             "iconGrayUrl": "261d02bd6b3877eb436edc09c3bb9d09ddc32fc4.jpg",
             "hidden": false,
-            "globalPct": 23.8
+            "globalPct": 23.9
         },
         {
             "apiName": "reach_level_40",
@@ -47,7 +47,7 @@
             "iconUrl": "dd4ddce8bc4331ec6fe65520647df90657865a30.jpg",
             "iconGrayUrl": "0420b3d9562b52785a236e0dc351de567ce07c54.jpg",
             "hidden": false,
-            "globalPct": 24.3
+            "globalPct": 24.4
         },
         {
             "apiName": "azzy_wraithstorm",
@@ -69,7 +69,7 @@
             "iconUrl": "731e1ffed6b2ea0261e275db12cfd4c404c7a9b4.jpg",
             "iconGrayUrl": "898e4d4947aa9ace4586c42084be7563f0b98e09.jpg",
             "hidden": false,
-            "globalPct": 23.1
+            "globalPct": 23.2
         },
         {
             "apiName": "talon_anteup",
@@ -80,7 +80,7 @@
             "iconUrl": "0734df16b726ba94e0a727b7a8f8f2871ba4c26e.jpg",
             "iconGrayUrl": "49d8c1955ade7f7422544e24e0c44646610981d7.jpg",
             "hidden": false,
-            "globalPct": 25.2
+            "globalPct": 25.3
         },
         {
             "apiName": "defeat_tangle_boss",
@@ -157,7 +157,7 @@
             "iconUrl": "770a2ea6f5197e1e075cec81ae4c52ce01bf8801.jpg",
             "iconGrayUrl": "851825fd36c5f01a50703d255002dd82ba59a816.jpg",
             "hidden": false,
-            "globalPct": 25.3
+            "globalPct": 25.4
         },
         {
             "apiName": "get_airship",
@@ -168,7 +168,7 @@
             "iconUrl": "866f3bd67572b4fe1502dc98a5c024b2771dd00c.jpg",
             "iconGrayUrl": "153596e06d80c40aa972f2e71862dbd669925786.jpg",
             "hidden": false,
-            "globalPct": 24.7
+            "globalPct": 24.8
         },
         {
             "apiName": "defeat_malvil",
@@ -389,7 +389,7 @@
             "unlockedAt": null,
             "iconUrl": "35e3dc1f0a33579a2b95c91d07e9ab58a8b49941.jpg",
             "iconGrayUrl": "59084dba89bf1a0a7ff49da2c6f2289e88233dfd.jpg",
-            "globalPct": 41.9
+            "globalPct": 42
         },
         {
             "apiName": "reach_level_25",
@@ -398,7 +398,7 @@
             "unlockedAt": null,
             "iconUrl": "a1d035c1de7afc677cc622557f9c1dca02b34233.jpg",
             "iconGrayUrl": "261d02bd6b3877eb436edc09c3bb9d09ddc32fc4.jpg",
-            "globalPct": 23.8
+            "globalPct": 23.9
         },
         {
             "apiName": "reach_level_40",
@@ -416,7 +416,7 @@
             "unlockedAt": null,
             "iconUrl": "dd4ddce8bc4331ec6fe65520647df90657865a30.jpg",
             "iconGrayUrl": "0420b3d9562b52785a236e0dc351de567ce07c54.jpg",
-            "globalPct": 24.3
+            "globalPct": 24.4
         }
     ]
 }

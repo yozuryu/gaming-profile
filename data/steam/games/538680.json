@@ -69,7 +69,7 @@
             "iconUrl": "34ccd5a0bbb73bf62ed2af753e8965ae242cdb32.jpg",
             "iconGrayUrl": "3e66c251c02fb8b29c101244612d846e93283fd8.jpg",
             "hidden": false,
-            "globalPct": 19.9
+            "globalPct": 20
         },
         {
             "apiName": "STROPHY_COMP_FISHINGNOTE",
@@ -201,7 +201,7 @@
             "iconUrl": "8f8477b6d43912c3f0034efbbd31e20ed26ef7da.jpg",
             "iconGrayUrl": "3010972d58fa2fac95cea0d1715c7d1f5bd888b9.jpg",
             "hidden": false,
-            "globalPct": 59.7
+            "globalPct": 59.8
         },
         {
             "apiName": "STROPHY_BATTLECOUNT_B",
@@ -289,7 +289,7 @@
             "iconUrl": "14c9a390cfdb719c1df8ad0d98b7d585c156a750.jpg",
             "iconGrayUrl": "ee4aa0c953f295d8969db46eeda0f4a261ca511f.jpg",
             "hidden": false,
-            "globalPct": 46.4
+            "globalPct": 46.5
         },
         {
             "apiName": "STROPHY_MASTER_CHASE",
@@ -542,7 +542,7 @@
             "iconUrl": "21a045f3ce10fa898e5dd01643b7fae4181f1270.jpg",
             "iconGrayUrl": "761f44a544a1992aeb8fcbcf69af2414c25e3166.jpg",
             "hidden": true,
-            "globalPct": 45.8
+            "globalPct": 45.9
         },
         {
             "apiName": "STROPHY_SCENARIO_06",
@@ -625,7 +625,7 @@
             "unlockedAt": "2017-08-30T19:31:36.000Z",
             "iconUrl": "21a045f3ce10fa898e5dd01643b7fae4181f1270.jpg",
             "iconGrayUrl": "761f44a544a1992aeb8fcbcf69af2414c25e3166.jpg",
-            "globalPct": 45.8
+            "globalPct": 45.9
         }
     ]
 }
