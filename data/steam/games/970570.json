@@ -25,7 +25,7 @@
             "iconUrl": "4f0e1e30442060aa564430d0526aa5526daf837a.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 65.7
+            "globalPct": 65.8
         },
         {
             "apiName": "Achievement_START_CHAPTER_2",
@@ -69,7 +69,7 @@
             "iconUrl": "ee4fe9fd85fdb040dae70057725bf2f233d0c49b.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 38
+            "globalPct": 38.1
         },
         {
             "apiName": "Achievement_START_CHAPTER_6",
@@ -157,7 +157,7 @@
             "iconUrl": "dfdc184df5db9835bacf4521c27fecd7a32dcc95.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 29.1
+            "globalPct": 29.2
         },
         {
             "apiName": "Achievement_FOUND_THE_UKI",
@@ -179,7 +179,7 @@
             "iconUrl": "e7898ac47eb2f60c2a1af1d6a14d28ac561d9b12.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 26.3
+            "globalPct": 26.4
         },
         {
             "apiName": "Achievement_FOUND_THE_TRUE",
@@ -234,7 +234,7 @@
             "iconUrl": "5058d087a9dbdd0043e3d02c449dd46bc9aef3bb.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 24.7
+            "globalPct": 24.8
         },
         {
             "apiName": "Achievement_PASS_HANA",
@@ -256,7 +256,7 @@
             "iconUrl": "87256df061f1d98b3fce5c9aba36d29bb39ad39c.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
             "hidden": true,
-            "globalPct": 24.3
+            "globalPct": 24.4
         },
         {
             "apiName": "Achievement_FIRST_TRIGGER",
@@ -402,7 +402,7 @@
             "unlockedAt": "2020-07-04T09:49:30.000Z",
             "iconUrl": "4f0e1e30442060aa564430d0526aa5526daf837a.jpg",
             "iconGrayUrl": "f460211e8a3c4241bc9f2cb9f886a9242b9e56ab.jpg",
-            "globalPct": 65.7
+            "globalPct": 65.8
         },
         {
             "apiName": "Achievement_ALL_UNLOCK",

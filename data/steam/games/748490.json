@@ -47,7 +47,7 @@
             "iconUrl": "3e87eb939e9d719cb1fa8a22d7b787a4f2a2aea4.jpg",
             "iconGrayUrl": "0b533acab1136976ae89b5bbe7457d9c5fe201e8.jpg",
             "hidden": false,
-            "globalPct": 30.1
+            "globalPct": 30.2
         },
         {
             "apiName": "TROPHY2_COMP_BATTLENOTE",
@@ -102,7 +102,7 @@
             "iconUrl": "521b385bc8d9fcfced1bb3783885e8cbaef45cd1.jpg",
             "iconGrayUrl": "43e6df3d65e7f6bcd680164177abf465a8843341.jpg",
             "hidden": false,
-            "globalPct": 26.8
+            "globalPct": 26.9
         },
         {
             "apiName": "TROPHY2_GETALL_TREASURE",
@@ -135,7 +135,7 @@
             "iconUrl": "d922afa27907b2b90cb0bce1b02f7ffb93e42453.jpg",
             "iconGrayUrl": "1922362316718b2b326f812cf1d994a746fabdeb.jpg",
             "hidden": false,
-            "globalPct": 10.6
+            "globalPct": 10.7
         },
         {
             "apiName": "TROPHY2_CLEAR_HARD",
@@ -146,7 +146,7 @@
             "iconUrl": "2cd773eb5c36a085fa212b69ed4566d0533b4737.jpg",
             "iconGrayUrl": "15ca9300ee7fd65a46632b3523f856f02dfcfb79.jpg",
             "hidden": false,
-            "globalPct": 20.7
+            "globalPct": 20.8
         },
         {
             "apiName": "TROPHY2_HIGH_MIRA",
@@ -267,7 +267,7 @@
             "iconUrl": "6371ac65c98de57acc7016123df9b477ee0ea323.jpg",
             "iconGrayUrl": "c4f460d9c450257fd936ce0c5866417584ae46fb.jpg",
             "hidden": false,
-            "globalPct": 68.9
+            "globalPct": 69
         },
         {
             "apiName": "TROPHY2_MASTER_CHASE",
@@ -311,7 +311,7 @@
             "iconUrl": "8942614852eac739b1ddb65bd3ff715fa482a74e.jpg",
             "iconGrayUrl": "ed06e5b4d8e4555473f8bdfc6b1d742e0e106b4c.jpg",
             "hidden": false,
-            "globalPct": 21.5
+            "globalPct": 21.6
         },
         {
             "apiName": "TROPHY2_BASTER_ICEDEVIL",
@@ -344,7 +344,7 @@
             "iconUrl": "604d76f0e1b4299702b0425211cd4dd2e9acbd57.jpg",
             "iconGrayUrl": "f5438f04388b8c10a0288fab088d334c15beca56.jpg",
             "hidden": false,
-            "globalPct": 70.6
+            "globalPct": 70.7
         },
         {
             "apiName": "TROPHY2_KIZUNA_ALISA",
@@ -531,7 +531,7 @@
             "iconUrl": "206b474b9d9c54f81f5c0cd89a000f6f2e6353ac.jpg",
             "iconGrayUrl": "79ce10042dd24dbd2f53bb844e76d90ab5dde65c.jpg",
             "hidden": true,
-            "globalPct": 69.4
+            "globalPct": 69.5
         },
         {
             "apiName": "TROPHY2_SCENARIO_LAST",
@@ -542,7 +542,7 @@
             "iconUrl": "a565fe8dff16034ec68186fabe1033caba7f5457.jpg",
             "iconGrayUrl": "642e30da23f53ce98625c7c37e811683e1a190fa.jpg",
             "hidden": true,
-            "globalPct": 67.2
+            "globalPct": 67.3
         },
         {
             "apiName": "TROPHY2_SCENARIO_EXTRA",
@@ -616,7 +616,7 @@
             "unlockedAt": "2018-03-22T18:39:06.000Z",
             "iconUrl": "d922afa27907b2b90cb0bce1b02f7ffb93e42453.jpg",
             "iconGrayUrl": "1922362316718b2b326f812cf1d994a746fabdeb.jpg",
-            "globalPct": 10.6
+            "globalPct": 10.7
         },
         {
             "apiName": "TROPHY2_CLEAR_HARD",
@@ -625,7 +625,7 @@
             "unlockedAt": "2018-03-22T18:39:06.000Z",
             "iconUrl": "2cd773eb5c36a085fa212b69ed4566d0533b4737.jpg",
             "iconGrayUrl": "15ca9300ee7fd65a46632b3523f856f02dfcfb79.jpg",
-            "globalPct": 20.7
+            "globalPct": 20.8
         }
     ]
 }

@@ -553,7 +553,7 @@
             "iconUrl": "30502a9b687d6d1dc0a821ab2d52da2d7daaff69.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 62.3
+            "globalPct": 62.2
         },
         {
             "apiName": "KillBossQuick",
@@ -663,7 +663,7 @@
             "iconUrl": "b8f57141c6077fc6f64040e80e723f8259abd977.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 63.2
+            "globalPct": 63.1
         },
         {
             "apiName": "LoopOnce",
@@ -1004,7 +1004,7 @@
             "iconUrl": "32df421f7ee3e8b6deb1ff809e634c19a969097c.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 66.7
+            "globalPct": 66.6
         },
         {
             "apiName": "RescueTreebot",
@@ -1015,7 +1015,7 @@
             "iconUrl": "c1ff4aaf47520fd92a2e3bcbfbc76eeb56edb0e1.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 28.7
+            "globalPct": 28.8
         },
         {
             "apiName": "StayAlive1",
@@ -1334,7 +1334,7 @@
             "iconUrl": "5d177c7d4fd1ca0edb590e63661ecd58d7ada87a.jpg",
             "iconGrayUrl": "4bbaf4cac6c955577e3651483414a79515849ee9.jpg",
             "hidden": true,
-            "globalPct": 9.9
+            "globalPct": 9.8
         },
         {
             "apiName": "ChefClearGameMonsoon",
@@ -1774,7 +1774,7 @@
             "iconUrl": "0e01ef5e05db3a898d6f7d6e390d73c68128c941.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": true,
-            "globalPct": 1.7
+            "globalPct": 1.6
         },
         {
             "apiName": "DrifterJunkCubeAchievement",
@@ -1945,7 +1945,7 @@
             "unlockedAt": "2021-04-10T14:50:18.000Z",
             "iconUrl": "c1ff4aaf47520fd92a2e3bcbfbc76eeb56edb0e1.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
-            "globalPct": 28.7
+            "globalPct": 28.8
         }
     ]
 }

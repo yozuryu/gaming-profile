@@ -102,7 +102,7 @@
             "iconUrl": "04bc30c324be50a31afe33ad0a5bfe7b389588ff.jpg",
             "iconGrayUrl": "932a020f78891f0cc084db3c25c72808c861f4db.jpg",
             "hidden": false,
-            "globalPct": 35.1
+            "globalPct": 35
         },
         {
             "apiName": "EXPLO_GETRUNE_VINE",
@@ -256,7 +256,7 @@
             "iconUrl": "d383a200d8b3c53988332fd97d8459cea08507b0.jpg",
             "iconGrayUrl": "fbd8d6cfe8a642be8555b429970c4c22ac9f2455.jpg",
             "hidden": false,
-            "globalPct": 50.4
+            "globalPct": 50.3
         },
         {
             "apiName": "FEAT_DIVE_SPIKES",
@@ -509,7 +509,7 @@
             "iconUrl": "754e88ddfb53cfe2bd274c264b248b7aa8da0540.jpg",
             "iconGrayUrl": "7a81002947f029566e0385343686b24cc49890d3.jpg",
             "hidden": true,
-            "globalPct": 10.5
+            "globalPct": 10.4
         },
         {
             "apiName": "FIGHT_BEAT_KINGSHAND",
@@ -971,7 +971,7 @@
             "iconUrl": "cd2b15c477b90c8463f31584b383bbae1049777e.jpg",
             "iconGrayUrl": "c98b5bddae7bc5a043940d29667d4069fcee02f6.jpg",
             "hidden": false,
-            "globalPct": 15.7
+            "globalPct": 15.8
         },
         {
             "apiName": "BIOME_REACHED_LIGHTHOUSE",
