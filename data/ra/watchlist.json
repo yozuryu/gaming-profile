@@ -1,5 +1,5 @@
 {
-    "total": 649,
+    "total": 653,
     "results": [
         {
             "id": 27,
@@ -5202,6 +5202,42 @@
             "imageIcon": "/Images/073206.png",
             "pointsTotal": 7342,
             "achievementsPublished": 480
+        },
+        {
+            "id": 20344,
+            "title": ".hack//Infection [Subset - Book of 1000]",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/061281.png",
+            "pointsTotal": 138,
+            "achievementsPublished": 43
+        },
+        {
+            "id": 20345,
+            "title": ".hack//Mutation [Subset - Book of 1000]",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/061282.png",
+            "pointsTotal": 184,
+            "achievementsPublished": 49
+        },
+        {
+            "id": 20346,
+            "title": ".hack//Outbreak [Subset - Book of 1000]",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/061283.png",
+            "pointsTotal": 206,
+            "achievementsPublished": 44
+        },
+        {
+            "id": 20347,
+            "title": ".hack//Quarantine [Subset - Book of 1000]",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/061284.png",
+            "pointsTotal": 426,
+            "achievementsPublished": 51
         },
         {
             "id": 20352,
