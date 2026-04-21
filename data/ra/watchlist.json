@@ -1,5 +1,5 @@
 {
-    "total": 653,
+    "total": 654,
     "results": [
         {
             "id": 27,
@@ -5247,6 +5247,15 @@
             "imageIcon": "/Images/098145.png",
             "pointsTotal": 1610,
             "achievementsPublished": 175
+        },
+        {
+            "id": 20523,
+            "title": "Soul Nomad & the World Eaters",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/065385.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
         },
         {
             "id": 20529,
