@@ -36,7 +36,7 @@
             "iconUrl": "3d3cea948ddf6252f2c24b7541c77658010f561a.jpg",
             "iconGrayUrl": "1bd3aa1af1768d52fcbaca6b21ca5761b788c945.jpg",
             "hidden": true,
-            "globalPct": 74.5
+            "globalPct": 74.4
         },
         {
             "apiName": "ANCIENT_SANCTUARY",
@@ -168,7 +168,7 @@
             "iconUrl": "70b8dc14bf0846fa7668e50e9a22bb5aae86657d.jpg",
             "iconGrayUrl": "134965999d594de3fb44bfb7d702a923ce2c9bd2.jpg",
             "hidden": true,
-            "globalPct": 47.6
+            "globalPct": 47.7
         },
         {
             "apiName": "THE_END",
@@ -234,7 +234,7 @@
             "iconUrl": "88c3be1133015143b17a7aa7f1131af4bfbf9f52.jpg",
             "iconGrayUrl": "95c39498077ced5d3877d8f67406e3a4555708d3.jpg",
             "hidden": true,
-            "globalPct": 15.2
+            "globalPct": 15.3
         },
         {
             "apiName": "CLEA",
@@ -245,7 +245,7 @@
             "iconUrl": "3bdd69001337b9489645949414007759a8b56a82.jpg",
             "iconGrayUrl": "c0f618d59ada226fc7eb4d4da836cf00916917da.jpg",
             "hidden": true,
-            "globalPct": 20.8
+            "globalPct": 20.9
         },
         {
             "apiName": "ENDLESS_TOWER",
@@ -278,7 +278,7 @@
             "iconUrl": "2b46e33316b67a484d7fcb7a44c675d3ba9cccc2.jpg",
             "iconGrayUrl": "e62c3a1f5a249fc32fe2652beb97364ddbdd7bce.jpg",
             "hidden": true,
-            "globalPct": 25.6
+            "globalPct": 25.7
         },
         {
             "apiName": "SPRONG",
@@ -333,7 +333,7 @@
             "iconUrl": "68a6d46246fc218900bf041d8716f20d370d7f90.jpg",
             "iconGrayUrl": "28aefcb508e584aa7720478a18110de2ceb4f186.jpg",
             "hidden": true,
-            "globalPct": 30.8
+            "globalPct": 30.9
         },
         {
             "apiName": "LUNE_RELATIONSHIP",
@@ -388,7 +388,7 @@
             "iconUrl": "a2d8d1f61b70a4dde9db124fdac5e8d553b39ee7.jpg",
             "iconGrayUrl": "2fb6f89282c281f4bc2625aeacebe2bd60d99ae8.jpg",
             "hidden": false,
-            "globalPct": 72
+            "globalPct": 71.9
         },
         {
             "apiName": "LEVEL_33",
@@ -410,7 +410,7 @@
             "iconUrl": "17ca73615b8124664ce5f788025cf475749ad0d0.jpg",
             "iconGrayUrl": "1cdc4c9918c0c80b5853b827f058965d3a2ccb47.jpg",
             "hidden": false,
-            "globalPct": 33.5
+            "globalPct": 33.6
         },
         {
             "apiName": "LEVEL_99",
@@ -443,7 +443,7 @@
             "iconUrl": "b3e389aaddccdf582cf2ff09112b9f60bde817af.jpg",
             "iconGrayUrl": "9982734563dd247451e61b32041f700740d27297.jpg",
             "hidden": true,
-            "globalPct": 50.5
+            "globalPct": 50.6
         },
         {
             "apiName": "MAELLE_STANCES",
@@ -476,7 +476,7 @@
             "iconUrl": "f49024626ed746f41970997955eead148ee383da.jpg",
             "iconGrayUrl": "05734ee5e04508e931da911e6d68cc6a27e6d67e.jpg",
             "hidden": true,
-            "globalPct": 56.8
+            "globalPct": 56.9
         },
         {
             "apiName": "MONOCO_WHEEL",
@@ -660,7 +660,7 @@
             "unlockedAt": "2025-07-14T13:42:45.000Z",
             "iconUrl": "b3e389aaddccdf582cf2ff09112b9f60bde817af.jpg",
             "iconGrayUrl": "9982734563dd247451e61b32041f700740d27297.jpg",
-            "globalPct": 50.5
+            "globalPct": 50.6
         },
         {
             "apiName": "CLEA",
@@ -669,7 +669,7 @@
             "unlockedAt": "2025-07-12T15:26:38.000Z",
             "iconUrl": "3bdd69001337b9489645949414007759a8b56a82.jpg",
             "iconGrayUrl": "c0f618d59ada226fc7eb4d4da836cf00916917da.jpg",
-            "globalPct": 20.8
+            "globalPct": 20.9
         }
     ]
 }

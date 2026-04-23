@@ -190,7 +190,7 @@
             "iconUrl": "1f33488b170a066293979c10dcb650e0f3394b28.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 17.1
+            "globalPct": 17
         },
         {
             "apiName": "SR1_ENTER_HUMAN_CITADEL",
@@ -289,7 +289,7 @@
             "iconUrl": "8f32efd39dc4d7dd2ba6ca63790f48cdeb5c712f.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 13.8
+            "globalPct": 13.7
         },
         {
             "apiName": "SR1_REMOVE_ZEPHONS_LEGS",
@@ -685,7 +685,7 @@
             "iconUrl": "9a3223c44a90a7463a684ab4a9a842e2ef91239b.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 10.3
+            "globalPct": 10.2
         },
         {
             "apiName": "SR2_GET_AIR_REAVER",
@@ -751,7 +751,7 @@
             "iconUrl": "16e79327be6e28b69db593e0975c65a876c4b3e9.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 6.5
+            "globalPct": 6.4
         },
         {
             "apiName": "SR2_KILL_FIRE_DEMON_W_HANDS",

@@ -36,7 +36,7 @@
             "iconUrl": "eda08b79a3a4dc41918ec446afeab5d130c28cb2.jpg",
             "iconGrayUrl": "d19bc5323d0e4c093498b26b73366a5e0bb494a2.jpg",
             "hidden": false,
-            "globalPct": 42.3
+            "globalPct": 42.4
         },
         {
             "apiName": "DOS2_Quest4",
@@ -47,7 +47,7 @@
             "iconUrl": "61b206a6d359175f0006dd1d9bdd926229fd0c30.jpg",
             "iconGrayUrl": "8b247d086a1c6158ecbebf00ae06a9860f7f57bd.jpg",
             "hidden": false,
-            "globalPct": 54.3
+            "globalPct": 54.4
         },
         {
             "apiName": "DOS2_Quest5",
@@ -69,7 +69,7 @@
             "iconUrl": "383def303d33f5490dd6c3fd3872ffa79c34e170.jpg",
             "iconGrayUrl": "c705aa48da53e3c462419181e0da5feeedba01fe.jpg",
             "hidden": false,
-            "globalPct": 47.2
+            "globalPct": 47.3
         },
         {
             "apiName": "DOS2_Quest7",
@@ -80,7 +80,7 @@
             "iconUrl": "2a3c1688a41d0ec01612de83f81aad38555475e1.jpg",
             "iconGrayUrl": "373c832cb2b4ebed740c339a42cbcb5b78a44d21.jpg",
             "hidden": false,
-            "globalPct": 49.2
+            "globalPct": 49.3
         },
         {
             "apiName": "DOS2_Quest8",
@@ -91,7 +91,7 @@
             "iconUrl": "ab33d6851524766eca280a0fc7daedd979641c93.jpg",
             "iconGrayUrl": "20d9bd5ef4a634e295e2558c87f4c7d8789d13c8.jpg",
             "hidden": false,
-            "globalPct": 46.6
+            "globalPct": 46.7
         },
         {
             "apiName": "DOS2_Quest9",
@@ -256,7 +256,7 @@
             "iconUrl": "c753502ee8841b98524634e726ef109726d68c66.jpg",
             "iconGrayUrl": "6b676bb648304768cfa8a9b990b2a469c26c55c8.jpg",
             "hidden": false,
-            "globalPct": 31.2
+            "globalPct": 31.3
         },
         {
             "apiName": "DOS2_Quest24",
@@ -300,7 +300,7 @@
             "iconUrl": "0ae21a1af05a353ed8b0e609b3282c17110ccc4f.jpg",
             "iconGrayUrl": "360a3a8723ccda8d3c73aad44997d3cd4042a394.jpg",
             "hidden": true,
-            "globalPct": 23.6
+            "globalPct": 23.7
         },
         {
             "apiName": "DOS2_Quest28",
@@ -410,7 +410,7 @@
             "iconUrl": "66d65af8020365fba87c01137d5c604b8e94f7b6.jpg",
             "iconGrayUrl": "9894609492fdfc116a291c4b985f1c640fa1f481.jpg",
             "hidden": false,
-            "globalPct": 31.7
+            "globalPct": 31.8
         },
         {
             "apiName": "DOS2_Quest38",
@@ -498,7 +498,7 @@
             "iconUrl": "fa5439760c3d8a500ed77c01f1dee6afe4efdf1c.jpg",
             "iconGrayUrl": "b7295c1d57e6eca872c3122e388b04f1a9f2fd96.jpg",
             "hidden": false,
-            "globalPct": 20.6
+            "globalPct": 20.7
         },
         {
             "apiName": "DOS2_Quest46",
@@ -1122,7 +1122,7 @@
             "unlockedAt": "2018-11-24T12:44:59.000Z",
             "iconUrl": "ab33d6851524766eca280a0fc7daedd979641c93.jpg",
             "iconGrayUrl": "20d9bd5ef4a634e295e2558c87f4c7d8789d13c8.jpg",
-            "globalPct": 46.6
+            "globalPct": 46.7
         },
         {
             "apiName": "DOS2_Quest5",
