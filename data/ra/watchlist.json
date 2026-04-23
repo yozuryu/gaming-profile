@@ -1,5 +1,5 @@
 {
-    "total": 654,
+    "total": 656,
     "results": [
         {
             "id": 27,
@@ -18,6 +18,15 @@
             "imageIcon": "/Images/120995.png",
             "pointsTotal": 581,
             "achievementsPublished": 83
+        },
+        {
+            "id": 43,
+            "title": "Muramasa: The Demon Blade",
+            "consoleId": 19,
+            "consoleName": "Wii",
+            "imageIcon": "/Images/056145.png",
+            "pointsTotal": 851,
+            "achievementsPublished": 95
         },
         {
             "id": 50,
@@ -4779,6 +4788,15 @@
             "imageIcon": "/Images/114933.png",
             "pointsTotal": 226,
             "achievementsPublished": 28
+        },
+        {
+            "id": 18420,
+            "title": "Grand Knights History",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/065412.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
         },
         {
             "id": 18472,
