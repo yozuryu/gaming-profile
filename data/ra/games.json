@@ -400,8 +400,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "248303",
-                    "numAwarded": 1724,
-                    "numAwardedHardcore": 1315,
+                    "numAwarded": 1725,
+                    "numAwardedHardcore": 1316,
                     "displayOrder": 11
                 },
                 "17767": {
@@ -412,8 +412,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "248266",
-                    "numAwarded": 1721,
-                    "numAwardedHardcore": 1310,
+                    "numAwarded": 1722,
+                    "numAwardedHardcore": 1311,
                     "displayOrder": 12
                 },
                 "17768": {
@@ -424,8 +424,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "248247",
-                    "numAwarded": 1603,
-                    "numAwardedHardcore": 1252,
+                    "numAwarded": 1604,
+                    "numAwardedHardcore": 1253,
                     "displayOrder": 13
                 },
                 "17769": {
@@ -448,7 +448,7 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "248276",
-                    "numAwarded": 1302,
+                    "numAwarded": 1303,
                     "numAwardedHardcore": 1093,
                     "displayOrder": 14
                 },
@@ -496,7 +496,7 @@
                     "trueRatio": 19,
                     "type": null,
                     "badgeName": "248304",
-                    "numAwarded": 1064,
+                    "numAwarded": 1065,
                     "numAwardedHardcore": 927,
                     "displayOrder": 60
                 },
@@ -520,7 +520,7 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "248256",
-                    "numAwarded": 1165,
+                    "numAwarded": 1166,
                     "numAwardedHardcore": 963,
                     "displayOrder": 43
                 },
@@ -21976,8 +21976,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5329,
-            "numDistinctPlayersHardcore": 5329,
+            "numDistinctPlayersCasual": 5330,
+            "numDistinctPlayersHardcore": 5330,
             "numAchievements": 65,
             "numAwardedToUser": 9,
             "numAwardedToUserHardcore": 9,
@@ -21998,7 +21998,7 @@
                     "trueRatio": 1,
                     "type": "missable",
                     "badgeName": "405191",
-                    "numAwarded": 4929,
+                    "numAwarded": 4930,
                     "numAwardedHardcore": 3524,
                     "displayOrder": 0,
                     "dateEarned": "2026-04-13 23:19:44",
@@ -22012,7 +22012,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "405192",
-                    "numAwarded": 5140,
+                    "numAwarded": 5141,
                     "numAwardedHardcore": 3643,
                     "displayOrder": 1,
                     "dateEarned": "2026-04-14 13:31:57",
@@ -22026,7 +22026,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "405193",
-                    "numAwarded": 5121,
+                    "numAwarded": 5122,
                     "numAwardedHardcore": 3640,
                     "displayOrder": 2,
                     "dateEarned": "2026-04-14 13:32:18",
@@ -22040,7 +22040,7 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "405256",
-                    "numAwarded": 4821,
+                    "numAwarded": 4822,
                     "numAwardedHardcore": 3497,
                     "displayOrder": 5,
                     "dateEarned": "2026-04-14 13:33:34",
@@ -22054,7 +22054,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "405257",
-                    "numAwarded": 5037,
+                    "numAwarded": 5038,
                     "numAwardedHardcore": 3620,
                     "displayOrder": 4,
                     "dateEarned": "2026-04-14 13:33:43",
@@ -34026,8 +34026,8 @@
                     "trueRatio": 9,
                     "type": "progression",
                     "badgeName": "203872",
-                    "numAwarded": 555,
-                    "numAwardedHardcore": 464,
+                    "numAwarded": 556,
+                    "numAwardedHardcore": 465,
                     "displayOrder": 0
                 },
                 "183502": {
@@ -38190,8 +38190,8 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1204,
-            "numDistinctPlayersHardcore": 1204,
+            "numDistinctPlayersCasual": 1205,
+            "numDistinctPlayersHardcore": 1205,
             "numAchievements": 95,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -38665,7 +38665,7 @@
                     "title": "P-Style Felicia Blue",
                     "description": "Get GREAT on NORMAL difficulty on all Blue tag songs",
                     "points": 10,
-                    "trueRatio": 13,
+                    "trueRatio": 14,
                     "type": null,
                     "badgeName": "191551",
                     "numAwarded": 565,
@@ -38725,7 +38725,7 @@
                     "title": "P-Style Rose Pink",
                     "description": "Get GREAT on NORMAL difficulty on all Pink tag songs",
                     "points": 10,
-                    "trueRatio": 12,
+                    "trueRatio": 13,
                     "type": null,
                     "badgeName": "191556",
                     "numAwarded": 640,
@@ -38824,8 +38824,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "191564",
-                    "numAwarded": 528,
-                    "numAwardedHardcore": 463,
+                    "numAwarded": 529,
+                    "numAwardedHardcore": 464,
                     "displayOrder": 41
                 },
                 "170557": {
@@ -38920,8 +38920,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "191572",
-                    "numAwarded": 851,
-                    "numAwardedHardcore": 726,
+                    "numAwarded": 852,
+                    "numAwardedHardcore": 727,
                     "displayOrder": 8
                 },
                 "170565": {
@@ -39277,7 +39277,7 @@
                     "title": "My Debut Album",
                     "description": "Unlock all songs",
                     "points": 10,
-                    "trueRatio": 14,
+                    "trueRatio": 15,
                     "type": "win_condition",
                     "badgeName": "191602",
                     "numAwarded": 486,
@@ -39313,7 +39313,7 @@
                     "title": "Vocaloid Roommate",
                     "description": "Get every Wall Accessory",
                     "points": 25,
-                    "trueRatio": 91,
+                    "trueRatio": 92,
                     "type": null,
                     "badgeName": "191605",
                     "numAwarded": 137,
@@ -45416,8 +45416,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "116296",
-                    "numAwarded": 2088,
-                    "numAwardedHardcore": 920,
+                    "numAwarded": 2089,
+                    "numAwardedHardcore": 921,
                     "displayOrder": 5
                 },
                 "106643": {
@@ -45992,7 +45992,7 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "116835",
-                    "numAwarded": 821,
+                    "numAwarded": 822,
                     "numAwardedHardcore": 426,
                     "displayOrder": 51
                 },
@@ -46004,7 +46004,7 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "116836",
-                    "numAwarded": 826,
+                    "numAwarded": 827,
                     "numAwardedHardcore": 428,
                     "displayOrder": 52
                 },
@@ -46244,8 +46244,8 @@
                     "trueRatio": 33,
                     "type": "missable",
                     "badgeName": "117111",
-                    "numAwarded": 444,
-                    "numAwardedHardcore": 312,
+                    "numAwarded": 445,
+                    "numAwardedHardcore": 313,
                     "displayOrder": 33
                 },
                 "107244": {
@@ -46328,8 +46328,8 @@
                     "trueRatio": 68,
                     "type": null,
                     "badgeName": "117147",
-                    "numAwarded": 684,
-                    "numAwardedHardcore": 400,
+                    "numAwarded": 685,
+                    "numAwardedHardcore": 401,
                     "displayOrder": 93
                 },
                 "107252": {
@@ -54320,8 +54320,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 3136,
-            "numDistinctPlayersHardcore": 3136,
+            "numDistinctPlayersCasual": 3138,
+            "numDistinctPlayersHardcore": 3138,
             "numAchievements": 155,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -54342,8 +54342,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "108765",
-                    "numAwarded": 2748,
-                    "numAwardedHardcore": 1268,
+                    "numAwarded": 2749,
+                    "numAwardedHardcore": 1269,
                     "displayOrder": 2
                 },
                 "101709": {
@@ -54402,8 +54402,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "108771",
-                    "numAwarded": 2040,
-                    "numAwardedHardcore": 1005,
+                    "numAwarded": 2041,
+                    "numAwardedHardcore": 1006,
                     "displayOrder": 7
                 },
                 "101715": {
@@ -54414,8 +54414,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "108774",
-                    "numAwarded": 1943,
-                    "numAwardedHardcore": 980,
+                    "numAwarded": 1944,
+                    "numAwardedHardcore": 981,
                     "displayOrder": 8
                 },
                 "101716": {
@@ -54486,8 +54486,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "108772",
-                    "numAwarded": 2018,
-                    "numAwardedHardcore": 991,
+                    "numAwarded": 2019,
+                    "numAwardedHardcore": 992,
                     "displayOrder": 14
                 },
                 "101722": {
@@ -55266,8 +55266,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "109912",
-                    "numAwarded": 711,
-                    "numAwardedHardcore": 434,
+                    "numAwarded": 712,
+                    "numAwardedHardcore": 435,
                     "displayOrder": 79
                 },
                 "101787": {
@@ -55290,8 +55290,8 @@
                     "trueRatio": 10,
                     "type": "missable",
                     "badgeName": "109914",
-                    "numAwarded": 547,
-                    "numAwardedHardcore": 375,
+                    "numAwarded": 549,
+                    "numAwardedHardcore": 377,
                     "displayOrder": 81
                 },
                 "101789": {
@@ -55302,8 +55302,8 @@
                     "trueRatio": 19,
                     "type": "progression",
                     "badgeName": "109915",
-                    "numAwarded": 697,
-                    "numAwardedHardcore": 428,
+                    "numAwarded": 698,
+                    "numAwardedHardcore": 429,
                     "displayOrder": 82
                 },
                 "101790": {
@@ -55458,8 +55458,8 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "110200",
-                    "numAwarded": 643,
-                    "numAwardedHardcore": 394,
+                    "numAwarded": 644,
+                    "numAwardedHardcore": 395,
                     "displayOrder": 95
                 },
                 "101803": {
@@ -55923,7 +55923,7 @@
                     "title": "Level 50  - Rudy",
                     "description": "Achieve level 50 with Rudy.",
                     "points": 10,
-                    "trueRatio": 22,
+                    "trueRatio": 23,
                     "type": null,
                     "badgeName": "108766",
                     "numAwarded": 462,
@@ -56067,7 +56067,7 @@
                     "title": "Sado",
                     "description": "Defeat Sado.",
                     "points": 25,
-                    "trueRatio": 58,
+                    "trueRatio": 59,
                     "type": null,
                     "badgeName": "110746",
                     "numAwarded": 468,
