@@ -8,7 +8,7 @@
             "description": "Complete Chapter 2 - Blast from the Past",
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/578330/13b422b8f5537ce458f91a37efd018a6a3d63923.jpg",
             "unlockedAt": "2025-10-18T08:08:31.000Z",
-            "globalPct": 59.5
+            "globalPct": 59.4
         },
         {
             "appId": 578330,
@@ -28,7 +28,7 @@
             "description": "Score 3 baskets in 3 attempts when playing the basketball game",
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/578330/bcfbde70b0df7970e411b49ff43e9d03e0a5a83a.jpg",
             "unlockedAt": "2025-09-20T12:13:14.000Z",
-            "globalPct": 34.2
+            "globalPct": 34.1
         },
         {
             "appId": 578330,
@@ -209,16 +209,6 @@
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/969990/01d9da32b6a0d12dafbbdf68c01919285625c879.jpg",
             "unlockedAt": "2025-08-17T13:23:27.000Z",
             "globalPct": 46.8
-        },
-        {
-            "appId": 207350,
-            "gameName": "Ys Origin",
-            "apiName": "Minimally Exceptional",
-            "displayName": "Minimally Exceptional",
-            "description": "Purchase your first blessing/upgrade.",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/207350/9dc8c1ef84b5a0c6022a64079489723fe56ad61e.jpg",
-            "unlockedAt": "2025-07-25T05:12:54.000Z",
-            "globalPct": 58.1
         }
     ]
 }
