@@ -1,5 +1,5 @@
 {
-    "total": 659,
+    "total": 661,
     "results": [
         {
             "id": 27,
@@ -108,6 +108,15 @@
             "imageIcon": "/Images/124070.png",
             "pointsTotal": 340,
             "achievementsPublished": 42
+        },
+        {
+            "id": 187,
+            "title": "Super Paper Mario",
+            "consoleId": 19,
+            "consoleName": "Wii",
+            "imageIcon": "/Images/110442.png",
+            "pointsTotal": 707,
+            "achievementsPublished": 96
         },
         {
             "id": 192,
@@ -2988,6 +2997,15 @@
             "imageIcon": "/Images/116184.png",
             "pointsTotal": 750,
             "achievementsPublished": 66
+        },
+        {
+            "id": 10154,
+            "title": "Paper Mario",
+            "consoleId": 2,
+            "consoleName": "Nintendo 64",
+            "imageIcon": "/Images/112155.png",
+            "pointsTotal": 840,
+            "achievementsPublished": 87
         },
         {
             "id": 10387,
