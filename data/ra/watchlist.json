@@ -1,5 +1,5 @@
 {
-    "total": 657,
+    "total": 659,
     "results": [
         {
             "id": 27,
@@ -2630,6 +2630,15 @@
             "achievementsPublished": 97
         },
         {
+            "id": 6700,
+            "title": "Ys: Book I & II",
+            "consoleId": 76,
+            "consoleName": "PC Engine CD/TurboGrafx-CD",
+            "imageIcon": "/Images/041026.png",
+            "pointsTotal": 1200,
+            "achievementsPublished": 142
+        },
+        {
             "id": 6928,
             "title": "Mega Man X Collection",
             "consoleId": 16,
@@ -2709,6 +2718,15 @@
             "imageIcon": "/Images/058060.png",
             "pointsTotal": 2255,
             "achievementsPublished": 320
+        },
+        {
+            "id": 7962,
+            "title": "Brandish",
+            "consoleId": 76,
+            "consoleName": "PC Engine CD/TurboGrafx-CD",
+            "imageIcon": "/Images/110891.png",
+            "pointsTotal": 368,
+            "achievementsPublished": 68
         },
         {
             "id": 7993,
