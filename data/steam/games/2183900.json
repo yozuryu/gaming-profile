@@ -91,7 +91,7 @@
             "iconUrl": "513e527196b4c3dcdb0d77deef18fb1224ff3c43.jpg",
             "iconGrayUrl": "f5d9b630753886bda7b52dbf5960755175b8a6c4.jpg",
             "hidden": true,
-            "globalPct": 41.8
+            "globalPct": 41.7
         },
         {
             "apiName": "STORY_TOWER",
@@ -245,7 +245,7 @@
             "iconUrl": "e07faae991239b99b9211d04133ed4e8e09f83e2.jpg",
             "iconGrayUrl": "c074b26930afcc1403d67b0f091515224ed13ec2.jpg",
             "hidden": false,
-            "globalPct": 19
+            "globalPct": 18.9
         },
         {
             "apiName": "PVE_MAX_MELEE",
@@ -465,7 +465,7 @@
             "iconUrl": "0343fe733f7835036e6002fc4b65e79f07775637.jpg",
             "iconGrayUrl": "0f36cc408c3df1b5a155dc829c9a8a6803f5787b.jpg",
             "hidden": false,
-            "globalPct": 26.1
+            "globalPct": 26
         },
         {
             "apiName": "TOTAL_KILLS",

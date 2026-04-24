@@ -69,7 +69,7 @@
             "iconUrl": "b6cd41f8044ba4c42890ce1996bb4a07b72fda4f.jpg",
             "iconGrayUrl": "f37603ee69ebe484409b963fe6096948ad8b2408.jpg",
             "hidden": false,
-            "globalPct": 13.8
+            "globalPct": 13.7
         },
         {
             "apiName": "M_TREEFARM",
@@ -454,7 +454,7 @@
             "iconUrl": "e2a42e9e0aad095702606f0df230f8532c292799.jpg",
             "iconGrayUrl": "f37603ee69ebe484409b963fe6096948ad8b2408.jpg",
             "hidden": true,
-            "globalPct": 6.8
+            "globalPct": 6.7
         },
         {
             "apiName": "A_PASSALLDUNGEN",
@@ -597,7 +597,7 @@
             "iconUrl": "8eec67f150dc1118081642e1cea77062e2ef0d50.jpg",
             "iconGrayUrl": "f37603ee69ebe484409b963fe6096948ad8b2408.jpg",
             "hidden": true,
-            "globalPct": 10.7
+            "globalPct": 10.6
         },
         {
             "apiName": "S_MEAL",
@@ -1065,7 +1065,7 @@
             "unlockedAt": null,
             "iconUrl": "b6cd41f8044ba4c42890ce1996bb4a07b72fda4f.jpg",
             "iconGrayUrl": "f37603ee69ebe484409b963fe6096948ad8b2408.jpg",
-            "globalPct": 13.8
+            "globalPct": 13.7
         }
     ]
 }

@@ -102,7 +102,7 @@
             "iconUrl": "04bc30c324be50a31afe33ad0a5bfe7b389588ff.jpg",
             "iconGrayUrl": "932a020f78891f0cc084db3c25c72808c861f4db.jpg",
             "hidden": false,
-            "globalPct": 35.1
+            "globalPct": 35
         },
         {
             "apiName": "EXPLO_GETRUNE_VINE",
@@ -971,7 +971,7 @@
             "iconUrl": "cd2b15c477b90c8463f31584b383bbae1049777e.jpg",
             "iconGrayUrl": "c98b5bddae7bc5a043940d29667d4069fcee02f6.jpg",
             "hidden": false,
-            "globalPct": 15.7
+            "globalPct": 15.8
         },
         {
             "apiName": "BIOME_REACHED_LIGHTHOUSE",
