@@ -819,26 +819,6 @@
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/c4fe576da5fcfe08c7ca9921f3a725c492d98248.jpg",
             "unlockedAt": "2025-04-28T14:25:39.000Z",
             "globalPct": 81.6
-        },
-        {
-            "appId": 1903340,
-            "gameName": "Clair Obscur: Expedition 33",
-            "apiName": "SPRING_MEADOWS",
-            "displayName": "Spring Meadows",
-            "description": "",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/1a8491fdfa5b1c18a2b9426b19a7ea7a60a681df.jpg",
-            "unlockedAt": "2025-04-25T15:38:36.000Z",
-            "globalPct": 81.5
-        },
-        {
-            "appId": 1903340,
-            "gameName": "Clair Obscur: Expedition 33",
-            "apiName": "BREAK",
-            "displayName": "Time to Spill Some Ink",
-            "description": "Break an enemy.",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/c079b7038296aa203229ee0864695bf2f549ddc5.jpg",
-            "unlockedAt": "2025-04-25T15:38:36.000Z",
-            "globalPct": 84.7
         }
     ]
 }
