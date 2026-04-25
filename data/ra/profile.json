@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-25T02:01:11.252Z"
+        "extractionTimestamp": "2026-04-25T02:54:38.385Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Starting game",
-        "lastGameId": 12889,
+        "richPresenceMsg": "Playing Mega Man Star Force: Dragon",
+        "lastGameId": 17890,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1778,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Starting game",
-        "richPresenceMsgDate": "2026-04-24 15:28:34",
-        "lastGameId": 12889,
+        "richPresenceMsg": "Playing Mega Man Star Force: Dragon",
+        "richPresenceMsgDate": "2026-04-25 02:16:43",
+        "lastGameId": 17890,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1778,
@@ -51,7 +51,7 @@
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 141082,
+        "totalRanked": 141088,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -125,6 +125,24 @@
         ]
     },
     "recentlyPlayedGames": [
+        {
+            "gameId": 17890,
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "title": "Mega Man Star Force: Dragon",
+            "imageIcon": "/Images/121894.png",
+            "imageTitle": "/Images/126247.png",
+            "imageIngame": "/Images/126248.png",
+            "imageBoxArt": "/Images/121877.png",
+            "lastPlayed": "2026-04-25 02:16:43",
+            "achievementsTotal": 76,
+            "numPossibleAchievements": 76,
+            "possibleScore": 800,
+            "numAchieved": 0,
+            "scoreAchieved": 0,
+            "numAchievedHardcore": 0,
+            "scoreAchievedHardcore": 0
+        },
         {
             "gameId": 12889,
             "consoleId": 76,
@@ -376,24 +394,6 @@
             "scoreAchieved": 5,
             "numAchievedHardcore": 1,
             "scoreAchievedHardcore": 5
-        },
-        {
-            "gameId": 2873,
-            "consoleId": 12,
-            "consoleName": "PlayStation",
-            "title": "Donald Duck: Goin' Quackers",
-            "imageIcon": "/Images/113907.png",
-            "imageTitle": "/Images/032748.png",
-            "imageIngame": "/Images/050578.png",
-            "imageBoxArt": "/Images/096299.png",
-            "lastPlayed": "2026-04-16 05:02:04",
-            "achievementsTotal": 65,
-            "numPossibleAchievements": 65,
-            "possibleScore": 278,
-            "numAchieved": 9,
-            "scoreAchieved": 18,
-            "numAchievedHardcore": 9,
-            "scoreAchievedHardcore": 18
         }
     ],
     "gameAwardsAndProgress": {
@@ -1086,18 +1086,18 @@
         "gameUrl": "/game/11306"
     },
     "mostRecentGame": {
-        "gameId": 12889,
-        "consoleId": 76,
-        "consoleName": "PC Engine CD/TurboGrafx-CD",
-        "title": "Dragon Slayer: The Legend of Heroes",
-        "imageIcon": "/Images/088358.png",
-        "imageTitle": "/Images/090767.png",
-        "imageIngame": "/Images/089334.png",
-        "imageBoxArt": "/Images/018908.png",
-        "lastPlayed": "2026-04-24 15:28:34",
-        "achievementsTotal": 51,
-        "numPossibleAchievements": 51,
-        "possibleScore": 336,
+        "gameId": 17890,
+        "consoleId": 18,
+        "consoleName": "Nintendo DS",
+        "title": "Mega Man Star Force: Dragon",
+        "imageIcon": "/Images/121894.png",
+        "imageTitle": "/Images/126247.png",
+        "imageIngame": "/Images/126248.png",
+        "imageBoxArt": "/Images/121877.png",
+        "lastPlayed": "2026-04-25 02:16:43",
+        "achievementsTotal": 76,
+        "numPossibleAchievements": 76,
+        "possibleScore": 800,
         "numAchieved": 0,
         "scoreAchieved": 0,
         "numAchievedHardcore": 0,
