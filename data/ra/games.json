@@ -36344,8 +36344,8 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1207,
-            "numDistinctPlayersHardcore": 1207,
+            "numDistinctPlayersCasual": 1208,
+            "numDistinctPlayersHardcore": 1208,
             "numAchievements": 95,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -36378,7 +36378,7 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "191514",
-                    "numAwarded": 707,
+                    "numAwarded": 708,
                     "numAwardedHardcore": 608,
                     "displayOrder": 53
                 },
@@ -36402,8 +36402,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "191516",
-                    "numAwarded": 574,
-                    "numAwardedHardcore": 509,
+                    "numAwarded": 575,
+                    "numAwardedHardcore": 510,
                     "displayOrder": 54
                 },
                 "170509": {
@@ -36882,8 +36882,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "191556",
-                    "numAwarded": 640,
-                    "numAwardedHardcore": 563,
+                    "numAwarded": 641,
+                    "numAwardedHardcore": 564,
                     "displayOrder": 35
                 },
                 "170549": {
@@ -36954,8 +36954,8 @@
                     "trueRatio": 23,
                     "type": null,
                     "badgeName": "191562",
-                    "numAwarded": 236,
-                    "numAwardedHardcore": 221,
+                    "numAwarded": 237,
+                    "numAwardedHardcore": 222,
                     "displayOrder": 44
                 },
                 "170555": {
@@ -37074,8 +37074,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "191572",
-                    "numAwarded": 853,
-                    "numAwardedHardcore": 728,
+                    "numAwarded": 854,
+                    "numAwardedHardcore": 729,
                     "displayOrder": 8
                 },
                 "170565": {
@@ -43450,7 +43450,7 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "116329",
-                    "numAwarded": 1592,
+                    "numAwarded": 1593,
                     "numAwardedHardcore": 712,
                     "displayOrder": 44
                 },
@@ -43726,7 +43726,7 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "116679",
-                    "numAwarded": 1775,
+                    "numAwarded": 1776,
                     "numAwardedHardcore": 775,
                     "displayOrder": 9
                 },
@@ -43774,7 +43774,7 @@
                     "trueRatio": 22,
                     "type": null,
                     "badgeName": "116319",
-                    "numAwarded": 926,
+                    "numAwarded": 927,
                     "numAwardedHardcore": 511,
                     "displayOrder": 73
                 },
@@ -44323,11 +44323,11 @@
                     "title": "What Have I Done",
                     "description": "Help the Faerie Village repopulate itself ",
                     "points": 5,
-                    "trueRatio": 14,
+                    "trueRatio": 13,
                     "type": null,
                     "badgeName": "117099",
-                    "numAwarded": 665,
-                    "numAwardedHardcore": 388,
+                    "numAwarded": 666,
+                    "numAwardedHardcore": 389,
                     "displayOrder": 77
                 },
                 "107198": {
@@ -60009,11 +60009,11 @@
                     "title": "This Commander is the Pits",
                     "description": "Defeat the Commander.",
                     "points": 10,
-                    "trueRatio": 17,
+                    "trueRatio": 16,
                     "type": "progression",
                     "badgeName": "448817",
-                    "numAwarded": 186,
-                    "numAwardedHardcore": 172,
+                    "numAwarded": 187,
+                    "numAwardedHardcore": 173,
                     "displayOrder": 7
                 },
                 "396851": {
@@ -60024,8 +60024,8 @@
                     "trueRatio": 17,
                     "type": "progression",
                     "badgeName": "448818",
-                    "numAwarded": 182,
-                    "numAwardedHardcore": 168,
+                    "numAwarded": 183,
+                    "numAwardedHardcore": 169,
                     "displayOrder": 8
                 },
                 "398325": {
@@ -60036,8 +60036,8 @@
                     "trueRatio": 3,
                     "type": "progression",
                     "badgeName": "449898",
-                    "numAwarded": 176,
-                    "numAwardedHardcore": 162,
+                    "numAwarded": 177,
+                    "numAwardedHardcore": 163,
                     "displayOrder": 9
                 },
                 "398969": {
@@ -87265,8 +87265,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "627618",
-                    "numAwarded": 142,
-                    "numAwardedHardcore": 132,
+                    "numAwarded": 143,
+                    "numAwardedHardcore": 133,
                     "displayOrder": 3
                 },
                 "552633": {
@@ -87277,8 +87277,8 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "627620",
-                    "numAwarded": 123,
-                    "numAwardedHardcore": 115,
+                    "numAwarded": 124,
+                    "numAwardedHardcore": 116,
                     "displayOrder": 4
                 },
                 "552635": {
@@ -87301,8 +87301,8 @@
                     "trueRatio": 11,
                     "type": "missable",
                     "badgeName": "627624",
-                    "numAwarded": 102,
-                    "numAwardedHardcore": 98,
+                    "numAwarded": 103,
+                    "numAwardedHardcore": 99,
                     "displayOrder": 6
                 },
                 "552639": {
@@ -87337,8 +87337,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "627629",
-                    "numAwarded": 93,
-                    "numAwardedHardcore": 87,
+                    "numAwarded": 94,
+                    "numAwardedHardcore": 88,
                     "displayOrder": 9
                 },
                 "552644": {
@@ -87397,8 +87397,8 @@
                     "trueRatio": 16,
                     "type": "missable",
                     "badgeName": "627639",
-                    "numAwarded": 64,
-                    "numAwardedHardcore": 60,
+                    "numAwarded": 65,
+                    "numAwardedHardcore": 61,
                     "displayOrder": 14
                 },
                 "552649": {
@@ -87409,8 +87409,8 @@
                     "trueRatio": 28,
                     "type": "win_condition",
                     "badgeName": "627641",
-                    "numAwarded": 77,
-                    "numAwardedHardcore": 72,
+                    "numAwarded": 78,
+                    "numAwardedHardcore": 73,
                     "displayOrder": 15
                 },
                 "552650": {
