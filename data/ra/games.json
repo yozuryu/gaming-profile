@@ -148,7 +148,7 @@
                     "trueRatio": 16,
                     "type": "progression",
                     "badgeName": "248270",
-                    "numAwarded": 1596,
+                    "numAwarded": 1597,
                     "numAwardedHardcore": 1216,
                     "displayOrder": 19
                 },
@@ -160,7 +160,7 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "248278",
-                    "numAwarded": 1487,
+                    "numAwarded": 1488,
                     "numAwardedHardcore": 1163,
                     "displayOrder": 20
                 },
@@ -220,7 +220,7 @@
                     "trueRatio": 18,
                     "type": "progression",
                     "badgeName": "248244",
-                    "numAwarded": 1330,
+                    "numAwarded": 1331,
                     "numAwardedHardcore": 1052,
                     "displayOrder": 26
                 },
@@ -472,7 +472,7 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "248317",
-                    "numAwarded": 1421,
+                    "numAwarded": 1422,
                     "numAwardedHardcore": 1112,
                     "displayOrder": 54
                 },
@@ -17560,7 +17560,7 @@
                     "trueRatio": 7,
                     "type": "missable",
                     "badgeName": "143688",
-                    "numAwarded": 168,
+                    "numAwarded": 169,
                     "numAwardedHardcore": 122,
                     "displayOrder": 0
                 },
@@ -36366,8 +36366,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "191513",
-                    "numAwarded": 612,
-                    "numAwardedHardcore": 534,
+                    "numAwarded": 613,
+                    "numAwardedHardcore": 535,
                     "displayOrder": 55
                 },
                 "170506": {
@@ -43762,8 +43762,8 @@
                     "trueRatio": 40,
                     "type": null,
                     "badgeName": "116318",
-                    "numAwarded": 365,
-                    "numAwardedHardcore": 246,
+                    "numAwarded": 366,
+                    "numAwardedHardcore": 247,
                     "displayOrder": 72
                 },
                 "106944": {
@@ -44230,8 +44230,8 @@
                     "trueRatio": 34,
                     "type": null,
                     "badgeName": "117039",
-                    "numAwarded": 385,
-                    "numAwardedHardcore": 295,
+                    "numAwarded": 386,
+                    "numAwardedHardcore": 296,
                     "displayOrder": 78
                 },
                 "107189": {
@@ -52042,7 +52042,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "102827",
-                    "numAwarded": 1063,
+                    "numAwarded": 1064,
                     "numAwardedHardcore": 496,
                     "displayOrder": 7
                 },
@@ -52054,7 +52054,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "102828",
-                    "numAwarded": 1092,
+                    "numAwarded": 1093,
                     "numAwardedHardcore": 501,
                     "displayOrder": 37
                 },
@@ -52066,7 +52066,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "102872",
-                    "numAwarded": 1094,
+                    "numAwarded": 1095,
                     "numAwardedHardcore": 504,
                     "displayOrder": 38
                 },
@@ -87382,11 +87382,11 @@
                     "title": "GIT GUD at the Gauntlet",
                     "description": "Clear the Deep Docks enemy gauntlet within 25 seconds.",
                     "points": 5,
-                    "trueRatio": 16,
+                    "trueRatio": 15,
                     "type": "missable",
                     "badgeName": "627637",
-                    "numAwarded": 66,
-                    "numAwardedHardcore": 62,
+                    "numAwarded": 67,
+                    "numAwardedHardcore": 63,
                     "displayOrder": 13
                 },
                 "552648": {
@@ -87418,11 +87418,11 @@
                     "title": "Steel Soul Practice",
                     "description": "Clear Moss Grotto and Deep Docks back to back without dying. Retry from the main menu.",
                     "points": 25,
-                    "trueRatio": 98,
+                    "trueRatio": 96,
                     "type": "missable",
                     "badgeName": "627642",
-                    "numAwarded": 52,
-                    "numAwardedHardcore": 49,
+                    "numAwarded": 53,
+                    "numAwardedHardcore": 50,
                     "displayOrder": 16
                 }
             }
