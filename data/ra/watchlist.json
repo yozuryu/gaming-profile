@@ -1,5 +1,5 @@
 {
-    "total": 661,
+    "total": 665,
     "results": [
         {
             "id": 27,
@@ -2558,6 +2558,15 @@
             "achievementsPublished": 187
         },
         {
+            "id": 5854,
+            "title": "The Sims 2",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/026790.png",
+            "pointsTotal": 738,
+            "achievementsPublished": 62
+        },
+        {
             "id": 5927,
             "title": "Bomberman Fantasy Race",
             "consoleId": 12,
@@ -2628,6 +2637,15 @@
             "imageIcon": "/Images/000001.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
+        },
+        {
+            "id": 6184,
+            "title": "The Sims: Bustin' Out",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/066855.png",
+            "pointsTotal": 400,
+            "achievementsPublished": 50
         },
         {
             "id": 6231,
@@ -4563,6 +4581,24 @@
             "imageIcon": "/Images/120212.png",
             "pointsTotal": 125,
             "achievementsPublished": 12
+        },
+        {
+            "id": 17318,
+            "title": "MySims: Party",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/059638.png",
+            "pointsTotal": 784,
+            "achievementsPublished": 123
+        },
+        {
+            "id": 17320,
+            "title": "MySims",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/120893.png",
+            "pointsTotal": 409,
+            "achievementsPublished": 63
         },
         {
             "id": 17393,
