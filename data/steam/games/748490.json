@@ -113,7 +113,7 @@
             "iconUrl": "d8b859bf7222183aa555432e2a6ae9273b469d66.jpg",
             "iconGrayUrl": "da11dcbfb069567349e1e9541902667817da5d77.jpg",
             "hidden": false,
-            "globalPct": 17.4
+            "globalPct": 17.5
         },
         {
             "apiName": "TROPHY2_GETALL_MQUARTZ",
@@ -157,7 +157,7 @@
             "iconUrl": "6c05bce0b478dd5c68c16b98f156267a3adaf675.jpg",
             "iconGrayUrl": "0a82c312131d9d7af36eb4bb47c2664d281306ce.jpg",
             "hidden": false,
-            "globalPct": 20.8
+            "globalPct": 20.9
         },
         {
             "apiName": "TROPHY2_MAX_MQUARTZ",
@@ -168,7 +168,7 @@
             "iconUrl": "b4df0d1a8308b4b64798d67f24228632d09c95b1.jpg",
             "iconGrayUrl": "4d2788dd5198e97938e5c8fb3cd3df68c10e57f9.jpg",
             "hidden": false,
-            "globalPct": 70.9
+            "globalPct": 71
         },
         {
             "apiName": "TROPHY2_STRONGEST_WEAPON",
@@ -201,7 +201,7 @@
             "iconUrl": "f2679d273601924d99036ae351f9705257baa731.jpg",
             "iconGrayUrl": "94208833955832133acf277ea4c6a401b0518c7a.jpg",
             "hidden": false,
-            "globalPct": 55.8
+            "globalPct": 55.9
         },
         {
             "apiName": "TROPHY2_FASTATTACK",
@@ -333,7 +333,7 @@
             "iconUrl": "309bd3fa0e895b2b0cdae9d98e42fb6bec9772b1.jpg",
             "iconGrayUrl": "ec85a5f62a6046f2f0a2980a94e8ecc6fd21b8ff.jpg",
             "hidden": true,
-            "globalPct": 10.4
+            "globalPct": 10.5
         },
         {
             "apiName": "TROPHY2_REPORT_SRANK",
@@ -410,7 +410,7 @@
             "iconUrl": "6f95d1d67fbf2e00ad1c906ccbd67a16706d85f0.jpg",
             "iconGrayUrl": "43d24823b3614ab8f13bea4b7b77c7f67dc02e24.jpg",
             "hidden": false,
-            "globalPct": 10.8
+            "globalPct": 10.9
         },
         {
             "apiName": "TROPHY2_KIZUNA_FIE",
@@ -553,7 +553,7 @@
             "iconUrl": "d4649d04a9022e57a36aa9737d00230452d2cd6c.jpg",
             "iconGrayUrl": "17fdb907735b1d07480466177de0555f6cfa6223.jpg",
             "hidden": true,
-            "globalPct": 65.2
+            "globalPct": 65.3
         },
         {
             "apiName": "TROPHY2_SCENARIO_AFTER",
@@ -589,7 +589,7 @@
             "unlockedAt": "2018-03-29T21:46:27.000Z",
             "iconUrl": "d8b859bf7222183aa555432e2a6ae9273b469d66.jpg",
             "iconGrayUrl": "da11dcbfb069567349e1e9541902667817da5d77.jpg",
-            "globalPct": 17.4
+            "globalPct": 17.5
         },
         {
             "apiName": "TROPHY2_DRIVECANCELL",

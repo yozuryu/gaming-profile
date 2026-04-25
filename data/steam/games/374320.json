@@ -201,7 +201,7 @@
             "iconUrl": "67eecf8242172b1dd1adc91b49924a6dbec0ab4b.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 52.3
+            "globalPct": 52.2
         },
         {
             "apiName": "ACH18",
@@ -212,7 +212,7 @@
             "iconUrl": "2b5459878a890617c11dfaeec3eb758495d03947.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 65.3
+            "globalPct": 65.2
         },
         {
             "apiName": "ACH19",
@@ -234,7 +234,7 @@
             "iconUrl": "4a88851281da37d5de0fc3108d54603bd0a5658b.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 31.8
+            "globalPct": 31.7
         },
         {
             "apiName": "ACH21",
@@ -245,7 +245,7 @@
             "iconUrl": "203f3d203b422d51c0029844ffb6827e022c8d37.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 42.8
+            "globalPct": 42.7
         },
         {
             "apiName": "ACH22",
@@ -256,7 +256,7 @@
             "iconUrl": "46e7372eb46d85d7ec5e24eaaa59a48b0f621391.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 35.2
+            "globalPct": 35.1
         },
         {
             "apiName": "ACH23",
@@ -267,7 +267,7 @@
             "iconUrl": "b97795c0db4298b7c2481f387b70a1d54c0d7383.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 48.4
+            "globalPct": 48.3
         },
         {
             "apiName": "ACH24",
@@ -344,7 +344,7 @@
             "iconUrl": "3dcfceacf7115d14fc97220eb86cc44dd448949a.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 57.5
+            "globalPct": 57.4
         },
         {
             "apiName": "ACH31",
@@ -355,7 +355,7 @@
             "iconUrl": "aacac8fbdf56c9f6173c49423fcce50537641a70.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 53.9
+            "globalPct": 53.8
         },
         {
             "apiName": "ACH32",
@@ -366,7 +366,7 @@
             "iconUrl": "6947497b263925a2e12dc61870db39039ad36f31.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 52.8
+            "globalPct": 52.7
         },
         {
             "apiName": "ACH33",
@@ -377,7 +377,7 @@
             "iconUrl": "cd28ea12ab12addfd98f41082425e84e93cd2e9d.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 49.3
+            "globalPct": 49.2
         },
         {
             "apiName": "ACH34",
@@ -410,7 +410,7 @@
             "iconUrl": "2b604e5def631df2021f51b172be02146dc3a830.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": true,
-            "globalPct": 45.7
+            "globalPct": 45.6
         },
         {
             "apiName": "ACH37",
@@ -476,7 +476,7 @@
             "iconUrl": "512e7a3273961258de448adf58b89370f2cb26f6.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
             "hidden": false,
-            "globalPct": 86.2
+            "globalPct": 86.1
         }
     ],
     "playtimeForever": 663,
@@ -501,7 +501,7 @@
             "unlockedAt": "2019-02-10T05:00:26.000Z",
             "iconUrl": "2b5459878a890617c11dfaeec3eb758495d03947.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
-            "globalPct": 65.3
+            "globalPct": 65.2
         },
         {
             "apiName": "ACH42",
@@ -510,7 +510,7 @@
             "unlockedAt": "2019-02-09T13:38:50.000Z",
             "iconUrl": "512e7a3273961258de448adf58b89370f2cb26f6.jpg",
             "iconGrayUrl": "95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg",
-            "globalPct": 86.2
+            "globalPct": 86.1
         },
         {
             "apiName": "ACH27",

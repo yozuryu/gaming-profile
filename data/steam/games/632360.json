@@ -80,7 +80,7 @@
             "iconUrl": "6613b2b7c7cbc5cd127c6578314e95c188a9de0b.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 16.1
+            "globalPct": 16
         },
         {
             "apiName": "CarryLunarItems",
@@ -157,7 +157,7 @@
             "iconUrl": "4bffe8934ba431589ea5ca69cdfc1755d15b5fb8.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 15.7
+            "globalPct": 15.6
         },
         {
             "apiName": "Complete20Stages",
@@ -333,7 +333,7 @@
             "iconUrl": "bbe5a56263dc6acac7538f383cd372ffc2541529.jpg",
             "iconGrayUrl": "6f5533c8ddc7add290bc7312898e6c6bd38c0ee7.jpg",
             "hidden": false,
-            "globalPct": 54.6
+            "globalPct": 54.5
         },
         {
             "apiName": "Die5Times",
@@ -443,7 +443,7 @@
             "iconUrl": "4bfa374ef709d46349233f113eb035bca5527578.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 38.3
+            "globalPct": 38.2
         },
         {
             "apiName": "FindTimedChest",
@@ -553,7 +553,7 @@
             "iconUrl": "30502a9b687d6d1dc0a821ab2d52da2d7daaff69.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 62.2
+            "globalPct": 62.3
         },
         {
             "apiName": "KillBossQuick",
@@ -564,7 +564,7 @@
             "iconUrl": "62a2e522d5314fe3e401bc382c42d398fb726258.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 67.2
+            "globalPct": 67.3
         },
         {
             "apiName": "KillElementalLemurians",
@@ -597,7 +597,7 @@
             "iconUrl": "55052157013cda249a48f19e7af4dd5e4f7bfd7a.jpg",
             "iconGrayUrl": "6f5533c8ddc7add290bc7312898e6c6bd38c0ee7.jpg",
             "hidden": false,
-            "globalPct": 47.8
+            "globalPct": 47.7
         },
         {
             "apiName": "KillGoldTitanInOneCycle",
@@ -619,7 +619,7 @@
             "iconUrl": "14337f17195d82dc1f6b73d808c4ba84a335e41c.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 53.7
+            "globalPct": 53.6
         },
         {
             "apiName": "LoaderBigSlam",
@@ -663,7 +663,7 @@
             "iconUrl": "b8f57141c6077fc6f64040e80e723f8259abd977.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 63.1
+            "globalPct": 63.2
         },
         {
             "apiName": "LoopOnce",
@@ -784,7 +784,7 @@
             "iconUrl": "352793a439cc060d122df78c71652f0b98aa204c.jpg",
             "iconGrayUrl": "6f5533c8ddc7add290bc7312898e6c6bd38c0ee7.jpg",
             "hidden": false,
-            "globalPct": 52.9
+            "globalPct": 53
         },
         {
             "apiName": "MultiCombatShrine",
@@ -993,7 +993,7 @@
             "iconUrl": "1cb5bbf2d3be03c7d7195a3280de5c9f7ce8b8bd.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 40.6
+            "globalPct": 40.5
         },
         {
             "apiName": "RepeatFirstTeleporter",
@@ -1004,7 +1004,7 @@
             "iconUrl": "32df421f7ee3e8b6deb1ff809e634c19a969097c.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 66.6
+            "globalPct": 66.7
         },
         {
             "apiName": "RescueTreebot",
@@ -1015,7 +1015,7 @@
             "iconUrl": "c1ff4aaf47520fd92a2e3bcbfbc76eeb56edb0e1.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 28.8
+            "globalPct": 28.7
         },
         {
             "apiName": "StayAlive1",
@@ -1037,7 +1037,7 @@
             "iconUrl": "14daeac2aac7007d35ed5e1251b422de01df5536.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 12.3
+            "globalPct": 12.2
         },
         {
             "apiName": "ToolbotClearGameMonsoon",
@@ -1312,7 +1312,7 @@
             "iconUrl": "0e8f9d0d95fa96371240816f9f1227cb4e6d947e.jpg",
             "iconGrayUrl": "4bbaf4cac6c955577e3651483414a79515849ee9.jpg",
             "hidden": true,
-            "globalPct": 10.7
+            "globalPct": 10.8
         },
         {
             "apiName": "UnlockFalseSon",
@@ -1323,7 +1323,7 @@
             "iconUrl": "7894f5def7de5e6b585532ec6cbf1f3cd2461c4a.jpg",
             "iconGrayUrl": "4bbaf4cac6c955577e3651483414a79515849ee9.jpg",
             "hidden": true,
-            "globalPct": 9
+            "globalPct": 9.1
         },
         {
             "apiName": "ActivateChef",
@@ -1334,7 +1334,7 @@
             "iconUrl": "5d177c7d4fd1ca0edb590e63661ecd58d7ada87a.jpg",
             "iconGrayUrl": "4bbaf4cac6c955577e3651483414a79515849ee9.jpg",
             "hidden": true,
-            "globalPct": 9.8
+            "globalPct": 9.9
         },
         {
             "apiName": "ChefClearGameMonsoon",
@@ -1367,7 +1367,7 @@
             "iconUrl": "e693941be8f8c27cc84154ff93f99bbcd9ccac89.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 2.5
+            "globalPct": 2.6
         },
         {
             "apiName": "BurnMithrix",
@@ -1389,7 +1389,7 @@
             "iconUrl": "3af631d2ecc56778b317d4b125917d28f96ed9e5.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 3.9
+            "globalPct": 4
         },
         {
             "apiName": "FalseSonLaserMultiKill",
@@ -1466,7 +1466,7 @@
             "iconUrl": "00c4aa0395997c9ba316e63698aa25dbb4e32570.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 8.1
+            "globalPct": 8.2
         },
         {
             "apiName": "CrocoClearMeridianEvent",
@@ -1477,7 +1477,7 @@
             "iconUrl": "a6f75a48c8da1950c2fa19db64f4dda99101463f.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 3.3
+            "globalPct": 3.4
         },
         {
             "apiName": "MageClearMeridianEvent",
@@ -1488,7 +1488,7 @@
             "iconUrl": "5a97b1d81860ced75b732b2ad43ade6e9c6f00af.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 3.2
+            "globalPct": 3.3
         },
         {
             "apiName": "Bandit2ClearMeridianEvent",
@@ -1510,7 +1510,7 @@
             "iconUrl": "48afb36adc34a33c03ba8e50bede2bef474686d4.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 3.3
+            "globalPct": 3.4
         },
         {
             "apiName": "CommandoClearMeridianEvent",
@@ -1554,7 +1554,7 @@
             "iconUrl": "682832b2e546d9d570908d7fc0f3ba987e9fa88f.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 3.2
+            "globalPct": 3.3
         },
         {
             "apiName": "ToolbotClearMeridianEvent",
@@ -1598,7 +1598,7 @@
             "iconUrl": "7616d5441c5c1a7ae46b1246547f2ad18669eb7c.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 2.7
+            "globalPct": 2.8
         },
         {
             "apiName": "VoidSurvivorClearMeridianEvent",
@@ -1675,7 +1675,7 @@
             "iconUrl": "06cc46f4db2e15ff344afb74cb8cd40d5cf9d201.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": true,
-            "globalPct": 1.2
+            "globalPct": 1.3
         },
         {
             "apiName": "LoaderDecompile",
@@ -1697,7 +1697,7 @@
             "iconUrl": "55c323f6c11b17d591469ba979f9ca3cab1d55fd.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": true,
-            "globalPct": 1.2
+            "globalPct": 1.3
         },
         {
             "apiName": "TreebotDecompile",
@@ -1719,7 +1719,7 @@
             "iconUrl": "6a96f327290f1bbe50582e745d956308c4fe91bf.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": true,
-            "globalPct": 1.5
+            "globalPct": 1.6
         },
         {
             "apiName": "CrocoPurge",
@@ -1774,7 +1774,7 @@
             "iconUrl": "0e01ef5e05db3a898d6f7d6e390d73c68128c941.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": true,
-            "globalPct": 1.6
+            "globalPct": 1.7
         },
         {
             "apiName": "DrifterJunkCubeAchievement",
@@ -1796,7 +1796,7 @@
             "iconUrl": "35b614ce55b260b741ce9fd26d12d89e3efee07b.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 1.9
+            "globalPct": 2
         },
         {
             "apiName": "DrifterTornadoSlamAchievement",
@@ -1807,7 +1807,7 @@
             "iconUrl": "569d7169bb07b0a9d71b38d3edce933f0ffee94e.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 1.7
+            "globalPct": 1.8
         },
         {
             "apiName": "DroneTechUniqueDrones",
@@ -1818,7 +1818,7 @@
             "iconUrl": "fa4e66b02e4a5fc34fd3282fb2e6b9727722e2b0.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 5
+            "globalPct": 5.1
         },
         {
             "apiName": "DroneTechDefeatVultureBossWhileAirborne",
@@ -1851,7 +1851,7 @@
             "iconUrl": "1bb734b98375399d214d452076c43cdfbb6c7659.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 2.8
+            "globalPct": 2.9
         },
         {
             "apiName": "DroneTechClearGameMonsoon",
@@ -1873,7 +1873,7 @@
             "iconUrl": "46f8ea0158dafcbbacfdaf37b6141708a8067530.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": true,
-            "globalPct": 5.5
+            "globalPct": 5.6
         },
         {
             "apiName": "ObtainArtifactPrestige",
@@ -1945,7 +1945,7 @@
             "unlockedAt": "2021-04-10T14:50:18.000Z",
             "iconUrl": "c1ff4aaf47520fd92a2e3bcbfbc76eeb56edb0e1.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
-            "globalPct": 28.8
+            "globalPct": 28.7
         }
     ]
 }

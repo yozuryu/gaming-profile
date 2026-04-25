@@ -223,7 +223,7 @@
             "iconUrl": "a200dbd2382efc2918fa5dd4682e6d8fe8daccca.jpg",
             "iconGrayUrl": "955747179aab607d0be0e276cd824f46b2034263.jpg",
             "hidden": false,
-            "globalPct": 5.1
+            "globalPct": 5.2
         },
         {
             "apiName": "2033_snake",
@@ -333,7 +333,7 @@
             "iconUrl": "f6147527fcf454cbb8361b44c2aab85f241c54d1.jpg",
             "iconGrayUrl": "955747179aab607d0be0e276cd824f46b2034263.jpg",
             "hidden": false,
-            "globalPct": 29.1
+            "globalPct": 29
         },
         {
             "apiName": "2033_safecracker_33",
@@ -377,7 +377,7 @@
             "iconUrl": "8843ba059e9a196a70a3b7bdf409c4f80bdb0eea.jpg",
             "iconGrayUrl": "955747179aab607d0be0e276cd824f46b2034263.jpg",
             "hidden": false,
-            "globalPct": 5.3
+            "globalPct": 5.4
         },
         {
             "apiName": "2033_sniper_33",
@@ -603,7 +603,7 @@
             "unlockedAt": "2018-06-10T02:02:00.000Z",
             "iconUrl": "f6147527fcf454cbb8361b44c2aab85f241c54d1.jpg",
             "iconGrayUrl": "955747179aab607d0be0e276cd824f46b2034263.jpg",
-            "globalPct": 29.1
+            "globalPct": 29
         }
     ]
 }

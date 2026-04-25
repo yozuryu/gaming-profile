@@ -36,7 +36,7 @@
             "iconUrl": "12ec4eebccb0cac84f6ad8a0030faa066c0e2835.jpg",
             "iconGrayUrl": "1a3298ce8ee28ffaaf9080730a32dcd3b9ac9500.jpg",
             "hidden": false,
-            "globalPct": 53.9
+            "globalPct": 53.8
         },
         {
             "apiName": "ACH_ADD_MAREG",
@@ -69,7 +69,7 @@
             "iconUrl": "0c3fbada6b2b3424d3bca6c01f9ca17d901dcd7f.jpg",
             "iconGrayUrl": "73c978d576c134ba3b92e5e22088a4e462c4d8ec.jpg",
             "hidden": false,
-            "globalPct": 25.5
+            "globalPct": 25.4
         },
         {
             "apiName": "ACH_KILLS_2",
@@ -278,7 +278,7 @@
             "iconUrl": "95bf2bf365f9145c09c7ad04b52621da2c50243e.jpg",
             "iconGrayUrl": "4a1b1b1575c25448c8eb216366ef9885ff21bfc8.jpg",
             "hidden": false,
-            "globalPct": 22.6
+            "globalPct": 22.5
         },
         {
             "apiName": "ACH_BOSS_HEART",
@@ -322,7 +322,7 @@
             "iconUrl": "55e6565f2a6ac643eb5c575b6434747c5cc0203b.jpg",
             "iconGrayUrl": "a5babe18e69d7b451c750fa4d3714d7931ec9b04.jpg",
             "hidden": false,
-            "globalPct": 17.8
+            "globalPct": 17.7
         },
         {
             "apiName": "ACH_HARDMODE_COMPLETE",
@@ -366,7 +366,7 @@
             "iconUrl": "bf3aeb2b53a7cfadb9106d4c9f9c075d7ce5ff04.jpg",
             "iconGrayUrl": "543b583850c4690e098b9874058cf23dbcd59ef2.jpg",
             "hidden": false,
-            "globalPct": 6.3
+            "globalPct": 6.2
         },
         {
             "apiName": "ACH_SKILLS",
@@ -399,7 +399,7 @@
             "iconUrl": "13cd34b0ec27c12a25f3019740a18067572b1240.jpg",
             "iconGrayUrl": "1e4b6060450fbb664729de87ca83a5f00e533a09.jpg",
             "hidden": true,
-            "globalPct": 55.7
+            "globalPct": 55.6
         }
     ],
     "playtimeForever": 410,
@@ -424,7 +424,7 @@
             "unlockedAt": "2018-08-26T16:40:46.000Z",
             "iconUrl": "12ec4eebccb0cac84f6ad8a0030faa066c0e2835.jpg",
             "iconGrayUrl": "1a3298ce8ee28ffaaf9080730a32dcd3b9ac9500.jpg",
-            "globalPct": 53.9
+            "globalPct": 53.8
         },
         {
             "apiName": "ACH_ADD_MILLENIA",
@@ -442,7 +442,7 @@
             "unlockedAt": "2015-09-12T13:52:19.000Z",
             "iconUrl": "13cd34b0ec27c12a25f3019740a18067572b1240.jpg",
             "iconGrayUrl": "1e4b6060450fbb664729de87ca83a5f00e533a09.jpg",
-            "globalPct": 55.7
+            "globalPct": 55.6
         },
         {
             "apiName": "ACH_ESCORT_ELENA",

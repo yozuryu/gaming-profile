@@ -91,7 +91,7 @@
             "iconUrl": "b2b9ca1a8fc7447608c81f1b36ce02b6f4d7adbd.jpg",
             "iconGrayUrl": "b9883abad45d5b5ebb24d11ae3bb7728fad4c822.jpg",
             "hidden": false,
-            "globalPct": 32.2
+            "globalPct": 32.1
         },
         {
             "apiName": "BIOME_REACHED_PRISONDEPTH",
@@ -124,7 +124,7 @@
             "iconUrl": "d83a5abc11563ffdf1c637ba17db372720d4a497.jpg",
             "iconGrayUrl": "e5bc6de8c8f38222cb9a472a7ba999c1ce3b1c9e.jpg",
             "hidden": false,
-            "globalPct": 64.9
+            "globalPct": 64.8
         },
         {
             "apiName": "FEAT_KILLWITH_ELEVATOR",
@@ -201,7 +201,7 @@
             "iconUrl": "7defcc0b376a6230e3f9fe1b095dd2a41903b5e8.jpg",
             "iconGrayUrl": "1f86349e23ec4eaa37f0f6500e1d1516821b1ca0.jpg",
             "hidden": false,
-            "globalPct": 25.7
+            "globalPct": 25.6
         },
         {
             "apiName": "FIGHT_BEAT_BEHEMOTH_NODAMAGE",
@@ -454,7 +454,7 @@
             "iconUrl": "217d776600011a0c2d29fea974f43df0b362ec78.jpg",
             "iconGrayUrl": "1450cbc42b637461197eee1f5d8c35b811f21aa3.jpg",
             "hidden": true,
-            "globalPct": 41.3
+            "globalPct": 41.2
         },
         {
             "apiName": "EXPLO_GETBOSSRUNE_SECOND",
@@ -1202,7 +1202,7 @@
             "iconUrl": "1e66316277c961f3a61812dfce92a547986946b7.jpg",
             "iconGrayUrl": "cee9cac435e1e9c569da32f1e9bca1f10d514535.jpg",
             "hidden": false,
-            "globalPct": 21.8
+            "globalPct": 21.9
         },
         {
             "apiName": "BIOME_REACHED_PCASTLE",
@@ -1279,7 +1279,7 @@
             "iconUrl": "b8fa7241d6e2f1f319cb1d7d82db4794756e125c.jpg",
             "iconGrayUrl": "b0a356d9ae52fe2b1c4027c3af5280e9234536e2.jpg",
             "hidden": true,
-            "globalPct": 5.5
+            "globalPct": 5.6
         },
         {
             "apiName": "FIGHT_BEAT_DOOKU_NODAMAGE",
