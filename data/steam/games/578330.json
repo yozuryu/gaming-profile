@@ -25,7 +25,7 @@
             "iconUrl": "13b422b8f5537ce458f91a37efd018a6a3d63923.jpg",
             "iconGrayUrl": "23e266983abce9c823e0cc6b4f2718851fd79c80.jpg",
             "hidden": false,
-            "globalPct": 59.4
+            "globalPct": 59.5
         },
         {
             "apiName": "COMPLETE_STORYEVENT3",
@@ -47,7 +47,7 @@
             "iconUrl": "faae8d197a5c285bdf76820ed425043807a5353a.jpg",
             "iconGrayUrl": "78dcd1fc0bbd31cc5c894ac2db0bd331a158becb.jpg",
             "hidden": false,
-            "globalPct": 42.8
+            "globalPct": 42.9
         },
         {
             "apiName": "COMPLETE_STORYEVENT5",
@@ -135,7 +135,7 @@
             "iconUrl": "3faba263ddfd88f18c13145af6a06b2fb15edafd.jpg",
             "iconGrayUrl": "69d9a97e3717138317bd6dad840b948102907c88.jpg",
             "hidden": false,
-            "globalPct": 26.8
+            "globalPct": 26.9
         },
         {
             "apiName": "COMPLETE_STORYEVENT13",
@@ -146,7 +146,7 @@
             "iconUrl": "c4a8836d775ff9e075559f3f98ccb10f18b619f4.jpg",
             "iconGrayUrl": "f2ad3448156be0842b46a38b1ebb8f63d98e77f2.jpg",
             "hidden": false,
-            "globalPct": 25.6
+            "globalPct": 25.7
         },
         {
             "apiName": "COMPLETE_STORYEVENT14",
@@ -190,7 +190,7 @@
             "iconUrl": "39a07e55f71a925b55a92272dfb6309e8a6143ca.jpg",
             "iconGrayUrl": "be4cf0e4883fd0161ff13cdb8e92fb300cb5d323.jpg",
             "hidden": false,
-            "globalPct": 6.1
+            "globalPct": 6.2
         },
         {
             "apiName": "ALL_POLICE_CHALLENGES",
@@ -443,7 +443,7 @@
             "iconUrl": "d9ed6b2a6213f17d22be740f5e817973ed93d9e2.jpg",
             "iconGrayUrl": "c500fdd4c93d5397e2686d88d75aa9f234825be8.jpg",
             "hidden": false,
-            "globalPct": 35.8
+            "globalPct": 35.9
         },
         {
             "apiName": "REX_DRIVES_LAWNMOWER",
@@ -547,7 +547,7 @@
             "unlockedAt": "2025-10-18T08:08:31.000Z",
             "iconUrl": "13b422b8f5537ce458f91a37efd018a6a3d63923.jpg",
             "iconGrayUrl": "23e266983abce9c823e0cc6b4f2718851fd79c80.jpg",
-            "globalPct": 59.4
+            "globalPct": 59.5
         },
         {
             "apiName": "COMPLETE_STORYEVENT1",
@@ -592,7 +592,7 @@
             "unlockedAt": null,
             "iconUrl": "faae8d197a5c285bdf76820ed425043807a5353a.jpg",
             "iconGrayUrl": "78dcd1fc0bbd31cc5c894ac2db0bd331a158becb.jpg",
-            "globalPct": 42.8
+            "globalPct": 42.9
         }
     ]
 }

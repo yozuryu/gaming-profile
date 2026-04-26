@@ -28478,7 +28478,7 @@
                     "unlockedAt": "2025-10-18T08:08:31.000Z",
                     "iconUrl": "13b422b8f5537ce458f91a37efd018a6a3d63923.jpg",
                     "iconGrayUrl": "23e266983abce9c823e0cc6b4f2718851fd79c80.jpg",
-                    "globalPct": 59.4
+                    "globalPct": 59.5
                 },
                 {
                     "apiName": "COMPLETE_STORYEVENT1",
@@ -28523,7 +28523,7 @@
                     "unlockedAt": null,
                     "iconUrl": "faae8d197a5c285bdf76820ed425043807a5353a.jpg",
                     "iconGrayUrl": "78dcd1fc0bbd31cc5c894ac2db0bd331a158becb.jpg",
-                    "globalPct": 42.8
+                    "globalPct": 42.9
                 }
             ]
         },
@@ -39350,14 +39350,23 @@
             "appId": 2486820,
             "hasAchievements": true,
             "total": 44,
-            "unlocked": 6,
+            "unlocked": 7,
             "gameName": "Sonic Racing: CrossWorlds",
-            "playtimeForever": 231,
-            "lastPlayedTs": "2026-03-10T13:58:41.000Z",
+            "playtimeForever": 298,
+            "lastPlayedTs": "2026-04-26T13:04:31.000Z",
             "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/2486820/b1ae28acb49215b4d5d94ecc752d377500c44057.jpg",
-            "lastUnlockedAt": "2026-03-10T13:57:16.000Z",
-            "lastUnlockName": "Rival Buster",
+            "lastUnlockedAt": "2026-04-26T13:03:01.000Z",
+            "lastUnlockName": "Fully Licensed",
             "preview": [
+                {
+                    "apiName": "ACH_TERRA_059",
+                    "displayName": "Fully Licensed",
+                    "unlocked": true,
+                    "unlockedAt": "2026-04-26T13:03:01.000Z",
+                    "iconUrl": "83dc4d3559c34a919e1ca834f626f6d1ff6507eb.jpg",
+                    "iconGrayUrl": "2cde4d41f0138dd6ffc10818911e81e9b40131ab.jpg",
+                    "globalPct": 62.9
+                },
                 {
                     "apiName": "ACH_TERRA_012",
                     "displayName": "Rival Buster",
@@ -39365,7 +39374,7 @@
                     "unlockedAt": "2026-03-10T13:57:16.000Z",
                     "iconUrl": "3d152ea3cdf431cc0783f02cab3b88ce333e988a.jpg",
                     "iconGrayUrl": "2cde4d41f0138dd6ffc10818911e81e9b40131ab.jpg",
-                    "globalPct": 58.7
+                    "globalPct": 58.6
                 },
                 {
                     "apiName": "ACH_TERRA_013",
@@ -39402,15 +39411,6 @@
                     "iconUrl": "3d152ea3cdf431cc0783f02cab3b88ce333e988a.jpg",
                     "iconGrayUrl": "2cde4d41f0138dd6ffc10818911e81e9b40131ab.jpg",
                     "globalPct": 74.1
-                },
-                {
-                    "apiName": "ACH_TERRA_011",
-                    "displayName": "Grand Prix Champion",
-                    "unlocked": true,
-                    "unlockedAt": "2026-02-27T12:21:00.000Z",
-                    "iconUrl": "3d152ea3cdf431cc0783f02cab3b88ce333e988a.jpg",
-                    "iconGrayUrl": "2cde4d41f0138dd6ffc10818911e81e9b40131ab.jpg",
-                    "globalPct": 88.1
                 }
             ]
         },
