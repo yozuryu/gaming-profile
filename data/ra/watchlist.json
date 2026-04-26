@@ -1,5 +1,5 @@
 {
-    "total": 665,
+    "total": 673,
     "results": [
         {
             "id": 27,
@@ -1127,6 +1127,24 @@
             "achievementsPublished": 125
         },
         {
+            "id": 2688,
+            "title": "Ape Escape 2",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/069063.png",
+            "pointsTotal": 843,
+            "achievementsPublished": 126
+        },
+        {
+            "id": 2689,
+            "title": "Ape Escape 3",
+            "consoleId": 21,
+            "consoleName": "PlayStation 2",
+            "imageIcon": "/Images/069853.png",
+            "pointsTotal": 1112,
+            "achievementsPublished": 145
+        },
+        {
             "id": 2698,
             "title": "Clock Tower 3",
             "consoleId": 21,
@@ -1701,6 +1719,24 @@
             "imageIcon": "/Images/127402.png",
             "pointsTotal": 1205,
             "achievementsPublished": 74
+        },
+        {
+            "id": 3512,
+            "title": "Ape Escape Academy",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/102908.png",
+            "pointsTotal": 339,
+            "achievementsPublished": 42
+        },
+        {
+            "id": 3514,
+            "title": "Ape Escape: On the Loose",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/100514.png",
+            "pointsTotal": 820,
+            "achievementsPublished": 93
         },
         {
             "id": 3515,
@@ -3305,6 +3341,15 @@
             "achievementsPublished": 92
         },
         {
+            "id": 11258,
+            "title": "Chrono Cross",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/121514.png",
+            "pointsTotal": 975,
+            "achievementsPublished": 138
+        },
+        {
             "id": 11262,
             "title": "Mega Man Legends 2",
             "consoleId": 12,
@@ -3420,6 +3465,15 @@
             "imageIcon": "/Images/107572.png",
             "pointsTotal": 1250,
             "achievementsPublished": 160
+        },
+        {
+            "id": 11283,
+            "title": "Ape Escape",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/061127.png",
+            "pointsTotal": 600,
+            "achievementsPublished": 68
         },
         {
             "id": 11288,
@@ -3908,6 +3962,15 @@
             "achievementsPublished": 71
         },
         {
+            "id": 13049,
+            "title": "Chrono Trigger",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/051476.png",
+            "pointsTotal": 974,
+            "achievementsPublished": 101
+        },
+        {
             "id": 13183,
             "title": "Chocobo's Dungeon 2",
             "consoleId": 12,
@@ -4203,6 +4266,15 @@
             "imageIcon": "/Images/112416.png",
             "pointsTotal": 1051,
             "achievementsPublished": 90
+        },
+        {
+            "id": 14836,
+            "title": "Animal Crossing: Wild World [Subset - Villager Pictures]",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/122698.png",
+            "pointsTotal": 720,
+            "achievementsPublished": 144
         },
         {
             "id": 14837,
