@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-26T11:45:35.946Z"
+        "extractionTimestamp": "2026-04-26T13:18:08.580Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "🗺️: Nanai | Ryu Lv.8 | 🐲: 0/9 | 🎣: 0/5 | 🐯: 0/4 |",
+        "richPresenceMsg": "🗺️: Winlan Castle Basement | Nina Lv.5 | 🐲: 0/9 | 🎣: 0/5 | 🐯: 0/4 |",
         "lastGameId": 449,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1788,
+        "totalPoints": 1793,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6451,
+        "totalTruePoints": 6457,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "🗺️: Nanai | Ryu Lv.8 | 🐲: 0/9 | 🎣: 0/5 | 🐯: 0/4 |",
-        "richPresenceMsgDate": "2026-04-26 08:49:54",
+        "richPresenceMsg": "🗺️: Winlan Castle Basement | Nina Lv.5 | 🐲: 0/9 | 🎣: 0/5 | 🐯: 0/4 |",
+        "richPresenceMsgDate": "2026-04-26 13:17:45",
         "lastGameId": 449,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1788,
+        "totalPoints": 1793,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6451,
+        "totalTruePoints": 6457,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 51360,
+        "rank": 51286,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 141310,
+        "totalRanked": 141318,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1788,
+        "points": 1793,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -134,14 +134,14 @@
             "imageTitle": "/Images/002114.png",
             "imageIngame": "/Images/051037.png",
             "imageBoxArt": "/Images/063501.png",
-            "lastPlayed": "2026-04-26 08:49:54",
+            "lastPlayed": "2026-04-26 13:17:45",
             "achievementsTotal": 59,
             "numPossibleAchievements": 59,
             "possibleScore": 605,
-            "numAchieved": 2,
-            "scoreAchieved": 10,
-            "numAchievedHardcore": 2,
-            "scoreAchievedHardcore": 10
+            "numAchieved": 3,
+            "scoreAchieved": 15,
+            "numAchievedHardcore": 3,
+            "scoreAchievedHardcore": 15
         },
         {
             "gameId": 319,
@@ -407,9 +407,9 @@
                 "consoleId": 3,
                 "consoleName": "SNES/Super Famicom",
                 "maxPossible": 59,
-                "numAwarded": 2,
-                "numAwardedHardcore": 2,
-                "mostRecentAwardedDate": "2026-04-25T15:29:19+00:00",
+                "numAwarded": 3,
+                "numAwardedHardcore": 3,
+                "mostRecentAwardedDate": "2026-04-26T12:57:28+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -1079,14 +1079,14 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-25 15:29:19",
+        "date": "2026-04-26 12:57:28",
         "hardcoreMode": true,
-        "achievementId": 17735,
-        "title": "The Frog King",
-        "description": "Defeat the frog at Camlon castle",
-        "badgeName": "248284",
+        "achievementId": 17736,
+        "title": "The Fallen Knight",
+        "description": "Defeat the knight at Gaia palace",
+        "badgeName": "248282",
         "points": 5,
-        "trueRatio": 5,
+        "trueRatio": 6,
         "type": "progression",
         "author": "Altomar",
         "authorUlid": "019346YCAQ6QSZFRH5JA2Z3M9P",
@@ -1094,8 +1094,8 @@
         "gameIcon": "/Images/105046.png",
         "gameId": 449,
         "consoleName": "SNES/Super Famicom",
-        "cumulScore": 702,
-        "badgeUrl": "/Badge/248284.png",
+        "cumulScore": 707,
+        "badgeUrl": "/Badge/248282.png",
         "gameUrl": "/game/449"
     },
     "mostRecentGame": {
@@ -1107,15 +1107,15 @@
         "imageTitle": "/Images/002114.png",
         "imageIngame": "/Images/051037.png",
         "imageBoxArt": "/Images/063501.png",
-        "lastPlayed": "2026-04-26 08:49:54",
+        "lastPlayed": "2026-04-26 13:17:45",
         "achievementsTotal": 59,
         "numPossibleAchievements": 59,
         "possibleScore": 605,
-        "numAchieved": 2,
-        "scoreAchieved": 10,
-        "numAchievedHardcore": 2,
-        "scoreAchievedHardcore": 10
+        "numAchieved": 3,
+        "scoreAchieved": 15,
+        "numAchievedHardcore": 3,
+        "scoreAchievedHardcore": 15
     },
-    "points7Days": 30,
-    "points30Days": 468
+    "points7Days": 35,
+    "points30Days": 473
 }
