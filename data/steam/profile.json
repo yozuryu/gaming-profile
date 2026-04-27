@@ -1,20 +1,20 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-27T11:55:32.223Z"
+        "extractionTimestamp": "2026-04-27T14:22:28.821Z"
     },
     "profile": {
         "steamId": "76561198188939413",
         "displayName": "Yozuryu",
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
-        "status": 0,
+        "status": 3,
         "lastOnline": "2026-04-26T16:30:18.000Z",
         "countryCode": "ID"
     },
     "stats": {
         "totalGames": 1252,
-        "totalPlaytimeMin": 345917,
-        "totalPlaytimeHrs": 5765,
+        "totalPlaytimeMin": 345973,
+        "totalPlaytimeHrs": 5766,
         "gamesWithPlaytime": 815,
         "totalAchievements": 9975,
         "unlockedAchievements": 2790,
@@ -27,11 +27,11 @@
         {
             "appId": 2486820,
             "name": "Sonic Racing: CrossWorlds",
-            "playtime2Weeks": 66,
-            "playtimeForever": 298,
+            "playtime2Weeks": 122,
+            "playtimeForever": 354,
             "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/2486820/b1ae28acb49215b4d5d94ecc752d377500c44057.jpg",
             "storeUrl": "https://store.steampowered.com/app/2486820",
-            "lastPlayedTs": "2026-04-26T13:04:31.000Z",
+            "lastPlayedTs": "2026-04-27T13:28:23.000Z",
             "achUnlocked": 7,
             "achTotal": 44
         },
@@ -50,11 +50,11 @@
     "mostRecentGame": {
         "appId": 2486820,
         "name": "Sonic Racing: CrossWorlds",
-        "playtime2Weeks": 66,
-        "playtimeForever": 298,
+        "playtime2Weeks": 122,
+        "playtimeForever": 354,
         "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/2486820/b1ae28acb49215b4d5d94ecc752d377500c44057.jpg",
         "storeUrl": "https://store.steampowered.com/app/2486820",
-        "lastPlayedTs": "2026-04-26T13:04:31.000Z"
+        "lastPlayedTs": "2026-04-27T13:28:23.000Z"
     },
     "mostRecentUnlock": {
         "appId": 2486820,
