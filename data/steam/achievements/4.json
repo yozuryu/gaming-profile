@@ -799,26 +799,6 @@
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/2001120/a3ccf0b121f44e013ddea011749c99754854ca94.jpg",
             "unlockedAt": "2025-05-01T13:38:18.000Z",
             "globalPct": 17.4
-        },
-        {
-            "appId": 1903340,
-            "gameName": "Clair Obscur: Expedition 33",
-            "apiName": "PAINT_CAGE",
-            "displayName": "Paint Cage",
-            "description": "Break a Paint Cage.",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/2f734192fa32fdaca9d13dfbbc8d1c549bce6036.jpg",
-            "unlockedAt": "2025-04-28T15:23:01.000Z",
-            "globalPct": 76.7
-        },
-        {
-            "appId": 1903340,
-            "gameName": "Clair Obscur: Expedition 33",
-            "apiName": "GUSTAVE_OVERCHARGE",
-            "displayName": "Overcharge",
-            "description": "With Gustave, use a fully charged Overcharge that Breaks an enemy.",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/c4fe576da5fcfe08c7ca9921f3a725c492d98248.jpg",
-            "unlockedAt": "2025-04-28T14:25:39.000Z",
-            "globalPct": 81.6
         }
     ]
 }
