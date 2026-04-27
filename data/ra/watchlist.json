@@ -1,5 +1,5 @@
 {
-    "total": 676,
+    "total": 682,
     "results": [
         {
             "id": 27,
@@ -623,6 +623,15 @@
             "achievementsPublished": 0
         },
         {
+            "id": 1260,
+            "title": "Tetris 2",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/045684.png",
+            "pointsTotal": 290,
+            "achievementsPublished": 23
+        },
+        {
             "id": 1275,
             "title": "Fatal Frame",
             "consoleId": 21,
@@ -801,6 +810,15 @@
             "imageIcon": "/Images/105859.png",
             "pointsTotal": 300,
             "achievementsPublished": 19
+        },
+        {
+            "id": 2024,
+            "title": "Tetris 2",
+            "consoleId": 7,
+            "consoleName": "NES/Famicom",
+            "imageIcon": "/Images/100855.png",
+            "pointsTotal": 395,
+            "achievementsPublished": 34
         },
         {
             "id": 2117,
@@ -1431,6 +1449,15 @@
             "imageIcon": "/Images/063856.png",
             "pointsTotal": 1555,
             "achievementsPublished": 159
+        },
+        {
+            "id": 3145,
+            "title": "Tetris Plus",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/027014.png",
+            "pointsTotal": 614,
+            "achievementsPublished": 31
         },
         {
             "id": 3155,
@@ -2369,6 +2396,15 @@
             "achievementsPublished": 44
         },
         {
+            "id": 4939,
+            "title": "Tetris DX",
+            "consoleId": 6,
+            "consoleName": "Game Boy Color",
+            "imageIcon": "/Images/109627.png",
+            "pointsTotal": 510,
+            "achievementsPublished": 39
+        },
+        {
             "id": 4946,
             "title": "Bravely Second: End Layer",
             "consoleId": 62,
@@ -2421,6 +2457,15 @@
             "imageIcon": "/Images/036497.png",
             "pointsTotal": 618,
             "achievementsPublished": 90
+        },
+        {
+            "id": 5075,
+            "title": "Tetris Plus",
+            "consoleId": 4,
+            "consoleName": "Game Boy",
+            "imageIcon": "/Images/098373.png",
+            "pointsTotal": 360,
+            "achievementsPublished": 33
         },
         {
             "id": 5111,
@@ -3024,6 +3069,15 @@
             "imageIcon": "/Images/038156.png",
             "pointsTotal": 710,
             "achievementsPublished": 85
+        },
+        {
+            "id": 9878,
+            "title": "Tetris DS",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/059744.png",
+            "pointsTotal": 752,
+            "achievementsPublished": 102
         },
         {
             "id": 9880,
