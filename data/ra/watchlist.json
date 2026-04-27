@@ -1,5 +1,5 @@
 {
-    "total": 673,
+    "total": 676,
     "results": [
         {
             "id": 27,
@@ -234,6 +234,24 @@
             "imageIcon": "/Images/008647.png",
             "pointsTotal": 460,
             "achievementsPublished": 87
+        },
+        {
+            "id": 503,
+            "title": "Tetris Worlds",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/109837.png",
+            "pointsTotal": 273,
+            "achievementsPublished": 35
+        },
+        {
+            "id": 508,
+            "title": "Tetris",
+            "consoleId": 4,
+            "consoleName": "Game Boy",
+            "imageIcon": "/Images/109629.png",
+            "pointsTotal": 177,
+            "achievementsPublished": 13
         },
         {
             "id": 515,
@@ -3924,6 +3942,15 @@
             "imageIcon": "/Images/111387.png",
             "pointsTotal": 189,
             "achievementsPublished": 39
+        },
+        {
+            "id": 12798,
+            "title": "Tetris",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/069977.png",
+            "pointsTotal": 300,
+            "achievementsPublished": 36
         },
         {
             "id": 12826,
