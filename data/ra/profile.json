@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-28T06:33:50.563Z"
+        "extractionTimestamp": "2026-04-28T09:27:14.031Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "2,300🏆 0-1🚩 3❤️ 13⚟ left",
+        "richPresenceMsg": "Reviewing scorecard after a stage attempt 5,897🏆 1-0🚩 1❤️ 0⚟ left",
         "lastGameId": 2021,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1818,
+        "totalPoints": 1833,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6485,
+        "totalTruePoints": 6507,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "2,300🏆 0-1🚩 3❤️ 13⚟ left",
-        "richPresenceMsgDate": "2026-04-28 02:17:50",
+        "richPresenceMsg": "Reviewing scorecard after a stage attempt 5,897🏆 1-0🚩 1❤️ 0⚟ left",
+        "richPresenceMsgDate": "2026-04-28 08:07:01",
         "lastGameId": 2021,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1818,
+        "totalPoints": 1833,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6485,
+        "totalTruePoints": 6507,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 50920,
+        "rank": 50639,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 141607,
+        "totalRanked": 141617,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1818,
+        "points": 1833,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -134,14 +134,14 @@
             "imageTitle": "/Images/077874.png",
             "imageIngame": "/Images/077875.png",
             "imageBoxArt": "/Images/013976.png",
-            "lastPlayed": "2026-04-28 02:17:50",
+            "lastPlayed": "2026-04-28 08:07:01",
             "achievementsTotal": 34,
             "numPossibleAchievements": 34,
             "possibleScore": 340,
-            "numAchieved": 6,
-            "scoreAchieved": 20,
-            "numAchievedHardcore": 6,
-            "scoreAchievedHardcore": 20
+            "numAchieved": 9,
+            "scoreAchieved": 35,
+            "numAchievedHardcore": 9,
+            "scoreAchievedHardcore": 35
         },
         {
             "gameId": 449,
@@ -407,9 +407,9 @@
                 "consoleId": 7,
                 "consoleName": "NES/Famicom",
                 "maxPossible": 34,
-                "numAwarded": 6,
-                "numAwardedHardcore": 6,
-                "mostRecentAwardedDate": "2026-04-28T02:17:26+00:00",
+                "numAwarded": 9,
+                "numAwardedHardcore": 9,
+                "mostRecentAwardedDate": "2026-04-28T08:07:01+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -1105,14 +1105,14 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-28 02:17:26",
+        "date": "2026-04-28 08:07:01",
         "hardcoreMode": true,
-        "achievementId": 336903,
-        "title": "Back-to-Back Tetrises",
-        "description": "Clear two Tetrises in a row in the same stage.  Doesn't need to be from two consecutive pieces.",
-        "badgeName": "381076",
+        "achievementId": 336910,
+        "title": "Clear 1-0+",
+        "description": "Clear Round 1, Stage 0-or-higher.",
+        "badgeName": "399406",
         "points": 5,
-        "trueRatio": 7,
+        "trueRatio": 8,
         "type": null,
         "author": "clymax",
         "authorUlid": "01GTB4E4772RYPYCHHK6Z5Y6TX",
@@ -1120,8 +1120,8 @@
         "gameIcon": "/Images/077516.png",
         "gameId": 2021,
         "consoleName": "NES/Famicom",
-        "cumulScore": 732,
-        "badgeUrl": "/Badge/381076.png",
+        "cumulScore": 747,
+        "badgeUrl": "/Badge/399406.png",
         "gameUrl": "/game/2021"
     },
     "mostRecentGame": {
@@ -1133,15 +1133,15 @@
         "imageTitle": "/Images/077874.png",
         "imageIngame": "/Images/077875.png",
         "imageBoxArt": "/Images/013976.png",
-        "lastPlayed": "2026-04-28 02:17:50",
+        "lastPlayed": "2026-04-28 08:07:01",
         "achievementsTotal": 34,
         "numPossibleAchievements": 34,
         "possibleScore": 340,
-        "numAchieved": 6,
-        "scoreAchieved": 20,
-        "numAchievedHardcore": 6,
-        "scoreAchievedHardcore": 20
+        "numAchieved": 9,
+        "scoreAchieved": 35,
+        "numAchievedHardcore": 9,
+        "scoreAchievedHardcore": 35
     },
-    "points7Days": 50,
-    "points30Days": 456
+    "points7Days": 65,
+    "points30Days": 471
 }
