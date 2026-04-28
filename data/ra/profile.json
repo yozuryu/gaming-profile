@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-04-28T14:25:58.376Z"
+        "extractionTimestamp": "2026-04-28T16:56:57.123Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "0🏆 0-0🚩 3❤️ 18⚟ left",
-        "lastGameId": 2021,
+        "richPresenceMsg": "Playing Jade Cocoon: Story of the Tamamayu",
+        "lastGameId": 11385,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1833,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "0🏆 0-0🚩 3❤️ 18⚟ left",
-        "richPresenceMsgDate": "2026-04-28 12:28:09",
-        "lastGameId": 2021,
+        "richPresenceMsg": "Playing Jade Cocoon: Story of the Tamamayu",
+        "richPresenceMsgDate": "2026-04-28 15:39:57",
+        "lastGameId": 11385,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1833,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 50642,
+        "rank": 50650,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 141640,
+        "totalRanked": 141652,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -126,6 +126,42 @@
     },
     "recentlyPlayedGames": [
         {
+            "gameId": 11385,
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "title": "Jade Cocoon: Story of the Tamamayu",
+            "imageIcon": "/Images/113111.png",
+            "imageTitle": "/Images/033163.png",
+            "imageIngame": "/Images/033164.png",
+            "imageBoxArt": "/Images/065259.png",
+            "lastPlayed": "2026-04-28 15:39:57",
+            "achievementsTotal": 19,
+            "numPossibleAchievements": 19,
+            "possibleScore": 295,
+            "numAchieved": 0,
+            "scoreAchieved": 0,
+            "numAchievedHardcore": 0,
+            "scoreAchievedHardcore": 0
+        },
+        {
+            "gameId": 449,
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "title": "Breath of Fire",
+            "imageIcon": "/Images/105046.png",
+            "imageTitle": "/Images/002114.png",
+            "imageIngame": "/Images/051037.png",
+            "imageBoxArt": "/Images/063501.png",
+            "lastPlayed": "2026-04-28 15:23:14",
+            "achievementsTotal": 59,
+            "numPossibleAchievements": 59,
+            "possibleScore": 605,
+            "numAchieved": 3,
+            "scoreAchieved": 15,
+            "numAchievedHardcore": 3,
+            "scoreAchievedHardcore": 15
+        },
+        {
             "gameId": 2021,
             "consoleId": 7,
             "consoleName": "NES/Famicom",
@@ -142,24 +178,6 @@
             "scoreAchieved": 35,
             "numAchievedHardcore": 9,
             "scoreAchievedHardcore": 35
-        },
-        {
-            "gameId": 449,
-            "consoleId": 3,
-            "consoleName": "SNES/Super Famicom",
-            "title": "Breath of Fire",
-            "imageIcon": "/Images/105046.png",
-            "imageTitle": "/Images/002114.png",
-            "imageIngame": "/Images/051037.png",
-            "imageBoxArt": "/Images/063501.png",
-            "lastPlayed": "2026-04-27 14:42:28",
-            "achievementsTotal": 59,
-            "numPossibleAchievements": 59,
-            "possibleScore": 605,
-            "numAchieved": 3,
-            "scoreAchieved": 15,
-            "numAchievedHardcore": 3,
-            "scoreAchievedHardcore": 15
         },
         {
             "gameId": 5137,
@@ -376,24 +394,6 @@
             "scoreAchieved": 15,
             "numAchievedHardcore": 4,
             "scoreAchievedHardcore": 15
-        },
-        {
-            "gameId": 17166,
-            "consoleId": 12,
-            "consoleName": "PlayStation",
-            "title": "...Iru!",
-            "imageIcon": "/Images/103338.png",
-            "imageTitle": "/Images/053760.png",
-            "imageIngame": "/Images/053761.png",
-            "imageBoxArt": "/Images/050838.png",
-            "lastPlayed": "2026-04-19 14:09:02",
-            "achievementsTotal": 28,
-            "numPossibleAchievements": 28,
-            "possibleScore": 151,
-            "numAchieved": 0,
-            "scoreAchieved": 0,
-            "numAchievedHardcore": 0,
-            "scoreAchievedHardcore": 0
         }
     ],
     "gameAwardsAndProgress": {
@@ -1125,23 +1125,23 @@
         "gameUrl": "/game/2021"
     },
     "mostRecentGame": {
-        "gameId": 2021,
-        "consoleId": 7,
-        "consoleName": "NES/Famicom",
-        "title": "Tetris (BPS)",
-        "imageIcon": "/Images/077516.png",
-        "imageTitle": "/Images/077874.png",
-        "imageIngame": "/Images/077875.png",
-        "imageBoxArt": "/Images/013976.png",
-        "lastPlayed": "2026-04-28 12:28:09",
-        "achievementsTotal": 34,
-        "numPossibleAchievements": 34,
-        "possibleScore": 340,
-        "numAchieved": 9,
-        "scoreAchieved": 35,
-        "numAchievedHardcore": 9,
-        "scoreAchievedHardcore": 35
+        "gameId": 11385,
+        "consoleId": 12,
+        "consoleName": "PlayStation",
+        "title": "Jade Cocoon: Story of the Tamamayu",
+        "imageIcon": "/Images/113111.png",
+        "imageTitle": "/Images/033163.png",
+        "imageIngame": "/Images/033164.png",
+        "imageBoxArt": "/Images/065259.png",
+        "lastPlayed": "2026-04-28 15:39:57",
+        "achievementsTotal": 19,
+        "numPossibleAchievements": 19,
+        "possibleScore": 295,
+        "numAchieved": 0,
+        "scoreAchieved": 0,
+        "numAchievedHardcore": 0,
+        "scoreAchievedHardcore": 0
     },
     "points7Days": 65,
-    "points30Days": 471
+    "points30Days": 439
 }
