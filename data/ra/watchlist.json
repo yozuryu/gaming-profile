@@ -1,5 +1,5 @@
 {
-    "total": 682,
+    "total": 687,
     "results": [
         {
             "id": 27,
@@ -596,6 +596,15 @@
             "achievementsPublished": 113
         },
         {
+            "id": 815,
+            "title": "Tetris Attack",
+            "consoleId": 3,
+            "consoleName": "SNES/Super Famicom",
+            "imageIcon": "/Images/112288.png",
+            "pointsTotal": 425,
+            "achievementsPublished": 50
+        },
+        {
             "id": 819,
             "title": "Shin Megami Tensei",
             "consoleId": 3,
@@ -603,6 +612,15 @@
             "imageIcon": "/Images/120501.png",
             "pointsTotal": 575,
             "achievementsPublished": 65
+        },
+        {
+            "id": 836,
+            "title": "The Tetris",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/036300.png",
+            "pointsTotal": 263,
+            "achievementsPublished": 20
         },
         {
             "id": 909,
@@ -810,6 +828,24 @@
             "imageIcon": "/Images/105859.png",
             "pointsTotal": 300,
             "achievementsPublished": 19
+        },
+        {
+            "id": 2021,
+            "title": "Tetris (BPS)",
+            "consoleId": 7,
+            "consoleName": "NES/Famicom",
+            "imageIcon": "/Images/077516.png",
+            "pointsTotal": 340,
+            "achievementsPublished": 34
+        },
+        {
+            "id": 2022,
+            "title": "Tetris",
+            "consoleId": 7,
+            "consoleName": "NES/Famicom",
+            "imageIcon": "/Images/064350.png",
+            "pointsTotal": 480,
+            "achievementsPublished": 37
         },
         {
             "id": 2024,
@@ -2781,6 +2817,15 @@
             "imageIcon": "/Images/092333.png",
             "pointsTotal": 2510,
             "achievementsPublished": 294
+        },
+        {
+            "id": 7040,
+            "title": "Tetris Blast",
+            "consoleId": 4,
+            "consoleName": "Game Boy",
+            "imageIcon": "/Images/043936.png",
+            "pointsTotal": 175,
+            "achievementsPublished": 23
         },
         {
             "id": 7095,
