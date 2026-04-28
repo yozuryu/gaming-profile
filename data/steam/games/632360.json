@@ -476,7 +476,7 @@
             "iconUrl": "75723ecc74d39c43f65a89f41e4af4d581d3b114.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 53.2
+            "globalPct": 53.3
         },
         {
             "apiName": "HardEliteBossKill",
@@ -597,7 +597,7 @@
             "iconUrl": "55052157013cda249a48f19e7af4dd5e4f7bfd7a.jpg",
             "iconGrayUrl": "6f5533c8ddc7add290bc7312898e6c6bd38c0ee7.jpg",
             "hidden": false,
-            "globalPct": 47.7
+            "globalPct": 47.8
         },
         {
             "apiName": "KillGoldTitanInOneCycle",
@@ -1356,7 +1356,7 @@
             "iconUrl": "5d8b6afee91d036e3ae6a43b85103abedc4d0a93.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 2.7
+            "globalPct": 2.8
         },
         {
             "apiName": "RolyPolyHitFiveAirEnemies",
@@ -1884,7 +1884,7 @@
             "iconUrl": "66f0659c71746f654540cd4a59e1c0d3380f4e19.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 1.8
+            "globalPct": 1.9
         }
     ],
     "playtimeForever": 2080,

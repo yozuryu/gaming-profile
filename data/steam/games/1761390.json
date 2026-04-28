@@ -69,7 +69,7 @@
             "iconUrl": "57e7868f1aeba09204d0cd4bd7fac6dba863cb2e.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 22
+            "globalPct": 21.9
         },
         {
             "apiName": "Achieve_C_01",
@@ -113,7 +113,7 @@
             "iconUrl": "57e7868f1aeba09204d0cd4bd7fac6dba863cb2e.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 21.5
+            "globalPct": 21.4
         },
         {
             "apiName": "Achieve_D_01",
@@ -157,7 +157,7 @@
             "iconUrl": "57e7868f1aeba09204d0cd4bd7fac6dba863cb2e.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 86.1
+            "globalPct": 86
         },
         {
             "apiName": "Achieve_E_01",
@@ -179,7 +179,7 @@
             "iconUrl": "9a2cf53265ec789be8bfc1dd76b26b326d4bc8f0.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 48.4
+            "globalPct": 48.3
         },
         {
             "apiName": "Achieve_F_00",
@@ -190,7 +190,7 @@
             "iconUrl": "57e7868f1aeba09204d0cd4bd7fac6dba863cb2e.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 71.8
+            "globalPct": 71.7
         },
         {
             "apiName": "Achieve_F_01",
@@ -223,7 +223,7 @@
             "iconUrl": "57e7868f1aeba09204d0cd4bd7fac6dba863cb2e.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 69.8
+            "globalPct": 69.7
         },
         {
             "apiName": "Achieve_G_01",
@@ -278,7 +278,7 @@
             "iconUrl": "3ecd7bc51cda1385d17470c9ae99670f275f8dd9.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 70.4
+            "globalPct": 70.3
         },
         {
             "apiName": "Achieve_H_02",
@@ -289,7 +289,7 @@
             "iconUrl": "57e7868f1aeba09204d0cd4bd7fac6dba863cb2e.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 67.8
+            "globalPct": 67.7
         },
         {
             "apiName": "Achieve_H_03",
@@ -344,7 +344,7 @@
             "iconUrl": "3ecd7bc51cda1385d17470c9ae99670f275f8dd9.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 64.8
+            "globalPct": 64.7
         },
         {
             "apiName": "Achieve_H_08",
@@ -377,7 +377,7 @@
             "iconUrl": "57e7868f1aeba09204d0cd4bd7fac6dba863cb2e.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 65.6
+            "globalPct": 65.5
         },
         {
             "apiName": "Achieve_H_11",
@@ -443,7 +443,7 @@
             "iconUrl": "3ecd7bc51cda1385d17470c9ae99670f275f8dd9.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 64.4
+            "globalPct": 64.3
         },
         {
             "apiName": "Achieve_J_02",
@@ -509,7 +509,7 @@
             "iconUrl": "57e7868f1aeba09204d0cd4bd7fac6dba863cb2e.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 67.2
+            "globalPct": 67.1
         },
         {
             "apiName": "Achieve_L_01",
@@ -597,7 +597,7 @@
             "iconUrl": "3ecd7bc51cda1385d17470c9ae99670f275f8dd9.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
             "hidden": false,
-            "globalPct": 38.5
+            "globalPct": 38.4
         }
     ],
     "playtimeForever": 299,
@@ -622,7 +622,7 @@
             "unlockedAt": "2024-04-29T05:32:02.000Z",
             "iconUrl": "57e7868f1aeba09204d0cd4bd7fac6dba863cb2e.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
-            "globalPct": 71.8
+            "globalPct": 71.7
         },
         {
             "apiName": "Achieve_L_00",
@@ -631,7 +631,7 @@
             "unlockedAt": "2024-04-28T07:01:50.000Z",
             "iconUrl": "57e7868f1aeba09204d0cd4bd7fac6dba863cb2e.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
-            "globalPct": 67.2
+            "globalPct": 67.1
         },
         {
             "apiName": "Achieve_E_02",
@@ -640,7 +640,7 @@
             "unlockedAt": "2024-04-28T06:52:21.000Z",
             "iconUrl": "9a2cf53265ec789be8bfc1dd76b26b326d4bc8f0.jpg",
             "iconGrayUrl": "7160daece7385d8cb16483d0adca604ad5affdd4.jpg",
-            "globalPct": 48.4
+            "globalPct": 48.3
         },
         {
             "apiName": "Achieve_E_01",
