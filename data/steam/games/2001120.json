@@ -36,7 +36,7 @@
             "iconUrl": "5db43e13925c4b2da5fa383dc043c51a5a78908a.jpg",
             "iconGrayUrl": "52547b57dc59f9a8109fb23066fdb1c2a8100052.jpg",
             "hidden": false,
-            "globalPct": 15.4
+            "globalPct": 15.3
         },
         {
             "apiName": "PlayerChair",
@@ -201,7 +201,7 @@
             "iconUrl": "e268b4218f6ca63e743c9dbff303b5438fa0717e.jpg",
             "iconGrayUrl": "01797b379c25d7fda1d2348cb9c08ee588bf2eb5.jpg",
             "hidden": true,
-            "globalPct": 3.3
+            "globalPct": 3.2
         },
         {
             "apiName": "ShootCardboardBox",
@@ -284,7 +284,7 @@
             "unlockedAt": null,
             "iconUrl": "5db43e13925c4b2da5fa383dc043c51a5a78908a.jpg",
             "iconGrayUrl": "52547b57dc59f9a8109fb23066fdb1c2a8100052.jpg",
-            "globalPct": 15.4
+            "globalPct": 15.3
         }
     ]
 }

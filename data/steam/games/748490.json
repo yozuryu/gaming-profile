@@ -25,7 +25,7 @@
             "iconUrl": "08fc78c58b6ff5cf1f303be037ee4d7706a7ed60.jpg",
             "iconGrayUrl": "238eb15597f39dd0ae8fdc0161615057106a846d.jpg",
             "hidden": false,
-            "globalPct": 38.7
+            "globalPct": 38.8
         },
         {
             "apiName": "TROPHY2_DECORATION",
@@ -36,7 +36,7 @@
             "iconUrl": "b820c15ff8da31a96a747b33bf042f200696e1ee.jpg",
             "iconGrayUrl": "db0cf165b20aa34b0c12e794e6808fdfa2a9745d.jpg",
             "hidden": false,
-            "globalPct": 36.2
+            "globalPct": 36.3
         },
         {
             "apiName": "TROPHY2_COMP_QUEST",
@@ -179,7 +179,7 @@
             "iconUrl": "b0e0d0a891e5cb35697219719dfeea8a56eeb4c8.jpg",
             "iconGrayUrl": "6d966fa436ca4b7a1f7e53e922e570604e0075c0.jpg",
             "hidden": false,
-            "globalPct": 65.4
+            "globalPct": 65.5
         },
         {
             "apiName": "TROPHY2_BATTLECOUNT_A",
@@ -234,7 +234,7 @@
             "iconUrl": "ab3f7a6f489a7c7d8e77d1b74884213a4cb811e1.jpg",
             "iconGrayUrl": "3558c0ca1ee0f2d98fb6b097c0a732dce1e344a0.jpg",
             "hidden": false,
-            "globalPct": 15.6
+            "globalPct": 15.7
         },
         {
             "apiName": "TROPHY2_TBONUS",
@@ -256,7 +256,7 @@
             "iconUrl": "76d1833f18867bc9237b5f65e4e95fb2a8e62d6d.jpg",
             "iconGrayUrl": "95eb0356160e02db1dbdb97465790cc7d812a07b.jpg",
             "hidden": false,
-            "globalPct": 72.7
+            "globalPct": 72.8
         },
         {
             "apiName": "TROPHY2_MASTER_LINK",
@@ -443,7 +443,7 @@
             "iconUrl": "a95dba642f9791216af49fabdb8502bb98c33c27.jpg",
             "iconGrayUrl": "45aef17b0d3e80b4d147583e313aae94eed4eb34.jpg",
             "hidden": false,
-            "globalPct": 11.5
+            "globalPct": 11.6
         },
         {
             "apiName": "TROPHY2_KIZUNA_SARA",
@@ -465,7 +465,7 @@
             "iconUrl": "8bbd53eb3457aa715a5ffbdbdc88b922c2615930.jpg",
             "iconGrayUrl": "6e7a8849e427a5c816e6b0fcbf8df90629d35d61.jpg",
             "hidden": true,
-            "globalPct": 21.8
+            "globalPct": 21.9
         },
         {
             "apiName": "TROPHY2_KIZUNA_ALFIN",
@@ -476,7 +476,7 @@
             "iconUrl": "86e8cef800e2cbab50c512880a4fd6e675ab9030.jpg",
             "iconGrayUrl": "dacfcdd2569885faece4421ff27d6b952d9c58be.jpg",
             "hidden": true,
-            "globalPct": 16.6
+            "globalPct": 16.7
         },
         {
             "apiName": "TROPHY2_SCENARIO_START",
@@ -564,7 +564,7 @@
             "iconUrl": "a4445dede09040e7a6d17d50dc07ff363104b4f1.jpg",
             "iconGrayUrl": "3dd5053766d854f273f3846fcb6b35b59f08eb00.jpg",
             "hidden": true,
-            "globalPct": 59.5
+            "globalPct": 59.6
         }
     ],
     "playtimeForever": 6615,
@@ -598,7 +598,7 @@
             "unlockedAt": "2018-03-29T19:03:12.000Z",
             "iconUrl": "ab3f7a6f489a7c7d8e77d1b74884213a4cb811e1.jpg",
             "iconGrayUrl": "3558c0ca1ee0f2d98fb6b097c0a732dce1e344a0.jpg",
-            "globalPct": 15.6
+            "globalPct": 15.7
         },
         {
             "apiName": "TROPHY2_COMP_BATTLENOTE",

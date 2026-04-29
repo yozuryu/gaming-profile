@@ -267,7 +267,7 @@
             "iconUrl": "32cdc242d9d3f06f8389e9ed555e79f4fc09d254.jpg",
             "iconGrayUrl": "08d8a0c1bae604edc7167e66bceeda6fff66c46d.jpg",
             "hidden": false,
-            "globalPct": 19.1
+            "globalPct": 19.2
         },
         {
             "apiName": "ACH_DEFEAT_NPCS",
@@ -465,7 +465,7 @@
             "iconUrl": "903815fab922c3f574064efac000443477d74079.jpg",
             "iconGrayUrl": "da6571b71b53777d90276b1615a56b0a548fed4f.jpg",
             "hidden": false,
-            "globalPct": 3.8
+            "globalPct": 3.7
         },
         {
             "apiName": "ACH_SAKI_HYPER_DEFEAT",
@@ -696,7 +696,7 @@
             "iconUrl": "a55e1652ac2f46cfaa9fc0bf7b3757efcb2a3063.jpg",
             "iconGrayUrl": "90a0673ece3d45584d460c03e6664c3cca0fe184.jpg",
             "hidden": false,
-            "globalPct": 3.7
+            "globalPct": 3.6
         },
         {
             "apiName": "ACH_ALTE_BOOM",
@@ -729,7 +729,7 @@
             "iconUrl": "ad6c390ef6483e53d9f8b48c727cefce3c656667.jpg",
             "iconGrayUrl": "4b22db0fc7ef604313de875148d66c74ff821f5b.jpg",
             "hidden": false,
-            "globalPct": 3.6
+            "globalPct": 3.5
         },
         {
             "apiName": "ACH_KYOKO_BARRIER",
@@ -1213,7 +1213,7 @@
             "iconUrl": "f82ac4efaf7b1d7c5903f7abf4fbe4edf067ceaa.jpg",
             "iconGrayUrl": "34285df5967137ef94de360e9d1395c7a8e226c0.jpg",
             "hidden": false,
-            "globalPct": 3.4
+            "globalPct": 3.3
         },
         {
             "apiName": "ACH_CCP_01",
@@ -1477,7 +1477,7 @@
             "iconUrl": "495978501ef00261760909353fbb53248f4c5477.jpg",
             "iconGrayUrl": "017d2b3fb9b4cfeac43bd8a43d9e8b588708da3f.jpg",
             "hidden": false,
-            "globalPct": 3.4
+            "globalPct": 3.3
         },
         {
             "apiName": "ACH_DLC17B_2",
@@ -1488,7 +1488,7 @@
             "iconUrl": "60eb646b91dd9ee7bc671fee166c85959e13d62a.jpg",
             "iconGrayUrl": "03f6de338f611cfb435f2602d926699e785193bd.jpg",
             "hidden": true,
-            "globalPct": 3.2
+            "globalPct": 3.1
         },
         {
             "apiName": "ACH_DLC17B_3",
@@ -1587,7 +1587,7 @@
             "iconUrl": "72f12a28aa6c4ceb6b393703e59b00aa4c4a985d.jpg",
             "iconGrayUrl": "643b721bbab4227f5ed1918c38b355c5c6844a28.jpg",
             "hidden": true,
-            "globalPct": 17.1
+            "globalPct": 17.2
         },
         {
             "apiName": "ACH_DLC19EXTRA_3",
@@ -1884,7 +1884,7 @@
             "iconUrl": "9f19128beac87736bbd8df9c0d49d9912be3600d.jpg",
             "iconGrayUrl": "01264bbfbd6de18ddaf9f7a43009c4b91c8028f8.jpg",
             "hidden": false,
-            "globalPct": 3
+            "globalPct": 2.9
         },
         {
             "apiName": "ACH_OJ21_P04",
@@ -1906,7 +1906,7 @@
             "iconUrl": "6a8db08b4490a306c60055aeabf409a06f2652a5.jpg",
             "iconGrayUrl": "4d73381faf9bf35851465a9ebff6ff175f279837.jpg",
             "hidden": false,
-            "globalPct": 3.2
+            "globalPct": 3.1
         },
         {
             "apiName": "ACH_OJ21_P06",
@@ -2566,7 +2566,7 @@
             "iconUrl": "ed03cceb69a248ccf4d151f6325bb61704f6efb7.jpg",
             "iconGrayUrl": "36f089bae8977cedf6af95904d0c9dafa99dc770.jpg",
             "hidden": true,
-            "globalPct": 2.4
+            "globalPct": 2.3
         },
         {
             "apiName": "ACH_OJ36_02",
@@ -2885,7 +2885,7 @@
             "iconUrl": "812388218b2f6917a3a858605f50dde8ff232a70.jpg",
             "iconGrayUrl": "634265f62e3798a3695d3deb82ae0c3166b6c9ec.jpg",
             "hidden": false,
-            "globalPct": 1.8
+            "globalPct": 1.7
         },
         {
             "apiName": "ACH_OJ43_C11",
@@ -3842,7 +3842,7 @@
             "iconUrl": "595aa1c3fcf4a13965bdc56e196c0dae42ca37a0.jpg",
             "iconGrayUrl": "3c91629fe43b72e5e959a10d442ae8e956e6c580.jpg",
             "hidden": false,
-            "globalPct": 0.8
+            "globalPct": 0.7
         },
         {
             "apiName": "ACH_OJ57_T04",
@@ -3897,7 +3897,7 @@
             "iconUrl": "48182717931316f2cabdcf74460588d79d4881a1.jpg",
             "iconGrayUrl": "9f25954c6cd7c66e7808cb98ee4cf782aa90cb61.jpg",
             "hidden": false,
-            "globalPct": 0.2
+            "globalPct": 0.1
         },
         {
             "apiName": "ACH_OJ59_C02",
@@ -3908,7 +3908,7 @@
             "iconUrl": "559f7f5e5cfcde23bd406bd13a11813ee838fb23.jpg",
             "iconGrayUrl": "662b9df90894a068fbc634e6b1930112e4c0c70a.jpg",
             "hidden": false,
-            "globalPct": 0.2
+            "globalPct": 0.1
         },
         {
             "apiName": "ACH_OJ59_C03",

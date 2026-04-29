@@ -157,7 +157,7 @@
             "iconUrl": "a5d02596acc2cb78f55bf93be0878452ec070f6e.jpg",
             "iconGrayUrl": "4e9072f75891847fe339725ea7952f6851dc0914.jpg",
             "hidden": false,
-            "globalPct": 0.1
+            "globalPct": 0.2
         },
         {
             "apiName": "ACH_STRUCK_BY_LIGHTNING",
@@ -289,7 +289,7 @@
             "iconUrl": "ea55ddeb0c413a74f3ffe007ca5c8970ca7671ba.jpg",
             "iconGrayUrl": "d16eced5c4e2a98121127c707d7cd55341ee9b92.jpg",
             "hidden": false,
-            "globalPct": 15
+            "globalPct": 15.1
         },
         {
             "apiName": "ACH_MELEE_KILLS",
@@ -817,7 +817,7 @@
             "iconUrl": "23feb772828e059ecfe4f7d055803e1a22d9d331.jpg",
             "iconGrayUrl": "32c820f136fef0d6e77ad561e7362077801962da.jpg",
             "hidden": false,
-            "globalPct": 3
+            "globalPct": 3.1
         },
         {
             "apiName": "ACH_EQUIP_SANDWORM",
@@ -1345,7 +1345,7 @@
             "iconUrl": "e07651e9092d2c0b3e70ed23bd839243b99a783c.jpg",
             "iconGrayUrl": "0d13884be28d6dddb6de8fc544777f8138a1b3fe.jpg",
             "hidden": true,
-            "globalPct": 0.4
+            "globalPct": 0.5
         },
         {
             "apiName": "ACH_BIOCHEMICAL_WARFARE",
@@ -1752,7 +1752,7 @@
             "iconUrl": "37eaf8754fee2b0fafa1ee353301c41c1f08ef4e.jpg",
             "iconGrayUrl": "fe7460a25cb73860fa419a7619136cbbc16e5c9f.jpg",
             "hidden": false,
-            "globalPct": 1.8
+            "globalPct": 1.9
         },
         {
             "apiName": "ACH_ROYAL_DECREE",

@@ -465,7 +465,7 @@
             "iconUrl": "7c8621f303d2d4715d6910899b223e66a3163b01.jpg",
             "iconGrayUrl": "21f457e2b38d507f366b64433a7c708245b22b7e.jpg",
             "hidden": false,
-            "globalPct": 74
+            "globalPct": 73.9
         },
         {
             "apiName": "TOWN_ADEPT",
@@ -685,7 +685,7 @@
             "iconUrl": "f54ad63e3d0654c3f2b9de2450fe65919e1349c2.jpg",
             "iconGrayUrl": "ee3b3842043e7356e64ea2a2daa5e1da601ea61b.jpg",
             "hidden": false,
-            "globalPct": 36.9
+            "globalPct": 36.8
         },
         {
             "apiName": "CHARGES_BLOODY",
@@ -960,7 +960,7 @@
             "iconUrl": "79fe47d982dc0e09e4663e7886dccb074c30b394.jpg",
             "iconGrayUrl": "b97f0079715f93ad0ccab672e600aa0d47972778.jpg",
             "hidden": false,
-            "globalPct": 50
+            "globalPct": 49.9
         },
         {
             "apiName": "BOSS_IGNIDOH",
@@ -1499,7 +1499,7 @@
             "iconUrl": "f69b9efda40c337e95125ece099a9b310348945b.jpg",
             "iconGrayUrl": "4d9f2384b8945a5a2bf26224449b2d22fdcb8b88.jpg",
             "hidden": false,
-            "globalPct": 6.9
+            "globalPct": 7
         },
         {
             "apiName": "EVENT_UNLOCK_FENNY",
@@ -1620,7 +1620,7 @@
             "iconUrl": "2d87022adc6cfa3dc25de4736048ad784b41ef01.jpg",
             "iconGrayUrl": "6758a563befe694efe3ae6065b7dd47a6a7256ca.jpg",
             "hidden": true,
-            "globalPct": 0.2
+            "globalPct": 0.3
         },
         {
             "apiName": "EVENT_FRANKY",
@@ -1656,7 +1656,7 @@
             "unlockedAt": "2023-05-22T15:16:41.000Z",
             "iconUrl": "7c8621f303d2d4715d6910899b223e66a3163b01.jpg",
             "iconGrayUrl": "21f457e2b38d507f366b64433a7c708245b22b7e.jpg",
-            "globalPct": 74
+            "globalPct": 73.9
         },
         {
             "apiName": "WARRIOR_CARDS_30",

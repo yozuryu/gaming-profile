@@ -80,7 +80,7 @@
             "iconUrl": "6340544ea022c62372f0a889bc0ec5abe46bd94d.jpg",
             "iconGrayUrl": "1e55acac110614058565cb8a4ba3aa2eaf1a2e3f.jpg",
             "hidden": false,
-            "globalPct": 70.2
+            "globalPct": 70.1
         },
         {
             "apiName": "BIOME_REACHED_CEMETERY",
@@ -333,7 +333,7 @@
             "iconUrl": "0b491a238635f66a0c312eaf0ce7f3041f527ef0.jpg",
             "iconGrayUrl": "2b509e86c6d57794d29805c48f1297d0fac1788e.jpg",
             "hidden": false,
-            "globalPct": 23.9
+            "globalPct": 23.8
         },
         {
             "apiName": "EXPLO_GETRUNE_SCORING",
@@ -476,7 +476,7 @@
             "iconUrl": "6b9bd4007fc2d4e43b929f004f5a57fbc5d2835e.jpg",
             "iconGrayUrl": "7a81002947f029566e0385343686b24cc49890d3.jpg",
             "hidden": true,
-            "globalPct": 15.1
+            "globalPct": 15
         },
         {
             "apiName": "FEAT_ENDGAME_BOSSRUNE_1",
@@ -861,7 +861,7 @@
             "iconUrl": "2854dd01996ca29935449c93b2cee578559fd5bb.jpg",
             "iconGrayUrl": "13e4d7047a6f72978d3647f192366eca039cca6c.jpg",
             "hidden": false,
-            "globalPct": 32.6
+            "globalPct": 32.7
         },
         {
             "apiName": "FIGHT_BEAT_GARDENER_NOBOUNCE",
@@ -949,7 +949,7 @@
             "iconUrl": "1aec079643aa1358a797645b946607ca73bbbea1.jpg",
             "iconGrayUrl": "e47967a73148cbbf85ab7f149baf58f77c356c45.jpg",
             "hidden": false,
-            "globalPct": 24.4
+            "globalPct": 24.5
         },
         {
             "apiName": "FEAT_COSTUME_REQUIRED",
@@ -1059,7 +1059,7 @@
             "iconUrl": "05a9742a3958d845b7c4fdcfd0bc5f19d8948c77.jpg",
             "iconGrayUrl": "7d5eab0a395c1ea4bc27e0bddc96bbc9e09a242b.jpg",
             "hidden": false,
-            "globalPct": 18.3
+            "globalPct": 18.4
         },
         {
             "apiName": "FEAT_KILL_PIRATE_CANNON",
@@ -1125,7 +1125,7 @@
             "iconUrl": "409342f362db4ea000ff039ee5a9fc9e642e7f9d.jpg",
             "iconGrayUrl": "5435233987dbac9eb1774c5ef3a4cfb4eabad4bf.jpg",
             "hidden": false,
-            "globalPct": 17.1
+            "globalPct": 17.2
         },
         {
             "apiName": "FEAT_STAPHY_KILL_STAPHY",
@@ -1224,7 +1224,7 @@
             "iconUrl": "64d0624a5f0d5eef000376524da46aae816c63f6.jpg",
             "iconGrayUrl": "f79260b718ffc034ae264b1bc5a688f6a3d0277e.jpg",
             "hidden": false,
-            "globalPct": 16.8
+            "globalPct": 16.9
         },
         {
             "apiName": "BIOME_REACHED_DOOKU",
@@ -1359,7 +1359,7 @@
             "unlockedAt": "2019-04-20T01:58:14.000Z",
             "iconUrl": "6340544ea022c62372f0a889bc0ec5abe46bd94d.jpg",
             "iconGrayUrl": "1e55acac110614058565cb8a4ba3aa2eaf1a2e3f.jpg",
-            "globalPct": 70.2
+            "globalPct": 70.1
         },
         {
             "apiName": "EXPLO_GETRUNE_SCORING",

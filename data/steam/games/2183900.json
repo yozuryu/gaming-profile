@@ -36,7 +36,7 @@
             "iconUrl": "0d6242bc33449b450fa9c7671684c423e7df872f.jpg",
             "iconGrayUrl": "eecd8bfd24ba4a8feb78c81ecc1b13e8125dd131.jpg",
             "hidden": true,
-            "globalPct": 55.7
+            "globalPct": 55.8
         },
         {
             "apiName": "STORY_ASSASSINATION",
@@ -102,7 +102,7 @@
             "iconUrl": "5f2703d1db0cac7fdaf41bf58da678b05e135b21.jpg",
             "iconGrayUrl": "42e15ee629ae5f1f5e6badb5efe74a34ffb92e53.jpg",
             "hidden": true,
-            "globalPct": 57.9
+            "globalPct": 58
         },
         {
             "apiName": "PVE_FIRESTORM",
@@ -146,7 +146,7 @@
             "iconUrl": "aaf11852d5dcbcbefdc7beed3d50cff4f10488eb.jpg",
             "iconGrayUrl": "cc8e7c2d1fb41f39dfd14fc24dae3824d46dc906.jpg",
             "hidden": true,
-            "globalPct": 53.5
+            "globalPct": 53.6
         },
         {
             "apiName": "STORY_LAST_STAND",
@@ -157,7 +157,7 @@
             "iconUrl": "7ab0c55d199d1b8fc30ed77548f47035449beea7.jpg",
             "iconGrayUrl": "d686d122d80c489aae3e288c4fa3727e65d20278.jpg",
             "hidden": true,
-            "globalPct": 52.9
+            "globalPct": 53
         },
         {
             "apiName": "STORY_FINALE",
@@ -234,7 +234,7 @@
             "iconUrl": "ebfce77fe82282b0912e67ee1cde440abb412846.jpg",
             "iconGrayUrl": "5ecf35ab270acdc257e15f714d237ce4d2e87c06.jpg",
             "hidden": false,
-            "globalPct": 21.5
+            "globalPct": 21.6
         },
         {
             "apiName": "PVE_MAX_LEVEL",
@@ -256,7 +256,7 @@
             "iconUrl": "36b6ca32db52a4341a9b61d02127dea10f42df08.jpg",
             "iconGrayUrl": "19f4612013c48a8b63dbc4c9faa409cdf698c421.jpg",
             "hidden": false,
-            "globalPct": 15.3
+            "globalPct": 15.4
         },
         {
             "apiName": "PVE_MAX_FIREARM",
@@ -267,7 +267,7 @@
             "iconUrl": "d56bd744650ed4ece7f735a0093440f6a6ed55a5.jpg",
             "iconGrayUrl": "5f83aced1f90c060c1269c9a4662d9bb14484bad.jpg",
             "hidden": false,
-            "globalPct": 17.2
+            "globalPct": 17.3
         },
         {
             "apiName": "PVE_FULL_ARMOR",
@@ -278,7 +278,7 @@
             "iconUrl": "484fc66324ebca6de3ece60b8dc6086cfb097772.jpg",
             "iconGrayUrl": "bdff013d85e8ec321475417a24b10b09e21f1529.jpg",
             "hidden": false,
-            "globalPct": 25.4
+            "globalPct": 25.5
         },
         {
             "apiName": "PVE_PICKUPS",
@@ -289,7 +289,7 @@
             "iconUrl": "7f67709fa8ede5b1196875fbed792ca4dfa854ed.jpg",
             "iconGrayUrl": "515e33a65c96f94a548eba17ed36020deddec418.jpg",
             "hidden": false,
-            "globalPct": 25.4
+            "globalPct": 25.5
         },
         {
             "apiName": "TOTAL_KILLS_SILVER",
@@ -333,7 +333,7 @@
             "iconUrl": "ef73fbb8257cd21d4b4bd1e924b336e51810ac90.jpg",
             "iconGrayUrl": "33b39ee5b448ab5a97ae310a0fbb69ed9b6f6e71.jpg",
             "hidden": false,
-            "globalPct": 13.4
+            "globalPct": 13.5
         },
         {
             "apiName": "SUPPORT_KILLS",
@@ -344,7 +344,7 @@
             "iconUrl": "4a9260db7c1d7afce7d7e7b692a56c49e59f5377.jpg",
             "iconGrayUrl": "a9c56b38459fb1d098c68c328595a2e60e625e40.jpg",
             "hidden": false,
-            "globalPct": 15.8
+            "globalPct": 15.9
         },
         {
             "apiName": "RAIDER_GROUNDPOUND",
@@ -399,7 +399,7 @@
             "iconUrl": "4b387d9abd51d00f5d8fe05c457d1c043096637f.jpg",
             "iconGrayUrl": "971d3000fbcd619edf38e7ffbb48213302fcd050.jpg",
             "hidden": false,
-            "globalPct": 25.8
+            "globalPct": 25.9
         },
         {
             "apiName": "KILL_LESSER_SOURCERER",
@@ -421,7 +421,7 @@
             "iconUrl": "c318e349638fb27a94585209c343de3fd2df97af.jpg",
             "iconGrayUrl": "0d30a4d523ffb8ddacf648dfd6eea0c88e4a03e0.jpg",
             "hidden": false,
-            "globalPct": 14.5
+            "globalPct": 14.6
         },
         {
             "apiName": "KILLS_BY_TRAPS",
@@ -443,7 +443,7 @@
             "iconUrl": "8f46ab0c4b7098b96817221a6c645e3af0752008.jpg",
             "iconGrayUrl": "9bb74e43cec4ece144be2fcdf56be9c1cc3cf9bd.jpg",
             "hidden": false,
-            "globalPct": 41.4
+            "globalPct": 41.5
         },
         {
             "apiName": "PVE_TYRANID_KILLS",
@@ -454,7 +454,7 @@
             "iconUrl": "8639c6264431a45781fe47526cf36e2ab338ce0d.jpg",
             "iconGrayUrl": "dfd9555220709bb50d88a451d74f1e76c968ba01.jpg",
             "hidden": false,
-            "globalPct": 39.2
+            "globalPct": 39.3
         },
         {
             "apiName": "PVE_CHAOS_KILLS",
@@ -596,7 +596,7 @@
             "unlockedAt": null,
             "iconUrl": "0d6242bc33449b450fa9c7671684c423e7df872f.jpg",
             "iconGrayUrl": "eecd8bfd24ba4a8feb78c81ecc1b13e8125dd131.jpg",
-            "globalPct": 55.7
+            "globalPct": 55.8
         },
         {
             "apiName": "STORY_ASSASSINATION",

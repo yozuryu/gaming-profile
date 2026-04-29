@@ -25,7 +25,7 @@
             "iconUrl": "e0150cea4966e9e1fd258d8bce049351301197e4.jpg",
             "iconGrayUrl": "4096cf7b50855353a6070830fb31510b2b268718.jpg",
             "hidden": false,
-            "globalPct": 44.9
+            "globalPct": 45
         },
         {
             "apiName": "LIMITEDFUNDS",
@@ -69,7 +69,7 @@
             "iconUrl": "a113fa5a9fdc43a4bfc3c8e9eefed7dd3d83d512.jpg",
             "iconGrayUrl": "3438f2a4df449d1e9479de8fc18c7b06547eb5e4.jpg",
             "hidden": false,
-            "globalPct": 51.2
+            "globalPct": 51.3
         },
         {
             "apiName": "CLASSIFIER",
@@ -102,7 +102,7 @@
             "iconUrl": "a7db82f9cf031d2c8650699620a141a8ec047aad.jpg",
             "iconGrayUrl": "eb69d4b2aea0c1a80eb254f240bd7983e666a269.jpg",
             "hidden": false,
-            "globalPct": 50.4
+            "globalPct": 50.5
         },
         {
             "apiName": "ALMOSTTHERE",
@@ -168,7 +168,7 @@
             "iconUrl": "3ec83fb4201e7101f1d5825ce01d23464d8371a8.jpg",
             "iconGrayUrl": "26073e4adeebc0e8861425bcc0ffe5c13fc77e41.jpg",
             "hidden": false,
-            "globalPct": 3
+            "globalPct": 3.1
         },
         {
             "apiName": "DISCOVERER",
@@ -190,7 +190,7 @@
             "iconUrl": "f5456fe4e62808ebea8744119d14493b3377c56d.jpg",
             "iconGrayUrl": "eb69d4b2aea0c1a80eb254f240bd7983e666a269.jpg",
             "hidden": false,
-            "globalPct": 46.5
+            "globalPct": 46.6
         },
         {
             "apiName": "BABELFISH",
@@ -245,7 +245,7 @@
             "iconUrl": "f47ab90c7901b9cffdd7cf42a68f9d32841f815b.jpg",
             "iconGrayUrl": "1462168952dea039a1e8a8005d628d238aff7035.jpg",
             "hidden": false,
-            "globalPct": 31.3
+            "globalPct": 31.4
         },
         {
             "apiName": "CRADLE",
@@ -316,7 +316,7 @@
             "unlockedAt": "2025-06-27T11:57:57.000Z",
             "iconUrl": "e0150cea4966e9e1fd258d8bce049351301197e4.jpg",
             "iconGrayUrl": "4096cf7b50855353a6070830fb31510b2b268718.jpg",
-            "globalPct": 44.9
+            "globalPct": 45
         },
         {
             "apiName": "NATURALIST",
@@ -361,7 +361,7 @@
             "unlockedAt": null,
             "iconUrl": "a113fa5a9fdc43a4bfc3c8e9eefed7dd3d83d512.jpg",
             "iconGrayUrl": "3438f2a4df449d1e9479de8fc18c7b06547eb5e4.jpg",
-            "globalPct": 51.2
+            "globalPct": 51.3
         }
     ]
 }

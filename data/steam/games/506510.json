@@ -14,7 +14,7 @@
             "iconUrl": "35e3dc1f0a33579a2b95c91d07e9ab58a8b49941.jpg",
             "iconGrayUrl": "59084dba89bf1a0a7ff49da2c6f2289e88233dfd.jpg",
             "hidden": false,
-            "globalPct": 41.9
+            "globalPct": 42
         },
         {
             "apiName": "reach_level_25",
@@ -80,7 +80,7 @@
             "iconUrl": "0734df16b726ba94e0a727b7a8f8f2871ba4c26e.jpg",
             "iconGrayUrl": "49d8c1955ade7f7422544e24e0c44646610981d7.jpg",
             "hidden": false,
-            "globalPct": 25.2
+            "globalPct": 25.3
         },
         {
             "apiName": "defeat_tangle_boss",
@@ -102,7 +102,7 @@
             "iconUrl": "dd6e9311f7e5892ce3d1e45e30cbc5445032b3a2.jpg",
             "iconGrayUrl": "c3d5a158bea034dc3e6adc8dc97b45fc6a50be6a.jpg",
             "hidden": false,
-            "globalPct": 52.4
+            "globalPct": 52.5
         },
         {
             "apiName": "defeat_wind_guardian",
@@ -113,7 +113,7 @@
             "iconUrl": "c6a22f500fcd0b9478fd1049b8565e5ff2869dff.jpg",
             "iconGrayUrl": "cd922dde030f4e248b67fc54e6b7cdfee8360125.jpg",
             "hidden": false,
-            "globalPct": 41.3
+            "globalPct": 41.4
         },
         {
             "apiName": "defeat_pirate_trio",
@@ -146,7 +146,7 @@
             "iconUrl": "ab81b3528fdf87d916c85de4e3d95d22c116f324.jpg",
             "iconGrayUrl": "dc30c4e18bcd89ee412ac3aa0eb3082e70763eda.jpg",
             "hidden": false,
-            "globalPct": 25
+            "globalPct": 25.1
         },
         {
             "apiName": "defeat_fire_guardian",
@@ -267,7 +267,7 @@
             "iconUrl": "ff2e011632734477e0f2e04c87bed42b70e9e803.jpg",
             "iconGrayUrl": "92ade0c331dd07fb9f7129bf93d483fbc6ca4f76.jpg",
             "hidden": false,
-            "globalPct": 18.9
+            "globalPct": 19
         },
         {
             "apiName": "dlc_find_mystic_caverns",
@@ -311,7 +311,7 @@
             "iconUrl": "3f3f666c496f7c4e1fa4595fe75bf20cc6e8acef.jpg",
             "iconGrayUrl": "533605a97048d820c7747cad24aae36df575b822.jpg",
             "hidden": false,
-            "globalPct": 17.2
+            "globalPct": 17.3
         },
         {
             "apiName": "find_hand_of_storms",
@@ -371,7 +371,7 @@
             "unlockedAt": "2017-09-23T19:06:00.000Z",
             "iconUrl": "dd6e9311f7e5892ce3d1e45e30cbc5445032b3a2.jpg",
             "iconGrayUrl": "c3d5a158bea034dc3e6adc8dc97b45fc6a50be6a.jpg",
-            "globalPct": 52.4
+            "globalPct": 52.5
         },
         {
             "apiName": "defeat_tangle_boss",
@@ -389,7 +389,7 @@
             "unlockedAt": null,
             "iconUrl": "35e3dc1f0a33579a2b95c91d07e9ab58a8b49941.jpg",
             "iconGrayUrl": "59084dba89bf1a0a7ff49da2c6f2289e88233dfd.jpg",
-            "globalPct": 41.9
+            "globalPct": 42
         },
         {
             "apiName": "reach_level_25",

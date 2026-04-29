@@ -36,7 +36,7 @@
             "iconUrl": "e0701ed70db21bfb6187537d991d7a67ab0b5927.jpg",
             "iconGrayUrl": "12184c079d4b1fa2642aec76fe42dbec1705a4f2.jpg",
             "hidden": true,
-            "globalPct": 18.3
+            "globalPct": 18.2
         },
         {
             "apiName": "NEW_ACHIEVEMENT_1_3",
@@ -91,7 +91,7 @@
             "iconUrl": "44f3af6f5e6228cea1f27926f900d1886ca5f3e7.jpg",
             "iconGrayUrl": "022311461195df82a215d6ee42a7f8c5e4c0fc95.jpg",
             "hidden": false,
-            "globalPct": 82.1
+            "globalPct": 82
         },
         {
             "apiName": "NEW_ACHIEVEMENT_1_8",
@@ -135,7 +135,7 @@
             "iconUrl": "6442aa90ae0e56cb774f9adb2eb731a5d38c1669.jpg",
             "iconGrayUrl": "6aaae9318f2fc26db9703975391a9edebff6a1f9.jpg",
             "hidden": true,
-            "globalPct": 49.3
+            "globalPct": 49.2
         },
         {
             "apiName": "NEW_ACHIEVEMENT_1_12",
@@ -157,7 +157,7 @@
             "iconUrl": "03d9596f9266f4e1c7698f7bad60da063806e1d7.jpg",
             "iconGrayUrl": "54900d8cb2dc14719413cd05bb73464c06b67e4a.jpg",
             "hidden": true,
-            "globalPct": 41
+            "globalPct": 40.9
         },
         {
             "apiName": "NEW_ACHIEVEMENT_1_14",
@@ -193,7 +193,7 @@
             "unlockedAt": "2018-06-08T22:49:45.000Z",
             "iconUrl": "6442aa90ae0e56cb774f9adb2eb731a5d38c1669.jpg",
             "iconGrayUrl": "6aaae9318f2fc26db9703975391a9edebff6a1f9.jpg",
-            "globalPct": 49.3
+            "globalPct": 49.2
         },
         {
             "apiName": "NEW_ACHIEVEMENT_1_10",
@@ -229,7 +229,7 @@
             "unlockedAt": "2018-06-06T21:08:35.000Z",
             "iconUrl": "44f3af6f5e6228cea1f27926f900d1886ca5f3e7.jpg",
             "iconGrayUrl": "022311461195df82a215d6ee42a7f8c5e4c0fc95.jpg",
-            "globalPct": 82.1
+            "globalPct": 82
         }
     ]
 }

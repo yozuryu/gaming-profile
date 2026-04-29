@@ -25,7 +25,7 @@
             "iconUrl": "ec79859c45d40951c8c5e08790bbf2232112cd27.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": false,
-            "globalPct": 94
+            "globalPct": 93.9
         },
         {
             "apiName": "ACHIEVEMENT_02",
@@ -36,7 +36,7 @@
             "iconUrl": "21f1a21c6ec5107e3106c7a16a03daf28ced5495.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": true,
-            "globalPct": 43.4
+            "globalPct": 43.3
         },
         {
             "apiName": "ACHIEVEMENT_03",
@@ -58,7 +58,7 @@
             "iconUrl": "c8c582769a5249bdf670b246dc0737b4f3a16d9d.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": true,
-            "globalPct": 35.2
+            "globalPct": 35.1
         },
         {
             "apiName": "ACHIEVEMENT_05",
@@ -124,7 +124,7 @@
             "iconUrl": "409924fdab7c768d46d89037e97b22f116d4011b.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": true,
-            "globalPct": 45.4
+            "globalPct": 45.3
         },
         {
             "apiName": "ACHIEVEMENT_11",
@@ -179,7 +179,7 @@
             "iconUrl": "b362f912c927c94cbee1fd8cc61253c91ec3b814.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": false,
-            "globalPct": 6.4
+            "globalPct": 6.3
         },
         {
             "apiName": "ACHIEVEMENT_16",
@@ -223,7 +223,7 @@
             "iconUrl": "e36cd39110887196cdace05541aa9838e6d82d38.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": true,
-            "globalPct": 36.3
+            "globalPct": 36.2
         },
         {
             "apiName": "ACHIEVEMENT_20",
@@ -256,7 +256,7 @@
             "iconUrl": "f19104d7e772c3e1420e36799a0bf63795b0c40c.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": true,
-            "globalPct": 48.3
+            "globalPct": 48.2
         },
         {
             "apiName": "ACHIEVEMENT_23",
@@ -333,7 +333,7 @@
             "iconUrl": "dbb9f9a06e32bd636fe0dbb5f9dde3a10472fce1.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": true,
-            "globalPct": 54
+            "globalPct": 53.9
         },
         {
             "apiName": "ACHIEVEMENT_30",
@@ -388,7 +388,7 @@
             "iconUrl": "1376fd5410aa06c5c284728bd674a62ba138a118.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": true,
-            "globalPct": 16.3
+            "globalPct": 16.2
         },
         {
             "apiName": "ACHIEVEMENT_35",
@@ -399,7 +399,7 @@
             "iconUrl": "dd8f2d7aea1a9255d0d823c44db4291ac3d17e0c.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": true,
-            "globalPct": 24.1
+            "globalPct": 24
         },
         {
             "apiName": "ACHIEVEMENT_36",
@@ -410,7 +410,7 @@
             "iconUrl": "85051e0265c84a95b255e98dfa9502397eddaced.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": true,
-            "globalPct": 36.9
+            "globalPct": 36.8
         },
         {
             "apiName": "ACHIEVEMENT_37",
@@ -421,7 +421,7 @@
             "iconUrl": "599c4a59b940d45c0f12846fc3bc3c23d4c748df.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
             "hidden": false,
-            "globalPct": 92.2
+            "globalPct": 92.1
         }
     ],
     "playtimeForever": 7418,
@@ -437,7 +437,7 @@
             "unlockedAt": "2018-02-05T20:43:40.000Z",
             "iconUrl": "1376fd5410aa06c5c284728bd674a62ba138a118.jpg",
             "iconGrayUrl": "6dac4c724764af81ce4c53a66a6c0c83e6508f7d.jpg",
-            "globalPct": 16.3
+            "globalPct": 16.2
         },
         {
             "apiName": "ACHIEVEMENT_25",

@@ -14,7 +14,7 @@
             "iconUrl": "f53c2d1899f09be8df8282deb52c4af669a94c0b.jpg",
             "iconGrayUrl": "c201cb24caa005ff940c2e4e3a23ca2a843d4b9a.jpg",
             "hidden": false,
-            "globalPct": 81.3
+            "globalPct": 81.4
         },
         {
             "apiName": "SP_COMBAT_VOLUME_MELEE_KILL",
@@ -135,7 +135,7 @@
             "iconUrl": "3e6ca3c30dbe4c8c154864c83b0114bccd36413f.jpg",
             "iconGrayUrl": "c201cb24caa005ff940c2e4e3a23ca2a843d4b9a.jpg",
             "hidden": false,
-            "globalPct": 37
+            "globalPct": 37.1
         },
         {
             "apiName": "SP_COMBAT_SKILL_BULLRUSH_KILL",
@@ -234,7 +234,7 @@
             "iconUrl": "861a68b14aa934bc3d7dee842a2b277346d5003c.jpg",
             "iconGrayUrl": "c201cb24caa005ff940c2e4e3a23ca2a843d4b9a.jpg",
             "hidden": false,
-            "globalPct": 69.7
+            "globalPct": 69.8
         },
         {
             "apiName": "SP_SPECIAL_COMBAT_MULTI_KILL_STALKER_PATTERN",
