@@ -6,8 +6,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 26048,
-            "numDistinctPlayersHardcore": 26048,
+            "numDistinctPlayersCasual": 26050,
+            "numDistinctPlayersHardcore": 26050,
             "numAchievements": 76,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -40,8 +40,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "60330",
-                    "numAwarded": 16537,
-                    "numAwardedHardcore": 7929,
+                    "numAwarded": 16538,
+                    "numAwardedHardcore": 7930,
                     "displayOrder": 58
                 },
                 "1989": {
@@ -64,8 +64,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "60277",
-                    "numAwarded": 8043,
-                    "numAwardedHardcore": 4981,
+                    "numAwarded": 8044,
+                    "numAwardedHardcore": 4982,
                     "displayOrder": 4
                 },
                 "2018": {
@@ -100,8 +100,8 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "60298",
-                    "numAwarded": 3626,
-                    "numAwardedHardcore": 2232,
+                    "numAwarded": 3628,
+                    "numAwardedHardcore": 2233,
                     "displayOrder": 26
                 },
                 "2068": {
@@ -148,8 +148,8 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "60299",
-                    "numAwarded": 3425,
-                    "numAwardedHardcore": 2179,
+                    "numAwarded": 3427,
+                    "numAwardedHardcore": 2180,
                     "displayOrder": 27
                 },
                 "2072": {
@@ -160,8 +160,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "60302",
-                    "numAwarded": 2899,
-                    "numAwardedHardcore": 1920,
+                    "numAwarded": 2901,
+                    "numAwardedHardcore": 1921,
                     "displayOrder": 30
                 },
                 "2073": {
@@ -184,8 +184,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "60300",
-                    "numAwarded": 2824,
-                    "numAwardedHardcore": 1880,
+                    "numAwarded": 2826,
+                    "numAwardedHardcore": 1881,
                     "displayOrder": 28
                 },
                 "2075": {
@@ -196,8 +196,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "60301",
-                    "numAwarded": 2929,
-                    "numAwardedHardcore": 1939,
+                    "numAwarded": 2931,
+                    "numAwardedHardcore": 1940,
                     "displayOrder": 29
                 },
                 "2076": {
@@ -208,8 +208,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "60280",
-                    "numAwarded": 4753,
-                    "numAwardedHardcore": 3200,
+                    "numAwarded": 4754,
+                    "numAwardedHardcore": 3201,
                     "displayOrder": 8
                 },
                 "2077": {
@@ -220,8 +220,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "60281",
-                    "numAwarded": 9254,
-                    "numAwardedHardcore": 4990,
+                    "numAwarded": 9255,
+                    "numAwardedHardcore": 4991,
                     "displayOrder": 9
                 },
                 "2080": {
@@ -244,8 +244,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60283",
-                    "numAwarded": 9684,
-                    "numAwardedHardcore": 5027,
+                    "numAwarded": 9685,
+                    "numAwardedHardcore": 5028,
                     "displayOrder": 11
                 },
                 "2083": {
@@ -340,7 +340,7 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "60288",
-                    "numAwarded": 5547,
+                    "numAwarded": 5548,
                     "numAwardedHardcore": 3140,
                     "displayOrder": 16
                 },
@@ -352,7 +352,7 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "60289",
-                    "numAwarded": 3837,
+                    "numAwarded": 3838,
                     "numAwardedHardcore": 2405,
                     "displayOrder": 17
                 },
@@ -364,7 +364,7 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "60290",
-                    "numAwarded": 4857,
+                    "numAwarded": 4858,
                     "numAwardedHardcore": 2812,
                     "displayOrder": 18
                 },
@@ -472,7 +472,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60276",
-                    "numAwarded": 19244,
+                    "numAwarded": 19245,
                     "numAwardedHardcore": 8981,
                     "displayOrder": 3
                 },
@@ -544,7 +544,7 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "60332",
-                    "numAwarded": 2964,
+                    "numAwarded": 2965,
                     "numAwardedHardcore": 1991,
                     "displayOrder": 60
                 },
@@ -880,8 +880,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60291",
-                    "numAwarded": 3337,
-                    "numAwardedHardcore": 2112,
+                    "numAwarded": 3339,
+                    "numAwardedHardcore": 2113,
                     "displayOrder": 19
                 },
                 "2281": {
@@ -928,8 +928,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "60352",
-                    "numAwarded": 3788,
-                    "numAwardedHardcore": 2377,
+                    "numAwarded": 3789,
+                    "numAwardedHardcore": 2378,
                     "displayOrder": 73
                 }
             }
@@ -1100,8 +1100,8 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "248278",
-                    "numAwarded": 1493,
-                    "numAwardedHardcore": 1168,
+                    "numAwarded": 1494,
+                    "numAwardedHardcore": 1169,
                     "displayOrder": 20
                 },
                 "17746": {
@@ -1160,8 +1160,8 @@
                     "trueRatio": 18,
                     "type": "progression",
                     "badgeName": "248244",
-                    "numAwarded": 1337,
-                    "numAwardedHardcore": 1058,
+                    "numAwarded": 1338,
+                    "numAwardedHardcore": 1059,
                     "displayOrder": 26
                 },
                 "17751": {
@@ -1172,8 +1172,8 @@
                     "trueRatio": 18,
                     "type": "progression",
                     "badgeName": "248281",
-                    "numAwarded": 1297,
-                    "numAwardedHardcore": 1033,
+                    "numAwarded": 1298,
+                    "numAwardedHardcore": 1034,
                     "displayOrder": 27
                 },
                 "17752": {
@@ -1695,11 +1695,11 @@
                     "title": "Challenge of the Best",
                     "description": "Clear 20 lines in Game Type A on Level 15 or higher by using the speed code - Down+Start on title",
                     "points": 25,
-                    "trueRatio": 63,
+                    "trueRatio": 62,
                     "type": null,
                     "badgeName": "487263",
-                    "numAwarded": 1920,
-                    "numAwardedHardcore": 1536,
+                    "numAwarded": 1921,
+                    "numAwardedHardcore": 1537,
                     "displayOrder": 12
                 },
                 "46820": {
@@ -1710,8 +1710,8 @@
                     "trueRatio": 71,
                     "type": null,
                     "badgeName": "487264",
-                    "numAwarded": 1633,
-                    "numAwardedHardcore": 1301,
+                    "numAwarded": 1634,
+                    "numAwardedHardcore": 1302,
                     "displayOrder": 13
                 },
                 "46824": {
@@ -1734,7 +1734,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "487250",
-                    "numAwarded": 9084,
+                    "numAwarded": 9085,
                     "numAwardedHardcore": 4417,
                     "displayOrder": 2
                 },
@@ -38852,7 +38852,7 @@
                     "trueRatio": 4,
                     "type": "progression",
                     "badgeName": "172220",
-                    "numAwarded": 561,
+                    "numAwarded": 562,
                     "numAwardedHardcore": 335,
                     "displayOrder": 12
                 },
