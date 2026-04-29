@@ -6,8 +6,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 26047,
-            "numDistinctPlayersHardcore": 26047,
+            "numDistinctPlayersCasual": 26048,
+            "numDistinctPlayersHardcore": 26048,
             "numAchievements": 76,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -28,8 +28,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "60358",
-                    "numAwarded": 5612,
-                    "numAwardedHardcore": 3712,
+                    "numAwarded": 5613,
+                    "numAwardedHardcore": 3713,
                     "displayOrder": 5
                 },
                 "1988": {
@@ -52,8 +52,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60274",
-                    "numAwarded": 17810,
-                    "numAwardedHardcore": 8957,
+                    "numAwarded": 17811,
+                    "numAwardedHardcore": 8958,
                     "displayOrder": 1
                 },
                 "1991": {
@@ -64,8 +64,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "60277",
-                    "numAwarded": 8042,
-                    "numAwardedHardcore": 4980,
+                    "numAwarded": 8043,
+                    "numAwardedHardcore": 4981,
                     "displayOrder": 4
                 },
                 "2018": {
@@ -76,8 +76,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60275",
-                    "numAwarded": 9234,
-                    "numAwardedHardcore": 5454,
+                    "numAwarded": 9235,
+                    "numAwardedHardcore": 5455,
                     "displayOrder": 2
                 },
                 "2066": {
@@ -136,8 +136,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "60304",
-                    "numAwarded": 3796,
-                    "numAwardedHardcore": 2339,
+                    "numAwarded": 3798,
+                    "numAwardedHardcore": 2340,
                     "displayOrder": 32
                 },
                 "2071": {
@@ -160,8 +160,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "60302",
-                    "numAwarded": 2898,
-                    "numAwardedHardcore": 1919,
+                    "numAwarded": 2899,
+                    "numAwardedHardcore": 1920,
                     "displayOrder": 30
                 },
                 "2073": {
@@ -172,8 +172,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "60303",
-                    "numAwarded": 3199,
-                    "numAwardedHardcore": 2049,
+                    "numAwarded": 3200,
+                    "numAwardedHardcore": 2050,
                     "displayOrder": 31
                 },
                 "2074": {
@@ -196,8 +196,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "60301",
-                    "numAwarded": 2928,
-                    "numAwardedHardcore": 1938,
+                    "numAwarded": 2929,
+                    "numAwardedHardcore": 1939,
                     "displayOrder": 29
                 },
                 "2076": {
@@ -220,8 +220,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "60281",
-                    "numAwarded": 9253,
-                    "numAwardedHardcore": 4989,
+                    "numAwarded": 9254,
+                    "numAwardedHardcore": 4990,
                     "displayOrder": 9
                 },
                 "2080": {
@@ -232,8 +232,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60282",
-                    "numAwarded": 10606,
-                    "numAwardedHardcore": 5442,
+                    "numAwarded": 10607,
+                    "numAwardedHardcore": 5443,
                     "displayOrder": 10
                 },
                 "2081": {
@@ -268,7 +268,7 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60284",
-                    "numAwarded": 9082,
+                    "numAwarded": 9083,
                     "numAwardedHardcore": 4748,
                     "displayOrder": 12
                 },
@@ -280,8 +280,8 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "60285",
-                    "numAwarded": 7329,
-                    "numAwardedHardcore": 3980,
+                    "numAwarded": 7331,
+                    "numAwardedHardcore": 3981,
                     "displayOrder": 13
                 },
                 "2091": {
@@ -316,8 +316,8 @@
                     "trueRatio": 9,
                     "type": "progression",
                     "badgeName": "60287",
-                    "numAwarded": 5897,
-                    "numAwardedHardcore": 3341,
+                    "numAwarded": 5900,
+                    "numAwardedHardcore": 3342,
                     "displayOrder": 15
                 },
                 "2107": {
@@ -340,8 +340,8 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "60288",
-                    "numAwarded": 5545,
-                    "numAwardedHardcore": 3139,
+                    "numAwarded": 5547,
+                    "numAwardedHardcore": 3140,
                     "displayOrder": 16
                 },
                 "2109": {
@@ -352,8 +352,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "60289",
-                    "numAwarded": 3836,
-                    "numAwardedHardcore": 2404,
+                    "numAwarded": 3837,
+                    "numAwardedHardcore": 2405,
                     "displayOrder": 17
                 },
                 "2110": {
@@ -364,8 +364,8 @@
                     "trueRatio": 11,
                     "type": null,
                     "badgeName": "60290",
-                    "numAwarded": 4855,
-                    "numAwardedHardcore": 2810,
+                    "numAwarded": 4857,
+                    "numAwardedHardcore": 2812,
                     "displayOrder": 18
                 },
                 "2128": {
@@ -388,8 +388,8 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "60292",
-                    "numAwarded": 5178,
-                    "numAwardedHardcore": 2977,
+                    "numAwarded": 5179,
+                    "numAwardedHardcore": 2978,
                     "displayOrder": 20
                 },
                 "2132": {
@@ -424,7 +424,7 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "60296",
-                    "numAwarded": 2388,
+                    "numAwarded": 2389,
                     "numAwardedHardcore": 1704,
                     "displayOrder": 24
                 },
@@ -460,8 +460,8 @@
                     "trueRatio": 52,
                     "type": null,
                     "badgeName": "60350",
-                    "numAwarded": 1166,
-                    "numAwardedHardcore": 993,
+                    "numAwarded": 1167,
+                    "numAwardedHardcore": 994,
                     "displayOrder": 71
                 },
                 "2156": {
@@ -472,8 +472,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60276",
-                    "numAwarded": 19243,
-                    "numAwardedHardcore": 8980,
+                    "numAwarded": 19244,
+                    "numAwardedHardcore": 8981,
                     "displayOrder": 3
                 },
                 "2157": {
@@ -484,8 +484,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60313",
-                    "numAwarded": 3449,
-                    "numAwardedHardcore": 2186,
+                    "numAwarded": 3452,
+                    "numAwardedHardcore": 2187,
                     "displayOrder": 41
                 },
                 "2158": {
@@ -496,7 +496,7 @@
                     "trueRatio": 46,
                     "type": null,
                     "badgeName": "60308",
-                    "numAwarded": 1298,
+                    "numAwarded": 1299,
                     "numAwardedHardcore": 1143,
                     "displayOrder": 36
                 },
@@ -508,7 +508,7 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "60305",
-                    "numAwarded": 3918,
+                    "numAwarded": 3919,
                     "numAwardedHardcore": 2387,
                     "displayOrder": 33
                 },
@@ -628,8 +628,8 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "60286",
-                    "numAwarded": 6979,
-                    "numAwardedHardcore": 3832,
+                    "numAwarded": 6980,
+                    "numAwardedHardcore": 3833,
                     "displayOrder": 14
                 },
                 "2193": {
@@ -856,7 +856,7 @@
                     "trueRatio": 53,
                     "type": null,
                     "badgeName": "60326",
-                    "numAwarded": 1091,
+                    "numAwarded": 1092,
                     "numAwardedHardcore": 963,
                     "displayOrder": 54
                 },
@@ -940,8 +940,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5373,
-            "numDistinctPlayersHardcore": 5373,
+            "numDistinctPlayersCasual": 5374,
+            "numDistinctPlayersHardcore": 5374,
             "numAchievements": 59,
             "numAwardedToUser": 3,
             "numAwardedToUserHardcore": 3,
@@ -962,7 +962,7 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "248314",
-                    "numAwarded": 5147,
+                    "numAwarded": 5148,
                     "numAwardedHardcore": 3117,
                     "displayOrder": 1,
                     "dateEarned": "2026-04-25 15:08:47",
@@ -1088,8 +1088,8 @@
                     "trueRatio": 16,
                     "type": "progression",
                     "badgeName": "248270",
-                    "numAwarded": 1601,
-                    "numAwardedHardcore": 1220,
+                    "numAwarded": 1602,
+                    "numAwardedHardcore": 1221,
                     "displayOrder": 19
                 },
                 "17745": {
@@ -1172,8 +1172,8 @@
                     "trueRatio": 18,
                     "type": "progression",
                     "badgeName": "248281",
-                    "numAwarded": 1296,
-                    "numAwardedHardcore": 1032,
+                    "numAwarded": 1297,
+                    "numAwardedHardcore": 1033,
                     "displayOrder": 27
                 },
                 "17752": {
@@ -1328,8 +1328,8 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "248250",
-                    "numAwarded": 1819,
-                    "numAwardedHardcore": 1357,
+                    "numAwarded": 1820,
+                    "numAwardedHardcore": 1358,
                     "displayOrder": 50
                 },
                 "17766": {
@@ -1841,11 +1841,11 @@
                     "title": "Tetris Master",
                     "description": "Score 200,000 points in Game Type A",
                     "points": 25,
-                    "trueRatio": 90,
+                    "trueRatio": 89,
                     "type": "progression",
                     "badgeName": "487252",
-                    "numAwarded": 1537,
-                    "numAwardedHardcore": 983,
+                    "numAwarded": 1538,
+                    "numAwardedHardcore": 984,
                     "displayOrder": 4
                 }
             }
@@ -38900,8 +38900,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "172224",
-                    "numAwarded": 491,
-                    "numAwardedHardcore": 285,
+                    "numAwarded": 492,
+                    "numAwardedHardcore": 286,
                     "displayOrder": 58
                 },
                 "153637": {
@@ -39128,8 +39128,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "172252",
-                    "numAwarded": 304,
-                    "numAwardedHardcore": 187,
+                    "numAwarded": 305,
+                    "numAwardedHardcore": 188,
                     "displayOrder": 59
                 },
                 "153657": {
@@ -39149,11 +39149,11 @@
                     "title": "Against The Grain",
                     "description": "Beat the game with the bad ending without ever obtaining a Dragon Spell for Ryu",
                     "points": 25,
-                    "trueRatio": 92,
+                    "trueRatio": 91,
                     "type": "missable",
                     "badgeName": "172290",
-                    "numAwarded": 120,
-                    "numAwardedHardcore": 112,
+                    "numAwarded": 121,
+                    "numAwardedHardcore": 113,
                     "displayOrder": 56
                 },
                 "153659": {
@@ -39161,11 +39161,11 @@
                     "title": "Manual Hard Mode",
                     "description": "Beat the game (good ending) without ever obtaining a transformation spell for Karn, the EmporSD & StarHR",
                     "points": 50,
-                    "trueRatio": 182,
+                    "trueRatio": 180,
                     "type": "missable",
                     "badgeName": "172291",
-                    "numAwarded": 122,
-                    "numAwardedHardcore": 114,
+                    "numAwarded": 123,
+                    "numAwardedHardcore": 115,
                     "displayOrder": 57
                 },
                 "153660": {
@@ -39356,8 +39356,8 @@
                     "trueRatio": 25,
                     "type": null,
                     "badgeName": "172269",
-                    "numAwarded": 269,
-                    "numAwardedHardcore": 177,
+                    "numAwarded": 270,
+                    "numAwardedHardcore": 178,
                     "displayOrder": 60
                 },
                 "153676": {
@@ -39368,8 +39368,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "172270",
-                    "numAwarded": 263,
-                    "numAwardedHardcore": 175,
+                    "numAwarded": 264,
+                    "numAwardedHardcore": 176,
                     "displayOrder": 61
                 },
                 "153677": {
@@ -39488,8 +39488,8 @@
                     "trueRatio": 32,
                     "type": null,
                     "badgeName": "172284",
-                    "numAwarded": 153,
-                    "numAwardedHardcore": 129,
+                    "numAwarded": 154,
+                    "numAwardedHardcore": 130,
                     "displayOrder": 54
                 },
                 "153687": {
@@ -39500,8 +39500,8 @@
                     "trueRatio": 66,
                     "type": "win_condition",
                     "badgeName": "172283",
-                    "numAwarded": 258,
-                    "numAwardedHardcore": 167,
+                    "numAwarded": 259,
+                    "numAwardedHardcore": 168,
                     "displayOrder": 55
                 },
                 "153688": {
@@ -66358,8 +66358,8 @@
             "consoleId": 18,
             "consoleName": "Nintendo DS",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 18,
-            "numDistinctPlayersHardcore": 18,
+            "numDistinctPlayersCasual": 19,
+            "numDistinctPlayersHardcore": 19,
             "numAchievements": 76,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -66404,7 +66404,7 @@
                     "trueRatio": 36,
                     "type": "progression",
                     "badgeName": "648265",
-                    "numAwarded": 11,
+                    "numAwarded": 12,
                     "numAwardedHardcore": 9,
                     "displayOrder": 3
                 },
@@ -66485,7 +66485,7 @@
                     "title": "Power of the Stars",
                     "description": "Awaken the power of the Star Force for the first time.",
                     "points": 2,
-                    "trueRatio": 42,
+                    "trueRatio": 43,
                     "type": null,
                     "badgeName": "657219",
                     "numAwarded": 5,
@@ -66509,7 +66509,7 @@
                     "title": "Your Turn to Be Judged",
                     "description": "Defeat LibraScales in SchoolComp with a Busting Lv. 10 or higher.",
                     "points": 10,
-                    "trueRatio": 214,
+                    "trueRatio": 215,
                     "type": "missable",
                     "badgeName": "649658",
                     "numAwarded": 5,
@@ -66533,7 +66533,7 @@
                     "title": "Queen without Subjects",
                     "description": "Defeat QueenOphiuca with a Busting Lv. 10 or higher.",
                     "points": 10,
-                    "trueRatio": 214,
+                    "trueRatio": 215,
                     "type": "missable",
                     "badgeName": "657221",
                     "numAwarded": 5,
@@ -66545,7 +66545,7 @@
                     "title": "Bad Dog",
                     "description": "Defeat WolfWoods in Subtropical Area with a Busting Lv. 10 or higher before being invited to Dream Island.",
                     "points": 10,
-                    "trueRatio": 214,
+                    "trueRatio": 215,
                     "type": "missable",
                     "badgeName": "657222",
                     "numAwarded": 5,
@@ -66581,7 +66581,7 @@
                     "title": "A Better Resolution",
                     "description": "Defeat Andromeda to put an end to the FM King's reign.",
                     "points": 25,
-                    "trueRatio": 667,
+                    "trueRatio": 668,
                     "type": "progression",
                     "badgeName": "654011",
                     "numAwarded": 5,
@@ -66605,7 +66605,7 @@
                     "title": "Chip Hoarder",
                     "description": "Collect all Standard Battle Cards.",
                     "points": 25,
-                    "trueRatio": 667,
+                    "trueRatio": 668,
                     "type": null,
                     "badgeName": "657223",
                     "numAwarded": 4,
@@ -66617,7 +66617,7 @@
                     "title": "Mega Collector",
                     "description": "Collect all Mega Battle Cards.",
                     "points": 25,
-                    "trueRatio": 667,
+                    "trueRatio": 668,
                     "type": null,
                     "badgeName": "657224",
                     "numAwarded": 4,
@@ -66629,7 +66629,7 @@
                     "title": "Giga Buster",
                     "description": "Collect all Giga Battle Cards.",
                     "points": 25,
-                    "trueRatio": 667,
+                    "trueRatio": 668,
                     "type": null,
                     "badgeName": "657225",
                     "numAwarded": 4,
@@ -66641,7 +66641,7 @@
                     "title": "You're Not a King",
                     "description": "Defeat CrownThunder in CityDump with a Busting Lv. 10 or higher before going to Deep Space.",
                     "points": 10,
-                    "trueRatio": 214,
+                    "trueRatio": 215,
                     "type": "missable",
                     "badgeName": "654016",
                     "numAwarded": 5,
@@ -66677,7 +66677,7 @@
                     "title": "Wings to Fly",
                     "description": "Defeat DragonSkySP with an S-rank.",
                     "points": 25,
-                    "trueRatio": 667,
+                    "trueRatio": 668,
                     "type": null,
                     "badgeName": "653559",
                     "numAwarded": 4,
@@ -66689,7 +66689,7 @@
                     "title": "Tyranny Ended",
                     "description": "Defeat Andromeda Infinity.",
                     "points": 50,
-                    "trueRatio": 1335,
+                    "trueRatio": 1337,
                     "type": null,
                     "badgeName": "657024",
                     "numAwarded": 4,
@@ -66701,7 +66701,7 @@
                     "title": "King of Dragons",
                     "description": "Face DragonSky and go beyond.",
                     "points": 25,
-                    "trueRatio": 667,
+                    "trueRatio": 668,
                     "type": null,
                     "badgeName": "653997",
                     "numAwarded": 4,
@@ -66797,7 +66797,7 @@
                     "title": "Infinity Power",
                     "description": "Defeat any SP Boss in 10 seconds or less.",
                     "points": 25,
-                    "trueRatio": 667,
+                    "trueRatio": 668,
                     "type": null,
                     "badgeName": "674979",
                     "numAwarded": 4,
@@ -66821,7 +66821,7 @@
                     "title": "School Comp Collector",
                     "description": "Collect all Blue Mystery Waves across every School Comp.",
                     "points": 10,
-                    "trueRatio": 214,
+                    "trueRatio": 215,
                     "type": null,
                     "badgeName": "654090",
                     "numAwarded": 5,
@@ -66932,7 +66932,7 @@
                     "trueRatio": 61,
                     "type": null,
                     "badgeName": "654085",
-                    "numAwarded": 10,
+                    "numAwarded": 11,
                     "numAwardedHardcore": 9,
                     "displayOrder": 65
                 },
@@ -67013,7 +67013,7 @@
                     "title": "True Friendship",
                     "description": "Connect with every possible in-game BrotherBand",
                     "points": 25,
-                    "trueRatio": 667,
+                    "trueRatio": 668,
                     "type": null,
                     "badgeName": "657230",
                     "numAwarded": 4,
@@ -67061,7 +67061,7 @@
                     "title": "A New Galaxy",
                     "description": "Defeat all EX bosses.",
                     "points": 25,
-                    "trueRatio": 667,
+                    "trueRatio": 668,
                     "type": null,
                     "badgeName": "658418",
                     "numAwarded": 4,
@@ -67073,7 +67073,7 @@
                     "title": "Halfway Charged",
                     "description": "Reach a total of 500 HP without bonuses from Brothers.",
                     "points": 10,
-                    "trueRatio": 214,
+                    "trueRatio": 215,
                     "type": null,
                     "badgeName": "657226",
                     "numAwarded": 5,
@@ -67085,7 +67085,7 @@
                     "title": "Overclocked Vitality",
                     "description": "Collect every HP Memory in the game and reach a total of 1000HP without bonuses from Brothers.",
                     "points": 25,
-                    "trueRatio": 667,
+                    "trueRatio": 668,
                     "type": null,
                     "badgeName": "657227",
                     "numAwarded": 4,
@@ -67253,7 +67253,7 @@
                     "title": "FM-ian Hunter",
                     "description": "Defeat all SP bosses.",
                     "points": 50,
-                    "trueRatio": 1335,
+                    "trueRatio": 1337,
                     "type": null,
                     "badgeName": "658419",
                     "numAwarded": 4,
