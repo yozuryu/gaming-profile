@@ -819,6 +819,26 @@
             "cumulScore": 98,
             "badgeUrl": "/Badge/609850.png",
             "gameUrl": "/game/668"
+        },
+        {
+            "date": "2026-01-28 16:42:22",
+            "hardcoreMode": true,
+            "achievementId": 27592,
+            "title": "Let's Have a Quick Battle!",
+            "description": "Defeat your Rival on Route 103",
+            "badgeName": "315486",
+            "points": 3,
+            "trueRatio": 3,
+            "type": "progression",
+            "author": "Brian",
+            "authorUlid": "017ZWVKCTBRWRVZK7WNGRKGEM5",
+            "gameTitle": "Pokémon Emerald Version",
+            "gameIcon": "/Images/126553.png",
+            "gameId": 668,
+            "consoleName": "Game Boy Advance",
+            "cumulScore": 101,
+            "badgeUrl": "/Badge/315486.png",
+            "gameUrl": "/game/668"
         }
     ]
 }
