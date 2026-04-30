@@ -6,8 +6,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 26059,
-            "numDistinctPlayersHardcore": 26059,
+            "numDistinctPlayersCasual": 26060,
+            "numDistinctPlayersHardcore": 26060,
             "numAchievements": 76,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -28,8 +28,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "60358",
-                    "numAwarded": 5616,
-                    "numAwardedHardcore": 3714,
+                    "numAwarded": 5617,
+                    "numAwardedHardcore": 3715,
                     "displayOrder": 5
                 },
                 "1988": {
@@ -40,8 +40,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "60330",
-                    "numAwarded": 16548,
-                    "numAwardedHardcore": 7935,
+                    "numAwarded": 16550,
+                    "numAwardedHardcore": 7936,
                     "displayOrder": 58
                 },
                 "1989": {
@@ -76,7 +76,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60275",
-                    "numAwarded": 9241,
+                    "numAwarded": 9242,
                     "numAwardedHardcore": 5458,
                     "displayOrder": 2
                 },
@@ -172,7 +172,7 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "60303",
-                    "numAwarded": 3201,
+                    "numAwarded": 3202,
                     "numAwardedHardcore": 2051,
                     "displayOrder": 31
                 },
@@ -220,8 +220,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "60281",
-                    "numAwarded": 9263,
-                    "numAwardedHardcore": 4996,
+                    "numAwarded": 9264,
+                    "numAwardedHardcore": 4997,
                     "displayOrder": 9
                 },
                 "2080": {
@@ -232,8 +232,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60282",
-                    "numAwarded": 10614,
-                    "numAwardedHardcore": 5448,
+                    "numAwarded": 10615,
+                    "numAwardedHardcore": 5449,
                     "displayOrder": 10
                 },
                 "2081": {
@@ -244,8 +244,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60283",
-                    "numAwarded": 9689,
-                    "numAwardedHardcore": 5030,
+                    "numAwarded": 9690,
+                    "numAwardedHardcore": 5031,
                     "displayOrder": 11
                 },
                 "2083": {
@@ -268,8 +268,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60284",
-                    "numAwarded": 9089,
-                    "numAwardedHardcore": 4752,
+                    "numAwarded": 9090,
+                    "numAwardedHardcore": 4753,
                     "displayOrder": 12
                 },
                 "2090": {
@@ -280,8 +280,8 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "60285",
-                    "numAwarded": 7335,
-                    "numAwardedHardcore": 3983,
+                    "numAwarded": 7336,
+                    "numAwardedHardcore": 3984,
                     "displayOrder": 13
                 },
                 "2091": {
@@ -400,8 +400,8 @@
                     "trueRatio": 33,
                     "type": "missable",
                     "badgeName": "60293",
-                    "numAwarded": 2063,
-                    "numAwardedHardcore": 1658,
+                    "numAwarded": 2064,
+                    "numAwardedHardcore": 1659,
                     "displayOrder": 21
                 },
                 "2133": {
@@ -472,8 +472,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60276",
-                    "numAwarded": 19254,
-                    "numAwardedHardcore": 8983,
+                    "numAwarded": 19256,
+                    "numAwardedHardcore": 8984,
                     "displayOrder": 3
                 },
                 "2157": {
@@ -601,11 +601,11 @@
                     "title": "Seeing Stars",
                     "description": "Max out PWR, SPD, or MAG on any character without equipment boosts",
                     "points": 5,
-                    "trueRatio": 15,
+                    "trueRatio": 14,
                     "type": null,
                     "badgeName": "60339",
-                    "numAwarded": 3109,
-                    "numAwardedHardcore": 1910,
+                    "numAwarded": 3110,
+                    "numAwardedHardcore": 1911,
                     "displayOrder": 64
                 },
                 "2189": {
@@ -628,8 +628,8 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "60286",
-                    "numAwarded": 6983,
-                    "numAwardedHardcore": 3835,
+                    "numAwarded": 6985,
+                    "numAwardedHardcore": 3836,
                     "displayOrder": 14
                 },
                 "2193": {
@@ -772,8 +772,8 @@
                     "trueRatio": 67,
                     "type": "win_condition",
                     "badgeName": "60316",
-                    "numAwarded": 3565,
-                    "numAwardedHardcore": 2198,
+                    "numAwarded": 3566,
+                    "numAwardedHardcore": 2199,
                     "displayOrder": 44
                 },
                 "2267": {
@@ -892,8 +892,8 @@
                     "trueRatio": 134,
                     "type": "win_condition",
                     "badgeName": "60317",
-                    "numAwarded": 1114,
-                    "numAwardedHardcore": 961,
+                    "numAwarded": 1115,
+                    "numAwardedHardcore": 962,
                     "displayOrder": 45
                 },
                 "4708": {
@@ -990,8 +990,8 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "248282",
-                    "numAwarded": 2996,
-                    "numAwardedHardcore": 2058,
+                    "numAwarded": 2997,
+                    "numAwardedHardcore": 2059,
                     "displayOrder": 3,
                     "dateEarned": "2026-04-26 12:57:28",
                     "dateEarnedHardcore": "2026-04-26 12:57:28"
@@ -1184,8 +1184,8 @@
                     "trueRatio": 18,
                     "type": "progression",
                     "badgeName": "248277",
-                    "numAwarded": 1297,
-                    "numAwardedHardcore": 1031,
+                    "numAwarded": 1298,
+                    "numAwardedHardcore": 1032,
                     "displayOrder": 28
                 },
                 "17753": {
@@ -1208,8 +1208,8 @@
                     "trueRatio": 46,
                     "type": "progression",
                     "badgeName": "248262",
-                    "numAwarded": 1276,
-                    "numAwardedHardcore": 1003,
+                    "numAwarded": 1277,
+                    "numAwardedHardcore": 1004,
                     "displayOrder": 30
                 },
                 "17755": {
@@ -1604,8 +1604,8 @@
                     "trueRatio": 19,
                     "type": null,
                     "badgeName": "248265",
-                    "numAwarded": 1208,
-                    "numAwardedHardcore": 978,
+                    "numAwarded": 1209,
+                    "numAwardedHardcore": 979,
                     "displayOrder": 62
                 },
                 "17789": {
@@ -1676,8 +1676,8 @@
             "consoleId": 4,
             "consoleName": "Game Boy",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 17452,
-            "numDistinctPlayersHardcore": 17452,
+            "numDistinctPlayersCasual": 17454,
+            "numDistinctPlayersHardcore": 17454,
             "numAchievements": 13,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -1698,7 +1698,7 @@
                     "trueRatio": 62,
                     "type": null,
                     "badgeName": "487263",
-                    "numAwarded": 1922,
+                    "numAwarded": 1923,
                     "numAwardedHardcore": 1537,
                     "displayOrder": 12
                 },
@@ -1710,7 +1710,7 @@
                     "trueRatio": 71,
                     "type": null,
                     "badgeName": "487264",
-                    "numAwarded": 1635,
+                    "numAwarded": 1636,
                     "numAwardedHardcore": 1302,
                     "displayOrder": 13
                 },
@@ -1722,7 +1722,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "487249",
-                    "numAwarded": 14548,
+                    "numAwarded": 14551,
                     "numAwardedHardcore": 6376,
                     "displayOrder": 1
                 },
@@ -1734,7 +1734,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "487250",
-                    "numAwarded": 9090,
+                    "numAwarded": 9092,
                     "numAwardedHardcore": 4419,
                     "displayOrder": 2
                 },
@@ -1746,7 +1746,7 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "487253",
-                    "numAwarded": 16830,
+                    "numAwarded": 16832,
                     "numAwardedHardcore": 7140,
                     "displayOrder": 5,
                     "dateEarned": "2026-04-27 14:22:18",
@@ -1760,7 +1760,7 @@
                     "trueRatio": 113,
                     "type": null,
                     "badgeName": "487254",
-                    "numAwarded": 1188,
+                    "numAwarded": 1189,
                     "numAwardedHardcore": 747,
                     "displayOrder": 6
                 },
@@ -1772,7 +1772,7 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "487259",
-                    "numAwarded": 3930,
+                    "numAwarded": 3931,
                     "numAwardedHardcore": 2755,
                     "displayOrder": 7
                 },
@@ -1784,7 +1784,7 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "487260",
-                    "numAwarded": 3654,
+                    "numAwarded": 3655,
                     "numAwardedHardcore": 2552,
                     "displayOrder": 8
                 },
@@ -1796,7 +1796,7 @@
                     "trueRatio": 18,
                     "type": null,
                     "badgeName": "487257",
-                    "numAwarded": 3447,
+                    "numAwarded": 3448,
                     "numAwardedHardcore": 2417,
                     "displayOrder": 9
                 },
@@ -1808,7 +1808,7 @@
                     "trueRatio": 19,
                     "type": null,
                     "badgeName": "487261",
-                    "numAwarded": 3185,
+                    "numAwarded": 3186,
                     "numAwardedHardcore": 2240,
                     "displayOrder": 10
                 },
@@ -1820,8 +1820,8 @@
                     "trueRatio": 51,
                     "type": null,
                     "badgeName": "487262",
-                    "numAwarded": 2871,
-                    "numAwardedHardcore": 2015,
+                    "numAwarded": 2873,
+                    "numAwardedHardcore": 2016,
                     "displayOrder": 11
                 },
                 "46837": {
@@ -1832,7 +1832,7 @@
                     "trueRatio": 21,
                     "type": "progression",
                     "badgeName": "487251",
-                    "numAwarded": 3175,
+                    "numAwarded": 3176,
                     "numAwardedHardcore": 1902,
                     "displayOrder": 3
                 },
@@ -1844,7 +1844,7 @@
                     "trueRatio": 89,
                     "type": "progression",
                     "badgeName": "487252",
-                    "numAwarded": 1540,
+                    "numAwarded": 1541,
                     "numAwardedHardcore": 984,
                     "displayOrder": 4
                 }
@@ -38708,8 +38708,8 @@
             "consoleId": 5,
             "consoleName": "Game Boy Advance",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1566,
-            "numDistinctPlayersHardcore": 1566,
+            "numDistinctPlayersCasual": 1567,
+            "numDistinctPlayersHardcore": 1567,
             "numAchievements": 68,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -38730,8 +38730,8 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "172204",
-                    "numAwarded": 1463,
-                    "numAwardedHardcore": 780,
+                    "numAwarded": 1464,
+                    "numAwardedHardcore": 781,
                     "displayOrder": 1
                 },
                 "153622": {
@@ -38742,8 +38742,8 @@
                     "trueRatio": 3,
                     "type": "missable",
                     "badgeName": "172205",
-                    "numAwarded": 802,
-                    "numAwardedHardcore": 520,
+                    "numAwarded": 803,
+                    "numAwardedHardcore": 521,
                     "displayOrder": 2
                 },
                 "153623": {
@@ -39171,7 +39171,7 @@
                     "title": "Manual Hard Mode",
                     "description": "Beat the game (good ending) without ever obtaining a transformation spell for Karn, the EmporSD & StarHR",
                     "points": 50,
-                    "trueRatio": 180,
+                    "trueRatio": 181,
                     "type": "missable",
                     "badgeName": "172291",
                     "numAwarded": 123,
@@ -58400,7 +58400,7 @@
                     "trueRatio": 22,
                     "type": null,
                     "badgeName": "458659",
-                    "numAwarded": 124,
+                    "numAwarded": 125,
                     "numAwardedHardcore": 115,
                     "displayOrder": 24
                 },
