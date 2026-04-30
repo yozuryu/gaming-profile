@@ -6,8 +6,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 26074,
-            "numDistinctPlayersHardcore": 26074,
+            "numDistinctPlayersCasual": 26078,
+            "numDistinctPlayersHardcore": 26078,
             "numAchievements": 76,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -28,7 +28,7 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "60358",
-                    "numAwarded": 5617,
+                    "numAwarded": 5618,
                     "numAwardedHardcore": 3715,
                     "displayOrder": 5
                 },
@@ -40,8 +40,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "60330",
-                    "numAwarded": 16555,
-                    "numAwardedHardcore": 7939,
+                    "numAwarded": 16559,
+                    "numAwardedHardcore": 7943,
                     "displayOrder": 58
                 },
                 "1989": {
@@ -52,8 +52,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60274",
-                    "numAwarded": 17831,
-                    "numAwardedHardcore": 8966,
+                    "numAwarded": 17835,
+                    "numAwardedHardcore": 8969,
                     "displayOrder": 1
                 },
                 "1991": {
@@ -64,8 +64,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "60277",
-                    "numAwarded": 8048,
-                    "numAwardedHardcore": 4984,
+                    "numAwarded": 8051,
+                    "numAwardedHardcore": 4987,
                     "displayOrder": 4
                 },
                 "2018": {
@@ -76,8 +76,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60275",
-                    "numAwarded": 9249,
-                    "numAwardedHardcore": 5461,
+                    "numAwarded": 9251,
+                    "numAwardedHardcore": 5462,
                     "displayOrder": 2
                 },
                 "2066": {
@@ -88,8 +88,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60311",
-                    "numAwarded": 3335,
-                    "numAwardedHardcore": 2112,
+                    "numAwarded": 3336,
+                    "numAwardedHardcore": 2113,
                     "displayOrder": 39
                 },
                 "2067": {
@@ -112,8 +112,8 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "60309",
-                    "numAwarded": 2658,
-                    "numAwardedHardcore": 1801,
+                    "numAwarded": 2659,
+                    "numAwardedHardcore": 1802,
                     "displayOrder": 37
                 },
                 "2069": {
@@ -124,8 +124,8 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "60310",
-                    "numAwarded": 2888,
-                    "numAwardedHardcore": 1872,
+                    "numAwarded": 2890,
+                    "numAwardedHardcore": 1874,
                     "displayOrder": 38
                 },
                 "2070": {
@@ -208,8 +208,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "60280",
-                    "numAwarded": 4757,
-                    "numAwardedHardcore": 3202,
+                    "numAwarded": 4760,
+                    "numAwardedHardcore": 3203,
                     "displayOrder": 8
                 },
                 "2077": {
@@ -220,8 +220,8 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "60281",
-                    "numAwarded": 9265,
-                    "numAwardedHardcore": 4996,
+                    "numAwarded": 9267,
+                    "numAwardedHardcore": 4997,
                     "displayOrder": 9
                 },
                 "2080": {
@@ -232,8 +232,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60282",
-                    "numAwarded": 10619,
-                    "numAwardedHardcore": 5451,
+                    "numAwarded": 10623,
+                    "numAwardedHardcore": 5453,
                     "displayOrder": 10
                 },
                 "2081": {
@@ -268,7 +268,7 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60284",
-                    "numAwarded": 9095,
+                    "numAwarded": 9096,
                     "numAwardedHardcore": 4755,
                     "displayOrder": 12
                 },
@@ -472,8 +472,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60276",
-                    "numAwarded": 19264,
-                    "numAwardedHardcore": 8988,
+                    "numAwarded": 19266,
+                    "numAwardedHardcore": 8990,
                     "displayOrder": 3
                 },
                 "2157": {
@@ -601,7 +601,7 @@
                     "title": "Seeing Stars",
                     "description": "Max out PWR, SPD, or MAG on any character without equipment boosts",
                     "points": 5,
-                    "trueRatio": 14,
+                    "trueRatio": 15,
                     "type": null,
                     "badgeName": "60339",
                     "numAwarded": 3111,
@@ -640,7 +640,7 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60315",
-                    "numAwarded": 3638,
+                    "numAwarded": 3639,
                     "numAwardedHardcore": 2237,
                     "displayOrder": 43
                 },
@@ -664,8 +664,8 @@
                     "trueRatio": 39,
                     "type": null,
                     "badgeName": "60278",
-                    "numAwarded": 1565,
-                    "numAwardedHardcore": 1350,
+                    "numAwarded": 1566,
+                    "numAwardedHardcore": 1351,
                     "displayOrder": 6
                 },
                 "2197": {
@@ -688,7 +688,7 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60314",
-                    "numAwarded": 3642,
+                    "numAwarded": 3643,
                     "numAwardedHardcore": 2238,
                     "displayOrder": 42
                 },
@@ -889,7 +889,7 @@
                     "title": "A Glimmer of Hope",
                     "description": "Clear the game after completing the Ocean Palace and Blackbird (Ending #2)",
                     "points": 25,
-                    "trueRatio": 133,
+                    "trueRatio": 134,
                     "type": "win_condition",
                     "badgeName": "60317",
                     "numAwarded": 1118,
@@ -1148,8 +1148,8 @@
                     "trueRatio": 17,
                     "type": null,
                     "badgeName": "248309",
-                    "numAwarded": 1404,
-                    "numAwardedHardcore": 1096,
+                    "numAwarded": 1405,
+                    "numAwardedHardcore": 1097,
                     "displayOrder": 24
                 },
                 "17750": {
@@ -1280,8 +1280,8 @@
                     "trueRatio": 97,
                     "type": "win_condition",
                     "badgeName": "248286",
-                    "numAwarded": 1160,
-                    "numAwardedHardcore": 943,
+                    "numAwarded": 1161,
+                    "numAwardedHardcore": 944,
                     "displayOrder": 37
                 },
                 "17761": {
@@ -1436,8 +1436,8 @@
                     "trueRatio": 19,
                     "type": null,
                     "badgeName": "248304",
-                    "numAwarded": 1071,
-                    "numAwardedHardcore": 932,
+                    "numAwarded": 1072,
+                    "numAwardedHardcore": 933,
                     "displayOrder": 60
                 },
                 "17775": {
@@ -1448,8 +1448,8 @@
                     "trueRatio": 17,
                     "type": null,
                     "badgeName": "248261",
-                    "numAwarded": 1360,
-                    "numAwardedHardcore": 1072,
+                    "numAwarded": 1361,
+                    "numAwardedHardcore": 1073,
                     "displayOrder": 42
                 },
                 "17776": {
@@ -1484,8 +1484,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "248258",
-                    "numAwarded": 1381,
-                    "numAwardedHardcore": 1075,
+                    "numAwarded": 1382,
+                    "numAwardedHardcore": 1076,
                     "displayOrder": 45
                 },
                 "17779": {
@@ -1496,8 +1496,8 @@
                     "trueRatio": 18,
                     "type": null,
                     "badgeName": "248251",
-                    "numAwarded": 1333,
-                    "numAwardedHardcore": 1055,
+                    "numAwarded": 1334,
+                    "numAwardedHardcore": 1056,
                     "displayOrder": 51
                 },
                 "17780": {
@@ -1676,8 +1676,8 @@
             "consoleId": 4,
             "consoleName": "Game Boy",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 17465,
-            "numDistinctPlayersHardcore": 17465,
+            "numDistinctPlayersCasual": 17467,
+            "numDistinctPlayersHardcore": 17467,
             "numAchievements": 13,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -1695,11 +1695,11 @@
                     "title": "Challenge of the Best",
                     "description": "Clear 20 lines in Game Type A on Level 15 or higher by using the speed code - Down+Start on title",
                     "points": 25,
-                    "trueRatio": 63,
+                    "trueRatio": 62,
                     "type": null,
                     "badgeName": "487263",
-                    "numAwarded": 1923,
-                    "numAwardedHardcore": 1537,
+                    "numAwarded": 1924,
+                    "numAwardedHardcore": 1538,
                     "displayOrder": 12
                 },
                 "46820": {
@@ -1710,8 +1710,8 @@
                     "trueRatio": 71,
                     "type": null,
                     "badgeName": "487264",
-                    "numAwarded": 1636,
-                    "numAwardedHardcore": 1302,
+                    "numAwarded": 1637,
+                    "numAwardedHardcore": 1303,
                     "displayOrder": 13
                 },
                 "46824": {
@@ -1722,7 +1722,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "487249",
-                    "numAwarded": 14560,
+                    "numAwarded": 14562,
                     "numAwardedHardcore": 6380,
                     "displayOrder": 1
                 },
@@ -1734,7 +1734,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "487250",
-                    "numAwarded": 9096,
+                    "numAwarded": 9097,
                     "numAwardedHardcore": 4422,
                     "displayOrder": 2
                 },
@@ -1746,7 +1746,7 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "487253",
-                    "numAwarded": 16841,
+                    "numAwarded": 16843,
                     "numAwardedHardcore": 7143,
                     "displayOrder": 5,
                     "dateEarned": "2026-04-27 14:22:18",
@@ -39554,8 +39554,8 @@
             "consoleId": 4,
             "consoleName": "Game Boy",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 4634,
-            "numDistinctPlayersHardcore": 4634,
+            "numDistinctPlayersCasual": 4636,
+            "numDistinctPlayersHardcore": 4636,
             "numAchievements": 49,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -39588,7 +39588,7 @@
                     "trueRatio": 12,
                     "type": "progression",
                     "badgeName": "342641",
-                    "numAwarded": 900,
+                    "numAwarded": 901,
                     "numAwardedHardcore": 430,
                     "displayOrder": 6
                 },
@@ -39600,7 +39600,7 @@
                     "trueRatio": 15,
                     "type": "progression",
                     "badgeName": "342642",
-                    "numAwarded": 667,
+                    "numAwarded": 668,
                     "numAwardedHardcore": 312,
                     "displayOrder": 7
                 },
@@ -39612,7 +39612,7 @@
                     "trueRatio": 34,
                     "type": "progression",
                     "badgeName": "342643",
-                    "numAwarded": 597,
+                    "numAwarded": 598,
                     "numAwardedHardcore": 273,
                     "displayOrder": 8
                 },
@@ -39621,7 +39621,7 @@
                     "title": "A Smite Too Late",
                     "description": "Obtained the Magic Soul Weapon [Standard Mode]",
                     "points": 10,
-                    "trueRatio": 67,
+                    "trueRatio": 68,
                     "type": null,
                     "badgeName": "342644",
                     "numAwarded": 244,
@@ -39636,8 +39636,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "342645",
-                    "numAwarded": 1242,
-                    "numAwardedHardcore": 629,
+                    "numAwarded": 1243,
+                    "numAwardedHardcore": 630,
                     "displayOrder": 10
                 },
                 "17275": {
@@ -39669,10 +39669,10 @@
                     "title": "Holy Sh...  Water!",
                     "description": "Find the Holy Water [Standard Mode]",
                     "points": 10,
-                    "trueRatio": 41,
+                    "trueRatio": 42,
                     "type": null,
                     "badgeName": "342648",
-                    "numAwarded": 452,
+                    "numAwarded": 453,
                     "numAwardedHardcore": 217,
                     "displayOrder": 13
                 },
@@ -39696,7 +39696,7 @@
                     "trueRatio": 42,
                     "type": "win_condition",
                     "badgeName": "342684",
-                    "numAwarded": 529,
+                    "numAwarded": 530,
                     "numAwardedHardcore": 212,
                     "displayOrder": 47
                 },
@@ -39732,8 +39732,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "342688",
-                    "numAwarded": 4412,
-                    "numAwardedHardcore": 1891,
+                    "numAwarded": 4414,
+                    "numAwardedHardcore": 1892,
                     "displayOrder": 1
                 },
                 "17283": {
@@ -39744,8 +39744,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "342639",
-                    "numAwarded": 1504,
-                    "numAwardedHardcore": 738,
+                    "numAwarded": 1505,
+                    "numAwardedHardcore": 739,
                     "displayOrder": 4
                 },
                 "17287": {
@@ -39789,10 +39789,10 @@
                     "title": "Timely Traversal",
                     "description": "Clear Stage 3 with more than 450s remaining. [Any Mode]",
                     "points": 50,
-                    "trueRatio": 1114,
+                    "trueRatio": 1115,
                     "type": null,
                     "badgeName": "342658",
-                    "numAwarded": 111,
+                    "numAwarded": 112,
                     "numAwardedHardcore": 36,
                     "displayOrder": 21
                 },
@@ -39852,8 +39852,8 @@
                     "trueRatio": 10,
                     "type": null,
                     "badgeName": "342650",
-                    "numAwarded": 1051,
-                    "numAwardedHardcore": 508,
+                    "numAwarded": 1052,
+                    "numAwardedHardcore": 509,
                     "displayOrder": 15
                 },
                 "309485": {
@@ -39876,7 +39876,7 @@
                     "trueRatio": 44,
                     "type": null,
                     "badgeName": "342654",
-                    "numAwarded": 223,
+                    "numAwarded": 224,
                     "numAwardedHardcore": 95,
                     "displayOrder": 17
                 },
@@ -39969,7 +39969,7 @@
                     "title": "The First Vampire Killer",
                     "description": "Defeat Dracula without taking damage using only the leather whip (no burning or souls)",
                     "points": 25,
-                    "trueRatio": 737,
+                    "trueRatio": 738,
                     "type": null,
                     "badgeName": "342676",
                     "numAwarded": 70,
@@ -39981,10 +39981,10 @@
                     "title": "Hallway Haste",
                     "description": "Clear Stage 2 with more than 450s remaining. [Any Mode]",
                     "points": 25,
-                    "trueRatio": 644,
+                    "trueRatio": 645,
                     "type": null,
                     "badgeName": "342657",
-                    "numAwarded": 96,
+                    "numAwarded": 97,
                     "numAwardedHardcore": 31,
                     "displayOrder": 20
                 },
@@ -39993,10 +39993,10 @@
                     "title": "Kept On Keeping On",
                     "description": "Clear Stage 4 with more than 380s remaining. [Any Mode]",
                     "points": 25,
-                    "trueRatio": 737,
+                    "trueRatio": 738,
                     "type": null,
                     "badgeName": "342659",
-                    "numAwarded": 91,
+                    "numAwarded": 92,
                     "numAwardedHardcore": 27,
                     "displayOrder": 22
                 },
@@ -40005,10 +40005,10 @@
                     "title": "Ran a Quick Prayer",
                     "description": "Clear Stage 5 with more than 470s remaining. [Any Mode]",
                     "points": 25,
-                    "trueRatio": 795,
+                    "trueRatio": 796,
                     "type": null,
                     "badgeName": "342660",
-                    "numAwarded": 81,
+                    "numAwarded": 82,
                     "numAwardedHardcore": 25,
                     "displayOrder": 23
                 },
@@ -40017,7 +40017,7 @@
                     "title": "Dungeon Dashing",
                     "description": "Clear the Hidden Dungeon Stage with 340s or more remaining. [Any Mode]",
                     "points": 25,
-                    "trueRatio": 765,
+                    "trueRatio": 766,
                     "type": null,
                     "badgeName": "342661",
                     "numAwarded": 65,
@@ -40053,7 +40053,7 @@
                     "title": "Cautious Clock Tower Trip",
                     "description": "Complete traversal of Stage 3 and reach Death without taking damage (no burning). [Any Mode]",
                     "points": 25,
-                    "trueRatio": 765,
+                    "trueRatio": 766,
                     "type": null,
                     "badgeName": "342664",
                     "numAwarded": 104,
@@ -40068,7 +40068,7 @@
                     "trueRatio": 712,
                     "type": null,
                     "badgeName": "342665",
-                    "numAwarded": 106,
+                    "numAwarded": 107,
                     "numAwardedHardcore": 28,
                     "displayOrder": 28
                 },
@@ -40104,7 +40104,7 @@
                     "trueRatio": 625,
                     "type": null,
                     "badgeName": "342685",
-                    "numAwarded": 127,
+                    "numAwarded": 128,
                     "numAwardedHardcore": 32,
                     "displayOrder": 48
                 },
@@ -40116,8 +40116,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "342637",
-                    "numAwarded": 1848,
-                    "numAwardedHardcore": 822,
+                    "numAwarded": 1849,
+                    "numAwardedHardcore": 823,
                     "displayOrder": 2
                 },
                 "309507": {
@@ -40128,7 +40128,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "342638",
-                    "numAwarded": 1431,
+                    "numAwarded": 1432,
                     "numAwardedHardcore": 684,
                     "displayOrder": 3
                 },
@@ -40137,7 +40137,7 @@
                     "title": "Behold the Power of the Belmonts",
                     "description": "Completed the entire game using the leather whip only (no burning or souls). [Standard Mode]",
                     "points": 50,
-                    "trueRatio": 1475,
+                    "trueRatio": 1476,
                     "type": null,
                     "badgeName": "342686",
                     "numAwarded": 69,
@@ -52034,7 +52034,7 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "102837",
-                    "numAwarded": 853,
+                    "numAwarded": 854,
                     "numAwardedHardcore": 420,
                     "displayOrder": 36
                 },
@@ -52118,7 +52118,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "102842",
-                    "numAwarded": 878,
+                    "numAwarded": 879,
                     "numAwardedHardcore": 430,
                     "displayOrder": 24
                 },
@@ -52130,7 +52130,7 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "103293",
-                    "numAwarded": 787,
+                    "numAwarded": 788,
                     "numAwardedHardcore": 399,
                     "displayOrder": 33
                 },
@@ -52154,7 +52154,7 @@
                     "trueRatio": 7,
                     "type": null,
                     "badgeName": "102844",
-                    "numAwarded": 844,
+                    "numAwarded": 845,
                     "numAwardedHardcore": 418,
                     "displayOrder": 35
                 },
