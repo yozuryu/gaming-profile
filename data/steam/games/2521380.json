@@ -36,7 +36,7 @@
             "iconUrl": "5e2e78c67f5c14f6f426bb1ee7bf569a3f875fd3.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 66.2
+            "globalPct": 66.3
         },
         {
             "apiName": "SR1_FIND_NECROPOLIS",
@@ -102,7 +102,7 @@
             "iconUrl": "d7234ec6137dc7c2340257ddab055f8c198fc517.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 24
+            "globalPct": 23.9
         },
         {
             "apiName": "SR1_KILL_TOMB_GUARDIAN",
@@ -520,7 +520,7 @@
             "iconUrl": "8e44b95c991a4eabc6ba5866b1cdf28823c2f3ac.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 13.2
+            "globalPct": 13.3
         },
         {
             "apiName": "SR1_SUNLIGHT_GLYPH",
@@ -652,7 +652,7 @@
             "iconUrl": "8c2f0026c2ecae24acd90143a402856d42bbd0a2.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 11.5
+            "globalPct": 11.6
         },
         {
             "apiName": "SR2_RETURN_TO_RELIC_HALL",
@@ -718,7 +718,7 @@
             "iconUrl": "f2f6f7a86d100e8b96ec5facbee9d3e30b86a462.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 9.3
+            "globalPct": 9.4
         },
         {
             "apiName": "SR2_AVENGE_JANOS",
@@ -959,7 +959,7 @@
             "unlockedAt": null,
             "iconUrl": "5e2e78c67f5c14f6f426bb1ee7bf569a3f875fd3.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
-            "globalPct": 66.2
+            "globalPct": 66.3
         },
         {
             "apiName": "SR1_FIND_NECROPOLIS",

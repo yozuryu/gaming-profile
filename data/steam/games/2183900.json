@@ -25,7 +25,7 @@
             "iconUrl": "a99da8de2e0e6ff0a6014e74bccc2f08f44c711e.jpg",
             "iconGrayUrl": "ace9a149ba08c29d1271a9af6426110930e09ebe.jpg",
             "hidden": true,
-            "globalPct": 82
+            "globalPct": 82.1
         },
         {
             "apiName": "PVE_ACID_BOMB",
@@ -91,7 +91,7 @@
             "iconUrl": "513e527196b4c3dcdb0d77deef18fb1224ff3c43.jpg",
             "iconGrayUrl": "f5d9b630753886bda7b52dbf5960755175b8a6c4.jpg",
             "hidden": true,
-            "globalPct": 41.8
+            "globalPct": 41.9
         },
         {
             "apiName": "STORY_TOWER",
@@ -578,7 +578,7 @@
             "unlockedAt": "2026-03-17T14:52:22.000Z",
             "iconUrl": "a99da8de2e0e6ff0a6014e74bccc2f08f44c711e.jpg",
             "iconGrayUrl": "ace9a149ba08c29d1271a9af6426110930e09ebe.jpg",
-            "globalPct": 82
+            "globalPct": 82.1
         },
         {
             "apiName": "STORY_INTRO",

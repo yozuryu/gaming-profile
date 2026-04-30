@@ -289,7 +289,7 @@
             "iconUrl": "ef8e68b10ee239a85e0b578002fa396769cd5069.jpg",
             "iconGrayUrl": "9486a1de027a0f46837719d9bbe5b6bee439bc36.jpg",
             "hidden": true,
-            "globalPct": 59.9
+            "globalPct": 59.8
         },
         {
             "apiName": "BOSS_KILLBOT",
@@ -762,7 +762,7 @@
             "iconUrl": "c0681b2289765d47ca1016961ba03374b853a30f.jpg",
             "iconGrayUrl": "08a8cce55057ac1921f1e87fd5c1a19633ac4315.jpg",
             "hidden": false,
-            "globalPct": 48.1
+            "globalPct": 48
         },
         {
             "apiName": "NEWGAMEPLUS",
@@ -1337,7 +1337,7 @@
             "unlockedAt": "2017-10-28T11:42:44.000Z",
             "iconUrl": "c0681b2289765d47ca1016961ba03374b853a30f.jpg",
             "iconGrayUrl": "08a8cce55057ac1921f1e87fd5c1a19633ac4315.jpg",
-            "globalPct": 48.1
+            "globalPct": 48
         },
         {
             "apiName": "MULTIPLAYER_CREATE",
