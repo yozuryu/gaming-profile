@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-05-01T09:55:44.279Z"
+        "extractionTimestamp": "2026-05-01T11:18:03.999Z"
     },
     "profile": {
         "steamId": "76561198188939413",
@@ -8,13 +8,13 @@
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
         "status": 0,
-        "lastOnline": "2026-05-01T03:36:49.000Z",
+        "lastOnline": "2026-05-01T10:57:59.000Z",
         "countryCode": "ID"
     },
     "stats": {
         "totalGames": 1252,
-        "totalPlaytimeMin": 345973,
-        "totalPlaytimeHrs": 5766,
+        "totalPlaytimeMin": 346005,
+        "totalPlaytimeHrs": 5767,
         "gamesWithPlaytime": 815,
         "totalAchievements": 9976,
         "unlockedAchievements": 2790,
@@ -24,6 +24,28 @@
         "avgPlaytimeMin": 424
     },
     "recentlyPlayed": [
+        {
+            "appId": 837610,
+            "name": "Mary Skelter: Nightmares",
+            "playtime2Weeks": 1,
+            "playtimeForever": 4307,
+            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/837610/13766adba6c87624bcc43a3dd8e53a030b258e95.jpg",
+            "storeUrl": "https://store.steampowered.com/app/837610",
+            "lastPlayedTs": "2026-05-01T11:05:11.000Z",
+            "achUnlocked": 30,
+            "achTotal": 34
+        },
+        {
+            "appId": 206440,
+            "name": "To the Moon",
+            "playtime2Weeks": 29,
+            "playtimeForever": 106,
+            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/206440/6e29eb4076a6253fdbccb987a2a21746d2df54d7.jpg",
+            "storeUrl": "https://store.steampowered.com/app/206440",
+            "lastPlayedTs": "2026-05-01T10:55:19.000Z",
+            "achUnlocked": 0,
+            "achTotal": 1
+        },
         {
             "appId": 2486820,
             "name": "Sonic Racing: CrossWorlds",
@@ -48,13 +70,13 @@
         }
     ],
     "mostRecentGame": {
-        "appId": 2486820,
-        "name": "Sonic Racing: CrossWorlds",
-        "playtime2Weeks": 122,
-        "playtimeForever": 354,
-        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/2486820/b1ae28acb49215b4d5d94ecc752d377500c44057.jpg",
-        "storeUrl": "https://store.steampowered.com/app/2486820",
-        "lastPlayedTs": "2026-04-27T13:28:23.000Z"
+        "appId": 837610,
+        "name": "Mary Skelter: Nightmares",
+        "playtime2Weeks": 1,
+        "playtimeForever": 4307,
+        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/837610/13766adba6c87624bcc43a3dd8e53a030b258e95.jpg",
+        "storeUrl": "https://store.steampowered.com/app/837610",
+        "lastPlayedTs": "2026-05-01T11:05:11.000Z"
     },
     "mostRecentUnlock": {
         "appId": 2486820,
