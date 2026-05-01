@@ -25,7 +25,7 @@
             "iconUrl": "8d2a3cc743bb1f292f1195fedca54ff34ea7653f.jpg",
             "iconGrayUrl": "36f5ea2022af511b57b04f7b3e6dcb38964ec5ab.jpg",
             "hidden": false,
-            "globalPct": 16.4
+            "globalPct": 16.5
         },
         {
             "apiName": "A_STORY_CLEAR_NORMAL",
@@ -278,7 +278,7 @@
             "iconUrl": "bbf138b5dad43afea5f090c19049dc2962ec445a.jpg",
             "iconGrayUrl": "cc0c4a93899c6c9f0ec3294f08e2997b956ccc94.jpg",
             "hidden": false,
-            "globalPct": 34.9
+            "globalPct": 35
         },
         {
             "apiName": "A_FUEL_IS_EXPENSIVE",
@@ -798,7 +798,7 @@
             "unlockedAt": "2017-07-26T18:11:07.000Z",
             "iconUrl": "bbf138b5dad43afea5f090c19049dc2962ec445a.jpg",
             "iconGrayUrl": "cc0c4a93899c6c9f0ec3294f08e2997b956ccc94.jpg",
-            "globalPct": 34.9
+            "globalPct": 35
         },
         {
             "apiName": "A_CLEARED_TUTORIAL",
