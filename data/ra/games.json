@@ -232,8 +232,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60282",
-                    "numAwarded": 10629,
-                    "numAwardedHardcore": 5456,
+                    "numAwarded": 10630,
+                    "numAwardedHardcore": 5457,
                     "displayOrder": 10
                 },
                 "2081": {
@@ -268,7 +268,7 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60284",
-                    "numAwarded": 9101,
+                    "numAwarded": 9103,
                     "numAwardedHardcore": 4760,
                     "displayOrder": 12
                 },
@@ -412,7 +412,7 @@
                     "trueRatio": 11,
                     "type": "progression",
                     "badgeName": "60295",
-                    "numAwarded": 4577,
+                    "numAwarded": 4578,
                     "numAwardedHardcore": 2711,
                     "displayOrder": 23
                 },
@@ -544,7 +544,7 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "60332",
-                    "numAwarded": 2969,
+                    "numAwarded": 2970,
                     "numAwardedHardcore": 1992,
                     "displayOrder": 60
                 },
@@ -616,7 +616,7 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60312",
-                    "numAwarded": 3661,
+                    "numAwarded": 3662,
                     "numAwardedHardcore": 2263,
                     "displayOrder": 40
                 },
@@ -640,7 +640,7 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60315",
-                    "numAwarded": 3640,
+                    "numAwarded": 3641,
                     "numAwardedHardcore": 2238,
                     "displayOrder": 43
                 },
@@ -652,7 +652,7 @@
                     "trueRatio": 6,
                     "type": null,
                     "badgeName": "60340",
-                    "numAwarded": 2594,
+                    "numAwarded": 2595,
                     "numAwardedHardcore": 1818,
                     "displayOrder": 65
                 },
@@ -676,8 +676,8 @@
                     "trueRatio": 28,
                     "type": null,
                     "badgeName": "60279",
-                    "numAwarded": 2698,
-                    "numAwardedHardcore": 2033,
+                    "numAwarded": 2700,
+                    "numAwardedHardcore": 2034,
                     "displayOrder": 7
                 },
                 "2200": {
@@ -688,7 +688,7 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60314",
-                    "numAwarded": 3644,
+                    "numAwarded": 3645,
                     "numAwardedHardcore": 2239,
                     "displayOrder": 42
                 },
@@ -700,7 +700,7 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "60294",
-                    "numAwarded": 3192,
+                    "numAwarded": 3193,
                     "numAwardedHardcore": 2056,
                     "displayOrder": 22
                 },
@@ -772,7 +772,7 @@
                     "trueRatio": 67,
                     "type": "win_condition",
                     "badgeName": "60316",
-                    "numAwarded": 3566,
+                    "numAwarded": 3567,
                     "numAwardedHardcore": 2200,
                     "displayOrder": 44
                 },
@@ -1809,7 +1809,7 @@
                     "type": null,
                     "badgeName": "487261",
                     "numAwarded": 3188,
-                    "numAwardedHardcore": 2242,
+                    "numAwardedHardcore": 2243,
                     "displayOrder": 10
                 },
                 "46834": {
@@ -38716,8 +38716,8 @@
             "consoleId": 5,
             "consoleName": "Game Boy Advance",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 1568,
-            "numDistinctPlayersHardcore": 1568,
+            "numDistinctPlayersCasual": 1569,
+            "numDistinctPlayersHardcore": 1569,
             "numAchievements": 68,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -38738,8 +38738,8 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "172204",
-                    "numAwarded": 1465,
-                    "numAwardedHardcore": 782,
+                    "numAwarded": 1466,
+                    "numAwardedHardcore": 783,
                     "displayOrder": 1
                 },
                 "153622": {
@@ -38750,8 +38750,8 @@
                     "trueRatio": 3,
                     "type": "missable",
                     "badgeName": "172205",
-                    "numAwarded": 805,
-                    "numAwardedHardcore": 523,
+                    "numAwarded": 806,
+                    "numAwardedHardcore": 524,
                     "displayOrder": 2
                 },
                 "153623": {
@@ -39167,7 +39167,7 @@
                     "title": "Against The Grain",
                     "description": "Beat the game with the bad ending without ever obtaining a Dragon Spell for Ryu",
                     "points": 25,
-                    "trueRatio": 91,
+                    "trueRatio": 92,
                     "type": "missable",
                     "badgeName": "172290",
                     "numAwarded": 121,
@@ -39479,7 +39479,7 @@
                     "title": "Obelisk The Tormentor",
                     "description": "Defeat Jade at the Obelisk",
                     "points": 10,
-                    "trueRatio": 25,
+                    "trueRatio": 26,
                     "type": "progression",
                     "badgeName": "172279",
                     "numAwarded": 268,
@@ -56106,8 +56106,8 @@
             "consoleId": 12,
             "consoleName": "PlayStation",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 477,
-            "numDistinctPlayersHardcore": 477,
+            "numDistinctPlayersCasual": 478,
+            "numDistinctPlayersHardcore": 478,
             "numAchievements": 19,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -56128,8 +56128,8 @@
                     "trueRatio": 7,
                     "type": "missable",
                     "badgeName": "205873",
-                    "numAwarded": 419,
-                    "numAwardedHardcore": 194,
+                    "numAwarded": 420,
+                    "numAwardedHardcore": 195,
                     "displayOrder": 100
                 },
                 "185161": {
@@ -56152,7 +56152,7 @@
                     "trueRatio": 9,
                     "type": "progression",
                     "badgeName": "205875",
-                    "numAwarded": 283,
+                    "numAwarded": 284,
                     "numAwardedHardcore": 142,
                     "displayOrder": 300
                 },
@@ -56236,8 +56236,8 @@
                     "trueRatio": 15,
                     "type": "missable",
                     "badgeName": "205880",
-                    "numAwarded": 115,
-                    "numAwardedHardcore": 74,
+                    "numAwarded": 116,
+                    "numAwardedHardcore": 75,
                     "displayOrder": 800
                 },
                 "185170": {
@@ -56329,7 +56329,7 @@
                     "title": "A Complete Miniondex",
                     "description": "Capture all the minions",
                     "points": 50,
-                    "trueRatio": 1166,
+                    "trueRatio": 1168,
                     "type": "missable",
                     "badgeName": "205888",
                     "numAwarded": 9,
@@ -56341,7 +56341,7 @@
                     "title": "Eternal Fighter",
                     "description": "Defeat a group of 3 Klarrgas in the Eternal Corridor",
                     "points": 50,
-                    "trueRatio": 484,
+                    "trueRatio": 485,
                     "type": null,
                     "badgeName": "224868",
                     "numAwarded": 23,
