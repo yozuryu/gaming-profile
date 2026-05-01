@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-05-01T11:12:02.426Z"
+        "extractionTimestamp": "2026-05-01T13:39:31.928Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,13 +8,13 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "🗺️: Karma Tower Bridge | Nina Lv.7 - Sr-1 Lv.8 - Sr-2 Lv.8 | 🐲: 0/9 | 🎣: 0/5 | 🐯: 0/4 |",
+        "richPresenceMsg": "🗺️: Winlan Castle Basement | Ryu Lv.11 - Nina Lv.7 | 🐲: 0/9 | 🎣: 0/5 | 🐯: 0/4 |",
         "lastGameId": 449,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1883,
+        "totalPoints": 1888,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6584,
+        "totalTruePoints": 6590,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
@@ -33,31 +33,31 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "🗺️: Karma Tower Bridge | Nina Lv.7 - Sr-1 Lv.8 - Sr-2 Lv.8 | 🐲: 0/9 | 🎣: 0/5 | 🐯: 0/4 |",
-        "richPresenceMsgDate": "2026-04-30 15:12:06",
+        "richPresenceMsg": "🗺️: Winlan Castle Basement | Ryu Lv.11 - Nina Lv.7 | 🐲: 0/9 | 🎣: 0/5 | 🐯: 0/4 |",
+        "richPresenceMsgDate": "2026-05-01 11:40:24",
         "lastGameId": 449,
         "contribCount": 0,
         "contribYield": 0,
-        "totalPoints": 1883,
+        "totalPoints": 1888,
         "totalSoftcorePoints": 1,
-        "totalTruePoints": 6584,
+        "totalTruePoints": 6590,
         "permissions": 1,
         "untracked": false,
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 49869,
+        "rank": 49800,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 142035,
+        "totalRanked": 142043,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
     },
     "points": {
-        "points": 1883,
+        "points": 1888,
         "softcorePoints": 1
     },
     "pageAwards": {
@@ -134,14 +134,14 @@
             "imageTitle": "/Images/002114.png",
             "imageIngame": "/Images/051037.png",
             "imageBoxArt": "/Images/063501.png",
-            "lastPlayed": "2026-04-30 15:12:06",
+            "lastPlayed": "2026-05-01 11:40:24",
             "achievementsTotal": 59,
             "numPossibleAchievements": 59,
             "possibleScore": 605,
-            "numAchieved": 3,
-            "scoreAchieved": 15,
-            "numAchievedHardcore": 3,
-            "scoreAchievedHardcore": 15
+            "numAchieved": 4,
+            "scoreAchieved": 20,
+            "numAchievedHardcore": 4,
+            "scoreAchievedHardcore": 20
         },
         {
             "gameId": 2021,
@@ -401,6 +401,19 @@
         "total": 54,
         "results": [
             {
+                "gameId": 449,
+                "title": "Breath of Fire",
+                "imageIcon": "/Images/105046.png",
+                "consoleId": 3,
+                "consoleName": "SNES/Super Famicom",
+                "maxPossible": 59,
+                "numAwarded": 4,
+                "numAwardedHardcore": 4,
+                "mostRecentAwardedDate": "2026-05-01T11:35:47+00:00",
+                "highestAwardKind": null,
+                "highestAwardDate": null
+            },
+            {
                 "gameId": 2021,
                 "title": "Tetris (BPS)",
                 "imageIcon": "/Images/077516.png",
@@ -423,19 +436,6 @@
                 "numAwarded": 1,
                 "numAwardedHardcore": 1,
                 "mostRecentAwardedDate": "2026-04-27T14:22:18+00:00",
-                "highestAwardKind": null,
-                "highestAwardDate": null
-            },
-            {
-                "gameId": 449,
-                "title": "Breath of Fire",
-                "imageIcon": "/Images/105046.png",
-                "consoleId": 3,
-                "consoleName": "SNES/Super Famicom",
-                "maxPossible": 59,
-                "numAwarded": 3,
-                "numAwardedHardcore": 3,
-                "mostRecentAwardedDate": "2026-04-26T12:57:28+00:00",
                 "highestAwardKind": null,
                 "highestAwardDate": null
             },
@@ -1105,24 +1105,24 @@
         ]
     },
     "mostRecentAchievement": {
-        "date": "2026-04-30 14:44:00",
+        "date": "2026-05-01 11:35:47",
         "hardcoreMode": true,
-        "achievementId": 336935,
-        "title": "Clear 5-5+",
-        "description": "Clear Round 5, Stage 5-or-higher.",
-        "badgeName": "399419",
-        "points": 10,
-        "trueRatio": 18,
-        "type": null,
-        "author": "clymax",
-        "authorUlid": "01GTB4E4772RYPYCHHK6Z5Y6TX",
-        "gameTitle": "Tetris (BPS)",
-        "gameIcon": "/Images/077516.png",
-        "gameId": 2021,
-        "consoleName": "NES/Famicom",
-        "cumulScore": 768,
-        "badgeUrl": "/Badge/399419.png",
-        "gameUrl": "/game/2021"
+        "achievementId": 17761,
+        "title": "Damsel in Distress",
+        "description": "Rescue princess Nina from Wizzard in Karma tower",
+        "badgeName": "248246",
+        "points": 5,
+        "trueRatio": 6,
+        "type": "progression",
+        "author": "Altomar",
+        "authorUlid": "019346YCAQ6QSZFRH5JA2Z3M9P",
+        "gameTitle": "Breath of Fire",
+        "gameIcon": "/Images/105046.png",
+        "gameId": 449,
+        "consoleName": "SNES/Super Famicom",
+        "cumulScore": 778,
+        "badgeUrl": "/Badge/248246.png",
+        "gameUrl": "/game/449"
     },
     "mostRecentGame": {
         "gameId": 449,
@@ -1133,15 +1133,15 @@
         "imageTitle": "/Images/002114.png",
         "imageIngame": "/Images/051037.png",
         "imageBoxArt": "/Images/063501.png",
-        "lastPlayed": "2026-04-30 15:12:06",
+        "lastPlayed": "2026-05-01 11:40:24",
         "achievementsTotal": 59,
         "numPossibleAchievements": 59,
         "possibleScore": 605,
-        "numAchieved": 3,
-        "scoreAchieved": 15,
-        "numAchievedHardcore": 3,
-        "scoreAchievedHardcore": 15
+        "numAchieved": 4,
+        "scoreAchieved": 20,
+        "numAchievedHardcore": 4,
+        "scoreAchievedHardcore": 20
     },
-    "points7Days": 110,
-    "points30Days": 487
+    "points7Days": 115,
+    "points30Days": 492
 }
