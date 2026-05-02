@@ -719,46 +719,6 @@
             "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1282150/ad3eb4763dfd90c0ae6e37aafb047160fd77d3f9.jpg",
             "unlockedAt": "2025-05-04T06:47:37.000Z",
             "globalPct": 41.9
-        },
-        {
-            "appId": 1903340,
-            "gameName": "Clair Obscur: Expedition 33",
-            "apiName": "OPTIONAL_CAMP",
-            "displayName": "Curious",
-            "description": "Witness an optional scene at camp.",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/29e3e5fef7d1f7c63efc7ce463be0ccd23e8097c.jpg",
-            "unlockedAt": "2025-05-03T13:58:59.000Z",
-            "globalPct": 71.3
-        },
-        {
-            "appId": 1903340,
-            "gameName": "Clair Obscur: Expedition 33",
-            "apiName": "FIRST_LUMINA_POINT",
-            "displayName": "Lumina",
-            "description": "Consume a Lumina point.",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/a2d8d1f61b70a4dde9db124fdac5e8d553b39ee7.jpg",
-            "unlockedAt": "2025-05-03T13:53:50.000Z",
-            "globalPct": 71.8
-        },
-        {
-            "appId": 1903340,
-            "gameName": "Clair Obscur: Expedition 33",
-            "apiName": "WEAPON_FIRST_UPGRADE",
-            "displayName": "Weapon Upgrade",
-            "description": "Upgrade a weapon once.",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/0b2ab7f8548f7aad819a93076ceb988d896116d2.jpg",
-            "unlockedAt": "2025-05-03T13:52:46.000Z",
-            "globalPct": 72.4
-        },
-        {
-            "appId": 1903340,
-            "gameName": "Clair Obscur: Expedition 33",
-            "apiName": "FLYING_WATERS",
-            "displayName": "Flying Waters",
-            "description": "",
-            "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/1903340/3d3cea948ddf6252f2c24b7541c77658010f561a.jpg",
-            "unlockedAt": "2025-05-03T13:46:57.000Z",
-            "globalPct": 74.3
         }
     ]
 }

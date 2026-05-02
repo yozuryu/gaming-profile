@@ -1,20 +1,20 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-05-02T13:42:21.099Z"
+        "extractionTimestamp": "2026-05-02T15:00:03.812Z"
     },
     "profile": {
         "steamId": "76561198188939413",
         "displayName": "Yozuryu",
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
-        "status": 3,
+        "status": 1,
         "lastOnline": "2026-05-01T15:00:56.000Z",
         "countryCode": "ID"
     },
     "stats": {
         "totalGames": 1252,
-        "totalPlaytimeMin": 346160,
-        "totalPlaytimeHrs": 5769,
+        "totalPlaytimeMin": 346222,
+        "totalPlaytimeHrs": 5770,
         "gamesWithPlaytime": 815,
         "totalAchievements": 9976,
         "unlockedAchievements": 2790,
@@ -24,6 +24,17 @@
         "avgPlaytimeMin": 424
     },
     "recentlyPlayed": [
+        {
+            "appId": 206440,
+            "name": "To the Moon",
+            "playtime2Weeks": 145,
+            "playtimeForever": 222,
+            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/206440/6e29eb4076a6253fdbccb987a2a21746d2df54d7.jpg",
+            "storeUrl": "https://store.steampowered.com/app/206440",
+            "lastPlayedTs": "2026-05-02T14:56:32.000Z",
+            "achUnlocked": 0,
+            "achTotal": 1
+        },
         {
             "appId": 2235440,
             "name": "My Little Pony: A Zephyr Heights Mystery",
@@ -45,17 +56,6 @@
             "lastPlayedTs": "2026-05-01T14:58:51.000Z",
             "achUnlocked": 14,
             "achTotal": 88
-        },
-        {
-            "appId": 206440,
-            "name": "To the Moon",
-            "playtime2Weeks": 83,
-            "playtimeForever": 160,
-            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/206440/6e29eb4076a6253fdbccb987a2a21746d2df54d7.jpg",
-            "storeUrl": "https://store.steampowered.com/app/206440",
-            "lastPlayedTs": "2026-05-01T14:31:12.000Z",
-            "achUnlocked": 0,
-            "achTotal": 1
         },
         {
             "appId": 837610,
@@ -92,13 +92,13 @@
         }
     ],
     "mostRecentGame": {
-        "appId": 2235440,
-        "name": "My Little Pony: A Zephyr Heights Mystery",
-        "playtime2Weeks": 75,
-        "playtimeForever": 666,
-        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/2235440/cf7be3222ec01032054dbea9a892f5ba18b75c8e.jpg",
-        "storeUrl": "https://store.steampowered.com/app/2235440",
-        "lastPlayedTs": "2026-05-02T13:06:42.000Z"
+        "appId": 206440,
+        "name": "To the Moon",
+        "playtime2Weeks": 145,
+        "playtimeForever": 222,
+        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/206440/6e29eb4076a6253fdbccb987a2a21746d2df54d7.jpg",
+        "storeUrl": "https://store.steampowered.com/app/206440",
+        "lastPlayedTs": "2026-05-02T14:56:32.000Z"
     },
     "mostRecentUnlock": {
         "appId": 2486820,
