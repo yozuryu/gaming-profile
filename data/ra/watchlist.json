@@ -1,5 +1,5 @@
 {
-    "total": 687,
+    "total": 688,
     "results": [
         {
             "id": 27,
@@ -4165,8 +4165,8 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "imageIcon": "/Images/082265.png",
-            "pointsTotal": 853,
-            "achievementsPublished": 93
+            "pointsTotal": 893,
+            "achievementsPublished": 92
         },
         {
             "id": 14369,
@@ -5733,6 +5733,15 @@
             "imageIcon": "/Images/085081.png",
             "pointsTotal": 1520,
             "achievementsPublished": 228
+        },
+        {
+            "id": 22891,
+            "title": "Silva Saga",
+            "consoleId": 7,
+            "consoleName": "NES/Famicom",
+            "imageIcon": "/Images/128422.png",
+            "pointsTotal": 230,
+            "achievementsPublished": 44
         },
         {
             "id": 23908,
