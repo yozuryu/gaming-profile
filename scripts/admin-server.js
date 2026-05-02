@@ -18,6 +18,8 @@ const ALLOWED = [
     'data/hub/config.json',
     'data/ra/guides.json',
     'data/ra/series.json',
+    'data/steam/games/index.json',
+    'data/steam/win-conditions.json',
 ];
 
 // Pipeline definitions — maps a run mode to the script + args
@@ -309,6 +311,19 @@ const server = http.createServer((req, res) => {
                 send(res, 400, { error: e.message });
             }
         });
+        return;
+    }
+
+    // GET /api/steam/game?appId=  — read-only individual game file
+    if (method === 'GET' && pathname === '/api/steam/game') {
+        const { appId } = query;
+        if (!appId || !/^\d+$/.test(appId)) { send(res, 400, { error: 'Invalid appId' }); return; }
+        try {
+            const filePath = path.join(ROOT, `data/steam/games/${appId}.json`);
+            send(res, 200, JSON.parse(fs.readFileSync(filePath, 'utf8')));
+        } catch (e) {
+            send(res, 404, { error: 'Not found' });
+        }
         return;
     }
 

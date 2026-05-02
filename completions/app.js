@@ -4,8 +4,9 @@ import { Star, Medal, Gem, Clock, Gamepad2, ChevronDown } from 'lucide-react';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
-const RA_MEDIA = 'https://media.retroachievements.org';
-const RA_SITE  = 'https://retroachievements.org';
+const RA_MEDIA  = 'https://media.retroachievements.org';
+const RA_SITE   = 'https://retroachievements.org';
+const achIconUrl = (appId, hash) => hash ? `https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/${appId}/${hash}` : null;
 
 const formatPlaytime = mins => {
     if (!mins) return null;
@@ -85,6 +86,21 @@ const normalizeSteam = perfectGames =>
         total: g.total,
         lastAchName: g.lastAchName,
         lastAchGlobalPct: g.lastAchGlobalPct,
+        playtime: g.playtimeForever,
+        gameUrl: `https://store.steampowered.com/app/${g.appId}`,
+    }));
+
+const normalizeSteamBeaten = beatenGames =>
+    beatenGames.map(g => ({
+        platform: 'steam',
+        type: 'beaten',
+        completedAt: g.beatenAt,
+        gameId: g.appId,
+        gameName: g.gameName,
+        iconUrl: achIconUrl(g.appId, g.winCondIconHash) || g.iconUrl,
+        total: g.total,
+        lastAchName: g.winConditionName,
+        lastAchGlobalPct: g.winCondGlobalPct,
         playtime: g.playtimeForever,
         gameUrl: `https://store.steampowered.com/app/${g.appId}`,
     }));
@@ -199,12 +215,13 @@ const CompletionCard = ({ item }) => {
 const App = () => {
     const currentYear = String(new Date().getFullYear());
 
-    const [raProfile,     setRaProfile]     = useState(null);
-    const [steamProfile,  setSteamProfile]  = useState(null);
-    const [platform,      setPlatform]      = useState('all');
-    const [showBeaten,    setShowBeaten]    = useState(false);
-    const [hiddenTags,    setHiddenTags]    = useState(new Set(['Hack', 'Homebrew', 'Prototype']));
-    const [expandedYears, setExpandedYears] = useState(new Set([currentYear]));
+    const [raProfile,        setRaProfile]        = useState(null);
+    const [steamProfile,     setSteamProfile]     = useState(null);
+    const [beatenSteamGames, setBeatenSteamGames] = useState(null);
+    const [platform,         setPlatform]         = useState('all');
+    const [showBeaten,       setShowBeaten]       = useState(false);
+    const [hiddenTags,       setHiddenTags]       = useState(new Set(['Hack', 'Homebrew', 'Prototype']));
+    const [expandedYears,    setExpandedYears]    = useState(new Set([currentYear]));
 
     const toggleYear = year =>
         setExpandedYears(prev => {
@@ -218,6 +235,38 @@ const App = () => {
             .then(r => r.json()).then(setRaProfile).catch(() => setRaProfile({}));
         fetch('../data/steam/profile.json')
             .then(r => r.json()).then(setSteamProfile).catch(() => setSteamProfile({}));
+        fetch('../data/steam/win-conditions.json')
+            .then(r => r.json())
+            .then(async wc => {
+                const entries = Object.entries(wc);
+                if (!entries.length) { setBeatenSteamGames([]); return; }
+                const results = await Promise.all(
+                    entries.map(async ([appId, apiNames]) => {
+                        try {
+                            const names = Array.isArray(apiNames) ? apiNames : [apiNames];
+                            const game = await fetch(`../data/steam/games/${appId}.json`).then(r => r.json());
+                            const unlocked = (game.achievements || [])
+                                .filter(a => names.includes(a.apiName) && a.unlocked && a.unlockedAt)
+                                .sort((a, b) => new Date(a.unlockedAt) - new Date(b.unlockedAt));
+                            if (!unlocked.length) return null;
+                            const earliest = unlocked[0];
+                            return {
+                                appId: game.appId,
+                                gameName: game.gameName,
+                                iconUrl: game.iconUrl,
+                                winCondIconHash: earliest.iconUrl,
+                                winCondGlobalPct: earliest.globalPct,
+                                total: game.total,
+                                playtimeForever: game.playtimeForever,
+                                beatenAt: earliest.unlockedAt,
+                                winConditionName: earliest.displayName,
+                            };
+                        } catch { return null; }
+                    })
+                );
+                setBeatenSteamGames(results.filter(Boolean));
+            })
+            .catch(() => setBeatenSteamGames([]));
     }, []);
 
     const completions = useMemo(() => {
@@ -228,17 +277,21 @@ const App = () => {
             const key = entry.gameId;
             if (!raMap.has(key) || entry.type === 'mastered') raMap.set(key, entry);
         }
-        const ra    = Array.from(raMap.values());
-        const steam = normalizeSteam(steamProfile?.perfectGames ?? []);
-        let all = [...ra, ...steam];
+        const ra           = Array.from(raMap.values());
+        const steamPerfect = normalizeSteam(steamProfile?.perfectGames ?? []);
+        // Exclude beaten games that are already perfect
+        const perfectIds   = new Set(steamPerfect.map(g => String(g.gameId)));
+        const steamBeaten  = normalizeSteamBeaten(beatenSteamGames ?? [])
+            .filter(g => !perfectIds.has(String(g.gameId)));
+        let all = [...ra, ...steamPerfect, ...steamBeaten];
         if (platform === 'ra')    all = all.filter(c => c.platform === 'ra');
         if (platform === 'steam') all = all.filter(c => c.platform === 'steam');
         if (hiddenTags.size > 0)  all = all.filter(c => !c.tags?.some(t => hiddenTags.has(t)));
         return all.sort((a, b) => new Date(b.completedAt) - new Date(a.completedAt));
-    }, [raProfile, steamProfile, platform, showBeaten, hiddenTags]);
+    }, [raProfile, steamProfile, beatenSteamGames, platform, showBeaten, hiddenTags]);
 
     const groups  = useMemo(() => groupByMonth(completions), [completions]);
-    const loading = raProfile === null || steamProfile === null;
+    const loading = raProfile === null || steamProfile === null || beatenSteamGames === null;
 
     // Group months under years for rendering
     const byYear = useMemo(() => {

@@ -31,12 +31,14 @@
 <body>
 <div id="root"></div>
 <script type="text/babel" data-type="module">
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { createRoot } from 'react-dom/client';
 
 const API       = 'http://localhost:3131/api';
 const RA_MEDIA  = 'https://media.retroachievements.org';
 const RA_SITE   = 'https://retroachievements.org';
+const STEAM_ACH_ICON = (appId, hash) =>
+    hash ? `https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/${appId}/${hash}` : null;
 
 // ── Generic fetch helpers ─────────────────────────────────────────────────────
 
@@ -828,6 +830,226 @@ function RASeriesModule() {
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
+// MODULE: Steam Win Conditions
+// ═══════════════════════════════════════════════════════════════════════════════
+
+function SteamWinConditionsModule() {
+    const [gameIndex,     setGameIndex]     = useState(null);
+    const [winConditions, setWinConditions] = useState(null);
+    const [selected,      setSelected]      = useState(null);
+    const [gameData,      setGameData]      = useState(null);
+    const [loadingGame,   setLoadingGame]   = useState(false);
+    const [search,        setSearch]        = useState('');
+    const [achSearch,     setAchSearch]     = useState('');
+    const [dirty,         setDirty]         = useState(false);
+    const [saving,        setSaving]        = useState(false);
+    const [saved,         setSaved]         = useState(false);
+
+    useEffect(() => {
+        Promise.all([
+            apiData('data/steam/games/index.json'),
+            apiData('data/steam/win-conditions.json').catch(() => ({})),
+        ]).then(([idx, wc]) => {
+            setGameIndex(idx);
+            setWinConditions(wc || {});
+        });
+    }, []);
+
+    useEffect(() => {
+        if (!selected) return;
+        setGameData(null);
+        setAchSearch('');
+        setLoadingGame(true);
+        apiGet(`${API}/steam/game?appId=${selected.appId}`)
+            .then(d => { setGameData(d); setLoadingGame(false); })
+            .catch(() => { setGameData({}); setLoadingGame(false); });
+    }, [selected?.appId]);
+
+    const save = async () => {
+        setSaving(true);
+        await apiSave('data/steam/win-conditions.json', winConditions);
+        setSaving(false); setDirty(false); setSaved(true);
+    };
+
+    const toggleWinCond = (appId, apiName) => {
+        const key = String(appId);
+        const current = Array.isArray(winConditions[key]) ? winConditions[key] : [];
+        const next = current.includes(apiName)
+            ? current.filter(n => n !== apiName)
+            : [...current, apiName];
+        const updated = { ...winConditions };
+        if (next.length === 0) delete updated[key];
+        else updated[key] = next;
+        setWinConditions(updated);
+        setDirty(true); setSaved(false);
+    };
+
+    const clearWinConds = (appId) => {
+        const updated = { ...winConditions };
+        delete updated[String(appId)];
+        setWinConditions(updated);
+        setDirty(true); setSaved(false);
+    };
+
+    const games = useMemo(() => {
+        if (!gameIndex?.achievementProgress) return [];
+        return Object.values(gameIndex.achievementProgress)
+            .filter(g => g.hasAchievements && g.preview?.length > 0)
+            .sort((a, b) => a.gameName.localeCompare(b.gameName));
+    }, [gameIndex]);
+
+    const filtered = useMemo(() => {
+        if (!search) return games;
+        const q = search.toLowerCase();
+        return games.filter(g => g.gameName.toLowerCase().includes(q) || String(g.appId).includes(q));
+    }, [games, search]);
+
+    const sortedAch = useMemo(() => {
+        if (!gameData?.achievements?.length) return [];
+        return [...gameData.achievements].sort((a, b) => {
+            if (a.unlocked !== b.unlocked) return a.unlocked ? -1 : 1;
+            if (a.unlocked && b.unlocked) return new Date(b.unlockedAt) - new Date(a.unlockedAt);
+            return 0;
+        });
+    }, [gameData]);
+
+    const filteredAch = useMemo(() => {
+        if (!achSearch) return sortedAch;
+        const q = achSearch.toLowerCase();
+        return sortedAch.filter(a =>
+            a.displayName.toLowerCase().includes(q) ||
+            (a.description || '').toLowerCase().includes(q)
+        );
+    }, [sortedAch, achSearch]);
+
+    const currentWinConds = selected ? (Array.isArray(winConditions[String(selected.appId)]) ? winConditions[String(selected.appId)] : []) : [];
+    const winCondCount = winConditions ? Object.keys(winConditions).length : 0;
+
+    if (!gameIndex || !winConditions) return <div className="p-6 text-[#546270] text-[11px]">Loading…</div>;
+
+    return (
+        <div className="flex h-full overflow-hidden">
+            {/* Sidebar */}
+            <div className="w-[240px] shrink-0 flex flex-col border-r border-[#2a475e]">
+                <div className="px-3 pt-3 pb-2 border-b border-[#2a475e]">
+                    <input value={search} onChange={e => setSearch(e.target.value)}
+                        placeholder="Search games…" className="input" />
+                </div>
+                <div className="flex-1 overflow-y-auto py-1">
+                    {filtered.map(g => {
+                        const hasWC = (winConditions[String(g.appId)]?.length ?? 0) > 0;
+                        const isSel = selected?.appId === g.appId;
+                        return (
+                            <button key={g.appId} onClick={() => setSelected(g)}
+                                className={`w-full flex items-center gap-2 px-3 py-1.5 text-left transition-colors ${isSel ? 'bg-[#2a475e]' : 'hover:bg-[#1b2838]'}`}>
+                                <img src={g.iconUrl} alt="" className="w-6 h-6 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
+                                <span className={`text-[11px] flex-1 truncate ${isSel ? 'text-white' : 'text-[#8f98a0]'}`}>{g.gameName}</span>
+                                {hasWC && <span className="w-1.5 h-1.5 rounded-full bg-[#e5b143] shrink-0" />}
+                            </button>
+                        );
+                    })}
+                    {filtered.length === 0 && <div className="text-[11px] text-[#546270] text-center py-6">No games found</div>}
+                </div>
+                <div className="px-3 py-2 border-t border-[#2a475e] text-[10px] text-[#546270]">
+                    {winCondCount} win condition{winCondCount !== 1 ? 's' : ''} set · <span className="text-[#e5b143]">●</span> = has condition
+                </div>
+            </div>
+
+            {/* Detail */}
+            <div className="flex-1 flex flex-col overflow-hidden">
+                {!selected ? (
+                    <div className="flex items-center justify-center h-full text-[#546270] text-[12px]">Select a game to set a win condition</div>
+                ) : (
+                    <>
+                        <div className="flex items-center gap-3 px-4 py-3 border-b border-[#2a475e] shrink-0">
+                            <img src={selected.iconUrl} alt={selected.gameName}
+                                className="w-10 h-10 rounded-[2px] border border-[#101214] object-cover bg-black shrink-0" />
+                            <div className="flex-1 min-w-0">
+                                <div className="text-[13px] text-white font-medium truncate">{selected.gameName}</div>
+                                <div className="flex items-center gap-3 mt-0.5">
+                                    <span className="text-[10px] text-[#546270]">App {selected.appId}</span>
+                                    <span className="text-[10px] text-[#546270]">{selected.total} achievements</span>
+                                    {currentWinConds.length > 0 && <span className="text-[10px] text-[#e5b143] font-medium">{currentWinConds.length} win condition{currentWinConds.length !== 1 ? 's' : ''} set</span>}
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-2 shrink-0">
+                                {saved && <span className="text-[10px] text-[#57cbde]">Saved</span>}
+                                <button className="btn-primary" onClick={save} disabled={!dirty || saving}>
+                                    {saving ? 'Saving…' : 'Save'}
+                                </button>
+                            </div>
+                        </div>
+
+                        {loadingGame ? (
+                            <div className="flex items-center justify-center flex-1 text-[#546270] text-[11px]">Loading achievements…</div>
+                        ) : !gameData?.achievements?.length ? (
+                            <div className="flex flex-col items-center justify-center flex-1 gap-2 text-center px-8">
+                                <div className="text-[12px] text-[#546270]">No achievement data available.</div>
+                                <div className="text-[10px] text-[#323f4c]">Run a pipeline refresh to load achievements for this game.</div>
+                            </div>
+                        ) : (
+                            <>
+                                <div className="px-3 py-2 border-b border-[#2a475e] shrink-0 flex items-center gap-2">
+                                    <input value={achSearch} onChange={e => setAchSearch(e.target.value)}
+                                        placeholder={`Search ${gameData.achievements.length} achievements…`} className="input flex-1" />
+                                    {currentWinConds.length > 0 && (
+                                        <button onClick={() => clearWinConds(selected.appId)}
+                                            className="shrink-0 text-[10px] text-[#ff6b6b] border border-[#ff6b6b]/30 hover:border-[#ff6b6b] px-2 py-1 rounded-[2px] transition-colors whitespace-nowrap">
+                                            Clear all
+                                        </button>
+                                    )}
+                                </div>
+                                <div className="flex-1 overflow-y-auto">
+                                    {filteredAch.length === 0 && (
+                                        <div className="text-[11px] text-[#546270] text-center py-6">No matches</div>
+                                    )}
+                                    {filteredAch.map(ach => {
+                                        const isWC = currentWinConds.includes(ach.apiName);
+                                        const iconHash = ach.unlocked ? ach.iconUrl : (ach.iconGrayUrl || ach.iconUrl);
+                                        const iconSrc = STEAM_ACH_ICON(selected.appId, iconHash);
+                                        return (
+                                            <button key={ach.apiName}
+                                                onClick={() => toggleWinCond(selected.appId, ach.apiName)}
+                                                className={`w-full flex items-center gap-3 px-3 py-2 text-left transition-colors border-b border-[#1a2535] ${isWC ? 'bg-[#e5b143]/10 hover:bg-[#e5b143]/15' : 'hover:bg-[#1b2838]'}`}>
+                                                {iconSrc
+                                                    ? <img src={iconSrc} alt="" className="w-8 h-8 rounded-[2px] shrink-0 object-cover bg-black" style={{ opacity: ach.unlocked ? 1 : 0.35 }} />
+                                                    : <div className="w-8 h-8 rounded-[2px] shrink-0 bg-[#2a475e]" />
+                                                }
+                                                <div className="flex-1 min-w-0">
+                                                    <div className={`text-[12px] truncate ${isWC ? 'text-[#e5b143] font-medium' : 'text-[#c6d4df]'}`}>
+                                                        {ach.displayName}
+                                                    </div>
+                                                    {ach.description && (
+                                                        <div className="text-[10px] text-[#546270] truncate">{ach.description}</div>
+                                                    )}
+                                                </div>
+                                                <div className="flex items-center gap-2 shrink-0">
+                                                    {ach.unlocked && ach.unlockedAt && (
+                                                        <span className="text-[9px] text-[#57cbde]">
+                                                            {new Date(ach.unlockedAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}
+                                                        </span>
+                                                    )}
+                                                    {ach.globalPct != null && (
+                                                        <span className="text-[10px] text-[#546270]">{ach.globalPct.toFixed(1)}%</span>
+                                                    )}
+                                                    {isWC && (
+                                                        <span className="text-[9px] font-bold text-[#e5b143] border border-[#e5b143]/40 px-1.5 py-[1px] rounded-[2px] uppercase tracking-wider whitespace-nowrap">Win Cond</span>
+                                                    )}
+                                                </div>
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                            </>
+                        )}
+                    </>
+                )}
+            </div>
+        </div>
+    );
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
 // Module registry
 // ═══════════════════════════════════════════════════════════════════════════════
 
@@ -1202,8 +1424,9 @@ const MODULES = [
     { id: 'credentials', label: 'Credentials',  icon: '🔑',  group: 'General',          component: CredentialsModule },
     { id: 'pipelines',   label: 'Pipelines',    icon: '▶',   group: 'General',          component: PipelinesModule },
     { id: 'data-diff',   label: 'Data Diff',    icon: '±',   group: 'General',          component: DataDiffModule },
-    { id: 'ra-guides',   label: 'Guides',       icon: '📖',  group: 'RetroAchievements', component: RAGuidesModule },
-    { id: 'ra-series',   label: 'Series',       icon: '🗂️',  group: 'RetroAchievements', component: RASeriesModule },
+    { id: 'ra-guides',           label: 'Guides',         icon: '📖',  group: 'RetroAchievements', component: RAGuidesModule },
+    { id: 'ra-series',           label: 'Series',         icon: '🗂️',  group: 'RetroAchievements', component: RASeriesModule },
+    { id: 'steam-win-conditions', label: 'Win Conditions', icon: '🏆',  group: 'Steam',             component: SteamWinConditionsModule },
 ];
 
 const GROUPS = [...new Set(MODULES.map(m => m.group))];

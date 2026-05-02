@@ -1,5 +1,27 @@
 # Changelog
 
+## v26.05.01
+
+Steam win conditions, admin module, and app icon update.
+
+### Steam
+
+- Admin: new **Win Conditions** module under the Steam group — select any Steam game with achievements, click achievements to mark them as win conditions (multi-select); saved to `data/steam/win-conditions.json` as arrays
+- Win conditions support multiple achievements per game — if more than one is unlocked, the earliest unlock date is used as the beaten date
+- Completions: loads win conditions on mount, fetches game files to check unlock status, and shows beaten Steam games alongside RA beaten and Steam perfect entries; beaten games excluded if already in `perfectGames`
+- Steam profile: sidebar renamed to **Completions**; flat single grid — perfect games first (gold `border-2`) then beaten-only games (no border); header shows ★ + count (gold) and 🏅 + count (gray); beaten games use their win condition achievement icon as thumbnail; games that are both perfect and beaten show only as perfect
+- Completions page: beaten Steam game cards now show the win condition achievement icon instead of the game icon, and rarity label/percentage for that achievement
+- Steam profile sidebar: beaten game tooltip now includes a Rarity row (win condition achievement's `globalPct`); perfect count prefixed with ★, beaten count prefixed with 🏅
+- Hub completions strip: beaten count now includes beaten Steam games (from win conditions, excluding already-perfect games); fetches game files in parallel to check unlock status
+- Game cards (Recent Games + Completion Progress tabs): show a gray **Beaten** badge next to the game title when a win condition has been unlocked; badge hidden if the game is already Perfect; left stripe turns gray `#8f98a0` for beaten games
+- Achievement modal: shows the same gray Beaten badge under the game title when opened for a beaten game
+
+### Structure
+
+- Added `data/steam/win-conditions.json` (empty, populated via admin)
+- Updated `assets/appicon.png` with new icon
+- Regenerated `assets/icon-192.png` (192×192) and `assets/icon-512.png` (512×512) from new source
+
 ## v26.04.11
 
 Mobile polish pass — floating tab pills, platform popup redesign, Steam tab parity, stats collapse, Completions deduplication, icon refresh, hub page simplification, heatmap/streak mobile improvements, and stat color/order refinements.

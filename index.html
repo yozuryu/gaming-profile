@@ -760,9 +760,31 @@
 
         const awards = ra.pageAwards?.visibleUserAwards ?? [];
         const mastered = awards.filter(a => a.awardType === 'Mastery/Completion').length;
-        const beaten   = awards.filter(a => a.awardType === 'Game Beaten' && a.awardDataExtra === 1).length;
+        const raBeaten = awards.filter(a => a.awardType === 'Game Beaten' && a.awardDataExtra === 1).length;
         const perfect  = (steam.perfectGames ?? []).length;
 
+        // Count beaten Steam games from win conditions (exclude already-perfect games)
+        let steamBeatenCount = 0;
+        try {
+          const wcRes = await fetch('./data/steam/win-conditions.json');
+          if (wcRes.ok) {
+            const winConds = await wcRes.json();
+            const perfectAppIds = new Set((steam.perfectGames ?? []).map(g => String(g.appId)));
+            const wcEntries = Object.entries(winConds).filter(([id]) => !perfectAppIds.has(id));
+            if (wcEntries.length) {
+              const checks = await Promise.all(wcEntries.map(async ([appId, apiNames]) => {
+                try {
+                  const names = Array.isArray(apiNames) ? apiNames : [apiNames];
+                  const game = await fetch(`./data/steam/games/${appId}.json`).then(r => r.json());
+                  return (game.achievements || []).some(a => names.includes(a.apiName) && a.unlocked);
+                } catch { return false; }
+              }));
+              steamBeatenCount = checks.filter(Boolean).length;
+            }
+          }
+        } catch { /* ignore, steamBeatenCount stays 0 */ }
+
+        const beaten = raBeaten + steamBeatenCount;
         const completed = mastered + perfect;
         const total = completed + beaten;
         if (total === 0) return;

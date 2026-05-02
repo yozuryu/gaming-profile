@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Trophy, BarChart2, Activity, ChevronDown, Lock, Unlock, Star, Gem, Clock, X } from 'lucide-react';
+import { Trophy, BarChart2, Activity, ChevronDown, Lock, Unlock, Star, Gem, Clock, X, Medal } from 'lucide-react';
 import { STEAM_STATUS, PROGRESS_SORTS } from './utils/constants.js';
 import { formatPlaytime, formatDate, formatTimeAgo, fmtDay, fmtTime, achIconUrl, capsuleUrl, headerUrl, libraryPortraitUrl, rarityLabel, rarityBorderColor } from './utils/helpers.js';
 
 // ── SteamGameCard ─────────────────────────────────────────────────────────────
 
-const SteamGameCard = ({ game, achievementData, onViewDetails }) => {
+const SteamGameCard = ({ game, achievementData, onViewDetails, beatenInfo }) => {
     const hasAch = achievementData?.hasAchievements && achievementData?.total > 0;
     const pct    = hasAch && achievementData.total > 0
         ? (achievementData.unlocked / achievementData.total) * 100
@@ -15,6 +15,8 @@ const SteamGameCard = ({ game, achievementData, onViewDetails }) => {
 
     const stripeColor = isPerfect
         ? 'border-l-[#e5b143]'
+        : beatenInfo
+        ? 'border-l-[#8f98a0]'
         : pct > 0
         ? 'border-l-[#66c0f4]'
         : hasAch
@@ -73,6 +75,11 @@ const SteamGameCard = ({ game, achievementData, onViewDetails }) => {
                                 <Star size={8} /> Perfect
                             </span>
                         )}
+                        {!isPerfect && beatenInfo && (
+                            <span className="text-[8px] font-bold uppercase tracking-[0.07em] px-1.5 py-[1px] rounded-[2px] shrink-0 flex items-center gap-1" style={{ background: 'rgba(143,152,160,0.15)', color: '#8f98a0', border: '1px solid rgba(143,152,160,0.3)' }}>
+                                <Medal size={8} /> Beaten
+                            </span>
+                        )}
                     </div>
 
                     {game.playtimeForever > 0 && (
@@ -124,7 +131,7 @@ const SteamGameCard = ({ game, achievementData, onViewDetails }) => {
             {/* Achievement preview strip */}
             {hasAch && onViewDetails && (
                 <button
-                    onClick={() => onViewDetails({ game, achievementData })}
+                    onClick={() => onViewDetails({ game, achievementData, beatenInfo })}
                     className="w-full flex items-center gap-2.5 px-3 py-2 bg-[#171a21] hover:bg-[#1b2838] transition-colors border-t border-[#323f4c] outline-none z-10 relative group rounded-b-[3px]"
                 >
                     {/* Achievement icon previews */}
@@ -190,7 +197,7 @@ const SteamGameCard = ({ game, achievementData, onViewDetails }) => {
 
 // ── AchievementModal ───────────────────────────────────────────────────────────
 
-const AchievementModal = ({ game, achievementData, onClose }) => {
+const AchievementModal = ({ game, achievementData, onClose, beatenInfo }) => {
     const [lockFilter, setLockFilter] = useState('all');
 
     const achs = achievementData?.achievements ?? [];
@@ -262,11 +269,18 @@ const AchievementModal = ({ game, achievementData, onClose }) => {
                         >
                             {game.name}
                         </a>
-                        {isPerfect && (
+                        {(isPerfect || beatenInfo) && (
                             <div className="flex items-center gap-1.5 mt-1">
-                                <span className="shrink-0 text-[9px] text-[#101214] bg-[#e5b143] px-1.5 py-[1px] rounded-sm font-bold uppercase tracking-wider flex items-center gap-1">
-                                    <Star size={9} /> Perfect
-                                </span>
+                                {isPerfect && (
+                                    <span className="shrink-0 text-[9px] text-[#101214] bg-[#e5b143] px-1.5 py-[1px] rounded-sm font-bold uppercase tracking-wider flex items-center gap-1">
+                                        <Star size={9} /> Perfect
+                                    </span>
+                                )}
+                                {!isPerfect && beatenInfo && (
+                                    <span className="shrink-0 text-[9px] font-bold uppercase tracking-wider px-1.5 py-[1px] rounded-sm flex items-center gap-1" style={{ background: 'rgba(143,152,160,0.15)', color: '#8f98a0', border: '1px solid rgba(143,152,160,0.3)' }}>
+                                        <Medal size={9} /> Beaten
+                                    </span>
+                                )}
                             </div>
                         )}
                         {pct !== null && (
@@ -692,7 +706,7 @@ const ActivityTab = ({ achievements, heatmapData, gameIcons, loading, hasMore, l
 
 // ── ProgressTab ───────────────────────────────────────────────────────────────
 
-const ProgressTab = ({ achievementProgress, recentlyPlayed, onViewDetails }) => {
+const ProgressTab = ({ achievementProgress, recentlyPlayed, onViewDetails, beatenMap }) => {
     const [sort,        setSort]        = useState('pct');
     const [showPerfect, setShowPerfect] = useState(false);
     const [search,      setSearch]      = useState('');
@@ -790,6 +804,7 @@ const ProgressTab = ({ achievementProgress, recentlyPlayed, onViewDetails }) => 
                         }}
                         achievementData={achievementProgress[g.appId]}
                         onViewDetails={onViewDetails}
+                        beatenInfo={beatenMap?.get(g.appId) ?? null}
                     />
                 ))}
             </div>
@@ -863,6 +878,7 @@ const App = () => {
     const [selectedGame,     setSelectedGame]     = useState(null);
     const [gameDetails,       setGameDetails]       = useState({});
     const [modalLoading,      setModalLoading]      = useState(null); // game object being fetched
+    const [beatenGames,       setBeatenGames]       = useState([]);
     const VALID_TABS = ['recent', 'progress', 'activity'];
     const initialTab = (() => {
         const p = new URLSearchParams(window.location.search).get('tab');
@@ -908,6 +924,42 @@ const App = () => {
         };
         window.addEventListener('scroll', onScroll, { passive: true });
         return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
+    // Load win conditions + beaten game data
+    useEffect(() => {
+        fetch('../../data/steam/win-conditions.json')
+            .then(r => r.json())
+            .then(async wc => {
+                const entries = Object.entries(wc);
+                if (!entries.length) return;
+                const results = await Promise.all(
+                    entries.map(async ([appId, apiNames]) => {
+                        try {
+                            const names = Array.isArray(apiNames) ? apiNames : [apiNames];
+                            const game = await fetch(`../../data/steam/games/${appId}.json`).then(r => r.json());
+                            const unlocked = (game.achievements || [])
+                                .filter(a => names.includes(a.apiName) && a.unlocked && a.unlockedAt)
+                                .sort((a, b) => new Date(a.unlockedAt) - new Date(b.unlockedAt));
+                            if (!unlocked.length) return null;
+                            const earliest = unlocked[0];
+                            return {
+                                appId: game.appId,
+                                gameName: game.gameName,
+                                iconUrl: game.iconUrl,
+                                total: game.total,
+                                playtimeForever: game.playtimeForever,
+                                beatenAt: earliest.unlockedAt,
+                                winConditionName: earliest.displayName,
+                                winCondIconHash: earliest.iconUrl,
+                                winCondGlobalPct: earliest.globalPct,
+                            };
+                        } catch { return null; }
+                    })
+                );
+                setBeatenGames(results.filter(Boolean));
+            })
+            .catch(() => {});
     }, []);
 
     // Load profile on mount
@@ -957,10 +1009,10 @@ const App = () => {
         }
     }, [activeTab, profileData, gamesData]);
 
-    const handleViewDetails = useCallback(async ({ game, achievementData }) => {
+    const handleViewDetails = useCallback(async ({ game, achievementData, beatenInfo }) => {
         const appId = game.appId;
         if (gameDetails[appId]) {
-            setSelectedGame({ game, achievementData: gameDetails[appId] });
+            setSelectedGame({ game, achievementData: gameDetails[appId], beatenInfo });
             return;
         }
         setModalLoading(game);
@@ -968,11 +1020,10 @@ const App = () => {
             const data = await fetch(`../../data/steam/games/${appId}.json`).then(r => r.json());
             setGameDetails(prev => ({ ...prev, [appId]: data }));
             setModalLoading(null);
-            setSelectedGame({ game, achievementData: data });
+            setSelectedGame({ game, achievementData: data, beatenInfo });
         } catch {
             setModalLoading(null);
-            // fallback: open with index data (no achievements)
-            setSelectedGame({ game, achievementData });
+            setSelectedGame({ game, achievementData, beatenInfo });
         }
     }, [gameDetails]);
 
@@ -988,6 +1039,11 @@ const App = () => {
         if (b.lastAchGlobalPct == null) return -1;
         return a.lastAchGlobalPct - b.lastAchGlobalPct;
     });
+    const perfectAppIds = new Set(perfectGames.map(g => g.appId));
+    const beatenOnly    = beatenGames
+        .filter(g => !perfectAppIds.has(g.appId))
+        .sort((a, b) => new Date(b.beatenAt) - new Date(a.beatenAt));
+    const beatenMap     = useMemo(() => new Map(beatenGames.map(g => [g.appId, g])), [beatenGames]);
 
     if (loading) return <ProfileLoadingSkeleton />;
 
@@ -1230,40 +1286,40 @@ const App = () => {
 
                     </div>
 
-                    {/* Sidebar: Perfect Games */}
+                    {/* Sidebar: Completions */}
                     <div className="flex flex-col gap-5">
                         <div className="bg-[#1b2838] border border-[#2a475e] rounded-[3px] shadow-sm h-fit">
                             <div className="p-2.5 bg-[#172333] border-b border-[#2a475e] rounded-t-[2px] flex items-center gap-2">
                                 <span className="w-[2px] h-[12px] bg-[#e5b143] rounded-[1px] shrink-0" />
-                                <span className="text-[11px] uppercase tracking-wide font-semibold text-[#c6d4df] flex items-center gap-2">
-                                    <Star size={13} className="text-[#e5b143]" /> Perfect Games
+                                <span className="text-[11px] uppercase tracking-wide font-semibold text-[#c6d4df] flex items-center gap-2 flex-1">
+                                    <Star size={13} className="text-[#e5b143]" /> Completions
                                 </span>
+                                <div className="flex items-center gap-1.5">
+                                    <Star size={9} className="text-[#e5b143]" />
+                                    <span className="text-[10px] font-semibold text-[#e5b143]">{perfectGames.length}</span>
+                                    <Medal size={9} className="text-[#8f98a0]" />
+                                    <span className="text-[10px] font-semibold text-[#8f98a0]">{beatenOnly.length}</span>
+                                </div>
                             </div>
                             <div className="p-3 grid grid-cols-5 sm:grid-cols-8 lg:grid-cols-5 gap-2 min-h-[60px]">
-                                {perfectGames.length > 0 ? perfectGames.map(g => (
+                                {perfectGames.map(g => (
                                     <div key={g.appId} className="relative group cursor-help">
                                         <a href={`https://store.steampowered.com/app/${g.appId}`} target="_blank" rel="noreferrer">
                                             <img
                                                 src={g.lastAchIconUrl || g.iconUrl || capsuleUrl(g.appId)}
                                                 alt={g.gameName}
-                                                className="w-full aspect-square object-cover rounded-[2px] border border-[#e5b143]/30 group-hover:border-[#e5b143]/80 group-hover:scale-110 transition-all duration-200 bg-[#101214]"
+                                                className="w-full aspect-square object-cover rounded-[2px] border-2 border-[#e5b143] group-hover:scale-110 transition-all duration-200 bg-[#101214]"
                                                 onError={e => { e.target.src = g.iconUrl || capsuleUrl(g.appId); }}
                                             />
                                         </a>
-                                        {/* Popup — RA game awards style */}
                                         <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[200px] bg-[#1b2838] border border-[#2a475e] rounded-[2px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-[100] shadow-xl pointer-events-none overflow-hidden">
                                             <div className="h-[2px] bg-gradient-to-r from-[#e5b143] to-[#e5b143]/20" />
                                             <div className="flex items-center gap-2 px-2.5 py-2 border-b border-[#2a475e] bg-[#172333]">
-                                                <img
-                                                    src={g.lastAchIconUrl || g.iconUrl || capsuleUrl(g.appId)}
-                                                    alt=""
-                                                    className="w-8 h-8 rounded-[2px] border border-[#e5b143]/30 bg-black shrink-0 object-cover"
-                                                />
+                                                <img src={g.lastAchIconUrl || g.iconUrl || capsuleUrl(g.appId)} alt=""
+                                                    className="w-8 h-8 rounded-[2px] border border-[#e5b143]/30 bg-black shrink-0 object-cover" />
                                                 <div className="flex flex-col min-w-0">
                                                     <span className="text-[11px] text-white font-semibold leading-tight line-clamp-2">{g.gameName}</span>
-                                                    {g.lastAchName && (
-                                                        <span className="text-[9px] text-[#8f98a0] leading-tight truncate mt-0.5">{g.lastAchName}</span>
-                                                    )}
+                                                    {g.lastAchName && <span className="text-[9px] text-[#8f98a0] leading-tight truncate mt-0.5">{g.lastAchName}</span>}
                                                 </div>
                                             </div>
                                             <div className="px-2.5 py-2 flex flex-col gap-1.5">
@@ -1276,40 +1332,87 @@ const App = () => {
                                                     <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Achievements</span>
                                                     <span className="text-[9px] text-[#e5b143] font-medium">{g.total} / {g.total}</span>
                                                 </div>
-                                                {g.lastAchGlobalPct != null && (
-                                                    <>
-                                                        <div className="h-px bg-[#2a475e]" />
-                                                        <div className="flex items-center justify-between">
-                                                            <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Rarity</span>
-                                                            <span className="text-[9px] font-medium" style={{ color: rarityBorderColor(g.lastAchGlobalPct) }}>
-                                                                {rarityLabel(g.lastAchGlobalPct)} · {g.lastAchGlobalPct}%
-                                                            </span>
-                                                        </div>
-                                                    </>
-                                                )}
-                                                {g.playtimeForever > 0 && (
-                                                    <>
-                                                        <div className="h-px bg-[#2a475e]" />
-                                                        <div className="flex items-center justify-between">
-                                                            <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Playtime</span>
-                                                            <span className="text-[9px] text-[#c6d4df]">{formatPlaytime(g.playtimeForever)}</span>
-                                                        </div>
-                                                    </>
-                                                )}
-                                                {g.completedAt && (
-                                                    <>
-                                                        <div className="h-px bg-[#2a475e]" />
-                                                        <div className="flex items-center justify-between">
-                                                            <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Completed</span>
-                                                            <span className="text-[9px] text-[#c6d4df]">{formatDate(g.completedAt)}</span>
-                                                        </div>
-                                                    </>
-                                                )}
+                                                {g.lastAchGlobalPct != null && (<>
+                                                    <div className="h-px bg-[#2a475e]" />
+                                                    <div className="flex items-center justify-between">
+                                                        <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Rarity</span>
+                                                        <span className="text-[9px] font-medium" style={{ color: rarityBorderColor(g.lastAchGlobalPct) }}>
+                                                            {rarityLabel(g.lastAchGlobalPct)} · {g.lastAchGlobalPct}%
+                                                        </span>
+                                                    </div>
+                                                </>)}
+                                                {g.playtimeForever > 0 && (<>
+                                                    <div className="h-px bg-[#2a475e]" />
+                                                    <div className="flex items-center justify-between">
+                                                        <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Playtime</span>
+                                                        <span className="text-[9px] text-[#c6d4df]">{formatPlaytime(g.playtimeForever)}</span>
+                                                    </div>
+                                                </>)}
+                                                {g.completedAt && (<>
+                                                    <div className="h-px bg-[#2a475e]" />
+                                                    <div className="flex items-center justify-between">
+                                                        <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Completed</span>
+                                                        <span className="text-[9px] text-[#c6d4df]">{formatDate(g.completedAt)}</span>
+                                                    </div>
+                                                </>)}
                                             </div>
                                         </div>
                                     </div>
-                                )) : (
-                                    <div className="col-span-full text-center text-[#546270] text-[10px] py-2">No perfect games yet.</div>
+                                ))}
+                                {beatenOnly.map(g => (
+                                    <div key={g.appId} className="relative group cursor-help">
+                                        <a href={`https://store.steampowered.com/app/${g.appId}`} target="_blank" rel="noreferrer">
+                                            <img
+                                                src={achIconUrl(g.appId, g.winCondIconHash) || g.iconUrl || capsuleUrl(g.appId)}
+                                                alt={g.gameName}
+                                                className="w-full aspect-square object-cover rounded-[2px] group-hover:scale-110 transition-all duration-200 bg-[#101214]"
+                                                onError={e => { e.target.src = g.iconUrl || capsuleUrl(g.appId); }}
+                                            />
+                                        </a>
+                                        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[200px] bg-[#1b2838] border border-[#2a475e] rounded-[2px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-[100] shadow-xl pointer-events-none overflow-hidden">
+                                            <div className="h-[2px] bg-gradient-to-r from-[#8f98a0] to-[#8f98a0]/20" />
+                                            <div className="flex items-center gap-2 px-2.5 py-2 border-b border-[#2a475e] bg-[#172333]">
+                                                <img src={achIconUrl(g.appId, g.winCondIconHash) || g.iconUrl || capsuleUrl(g.appId)} alt=""
+                                                    className="w-8 h-8 rounded-[2px] border border-[#8f98a0]/30 bg-black shrink-0 object-cover" />
+                                                <div className="flex flex-col min-w-0">
+                                                    <span className="text-[11px] text-white font-semibold leading-tight line-clamp-2">{g.gameName}</span>
+                                                    {g.winConditionName && <span className="text-[9px] text-[#8f98a0] leading-tight truncate mt-0.5">{g.winConditionName}</span>}
+                                                </div>
+                                            </div>
+                                            <div className="px-2.5 py-2 flex flex-col gap-1.5">
+                                                <div className="flex items-center justify-between">
+                                                    <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Award</span>
+                                                    <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-[1px] rounded-[2px]" style={{ background: 'rgba(143,152,160,0.15)', color: '#8f98a0', border: '1px solid rgba(143,152,160,0.3)' }}>Beaten</span>
+                                                </div>
+                                                {g.winCondGlobalPct != null && (<>
+                                                    <div className="h-px bg-[#2a475e]" />
+                                                    <div className="flex items-center justify-between">
+                                                        <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Rarity</span>
+                                                        <span className="text-[9px] font-medium" style={{ color: rarityBorderColor(g.winCondGlobalPct) }}>
+                                                            {rarityLabel(g.winCondGlobalPct)} · {g.winCondGlobalPct}%
+                                                        </span>
+                                                    </div>
+                                                </>)}
+                                                {g.playtimeForever > 0 && (<>
+                                                    <div className="h-px bg-[#2a475e]" />
+                                                    <div className="flex items-center justify-between">
+                                                        <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Playtime</span>
+                                                        <span className="text-[9px] text-[#c6d4df]">{formatPlaytime(g.playtimeForever)}</span>
+                                                    </div>
+                                                </>)}
+                                                {g.beatenAt && (<>
+                                                    <div className="h-px bg-[#2a475e]" />
+                                                    <div className="flex items-center justify-between">
+                                                        <span className="text-[9px] text-[#546270] uppercase tracking-[0.08em]">Beaten</span>
+                                                        <span className="text-[9px] text-[#c6d4df]">{formatDate(g.beatenAt)}</span>
+                                                    </div>
+                                                </>)}
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                                {perfectGames.length === 0 && beatenOnly.length === 0 && (
+                                    <div className="col-span-full text-center text-[#546270] text-[10px] py-2">No completions yet.</div>
                                 )}
                             </div>
                         </div>
@@ -1387,7 +1490,7 @@ const App = () => {
                         gamesData
                             ? <div className="flex flex-col gap-3">
                                 {recentlyPlayed.map(game => (
-                                    <SteamGameCard key={game.appId} game={game} achievementData={achProgress[game.appId]} onViewDetails={handleViewDetails} />
+                                    <SteamGameCard key={game.appId} game={game} achievementData={achProgress[game.appId]} onViewDetails={handleViewDetails} beatenInfo={beatenMap.get(game.appId) ?? null} />
                                 ))}
                               </div>
                             : <div className="flex items-center justify-center py-12 text-[#546270] text-[11px]">Loading games…</div>
@@ -1395,7 +1498,7 @@ const App = () => {
 
                     {activeTab === 'progress' && (
                         gamesData
-                            ? <ProgressTab achievementProgress={achProgress} recentlyPlayed={recentlyPlayed} onViewDetails={handleViewDetails} />
+                            ? <ProgressTab achievementProgress={achProgress} recentlyPlayed={recentlyPlayed} onViewDetails={handleViewDetails} beatenMap={beatenMap} />
                             : <div className="flex items-center justify-center py-12 text-[#546270] text-[11px]">Loading games…</div>
                     )}
 
@@ -1461,6 +1564,7 @@ const App = () => {
                 <AchievementModal
                     game={selectedGame.game}
                     achievementData={selectedGame.achievementData}
+                    beatenInfo={selectedGame.beatenInfo}
                     onClose={() => setSelectedGame(null)}
                 />
             )}
