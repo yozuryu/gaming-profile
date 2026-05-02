@@ -1621,32 +1621,16 @@ export default function App() {
             
             <div className="bg-[#1b2838] border border-[#2a475e] rounded-[3px] shadow-sm h-fit">
               <div className="p-2.5 bg-[#172333] border-b border-[#2a475e] rounded-t-[2px] text-[#c6d4df] flex items-center gap-2">
-                <span className="w-[2px] h-[12px] bg-[#66c0f4] rounded-[1px] shrink-0"></span>
-                <span className="text-[11px] uppercase tracking-wide font-semibold flex items-center gap-2">
-                  <Award size={13} className="text-[#66c0f4]" /> Site Awards
-                </span>
-              </div>
-              <div className="p-3 grid grid-cols-5 sm:grid-cols-8 lg:grid-cols-5 gap-2 min-h-[60px]">
-                {PROFILE_DATA.siteAwards.length > 0 ? PROFILE_DATA.siteAwards.map(award => (
-                  award.icon ? (
-                    <img key={award.id} src={award.icon} title={award.title} alt={award.title} className="w-full aspect-square rounded-[2px] border border-[#101214] opacity-80 hover:opacity-100 transition-opacity cursor-help bg-black" />
-                  ) : (
-                    <div key={award.id} title={award.title} className="w-full aspect-square rounded-[2px] border border-[#101214] bg-[#202d39] flex items-center justify-center">
-                        <Award size={16} className="text-[#546270]" />
-                    </div>
-                  )
-                )) : (
-                  <div className="col-span-full text-center text-[#546270] text-[10px] py-2">No site awards yet.</div>
-                )}
-              </div>
-            </div>
-
-            <div className="bg-[#1b2838] border border-[#2a475e] rounded-[3px] shadow-sm h-fit">
-              <div className="p-2.5 bg-[#172333] border-b border-[#2a475e] rounded-t-[2px] text-[#c6d4df] flex items-center gap-2">
                 <span className="w-[2px] h-[12px] bg-[#e5b143] rounded-[1px] shrink-0"></span>
-                <span className="text-[11px] uppercase tracking-wide font-semibold flex items-center gap-2">
+                <span className="text-[11px] uppercase tracking-wide font-semibold flex items-center gap-2 flex-1">
                   <Star size={13} className="text-[#e5b143]" /> Game Awards
                 </span>
+                <div className="flex items-center gap-1.5">
+                  <Trophy size={9} className="text-[#e5b143]" />
+                  <span className="text-[10px] font-semibold text-[#e5b143]">{PROFILE_DATA.gameAwards.filter(a => a.type === 'Mastery/Completion').length}</span>
+                  <Medal size={9} className="text-[#8f98a0]" />
+                  <span className="text-[10px] font-semibold text-[#8f98a0]">{PROFILE_DATA.gameAwards.filter(a => a.type !== 'Mastery/Completion').length}</span>
+                </div>
               </div>
               <div className="p-3 grid grid-cols-5 sm:grid-cols-8 lg:grid-cols-5 gap-2 min-h-[60px]">
                 {PROFILE_DATA.gameAwards.length > 0 ? PROFILE_DATA.gameAwards.map(award => (

@@ -1,5 +1,19 @@
 # Changelog
 
+## v26.05.02
+
+RA profile game awards update and beaten filter default.
+
+### RetroAchievements
+
+- Game Awards sidebar: removed unreliable Site Awards section; added Trophy + mastered count and Medal + beaten count to the Game Awards header
+
+### Steam
+
+- Completions page: Beaten filter now defaults to on
+
+---
+
 ## v26.05.01
 
 Steam win conditions, admin module, and app icon update.
