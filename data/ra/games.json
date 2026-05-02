@@ -6,8 +6,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 26131,
-            "numDistinctPlayersHardcore": 26131,
+            "numDistinctPlayersCasual": 26132,
+            "numDistinctPlayersHardcore": 26132,
             "numAchievements": 76,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -40,7 +40,7 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "60330",
-                    "numAwarded": 16590,
+                    "numAwarded": 16591,
                     "numAwardedHardcore": 7957,
                     "displayOrder": 58
                 },
@@ -52,7 +52,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60274",
-                    "numAwarded": 17875,
+                    "numAwarded": 17876,
                     "numAwardedHardcore": 8988,
                     "displayOrder": 1
                 },
@@ -256,8 +256,8 @@
                     "trueRatio": 155,
                     "type": null,
                     "badgeName": "60343",
-                    "numAwarded": 966,
-                    "numAwardedHardcore": 816,
+                    "numAwarded": 968,
+                    "numAwardedHardcore": 818,
                     "displayOrder": 67
                 },
                 "2085": {
@@ -268,8 +268,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60284",
-                    "numAwarded": 9115,
-                    "numAwardedHardcore": 4765,
+                    "numAwarded": 9116,
+                    "numAwardedHardcore": 4766,
                     "displayOrder": 12
                 },
                 "2090": {
@@ -280,8 +280,8 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "60285",
-                    "numAwarded": 7352,
-                    "numAwardedHardcore": 3994,
+                    "numAwarded": 7353,
+                    "numAwardedHardcore": 3995,
                     "displayOrder": 13
                 },
                 "2091": {
@@ -292,8 +292,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60328",
-                    "numAwarded": 3463,
-                    "numAwardedHardcore": 2376,
+                    "numAwarded": 3464,
+                    "numAwardedHardcore": 2377,
                     "displayOrder": 56
                 },
                 "2099": {
@@ -316,8 +316,8 @@
                     "trueRatio": 9,
                     "type": "progression",
                     "badgeName": "60287",
-                    "numAwarded": 5916,
-                    "numAwardedHardcore": 3355,
+                    "numAwarded": 5917,
+                    "numAwardedHardcore": 3356,
                     "displayOrder": 15
                 },
                 "2107": {
@@ -340,8 +340,8 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "60288",
-                    "numAwarded": 5560,
-                    "numAwardedHardcore": 3149,
+                    "numAwarded": 5562,
+                    "numAwardedHardcore": 3151,
                     "displayOrder": 16
                 },
                 "2109": {
@@ -352,8 +352,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "60289",
-                    "numAwarded": 3847,
-                    "numAwardedHardcore": 2412,
+                    "numAwarded": 3848,
+                    "numAwardedHardcore": 2413,
                     "displayOrder": 17
                 },
                 "2110": {
@@ -472,8 +472,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60276",
-                    "numAwarded": 19307,
-                    "numAwardedHardcore": 9010,
+                    "numAwarded": 19308,
+                    "numAwardedHardcore": 9011,
                     "displayOrder": 3
                 },
                 "2157": {
@@ -604,7 +604,7 @@
                     "trueRatio": 14,
                     "type": null,
                     "badgeName": "60339",
-                    "numAwarded": 3116,
+                    "numAwarded": 3117,
                     "numAwardedHardcore": 1916,
                     "displayOrder": 64
                 },
@@ -724,8 +724,8 @@
                     "trueRatio": 313,
                     "type": null,
                     "badgeName": "60357",
-                    "numAwarded": 916,
-                    "numAwardedHardcore": 810,
+                    "numAwarded": 917,
+                    "numAwardedHardcore": 811,
                     "displayOrder": 78
                 },
                 "2254": {
@@ -916,8 +916,8 @@
                     "trueRatio": 24,
                     "type": "missable",
                     "badgeName": "60356",
-                    "numAwarded": 1240,
-                    "numAwardedHardcore": 1092,
+                    "numAwarded": 1241,
+                    "numAwardedHardcore": 1093,
                     "displayOrder": 77
                 },
                 "4783": {
@@ -990,7 +990,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "248282",
-                    "numAwarded": 2999,
+                    "numAwarded": 3000,
                     "numAwardedHardcore": 2060,
                     "displayOrder": 3,
                     "dateEarned": "2026-04-26 12:57:28",
@@ -1076,8 +1076,8 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "248305",
-                    "numAwarded": 1598,
-                    "numAwardedHardcore": 1225,
+                    "numAwarded": 1599,
+                    "numAwardedHardcore": 1226,
                     "displayOrder": 18
                 },
                 "17744": {
@@ -20273,11 +20273,11 @@
                     "title": "That Was Easier Than Taking It Off From That Stone ...",
                     "description": "Defeat Irvine's party and acquire a Excalibur in the main story battle. [Chapter 22]",
                     "points": 3,
-                    "trueRatio": 17,
+                    "trueRatio": 16,
                     "type": "missable",
                     "badgeName": "139495",
-                    "numAwarded": 54,
-                    "numAwardedHardcore": 44,
+                    "numAwarded": 55,
+                    "numAwardedHardcore": 45,
                     "displayOrder": 0
                 },
                 "129232": {
@@ -20285,11 +20285,11 @@
                     "title": "The Final Battle",
                     "description": "Complete Chapter 22.",
                     "points": 5,
-                    "trueRatio": 26,
+                    "trueRatio": 25,
                     "type": "progression",
                     "badgeName": "139496",
-                    "numAwarded": 58,
-                    "numAwardedHardcore": 48,
+                    "numAwarded": 59,
+                    "numAwardedHardcore": 49,
                     "displayOrder": 0
                 },
                 "129233": {
@@ -20297,11 +20297,11 @@
                     "title": "Wife-And-Child-Protecting Salesman",
                     "description": "Receive 1000 plus the amount donated to the old man from City of Campbell by Bikkebakke in chapter 7. [Chapter 23]",
                     "points": 5,
-                    "trueRatio": 29,
+                    "trueRatio": 28,
                     "type": "missable",
                     "badgeName": "139497",
-                    "numAwarded": 47,
-                    "numAwardedHardcore": 43,
+                    "numAwarded": 48,
+                    "numAwardedHardcore": 44,
                     "displayOrder": 0
                 },
                 "129234": {
@@ -20576,8 +20576,8 @@
                     "trueRatio": 29,
                     "type": "missable",
                     "badgeName": "139516",
-                    "numAwarded": 54,
-                    "numAwardedHardcore": 42,
+                    "numAwarded": 55,
+                    "numAwardedHardcore": 43,
                     "displayOrder": 0
                 },
                 "129257": {
@@ -20633,11 +20633,11 @@
                     "title": "Always Three Steps Ahead",
                     "description": "Have all Light Armors at level 35 or higher. (No Ex-Play)",
                     "points": 10,
-                    "trueRatio": 61,
+                    "trueRatio": 60,
                     "type": "missable",
                     "badgeName": "139522",
-                    "numAwarded": 50,
-                    "numAwardedHardcore": 40,
+                    "numAwarded": 51,
+                    "numAwardedHardcore": 41,
                     "displayOrder": 0
                 },
                 "129262": {
@@ -28090,7 +28090,7 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "316148",
-                    "numAwarded": 792,
+                    "numAwarded": 793,
                     "numAwardedHardcore": 553,
                     "displayOrder": 0
                 },
@@ -28198,7 +28198,7 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "316157",
-                    "numAwarded": 782,
+                    "numAwarded": 783,
                     "numAwardedHardcore": 525,
                     "displayOrder": 0
                 },
@@ -28210,7 +28210,7 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "316158",
-                    "numAwarded": 759,
+                    "numAwarded": 760,
                     "numAwardedHardcore": 514,
                     "displayOrder": 0
                 },
@@ -40622,7 +40622,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "172206",
-                    "numAwarded": 1103,
+                    "numAwarded": 1104,
                     "numAwardedHardcore": 580,
                     "displayOrder": 4
                 },
@@ -40694,7 +40694,7 @@
                     "trueRatio": 4,
                     "type": "missable",
                     "badgeName": "172217",
-                    "numAwarded": 646,
+                    "numAwarded": 647,
                     "numAwardedHardcore": 378,
                     "displayOrder": 10
                 },
@@ -60052,8 +60052,8 @@
                     "trueRatio": 16,
                     "type": "progression",
                     "badgeName": "448817",
-                    "numAwarded": 190,
-                    "numAwardedHardcore": 176,
+                    "numAwarded": 191,
+                    "numAwardedHardcore": 177,
                     "displayOrder": 7
                 },
                 "396851": {
@@ -60064,8 +60064,8 @@
                     "trueRatio": 17,
                     "type": "progression",
                     "badgeName": "448818",
-                    "numAwarded": 186,
-                    "numAwardedHardcore": 172,
+                    "numAwarded": 187,
+                    "numAwardedHardcore": 173,
                     "displayOrder": 8
                 },
                 "398325": {
@@ -72993,11 +72993,11 @@
                     "title": "Ray of Illuminati 8B HD Max Combo",
                     "description": "Clear 'Ray of Illuminati' on 8B Hard with a Max Combo and an average Rate of at least 90% (Normal or Hard difficulty, non-mission, no Auto)",
                     "points": 10,
-                    "trueRatio": 482,
+                    "trueRatio": 403,
                     "type": null,
                     "badgeName": "304257",
-                    "numAwarded": 5,
-                    "numAwardedHardcore": 5,
+                    "numAwarded": 6,
+                    "numAwardedHardcore": 6,
                     "displayOrder": 244
                 },
                 "274084": {
@@ -73737,11 +73737,11 @@
                     "title": "BLYTHE 8B NM Max Combo",
                     "description": "Clear 'BLYTHE' on 8B Normal with a Max Combo and an average Rate of at least 95% (Normal or Hard difficulty, non-mission, no Auto)",
                     "points": 5,
-                    "trueRatio": 173,
+                    "trueRatio": 152,
                     "type": null,
                     "badgeName": "303361",
-                    "numAwarded": 7,
-                    "numAwardedHardcore": 7,
+                    "numAwarded": 8,
+                    "numAwardedHardcore": 8,
                     "displayOrder": 403
                 },
                 "274146": {
@@ -74313,11 +74313,11 @@
                     "title": "Higher 8B HD Max Combo",
                     "description": "Clear 'Higher' on 8B Hard with a Max Combo and an average Rate of at least 90% (Normal or Hard difficulty, non-mission, no Auto)",
                     "points": 10,
-                    "trueRatio": 482,
+                    "trueRatio": 403,
                     "type": null,
                     "badgeName": "307170",
-                    "numAwarded": 5,
-                    "numAwardedHardcore": 5,
+                    "numAwarded": 6,
+                    "numAwardedHardcore": 6,
                     "displayOrder": 515
                 },
                 "274194": {
@@ -74433,11 +74433,11 @@
                     "title": "Mess it up 8B HD Max Combo",
                     "description": "Clear 'Mess it up' on 8B Hard with a Max Combo and an average Rate of at least 90% (Normal or Hard difficulty, non-mission, no Auto)",
                     "points": 10,
-                    "trueRatio": 403,
+                    "trueRatio": 346,
                     "type": null,
                     "badgeName": "307182",
-                    "numAwarded": 6,
-                    "numAwardedHardcore": 6,
+                    "numAwarded": 7,
+                    "numAwardedHardcore": 7,
                     "displayOrder": 535
                 },
                 "274204": {
