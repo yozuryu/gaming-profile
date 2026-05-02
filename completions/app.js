@@ -219,7 +219,7 @@ const App = () => {
     const [steamProfile,     setSteamProfile]     = useState(null);
     const [beatenSteamGames, setBeatenSteamGames] = useState(null);
     const [platform,         setPlatform]         = useState('all');
-    const [showBeaten,       setShowBeaten]       = useState(false);
+    const [showBeaten,       setShowBeaten]       = useState(true);
     const [hiddenTags,       setHiddenTags]       = useState(new Set(['Hack', 'Homebrew', 'Prototype']));
     const [expandedYears,    setExpandedYears]    = useState(new Set([currentYear]));
 
