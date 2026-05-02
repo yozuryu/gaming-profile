@@ -1,5 +1,5 @@
 {
-    "total": 688,
+    "total": 689,
     "results": [
         {
             "id": 27,
@@ -1647,6 +1647,15 @@
             "imageIcon": "/Images/074335.png",
             "pointsTotal": 1415,
             "achievementsPublished": 172
+        },
+        {
+            "id": 3257,
+            "title": "Viewtiful Joe: Red Hot Rumble",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/096141.png",
+            "pointsTotal": 335,
+            "achievementsPublished": 49
         },
         {
             "id": 3259,

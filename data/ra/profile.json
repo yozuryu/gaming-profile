@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-05-02T15:53:20.626Z"
+        "extractionTimestamp": "2026-05-02T16:56:31.859Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Playing Final Fantasy III",
-        "lastGameId": 3216,
+        "richPresenceMsg": "[Lv.4 Beginner, 5 Clears] Playing Lets go Baby 4B NM in 4B Mode (Easy)",
+        "lastGameId": 18157,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1888,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Playing Final Fantasy III",
-        "richPresenceMsgDate": "2026-05-02 10:20:17",
-        "lastGameId": 3216,
+        "richPresenceMsg": "[Lv.4 Beginner, 5 Clears] Playing Lets go Baby 4B NM in 4B Mode (Easy)",
+        "richPresenceMsgDate": "2026-05-02 16:05:20",
+        "lastGameId": 18157,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1888,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 49878,
+        "rank": 49884,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 142234,
+        "totalRanked": 142241,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -125,6 +125,24 @@
         ]
     },
     "recentlyPlayedGames": [
+        {
+            "gameId": 18157,
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "title": "DJ Max Fever",
+            "imageIcon": "/Images/080862.png",
+            "imageTitle": "/Images/061824.png",
+            "imageIngame": "/Images/068346.png",
+            "imageBoxArt": "/Images/061827.png",
+            "lastPlayed": "2026-05-02 16:05:20",
+            "achievementsTotal": 467,
+            "numPossibleAchievements": 467,
+            "possibleScore": 3300,
+            "numAchieved": 5,
+            "scoreAchieved": 5,
+            "numAchievedHardcore": 5,
+            "scoreAchievedHardcore": 5
+        },
         {
             "gameId": 3216,
             "consoleId": 41,
@@ -372,24 +390,6 @@
             "achievementsTotal": 68,
             "numPossibleAchievements": 68,
             "possibleScore": 433,
-            "numAchieved": 0,
-            "scoreAchieved": 0,
-            "numAchievedHardcore": 0,
-            "scoreAchievedHardcore": 0
-        },
-        {
-            "gameId": 29047,
-            "consoleId": 6,
-            "consoleName": "Game Boy Color",
-            "title": "~Homebrew~ Hollow Knight Silksong",
-            "imageIcon": "/Images/111197.png",
-            "imageTitle": "/Images/093103.png",
-            "imageIngame": "/Images/093102.png",
-            "imageBoxArt": "/Images/119810.png",
-            "lastPlayed": "2026-04-20 01:51:08",
-            "achievementsTotal": 16,
-            "numPossibleAchievements": 16,
-            "possibleScore": 87,
             "numAchieved": 0,
             "scoreAchieved": 0,
             "numAchievedHardcore": 0,
@@ -1125,23 +1125,23 @@
         "gameUrl": "/game/449"
     },
     "mostRecentGame": {
-        "gameId": 3216,
+        "gameId": 18157,
         "consoleId": 41,
         "consoleName": "PlayStation Portable",
-        "title": "Final Fantasy III",
-        "imageIcon": "/Images/070789.png",
-        "imageTitle": "/Images/066755.png",
-        "imageIngame": "/Images/066756.png",
-        "imageBoxArt": "/Images/050431.png",
-        "lastPlayed": "2026-05-02 10:20:17",
-        "achievementsTotal": 152,
-        "numPossibleAchievements": 152,
-        "possibleScore": 840,
-        "numAchieved": 0,
-        "scoreAchieved": 0,
-        "numAchievedHardcore": 0,
-        "scoreAchievedHardcore": 0
+        "title": "DJ Max Fever",
+        "imageIcon": "/Images/080862.png",
+        "imageTitle": "/Images/061824.png",
+        "imageIngame": "/Images/068346.png",
+        "imageBoxArt": "/Images/061827.png",
+        "lastPlayed": "2026-05-02 16:05:20",
+        "achievementsTotal": 467,
+        "numPossibleAchievements": 467,
+        "possibleScore": 3300,
+        "numAchieved": 5,
+        "scoreAchieved": 5,
+        "numAchievedHardcore": 5,
+        "scoreAchievedHardcore": 5
     },
     "points7Days": 100,
-    "points30Days": 323
+    "points30Days": 313
 }
