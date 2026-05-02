@@ -7,7 +7,9 @@ Steam win conditions, admin module, and app icon update.
 ### Steam
 
 - Admin: new **Win Conditions** module under the Steam group — select any Steam game with achievements, click achievements to mark them as win conditions (multi-select); saved to `data/steam/win-conditions.json` as arrays
-- Win conditions support multiple achievements per game — if more than one is unlocked, the earliest unlock date is used as the beaten date
+- Win conditions support OR / AND mode per game — **OR** (default): any one condition unlocked counts, beaten date = earliest unlock; **AND**: all conditions must be unlocked, beaten date = latest unlock
+- Win condition data format updated to `{ mode: "or"|"and", achievements: [...] }`; old array format is read as OR for backward compatibility
+- Admin Win Conditions: OR/AND toggle pill added to the toolbar when conditions are set; saves in new object format
 - Completions: loads win conditions on mount, fetches game files to check unlock status, and shows beaten Steam games alongside RA beaten and Steam perfect entries; beaten games excluded if already in `perfectGames`
 - Steam profile: sidebar renamed to **Completions**; flat single grid — perfect games first (gold `border-2`) then beaten-only games (no border); header shows ★ + count (gold) and 🏅 + count (gray); beaten games use their win condition achievement icon as thumbnail; games that are both perfect and beaten show only as perfect
 - Completions page: beaten Steam game cards now show the win condition achievement icon instead of the game icon, and rarity label/percentage for that achievement

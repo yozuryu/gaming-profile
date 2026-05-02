@@ -871,24 +871,37 @@ function SteamWinConditionsModule() {
         setSaving(false); setDirty(false); setSaved(true);
     };
 
+    const getEntry = (appId) => {
+        const val = winConditions[String(appId)];
+        if (!val) return { mode: 'or', achievements: [] };
+        if (Array.isArray(val)) return { mode: 'or', achievements: val };
+        return { mode: val.mode || 'or', achievements: val.achievements || [] };
+    };
+
     const toggleWinCond = (appId, apiName) => {
         const key = String(appId);
-        const current = Array.isArray(winConditions[key]) ? winConditions[key] : [];
-        const next = current.includes(apiName)
-            ? current.filter(n => n !== apiName)
-            : [...current, apiName];
+        const entry = getEntry(appId);
+        const nextAchs = entry.achievements.includes(apiName)
+            ? entry.achievements.filter(n => n !== apiName)
+            : [...entry.achievements, apiName];
         const updated = { ...winConditions };
-        if (next.length === 0) delete updated[key];
-        else updated[key] = next;
-        setWinConditions(updated);
+        if (nextAchs.length === 0) delete updated[key];
+        else updated[key] = { mode: entry.mode, achievements: nextAchs };
+        setWinConditions(updated); setDirty(true); setSaved(false);
+    };
+
+    const toggleMode = (appId) => {
+        const key = String(appId);
+        const entry = getEntry(appId);
+        if (!entry.achievements.length) return;
+        setWinConditions({ ...winConditions, [key]: { mode: entry.mode === 'or' ? 'and' : 'or', achievements: entry.achievements } });
         setDirty(true); setSaved(false);
     };
 
     const clearWinConds = (appId) => {
         const updated = { ...winConditions };
         delete updated[String(appId)];
-        setWinConditions(updated);
-        setDirty(true); setSaved(false);
+        setWinConditions(updated); setDirty(true); setSaved(false);
     };
 
     const games = useMemo(() => {
@@ -922,7 +935,9 @@ function SteamWinConditionsModule() {
         );
     }, [sortedAch, achSearch]);
 
-    const currentWinConds = selected ? (Array.isArray(winConditions[String(selected.appId)]) ? winConditions[String(selected.appId)] : []) : [];
+    const currentEntry    = selected ? getEntry(selected.appId) : { mode: 'or', achievements: [] };
+    const currentWinConds = currentEntry.achievements;
+    const currentMode     = currentEntry.mode;
     const winCondCount = winConditions ? Object.keys(winConditions).length : 0;
 
     if (!gameIndex || !winConditions) return <div className="p-6 text-[#546270] text-[11px]">Loading…</div>;
@@ -937,7 +952,7 @@ function SteamWinConditionsModule() {
                 </div>
                 <div className="flex-1 overflow-y-auto py-1">
                     {filtered.map(g => {
-                        const hasWC = (winConditions[String(g.appId)]?.length ?? 0) > 0;
+                        const hasWC = getEntry(g.appId).achievements.length > 0;
                         const isSel = selected?.appId === g.appId;
                         return (
                             <button key={g.appId} onClick={() => setSelected(g)}
@@ -992,12 +1007,20 @@ function SteamWinConditionsModule() {
                                 <div className="px-3 py-2 border-b border-[#2a475e] shrink-0 flex items-center gap-2">
                                     <input value={achSearch} onChange={e => setAchSearch(e.target.value)}
                                         placeholder={`Search ${gameData.achievements.length} achievements…`} className="input flex-1" />
-                                    {currentWinConds.length > 0 && (
+                                    {currentWinConds.length > 0 && (<>
+                                        <div className="flex items-center shrink-0 border border-[#2a475e] rounded-[2px] overflow-hidden text-[10px] font-bold uppercase tracking-wider">
+                                            {['or', 'and'].map(m => (
+                                                <button key={m} onClick={() => toggleMode(selected.appId)}
+                                                    className={`px-2 py-1 transition-colors ${currentMode === m ? 'bg-[#66c0f4] text-[#101214]' : 'text-[#546270] hover:text-[#8f98a0]'}`}>
+                                                    {m}
+                                                </button>
+                                            ))}
+                                        </div>
                                         <button onClick={() => clearWinConds(selected.appId)}
                                             className="shrink-0 text-[10px] text-[#ff6b6b] border border-[#ff6b6b]/30 hover:border-[#ff6b6b] px-2 py-1 rounded-[2px] transition-colors whitespace-nowrap">
                                             Clear all
                                         </button>
-                                    )}
+                                    </>)}
                                 </div>
                                 <div className="flex-1 overflow-y-auto">
                                     {filteredAch.length === 0 && (

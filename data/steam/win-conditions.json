@@ -1,35 +1,20 @@
 {
-  "251150": [
-    "CLEARCHAPTER4"
-  ],
-  "335300": [
-    "ACHIEVEMENT_04"
-  ],
-  "347830": [
-    "ACHIEVEMENT_04",
-    "ACHIEVEMENT_05",
-    "ACHIEVEMENT_06"
-  ],
-  "373420": [
-    "quest51"
-  ],
-  "388800": [
-    "NEW_ACHIEVEMENT_1_14",
-    "NEW_ACHIEVEMENT_1_15"
-  ],
-  "427700": [
-    "BEATBOSS_9"
-  ],
-  "538680": [
-    "STROPHY_SCENARIO_CLEAR"
-  ],
-  "748490": [
-    "TROPHY2_SCENARIO_AFTER"
-  ],
-  "837610": [
-    "NEW_ACHIEVEMENT_1_11"
-  ],
-  "1903340": [
-    "THE_END"
-  ]
+  "55150": { "mode": "or", "achievements": ["SP_PROGRESS_DAEMON_PRINCE_NEMEROTH"] },
+  "107100": { "mode": "or", "achievements": ["AchEndA"] },
+  "203160": { "mode": "or", "achievements": ["NEW_ACHIEVEMENT_2_31"] },
+  "251150": { "mode": "or", "achievements": ["CLEARCHAPTER4"] },
+  "335300": { "mode": "or", "achievements": ["ACHIEVEMENT_04"] },
+  "347830": { "mode": "or", "achievements": ["ACHIEVEMENT_04", "ACHIEVEMENT_05", "ACHIEVEMENT_06"] },
+  "373420": { "mode": "or", "achievements": ["quest51"] },
+  "388800": { "mode": "or", "achievements": ["NEW_ACHIEVEMENT_1_14", "NEW_ACHIEVEMENT_1_15"] },
+  "427700": { "mode": "or", "achievements": ["BEATBOSS_9"] },
+  "538680": { "mode": "or", "achievements": ["STROPHY_SCENARIO_CLEAR"] },
+  "609150": { "mode": "or", "achievements": ["TROPHY_E_PRIVATEED_01", "TROPHY_E_PRIVATEED_06", "TROPHY_E_PRIVATEED_07", "TROPHY_E_PRIVATEED_03", "TROPHY_E_PRIVATEED_02", "TROPHY_E_PRIVATEED_04", "TROPHY_E_PRIVATEED_05", "TROPHY_E_PRIVATEED_08", "TROPHY_E_PRIVATEED_09"] },
+  "738540": { "mode": "or", "achievements": ["TROP053"] },
+  "748490": { "mode": "or", "achievements": ["TROPHY2_SCENARIO_AFTER"] },
+  "837610": { "mode": "or", "achievements": ["NEW_ACHIEVEMENT_1_11"] },
+  "1085180": { "mode": "or", "achievements": ["NEW_ACHIEVEMENT_1_3"] },
+  "1903340": { "mode": "or", "achievements": ["THE_END"] },
+  "2001120": { "mode": "or", "achievements": ["CompleteGame"] },
+  "2238900": { "mode": "and", "achievements": ["Achievement_14", "Achievement_15"] }
 }

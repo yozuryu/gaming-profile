@@ -772,11 +772,15 @@
             const perfectAppIds = new Set((steam.perfectGames ?? []).map(g => String(g.appId)));
             const wcEntries = Object.entries(winConds).filter(([id]) => !perfectAppIds.has(id));
             if (wcEntries.length) {
-              const checks = await Promise.all(wcEntries.map(async ([appId, apiNames]) => {
+              const checks = await Promise.all(wcEntries.map(async ([appId, wc]) => {
                 try {
-                  const names = Array.isArray(apiNames) ? apiNames : [apiNames];
+                  const isArr = Array.isArray(wc);
+                  const mode  = isArr ? 'or' : (wc.mode || 'or');
+                  const names = isArr ? wc : (wc.achievements || []);
                   const game = await fetch(`./data/steam/games/${appId}.json`).then(r => r.json());
-                  return (game.achievements || []).some(a => names.includes(a.apiName) && a.unlocked);
+                  const achs = game.achievements || [];
+                  if (mode === 'and') return names.every(n => achs.some(a => a.apiName === n && a.unlocked));
+                  return achs.some(a => names.includes(a.apiName) && a.unlocked);
                 } catch { return false; }
               }));
               steamBeatenCount = checks.filter(Boolean).length;

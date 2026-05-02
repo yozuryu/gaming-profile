@@ -194,7 +194,7 @@ const CompletionCard = ({ item }) => {
 
             {/* Right: stats + date */}
             <div className="flex flex-col items-end gap-0.5 shrink-0 text-right">
-                {item.total != null && (
+                {item.total != null && item.type !== 'beaten' && (
                     <span className="text-[9px] font-medium" style={{ color: cfg.stripe }}>
                         {item.total}/{item.total}
                     </span>
@@ -241,25 +241,32 @@ const App = () => {
                 const entries = Object.entries(wc);
                 if (!entries.length) { setBeatenSteamGames([]); return; }
                 const results = await Promise.all(
-                    entries.map(async ([appId, apiNames]) => {
+                    entries.map(async ([appId, wc]) => {
                         try {
-                            const names = Array.isArray(apiNames) ? apiNames : [apiNames];
+                            const isArr = Array.isArray(wc);
+                            const mode  = isArr ? 'or' : (wc.mode || 'or');
+                            const names = isArr ? wc : (wc.achievements || []);
                             const game = await fetch(`../data/steam/games/${appId}.json`).then(r => r.json());
-                            const unlocked = (game.achievements || [])
-                                .filter(a => names.includes(a.apiName) && a.unlocked && a.unlockedAt)
-                                .sort((a, b) => new Date(a.unlockedAt) - new Date(b.unlockedAt));
-                            if (!unlocked.length) return null;
-                            const earliest = unlocked[0];
+                            const matched = (game.achievements || [])
+                                .filter(a => names.includes(a.apiName) && a.unlocked && a.unlockedAt);
+                            if (mode === 'and') {
+                                if (matched.length < names.length) return null;
+                                matched.sort((a, b) => new Date(b.unlockedAt) - new Date(a.unlockedAt));
+                            } else {
+                                if (!matched.length) return null;
+                                matched.sort((a, b) => new Date(a.unlockedAt) - new Date(b.unlockedAt));
+                            }
+                            const pick = matched[0];
                             return {
                                 appId: game.appId,
                                 gameName: game.gameName,
                                 iconUrl: game.iconUrl,
-                                winCondIconHash: earliest.iconUrl,
-                                winCondGlobalPct: earliest.globalPct,
+                                winCondIconHash: pick.iconUrl,
+                                winCondGlobalPct: pick.globalPct,
                                 total: game.total,
                                 playtimeForever: game.playtimeForever,
-                                beatenAt: earliest.unlockedAt,
-                                winConditionName: earliest.displayName,
+                                beatenAt: pick.unlockedAt,
+                                winConditionName: pick.displayName,
                             };
                         } catch { return null; }
                     })
@@ -281,8 +288,10 @@ const App = () => {
         const steamPerfect = normalizeSteam(steamProfile?.perfectGames ?? []);
         // Exclude beaten games that are already perfect
         const perfectIds   = new Set(steamPerfect.map(g => String(g.gameId)));
-        const steamBeaten  = normalizeSteamBeaten(beatenSteamGames ?? [])
-            .filter(g => !perfectIds.has(String(g.gameId)));
+        const steamBeaten  = showBeaten
+            ? normalizeSteamBeaten(beatenSteamGames ?? [])
+                .filter(g => !perfectIds.has(String(g.gameId)))
+            : [];
         let all = [...ra, ...steamPerfect, ...steamBeaten];
         if (platform === 'ra')    all = all.filter(c => c.platform === 'ra');
         if (platform === 'steam') all = all.filter(c => c.platform === 'steam');
