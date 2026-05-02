@@ -6,8 +6,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 26113,
-            "numDistinctPlayersHardcore": 26113,
+            "numDistinctPlayersCasual": 26116,
+            "numDistinctPlayersHardcore": 26116,
             "numAchievements": 76,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -40,7 +40,7 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "60330",
-                    "numAwarded": 16579,
+                    "numAwarded": 16580,
                     "numAwardedHardcore": 7952,
                     "displayOrder": 58
                 },
@@ -52,8 +52,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60274",
-                    "numAwarded": 17859,
-                    "numAwardedHardcore": 8981,
+                    "numAwarded": 17862,
+                    "numAwardedHardcore": 8983,
                     "displayOrder": 1
                 },
                 "1991": {
@@ -88,7 +88,7 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60311",
-                    "numAwarded": 3342,
+                    "numAwarded": 3343,
                     "numAwardedHardcore": 2116,
                     "displayOrder": 39
                 },
@@ -124,7 +124,7 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "60310",
-                    "numAwarded": 2896,
+                    "numAwarded": 2897,
                     "numAwardedHardcore": 1878,
                     "displayOrder": 38
                 },
@@ -316,7 +316,7 @@
                     "trueRatio": 9,
                     "type": "progression",
                     "badgeName": "60287",
-                    "numAwarded": 5911,
+                    "numAwarded": 5912,
                     "numAwardedHardcore": 3352,
                     "displayOrder": 15
                 },
@@ -472,8 +472,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60276",
-                    "numAwarded": 19292,
-                    "numAwardedHardcore": 9003,
+                    "numAwarded": 19293,
+                    "numAwardedHardcore": 9004,
                     "displayOrder": 3
                 },
                 "2157": {
@@ -580,8 +580,8 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "60336",
-                    "numAwarded": 2442,
-                    "numAwardedHardcore": 1809,
+                    "numAwarded": 2443,
+                    "numAwardedHardcore": 1810,
                     "displayOrder": 62
                 },
                 "2185": {
@@ -640,8 +640,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60315",
-                    "numAwarded": 3643,
-                    "numAwardedHardcore": 2240,
+                    "numAwarded": 3644,
+                    "numAwardedHardcore": 2241,
                     "displayOrder": 43
                 },
                 "2194": {
@@ -688,8 +688,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60314",
-                    "numAwarded": 3647,
-                    "numAwardedHardcore": 2241,
+                    "numAwarded": 3648,
+                    "numAwardedHardcore": 2242,
                     "displayOrder": 42
                 },
                 "2242": {
@@ -721,7 +721,7 @@
                     "title": "Master of War",
                     "description": "Defeat Spekkio's ultimate form",
                     "points": 50,
-                    "trueRatio": 313,
+                    "trueRatio": 314,
                     "type": null,
                     "badgeName": "60357",
                     "numAwarded": 915,
@@ -940,8 +940,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5384,
-            "numDistinctPlayersHardcore": 5384,
+            "numDistinctPlayersCasual": 5385,
+            "numDistinctPlayersHardcore": 5385,
             "numAchievements": 59,
             "numAwardedToUser": 4,
             "numAwardedToUserHardcore": 4,
@@ -962,8 +962,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "248314",
-                    "numAwarded": 5158,
-                    "numAwardedHardcore": 3124,
+                    "numAwarded": 5159,
+                    "numAwardedHardcore": 3125,
                     "displayOrder": 1,
                     "dateEarned": "2026-04-25 15:08:47",
                     "dateEarnedHardcore": "2026-04-25 15:08:47"
@@ -976,8 +976,8 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "248284",
-                    "numAwarded": 3492,
-                    "numAwardedHardcore": 2340,
+                    "numAwarded": 3493,
+                    "numAwardedHardcore": 2341,
                     "displayOrder": 2,
                     "dateEarned": "2026-04-25 15:29:19",
                     "dateEarnedHardcore": "2026-04-25 15:29:19"
@@ -1217,7 +1217,7 @@
                     "title": "Lost in My Mind",
                     "description": "Find the cure for Nina's amnesia",
                     "points": 10,
-                    "trueRatio": 18,
+                    "trueRatio": 19,
                     "type": "progression",
                     "badgeName": "248269",
                     "numAwarded": 1226,
@@ -1543,7 +1543,7 @@
                     "title": "Fashion for Women Only I",
                     "description": "Obtain the ClearCL armor",
                     "points": 10,
-                    "trueRatio": 18,
+                    "trueRatio": 19,
                     "type": null,
                     "badgeName": "248254",
                     "numAwarded": 1209,
@@ -1678,8 +1678,8 @@
             "consoleId": 4,
             "consoleName": "Game Boy",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 17487,
-            "numDistinctPlayersHardcore": 17487,
+            "numDistinctPlayersCasual": 17488,
+            "numDistinctPlayersHardcore": 17488,
             "numAchievements": 13,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -1724,7 +1724,7 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "487249",
-                    "numAwarded": 14580,
+                    "numAwarded": 14581,
                     "numAwardedHardcore": 6389,
                     "displayOrder": 1
                 },
@@ -1736,7 +1736,7 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "487250",
-                    "numAwarded": 9106,
+                    "numAwarded": 9107,
                     "numAwardedHardcore": 4426,
                     "displayOrder": 2
                 },
@@ -1748,7 +1748,7 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "487253",
-                    "numAwarded": 16863,
+                    "numAwarded": 16864,
                     "numAwardedHardcore": 7153,
                     "displayOrder": 5,
                     "dateEarned": "2026-04-27 14:22:18",
@@ -14058,8 +14058,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "399409",
-                    "numAwarded": 251,
-                    "numAwardedHardcore": 231,
+                    "numAwarded": 252,
+                    "numAwardedHardcore": 232,
                     "displayOrder": 0,
                     "dateEarned": "2026-04-29 15:35:53",
                     "dateEarnedHardcore": "2026-04-29 15:35:53"
@@ -14072,8 +14072,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "399410",
-                    "numAwarded": 242,
-                    "numAwardedHardcore": 222,
+                    "numAwarded": 243,
+                    "numAwardedHardcore": 223,
                     "displayOrder": 0,
                     "dateEarned": "2026-04-29 15:35:53",
                     "dateEarnedHardcore": "2026-04-29 15:35:53"
@@ -14086,8 +14086,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "399411",
-                    "numAwarded": 229,
-                    "numAwardedHardcore": 210,
+                    "numAwarded": 230,
+                    "numAwardedHardcore": 211,
                     "displayOrder": 0
                 },
                 "336919": {
@@ -14098,8 +14098,8 @@
                     "trueRatio": 30,
                     "type": null,
                     "badgeName": "381050",
-                    "numAwarded": 125,
-                    "numAwardedHardcore": 111,
+                    "numAwarded": 126,
+                    "numAwardedHardcore": 112,
                     "displayOrder": 0
                 },
                 "336920": {
@@ -14110,8 +14110,8 @@
                     "trueRatio": 81,
                     "type": null,
                     "badgeName": "381051",
-                    "numAwarded": 116,
-                    "numAwardedHardcore": 102,
+                    "numAwarded": 117,
+                    "numAwardedHardcore": 103,
                     "displayOrder": 0
                 },
                 "336921": {
@@ -14119,11 +14119,11 @@
                     "title": "Tetra Clear 2-9",
                     "description": "Clear Round 2, Stage 9 using only Tetrises.",
                     "points": 25,
-                    "trueRatio": 85,
+                    "trueRatio": 84,
                     "type": null,
                     "badgeName": "381052",
-                    "numAwarded": 111,
-                    "numAwardedHardcore": 97,
+                    "numAwarded": 112,
+                    "numAwardedHardcore": 98,
                     "displayOrder": 0
                 },
                 "336922": {
@@ -14134,8 +14134,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "399412",
-                    "numAwarded": 226,
-                    "numAwardedHardcore": 207,
+                    "numAwarded": 227,
+                    "numAwardedHardcore": 208,
                     "displayOrder": 0,
                     "dateEarned": "2026-04-29 16:01:46",
                     "dateEarnedHardcore": "2026-04-29 16:01:46"
@@ -14148,8 +14148,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "399413",
-                    "numAwarded": 222,
-                    "numAwardedHardcore": 203,
+                    "numAwarded": 223,
+                    "numAwardedHardcore": 204,
                     "displayOrder": 0,
                     "dateEarned": "2026-04-29 16:01:46",
                     "dateEarnedHardcore": "2026-04-29 16:01:46"
@@ -14162,8 +14162,8 @@
                     "trueRatio": 19,
                     "type": null,
                     "badgeName": "399414",
-                    "numAwarded": 214,
-                    "numAwardedHardcore": 196,
+                    "numAwarded": 215,
+                    "numAwardedHardcore": 197,
                     "displayOrder": 0
                 },
                 "336925": {
@@ -14171,11 +14171,11 @@
                     "title": "Double Clear 3-9",
                     "description": "Clear Round 3, Stage 9 using only doubles or better.",
                     "points": 25,
-                    "trueRatio": 79,
+                    "trueRatio": 78,
                     "type": null,
                     "badgeName": "381056",
-                    "numAwarded": 120,
-                    "numAwardedHardcore": 106,
+                    "numAwarded": 121,
+                    "numAwardedHardcore": 107,
                     "displayOrder": 0
                 },
                 "336928": {
@@ -38797,11 +38797,11 @@
                     "title": "Tower Of God",
                     "description": "As Nina and her guards, beat every demi-boss in one session and reach the Wizard without any party member ever dying in Karma Tower",
                     "points": 5,
-                    "trueRatio": 8,
+                    "trueRatio": 7,
                     "type": "missable",
                     "badgeName": "172216",
-                    "numAwarded": 612,
-                    "numAwardedHardcore": 348,
+                    "numAwarded": 613,
+                    "numAwardedHardcore": 349,
                     "displayOrder": 6
                 },
                 "153627": {
@@ -38872,7 +38872,7 @@
                     "trueRatio": 4,
                     "type": "progression",
                     "badgeName": "172220",
-                    "numAwarded": 562,
+                    "numAwarded": 563,
                     "numAwardedHardcore": 335,
                     "displayOrder": 12
                 },
@@ -38884,7 +38884,7 @@
                     "trueRatio": 10,
                     "type": "missable",
                     "badgeName": "172221",
-                    "numAwarded": 321,
+                    "numAwarded": 322,
                     "numAwardedHardcore": 228,
                     "displayOrder": 13
                 },
@@ -58206,8 +58206,8 @@
                     "trueRatio": 16,
                     "type": "progression",
                     "badgeName": "448817",
-                    "numAwarded": 189,
-                    "numAwardedHardcore": 175,
+                    "numAwarded": 190,
+                    "numAwardedHardcore": 176,
                     "displayOrder": 7
                 },
                 "396851": {
@@ -58218,8 +58218,8 @@
                     "trueRatio": 17,
                     "type": "progression",
                     "badgeName": "448818",
-                    "numAwarded": 185,
-                    "numAwardedHardcore": 171,
+                    "numAwarded": 186,
+                    "numAwardedHardcore": 172,
                     "displayOrder": 8
                 },
                 "398325": {
@@ -58230,8 +58230,8 @@
                     "trueRatio": 3,
                     "type": "progression",
                     "badgeName": "449898",
-                    "numAwarded": 179,
-                    "numAwardedHardcore": 165,
+                    "numAwarded": 180,
+                    "numAwardedHardcore": 166,
                     "displayOrder": 9
                 },
                 "398969": {
@@ -58242,8 +58242,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "450897",
-                    "numAwarded": 167,
-                    "numAwardedHardcore": 155,
+                    "numAwarded": 168,
+                    "numAwardedHardcore": 156,
                     "displayOrder": 10
                 },
                 "399997": {
