@@ -14,7 +14,7 @@
             "iconUrl": "ea881f656f7ff3dbb0fb49c80fad159d3825dea2.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 81.8
+            "globalPct": 81.9
         },
         {
             "apiName": "SR1_EXECUTION_PLACE",
@@ -212,7 +212,7 @@
             "iconUrl": "9bdecc35f5ccb6a14630757dedd9e003be5eee87.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 8
+            "globalPct": 7.9
         },
         {
             "apiName": "SR1_JUMP_IN_LAKE_OF_DEAD",
@@ -366,7 +366,7 @@
             "iconUrl": "4c254b4bfa4aac69ac1d9a929a75fd4bdc55f139.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 17.4
+            "globalPct": 17.5
         },
         {
             "apiName": "SR1_TALK_TO_DUMAH",
@@ -432,7 +432,7 @@
             "iconUrl": "6d4c38e9aa2b37589e298fab80eae3c1305979fc.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 36.9
+            "globalPct": 36.8
         },
         {
             "apiName": "SR1_ALL_WARP_GATES",
@@ -520,7 +520,7 @@
             "iconUrl": "8e44b95c991a4eabc6ba5866b1cdf28823c2f3ac.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": false,
-            "globalPct": 13.3
+            "globalPct": 13.2
         },
         {
             "apiName": "SR1_SUNLIGHT_GLYPH",
@@ -652,7 +652,7 @@
             "iconUrl": "8c2f0026c2ecae24acd90143a402856d42bbd0a2.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
             "hidden": true,
-            "globalPct": 11.6
+            "globalPct": 11.5
         },
         {
             "apiName": "SR2_RETURN_TO_RELIC_HALL",
@@ -941,7 +941,7 @@
             "unlockedAt": "2024-12-25T11:03:28.000Z",
             "iconUrl": "ea881f656f7ff3dbb0fb49c80fad159d3825dea2.jpg",
             "iconGrayUrl": "20fb1fd6dd4cb34326c98c4c7d68ac0cf0419df1.jpg",
-            "globalPct": 81.8
+            "globalPct": 81.9
         },
         {
             "apiName": "SR1_EXECUTION_PLACE",

@@ -179,7 +179,7 @@
             "iconUrl": "60f87063c94de13e7791fb4e1c84a35405299f62.jpg",
             "iconGrayUrl": "8bad3d52107b3a22bb3a8ac83e2ae8294b1d746f.jpg",
             "hidden": false,
-            "globalPct": 72.5
+            "globalPct": 72.6
         },
         {
             "apiName": "FIGHT_BEAT_BEHOLDER",
@@ -1246,7 +1246,7 @@
             "iconUrl": "225a7c1f80f893166b28d820c18aefd92c91a7b2.jpg",
             "iconGrayUrl": "7bcd55e9e4d0f4c137ce10e25dc50a436526da85.jpg",
             "hidden": false,
-            "globalPct": 14.6
+            "globalPct": 14.5
         },
         {
             "apiName": "FIGHT_BEAT_DEATH_NODAMAGE",
@@ -1377,7 +1377,7 @@
             "unlockedAt": "2019-04-20T01:56:00.000Z",
             "iconUrl": "60f87063c94de13e7791fb4e1c84a35405299f62.jpg",
             "iconGrayUrl": "8bad3d52107b3a22bb3a8ac83e2ae8294b1d746f.jpg",
-            "globalPct": 72.5
+            "globalPct": 72.6
         },
         {
             "apiName": "BIOME_REACHED_BRIDGE",

@@ -47,7 +47,7 @@
             "iconUrl": "32830e675969af147115e3334b78c0913ac97a2d.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
             "hidden": false,
-            "globalPct": 55.1
+            "globalPct": 55.2
         },
         {
             "apiName": "ACH_SPIRIT_GET_S5050",
@@ -80,7 +80,7 @@
             "iconUrl": "144d24c54629a528df828802324bbbd1571e2b7a.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
             "hidden": true,
-            "globalPct": 37.4
+            "globalPct": 37.5
         },
         {
             "apiName": "ACH_SPIRIT_GET_S5080",
@@ -446,7 +446,7 @@
             "unlockedAt": "2026-03-08T12:25:12.000Z",
             "iconUrl": "32830e675969af147115e3334b78c0913ac97a2d.jpg",
             "iconGrayUrl": "da387813d0497161c62d129ff1e165a997e86b15.jpg",
-            "globalPct": 55.1
+            "globalPct": 55.2
         },
         {
             "apiName": "ACH_ACTION_PILE_LVL3",

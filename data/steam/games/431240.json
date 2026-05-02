@@ -47,7 +47,7 @@
             "iconUrl": "07da3c2db7d94991a3440ba767841581dd59af7a.jpg",
             "iconGrayUrl": "9ed6a5ae5eb6c2e8154a3d6d8b827d0973f346f8.jpg",
             "hidden": false,
-            "globalPct": 54
+            "globalPct": 53.9
         },
         {
             "apiName": "OASISFULLGAME_ACHIEVEMENT",
@@ -146,7 +146,7 @@
             "iconUrl": "ed455af2b4d4d835b25662ebcc4b268a37c809b8.jpg",
             "iconGrayUrl": "24d87ff404bc410a16795b509e23f7b88817da1b.jpg",
             "hidden": false,
-            "globalPct": 38.7
+            "globalPct": 38.6
         },
         {
             "apiName": "TWILIGHTFULLGAME_ACHIEVEMENT",
@@ -168,7 +168,7 @@
             "iconUrl": "b78ddea2d1d78148a76160c865cc52820eadab13.jpg",
             "iconGrayUrl": "c9fc60a3a2e61e359168c6d135b9cb59868bec43.jpg",
             "hidden": false,
-            "globalPct": 27.7
+            "globalPct": 27.8
         },
         {
             "apiName": "CANDYLANDFULLGAME_ACHIEVEMENT",
@@ -443,7 +443,7 @@
             "iconUrl": "ab2cec68b4346c5ed02dabe7f7e54b374624d7a2.jpg",
             "iconGrayUrl": "50de3cccdd69769b4240c9575686f9b2cef70289.jpg",
             "hidden": false,
-            "globalPct": 17.8
+            "globalPct": 17.9
         },
         {
             "apiName": "WORMSFULLGAME_ACHIEVEMENT",
@@ -619,7 +619,7 @@
             "iconUrl": "5b38809900a1ddf454a93a621d89eb69fbdf5be0.jpg",
             "iconGrayUrl": "4d9ce7d045391930b8e0bef10bff3c64e8771a88.jpg",
             "hidden": false,
-            "globalPct": 16.2
+            "globalPct": 16.3
         },
         {
             "apiName": "ESCAPISTSFULLGAMEHOOPS_ACHIEVEMENT",
@@ -663,7 +663,7 @@
             "iconUrl": "829a66320c77cd68df1f99f6f5316710c1098bb2.jpg",
             "iconGrayUrl": "8dde79663a7f65213781dd6f12fa23cdac0d4d3a.jpg",
             "hidden": false,
-            "globalPct": 71
+            "globalPct": 71.1
         },
         {
             "apiName": "EATENBYGINGY_ACHIEVEMENT",
@@ -696,7 +696,7 @@
             "iconUrl": "de24f45882a9039a07b8b8e117de42c598991aae.jpg",
             "iconGrayUrl": "3a045b31455d06df52ad55afd8b4d1ad1cc999c7.jpg",
             "hidden": false,
-            "globalPct": 62
+            "globalPct": 62.1
         },
         {
             "apiName": "DEEPFULLGAME_ACHIEVEMENT",
@@ -941,7 +941,7 @@
             "unlockedAt": "2021-02-19T17:10:56.000Z",
             "iconUrl": "de24f45882a9039a07b8b8e117de42c598991aae.jpg",
             "iconGrayUrl": "3a045b31455d06df52ad55afd8b4d1ad1cc999c7.jpg",
-            "globalPct": 62
+            "globalPct": 62.1
         },
         {
             "apiName": "100SHOTS_ACHIEVEMENT",
@@ -959,7 +959,7 @@
             "unlockedAt": "2021-02-19T16:15:14.000Z",
             "iconUrl": "829a66320c77cd68df1f99f6f5316710c1098bb2.jpg",
             "iconGrayUrl": "8dde79663a7f65213781dd6f12fa23cdac0d4d3a.jpg",
-            "globalPct": 71
+            "globalPct": 71.1
         },
         {
             "apiName": "OUTOFTIME_1_ACHIEVEMENT",

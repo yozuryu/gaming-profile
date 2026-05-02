@@ -80,7 +80,7 @@
             "iconUrl": "6613b2b7c7cbc5cd127c6578314e95c188a9de0b.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 16.1
+            "globalPct": 16
         },
         {
             "apiName": "CarryLunarItems",
@@ -91,7 +91,7 @@
             "iconUrl": "d339ae1698d03792a214d1b74c9c87ff97aaef03.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 34.4
+            "globalPct": 34.3
         },
         {
             "apiName": "ChargeTeleporterWhileNearDeath",
@@ -157,7 +157,7 @@
             "iconUrl": "4bffe8934ba431589ea5ca69cdfc1755d15b5fb8.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 15.7
+            "globalPct": 15.6
         },
         {
             "apiName": "Complete20Stages",
@@ -333,7 +333,7 @@
             "iconUrl": "bbe5a56263dc6acac7538f383cd372ffc2541529.jpg",
             "iconGrayUrl": "6f5533c8ddc7add290bc7312898e6c6bd38c0ee7.jpg",
             "hidden": false,
-            "globalPct": 54.6
+            "globalPct": 54.5
         },
         {
             "apiName": "Die5Times",
@@ -443,7 +443,7 @@
             "iconUrl": "4bfa374ef709d46349233f113eb035bca5527578.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 38.3
+            "globalPct": 38.2
         },
         {
             "apiName": "FindTimedChest",
@@ -619,7 +619,7 @@
             "iconUrl": "14337f17195d82dc1f6b73d808c4ba84a335e41c.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 53.7
+            "globalPct": 53.6
         },
         {
             "apiName": "LoaderBigSlam",
@@ -740,7 +740,7 @@
             "iconUrl": "2df4124b539a944517fa00b7402820c7f85b371e.jpg",
             "iconGrayUrl": "6f5533c8ddc7add290bc7312898e6c6bd38c0ee7.jpg",
             "hidden": false,
-            "globalPct": 41.7
+            "globalPct": 41.6
         },
         {
             "apiName": "MercClearGameMonsoon",
@@ -993,7 +993,7 @@
             "iconUrl": "1cb5bbf2d3be03c7d7195a3280de5c9f7ce8b8bd.jpg",
             "iconGrayUrl": "320b4df5abb9d267e1b824197ad59a00610038ab.jpg",
             "hidden": false,
-            "globalPct": 40.6
+            "globalPct": 40.5
         },
         {
             "apiName": "RepeatFirstTeleporter",
@@ -1246,7 +1246,7 @@
             "iconUrl": "e89a8c140644ecf83c9eb95fb9545f94591e7d5d.jpg",
             "iconGrayUrl": "fc2c3bc152468994a7e8d32b4eada925e46301c3.jpg",
             "hidden": false,
-            "globalPct": 22.5
+            "globalPct": 22.4
         },
         {
             "apiName": "RailgunnerDealMassiveDamage",
@@ -1268,7 +1268,7 @@
             "iconUrl": "7b5f8bcae777f4daff576f1677639ae5c4d21d0a.jpg",
             "iconGrayUrl": "fc2c3bc152468994a7e8d32b4eada925e46301c3.jpg",
             "hidden": false,
-            "globalPct": 15.2
+            "globalPct": 15.1
         },
         {
             "apiName": "RailgunnerAirborneMultiKill",
@@ -1444,7 +1444,7 @@
             "iconUrl": "2e1b720104aa263516904e69da209f78e0138c58.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 5.5
+            "globalPct": 5.4
         },
         {
             "apiName": "NukeSojourn",
@@ -1521,7 +1521,7 @@
             "iconUrl": "10ee7f100ffcfc334ec24eaba7d5a0cd29bbe774.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 4
+            "globalPct": 3.9
         },
         {
             "apiName": "EngiClearMeridianEvent",
@@ -1532,7 +1532,7 @@
             "iconUrl": "f893340fb7ffd91b6117a89c6c2d36741ea23c81.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 4.2
+            "globalPct": 4.1
         },
         {
             "apiName": "HuntressClearMeridianEvent",
@@ -1620,7 +1620,7 @@
             "iconUrl": "e6c2f27279a5cd7f395a5fa8df81c3f34a1cf121.jpg",
             "iconGrayUrl": "a5fee5620a0ef574855fbfc6abfb7a40ceb093c8.jpg",
             "hidden": false,
-            "globalPct": 9
+            "globalPct": 8.9
         },
         {
             "apiName": "ObtainArtifactDevotion",
@@ -1900,7 +1900,7 @@
             "unlockedAt": "2021-04-25T03:32:38.000Z",
             "iconUrl": "2df4124b539a944517fa00b7402820c7f85b371e.jpg",
             "iconGrayUrl": "6f5533c8ddc7add290bc7312898e6c6bd38c0ee7.jpg",
-            "globalPct": 41.7
+            "globalPct": 41.6
         },
         {
             "apiName": "BurnToDeath",
