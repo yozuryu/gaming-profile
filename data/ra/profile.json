@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-05-02T10:02:15.952Z"
+        "extractionTimestamp": "2026-05-02T11:50:50.942Z"
     },
     "username": "Yozuryu",
     "coreProfile": {
@@ -8,8 +8,8 @@
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
         "memberSince": "2023-08-19 04:53:06",
-        "richPresenceMsg": "Playing Breath of Fire",
-        "lastGameId": 449,
+        "richPresenceMsg": "Playing Final Fantasy III",
+        "lastGameId": 3216,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1888,
@@ -33,9 +33,9 @@
             "data": null,
             "data2": null
         },
-        "richPresenceMsg": "Playing Breath of Fire",
-        "richPresenceMsgDate": "2026-05-02 03:20:05",
-        "lastGameId": 449,
+        "richPresenceMsg": "Playing Final Fantasy III",
+        "richPresenceMsgDate": "2026-05-02 10:20:17",
+        "lastGameId": 3216,
         "contribCount": 0,
         "contribYield": 0,
         "totalPoints": 1888,
@@ -46,12 +46,12 @@
         "id": 533508,
         "userWallActive": true,
         "motto": "JRPG Maniac. Pixel Graphic Lover. Gaming for fun!",
-        "rank": 49856,
+        "rank": 49860,
         "recentlyPlayedCount": 0,
         "recentlyPlayed": [],
         "ulid": "01H8627JHT1CFHY27EYKD6K59D",
         "userPic": "/UserPic/Yozuryu.png",
-        "totalRanked": 142193,
+        "totalRanked": 142205,
         "awarded": {},
         "recentAchievements": {},
         "status": "Offline"
@@ -125,6 +125,24 @@
         ]
     },
     "recentlyPlayedGames": [
+        {
+            "gameId": 3216,
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "title": "Final Fantasy III",
+            "imageIcon": "/Images/070789.png",
+            "imageTitle": "/Images/066755.png",
+            "imageIngame": "/Images/066756.png",
+            "imageBoxArt": "/Images/050431.png",
+            "lastPlayed": "2026-05-02 10:20:17",
+            "achievementsTotal": 152,
+            "numPossibleAchievements": 152,
+            "possibleScore": 840,
+            "numAchieved": 0,
+            "scoreAchieved": 0,
+            "numAchievedHardcore": 0,
+            "scoreAchievedHardcore": 0
+        },
         {
             "gameId": 449,
             "consoleId": 3,
@@ -376,24 +394,6 @@
             "scoreAchieved": 0,
             "numAchievedHardcore": 0,
             "scoreAchievedHardcore": 0
-        },
-        {
-            "gameId": 11415,
-            "consoleId": 12,
-            "consoleName": "PlayStation",
-            "title": "Beyond the Beyond",
-            "imageIcon": "/Images/075811.png",
-            "imageTitle": "/Images/019045.png",
-            "imageIngame": "/Images/045602.png",
-            "imageBoxArt": "/Images/063085.png",
-            "lastPlayed": "2026-04-19 15:22:54",
-            "achievementsTotal": 63,
-            "numPossibleAchievements": 63,
-            "possibleScore": 560,
-            "numAchieved": 4,
-            "scoreAchieved": 15,
-            "numAchievedHardcore": 4,
-            "scoreAchievedHardcore": 15
         }
     ],
     "gameAwardsAndProgress": {
@@ -1125,22 +1125,22 @@
         "gameUrl": "/game/449"
     },
     "mostRecentGame": {
-        "gameId": 449,
-        "consoleId": 3,
-        "consoleName": "SNES/Super Famicom",
-        "title": "Breath of Fire",
-        "imageIcon": "/Images/105046.png",
-        "imageTitle": "/Images/002114.png",
-        "imageIngame": "/Images/051037.png",
-        "imageBoxArt": "/Images/063501.png",
-        "lastPlayed": "2026-05-02 03:20:05",
-        "achievementsTotal": 59,
-        "numPossibleAchievements": 59,
-        "possibleScore": 605,
-        "numAchieved": 4,
-        "scoreAchieved": 20,
-        "numAchievedHardcore": 4,
-        "scoreAchievedHardcore": 20
+        "gameId": 3216,
+        "consoleId": 41,
+        "consoleName": "PlayStation Portable",
+        "title": "Final Fantasy III",
+        "imageIcon": "/Images/070789.png",
+        "imageTitle": "/Images/066755.png",
+        "imageIngame": "/Images/066756.png",
+        "imageBoxArt": "/Images/050431.png",
+        "lastPlayed": "2026-05-02 10:20:17",
+        "achievementsTotal": 152,
+        "numPossibleAchievements": 152,
+        "possibleScore": 840,
+        "numAchieved": 0,
+        "scoreAchieved": 0,
+        "numAchievedHardcore": 0,
+        "scoreAchievedHardcore": 0
     },
     "points7Days": 110,
     "points30Days": 414
