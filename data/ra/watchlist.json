@@ -1,5 +1,5 @@
 {
-    "total": 689,
+    "total": 693,
     "results": [
         {
             "id": 27,
@@ -126,6 +126,15 @@
             "imageIcon": "/Images/061515.png",
             "pointsTotal": 235,
             "achievementsPublished": 18
+        },
+        {
+            "id": 202,
+            "title": "The Legend of Zelda: Skyward Sword",
+            "consoleId": 19,
+            "consoleName": "Wii",
+            "imageIcon": "/Images/090034.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
         },
         {
             "id": 204,
@@ -639,6 +648,15 @@
             "imageIcon": "/Images/072494.png",
             "pointsTotal": 0,
             "achievementsPublished": 0
+        },
+        {
+            "id": 1159,
+            "title": "Saiyuki: Journey West",
+            "consoleId": 12,
+            "consoleName": "PlayStation",
+            "imageIcon": "/Images/067979.png",
+            "pointsTotal": 1234,
+            "achievementsPublished": 246
         },
         {
             "id": 1260,
@@ -2171,6 +2189,15 @@
             "achievementsPublished": 172
         },
         {
+            "id": 3896,
+            "title": "Soma Bringer",
+            "consoleId": 18,
+            "consoleName": "Nintendo DS",
+            "imageIcon": "/Images/082260.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
+        },
+        {
             "id": 3908,
             "title": "Star Ocean: First Departure",
             "consoleId": 41,
@@ -2259,6 +2286,15 @@
             "imageIcon": "/Images/113079.png",
             "pointsTotal": 506,
             "achievementsPublished": 81
+        },
+        {
+            "id": 3963,
+            "title": "Ragnarok Tactics",
+            "consoleId": 41,
+            "consoleName": "PlayStation Portable",
+            "imageIcon": "/Images/000001.png",
+            "pointsTotal": 0,
+            "achievementsPublished": 0
         },
         {
             "id": 3974,
@@ -4174,7 +4210,7 @@
             "consoleId": 41,
             "consoleName": "PlayStation Portable",
             "imageIcon": "/Images/082265.png",
-            "pointsTotal": 893,
+            "pointsTotal": 908,
             "achievementsPublished": 92
         },
         {
