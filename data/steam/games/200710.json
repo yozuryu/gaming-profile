@@ -14,7 +14,7 @@
             "iconUrl": "9b6e899a2275e32d6597dcdaadc065b1b038a0d3.jpg",
             "iconGrayUrl": "ca8d8cbc23728f806086f182d096aaf5b9fdb3e4.jpg",
             "hidden": true,
-            "globalPct": 34.4
+            "globalPct": 34.3
         },
         {
             "apiName": "BOSS_ARTIFICER",
@@ -223,7 +223,7 @@
             "iconUrl": "7c2dce06816e6c896df284155d5f62ac965d8eff.jpg",
             "iconGrayUrl": "a348a4e5426a72c060ea67300c4a7c74d145e7a3.jpg",
             "hidden": true,
-            "globalPct": 20.4
+            "globalPct": 20.3
         },
         {
             "apiName": "BOSS_EZREKKHAN",
@@ -333,7 +333,7 @@
             "iconUrl": "9c4af4e4ea1c68a109bee5989beeeecb5b1a0626.jpg",
             "iconGrayUrl": "445a4a8ad1674e02a6e2cd3aad8768c5a5fa119a.jpg",
             "hidden": true,
-            "globalPct": 61.9
+            "globalPct": 61.8
         },
         {
             "apiName": "BOSS_NETHERKING",
@@ -982,7 +982,7 @@
             "iconUrl": "c2d3738f0e458db4d98e83a68a322d264d8b42a1.jpg",
             "iconGrayUrl": "dc4bfa87321a4a6cf6105bf186755180f8655ee2.jpg",
             "hidden": false,
-            "globalPct": 68.2
+            "globalPct": 68.1
         },
         {
             "apiName": "SKILLTIERS_0",
@@ -1037,7 +1037,7 @@
             "iconUrl": "8f28c122f0e08db562e28d44b62a00468299969e.jpg",
             "iconGrayUrl": "0ded0c24bbdfefdeea377f4a747777179f8bd053.jpg",
             "hidden": false,
-            "globalPct": 18.2
+            "globalPct": 18.1
         },
         {
             "apiName": "SOCKETING_2",
@@ -1180,7 +1180,7 @@
             "iconUrl": "cd47b86309f59442bf11d5ab991b21f10fbd7c9c.jpg",
             "iconGrayUrl": "13e3437ba489a12b90c2f2b271f7d110c2fb549c.jpg",
             "hidden": true,
-            "globalPct": 6.2
+            "globalPct": 6.1
         },
         {
             "apiName": "BOSS_DRAGON_SPIRIT",
@@ -1355,7 +1355,7 @@
             "unlockedAt": null,
             "iconUrl": "9b6e899a2275e32d6597dcdaadc065b1b038a0d3.jpg",
             "iconGrayUrl": "ca8d8cbc23728f806086f182d096aaf5b9fdb3e4.jpg",
-            "globalPct": 34.4
+            "globalPct": 34.3
         },
         {
             "apiName": "BOSS_ARTIFICER",
