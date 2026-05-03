@@ -6,8 +6,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 26140,
-            "numDistinctPlayersHardcore": 26140,
+            "numDistinctPlayersCasual": 26141,
+            "numDistinctPlayersHardcore": 26141,
             "numAchievements": 76,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -52,8 +52,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60274",
-                    "numAwarded": 17882,
-                    "numAwardedHardcore": 8989,
+                    "numAwarded": 17883,
+                    "numAwardedHardcore": 8990,
                     "displayOrder": 1
                 },
                 "1991": {
@@ -76,8 +76,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60275",
-                    "numAwarded": 9270,
-                    "numAwardedHardcore": 5474,
+                    "numAwarded": 9271,
+                    "numAwardedHardcore": 5475,
                     "displayOrder": 2
                 },
                 "2066": {
@@ -88,8 +88,8 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60311",
-                    "numAwarded": 3345,
-                    "numAwardedHardcore": 2118,
+                    "numAwarded": 3346,
+                    "numAwardedHardcore": 2119,
                     "displayOrder": 39
                 },
                 "2067": {
@@ -124,8 +124,8 @@
                     "trueRatio": 15,
                     "type": null,
                     "badgeName": "60310",
-                    "numAwarded": 2899,
-                    "numAwardedHardcore": 1880,
+                    "numAwarded": 2900,
+                    "numAwardedHardcore": 1881,
                     "displayOrder": 38
                 },
                 "2070": {
@@ -136,8 +136,8 @@
                     "trueRatio": 12,
                     "type": null,
                     "badgeName": "60304",
-                    "numAwarded": 3809,
-                    "numAwardedHardcore": 2347,
+                    "numAwarded": 3810,
+                    "numAwardedHardcore": 2348,
                     "displayOrder": 32
                 },
                 "2071": {
@@ -472,8 +472,8 @@
                     "trueRatio": 2,
                     "type": null,
                     "badgeName": "60276",
-                    "numAwarded": 19312,
-                    "numAwardedHardcore": 9012,
+                    "numAwarded": 19313,
+                    "numAwardedHardcore": 9013,
                     "displayOrder": 3
                 },
                 "2157": {
@@ -628,7 +628,7 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "60286",
-                    "numAwarded": 7002,
+                    "numAwarded": 7003,
                     "numAwardedHardcore": 3845,
                     "displayOrder": 14
                 },
@@ -913,7 +913,7 @@
                     "title": "Frog of War",
                     "description": "Defeat Spekkio's weakest form",
                     "points": 5,
-                    "trueRatio": 23,
+                    "trueRatio": 24,
                     "type": "missable",
                     "badgeName": "60356",
                     "numAwarded": 1243,
@@ -1678,8 +1678,8 @@
             "consoleId": 4,
             "consoleName": "Game Boy",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 17498,
-            "numDistinctPlayersHardcore": 17498,
+            "numDistinctPlayersCasual": 17499,
+            "numDistinctPlayersHardcore": 17499,
             "numAchievements": 13,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -1697,7 +1697,7 @@
                     "title": "Challenge of the Best",
                     "description": "Clear 20 lines in Game Type A on Level 15 or higher by using the speed code - Down+Start on title",
                     "points": 25,
-                    "trueRatio": 62,
+                    "trueRatio": 63,
                     "type": null,
                     "badgeName": "487263",
                     "numAwarded": 1925,
@@ -1724,8 +1724,8 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "487249",
-                    "numAwarded": 14592,
-                    "numAwardedHardcore": 6394,
+                    "numAwarded": 14593,
+                    "numAwardedHardcore": 6395,
                     "displayOrder": 1
                 },
                 "46825": {
@@ -1748,8 +1748,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "487253",
-                    "numAwarded": 16872,
-                    "numAwardedHardcore": 7156,
+                    "numAwarded": 16873,
+                    "numAwardedHardcore": 7157,
                     "displayOrder": 5,
                     "dateEarned": "2026-04-27 14:22:18",
                     "dateEarnedHardcore": "2026-04-27 14:22:18"
@@ -28126,8 +28126,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "316151",
-                    "numAwarded": 921,
-                    "numAwardedHardcore": 606,
+                    "numAwarded": 922,
+                    "numAwardedHardcore": 607,
                     "displayOrder": 0
                 },
                 "285116": {
@@ -28138,8 +28138,8 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "316152",
-                    "numAwarded": 892,
-                    "numAwardedHardcore": 586,
+                    "numAwarded": 893,
+                    "numAwardedHardcore": 587,
                     "displayOrder": 0
                 },
                 "285117": {
@@ -28150,8 +28150,8 @@
                     "trueRatio": 1,
                     "type": null,
                     "badgeName": "316153",
-                    "numAwarded": 736,
-                    "numAwardedHardcore": 522,
+                    "numAwarded": 737,
+                    "numAwardedHardcore": 523,
                     "displayOrder": 0
                 },
                 "285118": {
@@ -28354,8 +28354,8 @@
                     "trueRatio": 4,
                     "type": null,
                     "badgeName": "316170",
-                    "numAwarded": 567,
-                    "numAwardedHardcore": 412,
+                    "numAwarded": 568,
+                    "numAwardedHardcore": 413,
                     "displayOrder": 0
                 },
                 "285135": {
@@ -28366,8 +28366,8 @@
                     "trueRatio": 18,
                     "type": "missable",
                     "badgeName": "316171",
-                    "numAwarded": 418,
-                    "numAwardedHardcore": 343,
+                    "numAwarded": 419,
+                    "numAwardedHardcore": 344,
                     "displayOrder": 0
                 },
                 "285136": {
@@ -28378,8 +28378,8 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "316172",
-                    "numAwarded": 600,
-                    "numAwardedHardcore": 422,
+                    "numAwarded": 601,
+                    "numAwardedHardcore": 423,
                     "displayOrder": 0
                 },
                 "285137": {
@@ -28390,8 +28390,8 @@
                     "trueRatio": 3,
                     "type": null,
                     "badgeName": "316173",
-                    "numAwarded": 405,
-                    "numAwardedHardcore": 328,
+                    "numAwarded": 406,
+                    "numAwardedHardcore": 329,
                     "displayOrder": 0
                 },
                 "285138": {
@@ -28402,8 +28402,8 @@
                     "trueRatio": 9,
                     "type": null,
                     "badgeName": "316174",
-                    "numAwarded": 434,
-                    "numAwardedHardcore": 328,
+                    "numAwarded": 435,
+                    "numAwardedHardcore": 329,
                     "displayOrder": 0
                 },
                 "285139": {
@@ -29662,8 +29662,8 @@
                     "trueRatio": 8,
                     "type": null,
                     "badgeName": "316256",
-                    "numAwarded": 567,
-                    "numAwardedHardcore": 400,
+                    "numAwarded": 568,
+                    "numAwardedHardcore": 401,
                     "displayOrder": 0
                 },
                 "285244": {
@@ -40694,8 +40694,8 @@
                     "trueRatio": 4,
                     "type": "missable",
                     "badgeName": "172217",
-                    "numAwarded": 647,
-                    "numAwardedHardcore": 378,
+                    "numAwarded": 648,
+                    "numAwardedHardcore": 379,
                     "displayOrder": 10
                 },
                 "153631": {
@@ -40718,8 +40718,8 @@
                     "trueRatio": 4,
                     "type": "progression",
                     "badgeName": "172220",
-                    "numAwarded": 564,
-                    "numAwardedHardcore": 336,
+                    "numAwarded": 565,
+                    "numAwardedHardcore": 337,
                     "displayOrder": 12
                 },
                 "153633": {
@@ -40742,8 +40742,8 @@
                     "trueRatio": 8,
                     "type": "progression",
                     "badgeName": "172222",
-                    "numAwarded": 523,
-                    "numAwardedHardcore": 312,
+                    "numAwarded": 524,
+                    "numAwardedHardcore": 313,
                     "displayOrder": 14
                 },
                 "153635": {
