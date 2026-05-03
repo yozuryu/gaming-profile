@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-05-02T23:56:20.838Z"
+        "extractionTimestamp": "2026-05-03T04:05:05.389Z"
     },
     "profile": {
         "steamId": "76561198188939413",
@@ -8,12 +8,12 @@
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
         "status": 0,
-        "lastOnline": "2026-05-02T17:11:26.000Z",
+        "lastOnline": "2026-05-03T03:45:59.000Z",
         "countryCode": "ID"
     },
     "stats": {
         "totalGames": 1253,
-        "totalPlaytimeMin": 346231,
+        "totalPlaytimeMin": 346247,
         "totalPlaytimeHrs": 5771,
         "gamesWithPlaytime": 815,
         "totalAchievements": 9976,
@@ -27,11 +27,11 @@
         {
             "appId": 206440,
             "name": "To the Moon",
-            "playtime2Weeks": 154,
-            "playtimeForever": 231,
+            "playtime2Weeks": 170,
+            "playtimeForever": 247,
             "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/206440/6e29eb4076a6253fdbccb987a2a21746d2df54d7.jpg",
             "storeUrl": "https://store.steampowered.com/app/206440",
-            "lastPlayedTs": "2026-05-02T15:05:51.000Z",
+            "lastPlayedTs": "2026-05-03T03:34:44.000Z",
             "achUnlocked": 0,
             "achTotal": 1
         },
@@ -94,11 +94,11 @@
     "mostRecentGame": {
         "appId": 206440,
         "name": "To the Moon",
-        "playtime2Weeks": 154,
-        "playtimeForever": 231,
+        "playtime2Weeks": 170,
+        "playtimeForever": 247,
         "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/206440/6e29eb4076a6253fdbccb987a2a21746d2df54d7.jpg",
         "storeUrl": "https://store.steampowered.com/app/206440",
-        "lastPlayedTs": "2026-05-02T15:05:51.000Z"
+        "lastPlayedTs": "2026-05-03T03:34:44.000Z"
     },
     "mostRecentUnlock": {
         "appId": 2486820,
