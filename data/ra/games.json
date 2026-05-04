@@ -244,8 +244,8 @@
                     "trueRatio": 7,
                     "type": "progression",
                     "badgeName": "60283",
-                    "numAwarded": 9727,
-                    "numAwardedHardcore": 5051,
+                    "numAwarded": 9729,
+                    "numAwardedHardcore": 5052,
                     "displayOrder": 11
                 },
                 "2083": {
@@ -340,8 +340,8 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "60288",
-                    "numAwarded": 5566,
-                    "numAwardedHardcore": 3151,
+                    "numAwarded": 5567,
+                    "numAwardedHardcore": 3152,
                     "displayOrder": 16
                 },
                 "2109": {
@@ -388,7 +388,7 @@
                     "trueRatio": 10,
                     "type": "progression",
                     "badgeName": "60292",
-                    "numAwarded": 5202,
+                    "numAwarded": 5203,
                     "numAwardedHardcore": 2992,
                     "displayOrder": 20
                 },
@@ -424,7 +424,7 @@
                     "trueRatio": 16,
                     "type": null,
                     "badgeName": "60296",
-                    "numAwarded": 2400,
+                    "numAwarded": 2401,
                     "numAwardedHardcore": 1715,
                     "displayOrder": 24
                 },
@@ -616,7 +616,7 @@
                     "trueRatio": 13,
                     "type": null,
                     "badgeName": "60312",
-                    "numAwarded": 3670,
+                    "numAwarded": 3671,
                     "numAwardedHardcore": 2270,
                     "displayOrder": 40
                 },
@@ -844,8 +844,8 @@
                     "trueRatio": 53,
                     "type": null,
                     "badgeName": "60325",
-                    "numAwarded": 1085,
-                    "numAwardedHardcore": 959,
+                    "numAwarded": 1086,
+                    "numAwardedHardcore": 960,
                     "displayOrder": 53
                 },
                 "2273": {
@@ -913,11 +913,11 @@
                     "title": "Frog of War",
                     "description": "Defeat Spekkio's weakest form",
                     "points": 5,
-                    "trueRatio": 24,
+                    "trueRatio": 23,
                     "type": "missable",
                     "badgeName": "60356",
-                    "numAwarded": 1244,
-                    "numAwardedHardcore": 1095,
+                    "numAwarded": 1245,
+                    "numAwardedHardcore": 1096,
                     "displayOrder": 77
                 },
                 "4783": {
@@ -940,8 +940,8 @@
             "consoleId": 3,
             "consoleName": "SNES/Super Famicom",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 5389,
-            "numDistinctPlayersHardcore": 5389,
+            "numDistinctPlayersCasual": 5390,
+            "numDistinctPlayersHardcore": 5390,
             "numAchievements": 59,
             "numAwardedToUser": 4,
             "numAwardedToUserHardcore": 4,
@@ -962,7 +962,7 @@
                     "trueRatio": 5,
                     "type": "progression",
                     "badgeName": "248314",
-                    "numAwarded": 5162,
+                    "numAwarded": 5163,
                     "numAwardedHardcore": 3128,
                     "displayOrder": 1,
                     "dateEarned": "2026-04-25 15:08:47",
@@ -1678,8 +1678,8 @@
             "consoleId": 4,
             "consoleName": "Game Boy",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 17512,
-            "numDistinctPlayersHardcore": 17512,
+            "numDistinctPlayersCasual": 17514,
+            "numDistinctPlayersHardcore": 17514,
             "numAchievements": 13,
             "numAwardedToUser": 1,
             "numAwardedToUserHardcore": 1,
@@ -1697,7 +1697,7 @@
                     "title": "Challenge of the Best",
                     "description": "Clear 20 lines in Game Type A on Level 15 or higher by using the speed code - Down+Start on title",
                     "points": 25,
-                    "trueRatio": 62,
+                    "trueRatio": 63,
                     "type": null,
                     "badgeName": "487263",
                     "numAwarded": 1927,
@@ -1724,8 +1724,8 @@
                     "trueRatio": 2,
                     "type": "progression",
                     "badgeName": "487249",
-                    "numAwarded": 14601,
-                    "numAwardedHardcore": 6398,
+                    "numAwarded": 14603,
+                    "numAwardedHardcore": 6400,
                     "displayOrder": 1
                 },
                 "46825": {
@@ -1736,8 +1736,8 @@
                     "trueRatio": 6,
                     "type": "progression",
                     "badgeName": "487250",
-                    "numAwarded": 9113,
-                    "numAwardedHardcore": 4426,
+                    "numAwarded": 9114,
+                    "numAwardedHardcore": 4427,
                     "displayOrder": 2
                 },
                 "46828": {
@@ -1748,8 +1748,8 @@
                     "trueRatio": 5,
                     "type": null,
                     "badgeName": "487253",
-                    "numAwarded": 16888,
-                    "numAwardedHardcore": 7160,
+                    "numAwarded": 16889,
+                    "numAwardedHardcore": 7161,
                     "displayOrder": 5,
                     "dateEarned": "2026-04-27 14:22:18",
                     "dateEarnedHardcore": "2026-04-27 14:22:18"
@@ -19280,8 +19280,8 @@
                     "trueRatio": 12,
                     "type": "missable",
                     "badgeName": "143689",
-                    "numAwarded": 84,
-                    "numAwardedHardcore": 62,
+                    "numAwarded": 85,
+                    "numAwardedHardcore": 63,
                     "displayOrder": 0
                 },
                 "129149": {
@@ -19304,8 +19304,8 @@
                     "trueRatio": 23,
                     "type": "missable",
                     "badgeName": "143690",
-                    "numAwarded": 64,
-                    "numAwardedHardcore": 54,
+                    "numAwarded": 65,
+                    "numAwardedHardcore": 55,
                     "displayOrder": 0
                 },
                 "129151": {
@@ -19316,8 +19316,8 @@
                     "trueRatio": 12,
                     "type": "missable",
                     "badgeName": "139410",
-                    "numAwarded": 80,
-                    "numAwardedHardcore": 64,
+                    "numAwarded": 81,
+                    "numAwardedHardcore": 65,
                     "displayOrder": 0
                 },
                 "129152": {
@@ -20528,8 +20528,8 @@
                     "trueRatio": 44,
                     "type": "missable",
                     "badgeName": "143701",
-                    "numAwarded": 78,
-                    "numAwardedHardcore": 58,
+                    "numAwarded": 79,
+                    "numAwardedHardcore": 59,
                     "displayOrder": 0
                 },
                 "129253": {
@@ -20549,11 +20549,11 @@
                     "title": "Darkest Wing",
                     "description": "Transform any of your dragons to Black Dragon form.",
                     "points": 5,
-                    "trueRatio": 20,
+                    "trueRatio": 19,
                     "type": "missable",
                     "badgeName": "139514",
-                    "numAwarded": 94,
-                    "numAwardedHardcore": 66,
+                    "numAwarded": 95,
+                    "numAwardedHardcore": 67,
                     "displayOrder": 0
                 },
                 "129255": {
@@ -20561,11 +20561,11 @@
                     "title": "Anything In Excess Is Harmful",
                     "description": "Transform any of your dragons to Uni Uni form.",
                     "points": 5,
-                    "trueRatio": 18,
+                    "trueRatio": 17,
                     "type": "missable",
                     "badgeName": "139515",
-                    "numAwarded": 105,
-                    "numAwardedHardcore": 75,
+                    "numAwarded": 106,
+                    "numAwardedHardcore": 76,
                     "displayOrder": 0
                 },
                 "129256": {
@@ -41604,7 +41604,7 @@
                     "trueRatio": 50,
                     "type": null,
                     "badgeName": "342677",
-                    "numAwarded": 540,
+                    "numAwarded": 541,
                     "numAwardedHardcore": 177,
                     "displayOrder": 40
                 },
@@ -59958,8 +59958,8 @@
             "consoleId": 76,
             "consoleName": "PC Engine CD/TurboGrafx-CD",
             "parentGameId": null,
-            "numDistinctPlayersCasual": 296,
-            "numDistinctPlayersHardcore": 296,
+            "numDistinctPlayersCasual": 297,
+            "numDistinctPlayersHardcore": 297,
             "numAchievements": 51,
             "numAwardedToUser": 0,
             "numAwardedToUserHardcore": 0,
@@ -59980,7 +59980,7 @@
                     "trueRatio": 1,
                     "type": "progression",
                     "badgeName": "444048",
-                    "numAwarded": 288,
+                    "numAwarded": 289,
                     "numAwardedHardcore": 243,
                     "displayOrder": 1
                 },
