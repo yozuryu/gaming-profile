@@ -276,7 +276,7 @@ const App = () => {
             setSteamHeatmap(stH.activityHeatmap || {});
         });
 
-        fetch('../data/steam/games.json')
+        fetch('../data/steam/games/index.json')
             .then(r => r.json())
             .then(d => {
                 const icons = Object.fromEntries(
