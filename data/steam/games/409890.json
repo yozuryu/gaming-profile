@@ -14,7 +14,7 @@
             "iconUrl": "007535fdc2cfa9ddb7f6eaeab11816f8a9b6aff8.jpg",
             "iconGrayUrl": "8a4b08a44c89a86d0ce67e90cdf877183f16d319.jpg",
             "hidden": true,
-            "globalPct": 79.7
+            "globalPct": 79.8
         },
         {
             "apiName": "ACHIEVEMENT_02_TUTORIAL_END",
@@ -355,7 +355,7 @@
             "iconUrl": "35bb3a72aebfff01c0d17711f9ef362b20a1a3ca.jpg",
             "iconGrayUrl": "a3e66927868c5ea739bf612970e57f921c0d9c6d.jpg",
             "hidden": false,
-            "globalPct": 32.2
+            "globalPct": 32.3
         },
         {
             "apiName": "ACHIEVEMENT_33_ITEM_RANK_B",
@@ -503,7 +503,7 @@
             "unlockedAt": "2023-12-02T14:45:14.000Z",
             "iconUrl": "007535fdc2cfa9ddb7f6eaeab11816f8a9b6aff8.jpg",
             "iconGrayUrl": "8a4b08a44c89a86d0ce67e90cdf877183f16d319.jpg",
-            "globalPct": 79.7
+            "globalPct": 79.8
         },
         {
             "apiName": "ACHIEVEMENT_30_ITEM_RANK_E",

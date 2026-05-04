@@ -14,7 +14,7 @@
             "iconUrl": "db669c393d7e2b86d1d387e4842ca2cbbf539299.jpg",
             "iconGrayUrl": "e38aed7ee8c2bc22468b8e5f7625ae51698517e9.jpg",
             "hidden": false,
-            "globalPct": 2.9
+            "globalPct": 2.8
         },
         {
             "apiName": "ACH_KILL_LANDSHARK_BOSS",
@@ -355,7 +355,7 @@
             "iconUrl": "cdc9f490c827fd6d509a9ce7c980073431d63365.jpg",
             "iconGrayUrl": "e636abadda50f7f4072694c0bd4adeea927bf1b5.jpg",
             "hidden": false,
-            "globalPct": 28.5
+            "globalPct": 28.4
         },
         {
             "apiName": "ACH_COOK_FOOD",
@@ -1037,7 +1037,7 @@
             "iconUrl": "0650561d2dee4dcfcf12503663f47bac0d028b0d.jpg",
             "iconGrayUrl": "a87ca7b84b142f3c017b2c8a95ac3032858ae043.jpg",
             "hidden": false,
-            "globalPct": 3.4
+            "globalPct": 3.3
         },
         {
             "apiName": "ACH_HOTANDCOLD",
@@ -1202,7 +1202,7 @@
             "iconUrl": "ced021072a889997ab9dc2a314d4c7ff3c48e522.jpg",
             "iconGrayUrl": "5559c9b796b500f000670c7dfa79d9150fa9a944.jpg",
             "hidden": true,
-            "globalPct": 4.6
+            "globalPct": 4.5
         },
         {
             "apiName": "ACH_OUTPOST_BUILDER",
@@ -1257,7 +1257,7 @@
             "iconUrl": "8a6e6fc2bde08e34bc9df29b6b7fafe42f25d0a3.jpg",
             "iconGrayUrl": "e45aefae792fba98cd0adef364bcc4cdf4607fa9.jpg",
             "hidden": false,
-            "globalPct": 15
+            "globalPct": 14.9
         },
         {
             "apiName": "ACH_TAME_ORDER_CHICKEN",
@@ -1411,7 +1411,7 @@
             "iconUrl": "193c1e6d40f1c1ed87d2598509deac083003727e.jpg",
             "iconGrayUrl": "1161fddc443b527f69c08111f74b43038857220b.jpg",
             "hidden": false,
-            "globalPct": 1.9
+            "globalPct": 1.8
         },
         {
             "apiName": "ACH_ENCRYPTED",
@@ -1576,7 +1576,7 @@
             "iconUrl": "1989b783f5c592688332b42d73c9236531ee8571.jpg",
             "iconGrayUrl": "8339ca59ad5ef1c79e8be034edc84390c22eb7c1.jpg",
             "hidden": false,
-            "globalPct": 1.2
+            "globalPct": 1.1
         },
         {
             "apiName": "ACH_LAB_RAT",
@@ -1598,7 +1598,7 @@
             "iconUrl": "e01ecb6ef576e1f425a4bbeaf39133364f96914e.jpg",
             "iconGrayUrl": "816b7471b28f91e3366a7a955b6fbea6944567ab.jpg",
             "hidden": false,
-            "globalPct": 4.7
+            "globalPct": 4.6
         },
         {
             "apiName": "ACH_MUSHROOMS",
@@ -1664,7 +1664,7 @@
             "iconUrl": "8210c1a1f2c18dc779f3d9c6804e6c02faf29e69.jpg",
             "iconGrayUrl": "7a5d0b55b6611a314924fa713ceb3cf13ca26373.jpg",
             "hidden": false,
-            "globalPct": 1.7
+            "globalPct": 1.6
         },
         {
             "apiName": "ACH_PEW_PEW_PEW",
@@ -1719,7 +1719,7 @@
             "iconUrl": "49cf502d235d9063ddb7115b2b50fe796baf9166.jpg",
             "iconGrayUrl": "b94be5d176fc7b0d48b53ed19432ec12f5a30411.jpg",
             "hidden": false,
-            "globalPct": 1.1
+            "globalPct": 1
         },
         {
             "apiName": "ACH_READ_THE_ROOM",
@@ -1884,7 +1884,7 @@
             "iconUrl": "1e63fb3dc287c0d89fbd45bf03250de5ea632a9e.jpg",
             "iconGrayUrl": "eaf67a17f73b3a59769b0acd4a631569f162d095.jpg",
             "hidden": false,
-            "globalPct": 0
+            "globalPct": null
         }
     ],
     "playtimeForever": 59,
@@ -1918,7 +1918,7 @@
             "unlockedAt": null,
             "iconUrl": "db669c393d7e2b86d1d387e4842ca2cbbf539299.jpg",
             "iconGrayUrl": "e38aed7ee8c2bc22468b8e5f7625ae51698517e9.jpg",
-            "globalPct": 2.9
+            "globalPct": 2.8
         },
         {
             "apiName": "ACH_KILL_LANDSHARK_BOSS",
