@@ -1,5 +1,5 @@
 {
-    "total": 693,
+    "total": 694,
     "results": [
         {
             "id": 27,
@@ -594,6 +594,15 @@
             "imageIcon": "/Images/124431.png",
             "pointsTotal": 700,
             "achievementsPublished": 52
+        },
+        {
+            "id": 789,
+            "title": "Pokémon Pinball: Ruby & Sapphire",
+            "consoleId": 5,
+            "consoleName": "Game Boy Advance",
+            "imageIcon": "/Images/092736.png",
+            "pointsTotal": 438,
+            "achievementsPublished": 54
         },
         {
             "id": 810,
