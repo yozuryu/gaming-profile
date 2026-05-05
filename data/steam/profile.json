@@ -1,18 +1,18 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-05-05T11:24:44.002Z"
+        "extractionTimestamp": "2026-05-05T14:23:58.324Z"
     },
     "profile": {
         "steamId": "76561198188939413",
         "displayName": "Yozuryu",
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
-        "status": 0,
-        "lastOnline": "2026-05-05T10:47:31.000Z",
+        "status": 1,
+        "lastOnline": "2026-05-05T13:47:52.000Z",
         "countryCode": "ID"
     },
     "stats": {
-        "totalGames": 1255,
+        "totalGames": 1256,
         "totalPlaytimeMin": 346369,
         "totalPlaytimeHrs": 5773,
         "gamesWithPlaytime": 816,
@@ -25,6 +25,17 @@
     },
     "recentlyPlayed": [
         {
+            "appId": 206440,
+            "name": "To the Moon",
+            "playtime2Weeks": 170,
+            "playtimeForever": 247,
+            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/206440/6e29eb4076a6253fdbccb987a2a21746d2df54d7.jpg",
+            "storeUrl": "https://store.steampowered.com/app/206440",
+            "lastPlayedTs": "2026-05-05T14:11:47.000Z",
+            "achUnlocked": 0,
+            "achTotal": 1
+        },
+        {
             "appId": 2515020,
             "name": "FINAL FANTASY XVI",
             "playtime2Weeks": 56,
@@ -34,17 +45,6 @@
             "lastPlayedTs": "2026-05-03T14:44:52.000Z",
             "achUnlocked": 4,
             "achTotal": 69
-        },
-        {
-            "appId": 206440,
-            "name": "To the Moon",
-            "playtime2Weeks": 170,
-            "playtimeForever": 247,
-            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/206440/6e29eb4076a6253fdbccb987a2a21746d2df54d7.jpg",
-            "storeUrl": "https://store.steampowered.com/app/206440",
-            "lastPlayedTs": "2026-05-03T03:34:44.000Z",
-            "achUnlocked": 0,
-            "achTotal": 1
         },
         {
             "appId": 2235440,
@@ -103,13 +103,13 @@
         }
     ],
     "mostRecentGame": {
-        "appId": 2515020,
-        "name": "FINAL FANTASY XVI",
-        "playtime2Weeks": 56,
-        "playtimeForever": 122,
-        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/2515020/0ce29700a22fea9eb270b276fa157b79511365e6.jpg",
-        "storeUrl": "https://store.steampowered.com/app/2515020",
-        "lastPlayedTs": "2026-05-03T14:44:52.000Z"
+        "appId": 206440,
+        "name": "To the Moon",
+        "playtime2Weeks": 170,
+        "playtimeForever": 247,
+        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/206440/6e29eb4076a6253fdbccb987a2a21746d2df54d7.jpg",
+        "storeUrl": "https://store.steampowered.com/app/206440",
+        "lastPlayedTs": "2026-05-05T14:11:47.000Z"
     },
     "mostRecentUnlock": {
         "appId": 2515020,
