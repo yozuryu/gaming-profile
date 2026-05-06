@@ -36,7 +36,7 @@
             "iconUrl": "5c0c450ad05bb2d6902c62936325129750ce18d9.jpg",
             "iconGrayUrl": "a43765e0a913e6b26f90ee018e651d4057305c1d.jpg",
             "hidden": true,
-            "globalPct": 25.4
+            "globalPct": 25.3
         },
         {
             "apiName": "BOSS_CACKLESPIT",
@@ -707,7 +707,7 @@
             "iconUrl": "7c81104d716b82ba856954df367aa5a2bf3a2d42.jpg",
             "iconGrayUrl": "d76f028b69f17fa47d1b6b6d42ad7a79ee39cd08.jpg",
             "hidden": false,
-            "globalPct": 64.9
+            "globalPct": 64.8
         },
         {
             "apiName": "KILLCHAMPS_1",
@@ -817,7 +817,7 @@
             "iconUrl": "b23ce7c9961efe5549676b7147ad56c2088ac0a4.jpg",
             "iconGrayUrl": "6eb75e9c332dd2008d307199ef73ccda94306670.jpg",
             "hidden": false,
-            "globalPct": 66.6
+            "globalPct": 66.5
         },
         {
             "apiName": "PLAYERSTEPS_1",
@@ -1202,7 +1202,7 @@
             "iconUrl": "2046a841a3d23a9643157f3242452dc4b3dc73d4.jpg",
             "iconGrayUrl": "6f8230b4d4989aa95b7fd5ae17008f92a8039a54.jpg",
             "hidden": true,
-            "globalPct": 26.1
+            "globalPct": 26
         },
         {
             "apiName": "BOSS_THREESISTERS_ALEERA",
@@ -1246,7 +1246,7 @@
             "iconUrl": "75360aa6b517a62de03dcd026ff65ed3937e7ff8.jpg",
             "iconGrayUrl": "543271e25323ec047e3988ae9e328cf7dba1f14d.jpg",
             "hidden": false,
-            "globalPct": 42
+            "globalPct": 41.9
         },
         {
             "apiName": "SQUISH_1",
@@ -1373,7 +1373,7 @@
             "unlockedAt": null,
             "iconUrl": "5c0c450ad05bb2d6902c62936325129750ce18d9.jpg",
             "iconGrayUrl": "a43765e0a913e6b26f90ee018e651d4057305c1d.jpg",
-            "globalPct": 25.4
+            "globalPct": 25.3
         }
     ]
 }

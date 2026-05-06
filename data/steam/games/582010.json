@@ -47,7 +47,7 @@
             "iconUrl": "10a7dd9995b8ffae25f90e4dddc014b03a09f2be.jpg",
             "iconGrayUrl": "d92415ba82280471fc4827937ecbdc352edebcf2.jpg",
             "hidden": true,
-            "globalPct": 67.1
+            "globalPct": 67
         },
         {
             "apiName": "Achievement4",
@@ -212,7 +212,7 @@
             "iconUrl": "5b3b9995d7f819c99596f8869db19c8d12c0b1e7.jpg",
             "iconGrayUrl": "ce047890391db74bf88cee609fe8dbdc03dd7369.jpg",
             "hidden": false,
-            "globalPct": 68.8
+            "globalPct": 68.7
         },
         {
             "apiName": "Achievement19",
@@ -333,7 +333,7 @@
             "iconUrl": "04d9de70fced3adf68ed1c20c7b6404a232888f6.jpg",
             "iconGrayUrl": "5b845945c8c63d3e073f5a9769d378de16a77b6b.jpg",
             "hidden": false,
-            "globalPct": 49.5
+            "globalPct": 49.4
         },
         {
             "apiName": "Achievement30",
@@ -443,7 +443,7 @@
             "iconUrl": "caa59189c12c52030f0d14b90c0a2623dc9ecbec.jpg",
             "iconGrayUrl": "3927ec9d7007ba4b76504597051e9be8416a8cec.jpg",
             "hidden": false,
-            "globalPct": 56.7
+            "globalPct": 56.6
         },
         {
             "apiName": "Achievement40",
@@ -520,7 +520,7 @@
             "iconUrl": "1f753f3edfc578c88d3c076f9f6fc4e0d272f4a9.jpg",
             "iconGrayUrl": "667ef144f47b859fb19c809357a20411d29f9f5e.jpg",
             "hidden": false,
-            "globalPct": 67.7
+            "globalPct": 67.6
         },
         {
             "apiName": "Achievement47",
@@ -608,7 +608,7 @@
             "iconUrl": "2cb2a603a0c7df9484010be08e567c0f4abae205.jpg",
             "iconGrayUrl": "d4f9f67a8bde4c56b67e01249e8f0729962292d9.jpg",
             "hidden": true,
-            "globalPct": 31.1
+            "globalPct": 31.2
         },
         {
             "apiName": "Achievement55",
@@ -1146,7 +1146,7 @@
             "unlockedAt": "2024-06-25T14:37:34.000Z",
             "iconUrl": "04d9de70fced3adf68ed1c20c7b6404a232888f6.jpg",
             "iconGrayUrl": "5b845945c8c63d3e073f5a9769d378de16a77b6b.jpg",
-            "globalPct": 49.5
+            "globalPct": 49.4
         },
         {
             "apiName": "Achievement52",
@@ -1164,7 +1164,7 @@
             "unlockedAt": "2024-06-24T15:11:49.000Z",
             "iconUrl": "caa59189c12c52030f0d14b90c0a2623dc9ecbec.jpg",
             "iconGrayUrl": "3927ec9d7007ba4b76504597051e9be8416a8cec.jpg",
-            "globalPct": 56.7
+            "globalPct": 56.6
         }
     ]
 }

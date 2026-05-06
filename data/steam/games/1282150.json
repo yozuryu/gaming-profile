@@ -25,7 +25,7 @@
             "iconUrl": "ee728a8e275162574d1f91764c78f97f2d9c00c5.jpg",
             "iconGrayUrl": "5d715eeec3f6ab273c90ba39af6ce97913f31bc2.jpg",
             "hidden": true,
-            "globalPct": 61.1
+            "globalPct": 61.2
         },
         {
             "apiName": "Filmstar",
@@ -69,7 +69,7 @@
             "iconUrl": "ab0b2bc45e2648691233466712f71a60ad0bf375.jpg",
             "iconGrayUrl": "8152af884966a331b1a3557d2323205b6bc76766.jpg",
             "hidden": true,
-            "globalPct": 29.5
+            "globalPct": 29.4
         },
         {
             "apiName": "RoyalGuard",
@@ -201,7 +201,7 @@
             "iconUrl": "eda2dc53262e2326f6f2267724a40c14b5c940a5.jpg",
             "iconGrayUrl": "5522c1747d346fc5c664960f7af1a37fa381c10d.jpg",
             "hidden": true,
-            "globalPct": 9.2
+            "globalPct": 9.1
         },
         {
             "apiName": "SpecialGloveWorldBoss",
@@ -289,7 +289,7 @@
             "iconUrl": "79ed5219b73597a8c10f744947faf8e56cd894b4.jpg",
             "iconGrayUrl": "e5df4c0a8b9060311c6dcb4bb35fad34f2dc934c.jpg",
             "hidden": false,
-            "globalPct": 70.8
+            "globalPct": 70.9
         },
         {
             "apiName": "Ambush",
@@ -548,7 +548,7 @@
             "unlockedAt": "2025-06-23T13:19:31.000Z",
             "iconUrl": "ab0b2bc45e2648691233466712f71a60ad0bf375.jpg",
             "iconGrayUrl": "8152af884966a331b1a3557d2323205b6bc76766.jpg",
-            "globalPct": 29.5
+            "globalPct": 29.4
         }
     ]
 }

@@ -1224,7 +1224,7 @@
             "iconUrl": "284c882ce33f47cdfc24ee70de6db31ac03119a7.jpg",
             "iconGrayUrl": "694c742cbc0ec03ad659e8d27c1db316a41504d3.jpg",
             "hidden": false,
-            "globalPct": 0.5
+            "globalPct": 0.4
         },
         {
             "apiName": "ACH_M7_MAX_SPEED",
@@ -3094,7 +3094,7 @@
             "iconUrl": "e8c2c3255f7e032e4dd62568d4f91bfbef8587ad.jpg",
             "iconGrayUrl": "694c742cbc0ec03ad659e8d27c1db316a41504d3.jpg",
             "hidden": false,
-            "globalPct": 0.5
+            "globalPct": 0.4
         },
         {
             "apiName": "CRR_1_SERVICE_COMPLETE",

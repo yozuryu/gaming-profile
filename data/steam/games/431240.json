@@ -80,7 +80,7 @@
             "iconUrl": "f1a775fc6f19000dc23dd9e64496c77264d682a2.jpg",
             "iconGrayUrl": "69993730c35c7dc0f348694770ae0db989b2f632.jpg",
             "hidden": false,
-            "globalPct": 62.6
+            "globalPct": 62.5
         },
         {
             "apiName": "OUTOFTIME_50_ACHIEVEMENT",
@@ -168,7 +168,7 @@
             "iconUrl": "b78ddea2d1d78148a76160c865cc52820eadab13.jpg",
             "iconGrayUrl": "c9fc60a3a2e61e359168c6d135b9cb59868bec43.jpg",
             "hidden": false,
-            "globalPct": 27.7
+            "globalPct": 27.8
         },
         {
             "apiName": "CANDYLANDFULLGAME_ACHIEVEMENT",
@@ -289,7 +289,7 @@
             "iconUrl": "83a9815efa557112e8ac293c20b48e8455dbdb8f.jpg",
             "iconGrayUrl": "5d65b0a8d4ba60507219ab9130dac222bf5fe61e.jpg",
             "hidden": false,
-            "globalPct": 0.9
+            "globalPct": 0.8
         },
         {
             "apiName": "HAUNTEDPAR_ACHIEVEMENT",
@@ -443,7 +443,7 @@
             "iconUrl": "ab2cec68b4346c5ed02dabe7f7e54b374624d7a2.jpg",
             "iconGrayUrl": "50de3cccdd69769b4240c9575686f9b2cef70289.jpg",
             "hidden": false,
-            "globalPct": 17.8
+            "globalPct": 17.9
         },
         {
             "apiName": "WORMSFULLGAME_ACHIEVEMENT",
@@ -454,7 +454,7 @@
             "iconUrl": "00e4b9a86bdc4ea9c5bb69e0053439a639196753.jpg",
             "iconGrayUrl": "e4a219718ada843607c0a3f60576b356375b744d.jpg",
             "hidden": false,
-            "globalPct": 16.5
+            "globalPct": 16.6
         },
         {
             "apiName": "MUSEUMFULLGAME_ACHIEVEMENT",
@@ -465,7 +465,7 @@
             "iconUrl": "eb5cad06184141ff73eac1c8901c2863041bb7df.jpg",
             "iconGrayUrl": "acdd7e0021e5bb0c8606fec14c1310ed44f31261.jpg",
             "hidden": false,
-            "globalPct": 15.1
+            "globalPct": 15.2
         },
         {
             "apiName": "VOLCANOFULLGAME_ACHIEVEMENT",
@@ -476,7 +476,7 @@
             "iconUrl": "acfd19c3a28518932bd6218925cbaa7092d5b218.jpg",
             "iconGrayUrl": "776ce4bf1e2f24dc6b0c4412657483bdddc0b5a0.jpg",
             "hidden": false,
-            "globalPct": 16.6
+            "globalPct": 16.7
         },
         {
             "apiName": "SPACEFULLGAMEHOOPS_ACHIEVEMENT",
@@ -619,7 +619,7 @@
             "iconUrl": "5b38809900a1ddf454a93a621d89eb69fbdf5be0.jpg",
             "iconGrayUrl": "4d9ce7d045391930b8e0bef10bff3c64e8771a88.jpg",
             "hidden": false,
-            "globalPct": 16.2
+            "globalPct": 16.3
         },
         {
             "apiName": "ESCAPISTSFULLGAMEHOOPS_ACHIEVEMENT",
@@ -663,7 +663,7 @@
             "iconUrl": "829a66320c77cd68df1f99f6f5316710c1098bb2.jpg",
             "iconGrayUrl": "8dde79663a7f65213781dd6f12fa23cdac0d4d3a.jpg",
             "hidden": false,
-            "globalPct": 71.1
+            "globalPct": 71.2
         },
         {
             "apiName": "EATENBYGINGY_ACHIEVEMENT",
@@ -685,7 +685,7 @@
             "iconUrl": "ef850912e9e33b671ce5324429af4f2b685b7437.jpg",
             "iconGrayUrl": "7b6616a07b0a83450ce429da0050776d7703540c.jpg",
             "hidden": false,
-            "globalPct": 78.4
+            "globalPct": 78.5
         },
         {
             "apiName": "OUTOFBOUNDS_50_ACHIEVEMENT",
@@ -696,7 +696,7 @@
             "iconUrl": "de24f45882a9039a07b8b8e117de42c598991aae.jpg",
             "iconGrayUrl": "3a045b31455d06df52ad55afd8b4d1ad1cc999c7.jpg",
             "hidden": false,
-            "globalPct": 62
+            "globalPct": 62.1
         },
         {
             "apiName": "DEEPFULLGAME_ACHIEVEMENT",
@@ -707,7 +707,7 @@
             "iconUrl": "78bc8ef7c2fdac342f5206d78191dcef987da38e.jpg",
             "iconGrayUrl": "0f8360559bfb4928e09e48ef2be24871fa155759.jpg",
             "hidden": false,
-            "globalPct": 16.9
+            "globalPct": 17
         },
         {
             "apiName": "DEEPFULLGAMEHOOPS_ACHIEVEMENT",
@@ -751,7 +751,7 @@
             "iconUrl": "4ad264febd94a8e7a54dfe4ed814e397eaf999d4.jpg",
             "iconGrayUrl": "6d8c2046e906154002554102ffbf8c18d67296f4.jpg",
             "hidden": false,
-            "globalPct": 3.9
+            "globalPct": 4
         },
         {
             "apiName": "BOUNCYCASTLEPAR_ACHIEVEMENT",
@@ -941,7 +941,7 @@
             "unlockedAt": "2021-02-19T17:10:56.000Z",
             "iconUrl": "de24f45882a9039a07b8b8e117de42c598991aae.jpg",
             "iconGrayUrl": "3a045b31455d06df52ad55afd8b4d1ad1cc999c7.jpg",
-            "globalPct": 62
+            "globalPct": 62.1
         },
         {
             "apiName": "100SHOTS_ACHIEVEMENT",
@@ -959,7 +959,7 @@
             "unlockedAt": "2021-02-19T16:15:14.000Z",
             "iconUrl": "829a66320c77cd68df1f99f6f5316710c1098bb2.jpg",
             "iconGrayUrl": "8dde79663a7f65213781dd6f12fa23cdac0d4d3a.jpg",
-            "globalPct": 71.1
+            "globalPct": 71.2
         },
         {
             "apiName": "OUTOFTIME_1_ACHIEVEMENT",
@@ -968,7 +968,7 @@
             "unlockedAt": "2021-02-19T16:15:12.000Z",
             "iconUrl": "f1a775fc6f19000dc23dd9e64496c77264d682a2.jpg",
             "iconGrayUrl": "69993730c35c7dc0f348694770ae0db989b2f632.jpg",
-            "globalPct": 62.6
+            "globalPct": 62.5
         },
         {
             "apiName": "MAXSHOTSREACHED_1_ACHIEVEMENT",

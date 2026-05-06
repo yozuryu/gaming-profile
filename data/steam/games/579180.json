@@ -47,7 +47,7 @@
             "iconUrl": "adfd9eca851a346534cbee0fe043c4c267f3115b.jpg",
             "iconGrayUrl": "e07be29274545ad0e8c72582dd4c55441fbc7cf0.jpg",
             "hidden": false,
-            "globalPct": 12.1
+            "globalPct": 12
         },
         {
             "apiName": "ACHIEVEMENT05",
@@ -113,7 +113,7 @@
             "iconUrl": "0aac5d1c08902d4f332228c7d4c07315fac5c448.jpg",
             "iconGrayUrl": "442087ddb1607e4adf1cfd49d7ea035b7bb0fde7.jpg",
             "hidden": false,
-            "globalPct": 30.6
+            "globalPct": 30.5
         },
         {
             "apiName": "ACHIEVEMENT11",
@@ -124,7 +124,7 @@
             "iconUrl": "0cb682c74e131edf6ae03e94add3596cab73d25c.jpg",
             "iconGrayUrl": "c65ef932b8436e5aa94b0b4094c2db75c80dee80.jpg",
             "hidden": false,
-            "globalPct": 33.1
+            "globalPct": 33
         },
         {
             "apiName": "ACHIEVEMENT12",
@@ -157,7 +157,7 @@
             "iconUrl": "ef49872b577b996e4a2b4187f0c4d886f9328912.jpg",
             "iconGrayUrl": "5b7dc5702cf805b48a9a02da536f5a796df75170.jpg",
             "hidden": false,
-            "globalPct": 12.3
+            "globalPct": 12.2
         },
         {
             "apiName": "ACHIEVEMENT15",
@@ -179,7 +179,7 @@
             "iconUrl": "27660b2380fc9eb66e67007935dad226dc6128c9.jpg",
             "iconGrayUrl": "49e8e39f0ad40e7c723c1226cfba53cd7635eab1.jpg",
             "hidden": false,
-            "globalPct": 27.3
+            "globalPct": 27.2
         },
         {
             "apiName": "ACHIEVEMENT17",
@@ -234,7 +234,7 @@
             "iconUrl": "b88d0bbea4a0f21cec9d08874036510d416e4ed6.jpg",
             "iconGrayUrl": "d2719ab838c47963404e03fa5253452be79c92f6.jpg",
             "hidden": false,
-            "globalPct": 42.8
+            "globalPct": 42.7
         },
         {
             "apiName": "ACHIEVEMENT22",
@@ -399,7 +399,7 @@
             "iconUrl": "ed699e884224beb7e7489901414a6407e7d5101c.jpg",
             "iconGrayUrl": "e63926da9a1cb11371eace7e50ef11f5889c1aef.jpg",
             "hidden": true,
-            "globalPct": 30.6
+            "globalPct": 30.5
         },
         {
             "apiName": "ACHIEVEMENT37",
@@ -410,7 +410,7 @@
             "iconUrl": "f3bb03d4ad957f380bbf2260433f1240ac383747.jpg",
             "iconGrayUrl": "13f1156c9cfb297cd4cb2415a7139bb93a2f9526.jpg",
             "hidden": true,
-            "globalPct": 30.8
+            "globalPct": 30.7
         },
         {
             "apiName": "ACHIEVEMENT38",
@@ -421,7 +421,7 @@
             "iconUrl": "9727343c767d9a080c56f60651117703a8c2b60c.jpg",
             "iconGrayUrl": "0a29fdcd73cc4aa34f7ca67fd05da73a25628e6a.jpg",
             "hidden": true,
-            "globalPct": 30.3
+            "globalPct": 30.2
         },
         {
             "apiName": "ACHIEVEMENT39",
@@ -520,7 +520,7 @@
             "iconUrl": "b5340b60b34f6b8cfc7cde59fa814f7c4da17b77.jpg",
             "iconGrayUrl": "9e499c9fe5e7d4b0e8870b959df9c669cf5d895f.jpg",
             "hidden": true,
-            "globalPct": 44.3
+            "globalPct": 44.2
         },
         {
             "apiName": "ACHIEVEMENT48",
@@ -553,7 +553,7 @@
             "iconUrl": "5d6d5aaf22a62184252ed27ca1d1f9fbd999321f.jpg",
             "iconGrayUrl": "3cff1e22e0f3dfe51bd657c1c79f2d5c58d5d3d4.jpg",
             "hidden": true,
-            "globalPct": 37.4
+            "globalPct": 37.3
         },
         {
             "apiName": "ACHIEVEMENT51",
@@ -586,7 +586,7 @@
             "iconUrl": "1f4a23473d3429ac8b89139f0cc0b7c34e0c0e6f.jpg",
             "iconGrayUrl": "b1b6cc2dc45b5ee4778dc26bbfe8b09f93783e21.jpg",
             "hidden": true,
-            "globalPct": 26.7
+            "globalPct": 26.6
         },
         {
             "apiName": "ACHIEVEMENT54",
@@ -658,7 +658,7 @@
             "unlockedAt": null,
             "iconUrl": "adfd9eca851a346534cbee0fe043c4c267f3115b.jpg",
             "iconGrayUrl": "e07be29274545ad0e8c72582dd4c55441fbc7cf0.jpg",
-            "globalPct": 12.1
+            "globalPct": 12
         }
     ]
 }
