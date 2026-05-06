@@ -828,7 +828,7 @@
             "description": "Obtain a Wurmple",
             "badgeName": "383484",
             "points": 1,
-            "trueRatio": 8,
+            "trueRatio": 7,
             "type": null,
             "author": "drisc",
             "authorUlid": "01F9P6T4BNASH7NR9YTG3Y8FBP",
@@ -1179,6 +1179,26 @@
             "cumulScore": 118,
             "badgeUrl": "/Badge/383512.png",
             "gameUrl": "/game/24186"
+        },
+        {
+            "date": "2026-02-04 12:54:02",
+            "hardcoreMode": true,
+            "achievementId": 28942,
+            "title": "Fall to Earth",
+            "description": "Escape from the Glaive Empire",
+            "badgeName": "29396",
+            "points": 1,
+            "trueRatio": 1,
+            "type": null,
+            "author": "Umaro137",
+            "authorUlid": "019S7YFP274DRNFTYMX4M8ZJ8B",
+            "gameTitle": "Final Fantasy Adventure",
+            "gameIcon": "/Images/117162.png",
+            "gameId": 2403,
+            "consoleName": "Game Boy",
+            "cumulScore": 119,
+            "badgeUrl": "/Badge/29396.png",
+            "gameUrl": "/game/2403"
         }
     ]
 }
