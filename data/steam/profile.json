@@ -1,29 +1,40 @@
 {
     "metadata": {
-        "extractionTimestamp": "2026-09-07T15:48:20.475Z"
+        "extractionTimestamp": "2026-09-07T19:52:22.380Z"
     },
     "profile": {
         "steamId": "76561198188939413",
         "displayName": "Yozuryu",
         "avatar": "https://avatars.steamstatic.com/3f5e9daea59216d7fe13df4e031d3537580e5e21_full.jpg",
         "profileUrl": "https://steamcommunity.com/id/yozuryu/",
-        "status": 3,
-        "lastOnline": "2026-09-06T15:36:03.000Z",
+        "status": 0,
+        "lastOnline": "2026-09-07T16:27:23.000Z",
         "countryCode": "ID"
     },
     "stats": {
         "totalGames": 1288,
-        "totalPlaytimeMin": 348183,
-        "totalPlaytimeHrs": 5803,
+        "totalPlaytimeMin": 348218,
+        "totalPlaytimeHrs": 5804,
         "gamesWithPlaytime": 819,
         "totalAchievements": 10055,
-        "unlockedAchievements": 2818,
+        "unlockedAchievements": 2820,
         "gamesWithAchievements": 170,
         "perfectCount": 17,
         "completionPct": 28,
         "avgPlaytimeMin": 425
     },
     "recentlyPlayed": [
+        {
+            "appId": 921570,
+            "name": "OCTOPATH TRAVELER",
+            "playtime2Weeks": 294,
+            "playtimeForever": 1373,
+            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/921570/f044bcf179c1f3609c730d5ed4e0af0a984ea8b5.jpg",
+            "storeUrl": "https://store.steampowered.com/app/921570",
+            "lastPlayedTs": "2026-09-07T16:25:30.000Z",
+            "achUnlocked": 35,
+            "achTotal": 88
+        },
         {
             "appId": 4391790,
             "name": "Another Eden Begins Demo",
@@ -45,37 +56,26 @@
             "lastPlayedTs": "2026-09-03T16:30:53.000Z",
             "achUnlocked": null,
             "achTotal": null
-        },
-        {
-            "appId": 921570,
-            "name": "OCTOPATH TRAVELER",
-            "playtime2Weeks": 258,
-            "playtimeForever": 1338,
-            "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/921570/f044bcf179c1f3609c730d5ed4e0af0a984ea8b5.jpg",
-            "storeUrl": "https://store.steampowered.com/app/921570",
-            "lastPlayedTs": "2026-08-30T04:40:57.000Z",
-            "achUnlocked": 33,
-            "achTotal": 88
         }
     ],
     "mostRecentGame": {
-        "appId": 4391790,
-        "name": "Another Eden Begins Demo",
-        "playtime2Weeks": 31,
-        "playtimeForever": 31,
-        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/4391790/a8292db0c617cd676528cec79d054f7ce1ca2184.jpg",
-        "storeUrl": "https://store.steampowered.com/app/4391790",
-        "lastPlayedTs": "2026-09-06T15:33:17.000Z"
+        "appId": 921570,
+        "name": "OCTOPATH TRAVELER",
+        "playtime2Weeks": 294,
+        "playtimeForever": 1373,
+        "iconUrl": "https://media.steampowered.com/steamcommunity/public/images/apps/921570/f044bcf179c1f3609c730d5ed4e0af0a984ea8b5.jpg",
+        "storeUrl": "https://store.steampowered.com/app/921570",
+        "lastPlayedTs": "2026-09-07T16:25:30.000Z"
     },
     "mostRecentUnlock": {
         "appId": 921570,
         "gameName": "OCTOPATH TRAVELER",
-        "apiName": "ACHIEVEMENT_039",
-        "displayName": "Draefendi's Wisdom",
-        "description": "Obtained hunter as a secondary job.",
-        "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/921570/e1cb6aa604fa059a1fdd9bf98576655c96e775b8.jpg",
-        "unlockedAt": "2026-08-30T04:31:57.000Z",
-        "globalPct": 34.6
+        "apiName": "ACHIEVEMENT_033",
+        "displayName": "Aelfric's Wisdom",
+        "description": "Obtained cleric as a secondary job.",
+        "iconUrl": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/921570/c8cc4b62a52bc2628b1e62b6b065d1ad768e5aaf.jpg",
+        "unlockedAt": "2026-09-07T16:12:58.000Z",
+        "globalPct": 32.9
     },
     "perfectGames": [
         {
