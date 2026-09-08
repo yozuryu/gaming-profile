@@ -36,7 +36,7 @@
             "iconUrl": "e009d80f032453af564cda82dcfe70d73bac6bbf.jpg",
             "iconGrayUrl": "8e222bb84e1a02c821e5ce140386f37c12d3bf96.jpg",
             "hidden": false,
-            "globalPct": 76.7
+            "globalPct": 76.6
         },
         {
             "apiName": "BIOME_REACHED_OSSUARY",
@@ -168,7 +168,7 @@
             "iconUrl": "b3db962f5d72d6c4eab9a0b0a754462509ea5e87.jpg",
             "iconGrayUrl": "38097b9f180e395fd06e8783e5062990e8f1754d.jpg",
             "hidden": true,
-            "globalPct": 21.6
+            "globalPct": 21.7
         },
         {
             "apiName": "FIGHT_BEAT_BEHEMOTH",
@@ -179,7 +179,7 @@
             "iconUrl": "60f87063c94de13e7791fb4e1c84a35405299f62.jpg",
             "iconGrayUrl": "8bad3d52107b3a22bb3a8ac83e2ae8294b1d746f.jpg",
             "hidden": false,
-            "globalPct": 72.4
+            "globalPct": 72.3
         },
         {
             "apiName": "FIGHT_BEAT_BEHOLDER",
@@ -410,7 +410,7 @@
             "iconUrl": "58a8e13072225ea2321362055f3059fbf6e57a2e.jpg",
             "iconGrayUrl": "0204695d3807235a2a1d35effcfa435a0f2d7c96.jpg",
             "hidden": false,
-            "globalPct": 39.1
+            "globalPct": 39
         },
         {
             "apiName": "EQUIP_ENDGAME_YOLO",
@@ -784,7 +784,7 @@
             "iconUrl": "ea5c5baf039d491395d31902faad1d79c438b671.jpg",
             "iconGrayUrl": "19910728a458adbae490e00dbab5b7c4782a1307.jpg",
             "hidden": false,
-            "globalPct": 25.7
+            "globalPct": 25.8
         },
         {
             "apiName": "BIOME_REACHED_PRISONCORRUPT",
@@ -1180,7 +1180,7 @@
             "iconUrl": "9e7f7b792a5d790dac2d4a34874dd5cacf392948.jpg",
             "iconGrayUrl": "348f30dd1be1f2c89451a4ab0247a4b32784fee4.jpg",
             "hidden": false,
-            "globalPct": 1.8
+            "globalPct": 1.9
         },
         {
             "apiName": "FIGHT_BEAT_MIMIC",
@@ -1377,7 +1377,7 @@
             "unlockedAt": "2019-04-20T01:56:00.000Z",
             "iconUrl": "60f87063c94de13e7791fb4e1c84a35405299f62.jpg",
             "iconGrayUrl": "8bad3d52107b3a22bb3a8ac83e2ae8294b1d746f.jpg",
-            "globalPct": 72.4
+            "globalPct": 72.3
         },
         {
             "apiName": "BIOME_REACHED_BRIDGE",
@@ -1386,7 +1386,7 @@
             "unlockedAt": "2019-04-20T01:53:55.000Z",
             "iconUrl": "e009d80f032453af564cda82dcfe70d73bac6bbf.jpg",
             "iconGrayUrl": "8e222bb84e1a02c821e5ce140386f37c12d3bf96.jpg",
-            "globalPct": 76.7
+            "globalPct": 76.6
         },
         {
             "apiName": "FEAT_SURVIVE_CURSE",

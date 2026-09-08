@@ -47,7 +47,7 @@
             "iconUrl": "004d1c07516cb60c2f7e24ba08059e4a12bdba2f.jpg",
             "iconGrayUrl": "c06edc65d7fa1df91dfba05fe05bcb3cf310d20a.jpg",
             "hidden": false,
-            "globalPct": 63.1
+            "globalPct": 63.2
         },
         {
             "apiName": "set_spawn",
@@ -69,7 +69,7 @@
             "iconUrl": "1af76a22261e2e694855997ea4595e43f4a6ae97.jpg",
             "iconGrayUrl": "32a1ffa1f88db8f7adb535f7002f69f6658531d1.jpg",
             "hidden": false,
-            "globalPct": 47.6
+            "globalPct": 47.7
         },
         {
             "apiName": "obtain_items",
@@ -91,7 +91,7 @@
             "iconUrl": "d1300b803b9273611e8fa527834cb8f438b5a9c9.jpg",
             "iconGrayUrl": "41dad6438d615f6ba8ddd0fc644cb98567c4db7c.jpg",
             "hidden": false,
-            "globalPct": 34.3
+            "globalPct": 34.4
         },
         {
             "apiName": "fish_up",
@@ -113,7 +113,7 @@
             "iconUrl": "c073e1bb0a5a0b833ff13906878e5be2a3640423.jpg",
             "iconGrayUrl": "f168a1e2d549bdf918f459854fb8ec88b74d643d.jpg",
             "hidden": false,
-            "globalPct": 45.8
+            "globalPct": 45.9
         },
         {
             "apiName": "play_24h",
@@ -124,7 +124,7 @@
             "iconUrl": "795941b90b131436d8c6afe41abb8a93cb8453ea.jpg",
             "iconGrayUrl": "4ef46e13ee33014a2dab09b89b0d413bd4e3095d.jpg",
             "hidden": false,
-            "globalPct": 17.6
+            "globalPct": 17.7
         },
         {
             "apiName": "magical_drop",
@@ -201,7 +201,7 @@
             "iconUrl": "8ce05001dd9502707846005c2badc092854f0cd3.jpg",
             "iconGrayUrl": "3943a92478aff51aaf13822f889bfb50fa4f2e12.jpg",
             "hidden": false,
-            "globalPct": 27.5
+            "globalPct": 27.6
         },
         {
             "apiName": "cloud_nine",
@@ -311,7 +311,7 @@
             "iconUrl": "30017fe0cbf132ec30a93769618314697bac7f61.jpg",
             "iconGrayUrl": "b88f5bb60e8364ad12504980a77e26b6fd8f43f6.jpg",
             "hidden": false,
-            "globalPct": 10
+            "globalPct": 10.1
         },
         {
             "apiName": "master_of_sun_and_moon",
@@ -333,7 +333,7 @@
             "iconUrl": "f40b8a21d1989dcfb64c08b5e256411a5f1b54ec.jpg",
             "iconGrayUrl": "335a83ef0a2f34a4a7813a75d44260983c9da8a6.jpg",
             "hidden": false,
-            "globalPct": 24.3
+            "globalPct": 24.4
         },
         {
             "apiName": "empowered",
@@ -366,7 +366,7 @@
             "iconUrl": "662d17c017aac407ac742371433cce9ed9aa82c7.jpg",
             "iconGrayUrl": "1a4afdeed23fcad9547dbbe9965af262a47c2040.jpg",
             "hidden": false,
-            "globalPct": 27.7
+            "globalPct": 27.8
         },
         {
             "apiName": "get_4_item_sets",
@@ -377,7 +377,7 @@
             "iconUrl": "ee57f3ef761eb5ee0952e31ac4c6d6f890b649a7.jpg",
             "iconGrayUrl": "a192d5b6e4c7536df18d9a01c3924bea16a9f186.jpg",
             "hidden": false,
-            "globalPct": 11.1
+            "globalPct": 11.2
         },
         {
             "apiName": "hot_tub",
@@ -542,7 +542,7 @@
             "iconUrl": "bcb1c758133d3b3c64c1c3117944dc8c6e308cc9.jpg",
             "iconGrayUrl": "aff7089c1cc4825992724cf8ad9fd10b8b17af5d.jpg",
             "hidden": false,
-            "globalPct": 2.4
+            "globalPct": 2.6
         },
         {
             "apiName": "true_love",
@@ -564,7 +564,7 @@
             "iconUrl": "bafe5d5325872658dbd4620bae282769b34c97c7.jpg",
             "iconGrayUrl": "e720e4de93cfe1204174639c58c00cb2e7dd6e49.jpg",
             "hidden": false,
-            "globalPct": 0
+            "globalPct": 0.1
         }
     ],
     "playtimeForever": 35,
@@ -616,7 +616,7 @@
             "unlockedAt": null,
             "iconUrl": "004d1c07516cb60c2f7e24ba08059e4a12bdba2f.jpg",
             "iconGrayUrl": "c06edc65d7fa1df91dfba05fe05bcb3cf310d20a.jpg",
-            "globalPct": 63.1
+            "globalPct": 63.2
         },
         {
             "apiName": "enchant_item",
@@ -625,7 +625,7 @@
             "unlockedAt": null,
             "iconUrl": "1af76a22261e2e694855997ea4595e43f4a6ae97.jpg",
             "iconGrayUrl": "32a1ffa1f88db8f7adb535f7002f69f6658531d1.jpg",
-            "globalPct": 47.6
+            "globalPct": 47.7
         }
     ]
 }

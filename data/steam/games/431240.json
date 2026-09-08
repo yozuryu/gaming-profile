@@ -179,7 +179,7 @@
             "iconUrl": "ae258c8e41b407999201d025cace58e224d7281d.jpg",
             "iconGrayUrl": "8e679c3689c0adb4a6b7699c16b0f1dd1f4455fd.jpg",
             "hidden": false,
-            "globalPct": 28.5
+            "globalPct": 28.6
         },
         {
             "apiName": "ANCIENTFULLGAME_ACHIEVEMENT",
@@ -685,7 +685,7 @@
             "iconUrl": "ef850912e9e33b671ce5324429af4f2b685b7437.jpg",
             "iconGrayUrl": "7b6616a07b0a83450ce429da0050776d7703540c.jpg",
             "hidden": false,
-            "globalPct": 79.6
+            "globalPct": 79.7
         },
         {
             "apiName": "OUTOFBOUNDS_50_ACHIEVEMENT",
@@ -696,7 +696,7 @@
             "iconUrl": "de24f45882a9039a07b8b8e117de42c598991aae.jpg",
             "iconGrayUrl": "3a045b31455d06df52ad55afd8b4d1ad1cc999c7.jpg",
             "hidden": false,
-            "globalPct": 62.9
+            "globalPct": 63
         },
         {
             "apiName": "DEEPFULLGAME_ACHIEVEMENT",
@@ -941,7 +941,7 @@
             "unlockedAt": "2021-02-19T17:10:56.000Z",
             "iconUrl": "de24f45882a9039a07b8b8e117de42c598991aae.jpg",
             "iconGrayUrl": "3a045b31455d06df52ad55afd8b4d1ad1cc999c7.jpg",
-            "globalPct": 62.9
+            "globalPct": 63
         },
         {
             "apiName": "100SHOTS_ACHIEVEMENT",
