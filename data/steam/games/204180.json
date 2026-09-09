@@ -113,7 +113,7 @@
             "iconUrl": "177424ddfc7686989c1822cb4b1f8aadf856bec0.jpg",
             "iconGrayUrl": "89337b9097bcccc98ead91c5ae143f0d8bfd3a98.jpg",
             "hidden": false,
-            "globalPct": 5.7
+            "globalPct": 5.8
         },
         {
             "apiName": "Achievement_FinishVenus",
@@ -234,7 +234,7 @@
             "iconUrl": "763a1bef688778e2a53fe0d905a3a282edc2e809.jpg",
             "iconGrayUrl": "9140610d2683ad2f90a85ab160792157ce3b17d0.jpg",
             "hidden": false,
-            "globalPct": 33.3
+            "globalPct": 33.4
         },
         {
             "apiName": "Achievement_10MirrorsHit",
@@ -454,7 +454,7 @@
             "iconUrl": "6d01c21c8e8454562eee071a6d4d01e52a4c44bf.jpg",
             "iconGrayUrl": "f135afe376fe4e4e3fb947bac302582e7eae558e.jpg",
             "hidden": false,
-            "globalPct": 5.1
+            "globalPct": 5.2
         },
         {
             "apiName": "Achievement_MasterMars",
@@ -779,7 +779,7 @@
             "unlockedAt": "2017-07-29T19:17:45.000Z",
             "iconUrl": "763a1bef688778e2a53fe0d905a3a282edc2e809.jpg",
             "iconGrayUrl": "9140610d2683ad2f90a85ab160792157ce3b17d0.jpg",
-            "globalPct": 33.3
+            "globalPct": 33.4
         }
     ]
 }
